@@ -9,6 +9,7 @@ import location from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-ye
 import tech from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Tech icon12.svg"
 import rocketMan from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/RocketMan.svg"
 import {motion} from "framer-motion";
+
 export default function SignUpPage(){
     const navigate = useNavigate();
 

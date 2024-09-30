@@ -8,6 +8,10 @@ export default function Header(){
     navigate('/signup');
   }
 
+  const signInClick = () => {
+    navigate('/signin');
+  }
+
 
 return (
   <>
@@ -20,7 +24,7 @@ return (
               <li>Courses</li>
               <li>About Us</li>
               <li>Contact Us</li>
-              <li>Sign In</li>
+              <li onClick={signInClick}>Sign In</li>
             </ul>
           </div>
           <div className="right-hdr">

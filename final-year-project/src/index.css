@@ -35,6 +35,7 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.sign-in-page,
 .third-section,
 .sign-up-page,
 .first-section,
@@ -58,7 +59,7 @@ html, body {
   position: absolute;
   left: 0; /* Position the image to the right */
   top: 0; /* If you also want it aligned to the top */
-  z-index: 0;
+  z-index: (-1);
   width: auto; 
   height: 100%; /* Adjust based on your needs */
 }
@@ -484,221 +485,6 @@ z-index: 1;
   animation-fill-mode: both;
 }
 
-
-/* ---------------------------------------------- SIGN UP PAGE SECTION----------------------------------------------- */
-
-.sign-up-page {
-  display: flex;
-  flex-direction: column;
-  background-color: #CDCDCD;
-  
-}
-
-.sign-up-header{
-  display: flex;
-  flex-direction: row;
-}
-
-.left-sign-up-header{
-flex: 1;
-flex-direction: column;
-z-index: 1;
-}
-
-.top-left-sign-up-header{
-  flex: 1;
-}
-
-.sign-up-to-homepage-icon{
-  width: 20px;
-  height: auto;
-  margin-top: 5px;
-  margin-left: 5px;
-  cursor: pointer;
-}
-
-.sign-up-to-homepage-icon:hover{
-  transform: scale(1.02);
-
-}
-
-.sign-up-to-homepage-icon:active {
-  transform: scale(0.97); /* Make the button slightly smaller when clicked */
-}
-
-.bottom-left-sign-up-header{
-  flex: 1;
-  text-align: center;
-}
-.right-sign-up-header{
-  flex: 1;
-}
-
-.sign-up-page-icon{
-  z-index: 0;
-  display: block;
-}
-
-.sign-up-header-text{
-  font-size: 80px;
-  color: #473755;
-  font-family: Inter, sans-serif;
- font-weight: 900;
- text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
- z-index: 1;
-}
-
-.main-sign-up-form{
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  z-index: 1;
-
-}
-
-.left-main-sign-up-form{
-  flex: 1;
-
-}
-
-.mid-main-sign-up-form{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-
-.input-field-7,
-.input-field-6,
-.input-field-5,
-.input-field-4,
-.input-field-3,
-.input-field-2,
-.input-field-2,
-.input-field-1{
-  width: 380px;
-  height: 100px;
-  position: relative;
-  margin-bottom: 20px;
-
- 
-
-  
-}
-
-.input-field-x button{
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-
-}
-
-.input-field-x{
-  position: relative;
-  display: flex;
-  justify-content: center; /* Horizontally centers the content */
-  align-items: center;
-  width: 380px;
-  height: 100px;
-  margin-bottom: 20px;
-}
-
-
-.input-field-7 input,
-.input-field-6 input,
-.input-field-5 input,
-.input-field-4 input,
-.input-field-3 input,
-.input-field-2 input,
-.input-field-1 input {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  border: none;
-  border-bottom: 1.5px solid #78608f; /* Adjust color as needed */
-  background-color: transparent;
-  outline: none;
-  padding: 5px 0;
-  font-size: 20px; /* Adjust as needed */
-  font-family: 'Roboto Mono';
-  
- 
-
-}
-
-
-.left-mid-main-sign-up-form{
-  flex-direction: column;
-  margin-right: 50px;
-}
-
-.right-mid-main-sign-up-form{
-  flex-direction: column;
-  margin-left: 50px;
-}
-
-.right-main-sign-up-form{
-  flex: 1;
-
-}
-
-
-.register-btn-sp{
-  font-family: Inter, sans-serif;
-  font-weight: lighter;
-  background-color: #473755;
-  font-size: 14px;
-  font-weight: bolder;
-  color: white;
-  border: none;
-  width: 157px;
-  height: 42px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
-  
-}
-
-.register-btn-sp:hover{
-  transform: scale(1.02); /* Slightly increase the size of the button */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
-}
-
-.register-btn-sp:active {
-  transform: scale(0.97); /* Make the button slightly smaller when clicked */
-  box-shadow: none; /* Remove the shadow when the button is clicked */
-}
-
-.text-img{
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  bottom: 1.1px;
-  background-color: #CDCDCD;
-  padding-left: 4px;
-  padding-bottom: 8px;
-
-}
-
-.TopPlaceHolder{
-  color: #7D7D81;
-  font-family: 'Roboto Mono';
-  font-weight: 900;
-  position: absolute;
-  top: 20px;
-
-}
-
-.right-sign-up-header{
-  position: relative;
-  display: flex;
-  justify-content: center; /* Horizontally centers the content */
-  align-items: center;
-}
-
-
-
 /* ----------------------------------------------THIRD HOME PAGE SECTION PAGE---------------------------------------------- */
 
 .third-section{
@@ -1043,3 +829,355 @@ z-index: 1;
   width: auto; 
   height: 100%; /* Adjust based on your needs */
 }
+
+/* ---------------------------------------------- SIGN UP PAGE SECTION----------------------------------------------- */
+
+.sign-up-page {
+  display: flex;
+  flex-direction: column;
+  background-color: #CDCDCD;
+  
+}
+
+.sign-up-header{
+  display: flex;
+  flex-direction: row;
+}
+
+.left-sign-up-header{
+flex: 1;
+flex-direction: column;
+z-index: 1;
+}
+
+.top-left-sign-up-header{
+  flex: 1;
+}
+
+.sign-up-to-homepage-icon{
+  width: 20px;
+  height: auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.sign-up-to-homepage-icon:hover{
+  transform: scale(1.02);
+
+}
+
+.sign-up-to-homepage-icon:active {
+  transform: scale(0.97); /* Make the button slightly smaller when clicked */
+}
+
+.bottom-left-sign-up-header{
+  flex: 1;
+  text-align: center;
+}
+.right-sign-up-header{
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center;
+}
+
+.sign-up-page-icon{
+  z-index: 0;
+  display: block;
+}
+
+.sign-up-header-text{
+  font-size: 80px;
+  color: #473755;
+  font-family: Inter, sans-serif;
+ font-weight: 900;
+ text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+ z-index: 1;
+}
+
+.main-sign-up-form{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  z-index: 1;
+
+}
+
+.left-main-sign-up-form{
+  flex: 1;
+
+}
+
+.mid-main-sign-up-form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.input-field-7,
+.input-field-6,
+.input-field-5,
+.input-field-4,
+.input-field-3,
+.input-field-2,
+.input-field-1{
+  width: 380px;
+  height: 100px;
+  position: relative;
+  margin-bottom: 20px;
+
+ 
+
+  
+}
+
+.input-field-x button{
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+
+}
+
+.input-field-x{
+  position: relative;
+  display: flex;
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center;
+  width: 380px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+
+.input-field-7 input,
+.input-field-6 input,
+.input-field-5 input,
+.input-field-4 input,
+.input-field-3 input,
+.input-field-2 input,
+.input-field-1 input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid #78608f; /* Adjust color as needed */
+  background-color: transparent;
+  outline: none;
+  padding: 5px 0;
+  font-size: 20px; /* Adjust as needed */
+  font-family: 'Roboto Mono';
+  
+ 
+
+}
+
+
+.left-mid-main-sign-up-form{
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.right-mid-main-sign-up-form{
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.right-main-sign-up-form{
+  flex: 1;
+
+}
+
+
+.register-btn-sp{
+  font-family: Inter, sans-serif;
+  font-weight: lighter;
+  background-color: #473755;
+  font-size: 14px;
+  font-weight: bolder;
+  color: white;
+  border: none;
+  width: 157px;
+  height: 42px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
+  
+}
+
+.register-btn-sp:hover{
+  transform: scale(1.02); /* Slightly increase the size of the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
+}
+
+.register-btn-sp:active {
+  transform: scale(0.97); /* Make the button slightly smaller when clicked */
+  box-shadow: none; /* Remove the shadow when the button is clicked */
+}
+
+.text-img{
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  bottom: 1.1px;
+  background-color: #CDCDCD;
+  padding-left: 4px;
+  padding-bottom: 8px;
+
+}
+
+.TopPlaceHolder{
+  color: #7D7D81;
+  font-family: 'Roboto Mono';
+  font-weight: 900;
+  position: absolute;
+  top: 20px;
+
+}
+
+
+
+/* ----------------------------------------------SIGN IN PAGE SECTION PAGE---------------------------------------------- */
+.sign-in-page{
+  display: flex;
+  flex-direction: column;
+  background-color: #CDCDCD;
+}
+
+.sign-in-header{
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+
+.left-sign-in-header{
+
+  flex: 1;
+  flex-direction: column;
+}
+
+.right-sign-in-header{
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center;
+}
+
+.sign-in-header-text{
+  font-size: 80px;
+  color: #374d55;
+  font-family: Inter, sans-serif;
+  font-weight: 900;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.sign-in-to-homepage-icon{
+  width: 20px;
+  height: auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.sign-in-to-homepage-icon:hover{
+  transform: scale(1.02);
+
+}
+
+.sign-in-to-homepage-icon:active {
+  transform: scale(0.97); /* Make the button slightly smaller when clicked */
+}
+
+.top-left-sign-in-header{
+    flex: 1;
+  }
+
+  .bottom-left-sign-in-header{
+    flex: 1;
+    text-align: left;
+    margin-left: 10%;
+  }
+.mid-main-sign-in-field{
+  margin-top: 5%;
+}
+
+  .main-sign-in-fields{
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+  }
+
+  .left-sign-in-blank{
+
+    flex:1
+  }
+  .right-sign-in-blank{
+
+    flex:1
+  }
+
+  .input-field-1s{
+    width: 380px;
+    height: 100px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-field-2s{
+    width: 380px;
+    height: 100px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-field-1s input,
+  .input-field-2s input{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid #374d55; /* Adjust color as needed */
+    background-color: transparent;
+    outline: none;
+    padding: 5px 0;
+    font-size: 20px; /* Adjust as needed */
+    font-family: 'Roboto Mono';
+  }
+
+  .sign-in-button{
+    margin-top: 10%;
+    font-family: Inter, sans-serif;
+    font-weight: lighter;
+    background-color: #374d55;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    width: 157px;
+    height: 42px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
+
+  }
+
+  .sign-in-button:hover{
+    transform: scale(1.02); /* Slightly increase the size of the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
+  }
+  
+  .sign-in-button:active {
+    transform: scale(0.97); /* Make the button slightly smaller when clicked */
+    box-shadow: none; /* Remove the shadow when the button is clicked */
+  }
+  
+  .sign-in-page-icon{
+    z-index: 0;
+    display: block;
+  }
+  
