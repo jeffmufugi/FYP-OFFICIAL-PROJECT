@@ -4,28 +4,14 @@
   box-sizing: border-box;
 }
 
-@keyframes fade-up {
-  0%{
-    opacity: 0;
-    transform: translateY(30px) scale(0.95);
-  }
-  100%{}
-}
-
-@keyframes fade-down {
-  0%{
-    opacity: 0;
-    transform: translateY(-30px) scale(0.95);
-  }
-  100%{}
-}
- 
 
 html, body {
   height: 100%;
   width: 100%;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .app-container {
@@ -40,9 +26,12 @@ html, body {
 .sign-up-page,
 .first-section,
 .second-section {
-  height: 100vh;
-  max-width: 100vw;
+  min-height: 100vh; /* Allow sections to stretch beyond viewport */
+  max-width: 100vw; /* Constrain width to viewport */
   position: relative;
+  overflow: hidden; /* Prevent overflow */
+  display: flex;
+  flex-direction: column; /* Flex layout to organize content */
 
 }
 
@@ -51,6 +40,7 @@ html, body {
   display: flex;
   flex-direction: column;
   background-color: #dddddd;
+  overflow-x: hidden; /* Ensure no horizontal scrolling */
   
 }
 
@@ -162,11 +152,15 @@ html, body {
 
 }
 
-
+.explore-txt,
 .wdwd-txt{
   font-family: 'Roboto Mono';
-  margin-top: 20px;
+  color: #112222;
+  font-weight: 400;
 
+}
+.wdwd-txt{
+  margin-top: 20px;
 }
 
 .btn-main{
@@ -229,11 +223,7 @@ html, body {
   box-shadow: none; /* Remove the shadow when the button is clicked */
 }
 
-.explore-txt{
-  font-family: 'Roboto Mono';
 
-
-}
 
 .main-content{
   display: flex;
@@ -364,13 +354,15 @@ z-index: 1;
 
 .top-hlf{
   display: flex;
-  flex: 1;
+  flex: 0 1 auto;
+  padding: 20px;
   z-index: 1;
+  
 }
 .main-txt2{
-  margin-left: 70px;
-  margin-top: 50px;
-  font-size: 80px;
+  margin-top: 10px;
+  margin-left: 60px;
+  font-size: 75px;
   color: #117884;
   font-family: Inter, sans-serif;
  font-weight: 900;
@@ -378,18 +370,32 @@ z-index: 1;
  animation: fade-up 0.2s;
 }
 
+.left-hp2{
+  
+}
 
+.main-sect2{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+}
 
 .text-inf{
   display: flex;
   flex-direction: column;
   flex: 1;
 }
+.right-main2,
+.left-main2{
+  flex: 0.25;
+}
 
 .inf-text{
   font-family: 'Roboto Mono';
-  color: #285353;
+  color: #112222;
   z-index: 1;
+  font-weight: 400;
+  
 
   
 }
@@ -400,15 +406,42 @@ z-index: 1;
   display: flex;
   flex: 1;
   z-index: 1;
+  flex-direction: row;
+  margin-bottom: 10px;
+  
 }
 
 .sect1,.sect3{
   justify-content: end;
-  padding-right: 200px;
 }
 
 .sect2,.sect4{
-  padding-left: 200px;
+}
+
+.iconmain2{
+
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex: 0.5;
+}
+
+.sect1 .icon-container, .sect3 .icon-container {
+  order: 2;
+}
+.sect1 .section-content, .sect3 .section-content {
+  order: 1;
+}
+
+.section-icon {
+  width: 66px;  /* Adjust size as needed */
+  height: 66px;
+}
+
+.section-content {
+  flex: 1;
+  border-bottom: 1px solid #374d55; /* Adjust color as needed */
 }
 
 @media (max-width: 822px){
@@ -452,32 +485,22 @@ z-index: 1;
   } */
 }
 
+.right-hp2 {
+  /* parent div of gears */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
 
+}
 
-.gear1{
-  margin-left: 150px;
-  margin-top: 50px;
-  position: absolute;
-  animation: rotate 1s linear infinite;
-  animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
+.gears-container {
+  width: 350px; /* Width from leftmost to rightmost gear */
+  height: 350px; /* Height from topmost to bottommost gear */
 }
-.gear2{
-  margin-left: 288px;
-  margin-top: 150px;
-  position: absolute;
-  animation: rotate 1s linear infinite;
-  animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-}
-.gear3{
-  margin-left: 140px;
-  margin-top: 213px;
-  position: absolute;
+
+.gear1, .gear2, .gear3 {
+  position: relative;
   animation: rotate 1s linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
@@ -485,6 +508,20 @@ z-index: 1;
   animation-fill-mode: both;
 }
 
+.gear1 {
+  left: 0px;
+  top: 0px;
+}
+
+.gear2 {
+  right: 20px;
+  top: 85px;
+}
+
+.gear3 {
+  bottom: 0px;
+  left: 0px;
+}
 /* ----------------------------------------------THIRD HOME PAGE SECTION PAGE---------------------------------------------- */
 
 .third-section{

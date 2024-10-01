@@ -3,6 +3,10 @@ import g2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-pro
 import g3 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Gears3.svg";
 import {motion} from "framer-motion";
 import bg2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/lines.svg";
+import i4 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/PriceIcon.svg";
+import i1 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/BookIcon.svg";
+import i3 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/AssessmentIcon.svg";
+import i2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/BalanceIcon.svg";
 
 
 
@@ -10,45 +14,48 @@ import bg2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-pr
 const Homepage2 = () => {
   const sections = [
     {
-      text: <motion.div initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      text: <motion.div initial={{ x: 100 ,opacity: 0 }}
+      whileInView={{ x: 0 ,opacity: 1 }}
+      transition={{ duration: 0.5,delay: 0 }}
       viewport={{ once: true }} >
-        Dive into a variety of career paths across multiple STEM fields.
-        <br/>Each course recommendation is backed by up-to-date industry data, 
-        <br/>helping you understand where each degree can take you.
-        <br/>We give you the tools to see your potential future and plan accordingly.
+        Explore diverse career opportunities across a wide range of STEM fields. 
+        <br/>Each course recommendation is grounded in the latest industry insights, 
+        <br/>giving you a clear vision of where your degree can lead. 
+        We’re here <br/>to equip you with knowledge to map out your future with confidence
       </motion.div>,
-      className: "sect1"
+      className: "sect1",
+      icon: i1
     },
     {
-      text: <motion.div initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 2 }}
+      text: <motion.div initial={{ x: -100,opacity: 0  }}
+      whileInView={{ x:0, opacity: 1}}
+      transition={{ duration: 0.5,delay: 0.3 }}
       viewport={{ once: true }}>
-        <br/>Based on your academic interests and personal strengths, 
-        <br/>our platform suggests university programs that align with your goals. 
-        <br/>Whether you're passionate about technology, business, or the arts, 
-        <br/>we'll match you with the right opportunities.
+        Based on your academic interests and personal strengths, 
+        <br/>our platform connects you with programs tailored to your goals. 
+        <br/>Weighing the pros and cons of each option ensures you will 
+        <br/>make a balanced & informed choice that aligns with your aspirations.
       </motion.div>,
-      className: "sect2"
+      className: "sect2",
+      icon: i2
     },
     {
-      text: <motion.div initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 3 }}
+      text: <motion.div initial={{  x: 100,opacity: 0  }}
+      whileInView={{  x: 0,opacity: 1  }}
+      transition={{ duration: 0.5,delay: 0.6 }}
       viewport={{ once: true }}>
         <br/>Get access to real-life data on graduate employment rates, 
         <br/>industry demand, and future job outlooks for different sectors. 
         <br/>Make your course decisions confidently with our detailed, 
         <br/>evidence-based insights.
       </motion.div>,
-      className: "sect3"
+      className: "sect3",
+      icon: i3
     },
     {
-      text: <motion.div initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 4 }}
+      text: <motion.div initial={{  x: -100,opacity: 0 }}
+      whileInView={{  x: 0,opacity: 1 }}
+      transition={{ duration: 0.5,delay: 0.8 }}
       viewport={{ once: true }}>
         <br/>Stay ahead with data on emerging trends in STEM fields. 
         <br/>Learn about job growth, salary projections, and 
@@ -56,7 +63,8 @@ const Homepage2 = () => {
         <br/>Our insights help you make informed decisions on the 
         <br/>STEM courses that will lead you to success.
       </motion.div>,
-      className: "sect4"
+      className: "sect4",
+      icon: i4
     }
   ];
 
@@ -65,26 +73,30 @@ const Homepage2 = () => {
     <div className="second-section" id="second-section">
       <img src={bg2} className="bg2line"/>
       <div className="top-hlf">
-        
-        <motion.h1 className="main-txt2" initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 2 }}
-      viewport={{ once: true }}>
-          get detailed insights<br/> for your future<br/> career path.
-        </motion.h1>
-        <StaticGears />
+        <div className="left-hp2">
+              <motion.h1 className="main-txt2">
+                get detailed insights<br/> for your future<br/> career path.
+              </motion.h1>
+        </div>
+        <div className="right-hp2">
+           <StaticGears />
+        </div> 
       </div>
       
-      <div className="text-inf">
-
-        {sections.map((section, index) => (
-          <Section key={index} className={section.className}>
-            <SectionText>{section.text}</SectionText>
-          </Section>
-        ))}
+      <div className="main-sect2">
+        <div className="left-main2"></div>
+        <div className="text-inf">
+          {sections.map((section, index) => (
+              <Section key={index} className={section.className} icon={section.icon}>
+                <SectionText>{section.text}</SectionText>
+              </Section>
+            ))}
+      </div>
+        <div className="right-main2"></div>
 
 
       </div>
+     
     </div>
   );
 };
@@ -99,7 +111,7 @@ export default Homepage2;
 
 const StaticGears = () => {
   return (
-    <div className="gear-images">
+    <div className="gears-container">
       <motion.img src={g1} className="gear1" alt="Gear 1" animate={{ rotate: [0, 360] }} transition={{ duration: 20, repeat: Infinity, ease: "linear" }}/>
       <motion.img src={g2} className="gear2" alt="Gear 2" animate={{ rotate: [0, 360] }} transition={{ duration: 20, repeat: Infinity, ease: "linear" }}/>
       <motion.img src={g3} className="gear3" alt="Gear 3" animate={{ rotate: [360, 0] }} transition={{ duration: 20, repeat: Infinity, ease: "linear" }}/>
@@ -111,7 +123,14 @@ const SectionText = ({ children }) => (
   <p className="inf-text">{children}</p>
 );
 
-const Section = ({ children, className }) => (
-  <div className={className}>{children}</div>
+const Section = ({ children, className, icon }) => (
+  <div className={className}>
+    <div className="section-content">{children}</div>
+    <div className="iconmain2"><motion.img src={icon} alt="Section icon" className="section-icon"  initial={{ opacity: 0,skew:90  }}
+  whileInView={{ opacity: 1,skew:0}}
+  transition={{ duration: 1, delay: 2 }}
+  viewport={{ once: true }}/></div>
+</div>
 );
+
 

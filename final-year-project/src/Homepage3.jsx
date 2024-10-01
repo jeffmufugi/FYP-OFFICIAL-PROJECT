@@ -2,7 +2,16 @@
 import ai from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/atom.svg";
 import {motion} from "framer-motion";
 import bg2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/bg4.png";
+import { useNavigate } from 'react-router-dom';
+
 const Homepage3 = () => {
+
+  const navigate = useNavigate();
+    const signInClick = () => {
+      navigate('/signin');
+    }
+
+
     return (
         <div className="third-section" id="third-section">
             <img src={bg2} className="background-icon2"/>
@@ -49,8 +58,8 @@ const Homepage3 = () => {
     </div>
   </div>
   <div className="scroll-container">
-    <motion.div className="bottom-footer3"         initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+    <motion.div className="bottom-footer3" initial={{ skew:90, y: -10000}}
+        whileInView={{ skew:0}}
         transition={{ duration: 1 }}
         viewport={{ once: false }}>
       <span className="itemfoot item1f">Chemical Engineering</span>
@@ -82,7 +91,7 @@ const Homepage3 = () => {
               <li className="left-foot-1">Courses</li>
               <li className="left-foot-1">About Us</li>
               <li className="left-foot-1">Contact Us</li>
-              <li className="left-foot-1">Sign In</li>
+              <li onClick={signInClick} className="left-foot-1">Sign In</li>
               
         
             </ul>

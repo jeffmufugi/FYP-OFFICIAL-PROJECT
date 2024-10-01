@@ -25,9 +25,9 @@ export default function MainContent(){
       viewport={{ once: true }}>choose the right STEM<br />path with us.</motion.h1>
 
                 <div className="wdwd-txt">
-                  <p><strong>What do we do?</strong></p>
-                  <p>Help YOU gain insights into different STEM courses, understanding the<br />
-                  benefits, pay & job availability as well as the challenges.</p>
+                  <p><strong>Our goal:</strong></p>
+                  <p>Provide YOU with valuable insights into various STEM courses,<br/>highlighting the benefits, potential salaries, job opportunities, 
+                  <br/>as well as the challenges associated with each field.</p>
                 </div>
 
                 <div className="btn-main">
@@ -37,9 +37,9 @@ export default function MainContent(){
                   <a href="#second-section"><button className="btn2"> Explore Opportunities</button></a>
                 </div>
   
-                <p className="explore-txt">Explore different fields ALL based on certified DATA<br />
-                all to help you choose a course based on your<br /> 
-                interests and strengths.
+                <p className="explore-txt">
+                Explore different fields ALL based on certified DATA<br />
+                all to help you choose a course based on your interests and strengths.
                 </p>
         </div>
   
