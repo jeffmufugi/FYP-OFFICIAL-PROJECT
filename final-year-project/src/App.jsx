@@ -4,6 +4,8 @@ import Homepage2 from "./Homepage2.jsx";
 import Homepage3 from "./Homepage3.jsx";
 import SignUpPage from './SignUpPage.jsx';
 import SignInPage from './SignInPage.jsx';
+import ContactUs from './ContactUs.jsx';
+import AboutUs from './AboutUs.jsx';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           } />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/signin" element={<SignInPage />} />
+          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
       </div>
     </Router>

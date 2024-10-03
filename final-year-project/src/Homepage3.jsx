@@ -1,5 +1,5 @@
 
-import ai from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/atom.svg";
+import ai from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/atom1.svg";
 import {motion} from "framer-motion";
 import bg2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/bg4.png";
 import { useNavigate } from 'react-router-dom';
@@ -10,6 +10,13 @@ const Homepage3 = () => {
     const signInClick = () => {
       navigate('/signin');
     }
+    const contactUsClick = () => {
+      navigate('/contactus');
+    }
+    const AboutUsClick = () => {
+      navigate('/aboutus');
+    }
+  
 
 
     return (
@@ -17,18 +24,15 @@ const Homepage3 = () => {
             <img src={bg2} className="background-icon2"/>
             <div className="header3-top-section" >
                 <div className="header3-top-left-section">
-                    <motion.h1 className="main-txt3" initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
-                            transition={{ duration: 1 }}
-                            viewport={{ once: true }} >
+                    <motion.h1 className="main-txt3" initial={{ x: -100 ,opacity: 0 }}
+                        whileInView={{ x: 0 ,opacity: 1 }}
+                        transition={{ duration: 0.5,delay: 0.4 }}
+                        viewport={{ once: true }}>
                     Explore a world of possibilities <br/>in STEM education. <br/>Find the course that <br/>ignites your passion!
                     </motion.h1>
                 </div>
                 <div className="header3-top-right-section">
-                    <motion.button className="btn-vc" initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
-                            transition={{ duration: 1 }}
-                            viewport={{ once: true }}>View All Courses</motion.button>
+                    <button className="btn-vc">View All Courses</button>
 
                 </div>
             
@@ -89,8 +93,8 @@ const Homepage3 = () => {
     <div className="left-foot">
             <ul>
               <li className="left-foot-1">Courses</li>
-              <li className="left-foot-1">About Us</li>
-              <li className="left-foot-1">Contact Us</li>
+              <li onClick={AboutUsClick} className="left-foot-1">About Us</li>
+              <li onClick={contactUsClick} className="left-foot-1">Contact Us</li>
               <li onClick={signInClick} className="left-foot-1">Sign In</li>
               
         
@@ -99,7 +103,7 @@ const Homepage3 = () => {
 
     </div>
     <div className="mid-foot">
-    <img src={ai}/>
+    <img src={ai} className="footer3-img"/>
         </div>
     <div className="right-foot">
         <p>© 2024 Mufugi LLC. All right reserved.</p>

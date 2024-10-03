@@ -21,6 +21,8 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.AboutUsPage,
+.ContactUsPage,
 .sign-in-page,
 .third-section,
 .sign-up-page,
@@ -65,6 +67,11 @@ html, body {
   
 }
 
+.header1-img{
+  width: 40px;
+  height: 40px;
+}
+
 
 .mid-header{
   display: flex;
@@ -95,6 +102,11 @@ html, body {
 
 .left-hdr{
   flex: 1;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
 }
 /*
 .middle-hdr{
@@ -156,7 +168,7 @@ html, body {
 .wdwd-txt{
   font-family: 'Roboto Mono';
   color: #112222;
-  font-weight: 400;
+  font-weight: 500;
 
 }
 .wdwd-txt{
@@ -335,7 +347,7 @@ z-index: 1;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  max-width: 100%;         /* Ensure the content stays within the section bounds */
+  max-width: 100%;       
   overflow: hidden; 
   
 }
@@ -369,11 +381,6 @@ z-index: 1;
  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
  animation: fade-up 0.2s;
 }
-
-.left-hp2{
-  
-}
-
 .main-sect2{
   margin-top: 60px;
   display: flex;
@@ -415,8 +422,7 @@ z-index: 1;
   justify-content: end;
 }
 
-.sect2,.sect4{
-}
+
 
 .iconmain2{
 
@@ -456,6 +462,37 @@ z-index: 1;
   .main-txt2,.main-txt{
     font-size: 56px;
   }
+
+
+  .gears-container {
+    width: 200px; /* Adjust the container size */
+    height: 200px;
+
+  }
+
+  .gear1, .gear2, .gear3 {
+    width: 70px; /* Adjust the size of each gear */
+    height: 70px;
+    position: relative;
+
+ 
+  }
+
+  .gear1 {
+    left: 0;
+    top: 0;
+  }
+
+  .gear2 {
+    right: 0; /* Adjust right positioning for scaled size */
+    top: 0; /* Adjust top positioning for scaled size */
+  }
+
+  .gear3 {
+    bottom: 2;
+    left: 0;
+  }
+
 }
 
 @media (max-width: 745px){
@@ -501,11 +538,7 @@ z-index: 1;
 
 .gear1, .gear2, .gear3 {
   position: relative;
-  animation: rotate 1s linear infinite;
-  animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
+
 }
 
 .gear1 {
@@ -584,12 +617,12 @@ z-index: 1;
   
 }
 .btn-vc:hover{
-  transform: scale(1.02); /* Slightly increase the size of the button */
+  transform: scale(1.05); /* Slightly increase the size of the button */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
 }
 
 .btn-vc:active {
-  transform: scale(0.97); /* Make the button slightly smaller when clicked */
+  transform: scale(0.95); /* Make the button slightly smaller when clicked */
   box-shadow: none; /* Remove the shadow when the button is clicked */
 }
 
@@ -829,6 +862,7 @@ z-index: 1;
   flex: 1;
   position: relative;
   justify-content: center;
+  align-items: center;
   font-family: 'Roboto Mono';
  
 
@@ -848,6 +882,9 @@ z-index: 1;
   cursor: pointer;
   border-radius: 10px;
   transition: box-shadow 0.4s ease, background-color 0.4s ease; /* Smooth transition */
+}
+.left-foot li:hover {
+  text-decoration: underline; 
 }
 
 .right-foot{  
@@ -1059,7 +1096,7 @@ z-index: 1;
   position: absolute;
   right: 0;
   z-index: 1;
-  bottom: 1.1px;
+  bottom: 1.4px;
   background-color: #CDCDCD;
   padding-left: 4px;
   padding-bottom: 8px;
@@ -1218,3 +1255,295 @@ z-index: 1;
     display: block;
   }
   
+  .footer3-img{
+    width: 88px;
+    height: 88px;
+  }
+
+/* ----------------------------------------------CONTACT US PAGE SECTION PAGE---------------------------------------------- */
+.ContactUsPage{
+  display: flex;
+  flex-direction: column;
+  background-color: #CDCDCD;
+}
+
+.contact-us-header{
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  margin-bottom: 70px;
+}
+
+.left-contact-us-header{
+
+  flex: 1;
+  flex-direction: column;
+}
+
+.right-contact-us-header{
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center;
+}
+
+.contact-us-header-text{
+  font-size: 80px;
+  color: #51402F;
+  font-family: Inter, sans-serif;
+  font-weight: 900;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.top-left-contact-us-header{
+
+}
+
+.contact-us-to-homepage-icon{
+  width: 20px;
+  height: auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.contact-us-to-homepage-icon:hover{
+  transform: scale(1.02);
+
+}
+
+.contact-us-to-homepage-icon:active {
+  transform: scale(0.97); /* Make the button slightly smaller when clicked */
+}
+
+.top-left-contact-us-header{
+    flex: 1;
+  }
+
+.bottom-left-contact-us-header{
+    flex: 1;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.contact-us-main-section{
+  display: flex;
+  flex-direction: row;
+}
+
+.left-contact-us-main-section{
+  display: flex;
+  flex: 1;
+
+}
+.right-contact-us-main-section{
+  display: flex;
+  flex: 1;
+}
+
+.mid-contact-us-main-section{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+.left-mid-contact-us{
+  flex: 1;
+  flex-direction: column;
+  margin-right: 50px;
+}
+.right-mid-contact-us{
+  flex: 1;
+  flex-direction: column;
+  margin-left: 50px;
+
+}
+
+
+.input-field-4cu,
+.input-field-3cu,
+.input-field-2cu,
+.input-field-1cu{
+  width: 380px;
+  height: 100px;
+  position: relative;
+  margin-bottom: 20px;
+  
+}
+
+.input-field-4cu2,
+.input-field-1cu2,
+.input-field-2cu2,
+.input-field-3cu2{
+  width: 380px;
+  height: 172px;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+}
+
+
+
+.input-field-3cu input ,
+.input-field-2cu input ,
+.input-field-1cu input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid #51402F; 
+  background-color: transparent;
+  outline: none;
+  padding: 6px 0;
+  font-size: 20px; 
+  font-family: 'Roboto Mono';
+}
+.input-field-4cu input {
+  position: absolute;
+  bottom: 0;
+  height: 55px;
+  width: 380px;
+  font-size: 16px; 
+  font-family: 'Roboto Mono';
+  resize: both; /* User can resize both width and height */
+  overflow: auto; /* Adds a scrollbar if needed */
+
+}
+
+
+.mid-hdrcu{
+  font-family: 'Inter';
+  font-size: 30px;
+  font-weight: 900;
+  color: #51402F;
+  justify-content: center;
+  position: relative;
+  display: flex;
+
+}
+
+.cdtext{
+  font-family: "roboto mono";
+  color: #51402F;
+  text-align: center;
+  font-size: 15px;
+}
+
+.text-img1{
+  width: 60px;
+  height: 60px;
+  padding-bottom: 10px;
+}
+
+
+/* ----------------------------------------------ABOUT US PAGE SECTION PAGE---------------------------------------------- */
+.AboutUsPage{
+  display: flex;
+  flex-direction: column;
+  background-color: #dddddd;
+}
+
+.about-us-header{
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  margin-bottom: 70px;
+}
+
+.left-about-us-header{
+
+  flex: 1;
+  flex-direction: column;
+}
+
+.right-about-us-header{
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center;
+}
+
+.about-us-header-text{
+  font-size: 80px;
+  color: #163760;
+  font-family: Inter, sans-serif;
+  font-weight: 900;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.top-left-about-us-header{
+
+}
+
+.about-us-to-homepage-icon{
+  width: 20px;
+  height: auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.about-us-to-homepage-icon:hover{
+  transform: scale(1.02);
+
+}
+
+.about-us-to-homepage-icon:active {
+  transform: scale(0.97); /* Make the button slightly smaller when clicked */
+}
+
+.top-left-about-us-header{
+    flex: 1;
+  }
+
+.bottom-left-about-us-header{
+    flex: 1;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.about-us-main-section{
+  display: flex;
+  flex-direction: row;
+}
+
+.about-us-left-main-section{
+  display: flex;
+  flex: 0.5;
+}
+.about-us-mid-main-section{
+  display: flex;
+  flex: 1;
+  width: 600px;  /* Adjust this value as needed */
+  height: 400px; /* Adjust this value as needed */
+  background-color: #667A92; /* Light grey background */
+  border-radius: 50px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Center the div horizontally */
+}
+.about-us-right-main-section{
+  display: flex;
+  flex: 0.5;
+}
+
+.about-us-text{
+  font-family: 'Roboto Mono';
+  color: #CDCDCD;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+}
+
+.headerab-img{
+  width: 108px;
+  height: 108px;
+}

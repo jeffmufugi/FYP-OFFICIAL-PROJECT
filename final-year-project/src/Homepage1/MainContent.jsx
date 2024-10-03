@@ -25,8 +25,8 @@ export default function MainContent(){
       viewport={{ once: true }}>choose the right STEM<br />path with us.</motion.h1>
 
                 <div className="wdwd-txt">
-                  <p><strong>Our goal:</strong></p>
-                  <p>Provide YOU with valuable insights into various STEM courses,<br/>highlighting the benefits, potential salaries, job opportunities, 
+                  
+                  <p>We provide you with valuable insights into various STEM courses,<br/>highlighting the benefits, potential salaries, job opportunities, 
                   <br/>as well as the challenges associated with each field.</p>
                 </div>
 
