@@ -9,6 +9,7 @@ import location from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-ye
 import tech from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Tech icon12.svg"
 import rocketMan from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/RocketMan.svg"
 import {motion} from "framer-motion";
+import Header from "./Homepage1/Header1.jsx";
 
 export default function SignUpPage(){
     const navigate = useNavigate();
@@ -17,15 +18,21 @@ export default function SignUpPage(){
       navigate('/');
     }
 
+    const signInClick = () => {
+        navigate('/signin');
+      }
+    
+
     return(
       <>
       
         <div className="sign-up-page">
-        <img src={bg2} className="background-icon1"/>
+        <Header />
+        {/* <img src={bg2} className="background-icon1"/> */}
             <div className="sign-up-header">
                 <div className="left-sign-up-header">
                     <div className="top-left-sign-up-header">
-                        <img src={back} alt="back-icon" className="sign-up-to-homepage-icon" onClick={homepageClick}/>
+           
                     </div>
                     <div className="bottom-left-sign-up-header">
                     <motion.h1 className="sign-up-header-text"initial={{ opacity: 0 }}
@@ -73,6 +80,10 @@ export default function SignUpPage(){
                             <img src={lock} alt="person-icon" className="text-img"/>
                         </div>
 
+                        
+
+                        
+
 
                     </div>
                     <div className="right-mid-main-sign-up-form">
@@ -94,13 +105,20 @@ export default function SignUpPage(){
                         <div className="input-field-x">
                             <button className="register-btn-sp">Register</button>
                         </div>
+                        
                     </div>
+                   
+                    
                 
 
 
                 </motion.div>
-                <div className="right-main-sign-up-form"></div>
+                <div className="right-main-sign-up-form">
+               
+                </div>
+                
             </div>
+            <p className="sign-in-link-sip">Already Have an account?{" "}<a href="#" onClick={signInClick}>Sign in</a></p>
         </div>
       </>
     )

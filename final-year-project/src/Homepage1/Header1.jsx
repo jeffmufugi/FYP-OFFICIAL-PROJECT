@@ -1,19 +1,21 @@
 import { useNavigate } from 'react-router-dom';
 import ai from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/atom1.svg";
-export default function Header(){
+export default function Header1(){
 
   const navigate = useNavigate();
+
+
+  const homepageClick = () => {
+    navigate('/');
+  }
 
   const AboutUsClick = () => {
     navigate('/aboutus');
   }
 
-  const signUpClick = () => {
-    navigate('/signup');
-  }
 
-  const signInClick = () => {
-    navigate('/signin');
+  const homeClick = () => {
+    navigate('/');
   }
 
   const contactUsClick = () => {
@@ -29,18 +31,17 @@ return (
   <>
       <header className="header-list">
         <div className="left-hdr">
-        <img src={ai} className="header1-img"/>
+        <img src={ai} className="header1-img" onClick={homepageClick}/>
         </div>
           <div className="middle-hdr">
-            <ul className="mid-header">
+            <ul className="mid-header2">
+              <li onClick={homeClick}>Home</li>
               <li onClick={coursePageClick}>Courses</li>
-              <li onClick={AboutUsClick}>About Us</li>
               <li onClick={contactUsClick}>Contact Us</li>
-              <li onClick={signInClick}>Sign In</li>
+              <li onClick={AboutUsClick}>About Us</li>
             </ul>
           </div>
           <div className="right-hdr">
-                <button className="join-btn" onClick={signUpClick}>Click to Join</button>
           </div>
           
       </header>

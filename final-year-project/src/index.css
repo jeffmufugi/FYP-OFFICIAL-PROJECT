@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +22,7 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.coursePage,
 .AboutUsPage,
 .ContactUsPage,
 .sign-in-page,
@@ -35,13 +37,15 @@ html, body {
   display: flex;
   flex-direction: column; /* Flex layout to organize content */
 
+
 }
 
 /* ----------------------------------------------FIRST HOME PAGE SECTION PAGE---------------------------------------------- */
 .first-section {
   display: flex;
   flex-direction: column;
-  background-color: #dddddd;
+  background-color: #c9c9c9;
+  background-image: url("site_icons/Noise Light 220.png");
   overflow-x: hidden; /* Ensure no horizontal scrolling */
   
 }
@@ -61,15 +65,17 @@ html, body {
 .header-list{
   display: flex;
   flex-direction: row;
-  border-bottom: 2px solid #d5d5d5;
+  border-bottom: 2px solid #a4a4a4;
   padding: 10px 20px;
   z-index: 1;
-  
+  width: 100%;
+
 }
 
 .header1-img{
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 
@@ -108,6 +114,33 @@ html, body {
   justify-content: center;
 
 }
+/* HEADER 2 ADDITIONS*/
+.mid-header2{
+  display: flex;
+  list-style: none;
+  font-family: 'Roboto Mono';
+  color: rgb(60, 60, 60);
+}
+
+.mid-header2 li {
+  padding: 10px 20px;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: box-shadow 0.4s ease, background-color 0.4s ease; /* Smooth transition */
+}
+
+.mid-header2 li:hover {
+  background-color: rgba(0, 0, 0, 0.105);/*ptional: Darken the background color slightly on hover */
+  border-radius: 10px;
+}
+
+.mid-header2 li:active {
+  transform: scale(0.97); /* Make the button slightly smaller when clicked */
+}
+
+
 /*
 .middle-hdr{
 }
@@ -166,10 +199,10 @@ html, body {
 
 .explore-txt,
 .wdwd-txt{
-  font-family: 'Roboto Mono';
+  font-family: "roboto mono";
   color: #112222;
   font-weight: 500;
-
+  font-style: normal;
 }
 .wdwd-txt{
   margin-top: 20px;
@@ -343,7 +376,8 @@ z-index: 1;
 /* ----------------------------------------------SECOND HOME PAGE SECTION PAGE---------------------------------------------- */
 .second-section {
   /* Add styles for your second section */
-  background-color: #dddddd;
+  background-color: #c9c9c9;
+  background-image: url("site_icons/Noise Light 220.png");
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -399,13 +433,15 @@ z-index: 1;
 
 .inf-text{
   font-family: 'Roboto Mono';
-  color: #112222;
+  color: #c9c9c9;
   z-index: 1;
-  font-weight: 400;
-  
-
-  
+  font-weight: 500;
+  text-wrap: balance;
 }
+
+
+
+
 .sect4,
 .sect3,
 .sect2,
@@ -415,6 +451,7 @@ z-index: 1;
   z-index: 1;
   flex-direction: row;
   margin-bottom: 10px;
+
   
 }
 
@@ -435,6 +472,7 @@ z-index: 1;
 
 .sect1 .icon-container, .sect3 .icon-container {
   order: 2;
+  
 }
 .sect1 .section-content, .sect3 .section-content {
   order: 1;
@@ -447,7 +485,14 @@ z-index: 1;
 
 .section-content {
   flex: 1;
-  border-bottom: 1px solid #374d55; /* Adjust color as needed */
+  background-color: #374d55c7;
+  background-image: url("site_icons/Noise Light 220.png");
+  border-radius: 20px;
+  padding: 10px;
+
+
+  
+  
 }
 
 @media (max-width: 822px){
@@ -560,7 +605,8 @@ z-index: 1;
 .third-section{
   display: flex;
   flex-direction: column;
-  background-color: #dddddd;
+  background-color: #c9c9c9;
+  background-image: url("site_icons/Noise Light 220.png");
   overflow: hidden; 
   max-width: 100%;  
 
@@ -830,6 +876,7 @@ z-index: 1;
   flex: 0.5;
   z-index: 1;
   background-color: #CDD2BD;
+  background-image: url("site_icons/Noise Light 220.png");
 
 }
 
@@ -909,7 +956,8 @@ z-index: 1;
 .sign-up-page {
   display: flex;
   flex-direction: column;
-  background-color: #CDCDCD;
+  background-color: #aeadad;
+  background-image: url("site_icons/Noise Light 220.png");
   
 }
 
@@ -973,7 +1021,6 @@ z-index: 1;
 
 .main-sign-up-form{
   display: flex;
-  flex: 1;
   flex-direction: row;
   z-index: 1;
 
@@ -988,6 +1035,16 @@ z-index: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
+
+}
+
+.sign-in-link-sip{
+
+  font-family: roboto mono;
+  margin-top: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+
 }
 
 
@@ -1061,7 +1118,6 @@ z-index: 1;
 
 .right-main-sign-up-form{
   flex: 1;
-
 }
 
 
@@ -1097,10 +1153,10 @@ z-index: 1;
   right: 0;
   z-index: 1;
   bottom: 1.4px;
-  background-color: #CDCDCD;
   padding-left: 4px;
   padding-bottom: 8px;
-
+  background-color: #aeadad;
+  background-image: url("site_icons/Noise Light 220.png");
 }
 
 .TopPlaceHolder{
@@ -1118,7 +1174,8 @@ z-index: 1;
 .sign-in-page{
   display: flex;
   flex-direction: column;
-  background-color: #CDCDCD;
+  background-color: #aeadad;
+  background-image: url("site_icons/Noise Light 220.png");
 }
 
 .sign-in-header{
@@ -1254,17 +1311,26 @@ z-index: 1;
     z-index: 0;
     display: block;
   }
-  
+  .contact-us-icon{
+    width: 88px;
+    height: 88px;
+
+  }
   .footer3-img{
     width: 88px;
     height: 88px;
   }
+.reg-link-sip{
+  font-family: roboto mono;
+  margin-top: 20px;
 
+}
 /* ----------------------------------------------CONTACT US PAGE SECTION PAGE---------------------------------------------- */
 .ContactUsPage{
   display: flex;
   flex-direction: column;
-  background-color: #CDCDCD;
+  background-color: #aeadad;
+  background-image: url("site_icons/Noise Light 220.png");
 }
 
 .contact-us-header{
@@ -1440,11 +1506,13 @@ z-index: 1;
 }
 
 
+
 /* ----------------------------------------------ABOUT US PAGE SECTION PAGE---------------------------------------------- */
 .AboutUsPage{
   display: flex;
   flex-direction: column;
-  background-color: #dddddd;
+  background-color: #aeadad;
+  background-image: url("site_icons/Noise Light 220.png");
 }
 
 .about-us-header{
@@ -1517,10 +1585,9 @@ z-index: 1;
   flex: 0.5;
 }
 .about-us-mid-main-section{
+  background-image: url("site_icons/Noise Light 220.png");
   display: flex;
   flex: 1;
-  width: 600px;  /* Adjust this value as needed */
-  height: 400px; /* Adjust this value as needed */
   background-color: #667A92; /* Light grey background */
   border-radius: 50px; /* Rounded corners */
   padding: 20px;
@@ -1528,6 +1595,8 @@ z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 800px;
+  min-width: 300px;
   margin: 0 auto; /* Center the div horizontally */
 }
 .about-us-right-main-section{
@@ -1541,9 +1610,198 @@ z-index: 1;
   font-weight: 500;
   font-size: 24px;
   text-align: center;
+  text-wrap: balance;
+  overflow: scroll;
+  line-height: 1.6;
+  word-wrap: break-word;
 }
 
+
+
 .headerab-img{
-  width: 108px;
-  height: 108px;
+  width: 80px;
+  height: 80px;
+}
+
+/* ----------------------------------------------COURSE PAGE SECTION PAGE---------------------------------------------- */
+
+.coursePage{
+  background-color: #8F8E8E;
+  background-image: url("site_icons/Noise Light 220.png");
+  display: flex;
+  flex-direction: column;
+}
+.course-header{
+  display: flex;
+  flex-direction: row;
+}
+.left-course-header{
+  flex: 0.5;
+}
+.mid-course-header{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.right-course-header{flex: 0.5;}
+.main-course-txt{
+  font-size: 80px;
+  color: #DCEEFF;
+  font-family: Inter, sans-serif;
+  font-weight: 900;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+
+}
+.hdr-course-txt2{
+  font-size: 50px;
+  color: #DCEEFF;
+  font-family: Inter, sans-serif;
+  font-weight: 900;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+
+}
+
+
+.btn-course-view{
+  margin-top: 40px;
+  font-family: roboto mono, sans-serif;
+  font-weight: lighter;
+  background-color: #2A3C95;
+  font-size: 14px;
+  font-weight: bolder;
+  color: white;
+  border: none;
+  width: 309px;
+  height: 47px;
+  border-radius: 90px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
+
+}
+
+.btn-course-view:hover{
+  transform: scale(1.02); /* Slightly increase the size of the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
+}
+
+.btn-course-view:active {
+  transform: scale(0.97); /* Make the button slightly smaller when clicked */
+  box-shadow: none; /* Remove the shadow when the button is clicked */
+}
+
+.course-page-headings{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.left-hd-cs{
+}
+.mid-hd-cs{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+.right-hd-cs{}
+
+
+.main-course-section{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.left-main-cs{
+
+  flex: 0.25;
+}
+.mid-main-cs{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+
+}
+.right-main-cs{
+
+  flex:0.25;
+}
+
+.course-card{
+  position: relative;
+  height: 188px;
+  width: 100%;
+  z-index: 2;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.534);
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
+}
+
+.course-card:hover{
+  transform: scale(1.05);
+
+}
+
+.computer-science-ftr{
+  position: absolute;
+  height: 57px;
+  width: 100%;
+  bottom: 0px;
+  border-radius: 0px 0px 30px 30px;
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  
+}
+/* .txt-121{
+  font-family: roboto mono;
+  font-weight: 700;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  padding: 1rem;
+} */
+.txt-121 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding: 0 10px;
+}
+.imgcst{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+.course-program-card{
+  flex: 0 0 auto;
+  width: 197px;
+  margin-bottom: 20px;
+}
+
+
+.card-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.course-to-homepage-icon{
+  cursor: pointer;
+  margin: 1px 0px 0px 1px
 }

@@ -16,6 +16,10 @@ const Homepage3 = () => {
     const AboutUsClick = () => {
       navigate('/aboutus');
     }
+
+   const coursePageClick = () => {
+    navigate('/courses');
+  }
   
 
 
@@ -32,7 +36,7 @@ const Homepage3 = () => {
                     </motion.h1>
                 </div>
                 <div className="header3-top-right-section">
-                    <button className="btn-vc">View All Courses</button>
+                    <button className="btn-vc" onClick={coursePageClick}>View All Courses</button>
 
                 </div>
             
@@ -92,7 +96,7 @@ const Homepage3 = () => {
 <div className="bottom-llc">
     <div className="left-foot">
             <ul>
-              <li className="left-foot-1">Courses</li>
+              <li onClick={coursePageClick} className="left-foot-1">Courses</li>
               <li onClick={AboutUsClick} className="left-foot-1">About Us</li>
               <li onClick={contactUsClick} className="left-foot-1">Contact Us</li>
               <li onClick={signInClick} className="left-foot-1">Sign In</li>

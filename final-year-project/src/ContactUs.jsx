@@ -11,6 +11,7 @@ import phone1 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year
 import location from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/locationcd.svg"
 import tech from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Tech icon12.svg"
 import rocketMan from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/RocketMan.svg"
+import Header from "./Homepage1/Header1.jsx";
 export default function ContactUs(){
     const navigate = useNavigate();
 
@@ -22,21 +23,21 @@ export default function ContactUs(){
     return(
         <>
         <div className="ContactUsPage">
+        <Header />
         <img src={bg2} className="background-icon1"/>
             <div className="contact-us-header">
                 <div className="left-contact-us-header">
                 <div className="top-left-contact-us-header">
-                        <img src={back} alt="back-icon" className="contact-us-to-homepage-icon" onClick={homepageClick}/>
                     </div>
                 <div className="bottom-left-contact-us-header">
                 <motion.h1 className="contact-us-header-text"initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 1 }}
-                            viewport={{ once: true }}>contact<br/>Us.</motion.h1>
+                            viewport={{ once: true }}>contact Us.</motion.h1>
                 </div>
                 </div>
                 <div className="right-contact-us-header"> 
-                <img src={inst} className="sign-in-page-icon"/>
+                <img src={inst} className="contact-us-icon"/>
                 </div>
             </div>
             <div className='contact-us-main-section'>
@@ -44,7 +45,7 @@ export default function ContactUs(){
                 </div>
                 <div className='mid-contact-us-main-section'>
                     <div className='left-mid-contact-us'>
-                    <div className='mid-hdrcu'>online Inquiry.</div>
+                    <div className='mid-hdrcu'>Leave us a message!.</div>
                     <div className="input-field-1cu">
                             <p className="TopPlaceHolder">Name*</p>
                             <input type="text"/>
@@ -69,7 +70,7 @@ export default function ContactUs(){
                         </div>
                     </div>
                     <div className='right-mid-contact-us'>
-                    <div className='mid-hdrcu'>contact Details.</div>
+                    <div className='mid-hdrcu'>contact details.</div>
                     <div className="input-field-1cu2">
                         
                             <img src={email1} alt="person-icon" className="text-img1"/>

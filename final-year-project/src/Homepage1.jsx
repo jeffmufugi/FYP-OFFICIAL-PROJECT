@@ -8,7 +8,7 @@ import ICONS from "./site_icons/index.jsx";
 const Homepage1 = () => {
   return (
     <div className="first-section">
-      <img src={bg2} className="background-icon1"/>
+      {/* <img src={bg2} className="background-icon1"/> */}
 
       <Header />
       <MainContent />

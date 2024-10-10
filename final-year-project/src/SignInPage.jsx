@@ -5,7 +5,7 @@ import bg2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-pr
 import lock from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Lock2.svg"
 import email from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Email2.svg"
 import rocketL from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/RocketL.svg"
-
+import Header from "./Homepage1/Header1.jsx";
 
 export default function SignInPage(){
     const navigate = useNavigate();
@@ -13,17 +13,22 @@ export default function SignInPage(){
     const homepageClick = () => {
       navigate('/');
     }
+    const signUpClick = () => {
+        navigate('/signup');
+      }
+    
+
 
 
 
     return(
         <>
         <div className="sign-in-page">
-        <img src={bg2} className="background-icon1"/>
+        <Header />
+        {/* <img src={bg2} className="background-icon1"/> */}
             <div className="sign-in-header">
                 <div className="left-sign-in-header">
                 <div className="top-left-sign-in-header">
-                        <img src={back} alt="back-icon" className="sign-in-to-homepage-icon" onClick={homepageClick}/>
                     </div>
                 <div className="bottom-left-sign-in-header">
                 <motion.h1 className="sign-in-header-text"initial={{ opacity: 0 }}
@@ -58,6 +63,9 @@ export default function SignInPage(){
                     <button className="sign-in-button">
                         Sign In
                     </button>
+
+                    <p className="reg-link-sip">Not a member yet?{" "}<a href="#" onClick={signUpClick}>Register</a></p>
+
             
 
 

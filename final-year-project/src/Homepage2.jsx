@@ -44,7 +44,7 @@ const Homepage2 = () => {
       whileInView={{  x: 0,opacity: 1  }}
       transition={{ duration: 0.5,delay: 0.6 }}
       viewport={{ once: true }}>
-        <br/>Get access to real-life data on graduate employment rates, 
+        Get access to real-life data on graduate employment rates, 
         <br/>industry demand, and future job outlooks for different sectors. 
         <br/>Make your course decisions confidently with our detailed, 
         <br/>evidence-based insights.
@@ -57,11 +57,10 @@ const Homepage2 = () => {
       whileInView={{  x: 0,opacity: 1 }}
       transition={{ duration: 0.5,delay: 0.8 }}
       viewport={{ once: true }}>
-        <br/>Stay ahead with data on emerging trends in STEM fields. 
-        <br/>Learn about job growth, salary projections, and 
-        <br/>the specific skills employers are looking for. 
-        <br/>Our insights help you make informed decisions on the 
-        <br/>STEM courses that will lead you to success.
+        Stay ahead with data on emerging trends in STEM fields. 
+        <br/>Learn about job growth, salary projections, and the specific skills
+        <br/> employers are looking for. Our insights help you make
+        <br/> informed decisions on the STEM courses that will lead you to success.
       </motion.div>,
       className: "sect4",
       icon: i4
