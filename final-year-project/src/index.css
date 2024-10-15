@@ -65,7 +65,7 @@ html, body {
 .header-list{
   display: flex;
   flex-direction: row;
-  border-bottom: 2px solid #a4a4a4;
+
   padding: 10px 20px;
   z-index: 1;
   width: 100%;
@@ -119,12 +119,12 @@ html, body {
   display: flex;
   list-style: none;
   font-family: 'Roboto Mono';
-  color: rgb(60, 60, 60);
+
 }
 
 .mid-header2 li {
   padding: 10px 20px;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 16px;
   cursor: pointer;
   border-radius: 10px;
@@ -436,7 +436,7 @@ z-index: 1;
   color: #c9c9c9;
   z-index: 1;
   font-weight: 500;
-  text-wrap: balance;
+
 }
 
 
@@ -875,8 +875,10 @@ z-index: 1;
   display: flex;
   flex: 0.5;
   z-index: 1;
-  background-color: #CDD2BD;
-  background-image: url("site_icons/Noise Light 220.png");
+  background:linear-gradient(180deg, #cacaca 0%, #c7feff 100%)
+
+  
+  /* background-image: url("site_icons/Noise Light 220.png"); */
 
 }
 
@@ -1312,8 +1314,8 @@ z-index: 1;
     display: block;
   }
   .contact-us-icon{
-    width: 88px;
-    height: 88px;
+    width: calc(248.91px - 100px);
+    height: calc(234.49px - 100px);
 
   }
   .footer3-img{
@@ -1341,9 +1343,13 @@ z-index: 1;
 }
 
 .left-contact-us-header{
-
-  flex: 1;
+  display: flex;
   flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  
+  
 }
 
 .right-contact-us-header{
@@ -1356,7 +1362,7 @@ z-index: 1;
 
 .contact-us-header-text{
   font-size: 80px;
-  color: #51402F;
+  color: #473755;
   font-family: Inter, sans-serif;
   font-weight: 900;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -1461,7 +1467,7 @@ z-index: 1;
   bottom: 0;
   width: 100%;
   border: none;
-  border-bottom: 1.5px solid #51402F; 
+  border-bottom: 1.5px solid #473755; 
   background-color: transparent;
   outline: none;
   padding: 6px 0;
@@ -1485,7 +1491,7 @@ z-index: 1;
   font-family: 'Inter';
   font-size: 30px;
   font-weight: 900;
-  color: #51402F;
+  color: #473755;
   justify-content: center;
   position: relative;
   display: flex;
@@ -1494,7 +1500,7 @@ z-index: 1;
 
 .cdtext{
   font-family: "roboto mono";
-  color: #51402F;
+  color: black;
   text-align: center;
   font-size: 15px;
 }
@@ -1520,21 +1526,10 @@ z-index: 1;
   flex-direction: row;
   z-index: 1;
   margin-bottom: 70px;
+  margin-top: 10px;
+  justify-content: center;
 }
 
-.left-about-us-header{
-
-  flex: 1;
-  flex-direction: column;
-}
-
-.right-about-us-header{
-  flex: 1;
-  position: relative;
-  display: flex;
-  justify-content: center; /* Horizontally centers the content */
-  align-items: center;
-}
 
 .about-us-header-text{
   font-size: 80px;
@@ -1598,6 +1593,13 @@ z-index: 1;
   max-width: 800px;
   min-width: 300px;
   margin: 0 auto; /* Center the div horizontally */
+  container-type: inline-size;
+
+}
+
+
+@container (width > 45ch){
+
 }
 .about-us-right-main-section{
   display: flex;
@@ -1804,4 +1806,11 @@ z-index: 1;
 .course-to-homepage-icon{
   cursor: pointer;
   margin: 1px 0px 0px 1px
+}
+
+.background-top-light{
+  position: absolute;
+  width: 100%;
+  padding: 0;
+
 }

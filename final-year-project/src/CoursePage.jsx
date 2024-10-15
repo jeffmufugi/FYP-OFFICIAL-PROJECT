@@ -19,6 +19,7 @@ import dat from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-pr
 import air from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/air.svg";
 import cyb from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/cyb.svg";
 import mar from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/mar.svg";
+import rec from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/rec3.png";
 
 export default function CoursePage(){
 
@@ -149,6 +150,7 @@ export default function CoursePage(){
     return(
         <>
         <div className="coursePage">
+        <img src={rec} className="background-top-light"/>
         <Header />
             <div className="course-header">
                 <div className="left-course-header">

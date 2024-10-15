@@ -9,6 +9,7 @@ import location from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-ye
 import tech from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Tech icon12.svg"
 import rocketMan from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/RocketMan.svg"
 import {motion} from "framer-motion";
+import rec from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/rec1.png";
 import Header from "./Homepage1/Header1.jsx";
 
 export default function SignUpPage(){
@@ -27,8 +28,10 @@ export default function SignUpPage(){
       <>
       
         <div className="sign-up-page">
+        <img src={rec} className="background-top-light"/>
         <Header />
         {/* <img src={bg2} className="background-icon1"/> */}
+
             <div className="sign-up-header">
                 <div className="left-sign-up-header">
                     <div className="top-left-sign-up-header">

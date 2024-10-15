@@ -5,6 +5,7 @@ import ai from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-pro
 import bg2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/bg4.png";
 import Homepage3 from "./Homepage3.jsx";
 import Header from "./Homepage1/Header1.jsx";
+import rec from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/rec3.png";
 export default function AboutUs(){
     const navigate = useNavigate();
     const homepageClick = () => {
@@ -14,22 +15,19 @@ export default function AboutUs(){
     return(
         <>
         <div className="AboutUsPage">
+        <img src={rec} className="background-top-light"/>
         <Header />
         <img src={bg2} className="background-icon2"/>
             <div className="about-us-header">
-                <div className="left-about-us-header">
-                    <div className="top-left-about-us-header">
-                        
-                    </div>
-                    <div className="bottom-left-about-us-header">
+               
+                    
                     <motion.h1 className="about-us-header-text" initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 1 }}
                             viewport={{ once: true }}>about Us.</motion.h1>
-                    </div>
-                </div>
-                <div className="right-about-us-header">
-                </div>
+                    
+            
+                
             </div>
             <div className='about-us-main-section'>
                 <div className='about-us-left-main-section'></div>
@@ -49,7 +47,7 @@ export default function AboutUs(){
                 <div className='about-us-right-main-section'></div>
             </div>
         </div>
-        <Homepage3 />
+
         </>
     )
 }

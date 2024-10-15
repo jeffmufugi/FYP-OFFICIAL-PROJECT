@@ -3,11 +3,13 @@ import Header from "./Homepage1/Header.jsx";
 import MainContent from "./Homepage1/MainContent.jsx";
 import bg2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/bgech1.png";
 import ICONS from "./site_icons/index.jsx";
+import rec from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/rec3.png";
 
 
 const Homepage1 = () => {
   return (
     <div className="first-section">
+         <img src={rec} className="background-top-light"/>
       {/* <img src={bg2} className="background-icon1"/> */}
 
       <Header />
@@ -26,6 +28,7 @@ const Footer = () => {
 
   return (
     <div className="footer">
+      
       <div className="footer-images">
         {iconsArray.map((icon, index) => (
           <img

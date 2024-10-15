@@ -5,6 +5,7 @@ import bg2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-pr
 import lock from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Lock2.svg"
 import email from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Email2.svg"
 import rocketL from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/RocketL.svg"
+import rec from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/rec3.png";
 import Header from "./Homepage1/Header1.jsx";
 
 export default function SignInPage(){
@@ -24,6 +25,7 @@ export default function SignInPage(){
     return(
         <>
         <div className="sign-in-page">
+        <img src={rec} className="background-top-light"/>
         <Header />
         {/* <img src={bg2} className="background-icon1"/> */}
             <div className="sign-in-header">

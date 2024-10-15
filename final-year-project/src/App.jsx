@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={
             <>
               <Homepage1 />
-              <Homepage2 />
+              {/* <Homepage2 /> */}
               <Homepage3 />
             </>
           } />

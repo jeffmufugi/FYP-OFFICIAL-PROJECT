@@ -2,16 +2,17 @@ import { useNavigate } from 'react-router-dom';
 import back from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/backcd.svg"
 import {motion} from "framer-motion";
 import bg2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/bgech1.png";
-import person from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Personb.svg"
+import person from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Person.svg"
 import inst from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/inst3.svg"
-import email from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Emailb.svg"
+import email from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Email.svg"
 import email1 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/mailcd.svg"
-import phone from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Phone enabledb.svg"
+import phone from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Phone enabled.svg"
 import phone1 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/phonecd.svg"
 import location from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/locationcd.svg"
 import tech from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Tech icon12.svg"
 import rocketMan from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/RocketMan.svg"
 import Header from "./Homepage1/Header1.jsx";
+import rec from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/rec1.png";
 export default function ContactUs(){
     const navigate = useNavigate();
 
@@ -23,6 +24,7 @@ export default function ContactUs(){
     return(
         <>
         <div className="ContactUsPage">
+        <img src={rec} className="background-top-light"/>
         <Header />
         <img src={bg2} className="background-icon1"/>
             <div className="contact-us-header">
@@ -45,7 +47,7 @@ export default function ContactUs(){
                 </div>
                 <div className='mid-contact-us-main-section'>
                     <div className='left-mid-contact-us'>
-                    <div className='mid-hdrcu'>Leave us a message!.</div>
+                    <div className='mid-hdrcu'>message us.</div>
                     <div className="input-field-1cu">
                             <p className="TopPlaceHolder">Name*</p>
                             <input type="text"/>
