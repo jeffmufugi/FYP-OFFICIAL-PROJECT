@@ -1,0 +1,24 @@
+GET http://localhost:3000/users/
+
+###
+
+PUT http://localhost:3000/users/670915cac3d1a618d6dff7c4
+
+###
+
+POST http://localhost:3000/api/signup/
+Content-Type: application/json
+
+{
+      "firstname"  : "jeffw",
+        "lastname" : "mufugi",
+       "email" : "mufugi.michelo@gmail.com",
+        "phoneNo" :"01114421148",
+        "region": "usa",
+        "password" : "mfg"
+}
+
+###
+
+
+DELETE http://localhost:3000/users/670915cac3d1a618d6dff7c4

@@ -68,7 +68,7 @@ export default function ContactUs(){
 
                         <div className="input-field-4cu">
                             <p className="TopPlaceHolder">Message*</p>
-                            <input type="text"/>
+                            <textarea className="txt-box"></textarea>
                         </div>
                     </div>
                     <div className='right-mid-contact-us'>

@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import {motion, useInView} from "framer-motion";
 
 
+
 export default function MainContent(){
 
     const navigate = useNavigate();
@@ -34,7 +35,7 @@ export default function MainContent(){
                   <button className="btn1" onClick={signUpClick}>
                     Join Today!
                   </button>
-                  <a href="#second-section"><button className="btn2"> Explore Opportunities</button></a>
+                  <a href="#third-section"><button className="btn2"> Explore Opportunities</button></a>
                 </div>
   
                 <p className="explore-txt">

@@ -9,8 +9,20 @@ import ContactUs from './ContactUs.jsx';
 import AboutUs from './AboutUs.jsx';
 import CoursePage from './CoursePage.jsx';
 import ScrollToTop from './scroll.jsx';
+import { useEffect,useState } from 'react';
 
 function App() {
+
+  // const [backendData,setbackendData] = useState([{}]);
+  // useEffect(()=>{
+  //    fetch("/users").then(
+  //     response => response.json()
+  //    ).then(
+  //     data => setbackendData(data)
+  //    )
+  // },[])
+
+
   return (
     <Router>
       <ScrollToTop />

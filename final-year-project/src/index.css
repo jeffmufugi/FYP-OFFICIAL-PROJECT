@@ -200,8 +200,8 @@ html, body {
 .explore-txt,
 .wdwd-txt{
   font-family: "roboto mono";
-  color: #112222;
-  font-weight: 500;
+  color: #0b4545;
+  font-weight: 400;
   font-style: normal;
 }
 .wdwd-txt{
@@ -359,19 +359,90 @@ z-index: 1;
  transform: scale(1.03);
 }
 
-@media (max-width: 1000px) {
-  .footer-images {
-    overflow-x: auto;
-    white-space: nowrap;
+@media (max-width: 860px) {
+
+
+  .main-txt,.main-txt3{
+    font-size: 50px;
+    
+  
   }
 
-  .footer-image {
-    position: static;
-    display: inline-block;
-    height: 50%;
-    width: auto;
+  .mid-header li {
+    font-size: 12px;
   }
+  .join-btn{
+    width: 120px;
+    height: 22px;
+    font-size: 12px;
+  }
+
+  
+  .explore-txt,
+  .wdwd-txt{
+    font-family: "roboto mono";
+    color: #0b4545;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+  }
+
+  
 }
+
+
+
+@media (max-width: 679px){
+
+  .main-txt,.main-txt3{
+    font-size: 40px;
+    
+  
+  }
+
+  .mid-header li {
+    font-size: 9px;
+  }
+  .join-btn{
+    width: 120px;
+    height: 22px;
+    font-size: 12px;
+  }
+
+  
+  .explore-txt,
+  .wdwd-txt{
+
+    font-size: 12px;
+  }
+
+}
+
+
+
+@media (max-width: 575px){
+  .main-txt,
+  .main-txt3 {
+    font-size: 10px;
+  }
+
+  .mid-header li {
+    font-size: 2px; /* Fixed typo */
+  }
+
+  .join-btn {
+    width: 120px;
+    height: 22px;
+    font-size: 10px;
+  }
+
+  .explore-txt,
+  .wdwd-txt {
+    font-size: 2px;
+  }
+
+}
+
 
 /* ----------------------------------------------SECOND HOME PAGE SECTION PAGE---------------------------------------------- */
 .second-section {
@@ -495,77 +566,6 @@ z-index: 1;
   
 }
 
-@media (max-width: 822px){
-  .mid-header li {
-    font-size: 12px;
-  }
-  .join-btn{
-    width: 120px;
-    height: 22px;
-    font-size: 12px;
-  }
-  .main-txt2,.main-txt{
-    font-size: 56px;
-  }
-
-
-  .gears-container {
-    width: 200px; /* Adjust the container size */
-    height: 200px;
-
-  }
-
-  .gear1, .gear2, .gear3 {
-    width: 70px; /* Adjust the size of each gear */
-    height: 70px;
-    position: relative;
-
- 
-  }
-
-  .gear1 {
-    left: 0;
-    top: 0;
-  }
-
-  .gear2 {
-    right: 0; /* Adjust right positioning for scaled size */
-    top: 0; /* Adjust top positioning for scaled size */
-  }
-
-  .gear3 {
-    bottom: 2;
-    left: 0;
-  }
-
-}
-
-@media (max-width: 745px){
-  .mid-header li {
-    font-size: 9px;
-  }
-
-  .main-txt2,.main-txt{
-    font-size: 46px;
-  }
-  /* .join-btn{
-
-
-  } */
-  .inf-text{
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 613px){
-  .mid-header li {
-    font-size: 4px;
-  }
-  /* .join-btn{
-
-
-  } */
-}
 
 .right-hp2 {
   /* parent div of gears */
@@ -1190,6 +1190,9 @@ z-index: 1;
 
   flex: 1;
   flex-direction: column;
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center;
+  display: flex;
 }
 
 .right-sign-in-header{
@@ -1432,15 +1435,35 @@ z-index: 1;
 }
 
 
-.input-field-4cu,
+
 .input-field-3cu,
 .input-field-2cu,
 .input-field-1cu{
   width: 380px;
   height: 100px;
   position: relative;
-  margin-bottom: 20px;
-  
+  margin-bottom: 20px;  
+}
+
+.input-field-4cu{
+  width: 380px;
+  height: 200px;
+  position: absolute;
+  margin-bottom: 20px;  
+  font-size: 20px;
+}
+
+.input-field-4cu .txt-box {
+  width: 100%;
+  height: 120px;
+  min-height: 120px;
+  max-height: 180px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 10px 10px 10px;
+  font-size: 20px;
+  resize: vertical;
+  box-sizing: border-box;
 }
 
 .input-field-4cu2,
@@ -1474,23 +1497,39 @@ z-index: 1;
   font-size: 20px; 
   font-family: 'Roboto Mono';
 }
-.input-field-4cu input {
+.input-field-4cu .txt-box {
   position: absolute;
   bottom: 0;
   height: 55px;
-  width: 380px;
-  font-size: 16px; 
+  min-width: 250px;
+  max-width: 380px;
+  font-size: 10px; 
   font-family: 'Roboto Mono';
   resize: both; /* User can resize both width and height */
   overflow: auto; /* Adds a scrollbar if needed */
+  min-height: 120px;
+  max-height: 140px;
 
+
+}
+
+.input-field-4cu .resize-icon {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.input-field-4cu:hover .resize-icon {
+  opacity: 1;
 }
 
 
 .mid-hdrcu{
-  font-family: 'Inter';
+  font-family: 'roboto mono';
   font-size: 30px;
-  font-weight: 900;
+  font-weight: 300;
   color: #473755;
   justify-content: center;
   position: relative;
@@ -1576,33 +1615,26 @@ z-index: 1;
 }
 
 .about-us-left-main-section{
-  display: flex;
+
   flex: 0.5;
 }
 .about-us-mid-main-section{
   background-image: url("site_icons/Noise Light 220.png");
   display: flex;
-  flex: 1;
   background-color: #667A92; /* Light grey background */
-  border-radius: 50px; /* Rounded corners */
+  border-radius: 70px; /* Rounded corners */
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 800px;
-  min-width: 300px;
+  width: 800px;
   margin: 0 auto; /* Center the div horizontally */
-  container-type: inline-size;
+    
 
 }
 
-
-@container (width > 45ch){
-
-}
 .about-us-right-main-section{
-  display: flex;
+
   flex: 0.5;
 }
 
@@ -1624,6 +1656,63 @@ z-index: 1;
   width: 80px;
   height: 80px;
 }
+@media (max-width: 800px) {
+  .about-us-header-text {
+    /* Add your styles here */
+  }
+
+  .about-us-mid-main-section {
+   width:600px
+  }
+
+  .about-us-text {
+    font-size: 19.2px; /* Example: Reduce font size by a percentage manually */
+  }
+
+}
+
+@media (max-width: 600px) {
+  .about-us-header-text {
+    /* Add your styles here */
+    font-size: 60px;
+  }
+
+  .about-us-mid-main-section {
+   width:500px
+  }
+
+  .about-us-text {
+    font-size: 15.2px; /* Example: Reduce font size by a percentage manually */
+  }
+  .mid-header2 li {
+    font-size: 12px;
+
+  }
+  
+
+}
+
+@media (max-width: 500px) {
+  .about-us-header-text {
+    font-size: 50px;
+  }
+
+  .about-us-mid-main-section {
+   width:300px;
+   height: 250px
+  }
+
+  .about-us-text {
+    font-size: 10.2px; /* Example: Reduce font size by a percentage manually */
+  }
+  .mid-header2 li {
+    font-size: 7px;
+
+  }
+  
+
+}
+
 
 /* ----------------------------------------------COURSE PAGE SECTION PAGE---------------------------------------------- */
 
@@ -1722,18 +1811,17 @@ z-index: 1;
 
 .left-main-cs{
 
-  flex: 0.25;
+  flex: 0.5;
 }
 .mid-main-cs{
   display: flex;
-  flex: 1;
   flex-direction: column;
-  width: 100%;
+  width: 1150px;
 
 }
 .right-main-cs{
 
-  flex:0.25;
+  flex:0.55;
 }
 
 .course-card{
@@ -1812,5 +1900,96 @@ z-index: 1;
   position: absolute;
   width: 100%;
   padding: 0;
+
+}
+
+
+
+@media (max-width: 860px) {
+
+
+  .main-txt,.main-txt3{
+    font-size: 60px;
+    
+  
+  }
+
+  .mid-header li {
+    font-size: 12px;
+  }
+  .join-btn{
+    width: 120px;
+    height: 22px;
+    font-size: 12px;
+  }
+
+  
+  .explore-txt,
+  .wdwd-txt{
+    font-family: "roboto mono";
+    color: #0b4545;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+  }
+
+  
+}
+
+
+
+@media (max-width: 679px){
+
+  .main-txt,.main-txt3{
+    font-size: 50px;
+    
+  
+  }
+
+  .mid-header li {
+    font-size: 11px;
+  }
+  .join-btn{
+    width: 120px;
+    height: 22px;
+    font-size: 12px;
+  }
+
+  
+  .explore-txt,
+  .wdwd-txt{
+    font-family: "roboto mono";
+    color: #0b4545;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575px){
+  .main-txt,.main-txt3{
+    font-size: 40px;
+    
+  
+  }
+
+  .mid-header li {
+    font-size: 9px;
+  }
+  .join-btn{
+    width: 120px;
+    height: 22px;
+    font-size: 12px;
+  }
+
+  
+  .explore-txt,
+  .wdwd-txt{
+    font-family: "roboto mono";
+    color: #0b4545;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+  }
 
 }
