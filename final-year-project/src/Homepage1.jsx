@@ -1,9 +1,8 @@
 
 import Header from "./Homepage1/Header.jsx";
 import MainContent from "./Homepage1/MainContent.jsx";
-import bg2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/bgech1.png";
 import ICONS from "./site_icons/index.jsx";
-import rec from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/rec3.png";
+import rec from "../src/site_icons/rec3.png";
 
 
 const Homepage1 = () => {
@@ -30,13 +29,15 @@ const Footer = () => {
     <div className="footer">
       
       <div className="footer-images">
-        {iconsArray.map((icon, index) => (
+        {
+        iconsArray.map((icon, index) => (
           <img
             key={index}
             src={icon}
             alt={`Icon ${index + 1}`}
             className="footer-image"
           />
+
         ))}
       </div>
     </div>

@@ -1,12 +1,12 @@
-import g1 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Gear1.svg";
-import g2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Gears2.svg";
-import g3 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Gears3.svg";
-import {motion} from "framer-motion";
-import bg2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/lines.svg";
-import i4 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/PriceIcon.svg";
-import i1 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/BookIcon.svg";
-import i3 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/AssessmentIcon.svg";
-import i2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/BalanceIcon.svg";
+import g1 from "./site_icons/Gear1.svg";
+import g2 from "./site_icons/Gears2.svg";
+import g3 from "./site_icons/Gears3.svg";
+import { motion } from "framer-motion";
+import bg2 from "./site_icons/lines.svg";
+import i4 from "./site_icons/PriceIcon.svg";
+import i1 from "./site_icons/BookIcon.svg";
+import i3 from "./site_icons/AssessmentIcon.svg";
+import i2 from "./site_icons/BalanceIcon.svg";
 
 
 

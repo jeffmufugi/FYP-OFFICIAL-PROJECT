@@ -2,28 +2,34 @@
 import { useNavigate } from 'react-router-dom';
 import {motion} from "framer-motion";
 import Header from "./Homepage1/Header1.jsx";
-import back from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/backab.svg"
-import ai from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/atom1.svg";
-import cst from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/cst.svg";
-import mec from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/mec.svg";
-import chem from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/chem.svg";
-import phy from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/phy.svg";
-import ast from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/ast.svg";
-import bio from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/bio.svg";
-import mat from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/mat.svg";
-import rob from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/rob.svg";
-import civ from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/civ.svg";
-import nuc from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/nuc.svg";
-import geo from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/geo.svg";
-import dat from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/dat.svg";
-import air from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/air.svg";
-import cyb from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/cyb.svg";
-import mar from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/mar.svg";
-import rec from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/rec3.png";
+import back from "../src/site_icons/backab.svg";
+import ai from "../src/site_icons/atom1.svg";
+import cst from "../src/site_icons/cst.svg";
+import mec from "../src/site_icons/mec.svg";
+import chem from "../src/site_icons/chem.svg";
+import phy from "../src/site_icons/phy.svg";
+import ast from "../src/site_icons/ast.svg";
+import bio from "../src/site_icons/bio.svg";
+import mat from "../src/site_icons/mat.svg";
+import rob from "../src/site_icons/rob.svg";
+import civ from "../src/site_icons/civ.svg";
+import nuc from "../src/site_icons/nuc.svg";
+import geo from "../src/site_icons/geo.svg";
+import dat from "../src/site_icons/dat.svg";
+import air from "../src/site_icons/air.svg";
+import cyb from "../src/site_icons/cyb.svg";
+import mar from "../src/site_icons/mar.svg";
+import rec from "../src/site_icons/rec3.png";
+
 
 export default function CoursePage(){
 
+    const navigate = useNavigate();
+    const csCourseClick = () => {
+      navigate('/cscoursepage');
+    }
 
+    
 
     let courses = [
         {courseName: "Computer Science", 
@@ -31,6 +37,7 @@ export default function CoursePage(){
         upColor: "#F0F6B0",
         downColor: "#52A1AD",
         fontcolor: "white",
+        route: csCourseClick,
         id: 1},
         
         {courseName: "Mechanical Engineering", 
@@ -130,18 +137,7 @@ export default function CoursePage(){
         upColor: "#DED1E2",
         downColor: "#B2CEC0",
         fontcolor: "black",
-        id: 5},
-
-        
-
-     
-
-
-     
-
-     
-
-        
+        id: 5}
         ];
 
     
@@ -184,14 +180,15 @@ export default function CoursePage(){
                         {courses.map((course)=>( 
                             
                          <div className="course-program-card">
-                            <div className="course-card" key={course.id} style={{backgroundColor : course.upColor}}>
+                            <div className="course-card" key={course.id} style={{backgroundColor : course.upColor}} onClick={course.route}>
                             <img src={course.imgName} className="imgcst"/>
                             <div className="computer-science-ftr" style={{backgroundColor : course.downColor}}>
                                 <p className="txt-121" style={{color : course.fontcolor}}>{course.courseName}</p>
                             </div>
                         </div>
                     </div>
-                        ))}
+                        ))
+                        }
 
                     </motion.div>
                   

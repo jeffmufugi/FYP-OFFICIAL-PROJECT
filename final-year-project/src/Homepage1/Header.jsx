@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import ai from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/atom1.svg";
+import ai from "../site_icons/atom1.svg";
 export default function Header(){
 
   const navigate = useNavigate();

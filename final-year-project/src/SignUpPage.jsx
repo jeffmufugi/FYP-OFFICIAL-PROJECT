@@ -1,21 +1,28 @@
-import back from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/back-arrow.svg"
+import back from "./site_icons/back-arrow.svg";
 import { useNavigate } from 'react-router-dom';
-import bg2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/lines.svg";
-import person from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Person.svg"
-import lock from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Lock1.svg"
-import email from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Email.svg"
-import phone from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Phone enabled.svg"
-import location from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Location on.svg"
-import tech from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Tech icon12.svg"
-import rocketMan from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/RocketMan.svg"
-import {motion} from "framer-motion";
-import rec from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/rec1.png";
+import bg2 from "./site_icons/lines.svg";
+import person from "./site_icons/Person.svg";
+import lock from "./site_icons/Lock1.svg";
+import email from "./site_icons/Email.svg";
+import phone from "./site_icons/Phone enabled.svg";
+import location from "./site_icons/Location on.svg";
+import tech from "./site_icons/Tech icon12.svg";
+import rocketMan from "./site_icons/RocketMan.svg";
+import { motion } from "framer-motion";
+import rec from "./site_icons/rec1.png";
+import dd from "./site_icons/dropdown.svg";
 import Header from "./Homepage1/Header1.jsx";
 import axios from 'axios';
 import React, { useState } from 'react';
 
+
 export default function SignUpPage() {
     const navigate = useNavigate();
+
+    const countries = [
+        "North America","Asia","South America","Europe","Africa","Middle East"
+      ];
+
     const [formData, setFormData] = useState({
         firstname: '',
         lastname: '',
@@ -80,7 +87,10 @@ export default function SignUpPage() {
                     </div>
                 </div>
                 <div className="right-sign-up-header">
-                    <img src={rocketMan} alt="page-icon" className="sign-up-page-icon"/>
+                    <motion.img src={rocketMan} alt="page-icon" className="sign-up-page-icon" initial={{ x: -100 ,opacity: 0 }}
+                        whileInView={{ x: 0 ,opacity: 1 }}
+                        transition={{ duration: 0.5,delay: 0 }}
+                        viewport={{ once: true }}/>
                 </div>
             </div>
             <form onSubmit={handleSubmit} className="main-sign-up-form">
@@ -120,9 +130,18 @@ export default function SignUpPage() {
                         </div>
                         <div className="input-field-6">
                             <p className="TopPlaceHolder">Region*</p>
-                            <input type="text" name="region" value={formData.region} onChange={handleChange} required />
+                            <select type="text" name="region" value={formData.region} onChange={handleChange} required>
+                            <option value=""></option>
+                                    {countries.map((country, index) => (
+                                    <option key={index} value={country}>
+                                        {country}
+                                    </option>
+                                    ))}
+                                </select>
+                            
                             <img src={location} alt="location-icon" className="text-img"/>
                         </div>
+                        
                         <div className="input-field-7">
                             <p className="TopPlaceHolder">Password*</p>
                             <input type="password" name="password" value={formData.password} onChange={handleChange} required />

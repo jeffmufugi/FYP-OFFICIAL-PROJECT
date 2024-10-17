@@ -9,6 +9,7 @@ import ContactUs from './ContactUs.jsx';
 import AboutUs from './AboutUs.jsx';
 import CoursePage from './CoursePage.jsx';
 import ScrollToTop from './scroll.jsx';
+import ComputerScienceCourse from './CoursesPage/ComputerScience.jsx'
 import { useEffect,useState } from 'react';
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/courses" element={<CoursePage />} />
+          <Route path="/cscoursepage" element={<ComputerScienceCourse />} />
         </Routes>
       </div>
     </Router>

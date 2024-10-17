@@ -1,11 +1,12 @@
 import { useNavigate } from 'react-router-dom';
-import back from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/backab.svg"
-import {motion} from "framer-motion";
-import ai from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/atom1.svg";
-import bg2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/bg4.png";
+import back from "./site_icons/backab.svg";
+import { motion } from "framer-motion";
+import ai from "./site_icons/atom1.svg";
+import bg2 from "./site_icons/bg4.png";
 import Homepage3 from "./Homepage3.jsx";
 import Header from "./Homepage1/Header1.jsx";
-import rec from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/rec3.png";
+import rec from "./site_icons/rec3.png";
+
 export default function AboutUs(){
     const navigate = useNavigate();
     const homepageClick = () => {

@@ -22,6 +22,7 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.cs-course-page,
 .coursePage,
 .AboutUsPage,
 .ContactUsPage,
@@ -39,6 +40,7 @@ html, body {
 
 
 }
+
 
 /* ----------------------------------------------FIRST HOME PAGE SECTION PAGE---------------------------------------------- */
 .first-section {
@@ -83,14 +85,14 @@ html, body {
   display: flex;
   list-style: none;
   font-family: 'Roboto Mono';
-  color: rgb(60, 60, 60);
+
   
 
 }
 
 .mid-header li {
   padding: 10px 20px;
-  color: black;
+  color: rgb(60, 60, 60);
   font-size: 16px;
   cursor: pointer;
   border-radius: 10px;
@@ -124,7 +126,7 @@ html, body {
 
 .mid-header2 li {
   padding: 10px 20px;
-  color: rgb(0, 0, 0);
+  color: rgb(27, 27, 27);
   font-size: 16px;
   cursor: pointer;
   border-radius: 10px;
@@ -200,7 +202,7 @@ html, body {
 .explore-txt,
 .wdwd-txt{
   font-family: "roboto mono";
-  color: #0b4545;
+  color: rgb(60, 60, 60);
   font-weight: 400;
   font-style: normal;
 }
@@ -372,7 +374,7 @@ z-index: 1;
     font-size: 12px;
   }
   .join-btn{
-    width: 120px;
+ 
     height: 22px;
     font-size: 12px;
   }
@@ -1086,7 +1088,7 @@ z-index: 1;
 
 
 .input-field-7 input,
-.input-field-6 input,
+.input-field-6 select,
 .input-field-5 input,
 .input-field-4 input,
 .input-field-3 input,
@@ -1103,8 +1105,6 @@ z-index: 1;
   font-size: 20px; /* Adjust as needed */
   font-family: 'Roboto Mono';
   
- 
-
 }
 
 
@@ -1169,7 +1169,6 @@ z-index: 1;
   top: 20px;
 
 }
-
 
 
 /* ----------------------------------------------SIGN IN PAGE SECTION PAGE---------------------------------------------- */
@@ -1950,7 +1949,7 @@ z-index: 1;
     font-size: 11px;
   }
   .join-btn{
-    width: 120px;
+    width: 100px;
     height: 22px;
     font-size: 12px;
   }
@@ -1977,9 +1976,7 @@ z-index: 1;
     font-size: 9px;
   }
   .join-btn{
-    width: 120px;
-    height: 22px;
-    font-size: 12px;
+    width: 90px;
   }
 
   
@@ -1992,4 +1989,447 @@ z-index: 1;
     font-size: 12px;
   }
 
+}
+
+
+/* COURSE SPECIFIC INFORMATION PAGE */
+
+.cs-course-page{
+  display: flex;
+  flex-direction: column;
+  background-color: #c9c9c9;
+  background-image: url("site_icons/Noise Light 220.png");
+  overflow-x: hidden; /* Ensure no horizontal scrolling */
+  z-index: 0;
+}
+
+.course-fadebg{
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  z-index: calc(-1);
+ 
+}
+
+.course-mainbody{
+  display: flex;
+
+}
+
+.mid-header3{
+  display: flex;
+  list-style: none;
+  font-family: 'Roboto Mono';
+  color: rgb(255, 255, 255);
+  
+
+}
+
+.mid-header3 li {
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: box-shadow 0.4s ease, background-color 0.4s ease; /* Smooth transition */
+}
+
+.mid-header3 li:hover {
+  background-color: rgba(117, 117, 117, 0.1); /* Optional: Darken the background color slightly on hover */
+  border-radius: 10px;
+}
+
+.mid-header3 li:active {
+  transform: scale(0.97); /* Make the button slightly smaller when clicked */
+}
+
+.left-course-main{flex: 1}
+.mid-course-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right-course-main{flex: 1}
+
+.course-title{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.cs-text{
+  font-family: Inter;
+  font-size: 80px;
+  font-weight: 900;
+  color: white;
+
+}
+
+.course-description{
+  font-family: roboto mono;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+.course-definition{
+  width: 560px;
+  margin-bottom: 122px;
+}
+
+.country-flag{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.course-stats-title{
+ margin-bottom: 20px;
+}
+
+.course-stats-text{
+  font-family: roboto mono;
+  font-size: 34px;
+  font-weight: 500;
+  color: #1B046C;
+
+}
+
+.course-stats-info{
+  display: flex;
+  flex-direction: row;
+}
+
+.course-details-info{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 100px;
+  align-items: center;
+
+}
+
+.numbers-course-info{
+  font-family: roboto mono;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-top: 6px;
+  background-color: #00000053;
+  padding: 1px 10px 1px 10px;
+  border-radius: 20px;
+}
+
+.img-course-description{
+  margin-top: 10px;
+  font-family: roboto mono;
+  font-size: 13px;
+  text-align: center;
+}
+
+/*  course page 2  */
+.cs-course-page2{
+   min-height: 70vh; /* Allow sections to stretch beyond viewport */
+  max-width: 100vw; /* Constrain width to viewport */
+  position: relative;
+  overflow: hidden; /* Prevent overflow */
+  display: flex;
+  flex-direction: column; /* Flex layout to organize content */
+}
+
+.cs-course-page3{
+  min-height: 100vh; /* Allow sections to stretch beyond viewport */
+ max-width: 100vw; /* Constrain width to viewport */
+ position: relative;
+ overflow: hidden; /* Prevent overflow */
+ display: flex;
+ flex-direction: row; /* Flex layout to organize content */
+ 
+
+
+}
+
+.page2-main-content{
+  display: flex;
+  flex: 1;
+}
+
+.left-page-2{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #DADAFF;
+
+
+}
+
+.mid-page-2{
+  flex: 1;
+  flex-direction: column;
+  background-color: #E1E1FE;
+
+
+}
+
+.right-page-2{
+  flex: 1;
+  flex-direction: column;
+  background-color: #EEEEFF;
+}
+
+.ab1{
+  display: flex;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.ab2{
+  display: flex;
+  width: 100%;
+  height: 40px;
+  font-size: 40px;
+  margin-bottom: 50px;
+  justify-content: center;
+  
+}
+.ab2x{
+  display: flex;
+  width: 100%;
+  height: 40px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  justify-content: center;
+  
+}
+.ab3{
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  
+}
+.ab32{
+  margin-bottom: 10px;
+  margin-left: 30px;
+  
+}
+.ab4{
+  display: flex;
+    padding: 30px;
+
+  
+}
+
+.main-text-course{
+  font-family: roboto mono;
+  color: #1B046C;
+  list-style: none;
+}
+
+
+.course-page-desc{
+  font-family: roboto mono;
+  color: #1B046C;
+  font-weight: 100;
+}
+
+.main-text-course3{
+  font-family: roboto mono;
+  color: #1B046C;
+}
+
+.course-bar{
+  font-weight: 900;
+  color: #1B046C;
+}
+
+.course-p2-img{
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.custom-select {
+  border: none;            /* Removes the border */
+  font-size: 40px;         /* Makes the text size 40px */
+  height: 40px;            /* Sets the height of the field */
+  background: transparent; /* Makes the background transparent */
+  outline: none;           /* Removes the focus outline */
+  padding: 0 10px;         /* Adds some padding to the sides */
+  -webkit-appearance: none; /* Removes default dropdown arrow on webkit browsers */
+  -moz-appearance: none;    /* Removes default dropdown arrow on Firefox */
+  appearance: none;         /* Removes default dropdown arrow for all browsers */
+}
+
+.custom-select option {
+  font-size: 40px; /* Ensures the options in the dropdown have the same size */
+}
+
+.course-country{
+  display: flex;
+}
+.course-p3-img{
+  width: 15px;
+}
+
+
+/* salary section on course page */
+
+.salary-course-left{
+  display: flex;
+  flex: 1;
+  background-color: #E1E1FE;
+  flex-direction: column;
+}
+.salary-course-right{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.top-salary-course-right,
+.bottom-salary-course-right{
+  display: flex;
+  flex: 1;
+}
+
+.top-salary-course-right{
+  background-color: #EEEEFF;
+}
+.bottom-salary-course-right{
+  background-color: #E4E4FF;
+}
+
+.ab4x{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+ 
+}
+
+.main-text-coursex{
+  font-family: roboto mono;
+  color: #1B046C;
+
+  padding-right: 100px;
+  list-style: none;
+}
+
+.main-text-coursey{
+  font-family: roboto mono;
+  color: white;
+  padding-left: 10px;
+  list-style: none;
+  
+}
+.main-text-coursex li,
+.main-text-coursey li{
+  margin-bottom: 2rem;
+  
+}
+
+.main-text-coursex li{
+  background-color: #00000000;
+padding: 1px 10px 1px 10px;
+border-radius: 20px;
+  
+}
+.main-text-coursey li{
+  background-color: #00000053;
+padding: 1px 10px 1px 10px;
+border-radius: 20px;
+color: #C2FFC0;
+text-align: center;
+  
+}
+
+
+.course-page-desc1{
+  text-align: center;
+  font-family: roboto mono;
+  color: #15137b;
+  font-weight: 100;
+
+}
+.course-page-desc2{
+  text-align: center;
+  font-family: roboto mono;
+  color: #15137b;
+  font-weight: 100;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+
+.top-salary-course-right{
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-salary-course-right{
+  display: flex;
+  flex-direction: column;
+}
+
+.course-barx li{
+  list-style: none;
+  font-family: roboto mono;
+  color: #FFEFC0;
+  padding: 10px;
+  font-size: 14px;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  background-color: #1500a054;
+  padding: 1px 10px 1px 10px;
+  border-radius: 10px;
+}
+
+.course-barx li:nth-child(1) {
+  color: rgba(255, 0, 0, 0);
+  background-color: #00000000;
+  
+}
+
+
+.course-barx{
+  display: flex;
+  justify-content: space-evenly;
+
+  
+
+}
+
+.ab1x{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.yrs-rate li{
+  font-family: roboto mono;
+  font-size: 16px;
+  color:#472802;
+  list-style: none;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+}
+
+.yrs-rate2 li{
+  font-family: roboto mono;
+  font-size: 16px;
+  color: #1B046C;
+  list-style: none;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.ab4xx{
+  display: flex;
+  justify-content: space-evenly;
 }

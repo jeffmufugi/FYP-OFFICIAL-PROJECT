@@ -1,14 +1,15 @@
-import {motion} from "framer-motion";
-import back from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/back-arrow2.svg"
+import { motion } from "framer-motion";
+import back from "./site_icons/back-arrow2.svg";
 import { useNavigate } from 'react-router-dom';
-import bg2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/bgech1.png";
-import lock from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Lock2.svg"
-import email from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/Email2.svg"
-import rocketL from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/RocketL.svg"
-import rec from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/rec3.png";
+import bg2 from "./site_icons/bgech1.png";
+import lock from "./site_icons/Lock2.svg";
+import email from "./site_icons/Email2.svg";
+import rocketL from "./site_icons/RocketL.svg";
+import rec from "./site_icons/rec3.png";
 import Header from "./Homepage1/Header1.jsx";
 import axios from 'axios';
 import React, { useState } from 'react';
+
 
 export default function SignInPage(){
     const navigate = useNavigate();

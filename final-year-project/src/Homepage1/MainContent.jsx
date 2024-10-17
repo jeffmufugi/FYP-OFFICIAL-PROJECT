@@ -31,6 +31,11 @@ export default function MainContent(){
                   <br/>as well as the challenges associated with each field.</p>
                 </div>
 
+                <p className="explore-txt"><br/>
+                Explore different fields ALL based on certified DATA<br />
+                all to help you choose a course based on your interests and strengths.
+                </p>
+
                 <div className="btn-main">
                   <button className="btn1" onClick={signUpClick}>
                     Join Today!
@@ -38,10 +43,7 @@ export default function MainContent(){
                   <a href="#third-section"><button className="btn2"> Explore Opportunities</button></a>
                 </div>
   
-                <p className="explore-txt">
-                Explore different fields ALL based on certified DATA<br />
-                all to help you choose a course based on your interests and strengths.
-                </p>
+
         </div>
   
         <div className="right-mc"></div>

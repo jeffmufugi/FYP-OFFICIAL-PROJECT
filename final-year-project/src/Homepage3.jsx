@@ -1,7 +1,7 @@
 
-import ai from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/atom1.svg";
+import ai from "./site_icons/atom1.svg";
 import {motion} from "framer-motion";
-import bg2 from "/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/final-year-project/src/site_icons/bg4.png";
+import bg2 from "./site_icons/bg4.png";
 import { useNavigate } from 'react-router-dom';
 
 const Homepage3 = () => {
