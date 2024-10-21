@@ -1,27 +1,27 @@
 import Header1 from "../Homepage1/Header2.jsx";
-import fadebg from "../site_icons/rectangleblue.png";
-import img1 from "../site_icons/Paid.svg";
-import img2 from "../site_icons/Co.svg";
-import img3 from "../site_icons/ex.svg";
-import h1 from "../site_icons/doct.svg";
-import h2 from "../site_icons/doct2.svg";
-import h3 from "../site_icons/doct3.svg";
-import h4 from "../site_icons/t1.svg";
-import h5 from "../site_icons/t2.svg";
-import h6 from "../site_icons/t3.svg";
+import fadebg from "../site_icons/rectangleblu.png";
+import img1 from "../site_icons/Paid2.svg";
+import img2 from "../site_icons/Co2.svg";
+import img3 from "../site_icons/ex2.svg";
+import h1 from "../site_icons/docta1.svg";
+import h2 from "../site_icons/doctb1.svg";
+import h3 from "../site_icons/doctc1.svg";
+import h4 from "../site_icons/t12.svg";
+import h5 from "../site_icons/t22.svg";
+import h6 from "../site_icons/t32.svg";
 import dd from "../site_icons/dropdown.svg";
 import mm from "../site_icons/mm.svg";
-import ds from "../site_icons/ds.svg";
-import tm from "../site_icons/tm.svg";
+import ds from "../site_icons/ds2.svg";
+import tm from "../site_icons/tm2.svg";
 import dsp from "../site_icons/dsp.svg";
 import dst from "../site_icons/dst.svg";
 import {motion} from "framer-motion";
 import { useState } from "react";
 import {fadeInFromLeft,fadeInFromLeft2,fadeInFromLeft3,countries,topcourses,topspecializations,
   trend,skills,challengesArray,issuesArray,coreAreasOfStudy,jobGrowthFields,experienceSalary,
-  homepageInfo,prerequisites} from './csextdata.jsx';
+  homepageInfo,prerequisites} from './mechectdata.jsx';
 
-const ComputerScienceCourse = () => {
+const MechanicalEngineeringCourse = () => {
 
   const [hoveredCourse, setHoveredCourse] = useState(null);
   const handleMouseEnter = (index) => {
@@ -57,12 +57,14 @@ const ComputerScienceCourse = () => {
           <div className="left-course-main"></div>
           <div className="mid-course-main">
           <div className="course-title">
+            {/*-----------------------FIRST HOMEPAGE1 COURSE NAME---------------------------  */}
           <motion.h1 className="cs-text" {...fadeInFromLeft.left1}>{homepageInfo[0].courseName}</motion.h1></div>
 
-          
+           {/*-----------------------FIRST HOMEPAGE1 COURSE NAME, COURSE DEFINITION---------------------------  */}
           <div className="course-definition">
               <motion.p className="course-description" {...fadeInFromLeft.left2}>{homepageInfo[0].courseDefinition}</motion.p>
           </div>
+            {/*-----------------------FIRST HOMEPAGE1 COURSE NAME, COUNTRY SECTION---------------------------  */}
           <div className="course-country">
           <motion.p {...fadeInFromLeft.left3}>
               <select name="region" placeholder="hi" className="custom-select">  
@@ -77,6 +79,7 @@ const ComputerScienceCourse = () => {
           <div className="course-stats-title">
               <motion.p className="course-stats-text" style={{ color: homepageInfo[1].fontColor }}{...fadeInFromLeft.left4}>live stats.</motion.p>
           </div>
+           {/*-----------------------FIRST HOMEPAGE1 COURSE NAME, BOTTOM SECTION---------------------------  */}
           <motion.div className="course-stats-info" {...fadeInFromLeft.left5}>
               <div className="course-details-info">
                 <img src={img1} alt="" />
@@ -98,19 +101,20 @@ const ComputerScienceCourse = () => {
           <div className="right-course-main"></div>
         </div>
     </div>
-    
+      {/*-----------------------SECOND HOMEPAGE2 COURSE NAME, BOTTOM SECTION---------------------------  */}
     <section name="second-course-section">
       <div className="cs-course-page2">
         <div className="page2-main-content">
-          <div className="left-page-2" style={{backgroundColor :homepageInfo[1].backgroundColor1}}>
+          <div className="left-page-2" style={{backgroundColor :homepageInfo[1].backgroundColor1}}> 
             <div className="ab1">
               <motion.img className="course-p2-img" src={h1} alt="" {...fadeInFromLeft2.left1}/>
             </div>
+            {/*--------------------- HOMEPAGE2 section 1--------------------- H*/}
             <div className="ab2">
               <motion.p className="course-page-desc" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft2.left2}>DESCRIPTION</motion.p>
             </div>
             <div className="ab3"> 
-            <motion.p className="course-bar" {...fadeInFromLeft2.left3}>____________________</motion.p>
+            <motion.p className="course-bar" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft2.left3}>____________________</motion.p>
              </div>
             <div className="ab4">
               <motion.p className="main-text-course" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft2.left4}>{homepageInfo[1].description}</motion.p>
@@ -121,6 +125,7 @@ const ComputerScienceCourse = () => {
               <motion.img className="course-p2-img" src={h2} alt="" {...fadeInFromLeft3.left1}/>
             </div>
             <div className="ab2">
+              {/*--------------------- HOMEPAGE2 section 2--------------------- H*/}
             <motion.p className="course-page-desc" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft3.left2}>CORE AREAS OF STUDY</motion.p>
             </div>
             <div className="ab3"> 
@@ -138,6 +143,7 @@ const ComputerScienceCourse = () => {
           <div className="ab1">
               <motion.img className="course-p2-img" src={h3} alt="" {...fadeInFromLeft3.left1}/>
             </div>
+             {/*--------------------- HOMEPAGE2 section 3--------------------- H*/}
             <div className="ab2">
             <motion.p className="course-page-desc" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft3.left2}>PRE-REQUISITES</motion.p>
             </div>
@@ -158,7 +164,7 @@ const ComputerScienceCourse = () => {
 
     </section>
 
-
+ {/*---------------------HOMEPAGE3 section 1--------------------- H*/}
     <section>
       <div className="cs-course-page3">
 
@@ -178,16 +184,24 @@ const ComputerScienceCourse = () => {
           <motion.ul 
                 className="main-text-coursex" 
                 {...fadeInFromLeft3.left2}
+                
+                
             >
+
                     {topcourses.map((course,index) => (
                       <li className="course-name-desc"
-                    
+                      style={{ color: homepageInfo[1].fontColor }}
                       onMouseEnter={() => handleMouseEnter(index)}
                       onMouseLeave={handleMouseLeave}>
                         {course.name}
                         {hoveredCourse === index && (
-                        <motion.div className="course-desc-hov" 
-                        {...fadeInFromLeft3.left7}>
+                          <motion.div className="course-desc-hov" style={{ 
+                            backgroundColor: homepageInfo[1].popupcolor1, 
+                            color: homepageInfo[1].popupcolor2, 
+                            boxShadow: `0px -30px 20px -10px ${homepageInfo[1].popupcolor2}, 
+                                        20px 0px 20px -10px ${homepageInfo[1].popupcolor2},  
+                                        -20px 0px 20px -10px ${homepageInfo[1].popupcolor2}` 
+                        }}{...fadeInFromLeft3.left7}>
                           {course.description}
                         </motion.div>
             )}
@@ -212,7 +226,7 @@ const ComputerScienceCourse = () => {
         
 
       
-
+ {/*---------------------HOMEPAGE3 section 2--------------------- H*/}
         </div>
         <div className="salary-course-right">
           <div className="top-salary-course-right" style={{backgroundColor :homepageInfo[1].backgroundColor3}}>
@@ -249,7 +263,7 @@ const ComputerScienceCourse = () => {
             </div>
         
          
-                  
+ {/*---------------------HOMEPAGE3 section 3--------------------- H*/}                  
           </div>
           <div className="bottom-salary-course-right" style={{backgroundColor :homepageInfo[1].backgroundColor1}}>
           <div className="ab1x">
@@ -266,7 +280,7 @@ const ComputerScienceCourse = () => {
             <motion.ul className="course-barx" {...fadeInFromLeft2.left4}>
                           <li>__________</li>
                           {jobGrowthFields.map((index)=>(
-                          <li>{index}</li>
+                          <li  style={{ backgroundColor: homepageInfo[1].fontColor }}>{index}</li>
                            )
                             )}
 
@@ -367,7 +381,7 @@ const ComputerScienceCourse = () => {
      </div>
     </section>
 
-
+ {/*--------------------- FOURTH HOMEPAGE4 section 1--------------------- H*/}
     <section name="second-course-section">
       <div className="cs-course-page2">
         <div className="page2-main-content">
@@ -425,7 +439,7 @@ const ComputerScienceCourse = () => {
             <p style={{ color: homepageInfo[1].fontColor }} className="course-bar">____________________</p>
              </div>
             <div className="ab4">
-              <ul className="main-text-course">
+              <ul className="main-text-course" style={{ color: homepageInfo[1].fontColor }}>
                         {
                           skills.map((skills)=>(
                             <li>{skills}<br/><br/></li>
@@ -469,7 +483,13 @@ const ComputerScienceCourse = () => {
                       onMouseLeave={handleMouseLeave}>
                         {title.heading}
                         {hoveredCourse === index && (
-                        <motion.div className="course-desc-hov1" 
+                        <motion.div className="course-desc-hov1"  style={{ 
+                          backgroundColor: homepageInfo[1].popupcolor1, 
+                          color: homepageInfo[1].popupcolor2, 
+                          boxShadow: `0px -30px 20px -10px ${homepageInfo[1].popupcolor2}, 
+                                      20px 0px 20px -10px ${homepageInfo[1].popupcolor2},  
+                                      -20px 0px 20px -10px ${homepageInfo[1].popupcolor2}` 
+                      }}
                         {...fadeInFromLeft3.left7}>
                           {title.description}
   </motion.div>
@@ -482,7 +502,7 @@ const ComputerScienceCourse = () => {
               <motion.img className="course-p2-img" src={dst} alt="" {...fadeInFromLeft2.left1}/>
             </div>
             <div className="ab2">
-            <motion.p className="course-page-desc1" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft3.left2}>{issuesArray[0]}</motion.p>
+            <motion.p style={{ color: homepageInfo[1].fontColor }} className="course-page-desc1" {...fadeInFromLeft3.left2}>{issuesArray[0]}</motion.p>
             </div>
 
             <div className="ab3"> 
@@ -499,7 +519,13 @@ const ComputerScienceCourse = () => {
                       onMouseLeave={handleMouseLeav}>
                       {title.heading}
                       {hoveredText === index && (
-                      <motion.div className="course-desc-hov1" 
+                      <motion.div className="course-desc-hov1"style={{ 
+                        backgroundColor: homepageInfo[1].popupcolor1, 
+                        color: homepageInfo[1].popupcolor2, 
+                        boxShadow: `0px -30px 20px -10px ${homepageInfo[1].popupcolor2}, 
+                                    20px 0px 20px -10px ${homepageInfo[1].popupcolor2},  
+                                    -20px 0px 20px -10px ${homepageInfo[1].popupcolor2}` 
+                    }} 
 
                       
                       {...fadeInFromLeft3.left7}>
@@ -510,7 +536,7 @@ const ComputerScienceCourse = () => {
     </>
   );
 };
-export default ComputerScienceCourse;
+export default MechanicalEngineeringCourse;
 
 
 

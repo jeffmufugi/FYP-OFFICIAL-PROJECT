@@ -9,7 +9,6 @@ const Homepage1 = () => {
   return (
     <div className="first-section">
          <img src={rec} className="background-top-light"/>
-      {/* <img src={bg2} className="background-icon1"/> */}
 
       <Header />
       <MainContent />
@@ -18,16 +17,12 @@ const Homepage1 = () => {
   );
 };
 export default Homepage1;
-
-
-
-
+ 
 const Footer = () => {
   const iconsArray = Object.values(ICONS); // Get the array of image paths
 
   return (
     <div className="footer">
-      
       <div className="footer-images">
         {
         iconsArray.map((icon, index) => (
@@ -37,8 +32,8 @@ const Footer = () => {
             alt={`Icon ${index + 1}`}
             className="footer-image"
           />
-
-        ))}
+        ))
+        }
       </div>
     </div>
   );

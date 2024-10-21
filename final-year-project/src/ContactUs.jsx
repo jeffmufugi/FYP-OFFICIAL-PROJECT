@@ -91,24 +91,10 @@ export default function ContactUs(){
                             <img src={location} alt="person-icon" className="text-img1"/>
                             <p className='cdtext'>Xiamen University Malaysia, Jalan <br/>Sunsuria, Bandar Sunsuria, 43900 Sepang,<br/> Selangor, D2</p>
                         </div>
-
-      
                     </div>
                 </div>
                 <div className='right-contact-us-main-section'></div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
         </>
     )

@@ -10,6 +10,9 @@ import AboutUs from './AboutUs.jsx';
 import CoursePage from './CoursePage.jsx';
 import ScrollToTop from './scroll.jsx';
 import ComputerScienceCourse from './CoursesPage/ComputerScience.jsx'
+import ChemicalEngineeringCourse from './CoursesPage/ChemicalEngineering.jsx';
+import MechanicalEngineeringCourse from './CoursesPage/MechanicalEngineering.jsx';
+import PhysicsEngineeringCourse from './CoursesPage/Physics.jsx';
 import { useEffect,useState } from 'react';
 
 function App() {
@@ -42,6 +45,10 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/courses" element={<CoursePage />} />
           <Route path="/cscoursepage" element={<ComputerScienceCourse />} />
+          <Route path="/mechcoursepage" element={<MechanicalEngineeringCourse />} />
+          <Route path="/phycoursepage" element={<PhysicsEngineeringCourse/>} />
+          <Route path="/chemcoursepage" element={<ChemicalEngineeringCourse />}
+          />
         </Routes>
       </div>
     </Router>

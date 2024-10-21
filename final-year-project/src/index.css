@@ -205,6 +205,11 @@ html, body {
   color: rgb(60, 60, 60);
   font-weight: 400;
   font-style: normal;
+  width:690px;
+  border-bottom: 1px solid #c3c3c3;
+}
+.explore-txt{
+  width:750px;
 }
 .wdwd-txt{
   margin-top: 20px;
@@ -2088,7 +2093,7 @@ z-index: 1;
   font-family: roboto mono;
   font-size: 34px;
   font-weight: 500;
-  color: #1B046C;
+ 
 
 }
 
@@ -2163,7 +2168,7 @@ z-index: 1;
 .mid-page-2{
   flex: 1;
   flex-direction: column;
-  background-color: #E1E1FE;
+
 
 
 }
@@ -2171,7 +2176,7 @@ z-index: 1;
 .right-page-2{
   flex: 1;
   flex-direction: column;
-  background-color: #EEEEFF;
+
 }
 
 .ab1{
@@ -2220,14 +2225,33 @@ z-index: 1;
   
 }
 
+.ab4s{
+  display: flex;
+    padding: 30px;
+   
+    
+
+    
+}
+
 .main-text-course{
+  font-family: roboto mono;
+  color: #1B046C;
+  list-style: none;
+
+}
+.main-text-coursex{
   font-family: roboto mono;
   color: #1B046C;
   list-style: none;
 }
 
-
 .course-page-desc{
+  font-family: roboto mono;
+  color: #1B046C;
+  font-weight: 100;
+}
+.course-page-desc1{
   font-family: roboto mono;
   color: #1B046C;
   font-weight: 100;
@@ -2293,7 +2317,7 @@ z-index: 1;
 }
 
 .top-salary-course-right{
-  background-color: #EEEEFF;
+
 }
 .bottom-salary-course-right{
   background-color: #E4E4FF;
@@ -2309,7 +2333,7 @@ z-index: 1;
 .main-text-coursex{
   font-family: roboto mono;
   color: #1B046C;
-
+  cursor: default;
   padding-right: 100px;
   list-style: none;
 }
@@ -2394,9 +2418,6 @@ text-align: center;
 .course-barx{
   display: flex;
   justify-content: space-evenly;
-
-  
-
 }
 
 .ab1x{
@@ -2405,7 +2426,6 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .yrs-rate li{
@@ -2432,4 +2452,53 @@ text-align: center;
 .ab4xx{
   display: flex;
   justify-content: space-evenly;
+}
+
+.course-desc-hov{
+  background-color: #2b1689;
+  color: rgb(155, 249, 247);
+  font-size: 13.5px;
+  font-weight: 400;
+  width: 240px;
+  height: auto;
+  position: absolute;
+  border-radius: 15px;
+  padding: 10px;
+  bottom: 20px;
+  left: 80px;
+  box-shadow: 
+  0px -30px 20px -10px #E1E1FE, 
+  20px 0px 20px -10px #E1E1FE,  
+  -20px 0px 20px -10px #dedeff; 
+}
+
+.course-desc-hov1{
+  background-color: #2b1689;
+  color: rgb(155, 249, 247);
+  font-size: 13.5px;
+  font-weight: 400;
+  width: 240px;
+  height: auto;
+  position: absolute;
+  border-radius: 15px;
+  padding: 10px;
+  bottom: 20px;
+  left: 80px;
+  box-shadow: 
+  0px -30px 20px -10px #E1E1FE, 
+  20px 0px 20px -10px #E1E1FE,  
+  -20px 0px 20px -10px #dedeff; 
+}
+
+.course-name-desc{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.course-name-desc1{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-left: 90px;
 }

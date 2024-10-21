@@ -28,14 +28,23 @@ export default function CoursePage(){
     const csCourseClick = () => {
       navigate('/cscoursepage');
     }
+    const chemCourseClick = () => {
+        navigate('/chemcoursepage');
+      }
+      const mechCourseClick = () => {
+        navigate('/mechcoursepage');
+      }
+      const phyCourseClick = () => {
+        navigate('/phycoursepage');
+      }
 
     
 
     let courses = [
         {courseName: "Computer Science", 
         imgName: cst,
-        upColor: "#F0F6B0",
-        downColor: "#52A1AD",
+        upColor: "#EEEEFF",
+        downColor: "#2FB2B6",
         fontcolor: "white",
         route: csCourseClick,
         id: 1},
@@ -43,8 +52,9 @@ export default function CoursePage(){
         {courseName: "Mechanical Engineering", 
         imgName: mec,
         upColor: "#33C9E3",
-        downColor: "#92FFC9",
+        downColor: "#2FB689",
         fontcolor: "black",
+        route: mechCourseClick,
         id: 2},
 
         {courseName: "Chemical Engineering", 
@@ -52,6 +62,7 @@ export default function CoursePage(){
         upColor: "#FB9EDD",
         downColor: "#CD86E4",
         fontcolor: "white",
+        route: chemCourseClick,
         id: 3},
 
         {courseName: "Physics", 
@@ -59,6 +70,7 @@ export default function CoursePage(){
         upColor: "#FB7B94",
         downColor: "#FFFD92",
         fontcolor: "#E62F2F",
+        route: phyCourseClick,
         id: 4},
 
         {courseName: "Astronomy", 

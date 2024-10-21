@@ -27,14 +27,9 @@ export default function MainContent(){
 
                 <div className="wdwd-txt">
                   
-                  <p>We provide you with valuable insights into various STEM courses,<br/>highlighting the benefits, potential salaries, job opportunities, 
-                  <br/>as well as the challenges associated with each field.</p>
+                  <p>We provide you with valuable insights into various STEM courses,highlighting the benefits, potential salaries, job opportunities, 
+                  as well as the challenges associated with each field.</p>
                 </div>
-
-                <p className="explore-txt"><br/>
-                Explore different fields ALL based on certified DATA<br />
-                all to help you choose a course based on your interests and strengths.
-                </p>
 
                 <div className="btn-main">
                   <button className="btn1" onClick={signUpClick}>
@@ -43,6 +38,13 @@ export default function MainContent(){
                   <a href="#third-section"><button className="btn2"> Explore Opportunities</button></a>
                 </div>
   
+
+                <p className="explore-txt"><br/>
+                Explore different fields ALL based on certified DATA<br />
+                all to help you choose a course based on your interests and strengths.
+                </p>
+
+              
 
         </div>
   
