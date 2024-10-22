@@ -292,7 +292,7 @@ const ChemicalEngineeringCourse = () => {
                 className="main-text-coursexy" 
                 {...fadeInFromLeft2.left4}
             >
-                <ul className="yrs-rate2">
+                <ul className="yrs-rate2" style={{ color: homepageInfo[1].fontColor }}>
                 <li>2022</li>
                 <li>2023</li>
                 <li>2024</li>

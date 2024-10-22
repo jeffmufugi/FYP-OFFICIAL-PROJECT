@@ -1,4 +1,6 @@
 
+
+
 export const homepageInfo = [
     {courseName : "computer science.",
     courseDefinition: " Computer science is the study of algorithms, programming, computation, and data processing systems.",

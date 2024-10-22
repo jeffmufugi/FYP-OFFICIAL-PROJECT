@@ -37,6 +37,34 @@ export default function CoursePage(){
       const phyCourseClick = () => {
         navigate('/phycoursepage');
       }
+      const mathCourseClick = () => {
+        navigate('/mathcoursepage');
+      }
+
+      const aeroCourseClick = () => {
+        navigate('/aerocoursepage');
+      }
+      const bioCourseClick = () => {
+        navigate('/biocoursepage');
+      }
+
+      const civCourseClick = () => {
+        navigate('/civcoursepage');
+      }
+      const nucCourseClick = () => {
+        navigate('/nuccoursepage');
+      }
+      const marCourseClick = () => {
+        navigate('/marcoursepage');
+      }
+
+
+
+
+   
+
+
+   
 
     
 
@@ -73,38 +101,36 @@ export default function CoursePage(){
         route: phyCourseClick,
         id: 4},
 
-        {courseName: "Astronomy", 
-        imgName: ast,
-        upColor: "#FFA0A0",
-        downColor: "#CDFFE6",
-        fontcolor: "#B11212",
-        id: 5},
+        {courseName: "Mathematics", 
+        imgName: mat,
+        upColor: "#BEFB9E",
+        downColor: "#D3D84D",
+        fontcolor: "black",
+        route: mathCourseClick,
+        id: 3},
+
+        {courseName: "Aerospace Engineering", 
+        imgName: air,
+        upColor: "#7BB4FB",
+        downColor: "#FFC992",
+        fontcolor: "black",
+        route: aeroCourseClick,
+        id: 4},
+
 
         {courseName: "Biomedical Engineering", 
         imgName: bio,
         upColor: "#B0F6F5",
         downColor: "#8DAD52",
         fontcolor: "white",
+        route: bioCourseClick,
         id: 2},
-
-        {courseName: "Mathematics", 
-        imgName: mat,
-        upColor: "#BEFB9E",
-        downColor: "#D3D84D",
-        fontcolor: "black",
-        id: 3},
-
-        {courseName: "Robotics", 
-        imgName: rob,
-        upColor: "#BAB9FF",
-        downColor: "#3D2F44",
-        fontcolor: "white",
-        id: 4},
 
         {courseName: "Civil Engineering", 
         imgName: civ,
         upColor: "#D3A0AA",
         downColor: "#B392FF",
+        route: civCourseClick,
 
         fontcolor: "white",
         id: 5},
@@ -114,6 +140,7 @@ export default function CoursePage(){
         upColor: "#93FFD2",
         downColor: "#57CD92",
         fontcolor: "white",
+        route: nucCourseClick,
         id: 1},
 
         {courseName: "Marine Biology", 
@@ -121,6 +148,7 @@ export default function CoursePage(){
         upColor: "#FCC1DF",
         downColor: "#696FED",
         fontcolor: "white",
+        route: marCourseClick,
         id: 1},
         
         {courseName: "Data Science", 
@@ -130,6 +158,13 @@ export default function CoursePage(){
         fontcolor: "black",
         id: 2},
 
+        {courseName: "Robotics", 
+        imgName: rob,
+        upColor: "#BAB9FF",
+        downColor: "#3D2F44",
+        fontcolor: "white",
+        id: 4},
+
         {courseName: "Cybersecurity", 
         imgName: cyb,
         upColor: "#A69EFB",
@@ -137,12 +172,6 @@ export default function CoursePage(){
         fontcolor: "white",
         id: 3},
 
-        {courseName: "Aerospace Engineering", 
-        imgName: air,
-        upColor: "#7BB4FB",
-        downColor: "#FFC992",
-        fontcolor: "black",
-        id: 4},
 
         {courseName: "Geology and Earth Sciences", 
         imgName: geo,

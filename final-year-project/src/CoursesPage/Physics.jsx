@@ -1,18 +1,18 @@
 import Header1 from "../Homepage1/Header2.jsx";
 import fadebg from "../site_icons/rectpurp.png";
-import img1 from "../site_icons/Paid.svg";
-import img2 from "../site_icons/Co.svg";
-import img3 from "../site_icons/ex.svg";
-import h1 from "../site_icons/doct.svg";
-import h2 from "../site_icons/doct2.svg";
-import h3 from "../site_icons/doct3.svg";
-import h4 from "../site_icons/t1.svg";
-import h5 from "../site_icons/t2.svg";
-import h6 from "../site_icons/t3.svg";
+import img1 from "../site_icons/Paid8.svg";
+import img2 from "../site_icons/Co8.svg";
+import img3 from "../site_icons/ex8.svg";
+import h1 from "../site_icons/doct8.svg";
+import h2 from "../site_icons/doct82.svg";
+import h3 from "../site_icons/doct83.svg";
+import h4 from "../site_icons/t81.svg";
+import h5 from "../site_icons/t82.svg";
+import h6 from "../site_icons/t83.svg";
 import dd from "../site_icons/dropdown.svg";
 import mm from "../site_icons/mm.svg";
-import ds from "../site_icons/ds.svg";
-import tm from "../site_icons/tm.svg";
+import ds from "../site_icons/ds8.svg";
+import tm from "../site_icons/tm8.svg";
 import dsp from "../site_icons/dsp.svg";
 import dst from "../site_icons/dst.svg";
 import {motion} from "framer-motion";
@@ -292,7 +292,7 @@ const PhysicsEngineeringCourse = () => {
                 className="main-text-coursexy" 
                 {...fadeInFromLeft2.left4}
             >
-                <ul className="yrs-rate2">
+                <ul className="yrs-rate2" style={{ color: homepageInfo[1].fontColor }}>
                 <li>2022</li>
                 <li>2023</li>
                 <li>2024</li>

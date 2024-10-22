@@ -3,6 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require('cors'); // Add this line to import cors
 
+
 const app = express();
 
 // Add CORS configuration
@@ -33,8 +34,11 @@ app.use("/api/signup",signupRouter);
 const signinRouter = require("./routes/signin.js");
 app.use("/api/signin", signinRouter);
 
+
+
 app.listen(3000, () => {
     console.log("Server is running on port 3000");
 });
+
 
 

@@ -1,21 +1,17 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
-  
+  const pageRef = useRef(null);
+
   useEffect(() => {
-    console.log("Pathname changed:", pathname); // Debug: check if pathname is changing
-    // Use a small timeout to ensure the DOM has updated
-    const timeoutId = setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 0);
-    
-    // Cleanup the timeout on component unmount
-    return () => clearTimeout(timeoutId);
+    if (pageRef.current) {
+      pageRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }, [pathname]);
 
-  return null;
+  return <div ref={pageRef}>{/* Your page content here */}</div>;
 }
 
 export default ScrollToTop;

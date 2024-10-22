@@ -9,10 +9,12 @@ export const homepageInfo = [
     
     {
         description: `Physics combines mathematical modeling, experimental investigation, and theoretical analysis to understand the universe's fundamental laws and their applications in technology and innovation.`,
-        backgroundColor1:"#DADAFF",
-        backgroundColor2:"#E1E1FE",
-        backgroundColor3:"#EEEEFF",
-        fontColor: "#1B046C",
+        backgroundColor1:"#F9E5FF",
+        backgroundColor2:"#FBECFF",
+        backgroundColor3:"#FCF2FF",
+        fontColor: "#453664",
+        popupcolor1 : "#453664",
+        popupcolor2 : "#FBECFF",
     }
 ];
 

@@ -18,15 +18,6 @@ router.get('/', async(req, res) => {
     }
 })
 
-
-//const user = await user.save(): This line saves the newly created user document to the MongoDB database.
-//	•	newuser.save(): Mongoose’s save() method inserts the new document into the database.
-//	•	await: The await keyword ensures the function waits for the save operation to complete before proceeding. This avoids callback hell and allows using try-catch for error handling.
-//	•	res.status(201).send(newUser): If the user is successfully saved, the server sends a status code of 201 (Created) and the newly saved user in the response.
-//	•	201: The status code 201 indicates that a resource (user) has been successfully created.
-//	•	send(): Sends the newly created user document as the response.
-
-
 //user login creds
 router.post('/login', (req, res) => {
     res.send("user login credentials");
@@ -77,3 +68,12 @@ async function getUser(req,res,next){
 
 
 module.exports = router
+
+
+
+//const user = await user.save(): This line saves the newly created user document to the MongoDB database.
+//	•	newuser.save(): Mongoose’s save() method inserts the new document into the database.
+//	•	await: The await keyword ensures the function waits for the save operation to complete before proceeding. This avoids callback hell and allows using try-catch for error handling.
+//	•	res.status(201).send(newUser): If the user is successfully saved, the server sends a status code of 201 (Created) and the newly saved user in the response.
+//	•	201: The status code 201 indicates that a resource (user) has been successfully created.
+//	•	send(): Sends the newly created user document as the response.

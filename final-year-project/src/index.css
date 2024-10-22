@@ -2317,7 +2317,7 @@ z-index: 1;
 }
 
 .top-salary-course-right{
-
+  background-color: #EEEEFF;
 }
 .bottom-salary-course-right{
   background-color: #E4E4FF;
@@ -2441,7 +2441,6 @@ text-align: center;
 .yrs-rate2 li{
   font-family: roboto mono;
   font-size: 16px;
-  color: #1B046C;
   list-style: none;
   width: 120px;
   padding: 10px;
