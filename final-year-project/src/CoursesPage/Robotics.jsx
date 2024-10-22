@@ -1,27 +1,28 @@
 import Header1 from "../Homepage1/Header2.jsx";
-import fadebg from "../site_icons/rectora.png";
-import img1 from "../site_icons/Paidj.svg";
-import img2 from "../site_icons/Coj.svg";
-import img3 from "../site_icons/exj.svg";
-import h1 from "../site_icons/doctj.svg";
-import h2 from "../site_icons/doctj2.svg";
-import h3 from "../site_icons/doctj3.svg";
-import h4 from "../site_icons/tj1.svg";
-import h5 from "../site_icons/tj2.svg";
-import h6 from "../site_icons/tj3.svg";
+import fadebg from "../site_icons/rectd.png";
+import img1 from "../site_icons/Paid9.svg";
+import img2 from "../site_icons/Co9.svg";
+import img3 from "../site_icons/ex9.svg";
+import h1 from "../site_icons/doct9.svg";
+import h2 from "../site_icons/doct92.svg";
+import h3 from "../site_icons/doct93.svg";
+import h4 from "../site_icons/t91.svg";
+import h5 from "../site_icons/t92.svg";
+import h6 from "../site_icons/t93.svg";
 import dd from "../site_icons/dropdown.svg";
 import mm from "../site_icons/mm.svg";
-import ds from "../site_icons/dsj.svg";
-import tm from "../site_icons/tmj.svg";
+import ds from "../site_icons/ds9.svg";
+import tm from "../site_icons/tm9.svg";
 import dsp from "../site_icons/dsp.svg";
 import dst from "../site_icons/dst.svg";
 import {motion} from "framer-motion";
 import { useState } from "react";
 import {fadeInFromLeft,fadeInFromLeft2,fadeInFromLeft3,countries,topcourses,topspecializations,
   trend,skills,challengesArray,issuesArray,coreAreasOfStudy,jobGrowthFields,experienceSalary,
-  homepageInfo,prerequisites} from './aeroextdata.jsx';
+  homepageInfo,prerequisites} from './robextdata.jsx';
 
-const AerospaceEngineeringCourse = () => {
+
+const RoboticsCourse = () => {
 
   const [hoveredCourse, setHoveredCourse] = useState(null);
   const handleMouseEnter = (index) => {
@@ -536,7 +537,7 @@ const AerospaceEngineeringCourse = () => {
     </>
   );
 };
-export default AerospaceEngineeringCourse;
+export default RoboticsCourse;
 
 
 

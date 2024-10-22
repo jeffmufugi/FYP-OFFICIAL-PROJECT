@@ -58,6 +58,18 @@ export default function CoursePage(){
         navigate('/marcoursepage');
       }
 
+      const datCourseClick = () => {
+        navigate('/datcoursepage');
+      }
+      const robCourseClick = () => {
+        navigate('/robcoursepage');
+      }
+      const cybCourseClick = () => {
+        navigate('/cybcoursepage');
+      }
+
+
+
 
 
 
@@ -71,48 +83,48 @@ export default function CoursePage(){
     let courses = [
         {courseName: "Computer Science", 
         imgName: cst,
-        upColor: "#EEEEFF",
-        downColor: "#2FB2B6",
+        upColor: "#B0E4F6",
+        downColor: "#52A1AD",
         fontcolor: "white",
         route: csCourseClick,
         id: 1},
         
         {courseName: "Mechanical Engineering", 
         imgName: mec,
-        upColor: "#33C9E3",
-        downColor: "#2FB689",
-        fontcolor: "black",
+        upColor: "#92FFC9",
+        downColor: "#197949",
+        fontcolor: "white",
         route: mechCourseClick,
         id: 2},
 
         {courseName: "Chemical Engineering", 
         imgName: chem,
-        upColor: "#FB9EDD",
-        downColor: "#CD86E4",
+        upColor: "#FB9E9E",
+        downColor: "#E48686",
         fontcolor: "white",
         route: chemCourseClick,
         id: 3},
 
         {courseName: "Physics", 
         imgName: phy,
-        upColor: "#FB7B94",
-        downColor: "#FFFD92",
-        fontcolor: "#E62F2F",
+        upColor: "#FFBDEA",
+        downColor: "#6D427C",
+        fontcolor: "white",
         route: phyCourseClick,
         id: 4},
 
         {courseName: "Mathematics", 
         imgName: mat,
-        upColor: "#BEFB9E",
-        downColor: "#D3D84D",
-        fontcolor: "black",
+        upColor: "#B9F8F7",
+        downColor: "#5272AD",
+        fontcolor: "white",
         route: mathCourseClick,
         id: 3},
 
         {courseName: "Aerospace Engineering", 
         imgName: air,
-        upColor: "#7BB4FB",
-        downColor: "#FFC992",
+        upColor: "#FBD9BC",
+        downColor: "#EEAC89",
         fontcolor: "black",
         route: aeroCourseClick,
         id: 4},
@@ -120,16 +132,16 @@ export default function CoursePage(){
 
         {courseName: "Biomedical Engineering", 
         imgName: bio,
-        upColor: "#B0F6F5",
-        downColor: "#8DAD52",
+        upColor: "#865075",
+        downColor: "#4C1F5B",
         fontcolor: "white",
         route: bioCourseClick,
         id: 2},
 
         {courseName: "Civil Engineering", 
         imgName: civ,
-        upColor: "#D3A0AA",
-        downColor: "#B392FF",
+        upColor: "#FFB9B9",
+        downColor: "#593435",
         route: civCourseClick,
 
         fontcolor: "white",
@@ -137,25 +149,26 @@ export default function CoursePage(){
 
         {courseName: "Nuclear Engineering", 
         imgName: nuc,
-        upColor: "#93FFD2",
-        downColor: "#57CD92",
+        upColor: "#93C0FF",
+        downColor: "#5771CD",
         fontcolor: "white",
         route: nucCourseClick,
         id: 1},
 
         {courseName: "Marine Biology", 
         imgName: mar,
-        upColor: "#FCC1DF",
-        downColor: "#696FED",
-        fontcolor: "white",
+        upColor: "#C1EEFC",
+        downColor: "#DAF8FF",
+        fontcolor: "#19455F",
         route: marCourseClick,
         id: 1},
         
         {courseName: "Data Science", 
         imgName: dat,
-        upColor: "#FFE2B1",
-        downColor: "#92E4FF",
-        fontcolor: "black",
+        upColor: "#DBDBDB",
+        downColor: "#5C5C5C",
+        fontcolor: "white",
+        route: datCourseClick,
         id: 2},
 
         {courseName: "Robotics", 
@@ -163,22 +176,17 @@ export default function CoursePage(){
         upColor: "#BAB9FF",
         downColor: "#3D2F44",
         fontcolor: "white",
+        route: robCourseClick,
         id: 4},
 
         {courseName: "Cybersecurity", 
         imgName: cyb,
         upColor: "#A69EFB",
-        downColor: "#E48686",
-        fontcolor: "white",
+        downColor: "black",
+        fontcolor: "yellow",
+        route: cybCourseClick,
         id: 3},
 
-
-        {courseName: "Geology and Earth Sciences", 
-        imgName: geo,
-        upColor: "#DED1E2",
-        downColor: "#B2CEC0",
-        fontcolor: "black",
-        id: 5}
         ];
 
     

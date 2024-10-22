@@ -19,6 +19,9 @@ import BiomedicalEngineeringCourse from './CoursesPage/BiomedicalEngineering.jsx
 import CivilEngineeringCourse from './CoursesPage/CivilEngineering.jsx';
 import NuclearEngineeringCourse from './CoursesPage/NuclearEngineering.jsx';
 import MarineBiologyCourse from './CoursesPage/MarineBiology.jsx';
+import DataScienceCourse from './CoursesPage/DataScience.jsx';
+import RoboticsCourse from './CoursesPage/Robotics.jsx';
+import CybersecurityCourse from './CoursesPage/Cybersecurity.jsx';
 import { useEffect,useState } from 'react';
 
 function App() {
@@ -60,6 +63,9 @@ function App() {
           <Route path="/nuccoursepage" element={<NuclearEngineeringCourse/>} />
           <Route path="/marcoursepage" element={<MarineBiologyCourse/>} />
           <Route path="/mathcoursepage" element={<MathematicsCourse/>} />
+          <Route path="/datcoursepage" element={<DataScienceCourse/>} />
+          <Route path="/robcoursepage" element={<RoboticsCourse/>} />
+          <Route path="/cybcoursepage" element={<CybersecurityCourse/>} />
           <Route path="/chemcoursepage" element={<ChemicalEngineeringCourse />}
           />
         </Routes>
