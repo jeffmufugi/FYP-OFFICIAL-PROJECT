@@ -40,7 +40,21 @@ const ChemicalEngineeringCourse = () => {
   }, []);
 
   const inputRef = useRef(null);
+  const dropdownRef=useRef(null)
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
 
+  useEffect(() => {
+    // Add event listener when component mounts
+    document.addEventListener('mousedown', handleClickOutside);
+    // Remove event listener when component unmounts
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
   // Handle country change
   const handleSelect = (country) => {
     setSelectedCountry(country.flag);
@@ -117,6 +131,7 @@ const ChemicalEngineeringCourse = () => {
             homepageInfo={homepageInfo}
             animat={animat}
             setanimate={setanimate}
+            dropdownRef={dropdownRef}
       />
     
     </div>

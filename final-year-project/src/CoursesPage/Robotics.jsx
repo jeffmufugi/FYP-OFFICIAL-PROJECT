@@ -9,7 +9,6 @@ import h3 from "../site_icons/doct93.svg";
 import h4 from "../site_icons/t91.svg";
 import h5 from "../site_icons/t92.svg";
 import h6 from "../site_icons/t93.svg";
-import dd from "../site_icons/dropdown.svg";
 import mm from "../site_icons/mm.svg";
 import ds from "../site_icons/ds9.svg";
 import tm from "../site_icons/tm9.svg";
@@ -33,6 +32,21 @@ const RoboticsCourse = () => {
 
 
   const inputRef = useRef(null);
+  const dropdownRef=useRef(null)
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // Add event listener when component mounts
+    document.addEventListener('mousedown', handleClickOutside);
+    // Remove event listener when component unmounts
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   // Handle country change
   const handleSelect = (country) => {
@@ -110,6 +124,7 @@ const RoboticsCourse = () => {
             homepageInfo={homepageInfo}
             animat={animat}
             setanimate={setanimate}
+            dropdownRef={dropdownRef}
       />
     
     </div>
