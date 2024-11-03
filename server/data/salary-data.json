@@ -1,0 +1,446 @@
+{
+  "lastUpdated": "2024-10-28T12:03:18.429Z",
+  "data": [
+    {
+      "title":  "Computer Science",
+      "status": "OK",
+      "request_id": "c4b485a8-fd79-48ca-a529-6026e91e430d",
+      "currency": "$",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Computer Science",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/What-Is-the-Average-Computer-Science-Salary-by-State",
+          "min_salary": 61500,
+          "max_salary": 97500,
+          "median_salary": 83109,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Computer Scientist",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/computer-scientist-salary-SRCH_KO0,18.htm",
+          "min_salary": 111969,
+          "max_salary": 322004,
+          "median_salary": 188049,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "computer science",
+          "publisher_name": "Talent",
+          "publisher_link": "https://www.talent.com/salary?job=computer+science",
+          "min_salary": 36387.104986979,
+          "max_salary": 127638.29980392,
+          "median_salary": 68093.850299647,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Artificial Intelligence",
+      "status": "OK",
+      "request_id": "bdd570d6-3a9b-439e-b0a4-bd5e38b202f9",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Artificial Intelligence",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/artificial-intelligence-salary-SRCH_KO0,23.htm",
+          "min_salary": 100785,
+          "max_salary": 283309,
+          "median_salary": 167060,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "artificial intelligence",
+          "publisher_name": "Talent",
+          "publisher_link": "https://www.talent.com/salary?job=artificial+intelligence",
+          "min_salary": 75000,
+          "max_salary": 220000.20555556,
+          "median_salary": 152902.11259921,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Artificial Intelligence",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/Artificial-Intelligence-Salary",
+          "min_salary": 55000,
+          "max_salary": 132500,
+          "median_salary": 102938,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Cybersecurity",
+      "status": "OK",
+      "request_id": "ff7cb1db-eef5-4cbe-b094-373afc0921c5",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Cyber Security",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/cyber-security-salary-SRCH_KO0,14.htm",
+          "min_salary": 86773,
+          "max_salary": 264543,
+          "median_salary": 149608,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Information Security Analysts",
+          "publisher_name": "Allcriminaljusticeschools",
+          "publisher_link": "https://www.allcriminaljusticeschools.com/cybersecurity/salary",
+          "min_salary": 69210,
+          "max_salary": 182370,
+          "median_salary": 120360,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "cyber security",
+          "publisher_name": "Talent",
+          "publisher_link": "https://www.talent.com/salary?job=cyber+security",
+          "min_salary": 69615.35,
+          "max_salary": 183524.3375,
+          "median_salary": 122074.8375,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Cloud Architecture",
+      "status": "OK",
+      "request_id": "ba1ae83e-6963-42d1-85fa-9c858aee679c",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Cloud Architect",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/cloud-architect-salary-SRCH_KO0,15.htm",
+          "min_salary": 119386,
+          "max_salary": 346433,
+          "median_salary": 201614,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Cloud Architect",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/What-Is-the-Average-Cloud-Architect-Salary-by-State",
+          "min_salary": 112500,
+          "max_salary": 180000,
+          "median_salary": 147236,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "cloud architect",
+          "publisher_name": "Talent",
+          "publisher_link": "https://www.talent.com/salary?job=cloud+architect",
+          "min_salary": 112048.82361111,
+          "max_salary": 200051.07142857,
+          "median_salary": 155692.06030856,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Data Science",
+      "status": "OK",
+      "request_id": "878dfddf-cccb-45f8-9a2c-2fc933b492bb",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Data Scientist",
+          "publisher_name": "Indeed",
+          "publisher_link": "https://www.indeed.com/cmp/Indeed/salaries/Data-Scientist",
+          "min_salary": 72000,
+          "max_salary": 250000,
+          "median_salary": 148143.5,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Data Scientist",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/data-scientist-salary-SRCH_KO0,14.htm",
+          "min_salary": 103168,
+          "max_salary": 256378,
+          "median_salary": 160803,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Data Scientist",
+          "publisher_name": "Builtin",
+          "publisher_link": "https://builtin.com/salaries/data-analytics/data-scientist",
+          "min_salary": 10000,
+          "max_salary": 345000,
+          "median_salary": 120000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Software Development",
+      "status": "OK",
+      "request_id": "ab91cdf5-f8cd-4bde-9a59-c853c2c673dd",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Software Developer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/software-developer-salary-SRCH_KO0,18.htm",
+          "min_salary": 85964,
+          "max_salary": 205174,
+          "median_salary": 131536,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Software Developer",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/Software-Developer-Salary",
+          "min_salary": 73500,
+          "max_salary": 151500,
+          "median_salary": 111845,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Software Development Specialist",
+          "publisher_name": "Indeed",
+          "publisher_link": "https://www.indeed.com/cmp/Sedgwick/salaries/Software-Development-Specialist",
+          "min_salary": 41000,
+          "max_salary": 125000,
+          "median_salary": 81291.99,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Mobile Development",
+      "status": "OK",
+      "request_id": "ff142b27-5a28-4fe4-b8af-76092344094c",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Mobile Application Developer",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/Mobile-Application-Developer-Salary",
+          "min_salary": 67500,
+          "max_salary": 150000,
+          "median_salary": 110482,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "mobile app developer",
+          "publisher_name": "Talent",
+          "publisher_link": "https://www.talent.com/salary?job=mobile+app+developer",
+          "min_salary": 65360,
+          "max_salary": 171550,
+          "median_salary": 116997.15652902,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Mobile App Developer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-mobile-app-developer-salary-SRCH_IL.0,2_IN1_KO3,23.htm",
+          "min_salary": 70034,
+          "max_salary": 112049,
+          "median_salary": 88381,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Game Development",
+      "status": "OK",
+      "request_id": "cb38d258-3951-4cc6-b1d8-7265d5ca2f42",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Game Developer",
+          "publisher_name": "Builtin",
+          "publisher_link": "https://builtin.com/salaries/dev-engineer/game-developer",
+          "min_salary": 4186,
+          "max_salary": 214000,
+          "median_salary": 115000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Game Developer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/game-developer-salary-SRCH_KO0,14.htm",
+          "min_salary": 60847,
+          "max_salary": 185969,
+          "median_salary": 104908,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Game Developer",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/Game-Developer-Salary",
+          "min_salary": 56500,
+          "max_salary": 179500,
+          "median_salary": 108471,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Dev Ops",
+      "status": "OK",
+      "request_id": "fae306ed-2b06-4684-9fb0-9247f08f0c8f",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "DevOps Engineer",
+          "publisher_name": "Builtin",
+          "publisher_link": "https://builtin.com/salaries/dev-engineer/devops-engineer",
+          "min_salary": 25000,
+          "max_salary": 250000,
+          "median_salary": 125000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Devops Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/devops-engineer-salary-SRCH_KO0,15.htm",
+          "min_salary": 98854,
+          "max_salary": 207319,
+          "median_salary": 141202,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Devops Engineer",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/What-Is-the-Average-Devops-Engineer-Salary-by-State",
+          "min_salary": 86500,
+          "max_salary": 164500,
+          "median_salary": 125908,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Full Stack Development",
+      "status": "OK",
+      "request_id": "916839c4-ca97-419f-ade3-231f854d5e6b",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Full Stack Developer",
+          "publisher_name": "Indeed",
+          "publisher_link": "https://www.indeed.com/cmp/Indeed/salaries/Full-Stack-Developer",
+          "min_salary": null,
+          "max_salary": null,
+          "median_salary": 161009.17,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Full Stack Developer",
+          "publisher_name": "Builtin",
+          "publisher_link": "https://builtin.com/salaries/dev-engineer/full-stack-developer",
+          "min_salary": 80000,
+          "max_salary": 260000,
+          "median_salary": 170000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Full Stack Web Developer",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/Full-Stack-Web-Developer-Salary",
+          "min_salary": 67000,
+          "max_salary": 158000,
+          "median_salary": 117880,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "UI/UX Design",
+      "status": "OK",
+      "request_id": "846e44a7-7d70-425c-b416-f7457dbb9f60",
+      "data": [
+        {
+          "location": "Washington, DC",
+          "job_title": "UX Designer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/washington-dc-ux-designer-salary-SRCH_IL.0,13_IM911_KO14,25.htm",
+          "min_salary": 69810,
+          "max_salary": 214858,
+          "median_salary": 120362,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "Virginia",
+          "job_title": "ui ux designer",
+          "publisher_name": "Talent",
+          "publisher_link": "https://www.talent.com/salary?job=ui+ux+designer&location=virginia",
+          "min_salary": 80933.333333333,
+          "max_salary": 175150,
+          "median_salary": 120085.71428571,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "District of Columbia",
+          "job_title": "UI/UX Designer",
+          "publisher_name": "Comparably",
+          "publisher_link": "https://www.comparably.com/companies/bureau-of-labor-statistics/ui-ux-designer-salaries-in-washington-dc",
+          "min_salary": 52000,
+          "max_salary": 124622,
+          "median_salary": 85252,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    }
+  ]
+}

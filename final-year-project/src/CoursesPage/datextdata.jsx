@@ -18,38 +18,136 @@ export const homepageInfo = [
     }
 ];
 
-export const topcourses = [
-    {
-        name: "MACHINE LEARNING",
-        salaryRange: "$100,000 - $140,000",
-        description: `Focuses on algorithms that allow systems to learn from data and improve performance on tasks without being explicitly programmed.`
-    },
-    {
-        name: "BIG DATA ANALYTICS",
-        salaryRange: "$95,000 - $130,000",
-        description: `Involves the study of massive datasets, leveraging tools to analyze, visualize, and derive actionable insights.`
-    },
-    {
-        name: "DATA MINING",
-        salaryRange: "$90,000 - $125,000",
-        description: `Explores the process of discovering patterns and relationships in large data sets to make predictions and inform decisions.`
-    },
-    {
-        name: "ARTIFICIAL INTELLIGENCE",
-        salaryRange: "$110,000 - $150,000",
-        description: `Studies systems that can perform tasks that normally require human intelligence, such as visual perception, speech recognition, and decision-making.`
-    },
-    {
-        name: "DATA VISUALIZATION",
-        salaryRange: "$85,000 - $115,000",
-        description: `Involves creating graphical representations of data to communicate trends, outliers, and patterns effectively.`
-    },
-    {
-        name: "CLOUD COMPUTING",
-        salaryRange: "$90,000 - $125,000",
-        description: `Focuses on the use of cloud infrastructure to store, process, and analyze large-scale data sets for business intelligence and data science applications.`
-    }
+
+export const homepageInfo1 = [ {
+  undergradsal: `74,800`,
+  jobavail : "15,700",
+  emprate: "47%",
+  },]
+  
+  //MALAYSIA
+  export const homepageInfo2 = [ {
+    undergradsal: `40,000`,
+    jobavail : "3,700",
+    emprate: "79%",
+    },]
+
+    import salaryData from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-data.json'; // Adjust path accordingly
+    import salaryData2 from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-dataMY.json'; // Adjust path accordingly
+    
+    export const countries = 
+    [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
+    {"flag":"🇲🇾","file":salaryData2,"currency":"MYR",id:2}];
+
+
+    export const getTopCourses = (salaryData) => {
+    
+      const jobData = salaryData.data.find(job => job.title === 'Computer Science');
+
+      const currency = jobData ? jobData.currency : null;
+      console.log(currency );
+      
+
+
+      const aiJob = salaryData?.data?.find(job => job.title === 'Artificial Intelligence');
+      const cyJob = salaryData?.data?.find(job => job.title === 'Cybersecurity');
+      const clJob = salaryData?.data?.find(job => job.title === 'Cloud Architecture');
+      const daJob = salaryData?.data?.find(job => job.title === 'Data Science');
+      const swJob = salaryData?.data?.find(job => job.title === 'Software Development');
+      const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops');
+      const moJob = salaryData?.data?.find(job => job.title === 'Mobile Development');
+      const gaJob = salaryData?.data?.find(job => job.title === 'Game Development');
+      const fuJob = salaryData?.data?.find(job => job.title === 'Web Development');
+      const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX Design');
+
+      const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
+
+      // Array to store the formatted salary data for each job
+      const salaryResults = [];
+
+      // Loop through each valid job entry
+      for (let i = 0; i < validJobs.length; i++) {
+          // Get Glassdoor data for each job title
+          const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
+          
+          // Check if glassdoorData exists and has at least one entry
+          if (glassdoorData && glassdoorData.length > 0) {
+              // Get the min, max, and median salaries for Glassdoor entries
+              const { min_salary, max_salary, median_salary } = glassdoorData[0]; // Assuming you want the first entry
+              
+              // Format salaries with commas
+              const formattedMinSalary = min_salary ? min_salary.toLocaleString() : 'Data not available';
+              const formattedMaxSalary = max_salary ? max_salary.toLocaleString() : 'Data not available';
+              const formattedMedianSalary = median_salary ? median_salary.toLocaleString() : 'Data not available';
+
+              // Store the job title and formatted salary data in the array
+              salaryResults.push({
+                  jobTitle: validJobs[i].title,
+                  minSalary: formattedMinSalary,
+                  maxSalary: formattedMaxSalary,
+                  medianSalary: formattedMedianSalary
+              });
+          } else {
+              // Store job title with "No data" message if Glassdoor data is unavailable
+              salaryResults.push({
+                  jobTitle: validJobs[i]?.title,
+                  minSalary: 'No data available',
+                  maxSalary: 'No data available',
+                  medianSalary: 'No data available'
+              });
+          }
+        }
+
+
+        return [
+          {
+            name: "MACHINE LEARNING",
+            salaryRange: `${currency}100,000 - ${currency}140,000`,
+            description: `Focuses on algorithms that allow systems to learn from data and improve performance on tasks without being explicitly programmed.`
+        },
+        {
+            name: "BIG DATA ANALYTICS",
+            salaryRange: `${currency}95,000 - ${currency}130,000`,
+            description: `Involves the study of massive datasets, leveraging tools to analyze, visualize, and derive actionable insights.`
+        },
+        {
+            name: "DATA MINING",
+            salaryRange: `${currency}90,000 - ${currency}125,000`,
+            description: `Explores the process of discovering patterns and relationships in large data sets to make predictions and inform decisions.`
+        },
+        {
+            name: "ARTIFICIAL INTELLIGENCE",
+            salaryRange: `${currency}110,000 - ${currency}150,000`,
+            description: `Studies systems that can perform tasks that normally require human intelligence, such as visual perception, speech recognition, and decision-making.`
+        },
+        {
+            name: "DATA VISUALIZATION",
+            salaryRange: `${currency}85,000 - ${currency}115,000`,
+            description: `Involves creating graphical representations of data to communicate trends, outliers, and patterns effectively.`
+        },
+        {
+            name: "CLOUD COMPUTING",
+            salaryRange: `${currency}90,000 - ${currency}125,000`,
+            description: `Focuses on the use of cloud infrastructure to store, process, and analyze large-scale data sets for business intelligence and data science applications.`
+        }
+      ]
+};
+
+export const experienceSalary1 = [
+  { id: 1, experience: "0-1 YEARS EXPERIENCE", salaryRange: "MYR29,000 - MYR50,000" },
+  { id: 2, experience: "1-3 YEARS EXPERIENCE", salaryRange: "MYR50,000 - MYR59,000" },
+  { id: 3, experience: "4-6 YEARS EXPERIENCE", salaryRange: "MYR60,000 - MYR90,000" },
+  { id: 4, experience: "7-9 YEARS EXPERIENCE", salaryRange: "MYR90,000 - MYR200,000" }
 ];
+
+export const experienceSalary2 = [
+  { id: 1, experience: "0-1 YEARS EXPERIENCE", salaryRange: "$92,000 - $170,000" },
+  { id: 2, experience: "1-3 YEARS EXPERIENCE", salaryRange: "$112,000 - $185,000" },
+  { id: 3, experience: "4-6 YEARS EXPERIENCE", salaryRange: "$122,000 - $221,000" },
+  { id: 4, experience: "7-9 YEARS EXPERIENCE", salaryRange: "$140,000 - $250,000" }
+];
+
+
 
 export const prerequisites = [
     "Strong foundation in mathematics and statistics",
@@ -85,7 +183,6 @@ export const experienceSalary = [
     { experience: "7-9 YEARS EXPERIENCE", salaryRange: "$130,000 - $150,000" }
 ];
 
-export const countries = ["🇺🇸", "🇬🇧", "🇩🇪", "🇨🇦"];
 
 export const topspecializations = [
     "Machine Learning",

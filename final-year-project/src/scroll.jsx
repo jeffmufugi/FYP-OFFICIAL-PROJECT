@@ -1,17 +1,18 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
-  const pageRef = useRef(null);
 
   useEffect(() => {
-    if (pageRef.current) {
-      pageRef.current.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior:"instant" // Smooth scrolling effect
+    });
   }, [pathname]);
 
-  return <div ref={pageRef}>{/* Your page content here */}</div>;
+  return null;
 }
 
 export default ScrollToTop;

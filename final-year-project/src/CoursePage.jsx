@@ -68,6 +68,13 @@ export default function CoursePage(){
         navigate('/cybcoursepage');
       }
 
+      const ceCourseClick = () => {
+        navigate('/cecoursepage');
+      }
+
+
+
+
 
 
 
@@ -88,14 +95,6 @@ export default function CoursePage(){
         fontcolor: "white",
         route: csCourseClick,
         id: 1},
-        
-        {courseName: "Mechanical Engineering", 
-        imgName: mec,
-        upColor: "#92FFC9",
-        downColor: "#197949",
-        fontcolor: "white",
-        route: mechCourseClick,
-        id: 2},
 
         {courseName: "Chemical Engineering", 
         imgName: chem,
@@ -107,16 +106,16 @@ export default function CoursePage(){
 
         {courseName: "Physics", 
         imgName: phy,
-        upColor: "#FFBDEA",
-        downColor: "#6D427C",
+        upColor: "#D29EFB",
+        downColor: "#9A86E4",
         fontcolor: "white",
         route: phyCourseClick,
         id: 4},
 
         {courseName: "Mathematics", 
         imgName: mat,
-        upColor: "#B9F8F7",
-        downColor: "#5272AD",
+        upColor: "#9EE8FB",
+        downColor: "#81CBDC",
         fontcolor: "white",
         route: mathCourseClick,
         id: 3},
@@ -125,15 +124,15 @@ export default function CoursePage(){
         imgName: air,
         upColor: "#FBD9BC",
         downColor: "#EEAC89",
-        fontcolor: "black",
+        fontcolor: "white",
         route: aeroCourseClick,
         id: 4},
 
 
         {courseName: "Biomedical Engineering", 
         imgName: bio,
-        upColor: "#865075",
-        downColor: "#4C1F5B",
+        upColor: "#A87FC7",
+        downColor: "#865075",
         fontcolor: "white",
         route: bioCourseClick,
         id: 2},
@@ -141,7 +140,7 @@ export default function CoursePage(){
         {courseName: "Civil Engineering", 
         imgName: civ,
         upColor: "#FFB9B9",
-        downColor: "#593435",
+        downColor: "#9E6162",
         route: civCourseClick,
 
         fontcolor: "white",
@@ -166,7 +165,7 @@ export default function CoursePage(){
         {courseName: "Data Science", 
         imgName: dat,
         upColor: "#DBDBDB",
-        downColor: "#5C5C5C",
+        downColor: "#ABABAB",
         fontcolor: "white",
         route: datCourseClick,
         id: 2},
@@ -183,9 +182,25 @@ export default function CoursePage(){
         imgName: cyb,
         upColor: "#A69EFB",
         downColor: "black",
-        fontcolor: "yellow",
+        fontcolor: "white",
         route: cybCourseClick,
         id: 3},
+
+        {courseName: "Mechanical Engineering", 
+        imgName: mec,
+        upColor: "#92FFC9",
+        downColor: "black",
+        fontcolor: "white",
+        route: mechCourseClick,
+        id: 2},
+
+        {courseName: "Computer Engineering", 
+        imgName: cst,
+        upColor: "#7BB4FB",
+        downColor: "black",
+        fontcolor: "white",
+        route: ceCourseClick,
+        id: 2},
 
         ];
 
@@ -229,7 +244,7 @@ export default function CoursePage(){
                         {courses.map((course)=>( 
                             
                          <div className="course-program-card">
-                            <div className="course-card" key={course.id} style={{backgroundColor : course.upColor}} onClick={course.route}>
+                            <div className="course-card" key={course.id} style={{backgroundColor : course.upColor}} onClick={course.route} >
                             <img src={course.imgName} className="imgcst"/>
                             <div className="computer-science-ftr" style={{backgroundColor : course.downColor}}>
                                 <p className="txt-121" style={{color : course.fontcolor}}>{course.courseName}</p>

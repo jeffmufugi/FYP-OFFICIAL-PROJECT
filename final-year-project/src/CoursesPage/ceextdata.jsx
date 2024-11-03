@@ -1,33 +1,33 @@
 export const homepageInfo = [
     {
-        courseName: "mechanical engineering.",
-        courseDefinition: "Mechanical engineering involves the design, analysis, manufacturing, and maintenance of mechanical systems.",
-        undergradsal: "$97,000",
-        jobavail: "316,300",
-        emprate: "85%",
+        courseName: "computer engineering.",
+        courseDefinition: "Computer Engineering is a discipline that integrates electrical engineering and computer science to develop hardware and software solutions, with a focus on building and improving computing systems.",
+        undergradsal: "$80,000",
+        jobavail: "400,000",
+        emprate: "95%",
     },
     
     {
-        description: `Mechanical engineering combines principles of physics, mathematics, and materials science to design, develop, and improve mechanical systems for various industries, including automotive, aerospace, and energy.`,
-        backgroundColor1: "#E1FEF6",
-        backgroundColor2: "#EEFFF9",
-        backgroundColor3: "#F6FFFC",
-        fontColor: "#00423C",
-        popupcolor1 : "#00423C",
-        popupcolor2 : "#EEFFF9",
+        description: `Computer Engineering covers the design, development, and testing of computer systems and networks, combining principles of hardware and software engineering for applications in areas like artificial intelligence, embedded systems, and telecommunications.`,
+        backgroundColor1:"#D6EFFF",
+        backgroundColor2:"#E5F5FF",
+        backgroundColor3:"#EDFAFF",
+        fontColor: "#104560",
+        popupcolor1: "#104560",
+        popupcolor2: "#E5F5FF",
     }
 ];
 
 export const homepageInfo1 = [ {
-  undergradsal: `74,800`,
-  jobavail : "15,700",
-  emprate: "47%",
+  undergradsal: `84,882`,
+  jobavail : "151,700",
+  emprate: "97%",
   },]
   
   //MALAYSIA
   export const homepageInfo2 = [ {
-    undergradsal: `40,000`,
-    jobavail : "3,700",
+    undergradsal: `67,000`,
+    jobavail : "39,700",
     emprate: "79%",
     },]
 
@@ -100,54 +100,44 @@ export const homepageInfo1 = [ {
 
         return [
           {
-            name: "AEROSPACE/DEFENSE",
-            salaryRange: `${currency}125,000 - ${currency}165,000`,
-            description: `Design and develop military systems, aircraft, spacecraft, and related technologies while ensuring compliance with safety regulations and performance standards.`
+            name: "EMBEDDED SYSTEMS",
+            salaryRange: `${currency}90,000 - ${currency}125,000`,
+            description: `Study the integration of software with hardware components in embedded systems used in industries like automotive, healthcare, and telecommunications.`
         },
         {
-            name: "OIL & GAS/ENERGY",
-            salaryRange: `${currency}120,000 - ${currency}160,000`,
-            description: `Design, maintain, and optimize energy production equipment, focusing on efficiency, safety, and environmental compliance in the energy sector.`
-        },
-        {
-            name: "ROBOTICS & AUTOMATION",
-            salaryRange: `${currency}115,000 - ${currency}155,000`,
-            description: `Develop and implement automated systems and industrial robots, integrating mechanical design with control systems and artificial intelligence.`
-        },
-        {
-            name: "MEDICAL DEVICES",
-            salaryRange: `${currency}110,000 - ${currency}150,000`,
-            description: `Design and develop medical equipment, prosthetics, and diagnostic devices while ensuring compliance with healthcare regulations and patient safety standards.`
-        },
-        {
-            name: "RESEARCH & DEVELOPMENT",
-            salaryRange: `${currency}105,000 - ${currency}145,000`,
-            description: `Lead innovation in mechanical engineering, developing new technologies, products, and solutions across various industries.`
-        },
-        {
-            name: "AUTOMOTIVE ADVANCED SYSTEMS",
-            salaryRange: `${currency}100,000 - ${currency}140,000`,
-            description: `Design and develop electric vehicles, autonomous systems, and advanced automotive technologies, focusing on innovation and sustainability.`
-        },
-        {
-            name: "NUCLEAR ENGINEERING",
-            salaryRange: `${currency}95,000 - ${currency}135,000`,
-            description: `Design, maintain, and optimize nuclear power plant systems while ensuring safety, compliance, and efficient power generation.`
-        },
-        {
-            name: "PATENTS & INTELLECTUAL PROPERTY",
-            salaryRange: `${currency}90,000 - ${currency}130,000`,
-            description: `Analyze and consult on technical patents, providing expertise in mechanical engineering innovations and intellectual property rights.`
-        },
-        {
-            name: "DATA CENTER INFRASTRUCTURE",
-            salaryRange: `${currency}85,000 - ${currency}125,000`,
-            description: `Design and optimize cooling systems, power distribution, and mechanical infrastructure for large-scale data centers.`
-        },
-        {
-            name: "SEMICONDUCTOR MANUFACTURING",
+            name: "COMPUTER ARCHITECTURE",
             salaryRange: `${currency}85,000 - ${currency}120,000`,
-            description: `Develop and optimize manufacturing processes and equipment for semiconductor production, ensuring quality and efficiency.`
+            description: `Explore the design and organization of computer hardware and how different parts work together to optimize performance.`
+        },
+        {
+            name: "NETWORKING",
+            salaryRange: `${currency}80,000 - ${currency}110,000`,
+            description: `Learn about the fundamentals of computer networks, data communication, and protocols that enable connectivity between devices.`
+        },
+        {
+            name: "VLSI DESIGN",
+            salaryRange: `${currency}100,000 - ${currency}140,000`,
+            description: `Analyze very large-scale integration (VLSI) systems for developing microchips and processors used in modern electronics.`
+        },
+        {
+            name: "CYBERSECURITY",
+            salaryRange: `${currency}95,000 - ${currency}130,000`,
+            description: `Examine the strategies and techniques used to protect computer systems and networks from cyber threats and attacks.`
+        },
+        {
+            name: "ARTIFICIAL INTELLIGENCE",
+            salaryRange: `${currency}100,000 - ${currency}150,000`,
+            description: `Delve into machine learning algorithms, neural networks, and AI systems that enable computers to perform tasks intelligently.`
+        },
+        {
+            name: "CONTROL SYSTEMS",
+            salaryRange: `${currency}85,000 - ${currency}120,000`,
+            description: `Focus on the design and implementation of control mechanisms in engineering systems to regulate and optimize their behavior.`
+        },
+        {
+            name: "ROBOTICS",
+            salaryRange: `${currency}90,000 - ${currency}135,000`,
+            description: `Study robotics systems that integrate mechanical design with sensors and software to create intelligent, automated machines.`
         }
       ]
 };
@@ -155,124 +145,119 @@ export const homepageInfo1 = [ {
 export const experienceSalary1 = [
   { id: 1, experience: "0-1 YEARS EXPERIENCE", salaryRange: "MYR29,000 - MYR50,000" },
   { id: 2, experience: "1-3 YEARS EXPERIENCE", salaryRange: "MYR50,000 - MYR59,000" },
-  { id: 3, experience: "4-6 YEARS EXPERIENCE", salaryRange: "MYR70,000 - MYR90,000" },
+  { id: 3, experience: "4-6 YEARS EXPERIENCE", salaryRange: "MYR60,000 - MYR90,000" },
   { id: 4, experience: "7-9 YEARS EXPERIENCE", salaryRange: "MYR90,000 - MYR200,000" }
 ];
 
 export const experienceSalary2 = [
   { id: 1, experience: "0-1 YEARS EXPERIENCE", salaryRange: "$92,000 - $170,000" },
-  { id: 2, experience: "1-3 YEARS EXPERIENCE", salaryRange: "$102,000 - $185,000" },
+  { id: 2, experience: "1-3 YEARS EXPERIENCE", salaryRange: "$112,000 - $185,000" },
   { id: 3, experience: "4-6 YEARS EXPERIENCE", salaryRange: "$122,000 - $221,000" },
   { id: 4, experience: "7-9 YEARS EXPERIENCE", salaryRange: "$140,000 - $250,000" }
 ];
 
+
+
+
+
 export const prerequisites = [
-    "Strong foundation in physics, mathematics, and mechanics",
-    "Understanding of thermodynamics and fluid dynamics",
-    "Proficiency in computer-aided design (CAD) tools",
-    "Problem-solving and analytical skills",
-    "Teamwork and communication skills"
+    "Strong foundation in mathematics and physics",
+    "Proficiency in programming languages (C, C++, Python)",
+    "Knowledge of computer hardware and software systems",
+    "Problem-solving and analytical thinking",
+    "Team collaboration and communication skills"
 ];
 
 export const coreAreasOfStudy = [
-    "Statics and Dynamics",
-    "Thermodynamics",
-    "Fluid Mechanics",
-    "Materials Science",
-    "Heat Transfer",
-    "Control Systems",
-    "Mechanical Design",
-    "Manufacturing Processes"
+    "Digital Logic Design",
+    "Microprocessors and Microcontrollers",
+    "Computer Networks",
+    "Operating Systems",
+    "Software Engineering",
+    "Embedded Systems",
+    "VLSI Design",
+    "Cybersecurity"
 ];
 
 export const jobGrowthFields = [
-    "AEROSPACE ENGINEERING",
-    "AUTOMOTIVE ENGINEERING",
-    "ROBOTICS ENGINEERING",
-    "RENEWABLE ENERGY",
-    "ADVANCED MANUFACTURING"
+    "Artificial Intelligence",
+    "IoT and Embedded Systems",
+    "Cybersecurity",
+    "Cloud Computing",
+    "Robotics and Automation"
 ];
 
 export const experienceSalary = [
     { experience: "0-1 YEARS EXPERIENCE", salaryRange: "$65,000 - $80,000" },
-    { experience: "1-3 YEARS EXPERIENCE", salaryRange: "$70,000 - $90,000" },
-    { experience: "4-6 YEARS EXPERIENCE", salaryRange: "$85,000 - $110,000" },
-    { experience: "7-9 YEARS EXPERIENCE", salaryRange: "$95,000 - $125,000" }
+    { experience: "1-3 YEARS EXPERIENCE", salaryRange: "$80,000 - $100,000" },
+    { experience: "4-6 YEARS EXPERIENCE", salaryRange: "$95,000 - $120,000" },
+    { experience: "7-9 YEARS EXPERIENCE", salaryRange: "$110,000 - $140,000" }
 ];
-
 
 
 export const topspecializations = [
-    "Aerospace Engineering",
-    "Automotive Engineering",
+    "Embedded Systems",
+    "VLSI Design",
+    "Cybersecurity",
+    "Computer Architecture",
     "Robotics",
-    "Energy Systems",
-    "Mechatronics",
-    "Manufacturing Processes",
-    "Nanotechnology",
-    "Biomechanics"
+    "Artificial Intelligence"
 ];
 
 export const trend = [
-    "Sustainable Energy Systems",
-    "Autonomous Vehicles",
-    "Additive Manufacturing (3D Printing)",
-    "Robotics and Automation",
-    "Artificial Intelligence in Engineering",
-    "Advanced Materials Development"
+    "AI-Powered Systems",
+    "Quantum Computing",
+    "Edge Computing",
+    "5G Networks",
+    "Autonomous Systems"
 ];
 
 export const skills = [
-    "Strong understanding of mechanics and physics",
-    "Computer-aided design (CAD) and simulation software",
-    "Ability to analyze and interpret data",
-    "Project management and teamwork",
-    "Effective communication and presentation skills",
-    "Knowledge of manufacturing processes",
-    "Problem-solving in complex engineering systems"
+    "Proficiency in hardware-software integration",
+    "Strong coding skills (C++, Python, Verilog)",
+    "Knowledge of networking protocols",
+    "Experience with simulation tools (MATLAB, Simulink)",
+    "Project management and leadership",
+    "Critical thinking and problem-solving"
 ];
 
 export const challengesArray = [
     "UNDERGRADUATE CHALLENGES",
     {
-        heading: "Challenging technical coursework.",
-        description: `Courses like dynamics, thermodynamics, and fluid mechanics can be difficult without a solid grasp of mathematics and physics.`
+        heading: "Balancing hardware and software knowledge.",
+        description: `Computer Engineering students must develop expertise in both hardware and software, which can be a challenging task requiring cross-disciplinary knowledge.`
     },
     {
-        heading: "Practical design and project-based work.",
-        description: `Balancing theoretical concepts with hands-on design projects can be demanding, requiring strong time management skills.`
+        heading: "Keeping pace with rapid technology shifts.",
+        description: `The rapid evolution of computer technologies means students need to stay updated with the latest advancements in the field.`
     },
     {
-        heading: "Evolving technology.",
-        description: `Keeping up with the rapid advancement in technologies like robotics, automation, and materials science can be challenging but necessary for success.`
+        heading: "Designing efficient systems.",
+        description: `Balancing performance, cost, and power efficiency is crucial in designing modern computing systems, which requires both creativity and technical skills.`
     },
     {
-        heading: "High competition for internships and jobs.",
-        description: `Getting placement in top fields such as aerospace or automotive engineering requires strong technical skills and relevant project experience.`
+        heading: "Interdisciplinary collaboration.",
+        description: `Computer engineers often collaborate with professionals from other fields, such as mechanical engineers or data scientists, requiring strong teamwork and communication skills.`
     }
 ];
 
 export const issuesArray = [
     "CURRENT JOB ISSUES IN THE FIELD",
     {
-        heading: "Automation affecting manufacturing roles.",
-        description: `The rise of automation in manufacturing is reducing traditional mechanical roles, pushing engineers to adapt to newer, tech-focused jobs.`
+        heading: "Talent shortage in cybersecurity.",
+        description: `The demand for computer engineers with cybersecurity expertise is outpacing the available workforce, creating a significant skills gap.`
     },
     {
-        heading: "Increased focus on sustainability.",
-        description: `New environmental regulations are pushing industries to focus on sustainability, requiring engineers to design systems that minimize waste and energy consumption.`
+        heading: "Evolving technologies.",
+        description: `As technologies such as AI and quantum computing rapidly evolve, computer engineers must constantly upskill to stay relevant.`
     },
     {
-        heading: "Demand for AI and robotics expertise.",
-        description: `Engineers with expertise in AI and robotics are in high demand, particularly in sectors like automotive and manufacturing where smart systems are rapidly being adopted.`
+        heading: "Global competition.",
+        description: `Computer engineering is a highly competitive field, with companies across the globe vying for top talent and market leadership.`
     },
     {
-        heading: "Global competition in manufacturing.",
-        description: `The global nature of the manufacturing industry is increasing competition, pushing engineers to innovate and improve efficiency in production processes.`
-    },
-    {
-        heading: "Job stability concerns in traditional sectors.",
-        description: `With the transition to renewable energy and automation, traditional sectors like oil and gas or automotive manufacturing are experiencing job uncertainty.`
+        heading: "Ethical concerns.",
+        description: `The rise of AI and data-driven technologies has brought new ethical challenges related to privacy, bias, and accountability in computer engineering.`
     }
 ];
 
@@ -341,8 +326,11 @@ export const fadeInFromLeft = {
       viewport: { once: true }
     }
   };
-  
-  export const fadeInFromLeft3 = {
+
+
+
+
+export const fadeInFromLeft3 = {
     left1: {
       initial: { x: -30, opacity: 0 },
       whileInView: { x: 0, opacity: 1 },

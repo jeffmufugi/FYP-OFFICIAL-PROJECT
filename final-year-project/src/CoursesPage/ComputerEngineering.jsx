@@ -1,28 +1,27 @@
 import Header1 from "../Homepage1/Header2.jsx";
-import fadebg from "../site_icons/rectpurp1.png";
-import img1 from "../site_icons/Paid8.svg";
-import img2 from "../site_icons/Co8.svg";
-import img3 from "../site_icons/ex8.svg";
-import h1 from "../site_icons/doct8.svg";
-import h2 from "../site_icons/doct82.svg";
-import h3 from "../site_icons/doct83.svg";
-import h4 from "../site_icons/t81.svg";
-import h5 from "../site_icons/t82.svg";
-import h6 from "../site_icons/t83.svg";
-import dd from "../site_icons/dropdown.svg";
+import fadebg from "../site_icons/rectblu1.png";
+import img1 from "../site_icons/Paid9.svg";
+import img2 from "../site_icons/Co9.svg";
+import img3 from "../site_icons/ex9.svg";
+import h1 from "../site_icons/doct9.svg";
+import h2 from "../site_icons/doct92.svg";
+import h3 from "../site_icons/doct93.svg";
+import h4 from "../site_icons/t91.svg";
+import h5 from "../site_icons/t92.svg";
+import h6 from "../site_icons/t93.svg";
 import mm from "../site_icons/mm.svg";
-import ds from "../site_icons/ds8.svg";
-import tm from "../site_icons/tm8.svg";
+import ds from "../site_icons/ds9.svg";
+import tm from "../site_icons/tm9.svg";
 import dsp from "../site_icons/dsp.svg";
 import dst from "../site_icons/dst.svg";
 import { useState,useRef, useEffect } from "react";
 import {countries,topspecializations,
   trend,skills,challengesArray,issuesArray,coreAreasOfStudy,jobGrowthFields,experienceSalary,experienceSalary1,
-  homepageInfo,prerequisites,getTopCourses,homepageInfo2,homepageInfo1} from './bioextdata.jsx';
+  homepageInfo,prerequisites,getTopCourses,homepageInfo2,homepageInfo1} from './ceextdata.jsx';
 import { Page1,Page2,Page3,Page4,Page5, fadeInFromLeft} from "./a0Skeleton.jsx";
 
 
-const  BiomedicalEngineeringCourse = () => {
+const ComputerEngineeringCourse= () => {
  
   const [isOpen, setIsOpen] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState("🇺🇸");
@@ -30,9 +29,21 @@ const  BiomedicalEngineeringCourse = () => {
   const [hoveredCourse, setHoveredCourse] = useState(null);
   const [selectedCurrency, setSelectedCurrency] = useState("$");
   const [animat,setAnimat]=useState(null)
+  useEffect(() => {
+    const defaultCountry = countries.find(country => country.flag === "🇺🇸");
+    if (defaultCountry) {
+      const courses = getTopCourses(defaultCountry.file);
+      setCourseData(courses);
+    }
+  }, []);
 
-const dropdownRef = useRef(null)
   const inputRef = useRef(null);
+
+  const dropdownRef = useRef(null);
+
+  // Toggle the dropdown open/close
+ 
+  // Close the dropdown if clicked outside of it
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setIsOpen(false);
@@ -54,11 +65,9 @@ const dropdownRef = useRef(null)
     const currency = setSelectedCurrency(country.currency);
     const courses = getTopCourses(country.file);
     setCourseData(courses);
-
-
-    
     setIsOpen(false);
   };
+  
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
     setAnimat(null)
@@ -201,7 +210,7 @@ const dropdownRef = useRef(null)
     </>
   );
 };
-export default BiomedicalEngineeringCourse;
+export default ComputerEngineeringCourse;
 
 
 

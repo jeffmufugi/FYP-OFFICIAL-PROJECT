@@ -18,38 +18,137 @@ export const homepageInfo = [
     }
 ];
 
-export const topcourses = [
-    {
-        name: "MARINE ECOLOGY",
-        salaryRange: "$60,000 - $90,000",
-        description: `Focuses on the relationships between marine organisms and their environments, including ecosystems, biodiversity, and conservation.`
-    },
-    {
-        name: "OCEANOGRAPHY",
-        salaryRange: "$65,000 - $95,000",
-        description: `Studies the physical, chemical, and geological aspects of the ocean, influencing marine biology and environmental management.`
-    },
-    {
-        name: "MARINE CONSERVATION",
-        salaryRange: "$55,000 - $85,000",
-        description: `Involves the protection and restoration of marine habitats, addressing the impact of pollution, overfishing, and climate change.`
-    },
-    {
-        name: "MARINE ANIMAL BEHAVIOR",
-        salaryRange: "$60,000 - $90,000",
-        description: `Examines the behaviors of marine animals, their communication, migration, feeding, and social patterns.`
-    },
-    {
-        name: "MARINE MICROBIOLOGY",
-        salaryRange: "$65,000 - $100,000",
-        description: `Studies microorganisms in marine environments, contributing to our understanding of marine ecosystems and biotechnology.`
-    },
-    {
-        name: "AQUACULTURE",
-        salaryRange: "$55,000 - $85,000",
-        description: `Focuses on the farming of marine organisms for food, improving sustainability, and reducing overfishing impacts.`
-    }
+export const homepageInfo1 = [ {
+  undergradsal: `70,000`,
+  jobavail : "15,700",
+  emprate: "47%",
+  },]
+  
+  //MALAYSIA
+  export const homepageInfo2 = [ {
+    undergradsal: `41,000`,
+    jobavail : "3,700",
+    emprate: "79%",
+    },]
+
+    import salaryData from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-data.json'; // Adjust path accordingly
+    import salaryData2 from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-dataMY.json'; // Adjust path accordingly
+    
+    export const countries = 
+    [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
+    {"flag":"🇲🇾","file":salaryData2,"currency":"MYR",id:2}];
+
+
+    export const getTopCourses = (salaryData) => {
+    
+      const jobData = salaryData.data.find(job => job.title === 'Computer Science');
+
+      const currency = jobData ? jobData.currency : null;
+      console.log(currency );
+      
+
+
+      const aiJob = salaryData?.data?.find(job => job.title === 'Artificial Intelligence');
+      const cyJob = salaryData?.data?.find(job => job.title === 'Cybersecurity');
+      const clJob = salaryData?.data?.find(job => job.title === 'Cloud Architecture');
+      const daJob = salaryData?.data?.find(job => job.title === 'Data Science');
+      const swJob = salaryData?.data?.find(job => job.title === 'Software Development');
+      const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops');
+      const moJob = salaryData?.data?.find(job => job.title === 'Mobile Development');
+      const gaJob = salaryData?.data?.find(job => job.title === 'Game Development');
+      const fuJob = salaryData?.data?.find(job => job.title === 'Web Development');
+      const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX Design');
+
+      const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
+
+      // Array to store the formatted salary data for each job
+      const salaryResults = [];
+
+      // Loop through each valid job entry
+      for (let i = 0; i < validJobs.length; i++) {
+          // Get Glassdoor data for each job title
+          const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
+          
+          // Check if glassdoorData exists and has at least one entry
+          if (glassdoorData && glassdoorData.length > 0) {
+              // Get the min, max, and median salaries for Glassdoor entries
+              const { min_salary, max_salary, median_salary } = glassdoorData[0]; // Assuming you want the first entry
+              
+              // Format salaries with commas
+              const formattedMinSalary = min_salary ? min_salary.toLocaleString() : 'Data not available';
+              const formattedMaxSalary = max_salary ? max_salary.toLocaleString() : 'Data not available';
+              const formattedMedianSalary = median_salary ? median_salary.toLocaleString() : 'Data not available';
+
+              // Store the job title and formatted salary data in the array
+              salaryResults.push({
+                  jobTitle: validJobs[i].title,
+                  minSalary: formattedMinSalary,
+                  maxSalary: formattedMaxSalary,
+                  medianSalary: formattedMedianSalary
+              });
+          } else {
+              // Store job title with "No data" message if Glassdoor data is unavailable
+              salaryResults.push({
+                  jobTitle: validJobs[i]?.title,
+                  minSalary: 'No data available',
+                  maxSalary: 'No data available',
+                  medianSalary: 'No data available'
+              });
+          }
+        }
+
+
+        return [
+          {
+            name: "MARINE ECOLOGY",
+            salaryRange: `${currency}60,000 - ${currency}90,000`,
+            description: `Focuses on the relationships between marine organisms and their environments, including ecosystems, biodiversity, and conservation.`
+        },
+        {
+            name: "OCEANOGRAPHY",
+            salaryRange: `${currency}65,000 - ${currency}95,000`,
+            description: `Studies the physical, chemical, and geological aspects of the ocean, influencing marine biology and environmental management.`
+        },
+        {
+            name: "MARINE CONSERVATION",
+            salaryRange: `${currency}55,000 - ${currency}85,000`,
+            description: `Involves the protection and restoration of marine habitats, addressing the impact of pollution, overfishing, and climate change.`
+        },
+        {
+            name: "MARINE ANIMAL BEHAVIOR",
+            salaryRange: `${currency}60,000 - ${currency}90,000`,
+            description: `Examines the behaviors of marine animals, their communication, migration, feeding, and social patterns.`
+        },
+        {
+            name: "MARINE MICROBIOLOGY",
+            salaryRange: `${currency}65,000 - ${currency}100,000`,
+            description: `Studies microorganisms in marine environments, contributing to our understanding of marine ecosystems and biotechnology.`
+        },
+        {
+            name: "AQUACULTURE",
+            salaryRange: `${currency}55,000 - ${currency}85,000`,
+            description: `Focuses on the farming of marine organisms for food, improving sustainability, and reducing overfishing impacts.`
+        }
+
+      ]
+};
+
+export const experienceSalary1 = [
+  { id: 1, experience: "0-1 YEARS EXPERIENCE", salaryRange: "MYR29,000 - MYR50,000" },
+  { id: 2, experience: "1-3 YEARS EXPERIENCE", salaryRange: "MYR50,000 - MYR59,000" },
+  { id: 3, experience: "4-6 YEARS EXPERIENCE", salaryRange: "MYR70,000 - MYR90,000" },
+  { id: 4, experience: "7-9 YEARS EXPERIENCE", salaryRange: "MYR90,000 - MYR200,000" }
 ];
+
+export const experienceSalary2 = [
+  { id: 1, experience: "0-1 YEARS EXPERIENCE", salaryRange: "$92,000 - $170,000" },
+  { id: 2, experience: "1-3 YEARS EXPERIENCE", salaryRange: "$102,000 - $185,000" },
+  { id: 3, experience: "4-6 YEARS EXPERIENCE", salaryRange: "$122,000 - $221,000" },
+  { id: 4, experience: "7-9 YEARS EXPERIENCE", salaryRange: "$140,000 - $250,000" }
+];
+
+
+
 
 export const prerequisites = [
     "Strong background in biology and ecology",
@@ -85,7 +184,6 @@ export const experienceSalary = [
     { experience: "7-9 YEARS EXPERIENCE", salaryRange: "$80,000 - $100,000" }
 ];
 
-export const countries = ["🇺🇸", "🇦🇺", "🇬🇧", "🇳🇿"];
 
 export const topspecializations = [
     "Marine Ecology",

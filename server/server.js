@@ -3,7 +3,6 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require('cors'); // Add this line to import cors
 
-
 const app = express();
 
 // Add CORS configuration
@@ -14,9 +13,10 @@ app.use(cors({
 }));
 
 app.use(express.json());
-// app.use(express.urlencoded({ extended: true })); 
 
 app.set("view engine", "ejs");
+
+const PORT = process.env.PORT;
 
 mongoose.connect("mongodb://localhost/users")
 
@@ -34,10 +34,14 @@ app.use("/api/signup",signupRouter);
 const signinRouter = require("./routes/signin.js");
 app.use("/api/signin", signinRouter);
 
+const blsRoute = require("./routes/bls.js");
+app.use("/api", blsRoute);
 
+const clsRoute = require("./routes/jsearch.js");
+app.use("/api", clsRoute);
 
-app.listen(3000, () => {
-    console.log("Server is running on port 3000");
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
 
 

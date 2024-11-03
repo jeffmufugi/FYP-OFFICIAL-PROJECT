@@ -14,10 +14,12 @@ import dd from "./site_icons/dropdown.svg";
 import Header from "./Homepage1/Header1.jsx";
 import axios from 'axios';
 import React, { useState } from 'react';
+import Dropdown from "./DropDown.jsx";
  
 
 export default function SignUpPage() {
     const navigate = useNavigate();
+    
 
     const countries = [
         "North America","Asia","South America","Europe","Africa","Middle East"
@@ -71,8 +73,10 @@ export default function SignUpPage() {
     };
     return (
         <div className="sign-up-page">
+            
             <img src={rec} className="background-top-light" alt="Background" />
             <Header />
+            
             <div className="sign-up-header">
                 <div className="left-sign-up-header">
                     <div className="top-left-sign-up-header"></div>
@@ -142,6 +146,7 @@ export default function SignUpPage() {
                             <img src={location} alt="location-icon" className="text-img"/>
                         </div>
                         
+                        
                         <div className="input-field-7">
                             <p className="TopPlaceHolder">Password*</p>
                             <input type="password" name="password" value={formData.password} onChange={handleChange} required />
@@ -154,7 +159,9 @@ export default function SignUpPage() {
                 </motion.div>
                 <div className="right-main-sign-up-form"></div>
             </form>
+            
             <p className="sign-in-link-sip">Already Have an account? <a href="#" onClick={signInClick}>Sign in</a></p>
+            
         </div>
     );
 }

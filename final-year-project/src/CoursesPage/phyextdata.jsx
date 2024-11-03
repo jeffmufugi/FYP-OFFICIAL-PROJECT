@@ -17,59 +17,156 @@ export const homepageInfo = [
         popupcolor2 : "#FBECFF",
     }
 ];
+export const homepageInfo1 = [ {
+  undergradsal: `70,000`,
+  jobavail : "15,700",
+  emprate: "47%",
+  },]
+  
+  //MALAYSIA
+  export const homepageInfo2 = [ {
+    undergradsal: `41,000`,
+    jobavail : "3,700",
+    emprate: "79%",
+    },]
 
-export const topcourses = [
-    {
-        name: "QUANTUM COMPUTING",
-        salaryRange: "$120,000 - $180,000",
-        description: `Research and develop quantum systems for computing applications, working with quantum bits, gates, and algorithms. Focus on advancing quantum technology for practical computing solutions.`
-    },
-    {
-        name: "MEDICAL PHYSICS",
-        salaryRange: "$130,000 - $190,000",
-        description: `Apply physics principles to medicine, particularly in radiation therapy, medical imaging, and diagnostic technologies. Ensure safe and effective use of radiation in medical treatments.`
-    },
-    {
-        name: "PARTICLE PHYSICS",
-        salaryRange: "$85,000 - $140,000",
-        description: `Study fundamental particles and their interactions, working at research facilities with particle accelerators and detectors to understand the basic building blocks of matter.`
-    },
-    {
-        name: "CONDENSED MATTER PHYSICS",
-        salaryRange: "$90,000 - $150,000",
-        description: `Research properties of matter in solid and liquid states, developing new materials for electronics, energy storage, and quantum technologies.`
-    },
-    {
-        name: "ASTROPHYSICS",
-        salaryRange: "$80,000 - $140,000",
-        description: `Study celestial objects, galaxies, and phenomena in the universe, using advanced telescopes and computational methods to understand cosmic evolution.`
-    },
-    {
-        name: "COMPUTATIONAL PHYSICS",
-        salaryRange: "$100,000 - $160,000",
-        description: `Develop and apply numerical methods and computer simulations to solve complex physical problems, from climate modeling to molecular dynamics.`
-    },
-    {
-        name: "PLASMA PHYSICS",
-        salaryRange: "$95,000 - $155,000",
-        description: `Study ionized gases and their applications in fusion energy, space propulsion, and materials processing, working on cutting-edge energy solutions.`
-    },
-    {
-        name: "OPTICS AND PHOTONICS",
-        salaryRange: "$100,000 - $165,000",
-        description: `Research light-matter interactions and develop applications in laser technology, fiber optics, and optical computing, crucial for communications and sensing.`
-    },
-    {
-        name: "BIOPHYSICS",
-        salaryRange: "$85,000 - $145,000",
-        description: `Apply physics principles to biological systems, studying molecular structures, cellular mechanics, and developing new techniques for medical diagnosis and treatment.`
-    },
-    {
-        name: "NUCLEAR PHYSICS",
-        salaryRange: "$110,000 - $170,000",
-        description: `Study atomic nuclei, nuclear reactions, and applications in energy production, medical treatments, and national security, working in labs or power facilities.`
-    }
+    import salaryData from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-data.json'; // Adjust path accordingly
+    import salaryData2 from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-dataMY.json'; // Adjust path accordingly
+    
+    export const countries = 
+    [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
+    {"flag":"🇲🇾","file":salaryData2,"currency":"MYR",id:2}];
+
+
+    export const getTopCourses = (salaryData) => {
+    
+      const jobData = salaryData.data.find(job => job.title === 'Computer Science');
+
+      const currency = jobData ? jobData.currency : null;
+      console.log(currency );
+      
+
+
+      const aiJob = salaryData?.data?.find(job => job.title === 'Artificial Intelligence');
+      const cyJob = salaryData?.data?.find(job => job.title === 'Cybersecurity');
+      const clJob = salaryData?.data?.find(job => job.title === 'Cloud Architecture');
+      const daJob = salaryData?.data?.find(job => job.title === 'Data Science');
+      const swJob = salaryData?.data?.find(job => job.title === 'Software Development');
+      const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops');
+      const moJob = salaryData?.data?.find(job => job.title === 'Mobile Development');
+      const gaJob = salaryData?.data?.find(job => job.title === 'Game Development');
+      const fuJob = salaryData?.data?.find(job => job.title === 'Web Development');
+      const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX Design');
+
+      const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
+
+      // Array to store the formatted salary data for each job
+      const salaryResults = [];
+
+      // Loop through each valid job entry
+      for (let i = 0; i < validJobs.length; i++) {
+          // Get Glassdoor data for each job title
+          const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
+          
+          // Check if glassdoorData exists and has at least one entry
+          if (glassdoorData && glassdoorData.length > 0) {
+              // Get the min, max, and median salaries for Glassdoor entries
+              const { min_salary, max_salary, median_salary } = glassdoorData[0]; // Assuming you want the first entry
+              
+              // Format salaries with commas
+              const formattedMinSalary = min_salary ? min_salary.toLocaleString() : 'Data not available';
+              const formattedMaxSalary = max_salary ? max_salary.toLocaleString() : 'Data not available';
+              const formattedMedianSalary = median_salary ? median_salary.toLocaleString() : 'Data not available';
+
+              // Store the job title and formatted salary data in the array
+              salaryResults.push({
+                  jobTitle: validJobs[i].title,
+                  minSalary: formattedMinSalary,
+                  maxSalary: formattedMaxSalary,
+                  medianSalary: formattedMedianSalary
+              });
+          } else {
+              // Store job title with "No data" message if Glassdoor data is unavailable
+              salaryResults.push({
+                  jobTitle: validJobs[i]?.title,
+                  minSalary: 'No data available',
+                  maxSalary: 'No data available',
+                  medianSalary: 'No data available'
+              });
+          }
+        }
+
+
+        return [
+          {
+            name: "QUANTUM COMPUTING",
+            salaryRange: `${currency}120,000 - ${currency}180,000`,
+            description: `Research and develop quantum systems for computing applications, working with quantum bits, gates, and algorithms. Focus on advancing quantum technology for practical computing solutions.`
+        },
+        {
+            name: "MEDICAL PHYSICS",
+            salaryRange: `${currency}130,000 - ${currency}190,000`,
+            description: `Apply physics principles to medicine, particularly in radiation therapy, medical imaging, and diagnostic technologies. Ensure safe and effective use of radiation in medical treatments.`
+        },
+        {
+            name: "PARTICLE PHYSICS",
+            salaryRange: `${currency}85,000 - ${currency}140,000`,
+            description: `Study fundamental particles and their interactions, working at research facilities with particle accelerators and detectors to understand the basic building blocks of matter.`
+        },
+        {
+            name: "CONDENSED MATTER PHYSICS",
+            salaryRange: `${currency}90,000 - ${currency}150,000`,
+            description: `Research properties of matter in solid and liquid states, developing new materials for electronics, energy storage, and quantum technologies.`
+        },
+        {
+            name: "ASTROPHYSICS",
+            salaryRange: `${currency}80,000 - ${currency}140,000`,
+            description: `Study celestial objects, galaxies, and phenomena in the universe, using advanced telescopes and computational methods to understand cosmic evolution.`
+        },
+        {
+            name: "COMPUTATIONAL PHYSICS",
+            salaryRange: `${currency}100,000 - ${currency}160,000`,
+            description: `Develop and apply numerical methods and computer simulations to solve complex physical problems, from climate modeling to molecular dynamics.`
+        },
+        {
+            name: "PLASMA PHYSICS",
+            salaryRange: `${currency}95,000 - ${currency}155,000`,
+            description: `Study ionized gases and their applications in fusion energy, space propulsion, and materials processing, working on cutting-edge energy solutions.`
+        },
+        {
+            name: "OPTICS AND PHOTONICS",
+            salaryRange: `${currency}100,000 - ${currency}165,000`,
+            description: `Research light-matter interactions and develop applications in laser technology, fiber optics, and optical computing, crucial for communications and sensing.`
+        },
+        {
+            name: "BIOPHYSICS",
+            salaryRange: `${currency}85,000 - ${currency}145,000`,
+            description: `Apply physics principles to biological systems, studying molecular structures, cellular mechanics, and developing new techniques for medical diagnosis and treatment.`
+        },
+        {
+            name: "NUCLEAR PHYSICS",
+            salaryRange: `${currency}110,000 - ${currency}170,000`,
+            description: `Study atomic nuclei, nuclear reactions, and applications in energy production, medical treatments, and national security, working in labs or power facilities.`
+        }
+
+      ]
+};
+
+export const experienceSalary1 = [
+  { id: 1, experience: "0-1 YEARS EXPERIENCE", salaryRange: "MYR29,000 - MYR50,000" },
+  { id: 2, experience: "1-3 YEARS EXPERIENCE", salaryRange: "MYR50,000 - MYR59,000" },
+  { id: 3, experience: "4-6 YEARS EXPERIENCE", salaryRange: "MYR70,000 - MYR90,000" },
+  { id: 4, experience: "7-9 YEARS EXPERIENCE", salaryRange: "MYR90,000 - MYR200,000" }
 ];
+
+export const experienceSalary2 = [
+  { id: 1, experience: "0-1 YEARS EXPERIENCE", salaryRange: "$92,000 - $170,000" },
+  { id: 2, experience: "1-3 YEARS EXPERIENCE", salaryRange: "$102,000 - $185,000" },
+  { id: 3, experience: "4-6 YEARS EXPERIENCE", salaryRange: "$122,000 - $221,000" },
+  { id: 4, experience: "7-9 YEARS EXPERIENCE", salaryRange: "$140,000 - $250,000" }
+];
+
+
 
 export const prerequisites = [
     "Strong foundation in mathematics, including calculus",
@@ -105,7 +202,7 @@ export const experienceSalary = [
     { experience: "7-9 YEARS EXPERIENCE", salaryRange: "$95,000 - $130,000" }
 ];
 
-export const countries = ["🇺🇸", "🇨🇭", "🇬🇧", "🇩🇪"];
+
 
 export const topspecializations = [
     "Quantum Physics",

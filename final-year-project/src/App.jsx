@@ -22,24 +22,18 @@ import MarineBiologyCourse from './CoursesPage/MarineBiology.jsx';
 import DataScienceCourse from './CoursesPage/DataScience.jsx';
 import RoboticsCourse from './CoursesPage/Robotics.jsx';
 import CybersecurityCourse from './CoursesPage/Cybersecurity.jsx';
+import ComputerEngineeringCourse from './CoursesPage/ComputerEngineering.jsx';
 import { useEffect,useState } from 'react';
+
 
 function App() {
 
-  // const [backendData,setbackendData] = useState([{}]);
-  // useEffect(()=>{
-  //    fetch("/users").then(
-  //     response => response.json()
-  //    ).then(
-  //     data => setbackendData(data)
-  //    )
-  // },[])
-
-
   return (
     <Router>
-      
+      <ScrollToTop />
+
       <div className="app-container">
+      
 
         <Routes>
           <Route path="/" element={
@@ -64,14 +58,27 @@ function App() {
           <Route path="/marcoursepage" element={<MarineBiologyCourse/>} />
           <Route path="/mathcoursepage" element={<MathematicsCourse/>} />
           <Route path="/datcoursepage" element={<DataScienceCourse/>} />
+          <Route path="/cecoursepage" element={<ComputerEngineeringCourse/>} />
           <Route path="/robcoursepage" element={<RoboticsCourse/>} />
           <Route path="/cybcoursepage" element={<CybersecurityCourse/>} />
           <Route path="/chemcoursepage" element={<ChemicalEngineeringCourse />}
           />
         </Routes>
+
       </div>
+
     </Router>
   );
 }
 
 export default App;
+
+
+  // const [backendData,setbackendData] = useState([{}]);
+  // useEffect(()=>{
+  //    fetch("/users").then(
+  //     response => response.json()
+  //    ).then(
+  //     data => setbackendData(data)
+  //    )
+  // },[])

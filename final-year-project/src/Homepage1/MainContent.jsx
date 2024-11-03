@@ -11,6 +11,12 @@ export default function MainContent(){
       navigate('/signup');
     }
 
+    const scrollToSection = (event) => {
+      event.preventDefault();
+      const section = document.querySelector("#third-section");
+      section.scrollIntoView({ behavior: "smooth" });
+    };
+
   
   
     return (
@@ -35,7 +41,9 @@ export default function MainContent(){
                   <button className="btn1" onClick={signUpClick}>
                     Join Today!
                   </button>
-                  <a href="#third-section"><button className="btn2"> Explore Opportunities</button></a>
+              
+                   <button className="btn2" onClick={scrollToSection}>Explore Opportunities</button>
+
                 </div>
   
 

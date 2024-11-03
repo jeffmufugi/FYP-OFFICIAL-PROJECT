@@ -10,20 +10,16 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: Arial, sans-serif;
-  overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .app-container {
-  overflow-x: hidden;
   height: 100vh;
-  overflow-y: auto;
   scroll-behavior: smooth;
 }
 
 .cs-course-page,
-.coursePage,
 .AboutUsPage,
 .ContactUsPage,
 .sign-in-page,
@@ -37,8 +33,20 @@ html, body {
   overflow: hidden; /* Prevent overflow */
   display: flex;
   flex-direction: column; /* Flex layout to organize content */
+  scroll-behavior: smooth;
 
 
+}
+
+.coursePage{
+  min-height: 100vh;
+  max-width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;      /* Add this */
+  overflow-x: hidden;    /* Add this */
+  height: auto;  
 }
 
 
@@ -263,6 +271,7 @@ html, body {
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
    cursor: pointer;
    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
+   
 }
 
 .btn2:hover{
@@ -1834,13 +1843,13 @@ z-index: 1;
   width: 100%;
   z-index: 2;
   border-radius: 30px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.534);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.202);
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
   cursor: pointer;
 }
 
 .course-card:hover{
-  transform: scale(1.05);
+  transform: scale(1.02);
 
 }
 
@@ -2003,7 +2012,7 @@ z-index: 1;
 .cs-course-page{
   display: flex;
   flex-direction: column;
-  background-color: #c9c9c9;
+  background-color: #ffffff;
   background-image: url("site_icons/Noise Light 220.png");
   overflow-x: hidden; /* Ensure no horizontal scrolling */
   z-index: 0;
@@ -2067,6 +2076,7 @@ z-index: 1;
   font-size: 80px;
   font-weight: 900;
   color: white;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -2092,8 +2102,8 @@ z-index: 1;
 
 .course-stats-text{
   font-family: roboto mono;
-  font-size: 34px;
-  font-weight: 500;
+  font-size: 44px;
+  font-weight: 100;
  
 
 }
@@ -2249,12 +2259,10 @@ z-index: 1;
 
 .course-page-desc{
   font-family: roboto mono;
-  color: #1B046C;
   font-weight: 100;
 }
 .course-page-desc1{
   font-family: roboto mono;
-  color: #1B046C;
   font-weight: 100;
 }
 
@@ -2279,10 +2287,11 @@ z-index: 1;
   height: 40px;            /* Sets the height of the field */
   background: transparent; /* Makes the background transparent */
   outline: none;           /* Removes the focus outline */
-  padding: 0 10px;         /* Adds some padding to the sides */
+  padding-left:10px;         /* Adds some padding to the sides */
   -webkit-appearance: none; /* Removes default dropdown arrow on webkit browsers */
   -moz-appearance: none;    /* Removes default dropdown arrow on Firefox */
   appearance: none;         /* Removes default dropdown arrow for all browsers */
+
 }
 
 .custom-select option {
@@ -2502,3 +2511,55 @@ text-align: center;
   position: relative;
   margin-left: 90px;
 }
+
+.country-dd{
+  width: 15px;
+  height: auto;
+  z-index: 1;
+}
+
+.custom-select1 {
+  border: none;            /* Removes the border */
+  font-size: 40px;         /* Makes the text size 40px */
+  height: 40px;            /* Sets the height of the field */
+  background: transparent; /* Makes the background transparent */
+  outline: none;           /* Removes the focus outline */
+  padding-left:10px;         /* Adds some padding to the sides */
+  -webkit-appearance: none; /* Removes default dropdown arrow on webkit browsers */
+  -moz-appearance: none;    /* Removes default dropdown arrow on Firefox */
+  appearance: none;         /* Removes default dropdown arrow for all browsers */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.dropdown-menu{
+  background-color: white;
+  list-style: none;
+  font-size: 40px;
+  position: absolute;
+  width: 80px;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
+  overflow: hidden;
+}
+
+.dropdown-item{
+  border-bottom: 1px solid #e9e9e9; /* Adjust color as needed */
+}
+
+.country-dd-icon{
+
+  font-size: 16px; /* Adjust size to fit your design */
+
+}
+

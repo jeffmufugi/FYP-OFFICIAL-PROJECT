@@ -1,0 +1,49 @@
+{
+  "lastUpdated": "2024-11-02T08:14:47.300Z",
+  "data": [
+    {
+      "title": "Computer Science",
+      "message": "You are not subscribed to this API."
+    },
+    {
+      "title": "Artificial Intelligence",
+      "message": "Too many requests"
+    },
+    {
+      "title": "Cybersecurity",
+      "message": "Too many requests"
+    },
+    {
+      "title": "Cloud Architecture",
+      "message": "Too many requests"
+    },
+    {
+      "title": "Data Science",
+      "message": "Too many requests"
+    },
+    {
+      "title": "Software Development",
+      "message": "Too many requests"
+    },
+    {
+      "title": "Mobile Development",
+      "message": "Too many requests"
+    },
+    {
+      "title": "Game Development",
+      "message": "Too many requests"
+    },
+    {
+      "title": "Dev Ops",
+      "message": "Too many requests"
+    },
+    {
+      "title": "Full Stack Development",
+      "message": "Too many requests"
+    },
+    {
+      "title": "UI/UX Design",
+      "message": "Too many requests"
+    }
+  ]
+}
