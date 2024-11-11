@@ -1,0 +1,49 @@
+{
+  "lastUpdated": "2024-11-05T10:11:57.704Z",
+  "data": [
+    {
+      "title": "Computer Science",
+      "error": "Request failed with status code 429"
+    },
+    {
+      "title": "Artificial Intelligence",
+      "error": "Request failed with status code 429"
+    },
+    {
+      "title": "Cybersecurity",
+      "error": "Request failed with status code 429"
+    },
+    {
+      "title": "Cloud Architecture",
+      "error": "Request failed with status code 429"
+    },
+    {
+      "title": "Data Science",
+      "error": "Request failed with status code 429"
+    },
+    {
+      "title": "Software Development",
+      "error": "Request failed with status code 429"
+    },
+    {
+      "title": "Mobile Development",
+      "error": "Request failed with status code 429"
+    },
+    {
+      "title": "Game Development",
+      "error": "Request failed with status code 429"
+    },
+    {
+      "title": "Dev Ops",
+      "error": "Request failed with status code 429"
+    },
+    {
+      "title": "Full Stack Development",
+      "error": "Request failed with status code 429"
+    },
+    {
+      "title": "UI/UX Design",
+      "error": "Request failed with status code 429"
+    }
+  ]
+}

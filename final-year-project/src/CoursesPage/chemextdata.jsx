@@ -20,7 +20,7 @@ export const homepageInfo = [
 ];
  
 export const homepageInfo1 = [ {
-  undergradsal: `90,000`,
+  undergradsal: `85,000`,
   jobavail : "16,700",
   emprate: "57%",
   },]
@@ -28,13 +28,12 @@ export const homepageInfo1 = [ {
   //MALAYSIA
   export const homepageInfo2 = [ {
     undergradsal: `45,000`,
-    jobavail : "12,700",
+    jobavail : "4,700",
     emprate: "77%",
     },]
 
-    import salaryData from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-data.json'; // Adjust path accordingly
-    import salaryData2 from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-dataMY.json'; // Adjust path accordingly
-    
+    import salaryData from '/../server/data/salary-dataCE.json';
+    import salaryData2 from '/../server/data/salary-dataCEMY.json';
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
     {"flag":"🇲🇾","file":salaryData2,"currency":"MYR",id:2}];
@@ -42,23 +41,24 @@ export const homepageInfo1 = [ {
 
     export const getTopCourses = (salaryData) => {
     
-      const jobData = salaryData.data.find(job => job.title === 'Computer Science');
+      const jobData = salaryData.data.find(job => job.title === 'Pharmaceutical Engineering');
 
       const currency = jobData ? jobData.currency : null;
       console.log(currency);
 
-      const aiJob = salaryData?.data?.find(job => job.title === 'Artificial Intelligence');
-      const cyJob = salaryData?.data?.find(job => job.title === 'Cybersecurity');
-      const clJob = salaryData?.data?.find(job => job.title === 'Cloud Architecture');
-      const daJob = salaryData?.data?.find(job => job.title === 'Data Science');
-      const swJob = salaryData?.data?.find(job => job.title === 'Software Development');
-      const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops');
-      const moJob = salaryData?.data?.find(job => job.title === 'Mobile Development');
-      const gaJob = salaryData?.data?.find(job => job.title === 'Game Development');
-      const fuJob = salaryData?.data?.find(job => job.title === 'Web Development');
-      const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX Design');
+      const phJob = salaryData?.data?.find(job => job.title === 'Pharmaceutical Engineering');
+      const reJob = salaryData?.data?.find(job => job.title === 'Renewable Energy');
+      const psJob = salaryData?.data?.find(job => job.title === 'Process Safety Management');
+      const peJob = salaryData?.data?.find(job => job.title === 'Petroleum Engineering');
+      const wtJob = salaryData?.data?.find(job => job.title === 'Water Treatment Engineering');
+      const poJob = salaryData?.data?.find(job => job.title === 'Polymer Engineering');
+      const biJob = salaryData?.data?.find(job => job.title === 'Biochemical Engineering');
+      const naJob = salaryData?.data?.find(job => job.title === 'Nanotechnology');
+      const fpJob = salaryData?.data?.find(job => job.title === 'Food Processing Engineering');
+      const gpJob = salaryData?.data?.find(job => job.title === 'Green Process Engineering');
 
-      const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
+
+      const validJobs = [phJob, reJob, psJob, peJob, wtJob, poJob, biJob, naJob, fpJob, gpJob];
 
       // Array to store the formatted salary data for each job
       const salaryResults = [];
@@ -100,52 +100,52 @@ export const homepageInfo1 = [ {
         return [
           {
             name: "PHARMACEUTICAL ENGINEERING",
-            salaryRange: `${currency}110,000 - ${currency}150,000`,
+            salaryRange: `${currency}${salaryResults[0].minSalary} - ${currency}${salaryResults[0].maxSalary}`,
             description: `Engineers focus on designing and optimizing processes to manufacture drugs and treatments. This includes research, scale-up, and quality control in drug production.`
         },
         {
             name: "RENEWABLE ENERGY",
-            salaryRange: `${currency}105,000 - ${currency}140,000`,
+            salaryRange: `${currency}${salaryResults[1].minSalary} - ${currency}${salaryResults[1].maxSalary}`,
             description: `Design and optimize processes to convert renewable resources into energy. This includes working with biofuels, hydrogen, and solar technologies to create sustainable energy solutions.`
         },
         {
             name: "PROCESS SAFETY MANAGEMENT",
-            salaryRange: `${currency}95,000 - ${currency}130,000`,
+            salaryRange: `${currency}${salaryResults[2].minSalary} - ${currency}${salaryResults[2].maxSalary}`,
             description: `Focus on the identification, prevention, and control of potential hazards in industrial processes to ensure safe and efficient production.`
         },
         {
             name: "PETROLEUM ENGINEERING",
-            salaryRange: `${currency}100,000 - ${currency}145,000`,
+            salaryRange: `${currency}${salaryResults[3].minSalary} - ${currency}${salaryResults[3].maxSalary}`,
             description: `Develop methods for extracting oil and gas from deposits below the Earth's surface, focusing on improving extraction techniques and resource management.`
         },
         {
             name: "WATER TREATMENT ENGINEERING",
-            salaryRange: `${currency}90,000 - ${currency}130,000`,
+            salaryRange: `${currency}${salaryResults[4].minSalary} - ${currency}${salaryResults[4].maxSalary}`,
             description: `Design and manage systems that treat wastewater to ensure that it is safe for discharge or reuse, playing a crucial role in environmental protection.`
         },
         {
             name: "POLYMER ENGINEERING",
-            salaryRange: `${currency}95,000 - ${currency}135,000`,
+            salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
             description: `Specialize in the development and production of polymers and plastics, including new materials design, processing techniques, and recycling technologies.`
         },
         {
             name: "BIOCHEMICAL ENGINEERING",
-            salaryRange: `${currency}100,000 - ${currency}140,000`,
+            salaryRange: `${currency}${salaryResults[6].minSalary} - ${currency}${salaryResults[6].maxSalary}`,
             description: `Apply engineering principles to biological processes for producing valuable products, including fermentation, cell culture, and enzyme technology.`
         },
         {
             name: "NANOTECHNOLOGY",
-            salaryRange: `${currency}115,000 - ${currency}155,000`,
+            salaryRange: `${currency}${salaryResults[7].minSalary} - ${currency}${salaryResults[7].maxSalary}`,
             description: `Focus on manipulating matter at the molecular scale to develop new materials and processes with applications in electronics, medicine, and energy.`
         },
         {
             name: "FOOD PROCESSING ENGINEERING",
-            salaryRange: `${currency}85,000 - ${currency}125,000`,
+            salaryRange: `${currency}${salaryResults[8].minSalary} - ${currency}${salaryResults[8].maxSalary}`,
             description: `Design and optimize processes for food production, preservation, and packaging while ensuring safety and quality standards are met.`
         },
         {
             name: "GREEN PROCESS ENGINEERING",
-            salaryRange: `${currency}95,000 - ${currency}135,000`,
+            salaryRange: `${currency}${salaryResults[9].minSalary} - ${currency}${salaryResults[9].maxSalary}`,
             description: `Develop sustainable manufacturing processes that minimize environmental impact through waste reduction, energy efficiency, and clean technology implementation.`
         }
       ]
@@ -181,10 +181,10 @@ export const jobGrowthFields = [
 ];
 
 export const experienceSalary = [
-    { experience: "0-1 YEARS EXPERIENCE", salaryRange: "$65,000 - $85,000" },
-    { experience: "1-3 YEARS EXPERIENCE", salaryRange: "$75,000 - $95,000" },
-    { experience: "4-6 YEARS EXPERIENCE", salaryRange: "$90,000 - $115,000" },
-    { experience: "7-9 YEARS EXPERIENCE", salaryRange: "$100,000 - $125,000" }
+    { experience: "0-1 YEARS EXPERIENCE", salaryRange: "$64,000 - $115,000" },
+    { experience: "1-3 YEARS EXPERIENCE", salaryRange: "$75,000 - $135,000" },
+    { experience: "4-6 YEARS EXPERIENCE", salaryRange: "$83,000 - $153,000" },
+    { experience: "7-9 YEARS EXPERIENCE", salaryRange: "$90,000 - $167,000" }
 ];
 export const experienceSalary1 = [
     { id: 1, experience: "0-1 YEARS EXPERIENCE", salaryRange: "MYR40,000 - MYR50,000" },

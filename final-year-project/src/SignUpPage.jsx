@@ -1,28 +1,29 @@
-import back from "./site_icons/back-arrow.svg";
 import { useNavigate } from 'react-router-dom';
-import bg2 from "./site_icons/lines.svg";
 import person from "./site_icons/Person.svg";
 import lock from "./site_icons/Lock1.svg";
 import email from "./site_icons/Email.svg";
 import phone from "./site_icons/Phone enabled.svg";
 import location from "./site_icons/Location on.svg";
-import tech from "./site_icons/Tech icon12.svg";
 import rocketMan from "./site_icons/RocketMan.svg";
 import { motion } from "framer-motion";
 import rec from "./site_icons/rec1.png";
-import dd from "./site_icons/dropdown.svg";
 import Header from "./Homepage1/Header1.jsx";
 import axios from 'axios';
-import React, { useState } from 'react';
-import Dropdown from "./DropDown.jsx";
- 
+import React, { useContext, useState } from 'react';
+import { Context } from './App.jsx';
 
-export default function SignUpPage() {
+
+export default function SignUpPage2() {
     const navigate = useNavigate();
+    const [signedIn,setSignedIn] = useContext(Context);
+
+    function setSignedInfunc(){
+        setSignedIn(true);
+    }
     
 
     const countries = [
-        "North America","Asia","South America","Europe","Africa","Middle East"
+        "North America","Asia"
       ];
 
     const [formData, setFormData] = useState({
@@ -57,7 +58,10 @@ export default function SignUpPage() {
             });
             console.log(response.data);
             alert('Registration successful!');
+            setSignedInfunc();
             navigate('/');
+
+
         } catch (error) {
             console.error('Registration error:', error.response?.data?.message || error.message);
             alert('Registration failed. Please try again.');

@@ -31,8 +31,8 @@ export const homepageInfo1 = [ {
     emprate: "79%",
     },]
 
-    import salaryData from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-data.json'; // Adjust path accordingly
-    import salaryData2 from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-dataMY.json'; // Adjust path accordingly
+    import salaryData from '/../server/data/salary-dataMEC.json';
+    import salaryData2 from '/../server/data/salary-dataMECMY.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
@@ -41,23 +41,21 @@ export const homepageInfo1 = [ {
 
     export const getTopCourses = (salaryData) => {
     
-      const jobData = salaryData.data.find(job => job.title === 'Computer Science');
+      const jobData = salaryData.data.find(job => job.title === 'Aerospace/Defense');
 
       const currency = jobData ? jobData.currency : null;
       console.log(currency );
       
-
-
-      const aiJob = salaryData?.data?.find(job => job.title === 'Artificial Intelligence');
-      const cyJob = salaryData?.data?.find(job => job.title === 'Cybersecurity');
-      const clJob = salaryData?.data?.find(job => job.title === 'Cloud Architecture');
-      const daJob = salaryData?.data?.find(job => job.title === 'Data Science');
-      const swJob = salaryData?.data?.find(job => job.title === 'Software Development');
-      const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops');
-      const moJob = salaryData?.data?.find(job => job.title === 'Mobile Development');
-      const gaJob = salaryData?.data?.find(job => job.title === 'Game Development');
-      const fuJob = salaryData?.data?.find(job => job.title === 'Web Development');
-      const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX Design');
+      const aiJob = salaryData?.data?.find(job => job.title === 'Aerospace/Defense');
+      const cyJob = salaryData?.data?.find(job => job.title === 'Oil & Gas/Energy');
+      const clJob = salaryData?.data?.find(job => job.title === 'Robotics & Automation');
+      const daJob = salaryData?.data?.find(job => job.title === 'Medical Devices');
+      const swJob = salaryData?.data?.find(job => job.title === 'Research & Development');
+      const deJob = salaryData?.data?.find(job => job.title === 'Nuclear Engineering');
+      const moJob = salaryData?.data?.find(job => job.title === 'Automotive Advanced Systems');
+      const gaJob = salaryData?.data?.find(job => job.title === 'Patents & Intellectual Property');
+      const fuJob = salaryData?.data?.find(job => job.title === 'Data Center Infrastructure');
+      const uiJob = salaryData?.data?.find(job => job.title === 'Semiconductor Manufacturing');
 
       const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
 
@@ -90,8 +88,8 @@ export const homepageInfo1 = [ {
               // Store job title with "No data" message if Glassdoor data is unavailable
               salaryResults.push({
                   jobTitle: validJobs[i]?.title,
-                  minSalary: 'No data available',
-                  maxSalary: 'No data available',
+                  minSalary: '0',
+                  maxSalary: '0',
                   medianSalary: 'No data available'
               });
           }
@@ -100,53 +98,53 @@ export const homepageInfo1 = [ {
 
         return [
           {
-            name: "AEROSPACE/DEFENSE",
-            salaryRange: `${currency}125,000 - ${currency}165,000`,
+            name: 'Aerospace/Defense',
+            salaryRange: `${currency}${salaryResults[0].minSalary} - ${currency}${salaryResults[0].maxSalary}`,
             description: `Design and develop military systems, aircraft, spacecraft, and related technologies while ensuring compliance with safety regulations and performance standards.`
         },
         {
-            name: "OIL & GAS/ENERGY",
-            salaryRange: `${currency}120,000 - ${currency}160,000`,
+          name:'Oil & Gas/Energy',
+            salaryRange: `${currency}${salaryResults[1].minSalary} - ${currency}${salaryResults[1].maxSalary}`,
             description: `Design, maintain, and optimize energy production equipment, focusing on efficiency, safety, and environmental compliance in the energy sector.`
         },
         {
-            name: "ROBOTICS & AUTOMATION",
-            salaryRange: `${currency}115,000 - ${currency}155,000`,
+          name: 'Robotics & Automation',
+            salaryRange: `${currency}${salaryResults[2].minSalary} - ${currency}${salaryResults[2].maxSalary}`,
             description: `Develop and implement automated systems and industrial robots, integrating mechanical design with control systems and artificial intelligence.`
         },
         {
-            name: "MEDICAL DEVICES",
-            salaryRange: `${currency}110,000 - ${currency}150,000`,
+          name: 'Medical Devices',
+            salaryRange: `${currency}${salaryResults[3].minSalary} - ${currency}${salaryResults[3].maxSalary}`,
             description: `Design and develop medical equipment, prosthetics, and diagnostic devices while ensuring compliance with healthcare regulations and patient safety standards.`
         },
         {
-            name: "RESEARCH & DEVELOPMENT",
-            salaryRange: `${currency}105,000 - ${currency}145,000`,
+          name: 'Research & Development',
+            salaryRange: `${currency}${salaryResults[4].minSalary} - ${currency}${salaryResults[4].maxSalary}`,
             description: `Lead innovation in mechanical engineering, developing new technologies, products, and solutions across various industries.`
         },
         {
-            name: "AUTOMOTIVE ADVANCED SYSTEMS",
-            salaryRange: `${currency}100,000 - ${currency}140,000`,
+          name: 'Automotive Advanced Systems',
+            salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
             description: `Design and develop electric vehicles, autonomous systems, and advanced automotive technologies, focusing on innovation and sustainability.`
         },
         {
-            name: "NUCLEAR ENGINEERING",
-            salaryRange: `${currency}95,000 - ${currency}135,000`,
+          name: 'Nuclear Engineering',
+            salaryRange: `${currency}${salaryResults[6].minSalary} - ${currency}${salaryResults[6].maxSalary}`,
             description: `Design, maintain, and optimize nuclear power plant systems while ensuring safety, compliance, and efficient power generation.`
         },
         {
-            name: "PATENTS & INTELLECTUAL PROPERTY",
-            salaryRange: `${currency}90,000 - ${currency}130,000`,
+          name: 'Patents & Intellectual Property',
+            salaryRange: `${currency}${salaryResults[7].minSalary} - ${currency}${salaryResults[7].maxSalary}`,
             description: `Analyze and consult on technical patents, providing expertise in mechanical engineering innovations and intellectual property rights.`
         },
         {
-            name: "DATA CENTER INFRASTRUCTURE",
-            salaryRange: `${currency}85,000 - ${currency}125,000`,
+          name: 'Data Center Infrastructure',
+            salaryRange: `${currency}${salaryResults[8].minSalary} - ${currency}${salaryResults[8].maxSalary}`,
             description: `Design and optimize cooling systems, power distribution, and mechanical infrastructure for large-scale data centers.`
         },
         {
-            name: "SEMICONDUCTOR MANUFACTURING",
-            salaryRange: `${currency}85,000 - ${currency}120,000`,
+          name: 'Semiconductor Manufacturing',
+            salaryRange: `${currency}${salaryResults[9].minSalary} - ${currency}${salaryResults[9].maxSalary}`,
             description: `Develop and optimize manufacturing processes and equipment for semiconductor production, ensuring quality and efficiency.`
         }
       ]

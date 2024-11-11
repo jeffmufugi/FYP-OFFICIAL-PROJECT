@@ -1,0 +1,406 @@
+{
+  "lastUpdated": "2024-11-07T11:06:06.993Z",
+  "data": [
+    {
+      "title": "Pharmaceutical Engineering",
+      "status": "OK",
+      "request_id": "29bf23c3-e8eb-4e7d-8769-b1e34837c833",
+      "currency":"$",
+      "data": [
+        {
+          "location": "Phoenix, AZ",
+          "job_title": "Quality Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salary/West-Pharmaceutical-Services-Quality-Engineer-Phoenix-Salaries-EJI_IE729.0,28_KO29,45_IL.46,53_IM678.htm",
+          "min_salary": 73458,
+          "max_salary": 99162,
+          "median_salary": 85348,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Pharmaceutical Engineering",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/Pharmaceutical-Engineering-Salary",
+          "min_salary": 35.33654,
+          "max_salary": 41.58654,
+          "median_salary": 38.46106,
+          "salary_period": "HOUR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Pharmaceutical Engineer",
+          "publisher_name": "Zippia",
+          "publisher_link": "https://www.zippia.com/salaries/pharmaceutical-engineer",
+          "min_salary": 58000,
+          "max_salary": 121000,
+          "median_salary": 84592,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Renewable Energy",
+      "status": "OK",
+      "request_id": "477b5022-67dc-4e80-8d4b-936ec199efb4",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "renewable energy",
+          "publisher_name": "Talent",
+          "publisher_link": "https://www.talent.com/salary?job=renewable+energy",
+          "min_salary": 57245.181160714,
+          "max_salary": 180163.18956044,
+          "median_salary": 109995.12567935,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Renewable Energy Systems",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/Renewable-Energy-Systems-Salary",
+          "min_salary": 62500,
+          "max_salary": 142000,
+          "median_salary": 102067,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "Denver, CO",
+          "job_title": "Senior Technical Recruiter",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salary/National-Renewable-Energy-Lab-Senior-Technical-Recruiter-Denver-Salaries-EJI_IE142916.0,29_KO30,56_IL.57,63_IM234.htm",
+          "min_salary": 89396,
+          "max_salary": 138909,
+          "median_salary": 111435,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Process Safety Management",
+      "status": "OK",
+      "request_id": "4dcbe476-a43a-4d3b-a426-8f779ef1157c",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Process Safety Management",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/Process-Safety-Management-Salary",
+          "min_salary": 88000,
+          "max_salary": 176000,
+          "median_salary": 124999,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "Houston, TX",
+          "job_title": "Process Safety Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salary/Occidental-Petroleum-Process-Safety-Engineer-Houston-Salaries-EJI_IE491.0,20_KO21,44_IL.45,52_IM394.htm",
+          "min_salary": 127883,
+          "max_salary": 183763,
+          "median_salary": 153298,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "Texas",
+          "job_title": "Process Safety Specialist",
+          "publisher_name": "Salary",
+          "publisher_link": "https://www.salary.com/research/company/psrg-inc/process-safety-specialist-salary?cjid=8120890",
+          "min_salary": 66228.00546573,
+          "max_salary": 92827.06894325,
+          "median_salary": 81074.81454685,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Petroleum Engineering",
+      "status": "OK",
+      "request_id": "134e960b-bf48-462d-af0a-3b135f5615b6",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Petroleum Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/petroleum-engineer-salary-SRCH_KO0,18.htm",
+          "min_salary": 118434,
+          "max_salary": 316401,
+          "median_salary": 191401,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Petroleum Engineer",
+          "publisher_name": "Payscale",
+          "publisher_link": "https://www.payscale.com/research/US/Job=Petroleum_Engineer/Salary",
+          "min_salary": 68381.92,
+          "max_salary": 196523.53,
+          "median_salary": 111411,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Petroleum Engineering",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/Petroleum-Engineering-Salary",
+          "min_salary": 43500,
+          "max_salary": 135000,
+          "median_salary": 80025,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Water Treatment Engineering",
+      "status": "OK",
+      "request_id": "8af7c968-47b2-4129-8179-46a5db33265d",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Water Treatment Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/water-treatment-engineer-salary-SRCH_KO0,24.htm",
+          "min_salary": 78368,
+          "max_salary": 193756,
+          "median_salary": 122218,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Water Treatment Plant Engineer",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/What-Is-the-Average-Water-Treatment-Plant-Engineer-Salary-by-State",
+          "min_salary": 69000,
+          "max_salary": 134500,
+          "median_salary": 99873,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "water engineer",
+          "publisher_name": "Talent",
+          "publisher_link": "https://www.talent.com/salary?job=water+engineer",
+          "min_salary": 66581.626591435,
+          "max_salary": 142567.32266436,
+          "median_salary": 99970.288932814,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Polymer Engineering",
+      "status": "OK",
+      "request_id": "dd61b90a-930f-478d-87da-cbe121c86a5d",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Polymer Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/polymer-engineer-salary-SRCH_KO0,16.htm",
+          "min_salary": 77353,
+          "max_salary": 194130,
+          "median_salary": 121352,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Polymer Engineer",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/Polymer-Engineer-Salary",
+          "min_salary": 62000,
+          "max_salary": 145000,
+          "median_salary": 89329,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "Pittsburg, CA",
+          "job_title": "Administrative Assistant",
+          "publisher_name": "Salary",
+          "publisher_link": "https://www.salary.com/research/company/mcpu-polymer-engineering-llc/administrative-assistant-salary?cjid=12321007",
+          "min_salary": 40324.89448692,
+          "max_salary": 48754.77289163,
+          "median_salary": 44441.3572988,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Biochemical Engineering",
+      "status": "OK",
+      "request_id": "ef9b511c-712d-4faf-9cdb-c59cf5c8e3bd",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Biochemical Engineering",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/Biochemical-Engineering-Salary",
+          "min_salary": 78500,
+          "max_salary": 147500,
+          "median_salary": 111650,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "New York, NY",
+          "job_title": "Biochemical Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.co.in/Salary/University-of-Delaware-Biochemical-Engineer-New-York-City-Salaries-EJI_IE23838.0,22_KO23,43_IL.44,57_IM615.htm",
+          "min_salary": 60323,
+          "max_salary": 100400,
+          "median_salary": 77823,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Biochemical Engineer",
+          "publisher_name": "Zippia",
+          "publisher_link": "https://www.zippia.com/salaries/biochemical-engineer",
+          "min_salary": 74000,
+          "max_salary": 124000,
+          "median_salary": 96094,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Nanotechnology",
+      "status": "OK",
+      "request_id": "c26c493a-84b8-4ae3-9ebf-0c9571d78d5f",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Nanotechnology",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/Nanotechnology-Salary",
+          "min_salary": 77500,
+          "max_salary": 112500,
+          "median_salary": 95277,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Nanotechnology Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/nanotechnology-engineer-salary-SRCH_KO0,23.htm",
+          "min_salary": 80884,
+          "max_salary": 224432,
+          "median_salary": 133694,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Nanotechnology",
+          "publisher_name": "6figr",
+          "publisher_link": "https://6figr.com/us/salary/nanotechnology--s",
+          "min_salary": 123500,
+          "max_salary": 149000,
+          "median_salary": 137000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Food Processing Engineering",
+      "status": "OK",
+      "request_id": "919db977-9631-443e-a6b8-5b9042fa7dc6",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Food Process Engineer",
+          "publisher_name": "Ziprecruiter",
+          "publisher_link": "https://www.ziprecruiter.com/Salaries/Food-Process-Engineer-Salary",
+          "min_salary": 64500,
+          "max_salary": 125000,
+          "median_salary": 92018,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Food Processing Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/food-processing-engineer-salary-SRCH_KO0,24.htm",
+          "min_salary": 49798,
+          "max_salary": 151166,
+          "median_salary": 85858,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "Chicago, IL",
+          "job_title": "Food Process Engineer",
+          "publisher_name": "Salary",
+          "publisher_link": "https://www.salary.com/research/company/illinois-institute-of-technology/food-process-engineer-salary?cjid=1080755",
+          "min_salary": 74123.72125272,
+          "max_salary": 84103.8238189,
+          "median_salary": 78913.65042126,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Green Process Engineering",
+      "status": "OK",
+      "request_id": "c42a92b5-b3ab-487a-9d2f-90fabc2b0045",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Process Engineer",
+          "publisher_name": "Indeed",
+          "publisher_link": "https://www.indeed.com/cmp/Green-Tokai-Co.,-Ltd.-1/salaries/Process-Engineer",
+          "min_salary": 31000,
+          "max_salary": 96000,
+          "median_salary": 63030.844,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "United States",
+          "job_title": "Chemical Process Design Engineer I",
+          "publisher_name": "Salary",
+          "publisher_link": "https://www.salary.com/research/salary/employer/green-plains-inc/chemical-process-design-engineer-i-salary",
+          "min_salary": 82560,
+          "max_salary": 118858,
+          "median_salary": 100900,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        },
+        {
+          "location": "Bowling Green, KY",
+          "job_title": "Process Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.ca/Salaries/bowling-green-process-engineer-salary-SRCH_IL.0,13_IM111_KO14,30.htm",
+          "min_salary": 80457,
+          "max_salary": 179933,
+          "median_salary": 118679,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    }
+  ]
+}

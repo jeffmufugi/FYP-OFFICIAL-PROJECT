@@ -1,9 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 import {motion, useInView} from "framer-motion";
-
+import { useContext, useState } from 'react';
+import { Context } from '../App';
 
 
 export default function MainContent(){
+  const [signedIn,setSignedIn] = useContext(Context);
 
     const navigate = useNavigate();
 
@@ -38,9 +40,14 @@ export default function MainContent(){
                 </div>
 
                 <div className="btn-main">
-                  <button className="btn1" onClick={signUpClick}>
+        
+                  {signedIn === true && <button className="btn1">
+                    Community
+                  </button>}
+                  {signedIn === false && <button className="btn1" onClick={signUpClick}>
                     Join Today!
-                  </button>
+                  </button>}
+                  
               
                    <button className="btn2" onClick={scrollToSection}>Explore Opportunities</button>
 

@@ -31,8 +31,8 @@ export const homepageInfo1 = [ {
     emprate: "79%",
     },]
 
-    import salaryData from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-data.json'; // Adjust path accordingly
-    import salaryData2 from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-dataMY.json'; // Adjust path accordingly
+    import salaryData from '/../server/data/salary-dataCE.json';
+    import salaryData2 from '/../server/data/salary-dataCEMY.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
@@ -41,25 +41,27 @@ export const homepageInfo1 = [ {
 
     export const getTopCourses = (salaryData) => {
     
-      const jobData = salaryData.data.find(job => job.title === 'Computer Science');
+      const jobData = salaryData.data.find(job => job.title === 'Chemical Engineer');
 
       const currency = jobData ? jobData.currency : null;
       console.log(currency );
       
 
 
-      const aiJob = salaryData?.data?.find(job => job.title === 'Artificial Intelligence');
-      const cyJob = salaryData?.data?.find(job => job.title === 'Cybersecurity');
-      const clJob = salaryData?.data?.find(job => job.title === 'Cloud Architecture');
-      const daJob = salaryData?.data?.find(job => job.title === 'Data Science');
-      const swJob = salaryData?.data?.find(job => job.title === 'Software Development');
-      const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops');
-      const moJob = salaryData?.data?.find(job => job.title === 'Mobile Development');
-      const gaJob = salaryData?.data?.find(job => job.title === 'Game Development');
-      const fuJob = salaryData?.data?.find(job => job.title === 'Web Development');
-      const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX Design');
+      const phJob = salaryData?.data?.find(job => job.title === 'Pharmaceutical Engineering');
+      const reJob = salaryData?.data?.find(job => job.title === 'Renewable Energy');
+      const psJob = salaryData?.data?.find(job => job.title === 'Process Safety Management');
+      const peJob = salaryData?.data?.find(job => job.title === 'Petroleum Engineering');
+      const wtJob = salaryData?.data?.find(job => job.title === 'Water Treatment Engineering');
+      const poJob = salaryData?.data?.find(job => job.title === 'Polymer Engineering');
+      const biJob = salaryData?.data?.find(job => job.title === 'Biochemical Engineering');
+      const naJob = salaryData?.data?.find(job => job.title === 'Nanotechnology');
+      const fpJob = salaryData?.data?.find(job => job.title === 'Food Processing Engineering');
+      const gpJob = salaryData?.data?.find(job => job.title === 'Green Process Engineering');
+      
 
-      const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
+      const validJobs = [phJob, reJob, psJob, peJob, wtJob, poJob, biJob, naJob, fpJob, gpJob];
+
 
       // Array to store the formatted salary data for each job
       const salaryResults = [];

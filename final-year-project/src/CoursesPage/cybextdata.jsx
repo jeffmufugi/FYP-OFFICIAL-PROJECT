@@ -33,8 +33,8 @@ export const homepageInfo1 = [ {
     },]
   
 
-    import salaryData from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-data.json'; // Adjust path accordingly
-    import salaryData2 from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-dataMY.json'; // Adjust path accordingly
+    import salaryData from '/../server/data/salary-data.json';
+    import salaryData2 from '/../server/data/salary-dataMY.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},

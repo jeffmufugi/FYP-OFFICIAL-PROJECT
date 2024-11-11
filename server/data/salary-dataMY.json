@@ -1,20 +1,20 @@
 {
-  "lastUpdated": "2024-10-29T10:52:32.470Z",
+  "lastUpdated": "2024-11-09T16:35:16.673Z",
   "data": [
     {
       "title": "Computer Science",
       "status": "OK",
-      "request_id": "cd424adf-b0f0-4bd8-8a66-bf7cb1c96f4f",
-      "currency": "MYR",
+      "request_id": "276287de-c62c-4447-a934-e69f56e5681a",
+      "currency":"MYR",
       "data": [
         {
           "location": "Johor Bahru, Johor, Malaysia",
           "job_title": "Senior Lecturer Computer Science",
           "publisher_name": "Glassdoor",
           "publisher_link": "https://www.glassdoor.com.hk/Salary/University-of-Southampton-Senior-Lecturer-Computer-Science-Johor-Bahru-Salaries-EJI_IE35717.0,25_KO26,58_IL.59,70_IM1580.htm",
-          "min_salary": 101567,
-          "max_salary": 109454,
-          "median_salary": 105510,
+          "min_salary": 100184,
+          "max_salary": 109444,
+          "median_salary": 104814,
           "salary_period": "YEAR",
           "salary_currency": "MYR"
         },
@@ -32,9 +32,9 @@
       ]
     },
     {
-      "title": "Artificial Intelligence",
+      "title": "AI",
       "status": "OK",
-      "request_id": "3e53cb81-e54b-485f-b2dd-faf7443d188f",
+      "request_id": "3f03b1f1-0897-4205-89d8-144f67768748",
       "data": [
         {
           "location": "Malaysia",
@@ -46,13 +46,24 @@
           "median_salary": 19997,
           "salary_period": "YEAR",
           "salary_currency": "MYR"
+        },
+        {
+          "location": "Malaysia",
+          "job_title": "ML / AI Software Engineer",
+          "publisher_name": "Levels",
+          "publisher_link": "https://www.levels.fyi/t/software-engineer/focus/ml-ai/locations/malaysia",
+          "min_salary": 11501.089201800001,
+          "max_salary": 171939.02517000004,
+          "median_salary": 109296,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
         }
       ]
     },
     {
-      "title": "Cybersecurity",
+      "title": "Cyber Security",
       "status": "OK",
-      "request_id": "726f3919-2030-4b31-8729-ee3a71f43a20",
+      "request_id": "999dd054-0aba-4801-9033-106258ae2c3b",
       "data": [
         {
           "location": "Malaysia",
@@ -67,23 +78,23 @@
         },
         {
           "location": "Malaysia",
-          "job_title": "Cyber Security Engineer",
+          "job_title": "Cyber Security Analyst",
           "publisher_name": "Payscale",
-          "publisher_link": "https://www.payscale.com/research/MY/Job=Cyber_Security_Engineer/Salary",
-          "min_salary": 3000,
-          "max_salary": 138000,
-          "median_salary": 49637.23,
+          "publisher_link": "https://www.payscale.com/research/MY/Job=Cyber_Security_Analyst/Salary",
+          "min_salary": 4404.21,
+          "max_salary": 103432.08,
+          "median_salary": 42341.96,
           "salary_period": "YEAR",
           "salary_currency": "MYR"
         },
         {
           "location": "Malaysia",
-          "job_title": "Cybersecurity Engineer (Mid)",
+          "job_title": "Cybersecurity Engineer (Senior)",
           "publisher_name": "Nodeflair",
-          "publisher_link": "https://nodeflair.com/companies/hytech/salaries/cybersecurity_engineer-mid/Malaysia",
-          "min_salary": 9667,
-          "max_salary": 19167,
-          "median_salary": 14417,
+          "publisher_link": "https://nodeflair.com/companies/puresoftware/salaries/cybersecurity_engineer-senior/Malaysia",
+          "min_salary": 15000,
+          "max_salary": 17000,
+          "median_salary": 16000,
           "salary_period": "MONTH",
           "salary_currency": "MYR"
         }
@@ -92,16 +103,16 @@
     {
       "title": "Cloud Architecture",
       "status": "OK",
-      "request_id": "cc824e00-3ebd-4a27-8d48-eedd452f6f27",
+      "request_id": "967c126c-9fa6-40f5-b20d-f87106884ed1",
       "data": [
         {
           "location": "Malaysia",
           "job_title": "Senior Cloud Solutions Architect",
           "publisher_name": "Glassdoor",
           "publisher_link": "https://www.glassdoor.com/Salary/Microsoft-Senior-Cloud-Solutions-Architect-Malaysia-Salaries-EJI_IE1651.0,9_KO10,42_IL.43,51_IN170.htm",
-          "min_salary": 289329,
-          "max_salary": 310269,
-          "median_salary": 299799,
+          "min_salary": 285747,
+          "max_salary": 312633,
+          "median_salary": 299190,
           "salary_period": "YEAR",
           "salary_currency": "MYR"
         },
@@ -121,16 +132,16 @@
     {
       "title": "Data Science",
       "status": "OK",
-      "request_id": "4e754743-8682-4995-aa41-77efc16de04a",
+      "request_id": "83f337f4-e66a-4c3f-9833-ccb6c3dea707",
       "data": [
         {
-          "location": "Federal Territory of Kuala Lumpur, Malaysia",
+          "location": "Malaysia",
           "job_title": "Data Scientist",
           "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salary/Petronas-Data-Scientist-Kuala-Lumpur-Salaries-EJI_IE8270.0,8_KO9,23_IL.24,36_IM1100.htm",
-          "min_salary": 48000,
-          "max_salary": 66600,
-          "median_salary": 55680,
+          "publisher_link": "https://www.glassdoor.com/Monthly-Pay/ASTRO-Data-Scientist-Malaysia-Monthly-Pay-EJI_IE307199.0,5_KO6,20_IL.21,29_IN170.htm",
+          "min_salary": 5000,
+          "max_salary": 8250,
+          "median_salary": 5620,
           "salary_period": "YEAR",
           "salary_currency": "MYR"
         },
@@ -147,30 +158,30 @@
         },
         {
           "location": "Malaysia",
-          "job_title": "Data Science Manager",
+          "job_title": "Data Scientist",
           "publisher_name": "Levels",
-          "publisher_link": "https://www.levels.fyi/companies/airasia/salaries/data-science-manager",
-          "min_salary": 108547,
-          "max_salary": 108547,
-          "median_salary": 108547,
+          "publisher_link": "https://www.levels.fyi/companies/grab/salaries/data-scientist/locations/malaysia",
+          "min_salary": 109498,
+          "max_salary": 179148,
+          "median_salary": 174001,
           "salary_period": "YEAR",
-          "salary_currency": "USD"
+          "salary_currency": "MYR"
         }
       ]
     },
     {
       "title": "Software Development",
       "status": "OK",
-      "request_id": "0d79e37e-4ced-4f48-925b-69e3a1662d25",
+      "request_id": "c879af29-ced1-43bf-a97e-dfeb259fc9d3",
       "data": [
         {
           "location": "Federal Territory of Kuala Lumpur, Malaysia",
           "job_title": "Software Developer",
           "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/kuala-lumpur-malaysia-software-developer-salary-SRCH_IL.0,21_IM1100_KO22,40.htm",
+          "publisher_link": "https://www.glassdoor.co.in/Salaries/kuala-lumpur-malaysia-software-developer-salary-SRCH_IL.0,21_IM1100_KO22,40.htm",
           "min_salary": 3083,
-          "max_salary": 9383,
-          "median_salary": 4738,
+          "max_salary": 9400,
+          "median_salary": 4758,
           "salary_period": "MONTH",
           "salary_currency": "MYR"
         },
@@ -186,13 +197,13 @@
           "salary_currency": "MYR"
         },
         {
-          "location": "Malaysia",
+          "location": null,
           "job_title": "Software Engineer",
           "publisher_name": "Levels",
-          "publisher_link": "https://www.levels.fyi/companies/grab/salaries/software-engineer/locations/malaysia",
-          "min_salary": 68445,
-          "max_salary": 190267,
-          "median_salary": 103751,
+          "publisher_link": "https://www.levels.fyi/t/software-engineer/locations/greater-kuala-lumpur",
+          "min_salary": 46021.614212,
+          "max_salary": 172580.870455,
+          "median_salary": 96140.439703,
           "salary_period": "YEAR",
           "salary_currency": "MYR"
         }
@@ -201,16 +212,16 @@
     {
       "title": "Mobile Development",
       "status": "OK",
-      "request_id": "775723fb-b598-4374-ad1c-29111e0ae7bd",
+      "request_id": "f77f02de-011e-486c-9746-e684feaa04fe",
       "data": [
         {
           "location": "Federal Territory of Kuala Lumpur, Malaysia",
           "job_title": "Mobile Applications Developer",
           "publisher_name": "Glassdoor",
           "publisher_link": "https://www.glassdoor.co.in/Salary/CIMB-Group-Mobile-Applications-Developer-Kuala-Lumpur-Salaries-EJI_IE40512.0,10_KO11,40_IL.41,53_IM1100.htm",
-          "min_salary": 92283,
-          "max_salary": 100306,
-          "median_salary": 96294,
+          "min_salary": 91764,
+          "max_salary": 99233,
+          "median_salary": 95499,
           "salary_period": "YEAR",
           "salary_currency": "MYR"
         },
@@ -226,14 +237,14 @@
           "salary_currency": "MYR"
         },
         {
-          "location": "Federal Territory of Kuala Lumpur, Malaysia",
+          "location": "Selangor, Malaysia",
           "job_title": "Mobile Developer",
           "publisher_name": "Indeed",
-          "publisher_link": "https://malaysia.indeed.com/cmp/Innovatz-Solutions-Sdn-Bhd/salaries/Mobile-Developer/Kuala-Lumpur",
-          "min_salary": 7200,
-          "max_salary": 22000,
-          "median_salary": 14422.57931375379,
-          "salary_period": "YEAR",
+          "publisher_link": "https://malaysia.indeed.com/cmp/Baituljannah-Sdn.-Bhd./salaries/Mobile-Developer/Selangor",
+          "min_salary": 3155.4002934661576,
+          "max_salary": 4032.229375618867,
+          "median_salary": 3566.973192379014,
+          "salary_period": "MONTH",
           "salary_currency": "MYR"
         }
       ]
@@ -241,7 +252,7 @@
     {
       "title": "Game Development",
       "status": "OK",
-      "request_id": "acb91910-8050-443f-8dcc-ddf5788fcb5c",
+      "request_id": "3c522051-2cc5-4035-9ea8-1152f4358004",
       "data": [
         {
           "location": "Federal Territory of Kuala Lumpur, Malaysia",
@@ -268,12 +279,12 @@
       ]
     },
     {
-      "title": "Dev Ops",
+      "title": "Dev Ops Engineer",
       "status": "OK",
-      "request_id": "2773019e-bd6a-472f-863c-ef5bc4b5cd26",
+      "request_id": "111b8e4e-4c14-4c23-9b3b-81beaab3b798",
       "data": [
         {
-          "location": "Federal Territory of Kuala Lumpur, Malaysia",
+          "location": "Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia",
           "job_title": "Devops Engineer",
           "publisher_name": "Glassdoor",
           "publisher_link": "https://www.glassdoor.com/Salary/DHL-Devops-Engineer-Kuala-Lumpur-Salaries-EJI_IE650250.0,3_KO4,19_IL.20,32_IM1100.htm",
@@ -308,49 +319,49 @@
       ]
     },
     {
-      "title": "Full Stack Development",
+      "title": "Web Development",
       "status": "OK",
-      "request_id": "7ca7d586-314b-4b91-97de-aef6a327f32f",
+      "request_id": "380f37f2-9904-4600-a30f-7401484a2e82",
       "data": [
         {
-          "location": "Malaysia",
-          "job_title": "Full Stack Developer",
+          "location": "Federal Territory of Kuala Lumpur, Malaysia",
+          "job_title": "Web Developer",
           "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salary/Bjak-Full-Stack-Developer-Malaysia-EJI_IE3055055.0,4_KO5,25_IL.26,34_IN170.htm?filter.payPeriod=MONTHLY",
-          "min_salary": 37800,
-          "max_salary": 74400,
-          "median_salary": 56100,
+          "publisher_link": "https://www.glassdoor.com/Monthly-Pay/ASTRO-Web-Developer-Kuala-Lumpur-Monthly-Pay-EJI_IE307199.0,5_KO6,19_IL.20,32_IM1100.htm",
+          "min_salary": 3995,
+          "max_salary": 4335,
+          "median_salary": 4165,
           "salary_period": "YEAR",
           "salary_currency": "MYR"
         },
         {
-          "location": "Malaysia",
-          "job_title": "Full Stack Software Developer",
+          "location": "Petaling Jaya, Selangor, Malaysia",
+          "job_title": "Web Developer",
           "publisher_name": "Payscale",
-          "publisher_link": "https://www.payscale.com/research/MY/Job=Full_Stack_Software_Developer/Salary",
-          "min_salary": 6004.64,
-          "max_salary": 104290.71,
-          "median_salary": 57965.44,
+          "publisher_link": "https://www.payscale.com/research/MY/Job=Web_Developer/Salary/b3f5811a/Petaling-Jaya-Web-Development",
+          "min_salary": 24080.12,
+          "max_salary": 65779.67,
+          "median_salary": 38648.99,
           "salary_period": "YEAR",
           "salary_currency": "MYR"
         },
         {
-          "location": "Malaysia",
-          "job_title": "Software Engineer (Junior)",
-          "publisher_name": "Nodeflair",
-          "publisher_link": "https://nodeflair.com/companies/maybank/salaries/software_engineer-junior/Malaysia",
-          "min_salary": 3500,
-          "max_salary": 10000,
-          "median_salary": 6750,
+          "location": "Cyberjaya, Selangor, Malaysia",
+          "job_title": "Web Developer",
+          "publisher_name": "Indeed",
+          "publisher_link": "https://malaysia.indeed.com/cmp/Telekom-Research-&-Development-Sdn-Bhd/salaries/Web-Developer/Cyberjaya-M10",
+          "min_salary": 2400,
+          "max_salary": 8100,
+          "median_salary": 4866.757560658652,
           "salary_period": "MONTH",
           "salary_currency": "MYR"
         }
       ]
     },
     {
-      "title": "UI/UX Design",
+      "title": "UI/UX",
       "status": "OK",
-      "request_id": "69ff0339-aaae-46bf-be2a-fa1dea503177",
+      "request_id": "3ae17157-0cec-458e-943a-d624a27b7539",
       "data": [
         {
           "location": "Malaysia",
@@ -364,26 +375,15 @@
           "salary_currency": "MYR"
         },
         {
-          "location": "Malaysia",
+          "location": "Ipoh, Perak, Malaysia",
           "job_title": "UX Designer",
           "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.co.in/Salary/FPT-Software-UX-Designer-Malaysia-EJI_IE472026.0,12_KO13,24_IL.25,33_IN170.htm?filter.payPeriod=MONTHLY",
-          "min_salary": 42000,
-          "max_salary": 48000,
-          "median_salary": 46200,
+          "publisher_link": "https://www.glassdoor.com/Salary/Stampede-UX-Designer-Ipoh-Salaries-EJI_IE4005333.0,8_KO9,20_IL.21,25_IM1581.htm",
+          "min_salary": 86954,
+          "max_salary": 94198,
+          "median_salary": 90576,
           "salary_period": "YEAR",
           "salary_currency": "MYR"
-        },
-        {
-          "location": "Malaysia",
-          "job_title": "Product Designer",
-          "publisher_name": "Levels",
-          "publisher_link": "https://www.levels.fyi/companies/setel/salaries/product-designer",
-          "min_salary": 15000,
-          "max_salary": 15000,
-          "median_salary": 15000,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
         }
       ]
     }

@@ -1,7 +1,7 @@
 
-import salaryData from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-data.json'; // Adjust path accordingly
-import salaryData2 from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-dataMY.json'; // Adjust path accordingly
 
+import salaryData from '/../server/data/salary-data.json';
+import salaryData2 from '/../server/data/salary-dataMY.json';
 export const countries = 
 [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
 {"flag":"🇲🇾","file":salaryData2,"currency":"MYR",id:2}
@@ -14,16 +14,16 @@ export const getTopCourses = (salaryData) => {
           const currency = jobData ? jobData.currency : null;
           console.log(currency);
 
-          const aiJob = salaryData?.data?.find(job => job.title === 'Artificial Intelligence');
-          const cyJob = salaryData?.data?.find(job => job.title === 'Cybersecurity');
+          const aiJob = salaryData?.data?.find(job => job.title === 'AI');
+          const cyJob = salaryData?.data?.find(job => job.title === 'Cyber Security');
           const clJob = salaryData?.data?.find(job => job.title === 'Cloud Architecture');
           const daJob = salaryData?.data?.find(job => job.title === 'Data Science');
           const swJob = salaryData?.data?.find(job => job.title === 'Software Development');
-          const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops');
+          const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops Engineer');
           const moJob = salaryData?.data?.find(job => job.title === 'Mobile Development');
           const gaJob = salaryData?.data?.find(job => job.title === 'Game Development');
           const fuJob = salaryData?.data?.find(job => job.title === 'Web Development');
-          const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX Design');
+          const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX');
 
           const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
 
@@ -66,63 +66,65 @@ export const getTopCourses = (salaryData) => {
 
             return [
               {
-                name: "AI & MACHINE LEARNING",
+                name: "ARTIFICIAL INTELLIGENCE",
                 salaryRange: `${currency}${salaryResults[0].minSalary} - ${currency}${salaryResults[0].maxSalary}`,
-                description: `Lead the development of advanced AI systems using deep learning, neural networks, and natural language processing. Create innovative solutions for automation, prediction, and intelligent decision-making systems. Growing focus on ethical AI and large language models.`,
+                description: `An artificial intelligence engineer designs, builds, and deploys AI models to automate tasks, enhance decision-making, and solve real-world problems, 
+                using machine learning, data processing, and programming skills.`,
                 id: 1
               },
               {
                 name: "CYBERSECURITY",
                 salaryRange: `${currency}${salaryResults[1].minSalary} - ${currency}${salaryResults[1].maxSalary}`,
-                description: `Design and implement comprehensive security architectures to protect against evolving cyber threats. Specialize in cloud security, zero-trust frameworks, threat detection, and incident response. Growing emphasis on AI-powered security solutions and compliance.`
+                description: `Cybersecurity safeguards computers and networks from unauthorized access and cyber threats, 
+                protecting data privacy and preventing digital attacks on individuals and organizations.`
                 ,id: 2
               },
               {
                 name: "CLOUD ARCHITECTURE",
                 salaryRange: `${currency}${salaryResults[2].minSalary} - ${currency}${salaryResults[2].maxSalary}`,
-                description: `Architect and optimize multi-cloud solutions focusing on serverless computing, microservices, and container orchestration. Implement DevOps practices, ensure high availability, and optimize cloud costs while maintaining security and scalability.`
+                description: `A cloud architect designs, implements, and manages cloud computing systems, ensuring scalability, security, and performance for organizations.`
                 ,id: 3
               },
               {
                 name: "DATA SCIENCE",
                 salaryRange: `${currency}${salaryResults[3].minSalary} - ${currency}${salaryResults[3].maxSalary}`,
-                description: `Transform complex data into actionable insights using advanced analytics, machine learning, and predictive modeling. Specialize in big data technologies, real-time analytics, and developing AI-driven decision support systems.`
+                description: `A data scientist analyzes and interprets complex data, develops models, and provides insights to drive decision-making and business solutions.`
                 ,id: 4
               },
               {
                 name: "SOFTWARE DEVELOPMENT",
                 salaryRange: `${currency}${salaryResults[4].minSalary} - ${currency}${salaryResults[4].maxSalary}`,
-                description: `Build scalable, enterprise-level applications using modern frameworks and cloud-native technologies. Focus on microservices architecture, API development, and implementing CI/CD pipelines for rapid deployment and testing.`
+                description: `A software developer designs, codes, tests, and maintains software applications, ensuring functionality, performance, and user experience meet requirements.`
                 ,id: 5
               },
               {
-                name: "DEVOPS & SRE",
+                name: "DEVOPS",
                 salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
-                description: `Bridge development and operations through automation, monitoring, and infrastructure as code. Implement site reliability engineering practices to ensure system scalability, reliability, and performance optimization.`
+                description: `DevOps automates and integrates development and IT operations, improving collaboration, efficiency, and the deployment of software systems.`
                 ,id: 6
               },
               {
                 name: "MOBILE DEVELOPMENT",
                 salaryRange: `${currency}${salaryResults[6].minSalary} - ${currency}${salaryResults[6].maxSalary}`,
-                description: `Create native and cross-platform mobile applications with focus on performance and user experience. Implement advanced features like AR/VR, real-time data synchronization, and offline capabilities using modern frameworks.`
+                description: `A mobile developer designs, develops, and maintains applications for mobile devices, ensuring functionality, usability, and performance across platforms.`
                 ,id: 7
               },
               {
                 name: "GAME DEVELOPMENT",
                 salaryRange: `${currency}${salaryResults[7].minSalary} - ${currency}${salaryResults[7].maxSalary}`,
-                description: `Develop immersive gaming experiences using advanced graphics engines and physics simulations. Implement multiplayer functionality, blockchain integration, and create engaging gameplay mechanics across various platforms.`
+                description: `A game developer designs, codes, tests, and refines video games, focusing on gameplay mechanics, graphics, and user experience.`
                 ,id: 8
               },
               {
                 name: "FULL-STACK DEVELOPMENT",
                 salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
-                description: `Build end-to-end web applications using modern JavaScript frameworks and cloud services. Focus on responsive design, progressive web apps, and implementing real-time features using WebSocket and serverless architectures.`
+                description: `A full-stack developer builds both front-end and back-end components of web applications, managing databases, servers, and user interfaces.`
                 ,id: 9
               },
               {
                 name: "UI/UX DESIGN",
                 salaryRange: `${currency}${salaryResults[9].minSalary} - ${currency}${salaryResults[9].maxSalary}`,
-                description: `Create exceptional digital experiences through user research, interaction design, and accessibility-first approaches. Implement design systems, conduct usability testing, and utilize AI-powered design tools for rapid prototyping.`
+                description: `A UI/UX developer designs and implements user interfaces and ensures a seamless, intuitive user experience across digital platforms.`
                 ,id: 10
               }
             ];
@@ -132,7 +134,7 @@ export const getTopCourses = (salaryData) => {
 export const homepageInfo1 = [ {
 undergradsal: `122,000`,
 jobavail : "356,700",
-emprate: "67%",
+emprate: "85%",
 },]
 
 //MALAYSIA
@@ -145,7 +147,7 @@ export const homepageInfo2 = [ {
 
 export const homepageInfo = [
     {courseName : "computer science.",
-    courseDefinition: " Computer science is the study of algorithms, programming, computation, and data processing systems.",
+    courseDefinition: "Computer science is the study of computers and algorithms, including their principles, hardware/software design, applications, and societal impact.",
     undergradsal: `122,000`,
     jobavail : "356,700",
     emprate: "67%",

@@ -29,7 +29,13 @@ const RoboticsCourse = () => {
   const [hoveredCourse, setHoveredCourse] = useState(null);
   const [selectedCurrency, setSelectedCurrency] = useState("$");
   const [animat,setAnimat]=useState(null)
-
+  useEffect(() => {
+    const defaultCountry = countries.find(country => country.flag === "🇺🇸");
+    if (defaultCountry) {
+      const courses = getTopCourses(defaultCountry.file);
+      setCourseData(courses);
+    }
+  }, []);
 
   const inputRef = useRef(null);
   const dropdownRef=useRef(null)

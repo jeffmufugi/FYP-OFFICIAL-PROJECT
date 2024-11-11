@@ -143,6 +143,7 @@ export function Page2({icon1,icon2,icon3,homepageInfo,coreAreasOfStudy,prerequis
             <div className="ab3"> 
             <motion.p 
                 className="course-bar" 
+                style={{ color: homepageInfo[1].fontColor }} 
                 {...fadeInFromLeft2.left3}>____________________
             </motion.p>
              </div>

@@ -100,20 +100,20 @@ router.get('/salary-data', async (req, res) => {
         const useCache = req.query.cache !== 'false';
         const savedData = await readSavedData();
         
-        // If cache is requested and we have saved data less than 24 hours old
-        // if (useCache && savedData) {
-        //     const lastUpdate = new Date(savedData.lastUpdated);
-        //     const hoursSinceUpdate = (new Date() - lastUpdate) / (1000 * 60 * 60);
+       // If cache is requested and we have saved data less than 24 hours old
+        if (useCache && savedData) {
+            const lastUpdate = new Date(savedData.lastUpdated);
+            const hoursSinceUpdate = (new Date() - lastUpdate) / (1000 * 60 * 60);
             
-        //     if (hoursSinceUpdate < 24) {
-        //         return res.json({
-        //             status: 'success',
-        //             source: 'cache',
-        //             lastUpdated: savedData.lastUpdated,
-        //             data: savedData.data
-        //         });
-        //     }
-        // }
+            if (hoursSinceUpdate < 24) {
+                return res.json({
+                    status: 'success',
+                    source: 'cache',
+                    lastUpdated: savedData.lastUpdated,
+                    data: savedData.data
+                });
+            }
+        }
 
         // Fetch fresh data
         const salaryDataPromises = occupations.map(occ => 

@@ -1,10 +1,10 @@
 
 import { useNavigate } from 'react-router-dom';
-import {motion} from "framer-motion";
 import Header from "./Homepage1/Header1.jsx";
 import back from "../src/site_icons/backab.svg";
 import ai from "../src/site_icons/atom1.svg";
 import cst from "../src/site_icons/cst.svg";
+import cst2 from "../src/site_icons/cst2.svg";
 import mec from "../src/site_icons/mec.svg";
 import chem from "../src/site_icons/chem.svg";
 import phy from "../src/site_icons/phy.svg";
@@ -20,9 +20,19 @@ import air from "../src/site_icons/air.svg";
 import cyb from "../src/site_icons/cyb.svg";
 import mar from "../src/site_icons/mar.svg";
 import rec from "../src/site_icons/rec3.png";
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
+
+
 
 
 export default function CoursePage(){
+
+  const [courseView,SetCourseView]=useState(false)
+  function changeview(){
+    SetCourseView(!courseView);
+  }
 
     const navigate = useNavigate();
     const csCourseClick = () => {
@@ -72,18 +82,6 @@ export default function CoursePage(){
         navigate('/cecoursepage');
       }
 
-
-
-
-
-
-
-
-
-   
-
-
-   
 
     
 
@@ -195,7 +193,7 @@ export default function CoursePage(){
         id: 2},
 
         {courseName: "Computer Engineering", 
-        imgName: cst,
+        imgName: cst2,
         upColor: "#7BB4FB",
         downColor: "black",
         fontcolor: "white",
@@ -227,8 +225,9 @@ export default function CoursePage(){
                             transition={{ duration: 1 }}
                             viewport={{ once: true }}>
                             <div className="main-course-txt">courses.</div>
-                            <p className="hdr-course-txt2">decide your future path today</p>
-                            <button className="btn-course-view">click for list view of courses</button>
+                         {/* <p className="hdr-course-txt2">explore opportunities</p> */}
+                            {courseView === true && <button className="btn-course-view" onClick={changeview}>click for card view of courses</button>}
+                            {courseView === false && <button className="btn-course-view" onClick={changeview}>click for list view of courses</button>}
                 </motion.div>
                 <div className="right-hd-cs"></div>
             </div>
@@ -237,22 +236,47 @@ export default function CoursePage(){
             <div className="main-course-section">
                 <div className="left-main-cs"></div>
                 <div className="mid-main-cs">
+
                    <motion.div className="card-row" initial={{ x: 100 ,opacity: 0 }}
                         whileInView={{ x: 0 ,opacity: 1 }}
                         transition={{ duration: 0.5,delay: 0 }}
                         viewport={{ once: true }}>
-                        {courses.map((course)=>( 
+                       
+                        {courseView === true && courses.map((course)=>( 
                             
-                         <div className="course-program-card">
-                            <div className="course-card" key={course.id} style={{backgroundColor : course.upColor}} onClick={course.route} >
-                            <img src={course.imgName} className="imgcst"/>
-                            <div className="computer-science-ftr" style={{backgroundColor : course.downColor}}>
-                                <p className="txt-121" style={{color : course.fontcolor}}>{course.courseName}</p>
+                         <motion.div className="course-program-card2"         
+                         initial={{ opacity: 0 }}
+                         animate={{ opacity: 1}}
+                         exit={{ opacity: 0}}
+                         transition={{ duration: 0.3 }}>
+                            <div className="course-card2">
+                          
+                            <div className="computer-science-ftr2" style={{backgroundColor : "#4C4A59"}} onClick={course.route}>
+                                <p className="txt-121" style={{color : "white"}}>{course.courseName}</p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                         ))
                         }
+                   
+                  
+                        {courseView === false && courses.map((course)=>( 
+                            
+                            <motion.div className="course-program-card"         
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1}}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.3 }}> 
+                               <div className="course-card" key={course.id} style={{backgroundColor : "#E0E0E0"}} onClick={course.route} >
+                               <img src={course.imgName} className="imgcst"/>
+                               <div className="computer-science-ftr" style={{backgroundColor : "#4C4A59"}}>
+                                   <p className="txt-121" style={{color : "white"}}>{course.courseName}</p>
+                               </div>
+                           </div>
+                       </motion.div>
+                           ))
+                           }
+                      
 
                     </motion.div>
                   

@@ -30,7 +30,13 @@ const  BiomedicalEngineeringCourse = () => {
   const [hoveredCourse, setHoveredCourse] = useState(null);
   const [selectedCurrency, setSelectedCurrency] = useState("$");
   const [animat,setAnimat]=useState(null)
-
+  useEffect(() => {
+    const defaultCountry = countries.find(country => country.flag === "🇺🇸");
+    if (defaultCountry) {
+      const courses = getTopCourses(defaultCountry.file);
+      setCourseData(courses);
+    }
+  }, []);
 const dropdownRef = useRef(null)
   const inputRef = useRef(null);
   const handleClickOutside = (event) => {

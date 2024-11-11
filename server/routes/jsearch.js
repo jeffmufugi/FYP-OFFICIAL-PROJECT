@@ -5,35 +5,90 @@ const fs = require('fs').promises;
 const path = require('path');
 
 // API configuration
-const RAPIDAPI_KEY = '90caff2630msh787b7d18a701072p17d25cjsndc4e6106b587';
-const RAPIDAPI_HOST = 'jsearch.p.rapidapi.com';
+const RAPIDAPI_KEY = '3e1298b4cbmsh83fb76c7a8fc8a4p1f201ejsnd7a4732af964';
+const RAPIDAPI_HOST = 'job-salary-data.p.rapidapi.com';
 
 // File path for storing salary data
-const SALARY_DATA_FILE = path.join(__dirname, '../data/salary-dataMY2.json');
+// const SALARY_DATA_FILE = path.join(__dirname, '../data/salary-dataMEC.json');
 
 // List of high-paying occupations
+{/*-----------------------cst--------------------------- */}
+// const occupations = [
+//     { title: 'Computer Science' },
+//     { title: 'AI' },
+//     { title: 'Cyber Security' },
+//     { title: 'Cloud Architecture' },
+//     { title: 'Data Science' },
+//     { title: 'Software Development' },
+//     { title: 'Mobile Development' },
+//     { title: 'Game Development' },
+//     { title: 'Dev Ops Engineer' },
+//     { title: 'Web Development' },
+//     { title: 'UI/UX' }
+// ];
+{/*-----------------------chem--------------------------- */}
+// const occupations = [
+
+//     { title: 'Pharmaceutical Engineering' },
+//     { title: 'Renewable Energy' },
+//     { title: 'Process Safety Management' },
+//     { title: 'Petroleum Engineering' },
+//     { title: 'Water Treatment Engineering' },
+//     { title: 'Polymer Engineering' },
+//     { title: 'Biochemical Engineering' },
+//     { title: 'Nanotechnology' },
+//     { title: 'Food Processing Engineering' },
+//     { title: 'Green Process Engineering' }
+// ];
+
+{/*-----------------------physics--------------------------- */}
+// const occupations = [
+//     { title: 'Quantum computing' },
+//     { title: 'Medical Physics' },
+//     { title: 'Particle physics' },
+//     { title: 'Condensed matter physics' },
+//     { title: 'Astrophysics' },
+//     { title: 'Computational physics' },
+//     { title: 'Plasma physics' },
+//     { title: 'Optics and photonics' },
+//     { title: 'Biophysics' },
+//     { title: 'Nuclear physics' }
+// ];
+// Function to fetch salary data for a specific occupation
+
+{/*-----------------------math--------------------------- */}
+// const occupations = [
+//     { title: 'Applied Mathematics' },
+//     { title: 'Statistics' },
+//     { title: 'Actuarial Science' },
+//     { title: 'Computational Mathematics' },
+//     { title: 'Operations Research' },
+//     { title: 'Financial Mathematics' },
+//     { title: 'Number Theory' },
+//     { title: 'Topology' }
+// ];
+
+{/*-----------------------MECHANICAL ENG--------------------------- */}
 const occupations = [
-    { title: 'Computer Science' },
-    { title: 'Artificial Intelligence' },
-    { title: 'Cybersecurity' },
-    { title: 'Cloud Architecture' },
-    { title: 'Data Science' },
-    { title: 'Software Development' },
-    { title: 'Mobile Development' },
-    { title: 'Game Development' },
-    { title: 'Dev Ops' },
-    { title: 'Full Stack Development' },
-    { title: 'UI/UX Design' }
+    { title: 'Aerospace/Defense' },
+    { title: 'Oil & Gas/Energy' },
+    { title: 'Robotics & Automation' },
+    { title: 'Medical Devices' },
+    { title: 'Research & Development' },
+    { title: 'Automotive Advanced Systems' },
+    { title: 'Nuclear Engineering' },
+    { title: 'Patents & Intellectual Property' },
+    { title: 'Data Center Infrastructure' },
+    { title: 'Semiconductor Manufacturing' }
 ];
 
-// Function to fetch salary data for a specific occupation
 const fetchSalaryData = (jobTitle) => {
     return new Promise((resolve, reject) => {
         const options = {
             method: 'GET',
-            hostname: 'jsearch.p.rapidapi.com',
+            hostname: 'job-salary-data.p.rapidapi.com',
             port: null,
-            path: `/estimated-salary?job_title=${encodeURIComponent(jobTitle)}&location=Malaysia&radius=100`,
+            path: `/job-salary?job_title=${encodeURIComponent(jobTitle)}&location=malaysia&radius=500`,
             headers: {
                 'x-rapidapi-key': RAPIDAPI_KEY,
                 'x-rapidapi-host': RAPIDAPI_HOST

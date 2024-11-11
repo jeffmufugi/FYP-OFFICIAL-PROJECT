@@ -2,6 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require('cors'); // Add this line to import cors
+const path = require("path");
+
 
 const app = express();
 
@@ -13,12 +15,12 @@ app.use(cors({
 }));
 
 app.use(express.json());
-
 app.set("view engine", "ejs");
 
 const PORT = process.env.PORT;
 
 mongoose.connect("mongodb://localhost/users")
+
 
 const db = mongoose.connection
 db.on("error", (error)=>console.error(error));
@@ -39,6 +41,21 @@ app.use("/api", blsRoute);
 
 const clsRoute = require("./routes/jsearch.js");
 app.use("/api", clsRoute);
+
+const openAIRoute = require("./routes/openai.js");
+app.use("/ask", openAIRoute);
+
+app.all("*",(req,res)=>{
+
+  res.status(404).send("<h1>Page not found</h1>")
+
+
+})
+
+
+
+
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

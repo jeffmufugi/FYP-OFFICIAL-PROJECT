@@ -8,11 +8,17 @@ import rocketL from "./site_icons/RocketL.svg";
 import rec from "./site_icons/rec3.png";
 import Header from "./Homepage1/Header1.jsx";
 import axios from 'axios';
-import React, { useState } from 'react';
-
+import React, { useContext, useState } from 'react';
+import { Context } from './App.jsx';
  
 export default function SignInPage(){
     const navigate = useNavigate();
+
+    const [signedIn,setSignedIn] = useContext(Context);
+
+    function setSignedInfunc(){
+        setSignedIn(true);
+    }
 
     const [formData, setFormData] = useState({
         email: '',
@@ -32,6 +38,7 @@ export default function SignInPage(){
             });
             console.log(response.data);
             alert('Sign in successful!');
+            setSignedInfunc();
             navigate('/');
         } catch (error) {
             console.error('Sign in error:', error.response?.data?.message || error.message);
@@ -64,13 +71,16 @@ export default function SignInPage(){
                 <div className="bottom-left-sign-in-header">
                 <motion.h1 className="sign-in-header-text"initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
-                            transition={{ duration: 1 }}
+                            transition={{ duration: 0.3 }}
                             viewport={{ once: true }}>sign in to <br/>your account .</motion.h1>
                 </div>
           
                 </div>
                 <div className="right-sign-in-header">
-                <img src={rocketL} alt="page-icon" className="sign-in-page-icon"/>
+                <motion.img src={rocketL} alt="page-icon" className="sign-in-page-icon" initial={{ x: 100 ,opacity: 0 }}
+                        whileInView={{ x: 0 ,opacity: 1 }}
+                        transition={{ duration: 0.5,delay: 0 }}
+                        viewport={{ once: true }}/>
                 </div>
             </div>
             <form onSubmit={handleSubmit}  className="main-sign-in-fields">

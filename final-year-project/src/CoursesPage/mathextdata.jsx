@@ -32,8 +32,12 @@ export const homepageInfo1 = [ {
     emprate: "79%",
     },]
 
-    import salaryData from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-data.json'; // Adjust path accordingly
-    import salaryData2 from '/Users/mvsterjeffrey/Desktop/FYP-OFFICIAL-PROJECT/server/data/salary-dataMY.json'; // Adjust path accordingly
+    // import salaryData from '/../server/data/salary-dataMAT.json';
+    // import salaryData2 from '/../server/data/salary-dataMATMY.json';
+
+
+    import salaryData from '/../server/data/salary-data.json';
+    import salaryData2 from '/../server/data/salary-dataMY.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
@@ -49,16 +53,16 @@ export const homepageInfo1 = [ {
       
 
 
-      const aiJob = salaryData?.data?.find(job => job.title === 'Artificial Intelligence');
-      const cyJob = salaryData?.data?.find(job => job.title === 'Cybersecurity');
+      const aiJob = salaryData?.data?.find(job => job.title === 'AI');
+      const cyJob = salaryData?.data?.find(job => job.title === 'Cyber Security');
       const clJob = salaryData?.data?.find(job => job.title === 'Cloud Architecture');
       const daJob = salaryData?.data?.find(job => job.title === 'Data Science');
       const swJob = salaryData?.data?.find(job => job.title === 'Software Development');
-      const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops');
+      const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops Engineer');
       const moJob = salaryData?.data?.find(job => job.title === 'Mobile Development');
       const gaJob = salaryData?.data?.find(job => job.title === 'Game Development');
       const fuJob = salaryData?.data?.find(job => job.title === 'Web Development');
-      const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX Design');
+      const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX');
 
       const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
 
@@ -102,42 +106,42 @@ export const homepageInfo1 = [ {
         return [
           {
             name: "APPLIED MATHEMATICS",
-            salaryRange: `${currency}100,000 - ${currency}150,000`,
+            salaryRange: `${currency}${salaryResults[0].minSalary} - ${currency}${salaryResults[0].maxSalary}`,
             description: `Use mathematical methods in practical applications in science, engineering, and other fields, focusing on real-world problem-solving.`
         },
         {
             name: "STATISTICS",
-            salaryRange: `${currency}85,000 - ${currency}140,000`,
+            salaryRange: `${currency}${salaryResults[1].minSalary} - ${currency}${salaryResults[1].maxSalary}`,
             description: `Analyze and interpret data using statistical models, supporting decision-making in business, healthcare, and social sciences.`
         },
         {
             name: "ACTUARIAL SCIENCE",
-            salaryRange: `${currency}90,000 - ${currency}160,000`,
+            salaryRange: `${currency}${salaryResults[2].minSalary} - ${currency}${salaryResults[2].maxSalary}`,
             description: `Assess and manage risk in the insurance and finance industries using mathematical models and statistical techniques.`
         },
         {
             name: "COMPUTATIONAL MATHEMATICS",
-            salaryRange: `${currency}95,000 - ${currency}145,000`,
+            salaryRange: `${currency}${salaryResults[3].minSalary} - ${currency}${salaryResults[3].maxSalary}`,
             description: `Develop algorithms and use computer simulations to solve complex problems in science, economics, and engineering.`
         },
         {
             name: "OPERATIONS RESEARCH",
-            salaryRange: `${currency}85,000 - ${currency}135,000`,
+            salaryRange: `${currency}${salaryResults[4].minSalary} - ${currency}${salaryResults[4].maxSalary}`,
             description: `Optimize processes and decision-making through mathematical modeling and analytical methods, used in logistics, manufacturing, and management.`
         },
         {
             name: "FINANCIAL MATHEMATICS",
-            salaryRange: `${currency}110,000 - ${currency}170,000`,
+            salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
             description: `Apply mathematics to model and solve problems in finance, focusing on pricing, risk management, and investment strategies.`
         },
         {
             name: "NUMBER THEORY",
-            salaryRange: `${currency}80,000 - ${currency}130,000`,
+            salaryRange: `${currency}${salaryResults[6].minSalary} - ${currency}${salaryResults[6].maxSalary}`,
             description: `Investigate the properties of integers and their relationships, with applications in cryptography and algorithm design.`
         },
         {
             name: "TOPOLOGY",
-            salaryRange: `${currency}95,000 - ${currency}140,000`,
+            salaryRange: `${currency}${salaryResults[7].minSalary} - ${currency}${salaryResults[7].maxSalary}`,
             description: `Study properties of space that are preserved under continuous deformations, with applications in robotics, physics, and data science.`
         }
 

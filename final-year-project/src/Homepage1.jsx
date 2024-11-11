@@ -3,15 +3,21 @@ import Header from "./Homepage1/Header.jsx";
 import MainContent from "./Homepage1/MainContent.jsx";
 import ICONS from "./site_icons/index.jsx";
 import rec from "../src/site_icons/rec3.png";
- 
+import { useState } from 'react';
 
 const Homepage1 = () => {
+  const [signedIn,setSignedIn]=useState(false);
+
+  function changeUI(){
+    setSignedIn(!signedIn);
+
+  }
   return (
     <div className="first-section">
          <img src={rec} className="background-top-light"/>
 
-      <Header />
-      <MainContent />
+      <Header signedIn={signedIn} changeUI={changeUI}/>
+      <MainContent signedIn={signedIn}/>
       <Footer />
     </div>
   );

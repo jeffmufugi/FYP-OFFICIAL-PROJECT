@@ -3,8 +3,16 @@ import ai from "./site_icons/atom1.svg";
 import {motion} from "framer-motion";
 import bg2 from "./site_icons/bg4.png";
 import { useNavigate } from 'react-router-dom';
+import { useState, useEffect, useContext } from "react";
+import { Context } from './App.jsx';
 
 const Homepage3 = () => {
+  const [signedIn,setSignedIn] = useContext(Context);
+  function setSignedInfunc(){
+    setSignedIn(true);
+}
+
+
 
   const navigate = useNavigate();
     const signInClick = () => {
@@ -96,10 +104,13 @@ const Homepage3 = () => {
 <div className="bottom-llc">
     <div className="left-foot">
             <ul>
+              
               <li onClick={coursePageClick} className="left-foot-1">Courses</li>
               <li onClick={AboutUsClick} className="left-foot-1">About Us</li>
               <li onClick={contactUsClick} className="left-foot-1">Contact Us</li>
-              <li onClick={signInClick} className="left-foot-1">Sign In</li>
+              {signedIn === false && <li onClick={signInClick} className="left-foot-1">Sign In</li>}
+              {signedIn === true && <li onClick={setSignedInfunc} className="left-foot-1">Sign Out</li>}
+              
               
         
             </ul>

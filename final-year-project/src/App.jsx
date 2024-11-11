@@ -24,16 +24,52 @@ import RoboticsCourse from './CoursesPage/Robotics.jsx';
 import CybersecurityCourse from './CoursesPage/Cybersecurity.jsx';
 import ComputerEngineeringCourse from './CoursesPage/ComputerEngineering.jsx';
 import { useEffect,useState } from 'react';
+import { Chatbott } from "./Chatbot";
 
 
+export const Context = React.createContext();
 function App() {
 
-  return (
-    <Router>
-      <ScrollToTop />
+        const [chatbot,setChatState] = useState(0);
 
-      <div className="app-container">
+    function setChatBot(){
+        if (chatbot===0){
+        
+          setChatState(1)
+        }
+        else {setChatState(0)}
+      }
+ // This effect listens for the "Shift + A" key combination
+ useEffect(() => {
+          const handleKeyDown = (event) => {
+            if (event.shiftKey && event.key === 'a') {
+              setChatBot();  // Toggle the chatbot state
+            }
+          };
+          window.addEventListener('keydown', handleKeyDown);
+          return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+          };
+      }, [chatbot]); // Re-run the effect when chatbot state changes
+
+
+
+        const [signedIn,setSignedIn] = useState(false);
+
+
+
+
+  return (
+    
+    <Router>
+      <Context.Provider value = {[signedIn,setSignedIn]}>
+       
+      <ScrollToTop />
+      <Chatbott setChatBot={setChatBot} chatbot={chatbot}/>
       
+      <div className="app-container">
+
+     
 
         <Routes>
           <Route path="/" element={
@@ -43,7 +79,7 @@ function App() {
               <Homepage3 />
             </>
           } />
-          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/signup" element={<SignUpPage/>} />
           <Route path="/signin" element={<SignInPage />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/aboutus" element={<AboutUs />} />
@@ -62,11 +98,12 @@ function App() {
           <Route path="/robcoursepage" element={<RoboticsCourse/>} />
           <Route path="/cybcoursepage" element={<CybersecurityCourse/>} />
           <Route path="/chemcoursepage" element={<ChemicalEngineeringCourse />}
+          
           />
         </Routes>
 
       </div>
-
+      </Context.Provider>
     </Router>
   );
 }

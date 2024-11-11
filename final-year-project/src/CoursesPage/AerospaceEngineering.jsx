@@ -29,6 +29,13 @@ const AerospaceEngineeringCourse = () => {
   const [hoveredCourse, setHoveredCourse] = useState(null);
   const [selectedCurrency, setSelectedCurrency] = useState("$");
   const [animat,setAnimat]=useState(null)
+  useEffect(() => {
+    const defaultCountry = countries.find(country => country.flag === "🇺🇸");
+    if (defaultCountry) {
+      const courses = getTopCourses(defaultCountry.file);
+      setCourseData(courses);
+    }
+  }, []);
 
 const dropdownRef = useRef(null)
   const inputRef = useRef(null);
@@ -53,9 +60,6 @@ const dropdownRef = useRef(null)
     const currency = setSelectedCurrency(country.currency);
     const courses = getTopCourses(country.file);
     setCourseData(courses);
-
-
-    
     setIsOpen(false);
   };
   const toggleDropdown = () => {

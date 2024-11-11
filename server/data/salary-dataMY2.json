@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2024-11-02T08:14:47.300Z",
+  "lastUpdated": "2024-11-07T10:41:41.094Z",
   "data": [
     {
       "title": "Computer Science",
-      "message": "You are not subscribed to this API."
+      "message": "Too many requests"
     },
     {
       "title": "Artificial Intelligence",
@@ -11,7 +11,7 @@
     },
     {
       "title": "Cybersecurity",
-      "message": "Too many requests"
+      "message": "You are not subscribed to this API."
     },
     {
       "title": "Cloud Architecture",

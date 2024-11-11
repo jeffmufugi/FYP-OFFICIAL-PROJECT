@@ -1,0 +1,222 @@
+{
+  "lastUpdated": "2024-11-07T11:12:56.116Z",
+  "data": [
+    {
+      "title": "Pharmaceutical Engineering",
+      "status": "OK",
+      "request_id": "48f97050-99da-4ebc-8154-8d981bfd4108",
+      "currency":"MYR",
+      "data": [
+        {
+          "location": "Ipoh, Perak, Malaysia",
+          "job_title": "Validation Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/ipoh-malaysia-validation-engineer-salary-SRCH_IL.0,13_IM1581_KO14,33.htm",
+          "min_salary": 2740,
+          "max_salary": 6810,
+          "median_salary": 3804,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Renewable Energy",
+      "status": "OK",
+      "request_id": "0cc9a84c-2c5c-478f-bf79-1673dfd136f2",
+      "data": [
+        {
+          "location": "Federal Territory of Kuala Lumpur, Malaysia",
+          "job_title": "Energy Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.ie/Salary/ENGIE-Energy-Engineer-Kuala-Lumpur-Salaries-EJI_IE1052655.0,5_KO6,21_IL.22,34_IM1100.htm",
+          "min_salary": 61678,
+          "max_salary": 66595,
+          "median_salary": 64136,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Process Safety Management",
+      "status": "OK",
+      "request_id": "1a64c815-ed96-45bf-ab72-2c7f37157e55",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Petroleum Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Monthly-Pay/Petronas-Petroleum-Engineer-Malaysia-Monthly-Pay-EJI_IE8270.0,8_KO9,27_IL.28,36_IN170.htm",
+          "min_salary": 4875,
+          "max_salary": 10104,
+          "median_salary": 6345,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+        
+      ]
+    },
+    {
+      "title": "Petroleum Engineering",
+      "status": "OK",
+      "request_id": "9cb5ddb4-e13a-48ab-bede-8e3f9abb89d4",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Petroleum Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Monthly-Pay/Petronas-Petroleum-Engineer-Malaysia-Monthly-Pay-EJI_IE8270.0,8_KO9,27_IL.28,36_IN170.htm",
+          "min_salary": 4875,
+          "max_salary": 10104,
+          "median_salary": 6345,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        },
+        {
+          "location": "Malaysia",
+          "job_title": "Reservoir Engineer",
+          "publisher_name": "Payscale",
+          "publisher_link": "https://www.payscale.com/research/MY/Job=Reservoir_Engineer/Salary/d29f9382/PETRONAS",
+          "min_salary": 98263.52,
+          "max_salary": 647044,
+          "median_salary": 209000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        },
+        {
+          "location": "Malaysia",
+          "job_title": "Patudeva S.",
+          "publisher_name": "Toogit",
+          "publisher_link": "https://www.toogit.com/freelancer/profile/patudeva-sivaceyon",
+          "min_salary": 20.73,
+          "max_salary": 20.73,
+          "median_salary": 20.73,
+          "salary_period": "HOUR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Water Treatment Engineering",
+      "status": "OK",
+      "request_id": "604eb248-9bc3-40e3-99b2-04f2029852a1",
+      "data": [
+        {
+          "location": "Federal Territory of Kuala Lumpur, Malaysia",
+          "job_title": "Water/Wastewater Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.ie/Salaries/kuala-lumpur-water-wastewater-engineer-salary-SRCH_IL.0,12_IM1100_KO13,38.htm",
+          "min_salary": 3077,
+          "max_salary": 3817,
+          "median_salary": 3597,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR"
+        },
+        {
+          "location": "Kedah, Malaysia",
+          "job_title": "Water Treatment Specialist",
+          "publisher_name": "Indeed",
+          "publisher_link": "https://malaysia.indeed.com/cmp/Jz-Global-Engineering-Sdn-Bhd/salaries/Water-Treatment-Specialist/Kedah",
+          "min_salary": 700,
+          "max_salary": 4100,
+          "median_salary": 2061.6293363157583,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Polymer Engineering",
+      "status": "OK",
+      "request_id": "954daddd-ebbc-450e-b724-129e38dde359",
+      "data": [
+        {
+          "location": "Federal Territory of Kuala Lumpur, Malaysia",
+          "job_title": "Water/Wastewater Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.ie/Salaries/kuala-lumpur-water-wastewater-engineer-salary-SRCH_IL.0,12_IM1100_KO13,38.htm",
+          "min_salary": 3077,
+          "max_salary": 3817,
+          "median_salary": 3597,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR"
+        }
+        
+      ]
+    },
+    {
+      "title": "Biochemical Engineering",
+      "status": "OK",
+      "request_id": "6609b4b6-65fb-470d-bc17-9379840dff80",
+      "data": [
+        
+          {
+            "location": "Federal Territory of Kuala Lumpur, Malaysia",
+            "job_title": "Water/Wastewater Engineer",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.ie/Salaries/kuala-lumpur-water-wastewater-engineer-salary-SRCH_IL.0,12_IM1100_KO13,38.htm",
+            "min_salary": 3077,
+            "max_salary": 3817,
+            "median_salary": 3597,
+            "salary_period": "MONTH",
+            "salary_currency": "MYR"
+          }
+      ]
+    },
+    {
+      "title": "Nanotechnology",
+      "status": "OK",
+      "request_id": "53b4dadd-ea6d-46cb-b3da-d06312a2e234",
+      "data": [
+        {
+          "location": "Federal Territory of Kuala Lumpur, Malaysia",
+          "job_title": "Water/Wastewater Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.ie/Salaries/kuala-lumpur-water-wastewater-engineer-salary-SRCH_IL.0,12_IM1100_KO13,38.htm",
+          "min_salary": 3077,
+          "max_salary": 3817,
+          "median_salary": 3597,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Food Processing Engineering",
+      "status": "OK",
+      "request_id": "477d8fb5-3e7d-49d9-b695-fe28ab484b88",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Food Technologist",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.payscale.com/research/MY/Job=Food_Technologist/Salary",
+          "min_salary": 4872,
+          "max_salary": 59689,
+          "median_salary": 35768.97,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Green Process Engineering",
+      "status": "OK",
+      "request_id": "87bf58ce-a975-4609-bcbf-2490811afa19",
+      "data": [
+        {
+          "location": "Federal Territory of Kuala Lumpur, Malaysia",
+          "job_title": "Process Safety Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/kuala-lumpur-malaysia-process-safety-engineer-salary-SRCH_IL.0,21_IM1100_KO22,45.htm",
+          "min_salary": 2860,
+          "max_salary": 13933,
+          "median_salary": 5100,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR"
+        }
+      ]
+    }
+  ]
+}
