@@ -36,12 +36,16 @@ const Homepage3 = () => {
             <img src={bg2} className="background-icon2"/>
             <div className="header3-top-section" >
                 <div className="header3-top-left-section">
-                    <motion.h1 className="main-txt3" initial={{ x: -100 ,opacity: 0 }}
+                  <div style={{width:"810px",alignContent:"center"}}>
+                  <motion.h1 className="main-txt3" initial={{ x: -100 ,opacity: 0 }}
                         whileInView={{ x: 0 ,opacity: 1 }}
                         transition={{ duration: 0.5,delay: 0.4 }}
                         viewport={{ once: true }}>
-                    Explore a world of possibilities <br/>in STEM education. <br/>Find the course that <br/>ignites your passion!
+                    Explore a world of possibilities in STEM education. Find the course that ignites your passion!
                     </motion.h1>
+
+                  </div>
+                    
                 </div>
                 <div className="header3-top-right-section">
                     <button className="btn-vc" onClick={coursePageClick}>View All Courses</button>

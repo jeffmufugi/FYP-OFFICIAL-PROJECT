@@ -19,7 +19,7 @@ export default function AboutUs(){
         <div className="AboutUsPage">
         <img src={rec} className="background-top-light"/>
         <Header />
-        <img src={bg2} className="background-icon2"/>
+        {/* <img src={bg2} className="background-icon2"/> */}
             <div className="about-us-header">
                
                     

@@ -204,7 +204,6 @@ html, body {
   font-family: Inter, sans-serif;
  font-weight: 900;
  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-
 }
 
 .explore-txt,
@@ -660,6 +659,7 @@ z-index: 1;
 .header3-top-left-section{
   display: flex;
   flex: 1;
+  justify-content: center;
   
 }
 
@@ -692,14 +692,16 @@ z-index: 1;
 
 
 .main-txt3{
-      margin-left: 70px;
-      margin-top: 50px;
+      
       font-size: 60px;
       color: rgb(71, 38, 235);
       font-family: Inter, sans-serif;
       font-weight: 900;
       text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
       animation: fade-up 0.2s;
+      align-self: center;
+    
+      
 }
 
 .center-text{
@@ -968,6 +970,7 @@ z-index: 1;
   transform: translate(-50%, -50%);
   width: auto; 
   height: 100%; /* Adjust based on your needs */
+  z-index: 1;
 }
 
 /* ---------------------------------------------- SIGN UP PAGE SECTION----------------------------------------------- */
@@ -1640,7 +1643,6 @@ z-index: 1;
   font-size: 24px;
   text-align: center;
   text-wrap: balance;
-  overflow: scroll;
   line-height: 1.6;
   word-wrap: break-word;
 }
