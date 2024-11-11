@@ -231,7 +231,7 @@ html, body {
 
 .btn1{
   font-family: Inter, sans-serif;
-   background-color: #776cff;
+   background-color: #6F56FF;
    font-size: 14px;
    font-weight: bolder;
    color: white;
@@ -260,7 +260,7 @@ html, body {
 
 .btn2{
   font-family: Inter, sans-serif;
-   background-color: #ff801d;
+   background-color: #E87700;
    font-size: 14px;
    font-weight: bolder;
    color: white;
@@ -1251,7 +1251,7 @@ z-index: 1;
     margin-left: 10%;
   }
 .mid-main-sign-in-field{
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
   .main-sign-in-fields{
@@ -1577,9 +1577,9 @@ z-index: 1;
   display: flex;
   flex-direction: row;
   z-index: 1;
-  margin-bottom: 70px;
+  margin-bottom: 0px;
   margin-top: 10px;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 
@@ -1590,26 +1590,7 @@ z-index: 1;
   font-weight: 900;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   z-index: 1;
-}
-
-.top-left-about-us-header{
-
-}
-
-.about-us-to-homepage-icon{
-  width: 20px;
-  height: auto;
-  margin-top: 5px;
-  margin-left: 5px;
-  cursor: pointer;
-}
-.about-us-to-homepage-icon:hover{
-  transform: scale(1.02);
-
-}
-
-.about-us-to-homepage-icon:active {
-  transform: scale(0.97); /* Make the button slightly smaller when clicked */
+  align-self: center;
 }
 
 .top-left-about-us-header{
@@ -1619,7 +1600,7 @@ z-index: 1;
 .bottom-left-about-us-header{
     flex: 1;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .about-us-main-section{
@@ -1635,7 +1616,7 @@ z-index: 1;
   background-image: url("site_icons/Noise Light 220.png");
   display: flex;
   background-color: #667A92; /* Light grey background */
-  border-radius: 70px; /* Rounded corners */
+  border-radius: 3px; /* Rounded corners */
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   justify-content: center;
@@ -1653,7 +1634,7 @@ z-index: 1;
 
 .about-us-text{
   font-family: 'Roboto Mono';
-  color: #CDCDCD;
+  color: #ffffff;
   font-weight: 500;
   font-size: 24px;
   text-align: center;
@@ -1922,7 +1903,7 @@ z-index: 1;
 }
 .course-program-card2{
   flex: 0 0 1;
-  margin-top: 50px;
+  margin-top: 20px;
   width: 197px;
   margin-bottom: 60px;
 }

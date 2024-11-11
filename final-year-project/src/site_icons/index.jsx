@@ -1,10 +1,10 @@
-import i1 from "../site_icons/maths (1).png";
-import i2 from "../site_icons/Tech icon (1).png";
+import i1 from "../site_icons/worker.png";
+import i2 from "../site_icons/roboto.png";
 import i3 from "../site_icons/compass.png";
-import i4 from "../site_icons/Engineering process.png";
+import i4 from "../site_icons/rokay.png";
 import i5 from "../site_icons/science.png";
-import i6 from "../site_icons/doctor.png";
-import i7 from "../site_icons/Tech Chip.png";
+import i6 from "../site_icons/biot.png";
+import i7 from "../site_icons/doctor.png";
 import i8 from "../site_icons/ai.png";
 import i9 from "../site_icons/atom.png";
 import i10 from "../site_icons/researcher.png";

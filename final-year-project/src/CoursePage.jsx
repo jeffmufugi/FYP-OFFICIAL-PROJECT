@@ -7,7 +7,7 @@ import cst from "../src/site_icons/cst.svg";
 import cst2 from "../src/site_icons/cst2.svg";
 import mec from "../src/site_icons/mec.svg";
 import chem from "../src/site_icons/chem.svg";
-import phy from "../src/site_icons/phy.svg";
+import phy from "../src/site_icons/phy1.svg";
 import ast from "../src/site_icons/ast.svg";
 import bio from "../src/site_icons/bio.svg";
 import mat from "../src/site_icons/mat.svg";

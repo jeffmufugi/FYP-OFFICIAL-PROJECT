@@ -1,9 +1,27 @@
 import { useNavigate } from 'react-router-dom';
 import ai from "../site_icons/atom1.svg";
+import { motion, AnimatePresence } from 'framer-motion';
+import { useContext, useState } from 'react';
+import { Context } from '../App';
+import a2 from "../site_icons/loggedin.svg";
 export default function Header1(){
 
   const navigate = useNavigate();
+  const [signedIn,setSignedIn] = useContext(Context);
 
+  function setSignedInfunc(){
+    setSignedIn(true);
+}
+
+function setSignedOutfunc(){
+  setSignedIn(false);
+}
+
+
+
+const [isOpen,setIsOpen]= useState(false)
+
+  const toggleDropdown = () => setIsOpen(!isOpen);
 
   const homepageClick = () => {
     navigate('/');
@@ -21,6 +39,8 @@ export default function Header1(){
   const contactUsClick = () => {
     navigate('/contactus');
   }
+
+
 
    const coursePageClick = () => {
     navigate('/courses');
@@ -41,7 +61,30 @@ return (
               <li onClick={AboutUsClick}>About Us</li>
             </ul>
           </div>
-          <div className="right-hdr">
+          <div className="right-hdr" style={{position:"relative"}}>
+        
+          {signedIn === true &&  <>
+            <img src={a2} alt="" onClick={toggleDropdown} style={{cursor:"pointer"}}/>
+                <AnimatePresence>
+                {isOpen === true && 
+                (<>
+                      
+                <motion.ul className="listhdrhmp"
+                initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+           >
+                  {/* <li >Profile</li> */}
+                  <li  onClick={setSignedOutfunc}>Sign Out</li>
+                </motion.ul>
+                
+                </>) }
+                </AnimatePresence>
+          </>}
+               
+                
+
           </div>
           
       </header>

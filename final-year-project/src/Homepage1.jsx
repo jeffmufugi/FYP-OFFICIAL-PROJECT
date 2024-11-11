@@ -8,15 +8,13 @@ import { useState } from 'react';
 const Homepage1 = () => {
   const [signedIn,setSignedIn]=useState(false);
 
-  function changeUI(){
-    setSignedIn(!signedIn);
+  
 
-  }
   return (
     <div className="first-section">
          <img src={rec} className="background-top-light"/>
 
-      <Header signedIn={signedIn} changeUI={changeUI}/>
+      <Header signedIn={signedIn}/>
       <MainContent signedIn={signedIn}/>
       <Footer />
     </div>

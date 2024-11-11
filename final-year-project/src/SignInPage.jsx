@@ -72,7 +72,8 @@ export default function SignInPage(){
                 <motion.h1 className="sign-in-header-text"initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.3 }}
-                            viewport={{ once: true }}>sign in to <br/>your account .</motion.h1>
+                            viewport={{ once: true }}
+                            style={{textAlign:"center"}}>sign in to your account .</motion.h1>
                 </div>
           
                 </div>

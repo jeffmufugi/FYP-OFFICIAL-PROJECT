@@ -6,6 +6,7 @@ import bg2 from "./site_icons/bg4.png";
 import Homepage3 from "./Homepage3.jsx";
 import Header from "./Homepage1/Header1.jsx";
 import rec from "./site_icons/rec3.png";
+import img from "./site_icons/rec4.svg";
 
 export default function AboutUs(){
     const navigate = useNavigate();
@@ -22,10 +23,14 @@ export default function AboutUs(){
             <div className="about-us-header">
                
                     
-                    <motion.h1 className="about-us-header-text" initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
-                            transition={{ duration: 1 }}
+                    <motion.h1 className="about-us-header-text" initial={{  y:20 }}
+                            whileInView={{ y:0 }}
+                            transition={{ duration: 0.3 }}
                             viewport={{ once: true }}>about Us.</motion.h1>
+
+                            <img src={img} alt="" />
+
+                   
                     
             
                 
