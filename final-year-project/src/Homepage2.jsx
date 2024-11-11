@@ -4,7 +4,7 @@ import g3 from "./site_icons/Gears3.svg";
 import { motion } from "framer-motion";
 import bg2 from "./site_icons/lines.svg";
 import i4 from "./site_icons/PriceIcon.svg";
-import i1 from "./site_icons/BookIcon.svg";
+import i1 from "./site_icons/bookIcon.svg";
 import i3 from "./site_icons/AssessmentIcon.svg";
 import i2 from "./site_icons/BalanceIcon.svg";
 
