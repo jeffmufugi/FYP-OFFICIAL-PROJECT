@@ -51,264 +51,236 @@ html, body {
 
 
 /* ----------------------------------------------FIRST HOME PAGE SECTION PAGE---------------------------------------------- */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
 .first-section {
   display: flex;
   flex-direction: column;
   background-color: #c9c9c9;
   background-image: url("site_icons/Noise Light 220.png");
-  overflow-x: hidden; /* Ensure no horizontal scrolling */
-  
+  overflow-x: hidden;
 }
 
 .background-icon1 {
   display: block;
   position: absolute;
-  left: 0; /* Position the image to the right */
-  top: 0; /* If you also want it aligned to the top */
-  z-index: (-1);
-  width: auto; 
-  height: 100%; /* Adjust based on your needs */
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: auto;
+  height: 100%;
 }
 
-
-
-.header-list{
+.header-list {
   display: flex;
   flex-direction: row;
-
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
   z-index: 1;
   width: 100%;
-
 }
 
-.header1-img{
-  width: 40px;
-  height: 40px;
+.header1-img {
+  width: 2.5rem; /* 40px */
+  height: 2.5rem; /* 40px */
   cursor: pointer;
 }
 
-
-.mid-header{
+.mid-header {
   display: flex;
   list-style: none;
   font-family: 'Roboto Mono';
-
-  
-
 }
 
 .mid-header li {
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
   color: rgb(60, 60, 60);
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   cursor: pointer;
-  border-radius: 10px;
-  transition: box-shadow 0.4s ease, background-color 0.4s ease; /* Smooth transition */
+  border-radius: 0.625rem; /* 10px */
+  transition: box-shadow 0.4s ease, background-color 0.4s ease;
 }
 
 .mid-header li:hover {
-  background-color: rgba(117, 117, 117, 0.1); /* Optional: Darken the background color slightly on hover */
-  border-radius: 10px;
+  background-color: rgba(117, 117, 117, 0.1);
+  border-radius: 0.625rem;
 }
 
 .mid-header li:active {
-  transform: scale(0.97); /* Make the button slightly smaller when clicked */
+  transform: scale(0.97);
 }
 
-.left-hdr{
+.left-hdr {
   flex: 1;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
-
 }
-/* HEADER 2 ADDITIONS*/
-.mid-header2{
+
+/* HEADER 2 ADDITIONS */
+.mid-header2 {
   display: flex;
   list-style: none;
   font-family: 'Roboto Mono';
-
 }
 
 .mid-header2 li {
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
   color: rgb(60, 60, 60);
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   cursor: pointer;
-  border-radius: 10px;
-  transition: box-shadow 0.4s ease, background-color 0.4s ease; /* Smooth transition */
+  border-radius: 0.625rem; /* 10px */
+  transition: box-shadow 0.4s ease, background-color 0.4s ease;
 }
 
 .mid-header2 li:hover {
-  background-color: rgba(0, 0, 0, 0.105);/*ptional: Darken the background color slightly on hover */
-  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.105);
+  border-radius: 0.625rem;
 }
 
 .mid-header2 li:active {
-  transform: scale(0.97); /* Make the button slightly smaller when clicked */
+  transform: scale(0.97);
 }
 
-
-/*
-.middle-hdr{
-}
-*/
-.right-hdr{
+.right-hdr {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
 }
 
-
-
-
-.join-btn{
-
+.join-btn {
   font-family: Inter, sans-serif;
   font-weight: lighter;
   background-color: #2A3C95;
-  font-size: 14px;
+  font-size: 0.875rem; /* 14px */
   font-weight: bolder;
   color: white;
   border: none;
-  width: 157px;
-  height: 42px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 9.8125rem; /* 157px */
+  height: 2.625rem; /* 42px */
+  border-radius: 0.625rem; /* 10px */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
-  
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.join-btn:hover{
-  transform: scale(1.02); /* Slightly increase the size of the button */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
+.join-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 .join-btn:active {
-  transform: scale(0.97); /* Make the button slightly smaller when clicked */
-  box-shadow: none; /* Remove the shadow when the button is clicked */
+  transform: scale(0.97);
+  box-shadow: none;
 }
 
-
-
-
-
-
-.main-txt{
-  font-size: 76px;
+.main-txt {
+  font-size: 4.75rem; /* 76px */
   color: #15137b;
   font-family: Inter, sans-serif;
- font-weight: 900;
- text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 900;
+  text-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2);
 }
 
 .explore-txt,
-.wdwd-txt{
-  font-family: "roboto mono";
+.wdwd-txt {
+  font-family: "Roboto Mono";
   color: rgb(60, 60, 60);
   font-weight: 400;
   font-style: normal;
-  width:690px;
-
-}
-.explore-txt{
-  width:750px;
-}
-.wdwd-txt{
-  margin-top: 20px;
+  width: 43.125rem; /* 690px */
 }
 
-.btn-main{
+.explore-txt {
+  width: 46.875rem; /* 750px */
+}
+
+.wdwd-txt {
+  margin-top: 1.25rem; /* 20px */
+}
+
+.btn-main {
   display: flex;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 1.875rem; /* 30px */
+  margin-bottom: 1.25rem; /* 20px */
 }
 
-.btn1{
+.btn1 {
   font-family: Inter, sans-serif;
-   background-color: #6F56FF;
-   font-size: 14px;
-   font-weight: bolder;
-   color: white;
-   border: none;
-   height: 42px;
-   padding: 0 35px;
-   border-radius: 10px;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-   margin-left: 10px;
-   margin-right: 10px;
-   cursor: pointer;
-   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
-
+  background-color: #6F56FF;
+  font-size: 0.875rem; /* 14px */
+  font-weight: bolder;
+  color: white;
+  border: none;
+  height: 2.625rem; /* 42px */
+  padding: 0 2.1875rem; /* 35px */
+  border-radius: 0.625rem; /* 10px */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+  margin-left: 0.625rem; /* 10px */
+  margin-right: 0.625rem; /* 10px */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.btn1:hover{
-  transform: scale(1.02); /* Slightly increase the size of the button */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
+.btn1:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 .btn1:active {
-  transform: scale(0.97); /* Make the button slightly smaller when clicked */
-  box-shadow: none; /* Remove the shadow when the button is clicked */
+  transform: scale(0.97);
+  box-shadow: none;
 }
 
-
-.btn2{
+.btn2 {
   font-family: Inter, sans-serif;
-   background-color: #E87700;
-   font-size: 14px;
-   font-weight: bolder;
-   color: white;
-   border: none;
-   height: 42px;
-   padding: 0 15px;
-   border-radius: 10px;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-   cursor: pointer;
-   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
-   
+  background-color: #E87700;
+  font-size: 0.875rem; /* 14px */
+  font-weight: bolder;
+  color: white;
+  border: none;
+  height: 2.625rem; /* 42px */
+  padding: 0 0.9375rem; /* 15px */
+  border-radius: 0.625rem; /* 10px */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.btn2:hover{
-  transform: scale(1.02); /* Slightly increase the size of the button */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
+.btn2:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 .btn2:active {
-  transform: scale(0.97); /* Make the button slightly smaller when clicked */
-  box-shadow: none; /* Remove the shadow when the button is clicked */
+  transform: scale(0.97);
+  box-shadow: none;
 }
 
-
-
-.main-content{
+.main-content {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 6%;
   flex: 1;
-
-z-index: 1;
+  z-index: 1;
 }
 
-.left-mc{
+.left-mc {
   flex: 1;
 }
 
-.middle-mc{
+.middle-mc {
   display: flex;
   flex-direction: column;
-
 }
 
-.right-mc{
+.right-mc {
   flex: 1;
 }
-
 
 #root {
   display: flex;
@@ -317,9 +289,8 @@ z-index: 1;
 }
 
 .footer {
-  height: 16vh; /* Use viewport height for responsiveness */
-  overflow: hidden; /* Prevent images from overflowing */
-
+  height: 16vh;
+  overflow: hidden;
 }
 
 .footer-images {
@@ -336,20 +307,48 @@ z-index: 1;
   height: 100%;
   width: auto;
   object-fit: contain;
-  /*border-bottom: 2px solid #c3c3c3;*/
-  transition: transform 0.2s ease; /* Smooth transition for scale and shadow */
-  
+  transition: transform 0.2s ease;
 }
 
+.footer-image:nth-child(1) {
+  left: 0%;
+  z-index: 1;
+}
 
-.footer-image:nth-child(1) { left: 0%; z-index: 1; }
-.footer-image:nth-child(2) { left: 7%; z-index: 2; }
-.footer-image:nth-child(3) { left: 14%; z-index: 3; }
-.footer-image:nth-child(4) { left: 21%; z-index: 1; }
-.footer-image:nth-child(5) { left: 28%; z-index: 2; }
-.footer-image:nth-child(6) { left: 35%; z-index: 3; }
-.footer-image:nth-child(7) { left: 42%; z-index: 1; }
-.footer-image:nth-child(8) { left: 49%; z-index: 8; }
+.footer-image:nth-child(2) {
+  left: 7%;
+  z-index: 2;
+}
+
+.footer-image:nth-child(3) {
+  left: 14%;
+  z-index: 3;
+}
+
+.footer-image:nth-child(4) {
+  left: 21%;
+  z-index: 1;
+}
+
+.footer-image:nth-child(5) {
+  left: 28%;
+  z-index: 2;
+}
+
+.footer-image:nth-child(6) {
+  left: 35%;
+  z-index: 3;
+}
+
+.footer-image:nth-child(7) {
+  left: 42%;
+  z-index: 1;
+}
+
+.footer-image:nth-child(8) {
+  left: 49%;
+  z-index: 8;
+}
 .footer-image:nth-child(9) { left: 56%; z-index: 9; }
 .footer-image:nth-child(10) { left: 63%; z-index: 2; }
 .footer-image:nth-child(11) { left: 70%; z-index: 1; }
