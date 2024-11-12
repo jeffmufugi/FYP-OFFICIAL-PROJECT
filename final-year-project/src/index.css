@@ -1220,7 +1220,7 @@ z-index: 1;
 }
 
 .sign-in-header-text{
-  font-size: 80px;
+  font-size: 70px;
   color: #374d55;
   font-family: Inter, sans-serif;
   font-weight: 900;
@@ -1331,6 +1331,8 @@ z-index: 1;
   .sign-in-page-icon{
     z-index: 0;
     display: block;
+    height: 160px;
+    width: auto;
   }
   .contact-us-icon{
     width: calc(12.98vw - 5.21vw);
@@ -1605,6 +1607,7 @@ z-index: 1;
 .about-us-main-section{
   display: flex;
   flex-direction: row;
+  margin-bottom: 10vh;
 }
 
 .about-us-left-main-section{
@@ -1728,7 +1731,7 @@ z-index: 1;
 }
 .right-course-header{flex: 0.5;}
 .main-course-txt{
-  font-size: 80px;
+  font-size: 70px;
   color: #4C4A59;
   font-family: Inter, sans-serif;
   font-weight: 900;
@@ -2367,7 +2370,7 @@ z-index: 1;
 }
 .main-text-coursex li,
 .main-text-coursey li{
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 0;
   
 }
 
@@ -2426,6 +2429,8 @@ text-align: center;
   background-color: #1500a054;
   padding: 1px 10px 1px 10px;
   border-radius: 10px;
+  margin: 0px 2px 0px 2px;
+
 }
 
 .course-barx li:nth-child(1) {
@@ -2657,4 +2662,19 @@ text-align: center;
 .listhdrhmp li:hover{
   background-color: rgba(117, 117, 117, 0.1); /* Optional: Darken the background color slightly on hover */
   border-radius: 10px;
+}
+
+@media (min-width: 1670px) {
+  html, body {
+    font-size: 16px;
+  }
+  .main-txt{
+    font-size: 80px;
+  }
+
+  .main-txt3{
+      
+    font-size: 60px;
+
+}
 }

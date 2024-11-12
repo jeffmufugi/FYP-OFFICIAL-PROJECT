@@ -41,7 +41,7 @@ const Homepage3 = () => {
                         whileInView={{ x: 0 ,opacity: 1 }}
                         transition={{ duration: 0.5,delay: 0.4 }}
                         viewport={{ once: true }}>
-                    Explore a world of possibilities in STEM education & find thecourse that ignites your passion!
+                    explore a world of possibilities in STEM education & find the course that ignites your passion!
                     </motion.h1>
 
                   </div>
