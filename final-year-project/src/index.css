@@ -12,6 +12,8 @@ html, body {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  font-size: 14px;
 }
 
 .app-container {
@@ -51,236 +53,263 @@ html, body {
 
 
 /* ----------------------------------------------FIRST HOME PAGE SECTION PAGE---------------------------------------------- */
-html {
-  font-size: 16px; /* 1rem = 16px */
-}
-
 .first-section {
   display: flex;
   flex-direction: column;
   background-color: #c9c9c9;
   background-image: url("site_icons/Noise Light 220.png");
-  overflow-x: hidden;
+  overflow-x: hidden; /* Ensure no horizontal scrolling */
+  
 }
 
 .background-icon1 {
   display: block;
   position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  width: auto;
-  height: 100%;
+  left: 0; /* Position the image to the right */
+  top: 0; /* If you also want it aligned to the top */
+  z-index: (-1);
+  width: auto; 
+  height: 100%; /* Adjust based on your needs */
 }
 
-.header-list {
+
+
+.header-list{
   display: flex;
   flex-direction: row;
-  padding: 0.625rem 1.25rem; /* 10px 20px */
+
+  padding: 10px 20px;
   z-index: 1;
   width: 100%;
+
 }
 
-.header1-img {
-  width: 2.5rem; /* 40px */
-  height: 2.5rem; /* 40px */
+.header1-img{
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 }
 
-.mid-header {
+
+.mid-header{
   display: flex;
   list-style: none;
   font-family: 'Roboto Mono';
+
+  
+
 }
 
 .mid-header li {
-  padding: 0.625rem 1.25rem; /* 10px 20px */
+  padding: 10px 20px;
   color: rgb(60, 60, 60);
-  font-size: 1rem; /* 16px */
+  font-size: 1em;
   cursor: pointer;
-  border-radius: 0.625rem; /* 10px */
-  transition: box-shadow 0.4s ease, background-color 0.4s ease;
+  border-radius: 10px;
+  transition: box-shadow 0.4s ease, background-color 0.4s ease; /* Smooth transition */
 }
 
 .mid-header li:hover {
-  background-color: rgba(117, 117, 117, 0.1);
-  border-radius: 0.625rem;
+  background-color: rgba(117, 117, 117, 0.1); /* Optional: Darken the background color slightly on hover */
+  border-radius: 10px;
 }
 
 .mid-header li:active {
-  transform: scale(0.97);
+  transform: scale(0.97); /* Make the button slightly smaller when clicked */
 }
 
-.left-hdr {
+.left-hdr{
   flex: 1;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
-}
 
-/* HEADER 2 ADDITIONS */
-.mid-header2 {
+}
+/* HEADER 2 ADDITIONS*/
+.mid-header2{
   display: flex;
   list-style: none;
   font-family: 'Roboto Mono';
+
 }
 
 .mid-header2 li {
-  padding: 0.625rem 1.25rem; /* 10px 20px */
+  padding: 10px 20px;
   color: rgb(60, 60, 60);
-  font-size: 1rem; /* 16px */
   cursor: pointer;
-  border-radius: 0.625rem; /* 10px */
-  transition: box-shadow 0.4s ease, background-color 0.4s ease;
+  border-radius: 10px;
+  transition: box-shadow 0.4s ease, background-color 0.4s ease; /* Smooth transition */
 }
 
 .mid-header2 li:hover {
-  background-color: rgba(0, 0, 0, 0.105);
-  border-radius: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.105);/*ptional: Darken the background color slightly on hover */
+  border-radius: 10px;
 }
 
 .mid-header2 li:active {
-  transform: scale(0.97);
+  transform: scale(0.97); /* Make the button slightly smaller when clicked */
 }
 
-.right-hdr {
+
+/*
+.middle-hdr{
+}
+*/
+.right-hdr{
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
 }
 
-.join-btn {
+
+
+
+.join-btn{
+
   font-family: Inter, sans-serif;
   font-weight: lighter;
   background-color: #2A3C95;
-  font-size: 0.875rem; /* 14px */
+  font-size: 14px;
   font-weight: bolder;
   color: white;
   border: none;
-  width: 9.8125rem; /* 157px */
-  height: 2.625rem; /* 42px */
-  border-radius: 0.625rem; /* 10px */
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+  width: 157px;
+  height: 42px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
+  
 }
 
-.join-btn:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+.join-btn:hover{
+  transform: scale(1.02); /* Slightly increase the size of the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
 }
 
 .join-btn:active {
-  transform: scale(0.97);
-  box-shadow: none;
+  transform: scale(0.97); /* Make the button slightly smaller when clicked */
+  box-shadow: none; /* Remove the shadow when the button is clicked */
 }
 
-.main-txt {
-  font-size: 4.75rem; /* 76px */
+
+
+
+
+
+.main-txt{
+  font-size: 70px;
   color: #15137b;
   font-family: Inter, sans-serif;
-  font-weight: 900;
-  text-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2);
+ font-weight: 900;
+ text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .explore-txt,
-.wdwd-txt {
-  font-family: "Roboto Mono";
+.wdwd-txt{
+  font-family: "roboto mono";
   color: rgb(60, 60, 60);
   font-weight: 400;
   font-style: normal;
-  width: 43.125rem; /* 690px */
+  width:690px;
+
+}
+.explore-txt{
+  width:750px;
+}
+.wdwd-txt{
+  margin-top: 20px;
 }
 
-.explore-txt {
-  width: 46.875rem; /* 750px */
-}
-
-.wdwd-txt {
-  margin-top: 1.25rem; /* 20px */
-}
-
-.btn-main {
+.btn-main{
   display: flex;
-  margin-top: 1.875rem; /* 30px */
-  margin-bottom: 1.25rem; /* 20px */
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
-.btn1 {
+.btn1{
   font-family: Inter, sans-serif;
-  background-color: #6F56FF;
-  font-size: 0.875rem; /* 14px */
-  font-weight: bolder;
-  color: white;
-  border: none;
-  height: 2.625rem; /* 42px */
-  padding: 0 2.1875rem; /* 35px */
-  border-radius: 0.625rem; /* 10px */
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
-  margin-left: 0.625rem; /* 10px */
-  margin-right: 0.625rem; /* 10px */
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+   background-color: #6F56FF;
+   font-size: 14px;
+   font-weight: bolder;
+   color: white;
+   border: none;
+   height: 42px;
+   padding: 0 35px;
+   border-radius: 10px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   margin-left: 10px;
+   margin-right: 10px;
+   cursor: pointer;
+   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
+
 }
 
-.btn1:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+.btn1:hover{
+  transform: scale(1.02); /* Slightly increase the size of the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
 }
 
 .btn1:active {
-  transform: scale(0.97);
-  box-shadow: none;
+  transform: scale(0.97); /* Make the button slightly smaller when clicked */
+  box-shadow: none; /* Remove the shadow when the button is clicked */
 }
 
-.btn2 {
+
+.btn2{
   font-family: Inter, sans-serif;
-  background-color: #E87700;
-  font-size: 0.875rem; /* 14px */
-  font-weight: bolder;
-  color: white;
-  border: none;
-  height: 2.625rem; /* 42px */
-  padding: 0 0.9375rem; /* 15px */
-  border-radius: 0.625rem; /* 10px */
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+   background-color: #E87700;
+   font-size: 14px;
+   font-weight: bolder;
+   color: white;
+   border: none;
+   height: 42px;
+   padding: 0 15px;
+   border-radius: 10px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   cursor: pointer;
+   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
+   
 }
 
-.btn2:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+.btn2:hover{
+  transform: scale(1.02); /* Slightly increase the size of the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
 }
 
 .btn2:active {
-  transform: scale(0.97);
-  box-shadow: none;
+  transform: scale(0.97); /* Make the button slightly smaller when clicked */
+  box-shadow: none; /* Remove the shadow when the button is clicked */
 }
 
-.main-content {
+
+
+.main-content{
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 6%;
   flex: 1;
-  z-index: 1;
+
+z-index: 1;
 }
 
-.left-mc {
+.left-mc{
   flex: 1;
 }
 
-.middle-mc {
+.middle-mc{
   display: flex;
   flex-direction: column;
+
 }
 
-.right-mc {
+.right-mc{
   flex: 1;
 }
+
 
 #root {
   display: flex;
@@ -289,8 +318,10 @@ html {
 }
 
 .footer {
-  height: 16vh;
-  overflow: hidden;
+  height: 16vh; /* Use viewport height for responsiveness */
+  max-width: 100vw;
+  overflow: hidden; /* Prevent images from overflowing */
+
 }
 
 .footer-images {
@@ -307,48 +338,20 @@ html {
   height: 100%;
   width: auto;
   object-fit: contain;
-  transition: transform 0.2s ease;
+  /*border-bottom: 2px solid #c3c3c3;*/
+  transition: transform 0.2s ease; /* Smooth transition for scale and shadow */
+  
 }
 
-.footer-image:nth-child(1) {
-  left: 0%;
-  z-index: 1;
-}
 
-.footer-image:nth-child(2) {
-  left: 7%;
-  z-index: 2;
-}
-
-.footer-image:nth-child(3) {
-  left: 14%;
-  z-index: 3;
-}
-
-.footer-image:nth-child(4) {
-  left: 21%;
-  z-index: 1;
-}
-
-.footer-image:nth-child(5) {
-  left: 28%;
-  z-index: 2;
-}
-
-.footer-image:nth-child(6) {
-  left: 35%;
-  z-index: 3;
-}
-
-.footer-image:nth-child(7) {
-  left: 42%;
-  z-index: 1;
-}
-
-.footer-image:nth-child(8) {
-  left: 49%;
-  z-index: 8;
-}
+.footer-image:nth-child(1) { left: 0%; z-index: 1; }
+.footer-image:nth-child(2) { left: 7%; z-index: 2; }
+.footer-image:nth-child(3) { left: 14%; z-index: 3; }
+.footer-image:nth-child(4) { left: 21%; z-index: 1; }
+.footer-image:nth-child(5) { left: 28%; z-index: 2; }
+.footer-image:nth-child(6) { left: 35%; z-index: 3; }
+.footer-image:nth-child(7) { left: 42%; z-index: 1; }
+.footer-image:nth-child(8) { left: 49%; z-index: 8; }
 .footer-image:nth-child(9) { left: 56%; z-index: 9; }
 .footer-image:nth-child(10) { left: 63%; z-index: 2; }
 .footer-image:nth-child(11) { left: 70%; z-index: 1; }
@@ -373,7 +376,7 @@ html {
 .footer-image:nth-child(14):hover{
  transform: scale(1.03);
 }
-
+/* 
 @media (max-width: 860px) {
 
 
@@ -403,11 +406,11 @@ html {
   }
 
   
-}
+} */
 
 
 
-@media (max-width: 679px){
+/* @media (max-width: 679px){
 
   .main-txt,.main-txt3{
     font-size: 40px;
@@ -442,7 +445,7 @@ html {
   }
 
   .mid-header li {
-    font-size: 2px; /* Fixed typo */
+    font-size: 2px; 
   }
 
   .join-btn {
@@ -456,7 +459,7 @@ html {
     font-size: 2px;
   }
 
-}
+} */
 
 
 /* ----------------------------------------------SECOND HOME PAGE SECTION PAGE---------------------------------------------- */
@@ -692,7 +695,7 @@ html {
 
 .main-txt3{
       
-      font-size: 60px;
+      font-size: 50px;
       color: rgb(71, 38, 235);
       font-family: Inter, sans-serif;
       font-weight: 900;
@@ -713,10 +716,7 @@ html {
   display: flex;
   flex: 1;
   z-index: 1;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Ensure full viewport height */
+
 
 
 }
@@ -789,7 +789,7 @@ html {
 
 .scroll-container {
   display: flex;
-  width: 200%; /* Double the width to accommodate the cloned content */
+  width: 200vw; /* Double the width to accommodate the cloned content */
 }
 
 @keyframes scrollLeft {
@@ -815,7 +815,7 @@ html {
   display: flex;
   flex-direction: row;
   column-gap: 8px;
-  width: 200%; /* Double the width to accommodate the cloned content */
+  width: 200vw; /* Double the width to accommodate the cloned content */
 }
 
 .top-footer3 {
@@ -1032,7 +1032,7 @@ z-index: 1;
 }
 
 .sign-up-header-text{
-  font-size: 80px;
+  font-size: 70px;
   color: #473755;
   font-family: Inter, sans-serif;
  font-weight: 900;
@@ -1062,9 +1062,9 @@ z-index: 1;
 .sign-in-link-sip{
 
   font-family: roboto mono;
-  margin-top: 1rem;
   text-align: center;
   margin-top: 2rem;
+  margin-bottom: 10vh;
 
 }
 
@@ -1079,7 +1079,7 @@ z-index: 1;
   width: 380px;
   height: 100px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
 
  
 
@@ -1333,8 +1333,8 @@ z-index: 1;
     display: block;
   }
   .contact-us-icon{
-    width: calc(248.91px - 100px);
-    height: calc(234.49px - 100px);
+    width: calc(12.98vw - 5.21vw);
+    height: calc(21.72vh - 9.26vh);
 
   }
   .footer3-img{
@@ -1344,6 +1344,8 @@ z-index: 1;
 .reg-link-sip{
   font-family: roboto mono;
   margin-top: 20px;
+  margin-bottom: 10vh;
+
 
 }
 /* ----------------------------------------------CONTACT US PAGE SECTION PAGE---------------------------------------------- */
@@ -1358,7 +1360,7 @@ z-index: 1;
   display: flex;
   flex-direction: row;
   z-index: 1;
-  margin-bottom: 70px;
+  margin-bottom: 7vh;
 }
 
 .left-contact-us-header{
@@ -1380,7 +1382,7 @@ z-index: 1;
 }
 
 .contact-us-header-text{
-  font-size: 80px;
+  font-size: 70px;
   color: #473755;
   font-family: Inter, sans-serif;
   font-weight: 900;
@@ -1399,14 +1401,6 @@ z-index: 1;
   margin-left: 5px;
   cursor: pointer;
 }
-.contact-us-to-homepage-icon:hover{
-  transform: scale(1.02);
-
-}
-
-.contact-us-to-homepage-icon:active {
-  transform: scale(0.97); /* Make the button slightly smaller when clicked */
-}
 
 .top-left-contact-us-header{
     flex: 1;
@@ -1421,6 +1415,7 @@ z-index: 1;
 .contact-us-main-section{
   display: flex;
   flex-direction: row;
+  margin-bottom: 10vh;
 }
 
 .left-contact-us-main-section{
@@ -1437,6 +1432,7 @@ z-index: 1;
   display: flex;
   flex: 1;
   flex-direction: row;
+  margin-bottom: 10vh;
 }
 .left-mid-contact-us{
   flex: 1;
@@ -1458,7 +1454,6 @@ z-index: 1;
   width: 380px;
   height: 100px;
   position: relative;
-  margin-bottom: 20px;  
 }
 
 .input-field-4cu{
@@ -1480,6 +1475,7 @@ z-index: 1;
   font-size: 20px;
   resize: vertical;
   box-sizing: border-box;
+  
 }
 
 .input-field-4cu2,
@@ -1650,11 +1646,11 @@ z-index: 1;
 
 .headerab-img{
   width: 80px;
-  height: 80px;
-}
+  height: 80px;}
+/* }
 @media (max-width: 800px) {
   .about-us-header-text {
-    /* Add your styles here */
+    
   }
 
   .about-us-mid-main-section {
@@ -1662,14 +1658,14 @@ z-index: 1;
   }
 
   .about-us-text {
-    font-size: 19.2px; /* Example: Reduce font size by a percentage manually */
+    font-size: 19.2px; /
   }
 
-}
-
+} */
+/* 
 @media (max-width: 600px) {
   .about-us-header-text {
-    /* Add your styles here */
+
     font-size: 60px;
   }
 
@@ -1678,7 +1674,7 @@ z-index: 1;
   }
 
   .about-us-text {
-    font-size: 15.2px; /* Example: Reduce font size by a percentage manually */
+    font-size: 15.2px; 
   }
   .mid-header2 li {
     font-size: 12px;
@@ -1699,7 +1695,7 @@ z-index: 1;
   }
 
   .about-us-text {
-    font-size: 10.2px; /* Example: Reduce font size by a percentage manually */
+    font-size: 10.2px; 
   }
   .mid-header2 li {
     font-size: 7px;
@@ -1707,7 +1703,7 @@ z-index: 1;
   }
   
 
-}
+} */
 
 
 /* ----------------------------------------------COURSE PAGE SECTION PAGE---------------------------------------------- */
@@ -1932,7 +1928,7 @@ z-index: 1;
 }
 
 
-
+/* 
 @media (max-width: 860px) {
 
 
@@ -2018,7 +2014,7 @@ z-index: 1;
     font-size: 12px;
   }
 
-}
+} */
 
 
 /* COURSE SPECIFIC INFORMATION PAGE */
@@ -2043,6 +2039,7 @@ z-index: 1;
 
 .course-mainbody{
   display: flex;
+  margin-bottom: 20vh;
 
 }
 
@@ -2058,7 +2055,6 @@ z-index: 1;
 .mid-header3 li {
   padding: 10px 20px;
   color: rgb(255, 255, 255);
-  font-size: 16px;
   cursor: pointer;
   border-radius: 10px;
   transition: box-shadow 0.4s ease, background-color 0.4s ease; /* Smooth transition */
@@ -2082,12 +2078,12 @@ z-index: 1;
 .right-course-main{flex: 1}
 
 .course-title{
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 .cs-text{
   font-family: Inter;
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 900;
   color: white;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -2102,7 +2098,7 @@ z-index: 1;
 }
 .course-definition{
   width: 560px;
-  margin-bottom: 122px;
+  margin-bottom: 15vh;
 }
 
 .country-flag{
@@ -2111,12 +2107,12 @@ z-index: 1;
 }
 
 .course-stats-title{
- margin-bottom: 20px;
+ margin-bottom: 2vh;
 }
 
 .course-stats-text{
   font-family: roboto mono;
-  font-size: 44px;
+  font-size: 2.5rem;
   font-weight: 100;
  
 

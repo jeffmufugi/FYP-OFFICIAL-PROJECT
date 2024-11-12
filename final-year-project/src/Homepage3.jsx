@@ -36,12 +36,12 @@ const Homepage3 = () => {
             <img src={bg2} className="background-icon2"/>
             <div className="header3-top-section" >
                 <div className="header3-top-left-section">
-                  <div style={{width:"810px",alignContent:"center"}}>
+                  <div style={{width:"700px",alignContent:"center"}}>
                   <motion.h1 className="main-txt3" initial={{ x: -100 ,opacity: 0 }}
                         whileInView={{ x: 0 ,opacity: 1 }}
                         transition={{ duration: 0.5,delay: 0.4 }}
                         viewport={{ once: true }}>
-                    Explore a world of possibilities in STEM education. Find the course that ignites your passion!
+                    Explore a world of possibilities in STEM education & find thecourse that ignites your passion!
                     </motion.h1>
 
                   </div>
@@ -58,7 +58,7 @@ const Homepage3 = () => {
 
 <div className="footer-3">
   <div className="scroll-container">
-    <div class="top-footer3">
+    <div className="top-footer3">
       <span className="itemfoot item1f">Computer Science</span>
       <span className="itemfoot item2f">Mechanical Engineering</span>
       <span className="itemfoot item3f">Electrical Engineering</span>
@@ -78,10 +78,7 @@ const Homepage3 = () => {
     </div>
   </div>
   <div className="scroll-container">
-    <motion.div className="bottom-footer3" initial={{ skew:90, y: -10000}}
-        whileInView={{ skew:0}}
-        transition={{ duration: 1 }}
-        viewport={{ once: false }}>
+    <div className="bottom-footer3">
       <span className="itemfoot item1f">Chemical Engineering</span>
       <span className="itemfoot item2f">Mathematics</span>
       <span className="itemfoot item3f">Environmental Engineering</span>
@@ -100,7 +97,7 @@ const Homepage3 = () => {
       <span className="itemfoot item7f">Biotechnology</span>
       <span className="itemfoot item8f">Computer Engineering</span>
       <span className="itemfoot item9f">Statistics</span>
-    </motion.div>
+    </div>
   </div>
 </div>
 
