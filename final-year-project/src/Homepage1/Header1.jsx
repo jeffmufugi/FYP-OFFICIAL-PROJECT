@@ -4,6 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useContext, useState } from 'react';
 import { Context } from '../App';
 import a2 from "../site_icons/loggedin.svg";
+import useMedia from 'use-media';
+import ax from "../site_icons/menu.svg";
+
 export default function Header1(){
 
   const navigate = useNavigate();
@@ -19,10 +22,26 @@ function setSignedOutfunc(){
 
 
 
+
+const signUpClick = () => {
+  navigate('/signup');
+}
+
+const signInClick = () => {
+  navigate('/signin');
+}
+
+
+
+
+
 const [isOpen,setIsOpen]= useState(false)
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
+  const [isOpen2,setIsOpen2]= useState(false)
+  const isLargeScreen = useMedia({ minWidth: 1024 });
+  const toggleDropdown2 = () => setIsOpen2(!isOpen2);
   const homepageClick = () => {
     navigate('/');
   }
@@ -49,7 +68,7 @@ const [isOpen,setIsOpen]= useState(false)
 
 return (
   <>
-      <header className="header-list">
+       {isLargeScreen && <header className="header-list">
         <div className="left-hdr">
         <img src={ai} className="header1-img" onClick={homepageClick}/>
         </div>
@@ -87,7 +106,38 @@ return (
 
           </div>
           
-      </header>
+      </header>}
+
+      {!isLargeScreen && <header className="header-list" style={{justifyContent:"space-between"}}>
+        
+        
+       
+        <img src={ai} className="header1-img"/>
+        
+          
+        <img src={ax} onClick={toggleDropdown2} style={{zIndex:3,cursor:"pointer"}}/> 
+                {isOpen2  && 
+                (<>
+                      
+                <ul className="mediaheadersmall">
+                      <li className='l1' onClick={homeClick}>Home</li>
+                      <li className='l1' onClick={coursePageClick}>Courses</li>
+                      <li className='l1' onClick={AboutUsClick}>About Us</li>
+                      <li className='l1' onClick={contactUsClick}>Contact Us</li>
+                      {signedIn === true &&  <li className='l1'>Forums</li>}
+                      {signedIn === true &&  <li >Sign Out</li>}
+                      {signedIn === false &&  <li className='l1' onClick={signInClick}>Sign In</li>}
+                </ul>
+                
+                </>) }
+             
+
+       
+          
+      </header>}
+                
+
+         
   </>
 
 )

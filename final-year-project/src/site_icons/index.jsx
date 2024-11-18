@@ -16,13 +16,15 @@ import i14 from "../site_icons/Tech icon.png";
 
 
 // homepage 1 icons
-const ICONS = {
-  i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11,i12,i13,i14,
+export const ICONS = {
+  i1, i2, i3, i4, i5, i6, i7, i8, i9, i10, i11, i12, i13, i14,
 };
 
-export default ICONS;
+export const ICONS2 = {
+  i1, i2, i3, i4, i5, i14,
+};
 
-// export { HOMEPAGE_ICONS, ANOTHER_ICONS };
+// export { ICONS, ANOTHER_ICONS };
 
 // export default {
 //   homepage: HOMEPAGE_ICONS,

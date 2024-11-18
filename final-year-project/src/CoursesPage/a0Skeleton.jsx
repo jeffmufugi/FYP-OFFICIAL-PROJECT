@@ -1,12 +1,13 @@
 import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
 import {motion} from "framer-motion";
+import useMedia from 'use-media';
 
 
 export function Page1({coursename,coursedesc,inputRef,selectedCountry,toggleDropdown,isOpen,countries,handleSelect,salaryUS,salaryMY,jobsUS,jobsMY,emplUS,emplMY,img1,img2,img3,selectedCurrency,homepageInfo,animat,setanimate,dropdownRef}){
     function HomepageNum(){
       return(
         <>
-            <div className="course-details-info">
+            <div className="course-details-info a">
                 <img src={img1} alt="" />
 {            /* 
 selected flag must not be equal to current flag
@@ -20,7 +21,7 @@ there must be a change
                 {selectedCountry === countries[1].flag && <p className="numbers-course-info">{selectedCurrency}{homepageInfo2[0].undergradsal}</p>} */}
                 <p className="img-course-description">fresh undergraduate base salary</p>
             </div>
-            <div className="course-details-info">
+            <div className="course-details-info b">
                 <img src={img2} alt=""/>
                 {selectedCountry === countries[0].flag && <motion.p className="numbers-course-info"{...animat}>{jobsUS}</motion.p>}
                 {selectedCountry === countries[1].flag && <motion.p className="numbers-course-info"{...animat}>{jobsMY}</motion.p>}
@@ -29,7 +30,7 @@ there must be a change
                 <p className="img-course-description">job availability</p>
                 
             </div>
-            <div className="course-details-info">
+            <div className="course-details-info c">
                 <img src={img3} alt=""/>
                 {selectedCountry === countries[0].flag &&  <motion.p className="numbers-course-info"{...animat}>{emplUS}</motion.p>}
                 {selectedCountry === countries[1].flag &&  <motion.p className="numbers-course-info"{...animat}>{emplMY}</motion.p>}

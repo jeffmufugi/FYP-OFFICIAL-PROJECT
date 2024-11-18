@@ -5,15 +5,14 @@ import bg2 from "./site_icons/bg4.png";
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect, useContext } from "react";
 import { Context } from './App.jsx';
+import useMedia from 'use-media';
 
 const Homepage3 = () => {
   const [signedIn,setSignedIn] = useContext(Context);
   function setSignedInfunc(){
     setSignedIn(true);
 }
-
-
-
+const isLargeScreen = useMedia({ minWidth: 1024 });
   const navigate = useNavigate();
     const signInClick = () => {
       navigate('/signin');
@@ -34,13 +33,15 @@ const Homepage3 = () => {
     return (
         <div className="third-section" id="third-section">
             <img src={bg2} className="background-icon2"/>
+            {isLargeScreen &&       
             <div className="header3-top-section" >
                 <div className="header3-top-left-section">
                   <div style={{width:"700px",alignContent:"center"}}>
                   <motion.h1 className="main-txt3" initial={{ x: -100 ,opacity: 0 }}
                         whileInView={{ x: 0 ,opacity: 1 }}
                         transition={{ duration: 0.5,delay: 0.4 }}
-                        viewport={{ once: true }}>
+                        viewport={{ once: true }}
+                        style={{color:"#1D1350"}}>
                     explore a world of possibilities in STEM education & find the course that ignites your passion!
                     </motion.h1>
 
@@ -52,7 +53,28 @@ const Homepage3 = () => {
 
                 </div>
             
-            </div>
+            </div>}
+
+            {!isLargeScreen &&  <div className="header3-top-section" style={{flexDirection:"column"}}>
+            <div className="header3-top-left-section" >
+                  <div style={{width:"700px",alignContent:"center"}}>
+                  <motion.h1 className="main-txt3" initial={{ x: -100 ,opacity: 0 }}
+                        whileInView={{ x: 0 ,opacity: 1 }}
+                        transition={{ duration: 0.5,delay: 0.4 }}
+                        viewport={{ once: true }}
+                        style={{color:"#1D1350"}}>
+                    explore a world of possibilities in STEM education & find the course that ignites your passion!
+                    </motion.h1>
+
+                  </div>
+                    
+                </div>
+                <div className="header3-top-right-section">
+                    <button className="btn-vc" onClick={coursePageClick}>View All Courses</button>
+
+                </div>
+              </div>}
+      
 <div className="header3-main-section">
 
 

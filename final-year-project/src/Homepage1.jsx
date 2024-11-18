@@ -1,9 +1,13 @@
 
 import Header from "./Homepage1/Header.jsx";
 import MainContent from "./Homepage1/MainContent.jsx";
-import ICONS from "./site_icons/index.jsx";
+import {ICONS,ICONS2} from "./site_icons/index.jsx";
+
 import rec from "../src/site_icons/rec3.png";
+
 import { useState } from 'react';
+import useMedia from 'use-media';
+
 
 const Homepage1 = () => {
   const [signedIn,setSignedIn]=useState(false);
@@ -22,12 +26,17 @@ const Homepage1 = () => {
   );
 };
 export default Homepage1;
+
  
 const Footer = () => {
+  const isLargeScreen = useMedia({ minWidth: 1024 });
   const iconsArray = Object.values(ICONS); // Get the array of image paths
+  const iconsArray2 = Object.values(ICONS2); // Get the array of image paths
 
   return (
-    <div className="footer">
+    <>
+      {isLargeScreen && 
+      <div className="footer">
       <div className="footer-images">
         {
         iconsArray.map((icon, index) => (
@@ -40,6 +49,25 @@ const Footer = () => {
         ))
         }
       </div>
-    </div>
+      </div>}
+      {!isLargeScreen && <div>
+      <div className="footer2">
+        {
+        iconsArray2.map((icon, index) => (
+          <img
+            key={index}
+            src={icon}
+            style={{width:"200px",height:"auto", 
+            }}
+            className="footer-image2"
+          />
+        ))
+        
+        }
+      </div></div>}
+     
+      </>  
+
+    
   );
 };

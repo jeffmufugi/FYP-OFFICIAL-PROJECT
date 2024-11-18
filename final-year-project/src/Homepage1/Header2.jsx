@@ -4,10 +4,15 @@ import { useContext, useState } from 'react';
 import { Context } from '../App';
 import a2 from "../site_icons/rec5.svg";
 import ai from "../site_icons/atom4.svg";
+import useMedia from 'use-media';
+import ax from "../site_icons/menu2.svg";
 
 export default function Header1(){
   const [signedIn,setSignedIn] = useContext(Context);
 
+  const [isOpen2,setIsOpen2]= useState(false)
+  const isLargeScreen = useMedia({ minWidth: 1024 });
+  const toggleDropdown2 = () => setIsOpen2(!isOpen2);
   function setSignedInfunc(){
     setSignedIn(true);
 }
@@ -32,6 +37,9 @@ const AboutUsClick = () =>
 {
     navigate('/aboutus');
 }
+const signInClick = () => {
+  navigate('/signin');
+}
 
 const homeClick = () => 
 {
@@ -51,7 +59,7 @@ const coursePageClick = () =>
 
 return (
   <>
-      <header className="header-list">
+              {isLargeScreen && <header className="header-list">
         <div className="left-hdr">
         <img src={ai} className="header1-img" onClick={homepageClick}/>
         </div>
@@ -65,32 +73,66 @@ return (
           </div>
           <div className="right-hdr" style={{position:"relative"}}>
         
-        {signedIn === true &&  <>
-          <img src={a2} alt="" onClick={toggleDropdown} style={{cursor:"pointer"}}/>
-              <AnimatePresence>
-              {isOpen === true && 
-              (<>
-                    
-              <motion.ul className="listhdrhmp"
-              initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.2 }}
-         >
-                {/* <li >Profile</li> */}
-                <li  onClick={setSignedOutfunc}>Sign Out</li>
-              </motion.ul>
-              
-              </>) }
-              </AnimatePresence>
-        </>}
-             
-              
+          {signedIn === true &&  <>
+            <img src={a2} alt="" onClick={toggleDropdown} style={{cursor:"pointer"}}/>
+                <AnimatePresence>
+                {isOpen === true && 
+                (<>
+                      
+                <motion.ul className="listhdrhmp"
+                initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+           >
+                  {/* <li >Profile</li> */}
+                  <li  onClick={setSignedOutfunc}>Sign Out</li>
+                </motion.ul>
+                
+                </>) }
+                </AnimatePresence>
+          </>}
+               
+                
 
-        
           </div>
           
-      </header>
+      </header>}
+
+      {!isLargeScreen && <header className="header-list" style={{justifyContent:"space-between"}}>
+        
+        
+       
+        <img src={ai} className="header1-img"/>
+        
+          
+        <img src={ax} onClick={toggleDropdown2} style={{zIndex:3,cursor:"pointer"}}/> 
+                {isOpen2  && 
+                (<>
+                      
+                <ul className="mediaheadersmall">
+                      <li className='l1' onClick={homeClick}>Home</li>
+                      <li className='l1' onClick={coursePageClick}>Courses</li>
+                      <li className='l1' onClick={AboutUsClick}>About Us</li>
+                      <li className='l1' onClick={contactUsClick}>Contact Us</li>
+                      {signedIn === true &&  <li className='l1'>Forums</li>}
+                      {signedIn === true &&  <li >Sign Out</li>}
+                      {signedIn === false &&  <li className='l1' onClick={signInClick}>Sign In</li>}
+                      {signedIn === false &&  <li onClick={signInClick}>Register</li>}
+                </ul>
+                
+                </>) }
+             
+
+       
+          
+      </header>}
+                
+
+       
+                
+
+       
   </>
 
 )}
