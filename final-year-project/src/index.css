@@ -1730,6 +1730,7 @@ z-index: 1;
   background-image: url("site_icons/Noise Light 220.png");
   display: flex;
   flex-direction: column;
+  z-index: 0;
 }
 .course-header{
   display: flex;
@@ -1749,8 +1750,7 @@ z-index: 1;
   color: #4C4A59;
   font-family: Inter, sans-serif;
   font-weight: 900;
-  /* text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
-  z-index: 1;
+
   text-align: center;
 
 }
@@ -2290,6 +2290,7 @@ z-index: 1;
 .course-page-desc{
   font-family: roboto mono;
   font-weight: 100;
+  text-align: center;
 }
 .course-page-desc1{
   font-family: roboto mono;
@@ -2740,7 +2741,7 @@ text-align: center;
   }
 
 }
-@media (width <= 828px){
+@media (width <= 670px){
   .cs-text,.main-txt,.main-txt3{
     font-size: 36px;
     text-align: center;
@@ -2788,6 +2789,31 @@ text-align: center;
 .course-program-card2{  margin-top: 5px;}
 .course-program-card{
   width: 120px;
+}
+.main-text-coursex{
+  padding-right: 0px;
+  font-size: 10px;
+
+
+}
+.course-page-desc,
+.course-page-desc2,
+.course-page-desc1{font-size: 30px;
+  margin-bottom: 5px;}
+
+.ab2x,
+.ab2{
+  width: 100vw;
+height: auto;
+margin-bottom: 5px;
+}
+.ab4x{margin-top: 2px;
+}
+
+.main-text-coursey{
+  padding-left: 0px;
+  font-size: 10px;
+
 }
   }
 
