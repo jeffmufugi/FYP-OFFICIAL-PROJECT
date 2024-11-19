@@ -11,11 +11,13 @@ import Header from "./Homepage1/Header1.jsx";
 import axios from 'axios';
 import React, { useContext, useState } from 'react';
 import { Context } from './App.jsx';
-
+import useMedia from 'use-media';
 
 export default function SignUpPage2() {
     const navigate = useNavigate();
     const [signedIn,setSignedIn] = useContext(Context);
+
+const isSmallScreen = useMedia({ minWidth: 825 });
 
     function setSignedInfunc(){
         setSignedIn(true);
@@ -103,7 +105,9 @@ export default function SignUpPage2() {
             </div>
             <form onSubmit={handleSubmit} className="main-sign-up-form">
                 <div className="left-main-sign-up-form"></div>
-                <motion.div className="mid-main-sign-up-form" 
+                    { isSmallScreen && 
+                    
+                    <motion.div className="mid-main-sign-up-form" 
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1 }}
@@ -160,7 +164,70 @@ export default function SignUpPage2() {
                             <button type="submit" className="register-btn-sp">Register</button>
                         </div>
                     </div>
-                </motion.div>
+                    </motion.div>
+                    
+                    }
+                   
+                   
+                    {!isSmallScreen &&
+
+                            <motion.div className="mid-main-sign-up-form" 
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}>
+                            <div className="left-mid-main-sign-up-form">
+                                <div className="input-field-1">
+                                    <p className="TopPlaceHolder">First Name*</p>
+                                    <input type="text" name="firstname" value={formData.firstname} onChange={handleChange} required />
+                                    <img src={person} alt="person-icon" className="text-img"/>
+                                </div>
+                                <div className="input-field-5">
+                                    <p className="TopPlaceHolder">Last Name*</p>
+                                    <input type="text" name="lastname" value={formData.lastname} onChange={handleChange} required />
+                                    <img src={person} alt="person-icon" className="text-img"/>
+                                </div>
+                                <div className="input-field-2">
+                                    <p className="TopPlaceHolder">Email*</p>
+                                    <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+                                    <img src={email} alt="email-icon" className="text-img"/>
+                                </div>
+                                <div className="input-field-6">
+                                    <p className="TopPlaceHolder">Region*</p>
+                                    <select type="text" name="region" value={formData.region} onChange={handleChange} required>
+                                    <option value=""></option>
+                                            {countries.map((country, index) => (
+                                            <option key={index} value={country}>
+                                                {country}
+                                            </option>
+                                            ))}
+                                        </select>
+                                    
+                                    <img src={location} alt="location-icon" className="text-img"/>
+                                </div>
+                                <div className="input-field-3">
+                                    <p className="TopPlaceHolder">Phone Number*</p>
+                                    <input type="tel" name="phoneNo" value={formData.phoneNo} onChange={handleChange} required />
+                                    <img src={phone} alt="phone-icon" className="text-img"/>
+                                </div>
+                                <div className="input-field-7">
+                                    <p className="TopPlaceHolder">Password*</p>
+                                    <input type="password" name="password" value={formData.password} onChange={handleChange} required />
+                                    <img src={lock} alt="lock-icon" className="text-img"/>
+                                </div>
+                                <div className="input-field-4">
+                                    <p className="TopPlaceHolder">Confirm Password*</p>
+                                    <input type="password" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange} required />
+                                    <img src={lock} alt="lock-icon" className="text-img"/>
+                                </div>
+                                <div className="input-field-x">
+                                    <button type="submit" className="register-btn-sp">Register</button>
+                                </div>
+                            </div>
+                           
+                            </motion.div>
+                    
+                    }
                 <div className="right-main-sign-up-form"></div>
             </form>
             

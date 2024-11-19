@@ -73,7 +73,7 @@ export default function SignInPage(){
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.3 }}
                             viewport={{ once: true }}
-                            style={{textAlign:"center"}}>sign in to your account .</motion.h1>
+                            >sign in to your account .</motion.h1>
                 </div>
           
                 </div>

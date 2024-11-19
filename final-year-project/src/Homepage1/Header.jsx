@@ -36,6 +36,10 @@ const [isOpen,setIsOpen]= useState(false)
     navigate('/aboutus');
   }
 
+  const homeClick = () => {
+    navigate('/');
+  }
+
   const signUpClick = () => {
     navigate('/signup');
   }
@@ -61,7 +65,7 @@ return (
         
         
         <div className="left-hdr">
-        <img src={ai} className="header1-img"/>
+        <img src={ai} className="header1-img" onClick={homeClick}/>
         </div>
           <div className="middle-hdr">
             <ul className="mid-header">
@@ -115,7 +119,7 @@ return (
                 <ul className="mediaheadersmall">
                       <li className='l1' onClick={coursePageClick}>Courses</li>
                       <li className='l1' onClick={AboutUsClick}>About Us</li>
-                      <li className='l1' onClick={contactUsClick}>Contact Us</li>
+                      {/* <li className='l1' onClick={contactUsClick}>Contact Us</li> */}
                       {signedIn === true &&  <li className='l1'>Forums</li>}
                       {signedIn === true &&  <li >Sign Out</li>}
                       {signedIn === false &&  <li className='l1' onClick={signInClick}>Sign In</li>}
