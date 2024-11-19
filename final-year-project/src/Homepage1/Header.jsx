@@ -118,10 +118,11 @@ return (
                 (<>
                       
                 <motion.ul className="mediaheadersmall"  
-                                 initial={{ opacity: 0, y:-20 }}
+                                 initial={{ opacity: 0, y:-4 }}
                                  animate={{ opacity: 1, y:0 }}
-                                 exit={{ opacity: 0, y: -10 }}
-                                 transition={{ duration: 0.3 }}>
+                                 exit={{ opacity: 0, y: -4 }}
+                                 transition={{ duration: 0.3 }}
+                                 style={{marginTop:"5px"}}>
                       <li className='l1' onClick={coursePageClick}>Courses</li>
                       <li className='l1' onClick={AboutUsClick}>About Us</li>
                       {/* <li className='l1' onClick={contactUsClick}>Contact Us</li> */}

@@ -5,7 +5,8 @@ import {ICONS,ICONS2} from "./site_icons/index.jsx";
 
 import rec from "../src/site_icons/rec3.png";
 import xxx from "./site_icons/roboto.png";
-import xx from "./site_icons/science.png";
+import xx from "./site_icons/atom.png";
+import x1 from "./site_icons/maths.png";
 import x2 from "./site_icons/researcher.png";
 import { useState } from 'react';
 import useMedia from 'use-media';
@@ -59,21 +60,32 @@ const Footer = () => {
     src={xxx} 
     alt="" 
     style={{
-      height: "200px",
+      height: "160px",
       width: "auto",
       position: "relative",
       left: "-20px",
       zIndex: 3
     }} 
   />
+    <img 
+    src={x1} 
+    alt="" 
+    style={{
+      height: "160px",
+      width: "auto",
+      position: "relative",
+      left: "-90px",
+      zIndex: 0
+    }} 
+  />
   <img 
     src={xx} 
     alt="" 
     style={{
-      height: "200px",
+      height: "150px",
       width: "auto",
       position: "relative",
-      left: "-50px", /* More overlap */
+      left: "-150px", /* More overlap */
       zIndex: 2
     }} 
   />
@@ -81,10 +93,10 @@ const Footer = () => {
     src={x2} 
     alt="" 
     style={{
-      height: "200px",
+      height: "160px",
       width: "auto",
       position: "relative",
-      left: "-90px", /* Even more overlap */
+      left: "-200px", /* Even more overlap */
       zIndex: 1
     }} 
   />

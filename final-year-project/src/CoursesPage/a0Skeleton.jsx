@@ -521,7 +521,7 @@ export function Page5({homepageInfo,challengesArray,dsp,handleMouseEnter,handleM
 
           <div className="ab4x">
           <motion.ul 
-                className="main-text-coursex" 
+                className="main-text-coursex2" 
                 {...fadeInFromLeft3.left6}
                 style={{ color: homepageInfo[1].fontColor }}>
                     {challengesArray.map((title,index) => (
@@ -561,7 +561,7 @@ export function Page5({homepageInfo,challengesArray,dsp,handleMouseEnter,handleM
           <div className="ab4x">
           
           <motion.ul 
-                className="main-text-coursex" 
+                className="main-text-coursex2" 
                 {...fadeInFromLeft3.left6}
                 style={{ color: homepageInfo[1].fontColor }}>{issuesArray.map((title,index) => (
                       <li key={index} className="course-name-desc1" onMouseEnter={() => handleMouseEnter(index,"issues")}

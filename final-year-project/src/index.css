@@ -88,7 +88,6 @@ html, body {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  z-index: 10;
 }
 
 
@@ -2288,6 +2287,11 @@ z-index: 1;
   color: #1B046C;
   list-style: none;
 }
+.main-text-coursex2{
+  font-family: roboto mono;
+  color: #1B046C;
+  list-style: none;
+}
 
 .course-page-desc{
   font-family: roboto mono;
@@ -2380,6 +2384,12 @@ z-index: 1;
   padding-right: 100px;
   list-style: none;
 }
+.main-text-coursex2{
+  font-family: roboto mono;
+  color: #1B046C;
+  cursor: default;
+  list-style: none;
+}
 
 .main-text-coursey{
   font-family: roboto mono;
@@ -2388,9 +2398,14 @@ z-index: 1;
   list-style: none;
   
 }
+.main-text-coursex2 li,
 .main-text-coursex li,
 .main-text-coursey li{
   margin: 0 0 2rem 0;
+  
+}
+.main-text-coursex2 li{
+ 
   
 }
 
@@ -2748,9 +2763,9 @@ text-align: center;
 
 }
 @media (width <= 670px){
-  .first-section,.sign-up-page,.sign-in-page{
+  .first-section,.sign-up-page{
     height: auto;
-    min-height: 0;
+    min-height: 90vh;
   }
 
   .main-txt3{

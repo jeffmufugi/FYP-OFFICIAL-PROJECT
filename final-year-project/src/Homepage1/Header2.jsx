@@ -63,7 +63,7 @@ return (
   <>
               {isLargeScreen && <header className="header-list">
         <div className="left-hdr">
-        <img src={ai} className="header1-img" onClick={homepageClick}/>
+        <img src={ai} className="header1-img" onClick={homeClick} />
         </div>
           <div className="middle-hdr">
             <ul className="mid-header3">
@@ -108,7 +108,7 @@ return (
         <img src={ai} className="header1-img"/>
         
           
-        <img src={ax} onClick={toggleDropdown2} style={{zIndex:3,cursor:"pointer"}}/> 
+        <img src={ax} onClick={toggleDropdown2} style={{cursor:"pointer"}}/> 
         <AnimatePresence>
                 {isOpen2  && 
                 (<>
@@ -118,6 +118,7 @@ return (
                                  animate={{ opacity: 1, y:0 }}
                                  exit={{ opacity: 0, y: -10 }}
                                  transition={{ duration: 0.3 }}>
+                      <li className='l1' onClick={homeClick}>Home</li>
                       <li className='l1' onClick={coursePageClick}>Courses</li>
                       <li className='l1' onClick={AboutUsClick}>About Us</li>
                       {/* <li className='l1' onClick={contactUsClick}>Contact Us</li> */}
