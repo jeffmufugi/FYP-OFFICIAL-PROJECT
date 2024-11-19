@@ -2765,7 +2765,7 @@ text-align: center;
 @media (width <= 670px){
   .first-section,.sign-up-page{
     height: auto;
-    min-height: 90vh;
+    min-height: 0vh;
   }
 
   .main-txt3{
@@ -2997,7 +2997,7 @@ margin-left: 5px;
 .coursePage .background-top-light{
   z-index: -1;
 }
-  
+
   }
 
   @media (min-width: 1670px) {

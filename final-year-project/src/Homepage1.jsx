@@ -55,7 +55,7 @@ const Footer = () => {
       </div>}
 
       {!isLargeScreen &&
-  <div className="imgft" style={{ display: "flex", position: "relative" }}>
+  <footer className="imgft" style={{ display: "flex", position: "relative" }}>
   <img 
     src={xxx} 
     alt="" 
@@ -74,7 +74,7 @@ const Footer = () => {
       height: "160px",
       width: "auto",
       position: "relative",
-      left: "-90px",
+      left: "-80px",
       zIndex: 0
     }} 
   />
@@ -85,7 +85,7 @@ const Footer = () => {
       height: "150px",
       width: "auto",
       position: "relative",
-      left: "-150px", /* More overlap */
+      left: "-130px", /* More overlap */
       zIndex: 2
     }} 
   />
@@ -96,11 +96,11 @@ const Footer = () => {
       height: "160px",
       width: "auto",
       position: "relative",
-      left: "-200px", /* Even more overlap */
+      right: "170px", /* Even more overlap */
       zIndex: 1
     }} 
   />
-</div>
+</footer>
      }
      
       </>  
