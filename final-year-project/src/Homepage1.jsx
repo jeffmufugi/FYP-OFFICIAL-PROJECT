@@ -5,7 +5,8 @@ import {ICONS,ICONS2} from "./site_icons/index.jsx";
 
 import rec from "../src/site_icons/rec3.png";
 import xxx from "./site_icons/roboto.png";
-import xx from "./site_icons/worker.png";
+import xx from "./site_icons/science.png";
+import x2 from "./site_icons/researcher.png";
 import { useState } from 'react';
 import useMedia from 'use-media';
 
@@ -53,10 +54,41 @@ const Footer = () => {
       </div>}
 
       {!isLargeScreen &&
-      <div className="imgft" style={{display: "flex",flex:1}}> 
-            <img src={xxx} alt="" style={{height: "200px",width:"auto"}}/>
-            <img src={xx} alt="" style={{height: "200px",width:"auto"}}/>
-      </div>
+  <div className="imgft" style={{ display: "flex", position: "relative" }}>
+  <img 
+    src={xxx} 
+    alt="" 
+    style={{
+      height: "200px",
+      width: "auto",
+      position: "relative",
+      left: "-20px",
+      zIndex: 3
+    }} 
+  />
+  <img 
+    src={xx} 
+    alt="" 
+    style={{
+      height: "200px",
+      width: "auto",
+      position: "relative",
+      left: "-50px", /* More overlap */
+      zIndex: 2
+    }} 
+  />
+  <img 
+    src={x2} 
+    alt="" 
+    style={{
+      height: "200px",
+      width: "auto",
+      position: "relative",
+      left: "-70px", /* Even more overlap */
+      zIndex: 1
+    }} 
+  />
+</div>
      }
      
       </>  
