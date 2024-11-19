@@ -2748,7 +2748,7 @@ text-align: center;
 
 }
 @media (width <= 670px){
-  .first-section,.third-section{
+  .first-section,.sign-up-page,.sign-in-page{
     height: auto;
     min-height: 0;
   }

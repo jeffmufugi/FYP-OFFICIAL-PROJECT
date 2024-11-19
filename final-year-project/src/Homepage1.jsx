@@ -84,7 +84,7 @@ const Footer = () => {
       height: "200px",
       width: "auto",
       position: "relative",
-      left: "-70px", /* Even more overlap */
+      left: "-90px", /* Even more overlap */
       zIndex: 1
     }} 
   />
