@@ -96,7 +96,7 @@ there must be a change
                   
                   
                 >
-                  {console.log(animat)}
+               
                   {country.flag}
                 </li>
               ))}

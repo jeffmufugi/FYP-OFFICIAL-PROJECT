@@ -109,11 +109,15 @@ return (
         
           
         <img src={ax} onClick={toggleDropdown2} style={{zIndex:3,cursor:"pointer"}}/> 
+        <AnimatePresence>
                 {isOpen2  && 
                 (<>
                       
-                <ul className="mediaheadersmall">
-                      <li className='l1' onClick={homeClick}>Home</li>
+                <motion.ul className="mediaheadersmall"  
+                                 initial={{ opacity: 0, y:-30 }}
+                                 animate={{ opacity: 1, y:0 }}
+                                 exit={{ opacity: 0, y: -10 }}
+                                 transition={{ duration: 0.3 }}>
                       <li className='l1' onClick={coursePageClick}>Courses</li>
                       <li className='l1' onClick={AboutUsClick}>About Us</li>
                       {/* <li className='l1' onClick={contactUsClick}>Contact Us</li> */}
@@ -121,9 +125,11 @@ return (
                       {signedIn === true &&  <li >Sign Out</li>}
                       {signedIn === false &&  <li className='l1' onClick={signInClick}>Sign In</li>}
                       {signedIn === false &&  <li onClick={signUpClick}>Register</li>}
-                </ul>
+                </motion.ul>
+                
                 
                 </>) }
+                </AnimatePresence>
              
 
        

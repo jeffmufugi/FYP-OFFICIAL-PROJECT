@@ -23,9 +23,6 @@ function setSignedOutfunc(){
 
 
 
-const signUpClick = () => {
-  navigate('/signup');
-}
 
 const signInClick = () => {
   navigate('/signin');
@@ -59,7 +56,9 @@ const [isOpen,setIsOpen]= useState(false)
     navigate('/contactus');
   }
 
-
+  const signUpClick = () => {
+    navigate('/signup');
+  }
 
    const coursePageClick = () => {
     navigate('/courses');
@@ -116,20 +115,27 @@ return (
         
           
         <img src={ax} onClick={toggleDropdown2} style={{zIndex:3,cursor:"pointer"}}/> 
+        <AnimatePresence>
                 {isOpen2  && 
                 (<>
                       
-                <ul className="mediaheadersmall">
+                <motion.ul className="mediaheadersmall"  
+                                 initial={{ opacity: 0, y:-30 }}
+                                 animate={{ opacity: 1, y:0 }}
+                                 exit={{ opacity: 0, y: -10 }}
+                                 transition={{ duration: 0.3 }}>
                       <li className='l1' onClick={homeClick}>Home</li>
-                      <li className='l1' onClick={coursePageClick}>Courses</li>
                       <li className='l1' onClick={AboutUsClick}>About Us</li>
                       {/* <li className='l1' onClick={contactUsClick}>Contact Us</li> */}
                       {signedIn === true &&  <li className='l1'>Forums</li>}
                       {signedIn === true &&  <li >Sign Out</li>}
-                      {signedIn === false &&  <li className='l1' onClick={signUpClick}>Sign In</li>}
-                </ul>
+                      {signedIn === false &&  <li className='l1' onClick={signInClick}>Sign In</li>}
+                      {signedIn === false &&  <li onClick={signUpClick}>Register</li>}
+                </motion.ul>
+                
                 
                 </>) }
+                </AnimatePresence>
              
 
        
