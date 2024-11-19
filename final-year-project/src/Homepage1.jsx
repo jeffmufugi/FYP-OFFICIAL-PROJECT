@@ -56,7 +56,7 @@ const Footer = () => {
 
       {!isLargeScreen &&
     <>
-    <div className="jeff" style={{display:"flex",flex:1}}></div>
+    <div className="jeff" style={{display:"flex",flex:0.5,minHeight:"0px",height:"auto"}}></div>
   <footer className="imgft">
   <img 
     src={xxx} 
