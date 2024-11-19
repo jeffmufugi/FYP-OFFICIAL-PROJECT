@@ -55,7 +55,9 @@ const coursePageClick = () =>
 {
     navigate('/courses');
 }
-
+const signUpClick = () => {
+  navigate('/signup');
+}
 
 return (
   <>
@@ -118,7 +120,7 @@ return (
                       {signedIn === true &&  <li className='l1'>Forums</li>}
                       {signedIn === true &&  <li >Sign Out</li>}
                       {signedIn === false &&  <li className='l1' onClick={signInClick}>Sign In</li>}
-                      {signedIn === false &&  <li onClick={signInClick}>Register</li>}
+                      {signedIn === false &&  <li onClick={signUpClick}>Register</li>}
                 </ul>
                 
                 </>) }

@@ -17,6 +17,9 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
     const signInClick = () => {
       navigate('/signin');
     }
+    const signUpClick = () => {
+      navigate('/signup');
+    }
     const contactUsClick = () => {
       navigate('/contactus');
     }
@@ -130,7 +133,8 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
               
               <li onClick={coursePageClick} className="left-foot-1">Courses</li>
               <li onClick={AboutUsClick} className="left-foot-1">About Us</li>
-              <li onClick={contactUsClick} className="left-foot-1">Contact Us</li>
+              { isLargeScreen && <li onClick={contactUsClick} className="left-foot-1">Contact Us</li>}
+              { signedIn === false && !isLargeScreen && <li onClick={signUpClick} className="left-foot-1">Sign Up</li>}
               {signedIn === false && <li onClick={signInClick} className="left-foot-1">Sign In</li>}
               {signedIn === true && <li onClick={setSignedInfunc} className="left-foot-1">Sign Out</li>}
               

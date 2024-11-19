@@ -126,7 +126,7 @@ return (
                       {/* <li className='l1' onClick={contactUsClick}>Contact Us</li> */}
                       {signedIn === true &&  <li className='l1'>Forums</li>}
                       {signedIn === true &&  <li >Sign Out</li>}
-                      {signedIn === false &&  <li className='l1' onClick={signInClick}>Sign In</li>}
+                      {signedIn === false &&  <li className='l1' onClick={signUpClick}>Sign In</li>}
                 </ul>
                 
                 </>) }
