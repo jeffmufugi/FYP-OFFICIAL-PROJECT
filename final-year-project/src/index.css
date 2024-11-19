@@ -2768,7 +2768,7 @@ text-align: center;
 @media (width <= 670px){
   .first-section{ 
     height: auto;
-    min-height: 90vh;
+    min-height: 100vh;
   }
 
   .main-txt3{

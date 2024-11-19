@@ -55,6 +55,8 @@ const Footer = () => {
       </div>}
 
       {!isLargeScreen &&
+    <>
+    <div className="jeff" style={{display:"flex",flex:1}}></div>
   <footer className="imgft">
   <img 
     src={xxx} 
@@ -101,6 +103,7 @@ const Footer = () => {
     }} 
   />
 </footer>
+</>
      }
      
       </>  
