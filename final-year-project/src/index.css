@@ -2762,6 +2762,9 @@ text-align: center;
   }
 
 }
+.imgft{
+  height: 20vh;
+}
 @media (width <= 670px){
   .first-section{ 
     height: auto;
