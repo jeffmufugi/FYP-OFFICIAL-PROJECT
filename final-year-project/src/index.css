@@ -2748,6 +2748,10 @@ text-align: center;
 
 }
 @media (width <= 670px){
+  .first-section,.third-section{
+    height: auto;
+    min-height: 0;
+  }
 
   .main-txt3{
     font-size: 38px;
