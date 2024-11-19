@@ -140,14 +140,15 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
             
 
     </div>
-    <div className="mid-foot">
+      <div className="mid-foot">
     <img src={ai} className="footer3-img"/>
         </div>
-    <div className="right-foot">
-        <p>© 2024 Mufugi LLC. All right reserved.</p>
-        <p>choose the right STEM path with us.</p>
-    </div>
-         
+
+{ isLargeScreen && <div className="right-foot">
+          <p>© 2024 Mufugi LLC. All right reserved.</p>
+          <p>choose the right STEM path with us.</p>
+      </div>
+            }
 </div>
 
 

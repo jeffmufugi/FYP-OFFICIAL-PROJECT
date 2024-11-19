@@ -4,7 +4,8 @@ import MainContent from "./Homepage1/MainContent.jsx";
 import {ICONS,ICONS2} from "./site_icons/index.jsx";
 
 import rec from "../src/site_icons/rec3.png";
-
+import xxx from "./site_icons/roboto.png";
+import xx from "./site_icons/worker.png";
 import { useState } from 'react';
 import useMedia from 'use-media';
 
@@ -50,21 +51,13 @@ const Footer = () => {
         }
       </div>
       </div>}
-      {!isLargeScreen && <div>
-      <div className="footer2">
-        {
-        iconsArray2.map((icon, index) => (
-          <img
-            key={index}
-            src={icon}
-            style={{width:"200px",height:"auto", 
-            }}
-            className="footer-image2"
-          />
-        ))
-        
-        }
-      </div></div>}
+
+      {!isLargeScreen &&
+      <div className="imgft" style={{display: "flex",flex:1}}> 
+            <img src={xxx} alt="" style={{height: "200px",width:"auto"}}/>
+            <img src={xx} alt="" style={{height: "200px",width:"auto"}}/>
+      </div>
+     }
      
       </>  
 

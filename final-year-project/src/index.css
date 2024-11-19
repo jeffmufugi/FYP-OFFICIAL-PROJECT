@@ -1816,6 +1816,7 @@ z-index: 1;
   flex: 1;
   flex-direction: row;
   margin-top: 50px;
+  z-index: 0;
 }
 
 .left-main-cs{
@@ -2684,24 +2685,28 @@ text-align: center;
 
 
 .mediaheadersmall{
-  z-index: 999*999;
+  
   position: absolute;
-  background-color:#e8e8e8;
+  background-color:#ebebeb;
   list-style: none;
   top: 5%;
   right:2%;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor:pointer;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: roboto mono;
 
 }
 
 .mediaheadersmall li{ 
+  position: relative;
   z-index: 999;
   padding: 10px  20px 10px  20px;
   cursor: pointer;
   transition: box-shadow 0.4s ease, background-color 0.4s ease; /* Smooth transition */
+  color: #616161;
+
 
 }
 
@@ -2710,7 +2715,7 @@ text-align: center;
 }
 
 .l1{ 
-  border-bottom: 2px solid #a4a4a4;
+  border-bottom: 0.1px solid #a4a4a4;
 }
 
 @media (width <= 1310px){
@@ -2742,12 +2747,25 @@ text-align: center;
 
 }
 @media (width <= 670px){
-  .cs-text,.main-txt,.main-txt3{
-    font-size: 36px;
+  .main-txt3{
+    font-size: 38px;
     text-align: center;
   }
+  .cs-text{
+    font-size: 55px;
+    text-align: center;
+  }
+  .main-txt{
+    font-size: 55px;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 5px;
+  }
   .main-txt3{
-    padding: 20px;
+    letter-spacing: -0.4px;
+    font-weight: 900;
+    text-align: left;
+    padding: 5px;
   }
   .course-definition,
   .course-description,
@@ -2756,9 +2774,13 @@ text-align: center;
   width:100vw;
   padding: 10px;
 }
+.course-definition{
+  padding: 0px;
+}
 .explore-txt,
 .wdwd-txt{
   padding: 10px;
+  letter-spacing: -0.1px;
 }
 .btn-vc{
   padding: 20px;
@@ -2780,7 +2802,7 @@ text-align: center;
 }
 .itemfoot{
   padding: 22px;
-  height: 60px;
+
 }
 
 .course-card{
@@ -2815,6 +2837,45 @@ margin-bottom: 5px;
   font-size: 10px;
 
 }
+
+.main-content{
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  margin-bottom: 6%;
+  flex: 0;
+
+
+}
+.btn-course-view{
+  margin-top: 20px;
+}
+.computer-science-ftr2{
+  height: 57px;
+}
+.main-course-txt{
+  font-size: 60px;
+}
+
+.card-row{
+  gap: 10px;
+}
+.course-title{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.footer2{
+  height: 20vh;
+}
+.header3-main-section{
+  flex: 0.3;
+}
+.btn-main{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
   }
 
   @media (min-width: 1670px) {

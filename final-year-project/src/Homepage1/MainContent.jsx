@@ -62,10 +62,15 @@ export default function MainContent(){
                 </div>
   
 
-                <p className="explore-txt"><br/>
+                {!btnbreak && <p className="explore-txt"><br/>
+                Explore different fields ALL based on certified DATA
+                all to help you choose a course based on your interests and strengths.
+                </p>}
+
+                {btnbreak && <p className="explore-txt"><br/>
                 Explore different fields ALL based on certified DATA<br />
                 all to help you choose a course based on your interests and strengths.
-                </p>
+                </p>}
 
               
 
