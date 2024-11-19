@@ -60,10 +60,11 @@ const Footer = () => {
     src={xxx} 
     alt="" 
     style={{
-      height: "160px",
+      height: "180px",
       width: "auto",
       position: "relative",
-      left: "-20px",
+      right: "5vw", /* Even more overlap */
+      bottom:"-17vw",
       zIndex: 3
     }} 
   />
@@ -71,10 +72,10 @@ const Footer = () => {
     src={x1} 
     alt="" 
     style={{
-      height: "160px",
+      height: "180px",
       width: "auto",
       position: "relative",
-      left: "-80px",
+      right: "23vw", /* Even more overlap */
       zIndex: 0
     }} 
   />
@@ -82,10 +83,10 @@ const Footer = () => {
     src={xx} 
     alt="" 
     style={{
-      height: "150px",
+      height: "170px",
       width: "auto",
       position: "relative",
-      left: "-130px", /* More overlap */
+      right: "39vw", /* Even more overlap */
       zIndex: 2
     }} 
   />
@@ -93,10 +94,10 @@ const Footer = () => {
     src={x2} 
     alt="" 
     style={{
-      height: "160px",
+      height: "180px",
       width: "auto",
       position: "relative",
-      right: "170px", /* Even more overlap */
+      right: "53vw", /* Even more overlap */
       zIndex: 1
     }} 
   />

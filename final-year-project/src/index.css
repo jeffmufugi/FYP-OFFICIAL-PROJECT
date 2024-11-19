@@ -2763,9 +2763,9 @@ text-align: center;
 
 }
 @media (width <= 670px){
-  .first-section,.sign-up-page{
+  .first-section{ 
     height: auto;
-    min-height: 0vh;
+    min-height: 90vh;
   }
 
   .main-txt3{
