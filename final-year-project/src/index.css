@@ -2748,6 +2748,7 @@ text-align: center;
 
 }
 @media (width <= 670px){
+
   .main-txt3{
     font-size: 38px;
     text-align: center;
@@ -2755,18 +2756,21 @@ text-align: center;
   .cs-text{
     font-size: 55px;
     text-align: center;
+    line-height: 1;
   }
   .main-txt{
     font-size: 55px;
     margin-top: 20px;
     text-align: left;
     margin-left: 5px;
+    line-height: 1;
   }
   .main-txt3{
     letter-spacing: -0.4px;
     font-weight: 900;
     text-align: left;
     padding: 5px;
+    line-height: 1;
   }
   .course-definition,
   .course-description,
@@ -2822,8 +2826,10 @@ text-align: center;
 }
 .course-page-desc,
 .course-page-desc2,
-.course-page-desc1{font-size: 30px;
-  margin-bottom: 5px;}
+.course-page-desc1
+{font-size: 30px;
+  margin-bottom: 5px;
+line-height: 1;}
 
 .ab2x,
 .ab2{
@@ -2881,7 +2887,9 @@ margin-bottom: 5px;
   font-size: 17px;
 }
 .about-us-header-text{
-  font-size: 66px;
+  font-size: 56px;
+  line-height: 1;
+margin-left: 5px;
 }
 .about-us-header img{
 
@@ -2959,6 +2967,16 @@ margin-bottom: 5px;
 
 .background-top-light{
   height: 200px;
+
+}
+.btn1{
+  background-color: #2f2254;
+}
+.btn2{
+  background-color: #af5900;
+}
+.coursePage .background-top-light{
+  z-index: -1;
 }
   
   }
