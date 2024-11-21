@@ -2,8 +2,9 @@
 import ai from "./site_icons/atom1.svg";
 import {motion} from "framer-motion";
 import bg2 from "./site_icons/bg4.png";
-import bg3 from "./site_icons/phoneslide.png";
+import bg3 from "./site_icons/phoneslide3.svg";
 import bg4 from "./site_icons/phoneslide.svg";
+import bg5 from "./site_icons/phoneslide2.svg";
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect, useContext } from "react";
 import { Context } from './App.jsx';
@@ -33,6 +34,12 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
     navigate('/courses');
   }
   
+  const [phone,setPhone]=useState(false)
+
+  function set(){
+    setPhone(!phone);
+  }
+
 
 
     return (
@@ -41,16 +48,9 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
             {isLargeScreen &&       
             <div className="header3-top-section" >
                 <div className="header3-top-left-section">
-                  <div>
-                  <img src={bg3} alt="" style={{position:"absolute",zIndex:"6"}}/>
-                 
-                  <div style={{width:"726px",height:"359px",backgroundColor:"#3B3B3B",borderRadius:"45px",position:"relative",zIndex:"5",marginTop:"32px",marginLeft:"24px"}}>
-                    <h1 style={{color:"#FFE100",paddingLeft:"40px",paddingTop:"60px",fontFamily:"Inter, sans serif",fontWeight:"900",fontSize:"60px"}}>EXPLORE YOUR OPTIONS AND IGNITE YOUR FUTURE</h1>
-                  </div>
-                    
 
-
-                  </div>
+              {phone == true &&  <img src={bg3} alt="" style={{width:"60vw",height:"auto",position:"relative",alignSelf:"center",marginTop:"3px",marginBottom:"3px"}} onClick={set}/>}
+              {phone == false &&  <img src={bg4} alt="" style={{width:"60vw",height:"auto",position:"relative",alignSelf:"center",marginTop:"3px",marginBottom:"3px"}} onClick={set}/>}
                     
                 </div>
                 <div className="header3-top-right-section">
@@ -69,7 +69,8 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
                   </div>
 
                   </div> */}
-                   <img src={bg4} alt="" style={{width:"90vw",height:"auto",position:"relative",alignSelf:"center",marginTop:"3px",marginBottom:"3px"}}/>
+                {phone == true &&  <img src={bg3} alt="" style={{width:"100vw",height:"auto",position:"relative",alignSelf:"center",marginTop:"3px",marginBottom:"3px"}} onClick={set}/>}
+              {phone == false &&  <img src={bg4} alt="" style={{width:"100vw",height:"auto",position:"relative",alignSelf:"center",marginTop:"3px",marginBottom:"3px"}} onClick={set}/>}
                     
                 </div>
                 <div className="header3-top-right-section">
