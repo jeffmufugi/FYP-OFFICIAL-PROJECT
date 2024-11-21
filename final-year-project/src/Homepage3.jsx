@@ -2,6 +2,8 @@
 import ai from "./site_icons/atom1.svg";
 import {motion} from "framer-motion";
 import bg2 from "./site_icons/bg4.png";
+import bg3 from "./site_icons/phoneslide.png";
+import bg4 from "./site_icons/phoneslide.svg";
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect, useContext } from "react";
 import { Context } from './App.jsx';
@@ -39,14 +41,14 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
             {isLargeScreen &&       
             <div className="header3-top-section" >
                 <div className="header3-top-left-section">
-                  <div style={{width:"700px",alignContent:"center"}}>
-                  <motion.h1 className="main-txt3" initial={{ x: -100 ,opacity: 0 }}
-                        whileInView={{ x: 0 ,opacity: 1 }}
-                        transition={{ duration: 0.5,delay: 0.4 }}
-                        viewport={{ once: true }}
-                        style={{color:"#1D1350"}}>
-                    explore a world of possibilities in STEM education & find the course that ignites your passion!
-                    </motion.h1>
+                  <div>
+                  <img src={bg3} alt="" style={{position:"absolute",zIndex:"6"}}/>
+                 
+                  <div style={{width:"726px",height:"359px",backgroundColor:"#3B3B3B",borderRadius:"45px",position:"relative",zIndex:"5",marginTop:"32px",marginLeft:"24px"}}>
+                    <h1 style={{color:"#FFE100",paddingLeft:"40px",paddingTop:"60px",fontFamily:"Inter, sans serif",fontWeight:"900",fontSize:"60px"}}>EXPLORE YOUR OPTIONS AND IGNITE YOUR FUTURE</h1>
+                  </div>
+                    
+
 
                   </div>
                     
@@ -60,16 +62,14 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
 
             {!isLargeScreen &&  <div className="header3-top-section" style={{flexDirection:"column"}}>
             <div className="header3-top-left-section" >
-                  <div style={{width:"700px",alignContent:"center"}}>
-                  <motion.h1 className="main-txt3" initial={{ x: -100 ,opacity: 0 }}
-                        whileInView={{ x: 0 ,opacity: 1 }}
-                        transition={{ duration: 0.5,delay: 0.4 }}
-                        viewport={{ once: true }}
-                        style={{color:"#1D1350"}}>
-                    explore a world of possibilities in STEM education & find the course that ignites your passion!
-                    </motion.h1>
-
+                  {/* <div style={{width:"100vw",height:"150px",display:"flex"}}>
+                     <img src={bg3} alt="" style={{width:"90vw",height:"auto",position:"absolute",alignSelf:"center",zIndex:"6",top:"5px",right:"16px"}}/>
+                     <div style={{width:"86vw",height:"157px",backgroundColor:"#3B3B3B",borderRadius:"25px",position:"absolute",zIndex:"5",alignSelf:"center",top:"20px",right:"23px"}}>
+                    <h1 style={{color:"#FFE100",paddingLeft:"30px",paddingTop:"30px",fontFamily:"Inter",fontWeight:"900",fontSize:"25px"}}>EXPLORE YOUR OPTIONS AND IGNITE YOUR FUTURE</h1>
                   </div>
+
+                  </div> */}
+                   <img src={bg4} alt="" style={{width:"90vw",height:"auto",position:"relative",alignSelf:"center",marginTop:"3px",marginBottom:"3px"}}/>
                     
                 </div>
                 <div className="header3-top-right-section">
