@@ -1044,8 +1044,7 @@ z-index: 1;
 .sign-up-page-icon{
   z-index: 0;
   display: block;
-  width: 170px;
-height: auto;
+  height: 150px;
 }
 
 .sign-up-header-text{

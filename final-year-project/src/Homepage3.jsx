@@ -49,8 +49,8 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
             <div className="header3-top-section" >
                 <div className="header3-top-left-section">
 
-              {phone == true &&  <img src={bg3} alt="" style={{width:"60vw",height:"auto",position:"relative",alignSelf:"center",marginTop:"3px",marginBottom:"3px"}} onClick={set}/>}
-              {phone == false &&  <img src={bg4} alt="" style={{width:"60vw",height:"auto",position:"relative",alignSelf:"center",marginTop:"3px",marginBottom:"3px"}} onClick={set}/>}
+              <img src={bg4} alt="" style={{width:"50vw",height:"auto",position:"relative",alignSelf:"center",marginTop:"3px",marginBottom:"3px"}} onClick={set}/>
+              
                     
                 </div>
                 <div className="header3-top-right-section">
