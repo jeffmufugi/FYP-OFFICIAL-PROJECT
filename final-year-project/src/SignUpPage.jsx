@@ -4,7 +4,7 @@ import lock from "./site_icons/Lock1.svg";
 import email from "./site_icons/Email.svg";
 import phone from "./site_icons/Phone enabled.svg";
 import location from "./site_icons/Location on.svg";
-import rocketMan from "./site_icons/RocketMan.svg";
+import rocketMan from "./site_icons/RocketMan.png";
 import { motion } from "framer-motion";
 import rec from "./site_icons/rec1.png";
 import Header from "./Homepage1/Header1.jsx";
