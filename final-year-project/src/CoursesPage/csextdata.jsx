@@ -153,10 +153,8 @@ export const homepageInfo = [
     emprate: "67%",
     livestatscolor : "#1B046C",},
     
-    {description: `Computer Science is the study of 
-    computation, information processing, 
-    and the design of computer systems. It encompasses both theoretical and 
-    practical aspects of computation and information technology.`,
+    {description: `COMPUTER SCIENCE IS THE STUDY OF COMPUTATION, INFORMATION PROCESSING, AND THE DESIGN OF
+     COMPUTER SYSTEMS. IT ENCOMPASSES BOTH THEORETICAL AND PRACTICAL ASPECTS OF COMPUTATION AND INFORMATION TECHNOLOGY`,
     backgroundColor1:"#DADAFF",
     backgroundColor2:"#E1E1FE",
     backgroundColor3:"#EEEEFF",
@@ -165,26 +163,26 @@ export const homepageInfo = [
       ];
     
       export const prerequisites = [
-        "Strong foundation in mathematics (algebra, calculus, discrete mathematics)",
-        "Basic understanding of computer systems",
-        "Logical thinking and analytical skills",
-        "Good communication skills",
-        "Self-motivation and ability to learn independently"
+        "STRONG FOUNDATION IN MATHEMATICS (ALGEBRA, CALCULUS, DISCRETE MATHEMATICS)",
+        "BASIC UNDERSTANDING OF COMPUTER SYSTEMS",
+        "LOGICAL THINKING AND ANALYTICAL SKILLS",
+        "GOOD COMMUNICATION SKILLS",
+        "SELF-MOTIVATION AND ABILITY TO LEARN INDEPENDENTLY"
       ];
       
     //change THEME color from imports, FADE BG  
 
 export const coreAreasOfStudy = [
-    "Programming and Software Engineering",
-    "Data Structures and Algorithms",
-    "Computer Architecture and Organization",
-    "Operating Systems",
-    "Database Management Systems",
-    "Computer Networks",
-    "Artificial Intelligence and Machine Learning",
-    "Cryptography",
-    "Theory of Computation",
-    "Computer Graphics and Visualization"
+  "PROGRAMMING AND SOFTWARE ENGINEERING",
+  "DATA STRUCTURES AND ALGORITHMS",
+  "COMPUTER ARCHITECTURE AND ORGANIZATION",
+  "OPERATING SYSTEMS",
+  "DATABASE MANAGEMENT SYSTEMS",
+  "COMPUTER NETWORKS",
+  "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING",
+  "CRYPTOGRAPHY",
+  "THEORY OF COMPUTATION",
+  "COMPUTER GRAPHICS AND VISUALIZATION"
   ];
 
   export const jobGrowthFields = [
@@ -218,38 +216,38 @@ export const coreAreasOfStudy = [
 
   
   export const topspecializations = [
-    "Artificial Intelligence and Machine Learning",
-    "Data Science and Big Data Analytics",
-    "Cybersecurity and Information Assurance",
-    "Cloud Computing and Distributed Systems",
-    "Human-Computer Interaction",
-    "Computer Vision and Image Processing",
-    "Bioinformatics",
-    "Quantum Computing",
-    "Robotics",
-    "Internet of Things (IoT)"
+    "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING",
+    "DATA SCIENCE AND BIG DATA ANALYTICS",
+    "CYBERSECURITY AND INFORMATION ASSURANCE",
+    "CLOUD COMPUTING AND DISTRIBUTED SYSTEMS",
+    "HUMAN-COMPUTER INTERACTION",
+    "COMPUTER VISION AND IMAGE PROCESSING",
+    "BIOINFORMATICS",
+    "QUANTUM COMPUTING",
+    "ROBOTICS",
+    "INTERNET OF THINGS (IOT)"
   ];
   
   export const trend = [
-    "Quantum Computing",
-    "Edge Computing",
-    "Extended Reality (XR) - including AR and VR",
-    "Blockchain and Cryptocurrency",
-    "Green Computing and Sustainability",
-    "Neuromorphic Computing"
+    "QUANTUM COMPUTING",
+    "EDGE COMPUTING",
+    "EXTENDED REALITY (XR) - INCLUDING AR AND VR",
+    "BLOCKCHAIN AND CRYPTOCURRENCY",
+    "GREEN COMPUTING AND SUSTAINABILITY",
+    "NEUROMORPHIC COMPUTING"
   ];
   
   export const skills = [
-    "Critical thinking and problem-solving",
-    "Programming in multiple languages (e.g., Python, Java, C++, JavaScript)",
-    "Data analysis and interpretation",
-    "Algorithm design and optimization",
-    "Software development methodologies",
-    "System design and architecture",
-    "Database management",
-    "Network administration",
-    "Cybersecurity practices",
-    "Project management"
+    "CRITICAL THINKING AND PROBLEM-SOLVING",
+    "PROGRAMMING IN MULTIPLE LANGUAGES (E.G., PYTHON, JAVA, C++, JAVASCRIPT)",
+    "DATA ANALYSIS AND INTERPRETATION",
+    "ALGORITHM DESIGN AND OPTIMIZATION",
+    "SOFTWARE DEVELOPMENT METHODOLOGIES",
+    "SYSTEM DESIGN AND ARCHITECTURE",
+    "DATABASE MANAGEMENT",
+    "NETWORK ADMINISTRATION",
+    "CYBERSECURITY PRACTICES",
+    "PROJECT MANAGEMENT"
   ];
   
   export const challengesArray = [
