@@ -214,26 +214,62 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
               <img src={bg4} alt="" style={{width:"80vw",height:"auto",alignSelf:"center",position:"absolute",objectFit:"contain",zIndex:"12"}}/>
               <img src={sx} style={{position:"absolute",width:"43vw",height:"auto",zIndex:"20",right:"13vw"}} alt="" />
               <div style={{position:"absolute",width:"34vw",height:"auto",zIndex:"20",right:"17.7vw",backgroundColor:"white",aspectRatio:"1.4/1",zIndex:"11",overflow: "hidden" }}>
-              {currentText1 === 1 && <img src={slide} style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  overflow: "hidden"
-              }}/>}
-              {currentText1 === 2 && <img src={slide1} style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  overflow: "hidden"
-              }}/>}
-              {currentText1 === 3 && <img src={slide2} style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  overflow: "hidden"
-              }}/>}
-              {currentText1 === 4 && <img src={slide3} style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  overflow: "hidden"
-              }}/>}
+              <AnimatePresence>{currentText1 === 1 && 
+            
+            <motion.img src={slide} 
+            
+             initial={{ opacity: 0,filter: "blur(10px)" }} 
+             animate={{ opacity: 1 ,filter: "blur(0px)"}} 
+             exit={{ filter: "blur(5px)"}} 
+             transition={{duration: 0.5}}
+
+             style={{
+                 maxWidth: "100%",
+                 maxHeight: "100%",
+                 overflow: "hidden"
+             }}/>}
+             </AnimatePresence>
+             
+             <AnimatePresence>{currentText1 === 2 && 
+             <motion.img src={slide1} 
+             initial={{ opacity: 0,filter: "blur(10px)" }} 
+             animate={{ opacity: 1 ,filter: "blur(0px)"}} 
+             transition={{duration: 0.5}}
+             exit={{ filter: "blur(5px)"}} 
+
+             style={{
+                 maxWidth: "100%",
+                 maxHeight: "100%",
+                 overflow: "hidden"
+             }}/>}</AnimatePresence>
+             <AnimatePresence>
+             {currentText1 === 3 && 
+             <motion.img src={slide2} 
+             initial={{ opacity: 0,filter: "blur(10px)" }} 
+             animate={{ opacity: 1 ,filter: "blur(0px)"}} 
+             transition={{duration: 0.5}}
+             exit={{ filter: "blur(5px)"}} 
+
+             style={{
+                 maxWidth: "100%",
+                 maxHeight: "100%",
+                 overflow: "hidden"
+             }}/>}
+             </AnimatePresence>
+             <AnimatePresence>
+             {currentText1 === 4 && 
+             <motion.img src={slide3} 
+             initial={{ opacity: 0,filter: "blur(10px)" }} 
+             animate={{ opacity: 1 ,filter: "blur(0px)"}} 
+             transition={{duration: 0.5}}
+             exit={{ filter: "blur(5px)"}} 
+
+             style={{
+                 maxWidth: "100%",
+                 maxHeight: "100%",
+                 overflow: "hidden"
+             }}/>}
+             </AnimatePresence>
               </div>
               <div className="bgrad"
         src={s1}
@@ -245,18 +281,42 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
       >
 
         {currentText === 1 && <>
-          <h1 style={{fontSize:"4vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>WELCOME</h1>
-            <h1 style={{fontSize:"3vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>EXPLORE DIVERSE<br/>CAREER PATHS</h1>
+          <motion.h1 
+             initial={{ x: "-10px", opacity: 0 }} // Start off-screen
+             animate={{ x: 0, opacity: 1 }} // Slide in and fade in
+             transition={{duration: 0.5}}
+            style={{fontSize:"4vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>WELCOME</motion.h1>
+            <motion.h1 
+             initial={{ x: "10px", opacity: 0 }} // Start off-screen
+             animate={{ x: 0, opacity: 1 }} // Slide in and fade in
+             transition={{duration: 0.5}}
+            style={{fontSize:"3vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>EXPLORE DIVERSE<br/>CAREER PATHS</motion.h1>
         </>}
         {currentText === 2 && <>
-          <h1 style={{fontSize:"4vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>COMPARE</h1>
-        <h1 style={{fontSize:"3vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>BETWEEN DIFFERENT<br/>PATHS</h1>
+          <motion.h1 
+             initial={{ x: "10px", opacity: 0 }} // Start off-screen
+             animate={{ x: 0, opacity: 1 }} // Slide in and fade in
+             transition={{duration: 0.5}}
+            style={{fontSize:"4vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>COMPARE</motion.h1>
+        <motion.h1 
+         initial={{ x: "-10px", opacity: 0 }} // Start off-screen
+         animate={{ x: 0, opacity: 1 }} // Slide in and fade in
+         transition={{duration: 0.5}}
+        style={{fontSize:"3vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>BETWEEN DIFFERENT<br/>PATHS</motion.h1>
 
 
         </>}
         {currentText === 3 && <>
-          <h1 style={{fontSize:"4vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>DIG DEEP</h1>
-        <h1 style={{fontSize:"3vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>INTO CAREER<br/>INSIGHTS</h1>
+          <motion.h1 
+             initial={{ x: "-10px", opacity: 0 }} // Start off-screen
+             animate={{ x: 0, opacity: 1 }} // Slide in and fade in
+             transition={{duration: 0.5}}
+            style={{fontSize:"4vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>DIG DEEP</motion.h1>
+        <motion.h1 
+         initial={{ x: "10px", opacity: 0 }} // Start off-screen
+         animate={{ x: 0, opacity: 1 }} // Slide in and fade in
+         transition={{duration: 0.5}}
+        style={{fontSize:"3vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>INTO CAREER<br/>INSIGHTS</motion.h1>
 
         </>}
            
