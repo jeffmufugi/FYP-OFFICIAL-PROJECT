@@ -283,24 +283,24 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
              initial={{ x: "-10px", opacity: 0 }} // Start off-screen
              animate={{ x: 0, opacity: 1 }} // Slide in and fade in
              transition={{duration: 0.5}}
-            style={{fontSize:"4vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>WELCOME</motion.h1>
+            style={{fontSize:"4vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>WELCOME</motion.h1>
             <motion.h1 
              initial={{ x: "10px", opacity: 0 }} // Start off-screen
              animate={{ x: 0, opacity: 1 }} // Slide in and fade in
              transition={{duration: 0.5}}
-            style={{fontSize:"3vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>EXPLORE DIVERSE<br/>CAREER PATHS</motion.h1>
+            style={{fontSize:"3vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>EXPLORE DIVERSE<br/>CAREER PATHS</motion.h1>
         </>}
         {currentText === 2 && <>
           <motion.h1 
              initial={{ x: "10px", opacity: 0 }} // Start off-screen
              animate={{ x: 0, opacity: 1 }} // Slide in and fade in
              transition={{duration: 0.5}}
-            style={{fontSize:"4vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>COMPARE</motion.h1>
+            style={{fontSize:"4vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>COMPARE</motion.h1>
         <motion.h1 
          initial={{ x: "-10px", opacity: 0 }} // Start off-screen
          animate={{ x: 0, opacity: 1 }} // Slide in and fade in
          transition={{duration: 0.5}}
-        style={{fontSize:"3vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>WEIGH WHICH PATH<br/>SUITS YOU BEST</motion.h1>
+        style={{fontSize:"3vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>WEIGH WHICH PATH<br/>SUITS YOU BEST</motion.h1>
 
 
         </>}
@@ -309,12 +309,12 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
              initial={{ x: "-10px", opacity: 0 }} // Start off-screen
              animate={{ x: 0, opacity: 1 }} // Slide in and fade in
              transition={{duration: 0.5}}
-            style={{fontSize:"4vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>DIG DEEP</motion.h1>
+            style={{fontSize:"4vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>DIG DEEP</motion.h1>
         <motion.h1 
          initial={{ x: "10px", opacity: 0 }} // Start off-screen
          animate={{ x: 0, opacity: 1 }} // Slide in and fade in
          transition={{duration: 0.5}}
-        style={{fontSize:"3vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>INTO CAREER<br/>INSIGHTS</motion.h1>
+        style={{fontSize:"3vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>INTO CAREER<br/>INSIGHTS</motion.h1>
 
         </>}
            
@@ -338,7 +338,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
     <div className="top-footer3">
       <span className="itemfoot item1f">Computer Science</span>
       <span className="itemfoot item2f">Mechanical Engineering</span>
-      <span className="itemfoot item3f">Electrical Engineering</span>
+      <span className="itemfoot item3f">Biotechnology</span>
       <span className="itemfoot item4f">Physics</span>
       <span className="itemfoot item5f">Cybersecurity</span>
       <span className="itemfoot item6f">Data Science</span>
@@ -346,7 +346,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
       <span className="itemfoot item8f">Aerospace Engineering</span>
       <span className="itemfoot item1f">Computer Science</span>
       <span className="itemfoot item2f">Mechanical Engineering</span>
-      <span className="itemfoot item3f">Electrical Engineering</span>
+      <span className="itemfoot item3f">Nuclear Engineering</span>
       <span className="itemfoot item4f">Physics</span>
       <span className="itemfoot item5f">Cybersecurity</span>
       <span className="itemfoot item6f">Data Science</span>
@@ -358,22 +358,22 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
     <div className="bottom-footer3">
       <span className="itemfoot item1f">Chemical Engineering</span>
       <span className="itemfoot item2f">Mathematics</span>
-      <span className="itemfoot item3f">Environmental Engineering</span>
+      <span className="itemfoot item3f">Aerospace Engineering</span>
       <span className="itemfoot item4f">Marine Biology</span>
       <span className="itemfoot item5f">Robotics</span>
       <span className="itemfoot item6f">Astronomy</span>
       <span className="itemfoot item7f">Biotechnology</span>
       <span className="itemfoot item8f">Computer Engineering</span>
-      <span className="itemfoot item9f">Statistics</span>
+      <span className="itemfoot item9f">Data Science</span>
       <span className="itemfoot item1f">Chemical Engineering</span>
       <span className="itemfoot item2f">Mathematics</span>
-      <span className="itemfoot item3f">Environmental Engineering</span>
+      <span className="itemfoot item3f">Physics</span>
       <span className="itemfoot item4f">Marine Biology</span>
       <span className="itemfoot item5f">Robotics</span>
       <span className="itemfoot item6f">Astronomy</span>
       <span className="itemfoot item7f">Biotechnology</span>
       <span className="itemfoot item8f">Computer Engineering</span>
-      <span className="itemfoot item9f">Statistics</span>
+      <span className="itemfoot item9f">Marine Biology</span>
     </div>
   </div>
 </div>
