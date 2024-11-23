@@ -171,7 +171,7 @@ html, body {
 
   font-family: Inter, sans-serif;
   font-weight: lighter;
-  background-color: #2A3C95;
+  background-color: #1a3469;
   font-size: 14px;
   font-weight: bolder;
   color: white;
@@ -202,7 +202,7 @@ html, body {
 
 .main-txt{
   font-size: 70px;
-  color: #15137b;
+  color: #1a3469;
   font-family: Inter, sans-serif;
  font-weight: 900;
  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -232,7 +232,7 @@ html, body {
 
 .btn1{
   font-family: Inter, sans-serif;
-   background-color: #6F56FF;
+   background-color: #6a78a3;;
    font-size: 14px;
    font-weight: bolder;
    color: white;
@@ -261,7 +261,7 @@ html, body {
 
 .btn2{
   font-family: Inter, sans-serif;
-   background-color: #E87700;
+   background-color: #4f4c6d;
    font-size: 14px;
    font-weight: bolder;
    color: white;
@@ -855,11 +855,11 @@ html, body {
 }
 .top-footer3 span{
     color: #ffffff;
-    background-color: rgb(112, 134, 160); 
+    background-color: #3f4559;
 }
 .bottom-footer3 span{
   color: #ffffff;
-background-color: rgb(67, 112, 116); 
+background-color: #4F7B7F; 
 }
 
 
@@ -910,7 +910,7 @@ background-color: rgb(67, 112, 116);
   display: flex;
   flex: 0.1;
   z-index: 1;
-  background:linear-gradient(180deg, #cacaca 0%, #c7feff 100%)
+  background:linear-gradient(180deg, #cacaca 0%, #ffe3c0 100%)
 
   
   /* background-image: url("site_icons/Noise Light 220.png"); */
@@ -2998,10 +2998,10 @@ margin-left: 5px;
 
 }
 .btn1{
-  background-color: #2f2254;
+  background-color: #6a78a3;
 }
 .btn2{
-  background-color: #15137b;
+  background-color: #4f4c6d;
 }
 .coursePage .background-top-light{
   z-index: -1;

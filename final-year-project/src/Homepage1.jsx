@@ -20,7 +20,7 @@ const Homepage1 = () => {
   return (
     <div className="first-section">
       
-         <img src={rec} className="background-top-light"/>
+         <img src={rec} className="background-top-light" style={{zIndex:"1"}}/>
 
       <Header signedIn={signedIn}/>
       <MainContent signedIn={signedIn}/>

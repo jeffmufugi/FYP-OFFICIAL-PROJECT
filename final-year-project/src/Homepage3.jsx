@@ -154,7 +154,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
         
         
         {currentText === 1 && <>
-          <motion.h1 style={{fontSize:"3vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}
+          <motion.h1 style={{fontSize:"3vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"#355356"}}
            initial={{ x: "-10px", opacity: 0 }} // Start off-screen
            animate={{ x: 0, opacity: 1 }} // Slide in and fade in
            transition={{duration: 0.5}}
@@ -168,7 +168,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
             >EXPLORE DIVERSE<br/>CAREER PATHS</motion.h1>
         </>}
         {currentText === 2 && <>
-          <motion.h1  style={{fontSize:"3vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}
+          <motion.h1  style={{fontSize:"3vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"#355356"}}
                  initial={{ x: "10px", opacity: 0 }} // Start off-screen
                  animate={{ x: 0, opacity: 1 }} // Slide in and fade in
                  transition={{duration: 0.5}}
@@ -186,7 +186,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
                    initial={{ x: "-10px", opacity: 0 }} // Start off-screen
                    animate={{ x: 0, opacity: 1 }} // Slide in and fade in
                    transition={{duration: 0.5}}
-            style={{fontSize:"3vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>DIG DEEP</motion.h1>
+            style={{fontSize:"3vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"#355356"}}>DIG DEEP</motion.h1>
         <motion.h1 
                initial={{ x: "10px", opacity: 0 }} // Start off-screen
                animate={{ x: 0, opacity: 1 }} // Slide in and fade in
@@ -283,7 +283,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
              initial={{ x: "-10px", opacity: 0 }} // Start off-screen
              animate={{ x: 0, opacity: 1 }} // Slide in and fade in
              transition={{duration: 0.5}}
-            style={{fontSize:"4vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"300"}}>WELCOME</motion.h1>
+            style={{fontSize:"4vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"300",color:"#355356"}}>WELCOME</motion.h1>
             <motion.h1 
              initial={{ x: "10px", opacity: 0 }} // Start off-screen
              animate={{ x: 0, opacity: 1 }} // Slide in and fade in
@@ -295,7 +295,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
              initial={{ x: "10px", opacity: 0 }} // Start off-screen
              animate={{ x: 0, opacity: 1 }} // Slide in and fade in
              transition={{duration: 0.5}}
-            style={{fontSize:"4vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"300"}}>COMPARE</motion.h1>
+            style={{fontSize:"4vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"300",color:"#355356"}}>COMPARE</motion.h1>
         <motion.h1 
          initial={{ x: "-10px", opacity: 0 }} // Start off-screen
          animate={{ x: 0, opacity: 1 }} // Slide in and fade in
@@ -309,7 +309,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
              initial={{ x: "-10px", opacity: 0 }} // Start off-screen
              animate={{ x: 0, opacity: 1 }} // Slide in and fade in
              transition={{duration: 0.5}}
-            style={{fontSize:"4vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"300"}}>DIG DEEP</motion.h1>
+            style={{fontSize:"4vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"300",color:"#355356"}}>DIG DEEP</motion.h1>
         <motion.h1 
          initial={{ x: "10px", opacity: 0 }} // Start off-screen
          animate={{ x: 0, opacity: 1 }} // Slide in and fade in
