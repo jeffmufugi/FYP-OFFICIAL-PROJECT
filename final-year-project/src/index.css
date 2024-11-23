@@ -1811,6 +1811,7 @@ z-index: 1;
   flex-direction: column;
   flex: 1;
   align-items: center;
+
 }
 .right-hd-cs{}
 
@@ -1945,6 +1946,7 @@ z-index: 1;
   position: absolute;
   width: 100%;
   padding: 0;
+  z-index: -1;
 
 }
 
