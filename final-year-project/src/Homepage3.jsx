@@ -90,9 +90,9 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
             
              <motion.img src={slide} 
              
-              initial={{ opacity: 1,filter: "blur(10px)" }} 
+              initial={{ opacity: 0,filter: "blur(10px)" }} 
               animate={{ opacity: 1 ,filter: "blur(0px)"}} 
-              exit={{ filter: "blur(10px)"}} 
+  
               transition={{duration: 0.5}}
 
               style={{
@@ -104,10 +104,9 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
               
               <AnimatePresence>{currentText1 === 2 && 
               <motion.img src={slide1} 
-              initial={{ opacity: 1,filter: "blur(10px)" }} 
+              initial={{ opacity: 0,filter: "blur(10px)" }} 
               animate={{ opacity: 1 ,filter: "blur(0px)"}} 
-              transition={{duration: 1}}
-              exit={{ filter: "blur(10px)"}} 
+              transition={{duration: 0.5}} 
 
               style={{
                   maxWidth: "100%",
@@ -117,10 +116,10 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
               <AnimatePresence>
               {currentText1 === 3 && 
               <motion.img src={slide2} 
-              initial={{ opacity: 1,filter: "blur(10px)" }} 
+              initial={{ opacity: 0,filter: "blur(10px)" }} 
               animate={{ opacity: 1 ,filter: "blur(0px)"}} 
-              transition={{duration: 1}}
-              exit={{ filter: "blur(10px)"}} 
+              transition={{duration: 0.5}}
+       
 
               style={{
                   maxWidth: "100%",
@@ -133,8 +132,8 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
               <motion.img src={slide3} 
               initial={{ opacity: 1,filter: "blur(10px)" }} 
               animate={{ opacity: 1 ,filter: "blur(0px)"}} 
-              transition={{duration: 1}}
-              exit={{ filter: "blur(10px)"}} 
+              transition={{duration: 0.5}}
+         
 
               style={{
                   maxWidth: "100%",
@@ -221,7 +220,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
              initial={{ opacity: 1,filter: "blur(10px)" }} 
              animate={{ opacity: 1 ,filter: "blur(0px)"}} 
              exit={{ filter: "blur(10px)"}} 
-             transition={{duration: 1}}
+             transition={{duration: 0.5}}
 
              style={{
                  maxWidth: "100%",
@@ -234,7 +233,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
              <motion.img src={slide1} 
              initial={{ opacity: 1,filter: "blur(10px)" }} 
              animate={{ opacity: 1 ,filter: "blur(0px)"}} 
-             transition={{duration: 1}}
+             transition={{duration: 0.5}}
              exit={{ filter: "blur(10px)"}} 
 
              style={{
@@ -247,7 +246,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
              <motion.img src={slide2} 
              initial={{ opacity: 1,filter: "blur(10px)" }} 
              animate={{ opacity: 1 ,filter: "blur(0px)"}} 
-             transition={{duration: 1}}
+             transition={{duration: 0.5}}
              exit={{ filter: "blur(10px)"}} 
 
              style={{
@@ -261,7 +260,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
              <motion.img src={slide3} 
              initial={{ opacity: 1,filter: "blur(10px)" }} 
              animate={{ opacity: 1 ,filter: "blur(0px)"}} 
-             transition={{duration: 1}}
+             transition={{duration: 0.5}}
              exit={{ filter: "blur(10px)"}} 
 
              style={{
