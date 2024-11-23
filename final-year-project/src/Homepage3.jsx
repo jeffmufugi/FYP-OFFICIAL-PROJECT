@@ -90,9 +90,9 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
             
              <motion.img src={slide} 
              
-              initial={{ opacity: 0,filter: "blur(10px)" }} 
+              initial={{ opacity: 1,filter: "blur(10px)" }} 
               animate={{ opacity: 1 ,filter: "blur(0px)"}} 
-              exit={{ filter: "blur(5px)"}} 
+              exit={{ filter: "blur(10px)"}} 
               transition={{duration: 0.5}}
 
               style={{
@@ -104,10 +104,10 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
               
               <AnimatePresence>{currentText1 === 2 && 
               <motion.img src={slide1} 
-              initial={{ opacity: 0,filter: "blur(10px)" }} 
+              initial={{ opacity: 1,filter: "blur(10px)" }} 
               animate={{ opacity: 1 ,filter: "blur(0px)"}} 
-              transition={{duration: 0.5}}
-              exit={{ filter: "blur(5px)"}} 
+              transition={{duration: 1}}
+              exit={{ filter: "blur(10px)"}} 
 
               style={{
                   maxWidth: "100%",
@@ -117,10 +117,10 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
               <AnimatePresence>
               {currentText1 === 3 && 
               <motion.img src={slide2} 
-              initial={{ opacity: 0,filter: "blur(10px)" }} 
+              initial={{ opacity: 1,filter: "blur(10px)" }} 
               animate={{ opacity: 1 ,filter: "blur(0px)"}} 
-              transition={{duration: 0.5}}
-              exit={{ filter: "blur(5px)"}} 
+              transition={{duration: 1}}
+              exit={{ filter: "blur(10px)"}} 
 
               style={{
                   maxWidth: "100%",
@@ -131,10 +131,10 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
               <AnimatePresence>
               {currentText1 === 4 && 
               <motion.img src={slide3} 
-              initial={{ opacity: 0,filter: "blur(10px)" }} 
+              initial={{ opacity: 1,filter: "blur(10px)" }} 
               animate={{ opacity: 1 ,filter: "blur(0px)"}} 
-              transition={{duration: 0.5}}
-              exit={{ filter: "blur(5px)"}} 
+              transition={{duration: 1}}
+              exit={{ filter: "blur(10px)"}} 
 
               style={{
                   maxWidth: "100%",
@@ -178,7 +178,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
                initial={{ x: "-10px", opacity: 0 }} // Start off-screen
                animate={{ x: 0, opacity: 1 }} // Slide in and fade in
                transition={{duration: 0.5}}
-        >BETWEEN DIFFERENT<br/>PATHS</motion.h1 >
+        >WEIGH WHICH PATH<br/>SUITS YOU BEST</motion.h1 >
 
 
         </>}
@@ -218,10 +218,10 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
             
             <motion.img src={slide} 
             
-             initial={{ opacity: 0,filter: "blur(10px)" }} 
+             initial={{ opacity: 1,filter: "blur(10px)" }} 
              animate={{ opacity: 1 ,filter: "blur(0px)"}} 
-             exit={{ filter: "blur(5px)"}} 
-             transition={{duration: 0.5}}
+             exit={{ filter: "blur(10px)"}} 
+             transition={{duration: 1}}
 
              style={{
                  maxWidth: "100%",
@@ -232,10 +232,10 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
              
              <AnimatePresence>{currentText1 === 2 && 
              <motion.img src={slide1} 
-             initial={{ opacity: 0,filter: "blur(10px)" }} 
+             initial={{ opacity: 1,filter: "blur(10px)" }} 
              animate={{ opacity: 1 ,filter: "blur(0px)"}} 
-             transition={{duration: 0.5}}
-             exit={{ filter: "blur(5px)"}} 
+             transition={{duration: 1}}
+             exit={{ filter: "blur(10px)"}} 
 
              style={{
                  maxWidth: "100%",
@@ -245,10 +245,10 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
              <AnimatePresence>
              {currentText1 === 3 && 
              <motion.img src={slide2} 
-             initial={{ opacity: 0,filter: "blur(10px)" }} 
+             initial={{ opacity: 1,filter: "blur(10px)" }} 
              animate={{ opacity: 1 ,filter: "blur(0px)"}} 
-             transition={{duration: 0.5}}
-             exit={{ filter: "blur(5px)"}} 
+             transition={{duration: 1}}
+             exit={{ filter: "blur(10px)"}} 
 
              style={{
                  maxWidth: "100%",
@@ -259,10 +259,10 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
              <AnimatePresence>
              {currentText1 === 4 && 
              <motion.img src={slide3} 
-             initial={{ opacity: 0,filter: "blur(10px)" }} 
+             initial={{ opacity: 1,filter: "blur(10px)" }} 
              animate={{ opacity: 1 ,filter: "blur(0px)"}} 
-             transition={{duration: 0.5}}
-             exit={{ filter: "blur(5px)"}} 
+             transition={{duration: 1}}
+             exit={{ filter: "blur(10px)"}} 
 
              style={{
                  maxWidth: "100%",
@@ -302,7 +302,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
          initial={{ x: "-10px", opacity: 0 }} // Start off-screen
          animate={{ x: 0, opacity: 1 }} // Slide in and fade in
          transition={{duration: 0.5}}
-        style={{fontSize:"3vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>BETWEEN DIFFERENT<br/>PATHS</motion.h1>
+        style={{fontSize:"3vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>WEIGH WHICH PATH<br/>SUITS YOU BEST</motion.h1>
 
 
         </>}
