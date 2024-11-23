@@ -729,7 +729,7 @@ html, body {
 }
 .header3-main-section{
   display: flex;
-  flex: 1;
+  flex: 0;
   z-index: 1;
 
 
@@ -853,60 +853,62 @@ html, body {
   font-family: Inter, sans-serif;
   font-weight: 800;
 }
+.top-footer3 span{
+    color: #ffffff;
+    background-color: rgb(112, 134, 160); 
+}
+.bottom-footer3 span{
+  color: #ffffff;
+background-color: rgb(67, 112, 116); 
+}
 
 
  .itemfoot.item1f{
-  color: #543EDB;
-  background-color: #7BE0CB;
-  
+  /* color: #543EDB;
+  background-color: #7BE0CB; */
 }
 .itemfoot.item2f{
-  color: #E05256;
-  background-color: #FFB650;
-
+  /* color: #bc282d;
+  background-color: #ff990b; */
 }
 .itemfoot.item3f{
-  color: #194F47;
-  background-color: #E05256;
-
-  
+  /* color: #ffb651;
+  background-color: #f72b32; */
 }
 .itemfoot.item4f{
-  color: #df870b;
-  background-color: #C8E07B;
+  /* color: #df870b;
+  background-color: #C8E07B; */
   
 }
 .itemfoot.item5f{
-  color: #543EDB;
-  background-color: #7BE0CB;
+  /* color: #543EDB;
+  background-color: #7BE0CB; */
   
 }
 .itemfoot.item6f{
-  color: #E05256;
-  background-color: #FFB650;
+  /* color: #E05256;
+  background-color: #ff9e17; */
   
 }
 .itemfoot.item7f{
-  color: #543EDB;
-  background-color: #7BE08A;
+  /* color: #543EDB;
+  background-color: #62ff79; */
   
 }
 .itemfoot.item8f{
-  color: #FFB650;
-  background-color: #736EF7;
-  
+  /* color: #7BE0CB;
+  background-color: #736EF7;  */
 }
 
 .itemfoot.item9f{
-  color: #194F47;
-  background-color: #E05256;
-  
+  /* color: rgb(255, 247, 1);
+  background-color: #ee2229; */
 }
 
 .bottom-llc{
 
   display: flex;
-  flex: 0.5;
+  flex: 0.1;
   z-index: 1;
   background:linear-gradient(180deg, #cacaca 0%, #c7feff 100%)
 
@@ -2900,7 +2902,7 @@ margin-bottom: 5px;
   height: 20vh;
 }
 .header3-main-section{
-  flex: 0.3;
+  flex: 0;
 }
 .btn-main{
   display: flex;
@@ -3019,3 +3021,43 @@ margin-left: 5px;
   
   }
   }
+
+  .bgrad {
+    height: auto;
+    align-self: center;
+    position: absolute;
+    object-fit: contain;
+    background: linear-gradient(
+        135deg,
+        #30d0de,
+        #5d8e93,
+        #a8b6b6,
+        #318085
+    );
+    background-size: 400% 400%;
+    animation: calmFlow 20s ease-in-out infinite;
+    aspect-ratio: 2 / 1;
+    border-radius: 31px;
+
+}
+
+@keyframes calmFlow {
+    0% {
+        background-position: 0% 0%;
+    }
+    20% {
+        background-position: 100% 50%;
+    }
+    40% {
+        background-position: 50% 100%;
+    }
+    60% {
+        background-position: 20% 80%;
+    }
+    80% {
+        background-position: 70% 30%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}

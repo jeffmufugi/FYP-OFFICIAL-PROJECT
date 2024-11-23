@@ -3,14 +3,45 @@ import ai from "./site_icons/atom1.svg";
 import {motion} from "framer-motion";
 import bg2 from "./site_icons/bg4.png";
 import bg3 from "./site_icons/phoneslide3.svg";
-import bg4 from "./site_icons/phoneslide.svg";
-import bg5 from "./site_icons/phoneslide2.svg";
+import bg4 from "./site_icons/iphone.svg";
+import bg5 from "./site_icons/tt1.svg";
+import bg7 from "./site_icons/tt2.svg";
+import s1 from "./site_icons/slide.svg";
+import s2 from "./site_icons/slide2.svg";
+import sx from "./site_icons/probody.svg";
+import s3 from "./site_icons/slide3.svg";
+import bg6 from "./site_icons/phoneslide2.svg";
+import slide from "./site_icons/lapslide.png";
+import slide1 from "./site_icons/lapslide2.png";
+import slide2 from "./site_icons/lapslide3.png";
+import slide3 from "./site_icons/lapslide4.png";
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect, useContext } from "react";
 import { Context } from './App.jsx';
 import useMedia from 'use-media';
 
 const Homepage3 = () => {
+  const [currentText, setCurrentText] = useState(1);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentText((prev) => (prev === 3 ? 1 : prev + 1)); // Cycle between 1, 2, and 3
+    }, 5000); // 5 seconds interval
+
+    return () => clearInterval(interval); // Cleanup the interval on component unmount
+  }, []);
+
+  const [currentText1, setCurrentText1] = useState(1);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentText1((prev) => (prev === 4 ? 1 : prev + 1)); // Cycle between 1, 2, and 3
+    }, 4000); // 5 seconds interval
+
+    return () => clearInterval(interval); // Cleanup the interval on component unmount
+  }, []);
+
+  
+
+  // Toggle between bg5 and bg7 every 3 seconds
   const [signedIn,setSignedIn] = useContext(Context);
   function setSignedInfunc(){
     setSignedIn(true);
@@ -47,11 +78,88 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
             <img src={bg2} className="background-icon2"/>
             {isLargeScreen &&       
             <div className="header3-top-section" >
-                <div className="header3-top-left-section">
+                <div className="header3-top-left-section" style={{position:"relative",display:"flex",flex:1, overflow: "hidden",height: "auto", justifyContent: "center",
+    alignItems: "center",}} >
 
-              <img src={bg4} alt="" style={{width:"50vw",height:"auto",position:"relative",alignSelf:"center",marginTop:"3px",marginBottom:"3px"}} onClick={set}/>
-              
-                    
+              <img src={bg4} alt="" style={{width:"43vw",height:"auto",alignSelf:"center",position:"absolute",objectFit:"contain",zIndex:"12"}} onClick={set}/>
+              <img src={sx} style={{position:"absolute",width:"19vw",height:"auto",zIndex:"20",right:"13vw"}} alt="" />
+              <div style={{position:"absolute",width:"15vw",height:"auto",zIndex:"20",right:"15vw",backgroundColor:"white",aspectRatio:"1.4/1",zIndex:"11",overflow: "hidden" }}>
+              {currentText1 === 1 && <img src={slide} style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  overflow: "hidden"
+              }}/>}
+              {currentText1 === 2 && <img src={slide1} style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  overflow: "hidden"
+              }}/>}
+              {currentText1 === 3 && <img src={slide2} style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  overflow: "hidden"
+              }}/>}
+              {currentText1 === 4 && <img src={slide3} style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  overflow: "hidden"
+              }}/>}
+              </div>
+              <div className="bgrad"
+        src={s1}
+        alt=""
+        style={{
+          width: "42vw",
+          overflow:"hidden"
+        }}
+   
+      >
+
+        {currentText === 1 && <>
+          <motion.h1 style={{fontSize:"3vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}
+           initial={{ x: "-10px", opacity: 0 }} // Start off-screen
+           animate={{ x: 0, opacity: 1 }} // Slide in and fade in
+           transition={{duration: 0.5}}
+          
+          >WELCOME</motion.h1>
+            <motion.h1 style={{fontSize:"2vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}
+              initial={{ x: "10px", opacity: 0 }} 
+              animate={{ x: 0, opacity: 1 }} 
+              transition={{duration: 0.5}}
+
+            >EXPLORE DIVERSE<br/>CAREER PATHS</motion.h1>
+        </>}
+        {currentText === 2 && <>
+          <motion.h1  style={{fontSize:"3vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}
+                 initial={{ x: "10px", opacity: 0 }} // Start off-screen
+                 animate={{ x: 0, opacity: 1 }} // Slide in and fade in
+                 transition={{duration: 0.5}}
+          >COMPARE</motion.h1 >
+        <motion.h1  style={{fontSize:"2vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}
+               initial={{ x: "-10px", opacity: 0 }} // Start off-screen
+               animate={{ x: 0, opacity: 1 }} // Slide in and fade in
+               transition={{duration: 0.5}}
+        >BETWEEN DIFFERENT<br/>PATHS</motion.h1 >
+
+
+        </>}
+        {currentText === 3 && <>
+          <motion.h1 
+                   initial={{ x: "-10px", opacity: 0 }} // Start off-screen
+                   animate={{ x: 0, opacity: 1 }} // Slide in and fade in
+                   transition={{duration: 0.5}}
+            style={{fontSize:"3vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>DIG DEEP</motion.h1>
+        <motion.h1 
+               initial={{ x: "10px", opacity: 0 }} // Start off-screen
+               animate={{ x: 0, opacity: 1 }} // Slide in and fade in
+               transition={{duration: 0.5}}
+        style={{fontSize:"2vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>INTO CAREER<br/>INSIGHTS</motion.h1 >
+
+        </>}
+           
+      
+      </div>
+        
                 </div>
                 <div className="header3-top-right-section">
                     <button className="btn-vc" onClick={coursePageClick}>View All Courses</button>
@@ -60,19 +168,65 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
             
             </div>}
 
-            {!isLargeScreen &&  <div className="header3-top-section" style={{flexDirection:"column"}}>
-            <div className="header3-top-left-section" >
-                  {/* <div style={{width:"100vw",height:"150px",display:"flex"}}>
-                     <img src={bg3} alt="" style={{width:"90vw",height:"auto",position:"absolute",alignSelf:"center",zIndex:"6",top:"5px",right:"16px"}}/>
-                     <div style={{width:"86vw",height:"157px",backgroundColor:"#3B3B3B",borderRadius:"25px",position:"absolute",zIndex:"5",alignSelf:"center",top:"20px",right:"23px"}}>
-                    <h1 style={{color:"#FFE100",paddingLeft:"30px",paddingTop:"30px",fontFamily:"Inter",fontWeight:"900",fontSize:"25px"}}>EXPLORE YOUR OPTIONS AND IGNITE YOUR FUTURE</h1>
-                  </div>
+            {!isLargeScreen &&             <div className="header3-top-section" style={{flexDirection:"column"}} >
+                <div className="header3-top-left-section" style={{position:"relative",display:"flex",flex:5, overflow: "hidden",height: "auto", justifyContent: "center",
+    alignItems: "center",}} >
 
-                  </div> */}
-                {phone == true &&  <img src={bg3} alt="" style={{width:"100vw",height:"auto",position:"relative",alignSelf:"center",marginTop:"3px",marginBottom:"3px"}} onClick={set}/>}
-              {phone == false &&  <img src={bg4} alt="" style={{width:"100vw",height:"auto",position:"relative",alignSelf:"center",marginTop:"3px",marginBottom:"3px"}} onClick={set}/>}
-                    
+              <img src={bg4} alt="" style={{width:"80vw",height:"auto",alignSelf:"center",position:"absolute",objectFit:"contain",zIndex:"12"}}/>
+              <img src={sx} style={{position:"absolute",width:"43vw",height:"auto",zIndex:"20",right:"13vw"}} alt="" />
+              <div style={{position:"absolute",width:"34vw",height:"auto",zIndex:"20",right:"17.7vw",backgroundColor:"white",aspectRatio:"1.4/1",zIndex:"11",overflow: "hidden" }}>
+              {currentText1 === 1 && <img src={slide} style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  overflow: "hidden"
+              }}/>}
+              {currentText1 === 2 && <img src={slide1} style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  overflow: "hidden"
+              }}/>}
+              {currentText1 === 3 && <img src={slide2} style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  overflow: "hidden"
+              }}/>}
+              {currentText1 === 4 && <img src={slide3} style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  overflow: "hidden"
+              }}/>}
+              </div>
+              <div className="bgrad"
+        src={s1}
+        alt=""
+        style={{
+          width: "79vw",borderRadius:"7vw",overflow:"hidden"
+        }}
+   
+      >
+
+        {currentText === 1 && <>
+          <h1 style={{fontSize:"4vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>WELCOME</h1>
+            <h1 style={{fontSize:"3vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>EXPLORE DIVERSE<br/>CAREER PATHS</h1>
+        </>}
+        {currentText === 2 && <>
+          <h1 style={{fontSize:"4vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>COMPARE</h1>
+        <h1 style={{fontSize:"3vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>BETWEEN DIFFERENT<br/>PATHS</h1>
+
+
+        </>}
+        {currentText === 3 && <>
+          <h1 style={{fontSize:"4vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}>DIG DEEP</h1>
+        <h1 style={{fontSize:"3vw",marginLeft:"5vw",marginTop:"5vw",fontFamily:"ROBOTO MONO",fontWeight:"100",color:"white"}}>INTO CAREER<br/>INSIGHTS</h1>
+
+        </>}
+           
+      
+      </div>
+              
+            
                 </div>
+           
                 <div className="header3-top-right-section">
                     <button className="btn-vc" onClick={coursePageClick}>View All Courses</button>
 
