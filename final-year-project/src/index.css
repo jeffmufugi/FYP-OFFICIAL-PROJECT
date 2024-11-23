@@ -3031,10 +3031,10 @@ margin-left: 5px;
     object-fit: contain;
     background: linear-gradient(
         135deg,
-        #30d0de,
-        #5d8e93,
+        #d6972c,
+        #356368,
         #a8b6b6,
-        #318085
+        #c07f4d
     );
     background-size: 400% 400%;
     animation: calmFlow 20s ease-in-out infinite;
