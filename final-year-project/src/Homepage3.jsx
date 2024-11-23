@@ -1,6 +1,6 @@
 
 import ai from "./site_icons/atom1.svg";
-import {motion} from "framer-motion";
+import {motion,AnimatePresence } from "framer-motion";
 import bg2 from "./site_icons/bg4.png";
 import bg3 from "./site_icons/phoneslide3.svg";
 import bg4 from "./site_icons/iphone.svg";
@@ -83,27 +83,65 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
 
               <img src={bg4} alt="" style={{width:"43vw",height:"auto",alignSelf:"center",position:"absolute",objectFit:"contain",zIndex:"12"}} onClick={set}/>
               <img src={sx} style={{position:"absolute",width:"19vw",height:"auto",zIndex:"20",right:"13vw"}} alt="" />
+            
               <div style={{position:"absolute",width:"15vw",height:"auto",zIndex:"20",right:"15vw",backgroundColor:"white",aspectRatio:"1.4/1",zIndex:"11",overflow: "hidden" }}>
-              {currentText1 === 1 && <img src={slide} style={{
+              
+              <AnimatePresence>{currentText1 === 1 && 
+            
+             <motion.img src={slide} 
+             
+              initial={{ opacity: 0,filter: "blur(10px)" }} 
+              animate={{ opacity: 1 ,filter: "blur(0px)"}} 
+              exit={{ filter: "blur(5px)"}} 
+              transition={{duration: 0.5}}
+
+              style={{
                   maxWidth: "100%",
                   maxHeight: "100%",
                   overflow: "hidden"
               }}/>}
-              {currentText1 === 2 && <img src={slide1} style={{
+              </AnimatePresence>
+              
+              <AnimatePresence>{currentText1 === 2 && 
+              <motion.img src={slide1} 
+              initial={{ opacity: 0,filter: "blur(10px)" }} 
+              animate={{ opacity: 1 ,filter: "blur(0px)"}} 
+              transition={{duration: 0.5}}
+              exit={{ filter: "blur(5px)"}} 
+
+              style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  overflow: "hidden"
+              }}/>}</AnimatePresence>
+              <AnimatePresence>
+              {currentText1 === 3 && 
+              <motion.img src={slide2} 
+              initial={{ opacity: 0,filter: "blur(10px)" }} 
+              animate={{ opacity: 1 ,filter: "blur(0px)"}} 
+              transition={{duration: 0.5}}
+              exit={{ filter: "blur(5px)"}} 
+
+              style={{
                   maxWidth: "100%",
                   maxHeight: "100%",
                   overflow: "hidden"
               }}/>}
-              {currentText1 === 3 && <img src={slide2} style={{
+              </AnimatePresence>
+              <AnimatePresence>
+              {currentText1 === 4 && 
+              <motion.img src={slide3} 
+              initial={{ opacity: 0,filter: "blur(10px)" }} 
+              animate={{ opacity: 1 ,filter: "blur(0px)"}} 
+              transition={{duration: 0.5}}
+              exit={{ filter: "blur(5px)"}} 
+
+              style={{
                   maxWidth: "100%",
                   maxHeight: "100%",
                   overflow: "hidden"
               }}/>}
-              {currentText1 === 4 && <img src={slide3} style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  overflow: "hidden"
-              }}/>}
+              </AnimatePresence>
               </div>
               <div className="bgrad"
         src={s1}
@@ -114,7 +152,8 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
         }}
    
       >
-
+        
+        
         {currentText === 1 && <>
           <motion.h1 style={{fontSize:"3vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"ROBOTO MONO",fontWeight:"100"}}
            initial={{ x: "-10px", opacity: 0 }} // Start off-screen
