@@ -2814,7 +2814,8 @@ text-align: center;
 .explore-txt,
 .wdwd-txt{
   padding: 10px;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.4px;
+    line-height: 1.2;
 }
 .btn-vc{
   padding: 20px;
