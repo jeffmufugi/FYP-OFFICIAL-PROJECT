@@ -2801,6 +2801,14 @@ text-align: center;
     padding: 5px;
     line-height: 1;
   }
+
+  .main-text-course,
+  .course-definition{
+    letter-spacing: -0.4px;
+    line-height: 1.2;
+  }
+
+
   .course-definition,
   .course-description,
   .explore-txt,
