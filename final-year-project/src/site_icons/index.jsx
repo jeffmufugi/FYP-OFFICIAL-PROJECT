@@ -11,7 +11,8 @@ import i10 from "../site_icons/researcher.png";
 import i11 from "../site_icons/maths.png";
 import i12 from "../site_icons/calculator.png";
 import i13 from "../site_icons/Tech Satellite.png";
-import i14 from "../site_icons/Tech icon.png";
+import i14 from "../site_icons/gogo.png";
+
 
 
 

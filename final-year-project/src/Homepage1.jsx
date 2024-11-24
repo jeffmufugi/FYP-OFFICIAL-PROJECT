@@ -4,7 +4,7 @@ import MainContent from "./Homepage1/MainContent.jsx";
 import {ICONS,ICONS2} from "./site_icons/index.jsx";
 
 import rec from "../src/site_icons/rec3.png";
-import xxx from "./site_icons/worker.png";
+import xxx from "./site_icons/worker1.png";
 import xx from "./site_icons/doco.png";
 import x1 from "./site_icons/maths.png";
 import x2 from "./site_icons/rock2.png";
