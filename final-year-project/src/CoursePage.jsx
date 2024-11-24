@@ -226,8 +226,8 @@ export default function CoursePage(){
                             viewport={{ once: true }}>
                             <div className="main-course-txt">courses.</div>
                          {/* <p className="hdr-course-txt2">explore opportunities</p> */}
-                            {courseView === true && <button className="btn-course-view" onClick={changeview}>click for card view of courses</button>}
-                            {courseView === false && <button className="btn-course-view" onClick={changeview}>click for list view of courses</button>}
+                            {courseView === true && <button className="btn-course-view" onClick={changeview}>click for list view of courses</button>}
+                            {courseView === false && <button className="btn-course-view" onClick={changeview}>click for card view of courses</button>}
                 </motion.div>
                 <div className="right-hd-cs"></div>
             </div>
@@ -242,7 +242,7 @@ export default function CoursePage(){
                         transition={{ duration: 0.5,delay: 0 }}
                         viewport={{ once: true }}>
                        
-                        {courseView === true && courses.map((course)=>( 
+                        {courseView === false && courses.map((course)=>( 
                             
                          <motion.div className="course-program-card2"         
                          initial={{ opacity: 0 }}
@@ -260,7 +260,7 @@ export default function CoursePage(){
                         }
                    
                   
-                        {courseView === false && courses.map((course)=>( 
+                        {courseView === true && courses.map((course)=>( 
                             
                             <motion.div className="course-program-card"         
                             initial={{ opacity: 0 }}
