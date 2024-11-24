@@ -15,6 +15,7 @@ import slide from "./site_icons/lapslide.png";
 import slide1 from "./site_icons/lapslide2.png";
 import slide2 from "./site_icons/lapslide3.png";
 import slide3 from "./site_icons/lapslide4.png";
+import slide4 from "./site_icons/lapslide5.png";
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect, useContext } from "react";
 import { Context } from './App.jsx';
@@ -33,7 +34,7 @@ const Homepage3 = () => {
   const [currentText1, setCurrentText1] = useState(1);
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentText1((prev) => (prev === 4 ? 1 : prev + 1)); // Cycle between 1, 2, and 3
+      setCurrentText1((prev) => (prev === 5 ? 1 : prev + 1)); // Cycle between 1, 2, and 3
     }, 4000); // 5 seconds interval
 
     return () => clearInterval(interval); // Cleanup the interval on component unmount
@@ -114,7 +115,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
                   overflow: "hidden"
               }}/>}</AnimatePresence>
               <AnimatePresence>
-              {currentText1 === 3 && 
+              {currentText1 === 5 && 
               <motion.img src={slide2} 
               initial={{ opacity: 0,filter: "blur(10px)" }} 
               animate={{ opacity: 1 ,filter: "blur(0px)"}} 
@@ -130,6 +131,20 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
               <AnimatePresence>
               {currentText1 === 4 && 
               <motion.img src={slide3} 
+              initial={{ opacity: 1,filter: "blur(10px)" }} 
+              animate={{ opacity: 1 ,filter: "blur(0px)"}} 
+              transition={{duration: 0.5}}
+         
+
+              style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  overflow: "hidden"
+              }}/>}
+              </AnimatePresence>
+              <AnimatePresence>
+              {currentText1 === 3 && 
+              <motion.img src={slide4} 
               initial={{ opacity: 1,filter: "blur(10px)" }} 
               animate={{ opacity: 1 ,filter: "blur(0px)"}} 
               transition={{duration: 0.5}}
@@ -241,7 +256,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
                  overflow: "hidden"
              }}/>}</AnimatePresence>
              <AnimatePresence>
-             {currentText1 === 3 && 
+             {currentText1 === 5 && 
              <motion.img src={slide2} 
              initial={{ opacity: 1,filter: "blur(10px)" }} 
              animate={{ opacity: 1 ,filter: "blur(0px)"}} 
@@ -268,6 +283,20 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
                  overflow: "hidden"
              }}/>}
              </AnimatePresence>
+             <AnimatePresence>
+              {currentText1 === 3 && 
+              <motion.img src={slide4} 
+              initial={{ opacity: 1,filter: "blur(10px)" }} 
+              animate={{ opacity: 1 ,filter: "blur(0px)"}} 
+              transition={{duration: 0.5}}
+         
+
+              style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  overflow: "hidden"
+              }}/>}
+              </AnimatePresence>
               </div>
               <div className="bgrad"
         src={s1}
