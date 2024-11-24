@@ -17,7 +17,7 @@ export default function AboutUs(){
     return(
         <>
         <div className="AboutUsPage">
-        <img src={rec} className="background-top-light"/>
+        <img src={rec} className="background-top-light" style={{zIndex: 0}}/>
         <Header />
         {/* <img src={bg2} className="background-icon2"/> */}
             <div className="about-us-header">

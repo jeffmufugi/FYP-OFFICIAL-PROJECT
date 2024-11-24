@@ -232,7 +232,7 @@ html, body {
 
 .btn1{
   font-family: Inter, sans-serif;
-   background-color: #6a78a3;;
+   background-color: #4f4c6d;;
    font-size: 14px;
    font-weight: bolder;
    color: white;
@@ -261,7 +261,7 @@ html, body {
 
 .btn2{
   font-family: Inter, sans-serif;
-   background-color: #4f4c6d;
+   background-color: #e8831e;
    font-size: 14px;
    font-weight: bolder;
    color: white;
@@ -2188,7 +2188,7 @@ z-index: 1;
 }
 
 .cs-course-page3{
-  min-height: 100vh; /* Allow sections to stretch beyond viewport */
+  height: auto; /* Allow sections to stretch beyond viewport */
  max-width: 100vw; /* Constrain width to viewport */
  position: relative;
  overflow: hidden; /* Prevent overflow */
@@ -2363,8 +2363,7 @@ z-index: 1;
   flex-direction: column;
 }
 
-.top-salary-course-right,
-.bottom-salary-course-right{
+.top-salary-course-right{
   display: flex;
   flex: 1;
 }
@@ -2378,8 +2377,10 @@ z-index: 1;
 
 .ab4x{
     display: flex;
-    padding: 30px;
+    padding: 20px 30px 30px 30px;
     justify-content: center;
+    flex:1;
+    align-items: center;
  
 }
 
@@ -2998,7 +2999,7 @@ margin-left: 5px;
 
 }
 .btn1{
-  background-color: #6a78a3;
+  background-color: #1a2750;
 }
 .btn2{
   background-color: #4f4c6d;

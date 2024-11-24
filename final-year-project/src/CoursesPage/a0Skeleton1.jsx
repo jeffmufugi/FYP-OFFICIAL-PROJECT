@@ -311,7 +311,7 @@ export function Page3({selectedCountry,countries,experienceSalary,experienceSala
          
                   
           </div>
-          <div className="bottom-salary-course-right" style={{backgroundColor :homepageInfo[1].backgroundColor1}}>
+          {/* <div className="bottom-salary-course-right" style={{backgroundColor :homepageInfo[1].backgroundColor1}}>
           <div className="ab1x">
               <motion.img className="course-p2-img" src={tm} alt="" {...fadeInFromLeft2.left1}/>
             </div>
@@ -419,7 +419,7 @@ export function Page3({selectedCountry,countries,experienceSalary,experienceSala
 
             </div>
             
-          </div>
+          </div> */}
 
         </div>
 

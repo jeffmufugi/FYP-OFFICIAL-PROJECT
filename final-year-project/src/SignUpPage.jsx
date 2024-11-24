@@ -80,7 +80,7 @@ const isSmallScreen = useMedia({ minWidth: 825 });
     return (
         <div className="sign-up-page">
             
-            <img src={rec} className="background-top-light" alt="Background" />
+            <img src={rec} className="background-top-light" alt="Background" style={{zIndex: 0}}/>
             <Header />
             
             <div className="sign-up-header">

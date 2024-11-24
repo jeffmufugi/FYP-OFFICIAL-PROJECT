@@ -61,7 +61,7 @@ export default function SignInPage(){
     return(
         <>
         <div className="sign-in-page">
-        <img src={rec} className="background-top-light"/>
+        <img src={rec} className="background-top-light" style={{zIndex: 0}}/>
         <Header />
         {/* <img src={bg2} className="background-icon1"/> */}
             <div className="sign-in-header">
