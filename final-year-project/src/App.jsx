@@ -60,7 +60,7 @@ function App() {
 
 
   return (
-    <BrowserRouter> 
+    
     
     <Router>
       <Context.Provider value = {[signedIn,setSignedIn]}>
@@ -102,12 +102,10 @@ function App() {
           
           />
         </Routes>
-        
 
       </div>
       </Context.Provider>
     </Router>
-    </BrowserRouter>
   );
 }
 
