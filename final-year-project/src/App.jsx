@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, ScrollRestoration } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage1 from "./Homepage1.jsx";
 import Homepage2 from "./Homepage2.jsx";
 import Homepage3 from "./Homepage3.jsx";
@@ -60,6 +60,7 @@ function App() {
 
 
   return (
+    <BrowserRouter> 
     
     <Router>
       <Context.Provider value = {[signedIn,setSignedIn]}>
@@ -101,10 +102,12 @@ function App() {
           
           />
         </Routes>
+        
 
       </div>
       </Context.Provider>
     </Router>
+    </BrowserRouter>
   );
 }
 
