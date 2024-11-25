@@ -32,7 +32,9 @@ export default Homepage1;
 
  
 const Footer = () => {
-  const isLargeScreen = useMedia({ minWidth: 1024 });
+  const isLargeScreen = useMedia({ minWidth: 670 });
+
+
   const iconsArray = Object.values(ICONS); // Get the array of image paths
   const iconsArray2 = Object.values(ICONS2); // Get the array of image paths
 

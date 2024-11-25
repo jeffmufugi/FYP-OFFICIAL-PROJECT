@@ -1,5 +1,5 @@
 import i1 from "../site_icons/worker.png";
-import i2 from "../site_icons/roboto.png";
+import i2 from "../site_icons/doco.png";
 import i3 from "../site_icons/compass.png";
 import i4 from "../site_icons/rokay.png";
 import i5 from "../site_icons/science.png";
