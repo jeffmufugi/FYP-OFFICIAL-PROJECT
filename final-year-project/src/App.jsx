@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from "@vercel/analytics/react"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage1 from "./Homepage1.jsx";
 import Homepage2 from "./Homepage2.jsx";
@@ -70,7 +71,7 @@ function App() {
       
       <div className="app-container">
 
-     
+      <Analytics />
 
         <Routes>
           <Route path="/" element={
@@ -80,6 +81,7 @@ function App() {
               <Homepage3 />
             </>
           } />
+          
           <Route path="/signup" element={<SignUpPage/>} />
           <Route path="/signin" element={<SignInPage />} />
           <Route path="/contactus" element={<ContactUs />} />
@@ -106,6 +108,7 @@ function App() {
       </div>
       </Context.Provider>
     </Router>
+    
   );
 }
 
