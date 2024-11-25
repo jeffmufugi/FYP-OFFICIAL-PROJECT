@@ -358,9 +358,9 @@ html, body {
 }
 
 
-.footer-image:nth-child(1) { left: 0%; z-index: 3; }
-.footer-image:nth-child(2) { left: 9%; z-index: 2; }
-.footer-image:nth-child(3) { left: 14%; z-index: 3; }
+.footer-image:nth-child(1) { left: 0%; z-index: 2; }
+.footer-image:nth-child(2) { left: 9%; z-index: 3; }
+.footer-image:nth-child(3) { left: 14%; z-index: 2; }
 .footer-image:nth-child(4) { left: 21%; z-index: 1; }
 .footer-image:nth-child(5) { left: 28%; z-index: 2; }
 .footer-image:nth-child(6) { left: 35%; z-index: 3; }
