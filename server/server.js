@@ -9,7 +9,7 @@ const app = express();
 
 // Add CORS configuration
 app.use(cors({
-  origin: 'https://fyp-official-project-i5zl.vercel.app/', // Allow your frontend origin
+  origin: 'https://fyp-official-project-i5zl.vercel.app', // Allow your frontend origin
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
   allowedHeaders: ['Content-Type', 'Authorization'] // Allowed headers
 }));
@@ -49,15 +49,8 @@ const openAIRoute = require("./routes/openai.js");
 app.use("/ask", openAIRoute);
 
 app.all("*",(req,res)=>{
-
   res.status(404).send("<h1>Page not found</h1>")
-
-
 })
-
-
-
-
 
 
 app.listen(PORT, () => {
