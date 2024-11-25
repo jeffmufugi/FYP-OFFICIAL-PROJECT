@@ -9,7 +9,7 @@ const app = express();
 
 // Add CORS configuration
 app.use(cors({
-  origin: 'https://fyp-official-project-i5zl.vercel.app', // Allow your frontend origin
+  origin: ['https://fyp-official-project-i5zl.vercel.app','http://localhost:5173','https://careercampus.vercel.app'], // Allow your frontend origin
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
   allowedHeaders: ['Content-Type', 'Authorization'] // Allowed headers
 }));
