@@ -4,21 +4,21 @@ import Header from "./Homepage1/Header1.jsx";
 import back from "../src/site_icons/backab.svg";
 import ai from "../src/site_icons/atom1.svg";
 import cst from "../src/site_icons/cst.png";
-import cst2 from "../src/site_icons/cst2.svg";
-import mec from "../src/site_icons/mec.svg";
-import chem from "../src/site_icons/chem.svg";
-import phy from "../src/site_icons/phy1.png";
+import cst2 from "../src/site_icons/cst2.png";
+import mec from "../src/site_icons/mec.png";
+import chem from "../src/site_icons/chem.png";
+import phy from "../src/site_icons/phy.png";
 import ast from "../src/site_icons/ast.svg";
-import bio from "../src/site_icons/bio.svg";
-import mat from "../src/site_icons/mat.svg";
-import rob from "../src/site_icons/rob.svg";
-import civ from "../src/site_icons/civ.svg";
-import nuc from "../src/site_icons/nuc.svg";
+import bio from "../src/site_icons/bio.png";
+import mat from "../src/site_icons/mat.png";
+import rob from "../src/site_icons/rob.png";
+import civ from "../src/site_icons/civ.png";
+import nuc from "../src/site_icons/nuc.png";
 import geo from "../src/site_icons/geo.svg";
-import dat from "../src/site_icons/dat.svg";
-import air from "../src/site_icons/air.svg";
-import cyb from "../src/site_icons/cyb.svg";
-import mar from "../src/site_icons/mar.svg";
+import dat from "../src/site_icons/dat.png";
+import air from "../src/site_icons/air.png";
+import cyb from "../src/site_icons/cyb.png";
+import mar from "../src/site_icons/mar.png";
 import rec from "../src/site_icons/rec3.png";
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -226,8 +226,8 @@ export default function CoursePage(){
                             viewport={{ once: true }}>
                             <div className="main-course-txt">courses.</div>
                          {/* <p className="hdr-course-txt2">explore opportunities</p> */}
-                            {courseView === true && <button className="btn-course-view" onClick={changeview}>click for list view of courses</button>}
-                            {courseView === false && <button className="btn-course-view" onClick={changeview}>click for card view of courses</button>}
+                            {courseView === false && <button className="btn-course-view" onClick={changeview}>click for list view of courses</button>}
+                            {courseView === true && <button className="btn-course-view" onClick={changeview}>click for card view of courses</button>}
                 </motion.div>
                 <div className="right-hd-cs"></div>
             </div>
@@ -242,7 +242,7 @@ export default function CoursePage(){
                         transition={{ duration: 0.5,delay: 0 }}
                         viewport={{ once: true }}>
                        
-                        {courseView === false && courses.map((course)=>( 
+                        {courseView === true && courses.map((course)=>( 
                             
                          <motion.div className="course-program-card2"         
                          initial={{ opacity: 0 }}
@@ -251,7 +251,7 @@ export default function CoursePage(){
                          transition={{ duration: 0.3 }}>
                             <div className="course-card2">
                           
-                            <div className="computer-science-ftr2" style={{backgroundColor : "#4C4A59"}} onClick={course.route}>
+                            <div className="computer-science-ftr2"  onClick={course.route}>
                                 <p className="txt-121" style={{color : "white"}}>{course.courseName}</p>
                             </div>
                         </div>
@@ -260,7 +260,7 @@ export default function CoursePage(){
                         }
                    
                   
-                        {courseView === true && courses.map((course)=>( 
+                        {courseView === false && courses.map((course)=>( 
                             
                             <motion.div className="course-program-card"         
                             initial={{ opacity: 0 }}
@@ -269,7 +269,7 @@ export default function CoursePage(){
                             transition={{ duration: 0.3 }}> 
                                <div className="course-card" key={course.id} style={{backgroundColor : "#E0E0E0"}} onClick={course.route} >
                                <img src={course.imgName} className="imgcst"/>
-                               <div className="computer-science-ftr" style={{backgroundColor : "#4C4A59"}}>
+                               <div className="computer-science-ftr" style={{backgroundColor : "#001326"}}>
                                    <p className="txt-121" style={{color : "white"}}>{course.courseName}</p>
                                </div>
                            </div>
