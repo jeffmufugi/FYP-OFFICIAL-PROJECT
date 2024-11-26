@@ -121,7 +121,7 @@ const isSmallScreen = useMedia({ minWidth: 825 });
                         <div className="input-field-2">
                             <p className="TopPlaceHolder">Email*</p>
                             <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-                            <img src={email} alt="email-icon" className="text-img" style={{width:"30px"}}/>
+                            <img src={email} alt="email-icon" className="text-img" style={{width:"28px"}}/>
                         </div>
                         <div className="input-field-3">
                             <p className="TopPlaceHolder">Phone Number*</p>
