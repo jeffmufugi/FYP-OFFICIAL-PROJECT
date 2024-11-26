@@ -6,7 +6,7 @@ import bg2 from "./site_icons/bg4.png";
 import Homepage3 from "./Homepage3.jsx";
 import Header from "./Homepage1/Header1.jsx";
 import rec from "./site_icons/rec3.png";
-import img from "./site_icons/rec4.svg";
+import img from "./site_icons/con.png";
 
 export default function AboutUs(){
     const navigate = useNavigate();
@@ -28,7 +28,7 @@ export default function AboutUs(){
                             transition={{ duration: 0.3 }}
                             viewport={{ once: true }}>about Us.</motion.h1>
 
-                            <img src={img} alt="" />
+                            <img src={img} alt="" style={{width:"110px",height:"110px"}}/>
 
                    
                     

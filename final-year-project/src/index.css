@@ -1239,7 +1239,7 @@ z-index: 1;
 
 .sign-in-header-text{
   font-size: 70px;
-  color: #374d55;
+  color: #253439;
   font-family: Inter, sans-serif;
   font-weight: 900;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -1323,14 +1323,14 @@ z-index: 1;
     margin-top: 10%;
     font-family: Inter, sans-serif;
     font-weight: lighter;
-    background-color: #374d55;
+    background-color: #253439;
     font-size: 14px;
     font-weight: bolder;
     color: white;
     border: none;
     width: 157px;
     height: 42px;
-    border-radius: 10px;
+    border-radius: 3px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */

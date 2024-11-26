@@ -120,9 +120,9 @@ return (
                 (<>
                       
                 <motion.ul className="mediaheadersmall"  
-                                 initial={{ opacity: 0, y:-30 }}
+                                 initial={{ opacity: 0, y:-4 }}
                                  animate={{ opacity: 1, y:0 }}
-                                 exit={{ opacity: 0, y: -10 }}
+                                 exit={{ opacity: 0, y: -4 }}
                                  transition={{ duration: 0.3 }}>
                       <li className='l1' onClick={homeClick}>Home</li>
                       <li className='l1' onClick={AboutUsClick}>About Us</li>

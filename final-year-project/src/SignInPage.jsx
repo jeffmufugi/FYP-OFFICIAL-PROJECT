@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import bg2 from "./site_icons/bgech1.png";
 import lock from "./site_icons/Lock2.svg";
 import email from "./site_icons/Email2.svg";
-import rocketL from "./site_icons/RocketL.svg";
+import rocketL from "./site_icons/rok.png";
 import rec from "./site_icons/rec3.png";
 import Header from "./Homepage1/Header1.jsx";
 import axios from 'axios';
@@ -73,7 +73,7 @@ export default function SignInPage(){
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.3 }}
                             viewport={{ once: true }}
-                            >sign in to your account .</motion.h1>
+                           style={{textAlign:"left"}} >sign in to your account .</motion.h1>
                 </div>
           
                 </div>
