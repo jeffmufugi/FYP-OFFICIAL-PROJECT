@@ -92,7 +92,7 @@ export default function SignInPage(){
                        <div className="input-field-1s">  
                             <p className="TopPlaceHolder">Email*</p>
                             <input type="text" name="email" value={formData.email} onChange={handleChange} required/>
-                            <img src={email} alt="person-icon" className="text-img"/>
+                            <img src={email} alt="person-icon" className="text-img" style={{width:"28px"}}/>
                         </div>
                  
                    
