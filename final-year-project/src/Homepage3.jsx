@@ -91,7 +91,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
             
              <motion.img src={slide} 
              
-              initial={{ opacity: 0,filter: "blur(10px)" }} 
+              initial={{ opacity: 1,filter: "blur(10px)" }} 
               animate={{ opacity: 1 ,filter: "blur(0px)"}} 
   
               transition={{duration: 0.5}}
@@ -105,7 +105,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
               
               <AnimatePresence>{currentText1 === 2 && 
               <motion.img src={slide1} 
-              initial={{ opacity: 0,filter: "blur(10px)" }} 
+              initial={{ opacity: 1,filter: "blur(10px)" }} 
               animate={{ opacity: 1 ,filter: "blur(0px)"}} 
               transition={{duration: 0.5}} 
 
@@ -117,7 +117,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
               <AnimatePresence>
               {currentText1 === 5 && 
               <motion.img src={slide2} 
-              initial={{ opacity: 0,filter: "blur(10px)" }} 
+              initial={{ opacity: 1,filter: "blur(10px)" }} 
               animate={{ opacity: 1 ,filter: "blur(0px)"}} 
               transition={{duration: 0.5}}
        
@@ -170,13 +170,13 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
         
         {currentText === 1 && <>
           <motion.h1 style={{fontSize:"3vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"Inter",fontWeight:"900",color:"#355356"}}
-           initial={{ x: "-10px", opacity: 0 }} // Start off-screen
+           initial={{ x: "-10px", opacity: 1 }} // Start off-screen
            animate={{ x: 0, opacity: 1 }} // Slide in and fade in
            transition={{duration: 0.5}}
           
           >WELCOME</motion.h1>
             <motion.h1 style={{fontSize:"2vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"Inter",fontWeight:"100",color:"white"}}
-              initial={{ x: "10px", opacity: 0 }} 
+              initial={{ x: "10px", opacity: 1 }} 
               animate={{ x: 0, opacity: 1 }} 
               transition={{duration: 0.5}}
 
@@ -184,7 +184,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
         </>}
         {currentText === 2 && <>
           <motion.h1  style={{fontSize:"3vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"Inter",fontWeight:"900",color:"#355356"}}
-                 initial={{ x: "10px", opacity: 0 }} // Start off-screen
+                 initial={{ x: "10px", opacity: 1 }} // Start off-screen
                  animate={{ x: 0, opacity: 1 }} // Slide in and fade in
                  transition={{duration: 0.5}}
           >COMPARE</motion.h1 >
@@ -198,12 +198,12 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
         </>}
         {currentText === 3 && <>
           <motion.h1 
-                   initial={{ x: "-10px", opacity: 0 }} // Start off-screen
+                   initial={{ x: "-10px", opacity: 1 }} // Start off-screen
                    animate={{ x: 0, opacity: 1 }} // Slide in and fade in
                    transition={{duration: 0.5}}
             style={{fontSize:"3vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"Inter",fontWeight:"900",color:"#355356"}}>ANALSYE</motion.h1>
         <motion.h1 
-               initial={{ x: "10px", opacity: 0 }} // Start off-screen
+               initial={{ x: "10px", opacity: 1 }} // Start off-screen
                animate={{ x: 0, opacity: 1 }} // Slide in and fade in
                transition={{duration: 0.5}}
         style={{fontSize:"2vw",marginLeft:"4vw",marginTop:"3vw",fontFamily:"Inter",fontWeight:"100",color:"white"}}>INTO CAREER<br/>INSIGHTS</motion.h1 >
@@ -309,24 +309,24 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
 
         {currentText === 1 && <>
           <motion.h1 
-             initial={{ x: "-10px", opacity: 0 }} // Start off-screen
+             initial={{ x: "-10px", opacity: 1 }} // Start off-screen
              animate={{ x: 0, opacity: 1 }} // Slide in and fade in
              transition={{duration: 0.5}}
             style={{fontSize:"4vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"Inter",fontWeight:"900",color:"#355356"}}>WELCOME</motion.h1>
             <motion.h1 
-             initial={{ x: "10px", opacity: 0 }} // Start off-screen
+             initial={{ x: "10px", opacity: 1 }} // Start off-screen
              animate={{ x: 0, opacity: 1 }} // Slide in and fade in
              transition={{duration: 0.5}}
             style={{fontSize:"3vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"Inter",fontWeight:"400",color:"white"}}>EXPLORE DIVERSE<br/>CAREER PATHS</motion.h1>
         </>}
         {currentText === 2 && <>
           <motion.h1 
-             initial={{ x: "10px", opacity: 0 }} // Start off-screen
+             initial={{ x: "10px", opacity: 1 }} // Start off-screen
              animate={{ x: 0, opacity: 1 }} // Slide in and fade in
              transition={{duration: 0.5}}
             style={{fontSize:"4vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"Inter",fontWeight:"900",color:"#355356"}}>COMPARE</motion.h1>
         <motion.h1 
-         initial={{ x: "-10px", opacity: 0 }} // Start off-screen
+         initial={{ x: "-10px", opacity: 1 }} // Start off-screen
          animate={{ x: 0, opacity: 1 }} // Slide in and fade in
          transition={{duration: 0.5}}
         style={{fontSize:"3vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"Inter",fontWeight:"300",color:"white"}}>WEIGH WHICH PATH<br/>SUITS YOU BEST</motion.h1>
@@ -335,12 +335,12 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
         </>}
         {currentText === 3 && <>
           <motion.h1 
-             initial={{ x: "-10px", opacity: 0 }} // Start off-screen
+             initial={{ x: "-10px", opacity: 1 }} // Start off-screen
              animate={{ x: 0, opacity: 1 }} // Slide in and fade in
              transition={{duration: 0.5}}
             style={{fontSize:"4vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"Inter",fontWeight:"900",color:"#355356"}}>ANALYSE</motion.h1>
         <motion.h1 
-         initial={{ x: "10px", opacity: 0 }} // Start off-screen
+         initial={{ x: "10px", opacity: 1 }} // Start off-screen
          animate={{ x: 0, opacity: 1 }} // Slide in and fade in
          transition={{duration: 0.5}}
         style={{fontSize:"3vw",marginLeft:"7vw",marginTop:"5vw",fontFamily:"Inter",fontWeight:"300",color:"white"}}>INTO CAREER<br/>INSIGHTS</motion.h1>

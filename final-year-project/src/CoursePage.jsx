@@ -220,7 +220,7 @@ export default function CoursePage(){
 
             <div className="course-page-headings">
             <div className="left-hd-cs"></div>
-                <motion.div className="mid-hd-cs" initial={{ opacity: 0 }}
+                <motion.div className="mid-hd-cs" initial={{ opacity: 1 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 1 }}
                             viewport={{ once: true }}>
@@ -237,18 +237,18 @@ export default function CoursePage(){
                 <div className="left-main-cs"></div>
                 <div className="mid-main-cs">
 
-                   <motion.div className="card-row" initial={{ x: 100 ,opacity: 0 }}
+                   <motion.div className="card-row" initial={{ x: 100 ,opacity: 1 }}
                         whileInView={{ x: 0 ,opacity: 1 }}
                         transition={{ duration: 0.5,delay: 0 }}
                         viewport={{ once: true }}>
                        
                         {courseView === true && courses.map((course)=>( 
-                            
+                          <AnimatePresence mode='wait'> 
                          <motion.div className="course-program-card2"         
-                         initial={{ opacity: 0 }}
-                         animate={{ opacity: 1}}
+                         initial={{ opacity: 1, y:30 }}
+                         animate={{ opacity: 1,y:0}}
                          exit={{ opacity: 0}}
-                         transition={{ duration: 0.3 }}>
+                         transition={{type: "spring", stiffness: 70, damping: 20, duration:4}}>
                             <div className="course-card2">
                           
                             <div className="computer-science-ftr2"  onClick={course.route}>
@@ -256,17 +256,18 @@ export default function CoursePage(){
                             </div>
                         </div>
                     </motion.div>
+                    </AnimatePresence>  
                         ))
                         }
                    
                   
                         {courseView === false && courses.map((course)=>( 
-                            
+                            <AnimatePresence mode='wait'>
                             <motion.div className="course-program-card"         
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1}}
+                            initial={{ opacity: 1, y:30 }}
+                            animate={{ opacity: 1,y:0 }}
                             exit={{ opacity: 0 }}
-                            transition={{ duration: 0.3 }}> 
+                            transition={{ type: "spring", stiffness: 70, damping: 20, duration: 0.5 }}> 
                                <div className="course-card" key={course.id} style={{backgroundColor : "#E0E0E0"}} onClick={course.route} >
                                <img src={course.imgName} className="imgcst"/>
                                <div className="computer-science-ftr" style={{backgroundColor : "#001326"}}>
@@ -274,6 +275,7 @@ export default function CoursePage(){
                                </div>
                            </div>
                        </motion.div>
+                       </AnimatePresence>
                            ))
                            }
                       
