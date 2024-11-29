@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useContext, useState } from 'react';
 import { Context } from '../App';
-import a2 from "../site_icons/rec5.svg";
+import a2 from "../site_icons/loggedin2.png";
 import ai from "../site_icons/atom4.svg";
 import useMedia from 'use-media';
 import ax from "../site_icons/menu2.svg";
@@ -76,7 +76,7 @@ return (
           <div className="right-hdr" style={{position:"relative"}}>
         
           {signedIn === true &&  <>
-            <img src={a2} alt="" onClick={toggleDropdown} style={{cursor:"pointer"}}/>
+            <img src={a2} alt="" onClick={toggleDropdown} style={{cursor:"pointer",width:"30px"}}/>
                 <AnimatePresence>
                 {isOpen === true && 
                 (<>

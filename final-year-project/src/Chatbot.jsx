@@ -178,7 +178,7 @@ export function DraggableIcon({ setChatBot, initialPosition = { x: 20, y: 385 } 
       <img
         src={ai}
         onMouseDown={handleMouseDown}
-        style={{ position: "absolute", left: position.x, top: position.y, cursor: "pointer", zIndex: 10 }}
+        style={{ position: "absolute", left: position.x, top: position.y, cursor: "pointer", zIndex: 10,width:"30px" }}
       />
     );
   }

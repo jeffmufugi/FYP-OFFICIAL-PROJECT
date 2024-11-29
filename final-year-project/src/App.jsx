@@ -57,7 +57,11 @@ function App() {
 
         const [signedIn,setSignedIn] = useState(false);
 
-
+        const LoadingScreen = () => (
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+            <h1>Loading...</h1>
+          </div>
+        );
 
 
   return (

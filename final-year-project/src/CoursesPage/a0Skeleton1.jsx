@@ -250,25 +250,26 @@ export function Page3({selectedCountry,countries,experienceSalary,experienceSala
                 {...fadeInFromLeft3.left2}
             >
                     {courseData.map((course,index) => (
-                      <li className="course-name-desc"
-                      style={{ color: homepageInfo[1].fontColor }}
+              <div className="course-name-desc"
+                      style={{ color: homepageInfo[1].fontColor ,whiteSpace:"nowrap"}}
                       onMouseEnter={() => handleMouseEnter(index)}
                       onMouseLeave={handleMouseLeave}
                       key={index}>
                         {course.name}
+
                         {hoveredCourse === index && (
                         <motion.div className="course-desc-hov" style={{ 
-                            backgroundColor: homepageInfo[1].popupcolor1, 
-                            color: homepageInfo[1].popupcolor2, 
-                            boxShadow: `0px -30px 20px -10px ${homepageInfo[1].popupcolor2}, 
-                                        20px 0px 20px -10px ${homepageInfo[1].popupcolor2},  
-                                        -20px 0px 20px -10px ${homepageInfo[1].popupcolor2}` 
-                        }}
-                        {...fadeInFromLeft3.left7}>
-                          {course.description}
+                                  backgroundColor: homepageInfo[1].popupcolor1, 
+                                  color: homepageInfo[1].popupcolor2, 
+                                  boxShadow: `0px -30px 20px -10px ${homepageInfo[1].popupcolor2}, 
+                                              20px 0px 20px -10px ${homepageInfo[1].popupcolor2},  
+                                              -20px 0px 20px -10px ${homepageInfo[1].popupcolor2}` 
+                              }}
+                              {...fadeInFromLeft3.left7}>
+                                {course.description}
                         </motion.div>
-            )}
-                        </li>
+                       )}
+                 </div>
                     ))}
 
 
@@ -532,24 +533,30 @@ export function Page5({homepageInfo,challengesArray,dsp,handleMouseEnter,handleM
                 {...fadeInFromLeft3.left6}
                 style={{ color: homepageInfo[1].fontColor }}>
                     {challengesArray.map((title,index) => (
-                      <li className="course-name-desc1"
+            <li className="course-name-desc1"
+            style={{whiteSpace:"nowrap"}}
                       key={index}
                       onMouseEnter={() => handleMouseEnter(index,"challenges")}
                       onMouseLeave={handleMouseLeave}>
                         {title.heading}
                         {hoveredCourse === index && (
                         <motion.div className="course-desc-hov1" 
-                        style={{ 
-                            backgroundColor: homepageInfo[1].popupcolor1, 
-                            color: homepageInfo[1].popupcolor2, 
-                            boxShadow: `0px -30px 20px -10px ${homepageInfo[1].popupcolor2}, 
-                                        20px 0px 20px -10px ${homepageInfo[1].popupcolor2},  
-                                        -20px 0px 20px -10px ${homepageInfo[1].popupcolor2}` 
-                        }}
-                        {...fadeInFromLeft3.left7}>
-                          {title.description}
-  </motion.div>
-)}</li>))}</motion.ul> </div></div>
+                            style={{ 
+                                backgroundColor: homepageInfo[1].popupcolor1, 
+                                color: homepageInfo[1].popupcolor2, 
+                                boxShadow: `0px -30px 20px -10px ${homepageInfo[1].popupcolor2}, 
+                                            20px 0px 20px -10px ${homepageInfo[1].popupcolor2},  
+                                            -20px 0px 20px -10px ${homepageInfo[1].popupcolor2}` 
+                            }}
+                            {...fadeInFromLeft3.left7}>
+                              {title.description}
+                      </motion.div>
+              )}
+          </li>
+          ))}
+          </motion.ul> 
+          </div>
+          </div>
 
 
         <div className="salary-course-right" >
@@ -570,11 +577,16 @@ export function Page5({homepageInfo,challengesArray,dsp,handleMouseEnter,handleM
           <motion.ul 
                 className="main-text-coursex" 
                 {...fadeInFromLeft3.left6}
-                style={{ color: homepageInfo[1].fontColor }}>{issuesArray.map((title,index) => (
-                      <li key={index} className="course-name-desc1" onMouseEnter={() => handleMouseEnter(index,"issues")}
-                      onMouseLeave={handleMouseLeave}>
+                style={{ color: homepageInfo[1].fontColor }}
+                >{issuesArray.map((title,index) => (
+                      <li key={index} 
+                      className="course-name-desc1" 
+                      onMouseEnter={() => handleMouseEnter(index,"issues")}
+                      onMouseLeave={handleMouseLeave}
+                      >
                       {title.heading}
                       {hoveredText === index && (
+                      
                       <motion.div className="course-desc-hov1" 
                       style={{ 
                         backgroundColor: homepageInfo[1].popupcolor1, 

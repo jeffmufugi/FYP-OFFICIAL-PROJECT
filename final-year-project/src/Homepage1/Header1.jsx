@@ -3,7 +3,7 @@ import ai from "../site_icons/atom1.svg";
 import { motion, AnimatePresence } from 'framer-motion';
 import { useContext, useState } from 'react';
 import { Context } from '../App';
-import a2 from "../site_icons/loggedin.svg";
+import a2 from "../site_icons/loggedin.png";
 import useMedia from 'use-media';
 import ax from "../site_icons/menu.svg";
 
@@ -82,7 +82,7 @@ return (
           <div className="right-hdr" style={{position:"relative"}}>
         
           {signedIn === true &&  <>
-            <img src={a2} alt="" onClick={toggleDropdown} style={{cursor:"pointer"}}/>
+            <img src={a2} alt="" onClick={toggleDropdown} style={{cursor:"pointer",width:"30px"}}/>
                 <AnimatePresence>
                 {isOpen === true && 
                 (<>
