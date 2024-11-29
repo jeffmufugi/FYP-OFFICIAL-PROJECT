@@ -18,7 +18,7 @@ import { useState,useRef, useEffect,useContext } from "react";
 import {countries,topspecializations,
   trend,skills,challengesArray,issuesArray,coreAreasOfStudy,jobGrowthFields,experienceSalary,experienceSalary1,
   homepageInfo,prerequisites,getTopCourses,homepageInfo2,homepageInfo1} from './csextdata.jsx';
-import { Page1,Page2,Page3,Page4,Page5, fadeInFromLeft} from "./a0Skeleton1.jsx";
+import { Page1,Page2,Page3,Page4,Page5, fadeInFromLeft} from "./a0Skeleton.jsx";
 
 
 const ComputerScienceCourse = () => {
