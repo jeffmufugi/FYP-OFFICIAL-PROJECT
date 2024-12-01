@@ -108,8 +108,8 @@ const ComputerScienceCourse = () => {
   
   return (
     <>
-    <div className="cs-course-page" style={{background: "linear-gradient(to bottom, #5556B6, white)"}}>
-      
+    <div className="cs-course-page" style={{background:"linear-gradient(to bottom, #5657B2, #ffffffbb 80%)"}}>
+      {/* <img src={fadebg} className="course-fadebg"/> */}
       <Header1 />
       <Page1 
             coursename={homepageInfo[0].courseName}

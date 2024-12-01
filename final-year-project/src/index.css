@@ -2045,8 +2045,6 @@ z-index: 1;
 .cs-course-page{
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
-  background-image: url("site_icons/Noise Light 220.png");
   overflow-x: hidden; /* Ensure no horizontal scrolling */
   z-index: 0;
 }
