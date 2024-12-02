@@ -2521,7 +2521,7 @@ text-align: center;
   display: flex;
   justify-content: space-evenly;
 }
-
+/* for salary */
 .course-desc-hov{
   background-color: #2b1689;
   color: rgb(155, 249, 247);
@@ -2539,8 +2539,9 @@ text-align: center;
   20px 0px 20px -10px #E1E1FE,  
   -20px 0px 20px -10px #dedeff; 
   white-space: normal;
+  text-align:start;
 }
-
+/* for challenges */
 .course-desc-hov1{
   background-color: #2b1689;
   color: rgb(155, 249, 247);

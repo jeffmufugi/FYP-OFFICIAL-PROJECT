@@ -111,7 +111,7 @@ return (
         
         
        
-        <img src={ai} className="header1-img"/>
+        <img src={ai} className="header1-img" onClick={homeClick}/>
         
           
         <img src={ax} onClick={toggleDropdown2} style={{zIndex:3,cursor:"pointer"}}/> 

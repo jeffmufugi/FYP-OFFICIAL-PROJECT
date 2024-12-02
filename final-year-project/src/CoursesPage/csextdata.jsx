@@ -161,6 +161,8 @@ export const homepageInfo = [
     backgroundColor2:"#E1E1FE",
     backgroundColor3:"#EEEEFF",
     fontColor: "#1B046C",
+    popupcolor1 : "#2b1689",
+    popupcolor2 : "#EEEEFF",
 }
       ];
     

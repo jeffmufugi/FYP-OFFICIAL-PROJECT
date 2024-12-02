@@ -9,12 +9,12 @@ export const homepageInfo = [
     
     {
         description: `Robotics involves developing systems that can perform a wide range of tasks, from manufacturing to healthcare, driven by advances in AI, sensor technology, and machine learning.`,
-        backgroundColor1:"#F3F4F6",
-        backgroundColor2:"#E5E7EB",
-        backgroundColor3:"#D1D5DB",
+        backgroundColor1:"#E3ECFD",
+        backgroundColor2:"#DBE5F9",
+        backgroundColor3:"#D1E0F7",
         fontColor: "#364F64",
-        popupcolor1 : "#1F2937",
-        popupcolor2 : "#E5E7EB",
+        popupcolor1 : "#063866",
+        popupcolor2 : "#E3ECFD",
     }
 ];
 

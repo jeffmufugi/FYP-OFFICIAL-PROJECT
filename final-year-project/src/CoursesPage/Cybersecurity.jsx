@@ -109,7 +109,7 @@ const CybersecurityCourse= () => {
   
   return (
     <>
-    <div className="cs-course-page" style={{background:"linear-gradient(to bottom, #505B65, #ffffffbb 80%)"}}>
+    <div className="cs-course-page" style={{background:"linear-gradient(to bottom, #162E45, #ffffffbb 80%)"}}>
 
       <Header1 />
       <Page1 

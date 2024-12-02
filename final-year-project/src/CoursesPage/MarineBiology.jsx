@@ -110,9 +110,6 @@ const MarineBiologyCourse= () => {
   return (
     <>
     <div className="cs-course-page" style={{background:"linear-gradient(to bottom, #1F5480, #ffffffbb 80%)"}}>
-
-
-     
       <Header1 />
       <Page1 
             coursename={homepageInfo[0].courseName}

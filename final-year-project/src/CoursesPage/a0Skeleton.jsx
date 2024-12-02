@@ -304,115 +304,6 @@ export function Page3({selectedCountry,countries,experienceSalary,experienceSala
          
                   
           </div>
-          {/* <div className="bottom-salary-course-right" style={{backgroundColor :homepageInfo[1].backgroundColor1}}>
-          <div className="ab1x">
-              <motion.img className="course-p2-img" src={tm} alt="" {...fadeInFromLeft2.left1}/>
-            </div>
-            <div className="ab2x">
-            <motion.p style={{ color: homepageInfo[1].fontColor }} className="course-page-desc2" {...fadeInFromLeft3.left2}>AVERAGE JOB GROWTH RATE</motion.p>
-            </div>
-            <div className="ab3"> 
-            <motion.p style={{ color: homepageInfo[1].fontColor }} className="course-bar" {...fadeInFromLeft2.left3}>____________________</motion.p>
-             </div>
-
-            <div className="ab3x"> 
-            <motion.ul className="course-barx" {...fadeInFromLeft2.left4}>
-                          <li>__________</li>
-                          {jobGrowthFields.map((index)=>(
-                          <li   
-                          style={{ backgroundColor: homepageInfo[1].fontColor }} 
-                          key={index}
-                          >{index}
-                          </li>
-                           )
-                            )}
-
-                        </motion.ul>
-             </div>
-
-          <div className="ab4xx">
-          <motion.ul 
-                className="main-text-coursexy" 
-                {...fadeInFromLeft2.left4}
-            >
-                <ul className="yrs-rate2">
-                <li>2022</li>
-                <li>2023</li>
-                <li>2024</li>
-                <li>2025</li>
-                <li>2026</li>
-              </ul>
-
-            </motion.ul>
-            <motion.ul 
-                className="main-text-coursexy" 
-                {...fadeInFromLeft2.left4}
-            >
-                <ul className="yrs-rate">
-                <li>15%</li>
-                <li>20%</li>
-                <li>40%</li>
-                <li>12%</li>
-                <li>3.2%</li>
-              </ul>
-
-            </motion.ul>
-            <motion.ul 
-                className="main-text-coursexy" 
-                {...fadeInFromLeft2.left4}
-            >
-                <ul className="yrs-rate">
-                <li>15%</li>
-                <li>20%</li>
-                <li>40%</li>
-                <li>12%</li>
-                <li>3.2%</li>
-              </ul>
-
-            </motion.ul>
-            <motion.ul 
-                className="main-text-coursexy" 
-                {...fadeInFromLeft2.left4}
-            >
-                <ul className="yrs-rate">
-                <li>15%</li>
-                <li>20%</li>
-                <li>40%</li>
-                <li>12%</li>
-                <li>3.2%</li>
-              </ul>
-
-            </motion.ul>
-            <motion.ul 
-                className="main-text-coursexy" 
-                {...fadeInFromLeft2.left4}
-            >
-                <ul className="yrs-rate">
-                <li>15%</li>
-                <li>20%</li>
-                <li>40%</li>
-                <li>12%</li>
-                <li>3.2%</li>
-              </ul>
-
-            </motion.ul>
-            <motion.ul 
-                className="main-text-coursexy" 
-                {...fadeInFromLeft2.left4}
-            >
-                <ul className="yrs-rate">
-                <li>15%</li>
-                <li>20%</li>
-                <li>40%</li>
-                <li>12%</li>
-                <li>3.2%</li>
-              </ul>
-
-            </motion.ul>
-
-            </div>
-            
-          </div> */}
 
         </div>
 
@@ -640,7 +531,7 @@ export const fadeInFromLeft = {
       viewport: { once: true }
     },
     left3: {
-      initial: { x: -50, opacity: 0 },
+      initial: { x: -10, opacity: 0 },
       whileInView: { x: 0, opacity: 1 },
       transition: { duration: 0.5, delay: 0.3 },
       viewport: { once: true }

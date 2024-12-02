@@ -110,7 +110,7 @@ const CivilEngineeringCourse= () => {
   
   return (
     <>
-    <div className="cs-course-page" style={{background:"linear-gradient(to bottom, #7E4B4B, #ffffffbb 80%)"}}>
+    <div className="cs-course-page" style={{background:"linear-gradient(to bottom, #772C2C, #ffffffbb 80%)"}}>
 
       <Header1 />
       <Page1 
