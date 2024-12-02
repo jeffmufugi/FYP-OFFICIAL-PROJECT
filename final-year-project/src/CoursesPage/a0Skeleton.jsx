@@ -253,11 +253,8 @@ export function Page3({selectedCountry,countries,experienceSalary,experienceSala
                         <motion.div className="course-desc-hov" style={{ 
                             backgroundColor: homepageInfo[1].popupcolor1, 
                             color: homepageInfo[1].popupcolor2, 
-                            boxShadow: `0px -30px 20px -10px ${homepageInfo[1].popupcolor2}, 
-                                        20px 0px 20px -10px ${homepageInfo[1].popupcolor2},  
-                                        -20px 0px 20px -10px ${homepageInfo[1].popupcolor2}` 
                         }}
-                        {...fadeInFromLeft3.left7}>
+                        {...fadeInFromLeft3.a8}>
                           {course.description}
                         </motion.div>
             )}
@@ -426,11 +423,9 @@ export function Page5({homepageInfo,challengesArray,dsp,handleMouseEnter,handleM
                         style={{ 
                             backgroundColor: homepageInfo[1].popupcolor1, 
                             color: homepageInfo[1].popupcolor2, 
-                            boxShadow: `0px -30px 20px -10px ${homepageInfo[1].popupcolor2}, 
-                                        20px 0px 20px -10px ${homepageInfo[1].popupcolor2},  
-                                        -20px 0px 20px -10px ${homepageInfo[1].popupcolor2}` 
+    
                         }}
-                        {...fadeInFromLeft3.left7}>
+                        {...fadeInFromLeft3.a8}>
                           {title.description}
   </motion.div>
 )}</li>))}</motion.ul> </div></div>
@@ -463,13 +458,10 @@ export function Page5({homepageInfo,challengesArray,dsp,handleMouseEnter,handleM
                       style={{ 
                         backgroundColor: homepageInfo[1].popupcolor1, 
                         color: homepageInfo[1].popupcolor2, 
-                        boxShadow: `0px -30px 20px -10px ${homepageInfo[1].popupcolor2}, 
-                                    20px 0px 20px -10px ${homepageInfo[1].popupcolor2},  
-                                    -20px 0px 20px -10px ${homepageInfo[1].popupcolor2}` 
                     }}
 
                       
-                      {...fadeInFromLeft3.left7}>
+                      {...fadeInFromLeft3.a8}>
                       {title.description}
   </motion.div>)}</li>))} </motion.ul></div></div> </div>
     </>
@@ -591,6 +583,12 @@ export const fadeInFromLeft = {
       initial: { y: -20, x: -10, opacity: 0 },
       whileInView: { y: 0, x: 0, opacity: 1 },
       transition: { duration: 0.6, delay: 0.4 },
+      viewport: { once: true }
+    },
+    a8: {
+      initial: { opacity:0 , scale: 0.7, x: -80},
+      whileInView: { opacity: 1, scale: 1 ,x:0},
+      transition: { duration: 0.5,delay:0.5},
       viewport: { once: true }
     }
   };
