@@ -35,14 +35,14 @@ export default function MainContent(){
                         whileInView={{ x: 0 ,opacity: 1 }}
                         transition={{ duration: 0.5,delay: 0 }}
                         viewport={{ once: true }}>choose the right STEM <br/>path with us.</motion.h1>}
-                <div className="wdwd-txt">
+                
 
         {!btnbreak && <motion.h1 className="main-txt" initial={{ x: 100 ,opacity: 1 }}
                         whileInView={{ x: 0 ,opacity: 1 }}
                         transition={{ duration: 0.5,delay: 0 }}
                         viewport={{ once: true }}>choose the right STEM path with us.</motion.h1>}
 
-
+              <div className="wdwd-txt">
                   
                   <p>We provide you with valuable insights into various STEM courses,highlighting the benefits, potential salaries, job opportunities, 
                   as well as the challenges associated with each field.</p>
