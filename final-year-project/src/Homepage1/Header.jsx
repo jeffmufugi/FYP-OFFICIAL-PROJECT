@@ -80,7 +80,7 @@ return (
           <div className="right-hdr" style={{position:"relative"}}>
           {signedIn === false &&  <button className="join-btn" onClick={signUpClick}>Click to Join</button> }
           {signedIn === true &&  <>
-            <img src={a2} alt="" onClick={toggleDropdown} style={{cursor:"pointer",width:"30px"}}/>
+            <img src={a2} alt="" onClick={toggleDropdown} style={{cursor:"pointer",width:"25px"}}/>
                 <AnimatePresence>
                 {isOpen === true && 
                 (<>

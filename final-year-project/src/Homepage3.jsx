@@ -79,13 +79,8 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
             <img src={bg2} className="background-icon2"/>
             {isLargeScreen &&       
             <div className="header3-top-section" >
-                <motion.div className="header3-top-left-section" style={{position:"relative",display:"flex",flex:1, overflow: "hidden",height: "auto", justifyContent: "center",
-    alignItems: "center",}} 
-    initial={{x:-100,opacity:0}}
-    whileInView={{x:0,opacity:1}}
-    transition={{duration:0.5,delay: 0 }}
-    viewport={{ once: true }}
-   
+                <div className="header3-top-left-section" style={{position:"relative",display:"flex",flex:1, overflow: "hidden",height: "auto", justifyContent: "center",
+    alignItems: "center"}} 
     >
 
               <img src={bg4} alt="" style={{width:"43vw",height:"auto",alignSelf:"center",position:"absolute",objectFit:"contain",zIndex:"12"}} onClick={set}/>
@@ -219,7 +214,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
       
       </div>
         
-                </motion.div>
+                </div>
                 <div className="header3-top-right-section">
                     <button className="btn-vc" onClick={coursePageClick}>View All Courses</button>
 

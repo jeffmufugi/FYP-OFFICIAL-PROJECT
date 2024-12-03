@@ -18,7 +18,7 @@ import { useState,useRef, useEffect } from "react";
 import {countries,topspecializations,
   trend,skills,challengesArray,issuesArray,coreAreasOfStudy,jobGrowthFields,experienceSalary,experienceSalary1,
   homepageInfo,prerequisites,getTopCourses,homepageInfo2,homepageInfo1} from './robextdata.jsx';
-import { Page1,Page2,Page3,Page4,Page5, fadeInFromLeft} from "./a0Skeleton.jsx";
+import { Page1,Page2,Page3,Page4,Page5, fadeInFromLeft} from "./a0Skeleton1.jsx";
 
 
 const RoboticsCourse = () => {
@@ -86,7 +86,20 @@ const RoboticsCourse = () => {
   const handleMouseEnt = (index,type) => {
     if (type === 'challenges') {
       setHoveredCourse(index);
-    } else if (type === 'issues') {
+    } 
+    if (type === 'issues') {
+      setHoveredText(index);
+    }
+    if (type === 'core') {
+      setHoveredText(index);
+    }
+    if (type === 'pre') {
+      setHoveredText(index);
+    }
+    if (type === 'trend') {
+      setHoveredText(index);
+    }
+    else if(type === 'skills'){
       setHoveredText(index);
     }
   };
@@ -143,6 +156,9 @@ const RoboticsCourse = () => {
         homepageInfo={homepageInfo} 
         coreAreasOfStudy={coreAreasOfStudy} 
         prerequisites={prerequisites} 
+        handleMouseEnter={handleMouseEnt}
+        handleMouseLeave={handleMouseLeave}
+        hoveredText={hoveredText}
 />
       </div>
 
@@ -181,6 +197,9 @@ const RoboticsCourse = () => {
           topspecializations={topspecializations}
           skills={skills}
           h6={h6}
+          handleMouseEnter={handleMouseEnter}
+          handleMouseLeave={handleMouseLeave}
+          hoveredText={hoveredText}
 />
       </div>
 

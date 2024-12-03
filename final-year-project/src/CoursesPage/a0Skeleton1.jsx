@@ -1,14 +1,13 @@
 import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
 import {motion} from "framer-motion";
-import { Chatbott } from "../Chatbot";
+import useMedia from 'use-media';
 
 
 export function Page1({coursename,coursedesc,inputRef,selectedCountry,toggleDropdown,isOpen,countries,handleSelect,salaryUS,salaryMY,jobsUS,jobsMY,emplUS,emplMY,img1,img2,img3,selectedCurrency,homepageInfo,animat,setanimate,dropdownRef}){
-
-  function HomepageNum(){
+    function HomepageNum(){
       return(
         <>
-            <div className="course-details-info">
+            <div className="course-details-info a">
                 <img src={img1} alt="" />
 {            /* 
 selected flag must not be equal to current flag
@@ -22,7 +21,7 @@ there must be a change
                 {selectedCountry === countries[1].flag && <p className="numbers-course-info">{selectedCurrency}{homepageInfo2[0].undergradsal}</p>} */}
                 <p className="img-course-description">fresh undergraduate base salary</p>
             </div>
-            <div className="course-details-info">
+            <div className="course-details-info b">
                 <img src={img2} alt=""/>
                 {selectedCountry === countries[0].flag && <motion.p className="numbers-course-info"{...animat}>{jobsUS}</motion.p>}
                 {selectedCountry === countries[1].flag && <motion.p className="numbers-course-info"{...animat}>{jobsMY}</motion.p>}
@@ -31,7 +30,7 @@ there must be a change
                 <p className="img-course-description">job availability</p>
                 
             </div>
-            <div className="course-details-info">
+            <div className="course-details-info c">
                 <img src={img3} alt=""/>
                 {selectedCountry === countries[0].flag &&  <motion.p className="numbers-course-info"{...animat}>{emplUS}</motion.p>}
                 {selectedCountry === countries[1].flag &&  <motion.p className="numbers-course-info"{...animat}>{emplMY}</motion.p>}
@@ -45,12 +44,6 @@ there must be a change
     return(
       <>
  <div className="course-mainbody">
-
-
-
-
-
-
           <div className="left-course-main"></div>
           <div className="mid-course-main">
           <div className="course-title">
@@ -102,9 +95,8 @@ there must be a change
                   
                   
                   
-                  
                 >
-                  {console.log(animat)}
+               
                   {country.flag}
                 </li>
               ))}
@@ -152,6 +144,7 @@ export function Page2({icon1,icon2,icon3,homepageInfo,coreAreasOfStudy,prerequis
             <div className="ab3"> 
             <motion.p 
                 className="course-bar" 
+                style={{ color: homepageInfo[1].fontColor }} 
                 {...fadeInFromLeft2.left3}>____________________
             </motion.p>
              </div>
@@ -175,8 +168,14 @@ export function Page2({icon1,icon2,icon3,homepageInfo,coreAreasOfStudy,prerequis
              </div>
             <div className="ab4">
             <motion.p className="main-text-course" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft3.left4}>
-              {coreAreasOfStudy.map((index)=>(
-                <li key={index}>{index}<br/><br/></li>
+              {
+              coreAreasOfStudy.map((index)=>(
+                <li 
+                key={index} 
+                style={{marginBottom:"1.5rem"}}
+                >
+                  {index}
+                </li>
               ))}
               </motion.p>
             </div>
@@ -193,7 +192,12 @@ export function Page2({icon1,icon2,icon3,homepageInfo,coreAreasOfStudy,prerequis
              </div>
             <div className="ab4" > 
             <motion.p className="main-text-course" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft3.left4}>{prerequisites.map((index)=>(
-              <li key={index}>{index}<br/><br/></li>
+              <li 
+              key={index} 
+              style={{marginBottom:"1.5rem"}}
+              >
+                {index}
+              </li>
             ))}</motion.p>
             </div>
           </div>
@@ -241,7 +245,7 @@ export function Page3({selectedCountry,countries,experienceSalary,experienceSala
             </div>
 
             <div className="ab3"> 
-            <motion.p className="course-bar" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft2.left3}>____________________</motion.p>
+            <motion.p className="course-bar" style={{ color: homepageInfo[1].fontColor, marginBottom:"30px"}} {...fadeInFromLeft2.left3} >____________________</motion.p>
              </div>
 
           <div className="ab4x">
@@ -250,26 +254,22 @@ export function Page3({selectedCountry,countries,experienceSalary,experienceSala
                 {...fadeInFromLeft3.left2}
             >
                     {courseData.map((course,index) => (
-              <div className="course-name-desc"
-                      style={{ color: homepageInfo[1].fontColor ,whiteSpace:"nowrap"}}
+                      <li className="course-name-desc"
+                      style={{ color: homepageInfo[1].fontColor }}
                       onMouseEnter={() => handleMouseEnter(index)}
                       onMouseLeave={handleMouseLeave}
                       key={index}>
                         {course.name}
-
                         {hoveredCourse === index && (
                         <motion.div className="course-desc-hov" style={{ 
-                                  backgroundColor: homepageInfo[1].popupcolor1, 
-                                  color: homepageInfo[1].popupcolor2, 
-                                  boxShadow: `0px -30px 20px -10px ${homepageInfo[1].popupcolor2}, 
-                                              20px 0px 20px -10px ${homepageInfo[1].popupcolor2},  
-                                              -20px 0px 20px -10px ${homepageInfo[1].popupcolor2}` 
-                              }}
-                              {...fadeInFromLeft3.left7}>
-                                {course.description}
+                            backgroundColor: homepageInfo[1].popupcolor1, 
+                            color: homepageInfo[1].popupcolor2, 
+                        }}
+                        {...fadeInFromLeft3.a8}>
+                          {course.description}
                         </motion.div>
-                       )}
-                 </div>
+            )}
+                        </li>
                     ))}
 
 
@@ -298,11 +298,11 @@ export function Page3({selectedCountry,countries,experienceSalary,experienceSala
               <motion.img className="course-p2-img" src={ds} alt="" {...fadeInFromLeft2.left1}/>
             </div>
             <div className="ab2">
-            <motion.p className="course-page-desc1" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft3.left2}>10-YEAR AVERAGE SALARY PROJECTION BY EXPERIENCE LEVEL</motion.p>
+            <motion.p className="course-page-desc1" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft3.left2} >10-YEAR AVERAGE SALARY PROJECTION BY EXPERIENCE LEVEL</motion.p>
             </div>
 
             <div className="ab3"> 
-            <motion.p className="course-bar" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft2.left3}>____________________</motion.p>
+            <motion.p className="course-bar" style={{ color: homepageInfo[1].fontColor ,marginBottom:"30px"}} {...fadeInFromLeft2.left3}>____________________</motion.p>
              </div>
 
           <motion.div className="ab4x" {...fadeInFromLeft3.left6}>
@@ -312,115 +312,6 @@ export function Page3({selectedCountry,countries,experienceSalary,experienceSala
          
                   
           </div>
-          {/* <div className="bottom-salary-course-right" style={{backgroundColor :homepageInfo[1].backgroundColor1}}>
-          <div className="ab1x">
-              <motion.img className="course-p2-img" src={tm} alt="" {...fadeInFromLeft2.left1}/>
-            </div>
-            <div className="ab2x">
-            <motion.p style={{ color: homepageInfo[1].fontColor }} className="course-page-desc2" {...fadeInFromLeft3.left2}>AVERAGE JOB GROWTH RATE</motion.p>
-            </div>
-            <div className="ab3"> 
-            <motion.p style={{ color: homepageInfo[1].fontColor }} className="course-bar" {...fadeInFromLeft2.left3}>____________________</motion.p>
-             </div>
-
-            <div className="ab3x"> 
-            <motion.ul className="course-barx" {...fadeInFromLeft2.left4}>
-                          <li>__________</li>
-                          {jobGrowthFields.map((index)=>(
-                          <li   
-                          style={{ backgroundColor: homepageInfo[1].fontColor }} 
-                          key={index}
-                          >{index}
-                          </li>
-                           )
-                            )}
-
-                        </motion.ul>
-             </div>
-
-          <div className="ab4xx">
-          <motion.ul 
-                className="main-text-coursexy" 
-                {...fadeInFromLeft2.left4}
-            >
-                <ul className="yrs-rate2">
-                <li>2022</li>
-                <li>2023</li>
-                <li>2024</li>
-                <li>2025</li>
-                <li>2026</li>
-              </ul>
-
-            </motion.ul>
-            <motion.ul 
-                className="main-text-coursexy" 
-                {...fadeInFromLeft2.left4}
-            >
-                <ul className="yrs-rate">
-                <li>15%</li>
-                <li>20%</li>
-                <li>40%</li>
-                <li>12%</li>
-                <li>3.2%</li>
-              </ul>
-
-            </motion.ul>
-            <motion.ul 
-                className="main-text-coursexy" 
-                {...fadeInFromLeft2.left4}
-            >
-                <ul className="yrs-rate">
-                <li>15%</li>
-                <li>20%</li>
-                <li>40%</li>
-                <li>12%</li>
-                <li>3.2%</li>
-              </ul>
-
-            </motion.ul>
-            <motion.ul 
-                className="main-text-coursexy" 
-                {...fadeInFromLeft2.left4}
-            >
-                <ul className="yrs-rate">
-                <li>15%</li>
-                <li>20%</li>
-                <li>40%</li>
-                <li>12%</li>
-                <li>3.2%</li>
-              </ul>
-
-            </motion.ul>
-            <motion.ul 
-                className="main-text-coursexy" 
-                {...fadeInFromLeft2.left4}
-            >
-                <ul className="yrs-rate">
-                <li>15%</li>
-                <li>20%</li>
-                <li>40%</li>
-                <li>12%</li>
-                <li>3.2%</li>
-              </ul>
-
-            </motion.ul>
-            <motion.ul 
-                className="main-text-coursexy" 
-                {...fadeInFromLeft2.left4}
-            >
-                <ul className="yrs-rate">
-                <li>15%</li>
-                <li>20%</li>
-                <li>40%</li>
-                <li>12%</li>
-                <li>3.2%</li>
-              </ul>
-
-            </motion.ul>
-
-            </div>
-            
-          </div> */}
 
         </div>
 
@@ -451,7 +342,7 @@ export function Page4({homepageInfo,h4,trend,h5,topspecializations,skills,h6}){
               <motion.ul className="main-text-course"  {...fadeInFromLeft3.left6}>
                 {
                 trend.map((trend,index)=>(
-                  <li key={index} style={{ color: homepageInfo[1].fontColor }}>{trend}<br/><br/></li>
+                  <li key={index} style={{ color: homepageInfo[1].fontColor, marginBottom:"1.5rem" }}>{trend}</li>
                 ))
                 
                 }
@@ -472,7 +363,7 @@ export function Page4({homepageInfo,h4,trend,h5,topspecializations,skills,h6}){
               <motion.ul className="main-text-course"  {...fadeInFromLeft3.left6}>
                       {
                         topspecializations.map((course,index)=>(
-                          <li key={index} style={{ color: homepageInfo[1].fontColor }}>{course}<br/><br/></li>
+                          <li key={index} style={{ color: homepageInfo[1].fontColor,marginBottom:"1.5rem" }}>{course}</li>
                         ))
                       }
                       </motion.ul>
@@ -494,7 +385,7 @@ export function Page4({homepageInfo,h4,trend,h5,topspecializations,skills,h6}){
               <motion.ul className="main-text-course" {...fadeInFromLeft3.left6} style={{ color: homepageInfo[1].fontColor }} >
                         {
                           skills.map((skills,index)=>(
-                            <li key={index}>{skills}<br/><br/></li>
+                            <li key={index} style={{marginBottom:"1.5rem"}}>{skills}</li>
                           ))
                         }
               </motion.ul>
@@ -520,7 +411,7 @@ export function Page5({homepageInfo,challengesArray,dsp,handleMouseEnter,handleM
               <motion.img className="course-p2-img" src={dsp} alt="" {...fadeInFromLeft2.left1}/>
             </div>
             <div className="ab2">
-            <motion.p style={{ color: homepageInfo[1].fontColor }} className="course-page-desc1" {...fadeInFromLeft3.left2}>{challengesArray[0]}</motion.p>
+            <motion.p style={{ color: homepageInfo[1].fontColor }} className="course-page-desc1" {...fadeInFromLeft3.left2}>UNDERGRADUATE CHALLENGES</motion.p>
             </div>
 
             <div className="ab3"> 
@@ -529,34 +420,26 @@ export function Page5({homepageInfo,challengesArray,dsp,handleMouseEnter,handleM
 
           <div className="ab4x">
           <motion.ul 
-                className="main-text-coursex" 
+                className="main-text-coursex2" 
                 {...fadeInFromLeft3.left6}
                 style={{ color: homepageInfo[1].fontColor }}>
                     {challengesArray.map((title,index) => (
-            <li className="course-name-desc1"
-            style={{whiteSpace:"nowrap"}}
+                      <li className="course-name-desc1"
                       key={index}
                       onMouseEnter={() => handleMouseEnter(index,"challenges")}
                       onMouseLeave={handleMouseLeave}>
                         {title.heading}
                         {hoveredCourse === index && (
                         <motion.div className="course-desc-hov1" 
-                            style={{ 
-                                backgroundColor: homepageInfo[1].popupcolor1, 
-                                color: homepageInfo[1].popupcolor2, 
-                                boxShadow: `0px -30px 20px -10px ${homepageInfo[1].popupcolor2}, 
-                                            20px 0px 20px -10px ${homepageInfo[1].popupcolor2},  
-                                            -20px 0px 20px -10px ${homepageInfo[1].popupcolor2}` 
-                            }}
-                            {...fadeInFromLeft3.left7}>
-                              {title.description}
-                      </motion.div>
-              )}
-          </li>
-          ))}
-          </motion.ul> 
-          </div>
-          </div>
+                        style={{ 
+                            backgroundColor: homepageInfo[1].popupcolor1, 
+                            color: homepageInfo[1].popupcolor2, 
+    
+                        }}
+                        {...fadeInFromLeft3.a8}>
+                          {title.description}
+  </motion.div>
+)}</li>))}</motion.ul> </div></div>
 
 
         <div className="salary-course-right" >
@@ -565,7 +448,7 @@ export function Page5({homepageInfo,challengesArray,dsp,handleMouseEnter,handleM
               <motion.img className="course-p2-img" src={dst} alt="" {...fadeInFromLeft2.left1}/>
             </div>
             <div className="ab2">
-            <motion.p className="course-page-desc1" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft3.left2}>{issuesArray[0]}</motion.p>
+            <motion.p className="course-page-desc1" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft3.left2}>CURRENT JOB ISSUES IN THE FIELD</motion.p>
             </div>
 
             <div className="ab3"> 
@@ -575,29 +458,27 @@ export function Page5({homepageInfo,challengesArray,dsp,handleMouseEnter,handleM
           <div className="ab4x">
           
           <motion.ul 
-                className="main-text-coursex" 
+                className="main-text-coursex2" 
                 {...fadeInFromLeft3.left6}
-                style={{ color: homepageInfo[1].fontColor }}
-                >{issuesArray.map((title,index) => (
+                style={{ color: homepageInfo[1].fontColor }}>
+                  
+                  {issuesArray.map((title,index) => (
                       <li key={index} 
                       className="course-name-desc1" 
                       onMouseEnter={() => handleMouseEnter(index,"issues")}
-                      onMouseLeave={handleMouseLeave}
-                      >
-                      {title.heading}
-                      {hoveredText === index && (
+                      onMouseLeave={handleMouseLeave}>
                       
+                      {title.heading}
+                      
+                      {hoveredText === index && (
                       <motion.div className="course-desc-hov1" 
                       style={{ 
                         backgroundColor: homepageInfo[1].popupcolor1, 
                         color: homepageInfo[1].popupcolor2, 
-                        boxShadow: `0px -30px 20px -10px ${homepageInfo[1].popupcolor2}, 
-                                    20px 0px 20px -10px ${homepageInfo[1].popupcolor2},  
-                                    -20px 0px 20px -10px ${homepageInfo[1].popupcolor2}` 
                     }}
 
                       
-                      {...fadeInFromLeft3.left7}>
+                      {...fadeInFromLeft3.a8}>
                       {title.description}
   </motion.div>)}</li>))} </motion.ul></div></div> </div>
     </>
@@ -659,7 +540,7 @@ export const fadeInFromLeft = {
       viewport: { once: true }
     },
     left3: {
-      initial: { x: -50, opacity: 0 },
+      initial: { x: -10, opacity: 0 },
       whileInView: { x: 0, opacity: 1 },
       transition: { duration: 0.5, delay: 0.3 },
       viewport: { once: true }
@@ -719,6 +600,12 @@ export const fadeInFromLeft = {
       initial: { y: -20, x: -10, opacity: 0 },
       whileInView: { y: 0, x: 0, opacity: 1 },
       transition: { duration: 0.6, delay: 0.4 },
+      viewport: { once: true }
+    },
+    a8: {
+      initial: { opacity:0 , scale: 0.7, x: -80},
+      whileInView: { opacity: 1, scale: 1 ,x:0},
+      transition: { duration: 0.5,delay:0.5},
       viewport: { once: true }
     }
   };

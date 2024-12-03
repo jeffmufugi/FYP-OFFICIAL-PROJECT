@@ -269,7 +269,7 @@ export default function CoursePage(){
                             exit={{ opacity: 0 }}
                             transition={{ type: "spring", stiffness: 70, damping: 20, duration: 0.5 }}> 
                                <div className="course-card" key={course.id} style={{backgroundColor : "#E0E0E0"}} onClick={course.route} >
-                               <img src={course.imgName} className="imgcst"/>
+                               <img src={course.imgName} className="imgcst" loading='lazy'/>
                                <div className="computer-science-ftr" style={{backgroundColor : "#001326"}}>
                                    <p className="txt-121" style={{color : "white"}}>{course.courseName}</p>
                                </div>
