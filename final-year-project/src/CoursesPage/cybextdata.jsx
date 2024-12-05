@@ -133,31 +133,6 @@ export const homepageInfo1 = [ {
     };
 
 
-export const prerequisites = [
-    "Strong foundation in computer science and networking",
-    "Proficiency in programming languages like Python and JavaScript",
-    "Understanding of encryption, firewalls, and security protocols",
-    "Familiarity with penetration testing and vulnerability assessment tools",
-    "Knowledge of cybersecurity laws and compliance requirements"
-];
-
-export const coreAreasOfStudy = [
-    "Network Security",
-    "Ethical Hacking",
-    "Cryptography",
-    "Cloud Security",
-    "Malware Analysis",
-    "Cybersecurity Law and Policy",
-    "Incident Response"
-];
-
-export const jobGrowthFields = [
-    "Cloud Security",
-    "Cybercrime Investigation",
-    "Data Privacy",
-    "Internet of Things (IoT) Security",
-    "Artificial Intelligence Security"
-];
 
 export const experienceSalary = [
   { id: 1, experience: "0-1 YEARS EXPERIENCE", salaryRange: "$92,000 - $170,000" },
@@ -181,32 +156,152 @@ export const experienceSalary2 = [
 ];
 
 
-export const topspecializations = [
-    "Network Security",
-    "Cryptography",
+
+
+export const prerequisites = [
+    {
+      skill: "Strong foundation in computer science and networking",
+      description: "Provides the necessary knowledge to understand and secure complex systems."
+    },
+    {
+      skill: "Proficiency in programming languages like Python and JavaScript",
+      description: "Enables scripting for automation, analyzing vulnerabilities, and building secure applications."
+    },
+    {
+      skill: "Understanding of encryption, firewalls, and security protocols",
+      description: "Essential for implementing and managing secure communication and data protection."
+    },
+    {
+      skill: "Familiarity with penetration testing and vulnerability assessment tools",
+      description: "Helps in identifying and mitigating potential threats and system vulnerabilities."
+    },
+    {
+      skill: "Knowledge of cybersecurity laws and compliance requirements",
+      description: "Ensures adherence to legal and regulatory standards in the field of cybersecurity."
+    }
+  ];
+  export const coreAreasOfStudy = [
+    {
+      area: "Network Security",
+      description: "Focuses on securing data communication and protecting against unauthorized access."
+    },
+    {
+      area: "Ethical Hacking",
+      description: "Involves legally testing systems to identify and fix security vulnerabilities."
+    },
+    {
+      area: "Cryptography",
+      description: "Studies methods for securing data through encryption and secure key exchange."
+    },
+    {
+      area: "Cloud Security",
+      description: "Explores protecting data and systems hosted on cloud platforms."
+    },
+    {
+      area: "Malware Analysis",
+      description: "Deals with understanding and mitigating threats posed by malicious software."
+    },
+    {
+      area: "Cybersecurity Law and Policy",
+      description: "Examines the legal and regulatory aspects of cybersecurity practices."
+    },
+    {
+      area: "Incident Response",
+      description: "Focuses on managing and mitigating the effects of security breaches."
+    }
+  ];
+
+  export const topspecializations = [
+    {
+      specialization: "Network Security",
+      description: "Protecting data integrity and confidentiality across computer networks."
+    },
+    {
+      specialization: "Cryptography",
+      description: "Securing data through advanced encryption techniques."
+    },
+    {
+      specialization: "Cloud Security",
+      description: "Ensuring the safety of data and applications in cloud environments."
+    },
+    {
+      specialization: "Penetration Testing",
+      description: "Simulating attacks to test system defenses and discover weaknesses."
+    },
+    {
+      specialization: "Cybersecurity Law and Policy",
+      description: "Understanding the intersection of cybersecurity and regulatory frameworks."
+    },
+    {
+      specialization: "Incident Response",
+      description: "Specializing in detecting, responding to, and recovering from cyber threats."
+    }
+  ];
+
+  export const trend = [
+    {
+      trend: "Increase in cyberattacks on cloud infrastructure",
+      description: "Rising reliance on cloud services has made them a primary target for cybercriminals."
+    },
+    {
+      trend: "Growth in AI-based security solutions",
+      description: "AI and machine learning are increasingly used for threat detection and prevention."
+    },
+    {
+      trend: "Expansion of privacy regulations",
+      description: "Countries are adopting stricter laws to protect user data and privacy."
+    },
+    {
+      trend: "Emergence of IoT security threats",
+      description: "The proliferation of connected devices has introduced new vulnerabilities."
+    },
+    {
+      trend: "Ransomware attacks on critical infrastructure",
+      description: "Critical sectors like healthcare and energy are being targeted by ransomware."
+    }
+  ];
+  export const skills = [
+    {
+      skill: "Strong understanding of network protocols and architectures",
+      description: "Foundational knowledge for identifying and addressing vulnerabilities in communication systems."
+    },
+    {
+      skill: "Proficiency in scripting languages (Python, Bash)",
+      description: "Used for automating security tasks and analyzing threat patterns."
+    },
+    {
+      skill: "Experience with firewalls, VPNs, and IDS/IPS systems",
+      description: "Critical for defending systems against unauthorized access and intrusion."
+    },
+    {
+      skill: "Knowledge of encryption and public key infrastructure (PKI)",
+      description: "Ensures secure data exchange and verification through cryptographic methods."
+    },
+    {
+      skill: "Familiarity with penetration testing and ethical hacking tools",
+      description: "Helps in actively finding and fixing system weaknesses."
+    },
+    {
+      skill: "Ability to assess risks and implement security policies",
+      description: "Important for minimizing vulnerabilities and adhering to best practices."
+    },
+    {
+      skill: "Critical thinking and problem-solving skills",
+      description: "Essential for identifying, analyzing, and resolving complex security challenges."
+    }
+  ];
+
+
+
+
+export const jobGrowthFields = [
     "Cloud Security",
-    "Penetration Testing",
-    "Cybersecurity Law and Policy",
-    "Incident Response"
+    "Cybercrime Investigation",
+    "Data Privacy",
+    "Internet of Things (IoT) Security",
+    "Artificial Intelligence Security"
 ];
 
-export const trend = [
-    "Increase in cyberattacks on cloud infrastructure",
-    "Growth in AI-based security solutions",
-    "Expansion of privacy regulations",
-    "Emergence of IoT security threats",
-    "Ransomware attacks on critical infrastructure"
-];
-
-export const skills = [
-    "Strong understanding of network protocols and architectures",
-    "Proficiency in scripting languages (Python, Bash)",
-    "Experience with firewalls, VPNs, and IDS/IPS systems",
-    "Knowledge of encryption and public key infrastructure (PKI)",
-    "Familiarity with penetration testing and ethical hacking tools",
-    "Ability to assess risks and implement security policies",
-    "Critical thinking and problem-solving skills"
-];
 
 export const challengesArray = [
     "UNDERGRADUATE CHALLENGES",

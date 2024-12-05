@@ -150,21 +150,57 @@ export const experienceSalary2 = [
 
 
 export const prerequisites = [
-    "Strong foundation in mechanical and electrical engineering",
-    "Proficiency in programming languages like C++, Python, and MATLAB",
-    "Understanding of control systems and sensor technology",
-    "Experience with AI and machine learning",
-    "Knowledge of computer vision and real-time processing"
+  {
+    skill: "Strong foundation in mechanical and electrical engineering",
+    description: "A comprehensive understanding of mechanical and electrical principles, including circuits, power systems, thermodynamics, and material properties, essential for designing and integrating complex systems."
+  },
+  {
+    skill: "Proficiency in programming languages like C++, Python, and MATLAB",
+    description: "Advanced programming skills to develop algorithms, simulations, and control systems, with a focus on languages widely used in engineering and AI applications."
+  },
+  {
+    skill: "Understanding of control systems and sensor technology",
+    description: "Knowledge of feedback control, signal processing, and the integration of various sensor technologies to enable precise monitoring and actuation in systems."
+  },
+  {
+    skill: "Experience with Artificial Intelligence and machine learning",
+    description: "Hands-on experience with machine learning models and AI algorithms to implement predictive analytics, autonomous decision-making, and optimization tasks."
+  },
+  {
+    skill: "Knowledge of computer vision and real-time processing",
+    description: "Familiarity with image processing, object detection, and video analysis technologies, along with real-time processing techniques for applications requiring rapid decision-making."
+  }
 ];
 
 export const coreAreasOfStudy = [
-    "Mechanical Design",
-    "Control Systems",
-    "Artificial Intelligence for Robotics",
-    "Computer Vision",
-    "Robotic Sensors and Actuators",
-    "Human-Robot Interaction",
-    "Autonomous Systems"
+  {
+    area: "Mechanical Design",
+    description: "Focuses on the principles and methodologies of designing robotic systems, including structure, materials, and kinematics to ensure optimal performance and durability."
+  },
+  {
+    area: "Control Systems",
+    description: "Covers the design and analysis of feedback systems that govern the behavior and movement of robots, ensuring stability and precision in their operations."
+  },
+  {
+    area: "Artificial Intelligence for Robotics",
+    description: "Explores the integration of AI techniques such as machine learning, planning, and reasoning to enable robots to perform complex tasks autonomously."
+  },
+  {
+    area: "Computer Vision",
+    description: "Involves teaching robots to interpret and understand visual data from cameras, enabling tasks like object detection, navigation, and real-time environment analysis."
+  },
+  {
+    area: "Robotic Sensors and Actuators",
+    description: "Examines the use of sensors to gather environmental data and actuators to execute movements, ensuring robots can interact effectively with their surroundings."
+  },
+  {
+    area: "Human-Robot Interaction",
+    description: "Focuses on creating intuitive and safe interfaces for collaboration between humans and robots, including natural language processing and gesture recognition."
+  },
+  {
+    area: "Autonomous Systems",
+    description: "Explores the development of self-sufficient robots capable of operating independently in dynamic environments through decision-making and adaptive behaviors."
+  }
 ];
 
 export const jobGrowthFields = [
@@ -184,30 +220,83 @@ export const experienceSalary = [
 
 
 export const topspecializations = [
-    "Autonomous Robotics",
-    "Artificial Intelligence for Robotics",
-    "Control Systems Engineering",
-    "Robotic Perception",
-    "Medical Robotics",
-    "Human-Robot Interaction"
+  {
+    specialization: "Autonomous Robotics",
+    description: "Focuses on developing robots that can operate independently in dynamic environments, such as self-driving cars and drones."
+  },
+  {
+    specialization: "Artificial Intelligence for Robotics",
+    description: "Integrates AI techniques to enhance robot decision-making, learning capabilities, and adaptability in complex tasks."
+  },
+  {
+    specialization: "Control Systems Engineering",
+    description: "Covers the design and optimization of systems that control robot movements and behaviors, ensuring precision and stability."
+  },
+  {
+    specialization: "Robotic Perception",
+    description: "Focuses on enabling robots to sense and interpret their environment using technologies like computer vision and sensor fusion."
+  },
+  {
+    specialization: "Medical Robotics",
+    description: "Explores the design and application of robots in healthcare, including surgical robots and rehabilitation devices."
+  },
+  {
+    specialization: "Human-Robot Interaction",
+    description: "Examines the ways robots and humans can collaborate effectively, emphasizing usability, safety, and communication."
+  }
 ];
 
 export const trend = [
-    "Advancements in AI-powered robots",
-    "Growth in autonomous vehicles",
-    "Use of robots in healthcare and surgery",
-    "Collaborative robots in manufacturing",
-    "Innovations in space exploration robotics"
+  {
+    trend: "Advancements in AI-powered robots",
+    description: "Rapid progress in AI is enabling robots to learn, adapt, and perform increasingly complex tasks in diverse industries."
+  },
+  {
+    trend: "Growth in autonomous vehicles",
+    description: "The development of self-driving cars, trucks, and drones is transforming transportation and logistics."
+  },
+  {
+    trend: "Use of robots in healthcare and surgery",
+    description: "Robots are being adopted for precision surgeries, patient monitoring, and automating healthcare processes."
+  },
+  {
+    trend: "Collaborative robots in manufacturing",
+    description: "Cobots are designed to work alongside humans, improving efficiency and safety in industrial settings."
+  },
+  {
+    trend: "Innovations in space exploration robotics",
+    description: "Robots are playing a critical role in exploring distant planets and performing tasks in extreme environments."
+  }
 ];
-
 export const skills = [
-    "Strong mechanical and electrical engineering skills",
-    "Proficiency in programming (C++, Python, MATLAB)",
-    "Understanding of control theory and systems",
-    "Experience with AI and machine learning frameworks",
-    "Knowledge of real-time systems and embedded software",
-    "Familiarity with robotic sensors and actuators",
-    "Problem-solving and critical thinking skills"
+  {
+    skill: "Strong mechanical and electrical engineering skills",
+    description: "A deep understanding of mechanical design and electrical systems is essential for building and maintaining robots."
+  },
+  {
+    skill: "Proficiency in programming (C++, Python, MATLAB)",
+    description: "Expertise in these programming languages is critical for developing algorithms, simulations, and robotic control systems."
+  },
+  {
+    skill: "Understanding of control theory and systems",
+    description: "Knowledge of control theory ensures robots can achieve stability and precise operation in dynamic conditions."
+  },
+  {
+    skill: "Experience with AI and machine learning frameworks",
+    description: "Familiarity with frameworks like TensorFlow and PyTorch is vital for integrating AI capabilities into robots."
+  },
+  {
+    skill: "Knowledge of real-time systems and embedded software",
+    description: "Experience in designing software for real-time operations is crucial for ensuring seamless robot functionality."
+  },
+  {
+    skill: "Familiarity with robotic sensors and actuators",
+    description: "Understanding the integration and functionality of sensors and actuators is key for effective robot interaction with the environment."
+  },
+  {
+    skill: "Problem-solving and critical thinking skills",
+    description: "The ability to analyze complex challenges and devise innovative solutions is essential in robotics."
+  }
 ];
 
 export const challengesArray = [

@@ -150,28 +150,6 @@ export const homepageInfo1 = [ {
         }
       ]
 };
-
-
-
-export const prerequisites = [
-    "Strong foundation in chemistry, physics, and mathematics",
-    "Understanding of thermodynamics and material science",
-    "Problem-solving and analytical thinking skills",
-    "Communication and teamwork skills",
-    "Self-discipline and attention to detail"
-];
-
-export const coreAreasOfStudy = [
-    "Chemical Process Design",
-    "Thermodynamics",
-    "Fluid Mechanics",
-    "Heat and Mass Transfer",
-    "Reaction Engineering",
-    "Process Control",
-    "Biochemical Engineering",
-    "Environmental Engineering"
-];
-
 export const jobGrowthFields = [
     "BIO PHARMACEUTIC",
     "RENEWABLE ENERGY",
@@ -179,6 +157,162 @@ export const jobGrowthFields = [
     "SUSTAINABLE PROCESSES",
     "WATER TREATMENT"
 ];
+export const coreAreasOfStudy = [
+    {
+      area: "Chemical Process Design",
+      description: "Developing efficient and sustainable processes for producing chemicals and materials."
+    },
+    {
+      area: "Thermodynamics",
+      description: "Studying energy transformations to design and analyze chemical processes."
+    },
+    {
+      area: "Fluid Mechanics",
+      description: "Understanding fluid behavior to design transport systems and optimize industrial processes."
+    },
+    {
+      area: "Heat and Mass Transfer",
+      description: "Analyzing the movement of heat and mass in chemical systems for process optimization."
+    },
+    {
+      area: "Reaction Engineering",
+      description: "Designing chemical reactors to maximize efficiency and yield."
+    },
+    {
+      area: "Process Control",
+      description: "Implementing control systems to maintain safety and efficiency in chemical operations."
+    },
+    {
+      area: "Biochemical Engineering",
+      description: "Applying biological principles to develop bioprocesses and bio-based products."
+    },
+    {
+      area: "Environmental Engineering",
+      description: "Focusing on sustainable solutions for pollution control and resource management."
+    }
+  ];
+
+  export const topspecializations = [
+    {
+      specialization: "Pharmaceutical Engineering",
+      description: "Designing and optimizing processes for producing drugs and medical products."
+    },
+    {
+      specialization: "Renewable Energy Systems",
+      description: "Developing technologies for sustainable energy production and storage."
+    },
+    {
+      specialization: "Nanotechnology",
+      description: "Engineering materials at the nanoscale for advanced applications in medicine, energy, and materials science."
+    },
+    {
+      specialization: "Environmental and Water Treatment Engineering",
+      description: "Creating systems to purify water and mitigate environmental pollution."
+    },
+    {
+      specialization: "Process Control and Safety",
+      description: "Implementing systems to ensure safe and efficient chemical operations."
+    },
+    {
+      specialization: "Sustainable Chemical Processes",
+      description: "Focusing on eco-friendly methods for producing chemicals and materials."
+    },
+    {
+      specialization: "Biochemical Engineering",
+      description: "Integrating biological systems into chemical processes to produce bio-based products."
+    },
+    {
+      specialization: "Polymer Science",
+      description: "Studying polymers to develop advanced materials for diverse applications."
+    }
+  ];
+
+  export const trend = [
+    {
+      trend: "Sustainable Chemical Processes",
+      description: "Developing eco-friendly methods to reduce waste and minimize environmental impact."
+    },
+    {
+      trend: "Advanced Manufacturing",
+      description: "Using cutting-edge technologies like 3D printing and automation in chemical production."
+    },
+    {
+      trend: "Green Chemistry",
+      description: "Creating processes that minimize the use of hazardous substances and reduce waste."
+    },
+    {
+      trend: "Circular Economy",
+      description: "Designing systems to recycle and reuse materials, reducing dependency on finite resources."
+    },
+    {
+      trend: "Carbon Capture Technologies",
+      description: "Innovating methods to capture and store carbon emissions to combat climate change."
+    },
+    {
+      trend: "Artificial Intelligence in Process Engineering",
+      description: "Using AI and machine learning to optimize chemical processes and predict system performance."
+    }
+  ];
+
+  export const skills = [
+    {
+      skill: "Strong knowledge of chemistry and physics",
+      description: "Understanding core scientific principles to design and analyze chemical processes."
+    },
+    {
+      skill: "Process simulation and optimization",
+      description: "Using software tools to simulate, model, and enhance chemical systems."
+    },
+    {
+      skill: "Safety protocols in chemical processes",
+      description: "Ensuring safety in industrial environments by understanding and implementing proper protocols."
+    },
+    {
+      skill: "Material science",
+      description: "Studying material properties to select the best materials for chemical applications."
+    },
+    {
+      skill: "Environmental impact assessment",
+      description: "Evaluating and mitigating the environmental effects of chemical processes."
+    },
+    {
+      skill: "Problem-solving under pressure",
+      description: "Developing solutions to urgent issues in dynamic and high-stakes environments."
+    },
+    {
+      skill: "Project management and teamwork",
+      description: "Coordinating and collaborating effectively to ensure project success."
+    },
+    {
+      skill: "Effective communication",
+      description: "Clearly conveying technical information to stakeholders from diverse backgrounds."
+    }
+  ];
+
+
+
+export const prerequisites = [
+    {
+      skill: "Strong foundation in chemistry, physics, and mathematics",
+      description: "A deep understanding of scientific and mathematical principles is essential for designing and optimizing chemical processes."
+    },
+    {
+        skill: "Understanding of thermodynamics and material science",
+      description: "Knowledge of energy systems and material properties is crucial for analyzing and creating efficient chemical systems."
+    },
+    {
+        skill: "Problem-solving and analytical thinking skills",
+      description: "The ability to address complex engineering challenges with innovative and data-driven solutions."
+    },
+    {
+        skill: "Communication and teamwork skills",
+      description: "Effective collaboration and clear communication are critical for working in interdisciplinary teams."
+    },
+    {
+        skill: "Self-discipline and attention to detail",
+      description: "A meticulous approach is vital for ensuring safety, accuracy, and reliability in chemical engineering projects."
+    }
+  ];
 
 export const experienceSalary = [
     { experience: "0-1 YEARS EXPERIENCE", salaryRange: "$64,000 - $115,000" },
@@ -202,36 +336,7 @@ export const experienceSalary2 = [
 
 
 
-export const topspecializations = [
-    "Pharmaceutical Engineering",
-    "Renewable Energy Systems",
-    "Nanotechnology",
-    "Environmental and Water Treatment Engineering",
-    "Process Control and Safety",
-    "Sustainable Chemical Processes",
-    "Biochemical Engineering",
-    "Polymer Science"
-];
 
-export const trend = [
-    "Sustainable Chemical Processes",
-    "Advanced Manufacturing",
-    "Green Chemistry",
-    "Circular Economy",
-    "Carbon Capture Technologies",
-    "Artificial Intelligence in Process Engineering"
-];
-
-export const skills = [
-    "Strong knowledge of chemistry and physics",
-    "Process simulation and optimization",
-    "Safety protocols in chemical processes",
-    "Material science",
-    "Environmental impact assessment",
-    "Problem-solving under pressure",
-    "Project management and teamwork",
-    "Effective communication"
-];
 
 export const challengesArray = [
     "UNDERGRADUATE CHALLENGES",

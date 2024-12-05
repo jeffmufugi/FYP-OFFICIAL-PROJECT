@@ -148,26 +148,145 @@ export const experienceSalary2 = [
 ];
 
 
-
-
+export const topspecializations = [
+  {
+    specialization: "Marine Ecology",
+    description: "Study of marine organisms and their interactions with the environment."
+  },
+  {
+    specialization: "Marine Conservation",
+    description: "Focus on protecting marine ecosystems and biodiversity."
+  },
+  {
+    specialization: "Oceanography",
+    description: "Study of ocean dynamics, including physical, chemical, and biological processes."
+  },
+  {
+    specialization: "Aquaculture",
+    description: "Cultivation of aquatic organisms like fish, crustaceans, and plants for food and resources."
+  },
+  {
+    specialization: "Marine Microbiology",
+    description: "Study of microorganisms in marine environments and their ecological roles."
+  },
+  {
+    specialization: "Marine Biotechnology",
+    description: "Application of marine biological processes for innovation in medicine, energy, and materials."
+  },
+  {
+    specialization: "Marine Animal Behavior",
+    description: "Research into the behaviors and social interactions of marine species."
+  }
+];
+export const trend = [
+  {
+    trend: "Ocean Acidification Research",
+    description: "Investigating the impact of increased carbon dioxide on ocean chemistry and marine life."
+  },
+  {
+    trend: "Sustainable Aquaculture",
+    description: "Developing environmentally friendly and efficient aquaculture practices."
+  },
+  {
+    trend: "Coral Reef Conservation",
+    description: "Efforts to protect and restore coral reef ecosystems under threat from climate change and pollution."
+  },
+  {
+    trend: "Plastic Pollution Reduction",
+    description: "Innovative solutions to mitigate and remove plastic waste from marine environments."
+  },
+  {
+    trend: "Marine Renewable Energy",
+    description: "Harnessing energy from oceanic sources like waves, tides, and thermal gradients."
+  }
+];
+export const skills = [
+  {
+    skill: "Knowledge of marine species and ecosystems",
+    description: "Understanding the diversity and ecological roles of marine organisms."
+  },
+  {
+    skill: "Fieldwork expertise, including diving and surveying",
+    description: "Ability to conduct hands-on research and collect data in marine environments."
+  },
+  {
+    skill: "Proficiency in data collection and analysis",
+    description: "Skills to gather, process, and interpret scientific data effectively."
+  },
+  {
+    skill: "Conservation and environmental management skills",
+    description: "Applying strategies to preserve and restore marine ecosystems."
+  },
+  {
+    skill: "Understanding of marine policy and regulations",
+    description: "Knowledge of laws and policies governing marine conservation and resource use."
+  },
+  {
+    skill: "Ability to work in remote and challenging environments",
+    description: "Adaptability and resilience for conducting research in diverse marine settings."
+  },
+  {
+    skill: "Communication skills for scientific outreach",
+    description: "Conveying scientific findings to the public, policymakers, and stakeholders."
+  }
+];
 export const prerequisites = [
-    "Strong background in biology and ecology",
-    "Interest in marine ecosystems and wildlife",
-    "Fieldwork skills, including diving and sampling",
-    "Data analysis and research skills",
-    "Understanding of oceanography and environmental science"
+  {
+    skill: "Strong background in biology and ecology",
+    description: "Foundational knowledge essential for understanding marine ecosystems."
+  },
+  {
+    skill: "Interest in marine ecosystems and wildlife",
+    description: "Passion for studying and protecting ocean life and environments."
+  },
+  {
+    skill: "Fieldwork skills, including diving and sampling",
+    description: "Experience with hands-on research techniques in aquatic settings."
+  },
+  {
+    skill: "Data analysis and research skills",
+    description: "Ability to interpret scientific data and present research findings."
+  },
+  {
+    skill: "Understanding of oceanography and environmental science",
+    description: "Knowledge of oceanic processes and their environmental implications."
+  }
+];
+export const coreAreasOfStudy = [
+  {
+    area: "Marine Ecology",
+    description: "Exploring the interactions between marine organisms and their environments."
+  },
+  {
+    area: "Oceanography",
+    description: "Studying oceanic processes and their effects on global systems."
+  },
+  {
+    area: "Marine Conservation",
+    description: "Learning about efforts to protect and sustainably manage marine ecosystems."
+  },
+  {
+    area: "Marine Animal Behavior",
+    description: "Understanding behavioral patterns and adaptations of marine species."
+  },
+  {
+    area: "Aquaculture",
+    description: "Focusing on sustainable practices in aquatic farming."
+  },
+  {
+    area: "Marine Microbiology",
+    description: "Investigating the roles of microorganisms in marine ecosystems."
+  },
+  {
+    area: "Marine Biotechnology",
+    description: "Applying marine biological knowledge to develop innovative technologies."
+  },
+  {
+    area: "Environmental Impact Assessment",
+    description: "Evaluating human activities' effects on marine environments and ecosystems."
+  }
 ];
 
-export const coreAreasOfStudy = [
-    "Marine Ecology",
-    "Oceanography",
-    "Marine Conservation",
-    "Marine Animal Behavior",
-    "Aquaculture",
-    "Marine Microbiology",
-    "Marine Biotechnology",
-    "Environmental Impact Assessment"
-];
 
 export const jobGrowthFields = [
     "Marine Conservation",
@@ -185,33 +304,6 @@ export const experienceSalary = [
 ];
 
 
-export const topspecializations = [
-    "Marine Ecology",
-    "Marine Conservation",
-    "Oceanography",
-    "Aquaculture",
-    "Marine Microbiology",
-    "Marine Biotechnology",
-    "Marine Animal Behavior"
-];
-
-export const trend = [
-    "Ocean Acidification Research",
-    "Sustainable Aquaculture",
-    "Coral Reef Conservation",
-    "Plastic Pollution Reduction",
-    "Marine Renewable Energy"
-];
-
-export const skills = [
-    "Knowledge of marine species and ecosystems",
-    "Fieldwork expertise, including diving and surveying",
-    "Proficiency in data collection and analysis",
-    "Conservation and environmental management skills",
-    "Understanding of marine policy and regulations",
-    "Ability to work in remote and challenging environments",
-    "Communication skills for scientific outreach"
-];
 
 export const challengesArray = [
     "UNDERGRADUATE CHALLENGES",

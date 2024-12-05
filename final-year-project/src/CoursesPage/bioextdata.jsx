@@ -145,24 +145,62 @@ export const homepageInfo1 = [ {
 
 
 export const prerequisites = [
-    "Strong foundation in biology, chemistry, and physics",
-    "Knowledge of mathematics and engineering principles",
-    "Critical thinking and problem-solving skills",
-    "Attention to detail and precision",
-    "Strong communication skills for interdisciplinary collaboration"
-];
+    {
+      skill: "Strong foundation in biology, chemistry, and physics",
+      description: "A deep understanding of biological processes, chemical principles, and physical laws is essential for developing biomedical technologies."
+    },
+    {
+        skill: "Knowledge of mathematics and engineering principles",
+      description: "Proficiency in calculus, statistics, and engineering concepts provides the tools to analyze and design complex biomedical systems."
+    },
+    {
+        skill: "Critical thinking and problem-solving skills",
+      description: "The ability to identify challenges and develop innovative solutions is crucial for tackling issues in healthcare and medical device design."
+    },
+    {
+        skill: "Attention to detail and precision",
+      description: "Meticulousness is vital for ensuring the safety, reliability, and effectiveness of biomedical devices and treatments."
+    },
+    {
+        skill: "Strong communication skills for interdisciplinary collaboration",
+      description: "Effective communication enables seamless collaboration with professionals from various fields, such as medicine, engineering, and regulatory bodies."
+    }
+  ];
 
 export const coreAreasOfStudy = [
-    "Biomaterials",
-    "Biomechanics",
-    "Medical Imaging",
-    "Bioinstrumentation",
-    "Tissue Engineering",
-    "Bioinformatics",
-    "Systems Biology",
-    "Genetic Engineering"
-];
-
+    {
+      area: "Biomaterials",
+      description: "The study and development of materials that interact with biological systems for medical implants, prosthetics, and drug delivery systems."
+    },
+    {
+      area: "Biomechanics",
+      description: "Analyzing the mechanical principles of biological systems to design devices like prosthetics, orthotics, and surgical tools."
+    },
+    {
+      area: "Medical Imaging",
+      description: "Exploring imaging technologies such as MRI, CT, and ultrasound to diagnose and treat medical conditions."
+    },
+    {
+      area: "Bioinstrumentation",
+      description: "Designing and developing devices for monitoring and diagnosing medical conditions, such as ECG machines and glucose monitors."
+    },
+    {
+      area: "Tissue Engineering",
+      description: "Combining biology and engineering to develop artificial organs, skin grafts, and other tissue replacements."
+    },
+    {
+      area: "Bioinformatics",
+      description: "Using computational tools to analyze biological data, such as genetic sequences and protein structures, for medical research and applications."
+    },
+    {
+      area: "Systems Biology",
+      description: "Integrating data from various biological systems to model and understand complex interactions within the human body."
+    },
+    {
+      area: "Genetic Engineering",
+      description: "Modifying genetic material to develop treatments for diseases, improve biological functions, and create genetically engineered organisms."
+    }
+  ];
 export const jobGrowthFields = [
     "Medical Devices",
     "Regenerative Medicine",
@@ -194,32 +232,88 @@ export const experienceSalary2 = [
 
 
 export const topspecializations = [
-    "Biomaterials",
-    "Medical Imaging",
-    "Biomechanics",
-    "Tissue Engineering",
-    "Bioinstrumentation",
-    "Bioinformatics",
-    "Genetic Engineering"
-];
-
+    {
+      specialization: "Biomaterials",
+      description: "Developing innovative materials for use in implants, prosthetics, and drug delivery systems, emphasizing biocompatibility and functionality."
+    },
+    {
+      specialization: "Medical Imaging",
+      description: "Advancing technologies like MRI, X-ray, and ultrasound to enhance diagnostic capabilities and patient outcomes."
+    },
+    {
+      specialization: "Biomechanics",
+      description: "Applying mechanical principles to biological systems for improving mobility through devices like prosthetics and exoskeletons."
+    },
+    {
+      specialization: "Tissue Engineering",
+      description: "Engineering artificial tissues and organs to address the shortage of donor organs and improve regenerative medicine."
+    },
+    {
+      specialization: "Bioinstrumentation",
+      description: "Creating diagnostic and therapeutic devices that provide precise monitoring and intervention for medical conditions."
+    },
+    {
+      specialization: "Bioinformatics",
+      description: "Using computational methods to analyze and interpret biological data for advancements in genomics and personalized medicine."
+    },
+    {
+      specialization: "Genetic Engineering",
+      description: "Harnessing CRISPR and other gene-editing tools to treat genetic disorders and enhance biological capabilities."
+    }
+  ];
 export const trend = [
-    "Artificial Organs",
-    "Wearable Medical Devices",
-    "3D Bioprinting",
-    "Gene Editing (CRISPR)",
-    "Personalized Medicine"
-];
+    {
+      trend: "Artificial Organs",
+      description: "Developing fully functional artificial organs to replace damaged ones and alleviate the shortage of donor organs."
+    },
+    {
+      trend: "Wearable Medical Devices",
+      description: "Advancing wearable technologies for continuous health monitoring, such as fitness trackers and smart medical patches."
+    },
+    {
+      trend: "3D Bioprinting",
+      description: "Using 3D printing technologies to create tissues, organs, and customized medical devices with high precision."
+    },
+    {
+      trend: "Gene Editing (CRISPR)",
+      description: "Leveraging CRISPR technology for precise genetic modifications to treat diseases and improve health outcomes."
+    },
+    {
+      trend: "Personalized Medicine",
+      description: "Developing treatments tailored to individual patients based on their genetic makeup and medical history."
+    }
+  ];
 
 export const skills = [
-    "Design of medical devices",
-    "Knowledge of biological systems",
-    "Data analysis and bioinformatics",
-    "Proficiency in 3D modeling and CAD software",
-    "Problem-solving in clinical environments",
-    "Regulatory knowledge (FDA, CE Marking)",
-    "Collaboration with healthcare professionals"
-];
+    {
+      skill: "Design of medical devices",
+      description: "Creating innovative devices for diagnosis, treatment, and rehabilitation with a focus on functionality and safety."
+    },
+    {
+      skill: "Knowledge of biological systems",
+      description: "Understanding human anatomy and physiology to design devices and treatments compatible with the body."
+    },
+    {
+      skill: "Data analysis and bioinformatics",
+      description: "Analyzing complex biological data using computational tools to drive medical research and innovation."
+    },
+    {
+      skill: "Proficiency in 3D modeling and CAD software",
+      description: "Using design tools like AutoCAD and SolidWorks for creating precise models of biomedical devices and components."
+    },
+    {
+      skill: "Problem-solving in clinical environments",
+      description: "Addressing real-world challenges in healthcare by developing practical and effective solutions."
+    },
+    {
+      skill: "Regulatory knowledge (FDA, CE Marking)",
+      description: "Understanding regulatory standards to ensure compliance in the design and manufacturing of medical devices."
+    },
+    {
+      skill: "Collaboration with healthcare professionals",
+      description: "Working closely with doctors, nurses, and other specialists to design solutions that meet clinical needs."
+    }
+  ];
 
 export const challengesArray = [
     "UNDERGRADUATE CHALLENGES",

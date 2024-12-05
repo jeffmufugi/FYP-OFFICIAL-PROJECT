@@ -136,24 +136,6 @@ export const homepageInfo1 = [ {
 
 
 
-export const prerequisites = [
-    "Strong foundation in physics and mathematics",
-    "Understanding of thermodynamics and fluid mechanics",
-    "Knowledge of nuclear processes",
-    "Critical thinking and problem-solving skills",
-    "Attention to safety and detail"
-];
-
-export const coreAreasOfStudy = [
-    "Nuclear Reactor Theory",
-    "Radiation Protection",
-    "Nuclear Power Plant Design",
-    "Fusion Energy",
-    "Nuclear Materials",
-    "Radiological Engineering",
-    "Thermodynamics and Fluid Flow",
-    "Nuclear Waste Management"
-];
 
 export const jobGrowthFields = [
     "Fusion Energy Research",
@@ -185,34 +167,146 @@ export const experienceSalary2 = [
 ];
 
 
+export const prerequisites = [
+    {
+      skill: "Strong foundation in physics and mathematics",
+      description: "A solid understanding of physics and math is essential to grasp the principles behind nuclear processes and engineering designs."
+    },
+    {
+      skill: "Understanding of thermodynamics and fluid mechanics",
+      description: "These are fundamental to the design and operation of nuclear reactors and energy systems."
+    },
+    {
+      skill: "Knowledge of nuclear processes",
+      description: "Understanding of fission, fusion, and radioactive decay is key for working in the nuclear field."
+    },
+    {
+      skill: "Critical thinking and problem-solving skills",
+      description: "Required for analyzing complex systems and resolving safety, operational, and environmental challenges in nuclear engineering."
+    },
+    {
+      skill: "Attention to safety and detail",
+      description: "Given the potential risks associated with nuclear energy, safety and precision are paramount in all aspects of nuclear engineering."
+    }
+  ];
+  export const coreAreasOfStudy = [
+    {
+      area: "Nuclear Reactor Theory",
+      description: "Study of how nuclear reactors operate, including chain reactions, energy production, and reactor physics."
+    },
+    {
+      area: "Radiation Protection",
+      description: "Focus on safeguarding people and the environment from harmful radiation through shielding, monitoring, and safety procedures."
+    },
+    {
+      area: "Nuclear Power Plant Design",
+      description: "Study of the engineering and design of nuclear power plants, ensuring efficient, safe, and sustainable energy production."
+    },
+    {
+      area: "Fusion Energy",
+      description: "Research and development in harnessing nuclear fusion as a clean and virtually limitless energy source."
+    },
+    {
+      area: "Nuclear Materials",
+      description: "Study of materials used in nuclear reactors, including their properties, behavior under radiation, and resistance to corrosion and wear."
+    },
+    {
+      area: "Radiological Engineering",
+      description: "Focus on the application of radiation in engineering, including medical imaging, industrial processes, and safety in radiation environments."
+    },
+    {
+      area: "Thermodynamics and Fluid Flow",
+      description: "Essential for understanding the heat transfer and fluid dynamics within nuclear reactors, power plants, and cooling systems."
+    },
+    {
+      area: "Nuclear Waste Management",
+      description: "Study of how to safely handle, store, and dispose of nuclear waste, minimizing its impact on the environment."
+    }
+  ];
 
-export const topspecializations = [
-    "Nuclear Reactor Design",
-    "Radiation Protection",
-    "Nuclear Medicine",
-    "Fusion Energy",
-    "Nuclear Materials Engineering",
-    "Nuclear Weapons Technology",
-    "Nuclear Waste Management"
-];
+  export const topspecializations = [
+    {
+      specialization: "Nuclear Reactor Design",
+      description: "Designing and optimizing reactors for maximum efficiency, safety, and sustainability."
+    },
+    {
+      specialization: "Radiation Protection",
+      description: "Focus on protecting individuals, communities, and the environment from the harmful effects of ionizing radiation."
+    },
+    {
+      specialization: "Nuclear Medicine",
+      description: "Application of radioactive substances in medical treatments and diagnostic imaging, such as cancer treatment and PET scans."
+    },
+    {
+      specialization: "Fusion Energy",
+      description: "Research into harnessing fusion reactions as a clean, abundant source of energy."
+    },
+    {
+      specialization: "Nuclear Materials Engineering",
+      description: "Study of materials used in nuclear reactors, including fuel and structural materials, to optimize performance and safety."
+    },
+    {
+      specialization: "Nuclear Weapons Technology",
+      description: "Focus on the development, management, and non-proliferation of nuclear weapons technology."
+    },
+    {
+      specialization: "Nuclear Waste Management",
+      description: "Study of the safe disposal, recycling, and long-term storage of radioactive waste."
+    }
+  ];
+  export const trend = [
+    {
+      trend: "Small Modular Reactors",
+      description: "Development of smaller, more flexible nuclear reactors that can be deployed in various locations and are easier to manage."
+    },
+    {
+      trend: "Fusion Energy Research",
+      description: "Continued advancements in fusion technology with the goal of creating a sustainable and clean energy source."
+    },
+    {
+      trend: "Radiation Therapy Advancements",
+      description: "Improving the effectiveness and precision of radiation therapy used in the treatment of cancer and other diseases."
+    },
+    {
+      trend: "Nuclear Energy Storage",
+      description: "Research into methods of storing nuclear energy efficiently, such as through advanced battery technologies and thermal energy storage."
+    },
+    {
+      trend: "Advanced Reactor Safety Systems",
+      description: "Development of new safety systems for reactors, focusing on passive safety mechanisms and reducing the risk of accidents."
+    }
+  ];
+  export const skills = [
+    {
+      skill: "Understanding of nuclear fission and fusion processes",
+      description: "Essential knowledge for designing and managing nuclear reactors and understanding the core principles of nuclear energy production."
+    },
+    {
+      skill: "Knowledge of radiation safety and shielding",
+      description: "Key for ensuring the safe operation of nuclear reactors and facilities, protecting workers and the environment from harmful radiation."
+    },
+    {
+      skill: "Expertise in nuclear reactor design and operation",
+      description: "Required for designing and optimizing nuclear reactors to ensure efficiency, safety, and regulatory compliance."
+    },
+    {
+      skill: "Proficiency in thermodynamics and fluid mechanics",
+      description: "Critical for understanding heat transfer and fluid flow within nuclear reactors and associated power plant systems."
+    },
+    {
+      skill: "Problem-solving and risk assessment",
+      description: "Skills needed to assess and mitigate risks associated with nuclear systems and develop solutions for complex engineering challenges."
+    },
+    {
+      skill: "Project management in nuclear facilities",
+      description: "Ability to manage large-scale projects in nuclear energy production, ensuring timelines, budgets, and safety standards are met."
+    },
+    {
+      skill: "Analysis of nuclear waste and disposal strategies",
+      description: "Required for designing strategies for the safe handling, storage, and disposal of radioactive materials and waste."
+    }
+  ];
 
-export const trend = [
-    "Small Modular Reactors",
-    "Fusion Energy Research",
-    "Radiation Therapy Advancements",
-    "Nuclear Energy Storage",
-    "Advanced Reactor Safety Systems"
-];
-
-export const skills = [
-    "Understanding of nuclear fission and fusion processes",
-    "Knowledge of radiation safety and shielding",
-    "Expertise in nuclear reactor design and operation",
-    "Proficiency in thermodynamics and fluid mechanics",
-    "Problem-solving and risk assessment",
-    "Project management in nuclear facilities",
-    "Analysis of nuclear waste and disposal strategies"
-];
 
 export const challengesArray = [
     "UNDERGRADUATE CHALLENGES",

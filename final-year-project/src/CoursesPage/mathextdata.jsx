@@ -206,25 +206,6 @@ export const topcourses = [
     }
 ];
 
-export const prerequisites = [
-    "Strong foundation in algebra, calculus, and geometry",
-    "Analytical and logical reasoning skills",
-    "Programming and computational skills",
-    "Attention to detail and precision",
-    "Problem-solving and critical thinking"
-];
-
-export const coreAreasOfStudy = [
-    "Algebra",
-    "Calculus",
-    "Geometry",
-    "Number Theory",
-    "Topology",
-    "Probability and Statistics",
-    "Differential Equations",
-    "Linear Algebra"
-];
-
 export const jobGrowthFields = [
     "Data Science",
     "Quantitative Finance",
@@ -241,33 +222,149 @@ export const experienceSalary = [
 ];
 
 
-export const topspecializations = [
-    "Applied Mathematics",
-    "Statistics",
-    "Actuarial Science",
-    "Computational Mathematics",
-    "Topology",
-    "Number Theory",
-    "Operations Research"
+export const prerequisites = [
+  {
+    skill: "Strong foundation in algebra, calculus, and geometry",
+    description: "Essential for solving complex mathematical problems and understanding advanced topics."
+  },
+  {
+    skill: "Analytical and logical reasoning skills",
+    description: "Ability to think critically and approach problems systematically is crucial for mathematical success."
+  },
+  {
+    skill: "Programming and computational skills",
+    description: "Proficiency in programming languages like Python, R, and MATLAB is necessary for applying mathematical concepts computationally."
+  },
+  {
+    skill: "Attention to detail and precision",
+    description: "Mathematics requires a high level of accuracy in calculations and logical arguments."
+  },
+  {
+    skill: "Problem-solving and critical thinking",
+    description: "Ability to break down complex problems and approach them logically, developing innovative solutions."
+  }
 ];
 
+export const coreAreasOfStudy = [
+  {
+    area: "Algebra",
+    description: "Study of mathematical symbols and rules for manipulating these symbols, fundamental for higher mathematics."
+  },
+  {
+    area: "Calculus",
+    description: "Focuses on rates of change and accumulation, essential for solving problems in physics, engineering, and economics."
+  },
+  {
+    area: "Geometry",
+    description: "Study of shapes, sizes, and the properties of space, critical for understanding spatial relationships and structures."
+  },
+  {
+    area: "Number Theory",
+    description: "Explores properties and relationships of numbers, especially integers, with applications in cryptography and computer science."
+  },
+  {
+    area: "Topology",
+    description: "Study of properties that are preserved through deformations, stretching, and bending, important for various branches of mathematics."
+  },
+  {
+    area: "Probability and Statistics",
+    description: "Key for understanding data and making informed predictions based on statistical analysis."
+  },
+  {
+    area: "Differential Equations",
+    description: "Focuses on equations involving derivatives, crucial for modeling real-world phenomena in science and engineering."
+  },
+  {
+    area: "Linear Algebra",
+    description: "Study of vectors, vector spaces, and linear transformations, with applications in engineering, physics, and computer science."
+  }
+];
+export const topspecializations = [
+  {
+    specialization: "Applied Mathematics",
+    description: "Application of mathematical techniques to solve real-world problems in various fields such as engineering, physics, and economics."
+  },
+  {
+    specialization: "Statistics",
+    description: "Focus on data analysis, statistical inference, and modeling, with applications in many industries including healthcare and finance."
+  },
+  {
+    specialization: "Actuarial Science",
+    description: "Study of risk and uncertainty, applying mathematical and statistical methods to assess and manage risk in insurance and finance."
+  },
+  {
+    specialization: "Computational Mathematics",
+    description: "Involves developing and applying numerical algorithms and simulations to solve complex mathematical problems."
+  },
+  {
+    specialization: "Topology",
+    description: "Deep dive into topological spaces and structures, with applications in geometry, analysis, and theoretical computer science."
+  },
+  {
+    specialization: "Number Theory",
+    description: "Focus on the properties of integers and their relationships, with critical applications in cryptography and security."
+  },
+  {
+    specialization: "Operations Research",
+    description: "Applies mathematical models and optimization techniques to decision-making in industries such as logistics, manufacturing, and healthcare."
+  }
+];
 export const trend = [
-    "Machine Learning",
-    "Blockchain Technology",
-    "Data Analytics",
-    "Quantum Computing",
-    "Financial Modeling",
-    "Cryptography"
+  {
+    trend: "Machine Learning",
+    description: "Rapidly growing field that uses mathematical algorithms to allow computers to learn from data and make predictions."
+  },
+  {
+    trend: "Blockchain Technology",
+    description: "A distributed ledger technology underpinned by cryptography and mathematical structures, transforming industries like finance and supply chain."
+  },
+  {
+    trend: "Data Analytics",
+    description: "Growing demand for skills to analyze and interpret vast amounts of data for actionable insights across sectors."
+  },
+  {
+    trend: "Quantum Computing",
+    description: "A new frontier that leverages quantum mechanics and mathematics to solve problems beyond the capabilities of classical computing."
+  },
+  {
+    trend: "Financial Modeling",
+    description: "Mathematical modeling of financial markets and instruments, used extensively in investment banking and risk management."
+  },
+  {
+    trend: "Cryptography",
+    description: "The mathematical foundation of securing communication and transactions, with increasing importance in digital security and blockchain."
+  }
 ];
 
 export const skills = [
-    "Advanced numerical methods",
-    "Data analysis and statistical modeling",
-    "Scientific programming (Python, R, MATLAB)",
-    "Abstract and logical reasoning",
-    "Mathematical modeling",
-    "Problem-solving and critical thinking",
-    "Research methodology"
+  {
+    skill: "Advanced numerical methods",
+    description: "Proficiency in using algorithms and numerical techniques to solve mathematical problems, particularly in computational environments."
+  },
+  {
+    skill: "Data analysis and statistical modeling",
+    description: "Ability to analyze and interpret large data sets using mathematical and statistical methods, essential for fields like finance and marketing."
+  },
+  {
+    skill: "Scientific programming (Python, R, MATLAB)",
+    description: "Ability to use programming languages to implement mathematical models and simulations, essential in applied mathematics and computational fields."
+  },
+  {
+    skill: "Abstract and logical reasoning",
+    description: "Critical for proving theorems and understanding complex mathematical concepts and structures."
+  },
+  {
+    skill: "Mathematical modeling",
+    description: "Ability to translate real-world problems into mathematical formulations, essential for industries such as engineering and economics."
+  },
+  {
+    skill: "Problem-solving and critical thinking",
+    description: "Key to approaching mathematical challenges, finding innovative solutions, and addressing complex issues."
+  },
+  {
+    skill: "Research methodology",
+    description: "Knowledge of research techniques to conduct mathematical studies, prove new theories, and contribute to academic or industrial knowledge."
+  }
 ];
 
 export const challengesArray = [

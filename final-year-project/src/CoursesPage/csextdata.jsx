@@ -165,29 +165,7 @@ export const homepageInfo = [
     popupcolor2 : "#EEEEFF",
 }
       ];
-    
-      export const prerequisites = [
-        "Strong foundation in mathematics (algebra, calculus, discrete mathematics)",
-        "Basic understanding of computer systems",
-        "Logical thinking and analytical skills",
-        "Good communication skills",
-        "Self-motivation and ability to learn independently"
-      ];
-      
-    //change THEME color from imports, FADE BG  
 
-export const coreAreasOfStudy = [
-  "Programming and Software Engineering",
-  "Data Structures and Algorithms",
-  "Computer Architecture and Organization",
-  "Operating Systems",
-  "Database Management Systems",
-  "Computer Networks",
-  "Artificial Intelligence and Machine Learning",
-  "Cryptography",
-  "Theory of Computation",
-  "Computer Graphics and Visualization"
-  ];
 
   export const jobGrowthFields = [
     "DATA SCIENCE",
@@ -217,43 +195,180 @@ export const coreAreasOfStudy = [
     { id: 3, experience: "4-6 YEARS EXPERIENCE", salaryRange: "$122,000 - $221,000" },
     { id: 4, experience: "7-9 YEARS EXPERIENCE", salaryRange: "$140,000 - $250,000" }
   ];
-
-  
+  export const prerequisites = [
+    {
+      skill: "Strong foundation in mathematics (algebra, calculus, discrete mathematics)",
+      description: "Essential for understanding algorithms, computational theory, and problem-solving in computer science."
+    },
+    {
+      skill: "Basic understanding of computer systems",
+      description: "Provides the groundwork for learning how hardware and software interact in computing."
+    },
+    {
+      skill: "Logical thinking and analytical skills",
+      description: "Vital for debugging, analyzing problems, and creating efficient solutions."
+    },
+    {
+      skill: "Good communication skills",
+      description: "Important for collaborating with teams and conveying technical concepts effectively."
+    },
+    {
+      skill: "Self-motivation and ability to learn independently",
+      description: "Crucial for keeping up with the rapidly evolving field of computer science."
+    }
+  ];
+  export const coreAreasOfStudy = [
+    {
+      area: "Programming and Software Engineering",
+      description: "Focuses on writing, testing, and maintaining code as well as applying engineering principles to software development."
+    },
+    {
+      area: "Data Structures and Algorithms",
+      description: "Covers the organization of data and methods for solving computational problems efficiently."
+    },
+    {
+      area: "Computer Architecture and Organization",
+      description: "Examines the structure and functioning of computer hardware."
+    },
+    {
+      area: "Operating Systems",
+      description: "Explores the management of hardware and software resources by the system's core programs."
+    },
+    {
+      area: "Database Management Systems",
+      description: "Focuses on storing, managing, and retrieving structured data efficiently."
+    },
+    {
+      area: "Computer Networks",
+      description: "Studies the principles of data communication and network infrastructure."
+    },
+    {
+      area: "Artificial Intelligence and Machine Learning",
+      description: "Covers the creation of systems capable of learning and making decisions autonomously."
+    },
+    {
+      area: "Cryptography",
+      description: "Focuses on securing communication and data through encryption techniques."
+    },
+    {
+      area: "Theory of Computation",
+      description: "Explores the mathematical foundations of computing and algorithmic processes."
+    },
+    {
+      area: "Computer Graphics and Visualization",
+      description: "Studies methods for rendering images and visual representations of data."
+    }
+  ];
   export const topspecializations = [
-    "Artificial Intelligence and Machine Learning",
-    "Data Science and Big Data Analytics",
-    "Cybersecurity and Information Assurance",
-    "Cloud Computing and Distributed Systems",
-    "Human-Computer Interaction",
-    "Computer Vision and Image Processing",
-    "Bioinformatics",
-    "Quantum Computing",
-    "Robotics",
-    "Internet of Things (IoT)"
+    {
+      specialization: "Artificial Intelligence and Machine Learning",
+      description: "Developing systems that can learn and adapt through data-driven approaches."
+    },
+    {
+      specialization: "Data Science and Big Data Analytics",
+      description: "Analyzing large datasets to uncover patterns and insights for decision-making."
+    },
+    {
+      specialization: "Cybersecurity and Information Assurance",
+      description: "Protecting systems and data from unauthorized access and cyber threats."
+    },
+    {
+      specialization: "Cloud Computing and Distributed Systems",
+      description: "Designing scalable systems for data storage and computation over the internet."
+    },
+    {
+      specialization: "Human-Computer Interaction",
+      description: "Improving the usability and accessibility of computing systems."
+    },
+    {
+      specialization: "Computer Vision and Image Processing",
+      description: "Enabling machines to interpret and process visual data."
+    },
+    {
+      specialization: "Bioinformatics",
+      description: "Applying computational methods to biological data for research and discovery."
+    },
+    {
+      specialization: "Quantum Computing",
+      description: "Leveraging quantum mechanics to create powerful computing systems."
+    },
+    {
+      specialization: "Robotics",
+      description: "Developing intelligent machines capable of performing complex tasks."
+    },
+    {
+      specialization: "Internet of Things (IoT)",
+      description: "Creating interconnected devices that communicate and operate collaboratively."
+    }
   ];
-  
   export const trend = [
-    "Quantum Computing",
-    "Edge Computing",
-    "Extended Reality (XR) - including AR and VR",
-    "Blockchain and Cryptocurrency",
-    "Green Computing and Sustainability",
-    "Neuromorphic Computing"
+    {
+      trend: "Quantum Computing",
+      description: "Revolutionizing problem-solving with unparalleled computational power."
+    },
+    {
+      trend: "Edge Computing",
+      description: "Enhancing real-time processing by performing computations closer to data sources."
+    },
+    {
+      trend: "Extended Reality (XR) - including AR and VR",
+      description: "Blending the physical and digital worlds for immersive experiences."
+    },
+    {
+      trend: "Blockchain and Cryptocurrency",
+      description: "Transforming secure transactions and decentralized systems."
+    },
+    {
+      trend: "Green Computing and Sustainability",
+      description: "Focusing on environmentally friendly computing practices."
+    },
+    {
+      trend: "Neuromorphic Computing",
+      description: "Building computing systems modeled after the human brain's neural architecture."
+    }
   ];
-  
   export const skills = [
-    "Critical thinking and problem-solving",
-    "Programming in multiple languages (e.g., Python, Java, C++, JavaScript)",
-    "Data analysis and interpretation",
-    "Algorithm design and optimization",
-    "Software development methodologies",
-    "System design and architecture",
-    "Database management",
-    "Network administration",
-    "Cybersecurity practices",
-    "Project management"
+    {
+      skill: "Critical thinking and problem-solving",
+      description: "Essential for tackling complex challenges and designing innovative solutions."
+    },
+    {
+      skill: "Programming in multiple languages (e.g., Python, Java, C++, JavaScript)",
+      description: "Foundational for building, optimizing, and maintaining software systems."
+    },
+    {
+      skill: "Data analysis and interpretation",
+      description: "Vital for deriving insights and making informed decisions from data."
+    },
+    {
+      skill: "Algorithm design and optimization",
+      description: "Key for creating efficient and scalable computational solutions."
+    },
+    {
+      skill: "Software development methodologies",
+      description: "Enables systematic planning, implementation, and testing of software."
+    },
+    {
+      skill: "System design and architecture",
+      description: "Crucial for developing robust and scalable computing systems."
+    },
+    {
+      skill: "Database management",
+      description: "Ensures effective organization and retrieval of data."
+    },
+    {
+      skill: "Network administration",
+      description: "Maintains the integrity and performance of communication networks."
+    },
+    {
+      skill: "Cybersecurity practices",
+      description: "Protects systems from vulnerabilities and ensures data confidentiality."
+    },
+    {
+      skill: "Project management",
+      description: "Coordinates resources and timelines to deliver successful outcomes."
+    }
   ];
-  
   export const challengesArray = [
     "UNDERGRADUATE CHALLENGES",
     {

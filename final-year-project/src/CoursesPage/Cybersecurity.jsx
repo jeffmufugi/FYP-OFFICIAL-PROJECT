@@ -22,7 +22,8 @@ import {countries,topspecializations,
 import { Page1,Page2,Page3,Page4,Page5, fadeInFromLeft} from "./a0Skeleton.jsx";
 
 
-const CybersecurityCourse= () => {
+
+const CybersecurityCourse = () => {
  
   const [isOpen, setIsOpen] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState("🇺🇸");
@@ -30,7 +31,6 @@ const CybersecurityCourse= () => {
   const [hoveredCourse, setHoveredCourse] = useState(null);
   const [selectedCurrency, setSelectedCurrency] = useState("$");
   const [animat,setAnimat]=useState(null)
-
   useEffect(() => {
     const defaultCountry = countries.find(country => country.flag === "🇺🇸");
     if (defaultCountry) {
@@ -38,13 +38,9 @@ const CybersecurityCourse= () => {
       setCourseData(courses);
     }
   }, []);
+
   const inputRef = useRef(null);
-
-  const dropdownRef = useRef(null);
-
-  // Toggle the dropdown open/close
- 
-  // Close the dropdown if clicked outside of it
+  const dropdownRef=useRef(null)
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setIsOpen(false);
@@ -66,9 +62,11 @@ const CybersecurityCourse= () => {
     const currency = setSelectedCurrency(country.currency);
     const courses = getTopCourses(country.file);
     setCourseData(courses);
+
+
+    
     setIsOpen(false);
   };
-  
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
     setAnimat(null)
@@ -87,6 +85,8 @@ const CybersecurityCourse= () => {
 
 
   const [hoveredText, setHoveredText] = useState(null);
+
+
   const handleMouseEnt = (index,type) => {
     if (type === 'challenges') {
       setHoveredCourse(index);
@@ -106,11 +106,48 @@ const CybersecurityCourse= () => {
     setHoveredCourse(index);
   };
 
+
+  const [hoveredText2, setHoveredText2] = useState(null);
+  const [hoveredText3, setHoveredText3] = useState(null);
+  const handleMouseEnt2 = (index,type) => {
+    if (type === 'core') {
+      setHoveredText2(index);
+    } else if (type === 'pre') {
+      setHoveredText3(index);
+    }
+  };
+  const handleMouseLeav2 = (type) => {
+    console.log('Mouse left');
+    setHoveredText2(null);
+    setHoveredText3(null);
+  };
+  const [hoveredText4, setHoveredText4] = useState(null);
+  const [hoveredText5, setHoveredText5] = useState(null);
+  const [hoveredText6, setHoveredText6] = useState(null);
+  const handleMouseEnt3 = (index,type) => {
+    if (type === 'emerge') {
+      setHoveredText4(index);
+    } if (type === 'top') {
+      setHoveredText5(index);
+    }
+    else if(type==="skills"){
+      setHoveredText6(index);
+
+    }
+  };
+  const handleMouseLeav3 = (type) => {
+    console.log('Mouse left');
+    setHoveredText4(null);
+    setHoveredText5(null);
+    setHoveredText6(null);
+  };
+  
+
+
   
   return (
     <>
     <div className="cs-course-page" style={{background:"linear-gradient(to bottom, #162E45, #ffffffbb 80%)"}}>
-
       <Header1 />
       <Page1 
             coursename={homepageInfo[0].courseName}
@@ -148,6 +185,10 @@ const CybersecurityCourse= () => {
         homepageInfo={homepageInfo} 
         coreAreasOfStudy={coreAreasOfStudy} 
         prerequisites={prerequisites} 
+        handleMouseEnt2={handleMouseEnt2}
+        handleMouseLeav2={handleMouseLeav2}
+        hoveredText2={hoveredText2}
+        hoveredText3={hoveredText3}
 />
       </div>
 
@@ -186,6 +227,11 @@ const CybersecurityCourse= () => {
           topspecializations={topspecializations}
           skills={skills}
           h6={h6}
+          handleMouseEnt3={handleMouseEnt3}
+          handleMouseLeav3={handleMouseLeav3}
+          hoveredText4={hoveredText4}
+          hoveredText5={hoveredText5}
+          hoveredText6={hoveredText6}
 />
       </div>
 
@@ -212,7 +258,6 @@ const CybersecurityCourse= () => {
   );
 };
 export default CybersecurityCourse;
-
 
 
 

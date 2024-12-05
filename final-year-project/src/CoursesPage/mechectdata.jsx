@@ -164,24 +164,6 @@ export const experienceSalary2 = [
   { id: 4, experience: "7-9 YEARS EXPERIENCE", salaryRange: "$140,000 - $250,000" }
 ];
 
-export const prerequisites = [
-    "Strong foundation in physics, mathematics, and mechanics",
-    "Understanding of thermodynamics and fluid dynamics",
-    "Proficiency in computer-aided design (CAD) tools",
-    "Problem-solving and analytical skills",
-    "Teamwork and communication skills"
-];
-
-export const coreAreasOfStudy = [
-    "Statics and Dynamics",
-    "Thermodynamics",
-    "Fluid Mechanics",
-    "Materials Science",
-    "Heat Transfer",
-    "Control Systems",
-    "Mechanical Design",
-    "Manufacturing Processes"
-];
 
 export const jobGrowthFields = [
     "AEROSPACE ENGINEERING",
@@ -199,36 +181,155 @@ export const experienceSalary = [
 ];
 
 
+export const prerequisites = [
+  {
+    skill: "Strong foundation in physics, mathematics, and mechanics",
+    description: "Essential for understanding the principles behind mechanical systems and solving complex engineering problems."
+  },
+  {
+    skill: "Understanding of thermodynamics and fluid dynamics",
+    description: "Critical for designing systems that involve energy transfer, heat, and fluid flow, such as engines and HVAC systems."
+  },
+  {
+    skill: "Proficiency in computer-aided design (CAD) tools",
+    description: "CAD software is indispensable for designing and modeling mechanical systems and components in engineering."
+  },
+  {
+    skill: "Problem-solving and analytical skills",
+    description: "Ability to think critically, analyze systems, and develop innovative solutions to engineering challenges."
+  },
+  {
+    skill: "Teamwork and communication skills",
+    description: "Effective communication and collaboration with multidisciplinary teams are crucial in engineering projects."
+  }
+];
 
+export const coreAreasOfStudy = [
+  {
+    area: "Statics and Dynamics",
+    description: "Study of forces and their effects on motion and equilibrium in physical systems, essential for designing stable structures."
+  },
+  {
+    area: "Thermodynamics",
+    description: "Study of heat and energy transfer, foundational for systems such as engines, refrigeration, and power generation."
+  },
+  {
+    area: "Fluid Mechanics",
+    description: "Focus on the behavior of fluids (liquids and gases), important for applications such as pump design, air conditioning, and propulsion."
+  },
+  {
+    area: "Materials Science",
+    description: "Study of the properties and behavior of materials, critical for selecting the right materials in engineering designs."
+  },
+  {
+    area: "Heat Transfer",
+    description: "Understanding of how heat moves through materials and systems, crucial for efficient energy systems and product design."
+  },
+  {
+    area: "Control Systems",
+    description: "Design and analysis of systems that control physical processes, key to robotics, automation, and aerospace systems."
+  },
+  {
+    area: "Mechanical Design",
+    description: "Focus on the process of designing mechanical systems and products, integrating principles from all core areas."
+  },
+  {
+    area: "Manufacturing Processes",
+    description: "Study of techniques used to produce mechanical components and systems, such as machining, casting, and additive manufacturing."
+  }
+];
 export const topspecializations = [
-    "Aerospace Engineering",
-    "Automotive Engineering",
-    "Robotics",
-    "Energy Systems",
-    "Mechatronics",
-    "Manufacturing Processes",
-    "Nanotechnology",
-    "Biomechanics"
+  {
+    specialization: "Aerospace Engineering",
+    description: "Focus on the design and development of aircraft, spacecraft, and related systems, combining principles from thermodynamics, fluid dynamics, and control systems."
+  },
+  {
+    specialization: "Automotive Engineering",
+    description: "Design and development of vehicles, including propulsion systems, structural components, and safety features."
+  },
+  {
+    specialization: "Robotics",
+    description: "Study of robotic systems, integrating mechanical design, control systems, and automation technologies."
+  },
+  {
+    specialization: "Energy Systems",
+    description: "Focus on the design and management of energy systems, including renewable energy and power generation."
+  },
+  {
+    specialization: "Mechatronics",
+    description: "A multidisciplinary field combining mechanical engineering, electronics, and computing to create smart systems and products."
+  },
+  {
+    specialization: "Manufacturing Processes",
+    description: "Focus on the techniques and technologies used in the production of mechanical parts, including automation, robotics, and additive manufacturing."
+  },
+  {
+    specialization: "Nanotechnology",
+    description: "Study and application of mechanical engineering at the nanoscale, with applications in materials science, medicine, and electronics."
+  },
+  {
+    specialization: "Biomechanics",
+    description: "Application of mechanical engineering principles to biological systems, including prosthetics, medical devices, and human performance."
+  }
 ];
 
 export const trend = [
-    "Sustainable Energy Systems",
-    "Autonomous Vehicles",
-    "Additive Manufacturing (3D Printing)",
-    "Robotics and Automation",
-    "Artificial Intelligence in Engineering",
-    "Advanced Materials Development"
+  {
+    trend: "Sustainable Energy Systems",
+    description: "Growing emphasis on renewable energy technologies and sustainable practices in energy production, including wind, solar, and biofuels."
+  },
+  {
+    trend: "Autonomous Vehicles",
+    description: "Development of self-driving cars, integrating robotics, control systems, and AI to create safer and more efficient transportation."
+  },
+  {
+    trend: "Additive Manufacturing (3D Printing)",
+    description: "Revolutionizing manufacturing processes with 3D printing, allowing for customized, efficient, and cost-effective production of complex parts."
+  },
+  {
+    trend: "Robotics and Automation",
+    description: "Increasing use of robots and automated systems in industries such as manufacturing, healthcare, and service industries to improve efficiency."
+  },
+  {
+    trend: "Artificial Intelligence in Engineering",
+    description: "Integration of AI in engineering processes, including design optimization, predictive maintenance, and process automation."
+  },
+  {
+    trend: "Advanced Materials Development",
+    description: "Research and development of new materials with unique properties for applications in aerospace, automotive, and biomedical engineering."
+  }
+];
+export const skills = [
+  {
+    skill: "Strong understanding of mechanics and physics",
+    description: "Fundamental knowledge in mechanics, including force analysis and motion principles, is essential for designing functional systems."
+  },
+  {
+    skill: "Computer-aided design (CAD) and simulation software",
+    description: "Proficiency in CAD tools like AutoCAD and simulation software is crucial for modeling and testing mechanical components before production."
+  },
+  {
+    skill: "Ability to analyze and interpret data",
+    description: "Essential for making data-driven decisions during the design, testing, and optimization of mechanical systems."
+  },
+  {
+    skill: "Project management and teamwork",
+    description: "Ability to manage projects, work within multidisciplinary teams, and coordinate tasks is critical for successful engineering outcomes."
+  },
+  {
+    skill: "Effective communication and presentation skills",
+    description: "Clear communication is vital for explaining design concepts, technical reports, and collaborating with stakeholders."
+  },
+  {
+    skill: "Knowledge of manufacturing processes",
+    description: "Understanding of various manufacturing techniques like machining, casting, and welding helps in choosing appropriate methods for production."
+  },
+  {
+    skill: "Problem-solving in complex engineering systems",
+    description: "Strong problem-solving abilities to address issues that arise during the design, testing, and operation of mechanical systems."
+  }
 ];
 
-export const skills = [
-    "Strong understanding of mechanics and physics",
-    "Computer-aided design (CAD) and simulation software",
-    "Ability to analyze and interpret data",
-    "Project management and teamwork",
-    "Effective communication and presentation skills",
-    "Knowledge of manufacturing processes",
-    "Problem-solving in complex engineering systems"
-];
 
 export const challengesArray = [
     "UNDERGRADUATE CHALLENGES",

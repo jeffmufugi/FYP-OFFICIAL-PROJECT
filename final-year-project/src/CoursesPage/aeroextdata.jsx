@@ -144,31 +144,64 @@ export const homepageInfo1 = [ {
 
     
 export const prerequisites = [
-    "Strong foundation in physics and mathematics",
-    "Analytical and problem-solving skills",
-    "Familiarity with computer-aided design (CAD) software",
-    "Teamwork and communication skills",
-    "Basic programming knowledge (C++, MATLAB, etc.)"
-];
+    {
+      skill: "Strong foundation in physics and mathematics",
+      description: "A deep understanding of fundamental principles such as mechanics, dynamics, calculus, and differential equations is crucial for solving complex engineering problems."
+    },
+    {
+        skill: "Analytical and problem-solving skills",
+      description: "The ability to critically analyze problems and devise innovative solutions is essential in addressing technical challenges in engineering and design."
+    },
+    {
+        skill: "Familiarity with computer-aided design (CAD) software",
+      description: "Proficiency in CAD tools like SolidWorks, AutoCAD, or CATIA is necessary for creating and modifying engineering designs."
+    },
+    {
+      skill: "Teamwork and communication skills",
+      description: "Effective collaboration and clear communication are vital for working within multidisciplinary teams on complex projects."
+    },
+    {
+        skill: "Basic programming knowledge (C++, MATLAB, etc.)",
+      description: "Understanding programming languages helps in simulation, modeling, and automation of engineering processes."
+    }
+  ];
 
-export const coreAreasOfStudy = [
-    "Fluid Mechanics",
-    "Thermodynamics",
-    "Structural Mechanics",
-    "Control Systems",
-    "Propulsion Systems",
-    "Materials Science",
-    "Avionics",
-    "Astrodynamics"
-];
+  export const coreAreasOfStudy = [
+    {
+      area: "Fluid Mechanics",
+      description: "Explores the behavior of fluids and their interaction with surfaces, essential for understanding aerodynamics and propulsion systems."
+    },
+    {
+      area: "Thermodynamics",
+      description: "Focuses on the principles of energy transfer and conversion, crucial for designing engines and propulsion systems."
+    },
+    {
+      area: "Structural Mechanics",
+      description: "Covers the analysis and design of structures to ensure they can withstand forces and stresses in various operating conditions."
+    },
+    {
+      area: "Control Systems",
+      description: "Studies the behavior and regulation of dynamic systems, enabling the design of stable and responsive systems like autopilots."
+    },
+    {
+      area: "Propulsion Systems",
+      description: "Focuses on the design and optimization of engines and propulsion technologies used in aircraft and spacecraft."
+    },
+    {
+      area: "Materials Science",
+      description: "Examines the properties and applications of materials, ensuring they meet the demands of aerospace structures and systems."
+    },
+    {
+      area: "Avionics",
+      description: "Covers the electronic systems used in aerospace applications, including navigation, communication, and flight control."
+    },
+    {
+      area: "Astrodynamics",
+      description: "Studies the motion of objects in space, providing the foundation for spacecraft trajectory design and orbital mechanics."
+    }
+  ];
 
-export const jobGrowthFields = [
-    "Aerospace Design and Manufacturing",
-    "Space Exploration",
-    "Unmanned Aerial Vehicles (UAVs)",
-    "Satellite Technology",
-    "Aerodynamics and Structural Analysis"
-];
+
 
 export const experienceSalary = [
     { experience: "0-1 YEARS EXPERIENCE", salaryRange: "$60,000 - $75,000" },
@@ -192,30 +225,81 @@ export const experienceSalary2 = [
 
 
 export const topspecializations = [
-    "Flight Dynamics",
-    "Propulsion Systems",
-    "Avionics Engineering",
-    "Aerodynamics",
-    "Space Systems Engineering",
-    "Robotics and Autonomy"
-];
+    {
+      specialization: "Flight Dynamics",
+      description: "Studies the forces and moments acting on aircraft and spacecraft, focusing on stability, control, and performance optimization."
+    },
+    {
+      specialization: "Propulsion Systems",
+      description: "Involves the design and development of engines and propulsion technologies, including jet engines and rocket systems."
+    },
+    {
+      specialization: "Avionics Engineering",
+      description: "Focuses on the electronic systems used in aerospace vehicles, such as navigation, communication, and automated controls."
+    },
+    {
+      specialization: "Aerodynamics",
+      description: "Examines the behavior of air as it interacts with solid surfaces, critical for improving the efficiency and performance of aerospace vehicles."
+    },
+    {
+      specialization: "Space Systems Engineering",
+      description: "Integrates various disciplines to design and manage spacecraft, satellites, and related technologies for space exploration."
+    },
+    {
+      specialization: "Robotics and Autonomy",
+      description: "Focuses on developing autonomous systems and robotics for use in aerospace applications, such as unmanned aerial vehicles and planetary rovers."
+    }
+  ];
 
-export const trend = [
-    "Electric Propulsion",
-    "Urban Air Mobility",
-    "Reusable Launch Vehicles",
-    "Hypersonic Travel",
-    "Advanced Composites"
-];
+  export const trend = [
+    {
+      trend: "Electric Propulsion",
+      description: "The use of electric engines for more sustainable and efficient aerospace propulsion, gaining traction in satellites and spacecraft."
+    },
+    {
+      trend: "Urban Air Mobility",
+      description: "Development of personal air vehicles and air taxis to address urban transportation challenges and reduce congestion."
+    },
+    {
+      trend: "Reusable Launch Vehicles",
+      description: "Innovations in reusable rockets and spacecraft that reduce costs and improve sustainability in space exploration."
+    },
+    {
+      trend: "Hypersonic Travel",
+      description: "Advancements in technologies enabling travel at speeds greater than Mach 5, revolutionizing transportation and defense."
+    },
+    {
+      trend: "Advanced Composites",
+      description: "The use of lightweight and high-strength materials to improve fuel efficiency, durability, and performance in aerospace vehicles."
+    }
+  ];
 
-export const skills = [
-    "Advanced mathematical modeling",
-    "Simulation and analysis (ANSYS, MATLAB)",
-    "Strong programming skills (C++, Python)",
-    "Technical writing and communication",
-    "Project management and teamwork",
-    "Problem-solving and critical thinking"
-];
+  export const skills = [
+    {
+      skill: "Advanced mathematical modeling",
+      description: "The ability to create complex mathematical models to simulate real-world scenarios and optimize aerospace designs."
+    },
+    {
+      skill: "Simulation and analysis (ANSYS, MATLAB)",
+      description: "Proficiency in simulation tools to analyze stress, heat, and fluid dynamics in aerospace components and systems."
+    },
+    {
+      skill: "Strong programming skills (C++, Python)",
+      description: "Expertise in programming for developing algorithms, simulations, and software used in aerospace systems and automation."
+    },
+    {
+      skill: "Technical writing and communication",
+      description: "The ability to document complex technical concepts and communicate them effectively to diverse audiences."
+    },
+    {
+      skill: "Project management and teamwork",
+      description: "Skills in coordinating multidisciplinary teams and managing large-scale projects to meet aerospace engineering objectives."
+    },
+    {
+      skill: "Problem-solving and critical thinking",
+      description: "The capability to analyze complex challenges and devise innovative solutions for engineering and design problems."
+    }
+  ];
 
 export const challengesArray = [
     "UNDERGRADUATE CHALLENGES",

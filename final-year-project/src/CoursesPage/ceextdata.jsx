@@ -160,27 +160,6 @@ export const experienceSalary2 = [
 
 
 
-
-
-export const prerequisites = [
-    "Strong foundation in mathematics and physics",
-    "Proficiency in programming languages (C, C++, Python)",
-    "Knowledge of computer hardware and software systems",
-    "Problem-solving and analytical thinking",
-    "Team collaboration and communication skills"
-];
-
-export const coreAreasOfStudy = [
-    "Digital Logic Design",
-    "Microprocessors and Microcontrollers",
-    "Computer Networks",
-    "Operating Systems",
-    "Software Engineering",
-    "Embedded Systems",
-    "VLSI Design",
-    "Cybersecurity"
-];
-
 export const jobGrowthFields = [
     "Artificial Intelligence",
     "IoT and Embedded Systems",
@@ -196,33 +175,136 @@ export const experienceSalary = [
     { experience: "7-9 YEARS EXPERIENCE", salaryRange: "$110,000 - $140,000" }
 ];
 
-
+export const prerequisites = [
+  {
+    skill: "Strong foundation in mathematics and physics",
+    description: "Provides the necessary analytical and logical base for understanding hardware and software systems."
+  },
+  {
+    skill: "Proficiency in programming languages (C, C++, Python)",
+    description: "Essential for designing, testing, and implementing computer systems and applications."
+  },
+  {
+    skill: "Knowledge of computer hardware and software systems",
+    description: "Understanding the fundamentals of computing devices and how they interact is crucial for development."
+  },
+  {
+    skill: "Problem-solving and analytical thinking",
+    description: "Critical for tackling complex engineering challenges in innovative ways."
+  },
+  {
+    skill: "Team collaboration and communication skills",
+    description: "Enables effective teamwork and the ability to convey technical concepts clearly."
+  }
+];
+export const coreAreasOfStudy = [
+  {
+    area: "Digital Logic Design",
+    description: "Focuses on designing and analyzing digital circuits and systems."
+  },
+  {
+    area: "Microprocessors and Microcontrollers",
+    description: "Covers the architecture, programming, and applications of these processing units."
+  },
+  {
+    area: "Computer Networks",
+    description: "Explores the principles of networking, data communication, and internet technologies."
+  },
+  {
+    area: "Operating Systems",
+    description: "Provides knowledge about managing computer hardware and software resources effectively."
+  },
+  {
+    area: "Software Engineering",
+    description: "Focuses on designing, developing, and maintaining software systems."
+  },
+  {
+    area: "Embedded Systems",
+    description: "Involves integrating hardware and software for dedicated functionality in devices."
+  },
+  {
+    area: "VLSI Design",
+    description: "Covers the design and development of integrated circuits and microchips."
+  },
+  {
+    area: "Cybersecurity",
+    description: "Focuses on protecting systems and networks from digital attacks and vulnerabilities."
+  }
+];
 export const topspecializations = [
-    "Embedded Systems",
-    "VLSI Design",
-    "Cybersecurity",
-    "Computer Architecture",
-    "Robotics",
-    "Artificial Intelligence"
+  {
+    specialization: "Embedded Systems",
+    description: "Designing integrated hardware-software systems for specialized applications."
+  },
+  {
+    specialization: "VLSI Design",
+    description: "Creating complex microchips and integrated circuits for various computing devices."
+  },
+  {
+    specialization: "Cybersecurity",
+    description: "Ensuring the security of systems and networks against cyber threats."
+  },
+  {
+    specialization: "Computer Architecture",
+    description: "Designing and optimizing the structural components of computing systems."
+  },
+  {
+    specialization: "Robotics",
+    description: "Developing intelligent machines that interact with the physical world."
+  },
+  {
+    specialization: "Artificial Intelligence",
+    description: "Creating smart systems capable of learning, reasoning, and decision-making."
+  }
 ];
-
 export const trend = [
-    "AI-Powered Systems",
-    "Quantum Computing",
-    "Edge Computing",
-    "5G Networks",
-    "Autonomous Systems"
+  {
+    trend: "AI-Powered Systems",
+    description: "Integrating artificial intelligence into hardware and software for advanced functionality."
+  },
+  {
+    trend: "Quantum Computing",
+    description: "Revolutionizing computing with quantum principles for immense processing power."
+  },
+  {
+    trend: "Edge Computing",
+    description: "Bringing data processing closer to devices for faster and more efficient operations."
+  },
+  {
+    trend: "5G Networks",
+    description: "Transforming communication and connectivity with ultra-fast network speeds."
+  },
+  {
+    trend: "Autonomous Systems",
+    description: "Advancing self-sufficient technologies like drones and autonomous vehicles."
+  }
 ];
-
 export const skills = [
-    "Proficiency in hardware-software integration",
-    "Strong coding skills (C++, Python, Verilog)",
-    "Knowledge of networking protocols",
-    "Experience with simulation tools (MATLAB, Simulink)",
-    "Project management and leadership",
-    "Critical thinking and problem-solving"
+  {
+    skill: "Proficiency in hardware-software integration",
+    description: "Ensures seamless operation between physical devices and software systems."
+  },
+  {
+    skill: "Strong coding skills (C++, Python, Verilog)",
+    description: "Vital for programming, simulation, and system development."
+  },
+  {
+    skill: "Knowledge of networking protocols",
+    description: "Essential for designing and troubleshooting computer networks."
+  },
+  {
+    skill: "Experience with simulation tools (MATLAB, Simulink)",
+    description: "Helps in modeling and analyzing systems for performance and accuracy."
+  },
+  {
+    skill: "Project management and leadership",
+    description: "Crucial for leading teams and delivering successful engineering projects."
+  },
+  {
+    skill: "Critical thinking and problem-solving",
+    description: "Key for addressing challenges and developing innovative solutions."
+  }
 ];
-
 export const challengesArray = [
     "UNDERGRADUATE CHALLENGES",
     {

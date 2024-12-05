@@ -120,7 +120,7 @@ there must be a change
 }
 
 
-export function Page2({icon1,icon2,icon3,homepageInfo,coreAreasOfStudy,prerequisites}){
+export function Page2({icon1,icon2,icon3,homepageInfo,coreAreasOfStudy,prerequisites,handleMouseEnt2,handleMouseLeav2,hoveredText2,hoveredText3}){
 
   return(
     <>
@@ -169,12 +169,23 @@ export function Page2({icon1,icon2,icon3,homepageInfo,coreAreasOfStudy,prerequis
             <div className="ab4">
             <motion.p className="main-text-course" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft3.left4}>
               {
-              coreAreasOfStudy.map((index)=>(
-                <li 
+              coreAreasOfStudy.map((core,index)=>(
+                <li className="course-name-desc"
                 key={index} 
                 style={{marginBottom:"1.5rem"}}
+                onMouseEnter={() => handleMouseEnt2(index,"core")}
+                onMouseLeave={handleMouseLeav2}
                 >
-                  {index}
+                  {core.area}
+                  {hoveredText2 === index && (
+                        <motion.div className="course-desc-hov2" style={{ 
+                            backgroundColor: homepageInfo[1].popupcolor1, 
+                            color: homepageInfo[1].popupcolor2, 
+                        }}
+                        {...fadeInFromLeft3.a8}>
+                          {core.description}
+                        </motion.div>
+            )}
                 </li>
               ))}
               </motion.p>
@@ -191,12 +202,25 @@ export function Page2({icon1,icon2,icon3,homepageInfo,coreAreasOfStudy,prerequis
             <motion.p className="course-bar" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft3.left3}>____________________</motion.p>
              </div>
             <div className="ab4" > 
-            <motion.p className="main-text-course" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft3.left4}>{prerequisites.map((index)=>(
+            <motion.p className="main-text-course" style={{ color: homepageInfo[1].fontColor }} {...fadeInFromLeft3.left4}>
+              {prerequisites.map((pre,index)=>(
               <li 
+              className="course-name-desc"
               key={index} 
               style={{marginBottom:"1.5rem"}}
+              onMouseEnter={() => handleMouseEnt2(index,"pre")}
+              onMouseLeave={handleMouseLeav2}
               >
-                {index}
+                {pre.skill}
+                {hoveredText3 === index && (
+                      <motion.div className="course-desc-hov3" style={{ 
+                          backgroundColor: homepageInfo[1].popupcolor1, 
+                          color: homepageInfo[1].popupcolor2, 
+                      }}
+                      {...fadeInFromLeft3.a8}>
+                        {pre.description}
+                      </motion.div>
+          )}
               </li>
             ))}</motion.p>
             </div>
@@ -322,7 +346,7 @@ export function Page3({selectedCountry,countries,experienceSalary,experienceSala
 }
 
 
-export function Page4({homepageInfo,h4,trend,h5,topspecializations,skills,h6}){
+export function Page4({homepageInfo,h4,trend,h5,topspecializations,skills,h6,handleMouseEnt3,handleMouseLeav3,hoveredText4,hoveredText5,hoveredText6}){
 
 
   return(
@@ -342,7 +366,24 @@ export function Page4({homepageInfo,h4,trend,h5,topspecializations,skills,h6}){
               <motion.ul className="main-text-course"  {...fadeInFromLeft3.left6}>
                 {
                 trend.map((trend,index)=>(
-                  <li key={index} style={{ color: homepageInfo[1].fontColor, marginBottom:"1.5rem" }}>{trend}</li>
+                  <li 
+                  className="course-name-desc1"
+                  key={index} style={{ color: homepageInfo[1].fontColor, marginBottom:"1.5rem" }}
+                  onMouseEnter={() => handleMouseEnt3(index,"emerge")}
+                  onMouseLeave={handleMouseLeav3}
+                  >
+                    {trend.trend}
+                  {hoveredText4 === index && (
+                      <motion.div className="course-desc-hov" style={{ 
+                          backgroundColor: homepageInfo[1].popupcolor1, 
+                          color: homepageInfo[1].popupcolor2, 
+                      }}
+                      {...fadeInFromLeft3.a8}>
+                        {trend.description}
+                      </motion.div>
+          )}
+                  
+                  </li>
                 ))
                 
                 }
@@ -362,8 +403,24 @@ export function Page4({homepageInfo,h4,trend,h5,topspecializations,skills,h6}){
             <div className="ab4">
               <motion.ul className="main-text-course"  {...fadeInFromLeft3.left6}>
                       {
-                        topspecializations.map((course,index)=>(
-                          <li key={index} style={{ color: homepageInfo[1].fontColor,marginBottom:"1.5rem" }}>{course}</li>
+                        topspecializations.map((top,index)=>(
+                          <li 
+                          className="course-name-desc1"
+                          key={index} style={{ color: homepageInfo[1].fontColor,marginBottom:"1.5rem" }}
+                          onMouseEnter={() => handleMouseEnt3(index,"top")}
+                          onMouseLeave={handleMouseLeav3}
+                          >
+                            {top.specialization}
+                          {hoveredText5 === index && (
+                      <motion.div className="course-desc-hov" style={{ 
+                          backgroundColor: homepageInfo[1].popupcolor1, 
+                          color: homepageInfo[1].popupcolor2, 
+                      }}
+                      {...fadeInFromLeft3.a8}>
+                        {top.description}
+                      </motion.div>
+          )}
+                          </li>
                         ))
                       }
                       </motion.ul>
@@ -385,7 +442,23 @@ export function Page4({homepageInfo,h4,trend,h5,topspecializations,skills,h6}){
               <motion.ul className="main-text-course" {...fadeInFromLeft3.left6} style={{ color: homepageInfo[1].fontColor }} >
                         {
                           skills.map((skills,index)=>(
-                            <li key={index} style={{marginBottom:"1.5rem"}}>{skills}</li>
+                            <li 
+                            className="course-name-desc1"
+                            key={index} style={{marginBottom:"1.5rem"}}
+                            onMouseEnter={() => handleMouseEnt3(index,"skills")}
+                            onMouseLeave={handleMouseLeav3}
+                            >
+                              {skills.skill}
+                            {hoveredText6 === index && (
+                      <motion.div className="course-desc-hov" style={{ 
+                          backgroundColor: homepageInfo[1].popupcolor1, 
+                          color: homepageInfo[1].popupcolor2, 
+                      }}
+                      {...fadeInFromLeft3.a8}>
+                        {skills.description}
+                      </motion.div>
+          )}
+                            </li>
                           ))
                         }
               </motion.ul>

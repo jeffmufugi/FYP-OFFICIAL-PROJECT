@@ -148,26 +148,6 @@ export const experienceSalary2 = [
 ];
 
 
-
-export const prerequisites = [
-    "Strong foundation in mathematics and statistics",
-    "Proficiency in programming languages such as Python and R",
-    "Understanding of machine learning algorithms and techniques",
-    "Experience with data manipulation and analysis",
-    "Knowledge of big data tools like Hadoop or Spark"
-];
-
-export const coreAreasOfStudy = [
-    "Machine Learning",
-    "Big Data Analytics",
-    "Data Mining",
-    "Artificial Intelligence",
-    "Data Visualization",
-    "Statistical Analysis",
-    "Cloud Computing",
-    "Natural Language Processing"
-];
-
 export const jobGrowthFields = [
     "Machine Learning Engineering",
     "Data Science Consulting",
@@ -183,33 +163,146 @@ export const experienceSalary = [
     { experience: "7-9 YEARS EXPERIENCE", salaryRange: "$130,000 - $150,000" }
 ];
 
-
 export const topspecializations = [
-    "Machine Learning",
-    "Artificial Intelligence",
-    "Data Engineering",
-    "Data Visualization",
-    "Cloud Computing",
-    "Natural Language Processing"
+  {
+    specialization: "Machine Learning",
+    description: "Focuses on building models that allow computers to learn and make decisions from data."
+  },
+  {
+    specialization: "Artificial Intelligence",
+    description: "Explores intelligent systems capable of performing tasks that typically require human intelligence."
+  },
+  {
+    specialization: "Data Engineering",
+    description: "Involves designing and building systems for collecting, storing, and analyzing data efficiently."
+  },
+  {
+    specialization: "Data Visualization",
+    description: "Focuses on creating graphical representations of data to communicate insights effectively."
+  },
+  {
+    specialization: "Cloud Computing",
+    description: "Uses remote servers hosted on the Internet to store, manage, and process data."
+  },
+  {
+    specialization: "Natural Language Processing",
+    description: "Deals with interactions between computers and human language to enable tasks like translation and sentiment analysis."
+  }
 ];
 
 export const trend = [
-    "Advancements in AI and ML",
-    "Edge Computing",
-    "Data Democratization",
-    "Explainable AI",
-    "Real-time Data Analytics"
+  {
+    trend: "Advancements in AI and ML",
+    description: "Continuous innovation in AI and machine learning techniques is driving new applications."
+  },
+  {
+    trend: "Edge Computing",
+    description: "Processing data closer to its source to reduce latency and improve real-time analytics."
+  },
+  {
+    trend: "Data Democratization",
+    description: "Making data accessible and usable for non-technical users across organizations."
+  },
+  {
+    trend: "Explainable AI",
+    description: "Focus on making AI decisions transparent and understandable to build trust and accountability."
+  },
+  {
+    trend: "Real-time Data Analytics",
+    description: "Analyzing and acting on data as it is generated to enable faster decision-making."
+  }
 ];
 
 export const skills = [
-    "Proficiency in programming (Python, R)",
-    "Strong understanding of statistics and probability",
-    "Experience with machine learning frameworks (TensorFlow, PyTorch)",
-    "Data manipulation with SQL and NoSQL databases",
-    "Data visualization with tools like Tableau, Power BI",
-    "Problem-solving and critical thinking skills",
-    "Knowledge of cloud platforms (AWS, Google Cloud)"
+  {
+    skill: "Proficiency in programming (Python, R)",
+    description: "Essential for implementing algorithms and building data-driven applications."
+  },
+  {
+    skill: "Strong understanding of statistics and probability",
+    description: "Provides the foundation for analyzing data and building predictive models."
+  },
+  {
+    skill: "Experience with machine learning frameworks (TensorFlow, PyTorch)",
+    description: "Helps in building and deploying machine learning models efficiently."
+  },
+  {
+    skill: "Data manipulation with SQL and NoSQL databases",
+    description: "Critical for extracting, cleaning, and analyzing structured and unstructured data."
+  },
+  {
+    skill: "Data visualization with tools like Tableau, Power BI",
+    description: "Enables effective communication of data insights to stakeholders."
+  },
+  {
+    skill: "Problem-solving and critical thinking skills",
+    description: "Helps in identifying challenges and crafting innovative solutions."
+  },
+  {
+    skill: "Knowledge of cloud platforms (AWS, Google Cloud)",
+    description: "Facilitates scalable data storage and computation for big data projects."
+  }
 ];
+
+export const prerequisites = [
+  {
+    skill: "Strong foundation in mathematics and statistics",
+    description: "Key to understanding data distributions, trends, and machine learning algorithms."
+  },
+  {
+    skill: "Proficiency in programming languages such as Python and R",
+    description: "Necessary for coding algorithms and handling data effectively."
+  },
+  {
+    skill: "Understanding of machine learning algorithms and techniques",
+    description: "Helps in building predictive models and solving complex problems."
+  },
+  {
+    skill: "Experience with data manipulation and analysis",
+    description: "Crucial for preparing data for analysis and ensuring quality insights."
+  },
+  {
+    skill: "Knowledge of big data tools like Hadoop or Spark",
+    description: "Enables handling large-scale data processing and analysis."
+  }
+];
+
+export const coreAreasOfStudy = [
+  {
+    area: "Machine Learning",
+    description: "Studies algorithms that allow computers to learn from and make predictions on data."
+  },
+  {
+    area: "Big Data Analytics",
+    description: "Focuses on analyzing and extracting insights from large datasets."
+  },
+  {
+    area: "Data Mining",
+    description: "Involves discovering patterns and extracting valuable information from data."
+  },
+  {
+    area: "Artificial Intelligence",
+    description: "Explores the creation of systems capable of performing human-like tasks."
+  },
+  {
+    area: "Data Visualization",
+    description: "Teaches techniques to visually represent data for better understanding."
+  },
+  {
+    area: "Statistical Analysis",
+    description: "Involves applying statistical techniques to interpret data and draw conclusions."
+  },
+  {
+    area: "Cloud Computing",
+    description: "Covers the use of cloud platforms for scalable data storage and computing."
+  },
+  {
+    area: "Natural Language Processing",
+    description: "Focuses on enabling computers to understand and respond to human language."
+  }
+];
+
+
 
 export const challengesArray = [
     "UNDERGRADUATE CHALLENGES",

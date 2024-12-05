@@ -134,24 +134,7 @@ export const homepageInfo1 = [ {
 
     
 
-export const prerequisites = [
-    "Strong foundation in mathematics and physics",
-    "Knowledge of engineering principles",
-    "Problem-solving skills",
-    "Attention to detail",
-    "Communication and teamwork skills"
-];
 
-export const coreAreasOfStudy = [
-    "Structural Engineering",
-    "Transportation Engineering",
-    "Geotechnical Engineering",
-    "Water Resources Engineering",
-    "Environmental Engineering",
-    "Construction Engineering",
-    "Materials Science",
-    "Surveying"
-];
 
 export const jobGrowthFields = [
     "Sustainable Infrastructure",
@@ -183,34 +166,148 @@ export const experienceSalary2 = [
   { id: 4, experience: "7-9 YEARS EXPERIENCE", salaryRange: "$140,000 - $250,000" }
 ];
 
+export const coreAreasOfStudy = [
+    {
+      area: "Structural Engineering",
+      description: "Focuses on designing and analyzing safe and durable structures like buildings and bridges."
+    },
+    {
+      area: "Transportation Engineering",
+      description: "Involves planning and improving transportation systems for efficient mobility."
+    },
+    {
+      area: "Geotechnical Engineering",
+      description: "Examines soil and rock mechanics for foundation design and earthworks."
+    },
+    {
+      area: "Water Resources Engineering",
+      description: "Addresses the management and distribution of water resources for sustainable use."
+    },
+    {
+      area: "Environmental Engineering",
+      description: "Focuses on reducing environmental impact through sustainable practices and technologies."
+    },
+    {
+      area: "Construction Engineering",
+      description: "Involves project management, construction techniques, and on-site operations."
+    },
+    {
+      area: "Materials Science",
+      description: "Studies the properties and applications of construction materials for optimal use."
+    },
+    {
+      area: "Surveying",
+      description: "Involves measuring and mapping land for construction and development projects."
+    }
+  ];
 
 export const topspecializations = [
-    "Structural Engineering",
-    "Transportation Engineering",
-    "Geotechnical Engineering",
-    "Water Resources Engineering",
-    "Environmental Engineering",
-    "Construction Engineering",
-    "Materials Science"
-];
+    {
+      specialization: "Structural Engineering",
+      description: "Design and analysis of structures to ensure they are safe, efficient, and sustainable."
+    },
+    {
+      specialization: "Transportation Engineering",
+      description: "Development and optimization of transportation networks to meet growing demands."
+    },
+    {
+      specialization: "Geotechnical Engineering",
+      description: "Application of soil and rock mechanics in designing foundations and stabilizing slopes."
+    },
+    {
+      specialization: "Water Resources Engineering",
+      description: "Management of water supply, flood control, and irrigation systems."
+    },
+    {
+      specialization: "Environmental Engineering",
+      description: "Engineering solutions to mitigate environmental impacts and promote sustainability."
+    },
+    {
+      specialization: "Construction Engineering",
+      description: "Overseeing construction projects from conception to completion with efficiency and quality."
+    },
+    {
+      specialization: "Materials Science",
+      description: "Exploration of advanced materials for enhanced performance and durability in construction."
+    }
+  ];
 
 export const trend = [
-    "Sustainable Design",
-    "Smart Infrastructure",
-    "3D Printing in Construction",
-    "Modular Construction",
-    "Green Building Technologies"
-];
-
+    {
+      trend: "Sustainable Design",
+      description: "Emphasizes eco-friendly building practices and energy-efficient structures."
+    },
+    {
+      trend: "Smart Infrastructure",
+      description: "Integration of IoT and data analytics for adaptive and intelligent infrastructure."
+    },
+    {
+      trend: "3D Printing in Construction",
+      description: "Revolutionizing construction with faster and cost-effective building techniques."
+    },
+    {
+      trend: "Modular Construction",
+      description: "Streamlined construction through prefabricated components for efficiency."
+    },
+    {
+      trend: "Green Building Technologies",
+      description: "Innovations aimed at reducing the carbon footprint of construction projects."
+    }
+  ];
 export const skills = [
-    "Design and analysis of structures",
-    "Project management",
-    "Knowledge of materials and construction methods",
-    "Use of CAD and BIM software",
-    "Environmental impact assessments",
-    "Surveying and mapping",
-    "Risk analysis for infrastructure projects"
-];
+    {
+      skill: "Design and analysis of structures",
+      description: "Creating safe and efficient designs for buildings, bridges, and other infrastructures."
+    },
+    {
+      skill: "Project management",
+      description: "Coordinating and overseeing engineering projects from start to finish."
+    },
+    {
+      skill: "Knowledge of materials and construction methods",
+      description: "Understanding properties of materials and methods for efficient construction."
+    },
+    {
+      skill: "Use of CAD and BIM software",
+      description: "Employing advanced tools for designing and visualizing engineering projects."
+    },
+    {
+      skill: "Environmental impact assessments",
+      description: "Evaluating and mitigating the ecological effects of engineering projects."
+    },
+    {
+      skill: "Surveying and mapping",
+      description: "Measuring and documenting land and structures for development projects."
+    },
+    {
+      skill: "Risk analysis for infrastructure projects",
+      description: "Identifying and addressing potential risks to ensure project safety and success."
+    }
+  ];
+
+export const prerequisites = [
+    {
+      skill: "Strong foundation in mathematics and physics",
+      description: "Essential for understanding and applying engineering principles to real-world challenges."
+    },
+    {
+      skill: "Knowledge of engineering principles",
+      description: "Core concepts in mechanics, materials, and systems design are critical for success."
+    },
+    {
+      skill: "Problem-solving skills",
+      description: "The ability to analyze complex issues and devise innovative solutions."
+    },
+    {
+      skill: "Attention to detail",
+      description: "Ensures precision in design, analysis, and construction processes."
+    },
+    {
+      skill: "Communication and teamwork skills",
+      description: "Collaboration with multidisciplinary teams and clear communication are key in engineering projects."
+    }
+  ];
+
 
 export const challengesArray = [
     "UNDERGRADUATE CHALLENGES",
