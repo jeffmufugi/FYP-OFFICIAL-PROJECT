@@ -32,6 +32,7 @@ router.route("/:id")
 .put(getUser,(req,res)=>{
     res.json(res.user)
 })
+
 .delete(getUser, async (req, res) => {
     try {
       await res.user.deleteOne();

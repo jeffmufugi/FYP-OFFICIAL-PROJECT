@@ -56,6 +56,10 @@ const Footer = () => {
       </div>
       </div>}
 
+
+
+
+
       {!isLargeScreen &&
     <>
     <div className="jeff" style={{display:"flex",flex:0.5,minHeight:"0px",height:"auto"}}></div>
@@ -64,18 +68,19 @@ const Footer = () => {
     src={xxx} 
     alt="" 
     style={{
-      height: "180px",
+      height: "100%",
       width: "auto",
       position: "absolute",
       right: "70vw", /* Even more overlap */
-      zIndex: 3
+      zIndex: 3,
+      objectFit:"contain"
     }} 
   />
     <img 
     src={x1} 
     alt="" 
     style={{
-      height: "180px",
+      height: "100%",
       width: "auto",
       position: "absolute",
       right: "-11vw", /* Even more overlap */
@@ -86,7 +91,7 @@ const Footer = () => {
     src={xx} 
     alt="" 
     style={{
-      height: "170px",
+      height: "100%",
       width: "auto",
       position: "absolute",
       right: "17vw", /* Even more overlap */
@@ -97,7 +102,7 @@ const Footer = () => {
     src={x2} 
     alt="" 
     style={{
-      height: "180px",
+      height: "100%",
       width: "auto",
       position: "absolute",
       right: "42vw", /* Even more overlap */

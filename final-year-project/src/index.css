@@ -178,7 +178,7 @@ html, body {
   border: none;
   width: 157px;
   height: 42px;
-  border-radius: 3px;
+  border-radius: 7px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
@@ -239,7 +239,7 @@ html, body {
    border: none;
    height: 42px;
    padding: 0 35px;
-   border-radius: 3px;
+   border-radius: 7px;
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
    margin-left: 10px;
    margin-right: 10px;
@@ -268,7 +268,7 @@ html, body {
    border: none;
    height: 42px;
    padding: 0 15px;
-   border-radius: 3px;
+   border-radius: 7px;
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
    cursor: pointer;
    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for scale and shadow */
@@ -2803,6 +2803,7 @@ text-align: center;
 }
 .imgft{
   height: 20vh;
+  position: relative;
 }
 @media (width <= 670px){
   .first-section{ 
@@ -2922,7 +2923,7 @@ margin-bottom: 5px;
   flex-direction: row;
   align-items: normal;
   margin-bottom: 6%;
-  flex: 0;
+  flex: 1;
 
 
 }
@@ -3106,4 +3107,13 @@ margin-left: 5px;
     100% {
         background-position: 0% 0%;
     }
+}
+
+@media (width <= 1000px) {
+  .chatbot{
+    scale: 0.7;
+    bottom: 179px;
+    left: -41px;
+  }
+  
 }
