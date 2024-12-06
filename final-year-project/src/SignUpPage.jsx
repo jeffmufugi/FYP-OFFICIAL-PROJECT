@@ -50,7 +50,7 @@ const isSmallScreen = useMedia({ minWidth: 825 });
         }
 
         try {
-            const response = await axios.post('http://localhost:3000/api/signup', {
+            const response = await axios.post('https://fyp-official-project-serv.vercel.app/api/users/api/signup', {
                 firstname: formData.firstname,
                 lastname: formData.lastname,
                 email: formData.email,
