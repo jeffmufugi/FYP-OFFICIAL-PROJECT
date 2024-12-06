@@ -49,7 +49,7 @@ const openAIRoute = require("./routes/openai.js");
 app.use("/ask", openAIRoute);
 
 app.all("*",(req,res)=>{
-  res.status(404).send("<h1>Page not found</h1>")
+  res.status(404).send("<h1>Page not found</h1>");
 })
 
 
@@ -60,5 +60,9 @@ app.all("*",(req,res)=>{
 
 
 module.exports = (req, res) => {
-  app(req, res);
+  return new Promise((resolve, reject) => {
+      app(req, res);
+      res.on('finish', resolve);
+      res.on('error', reject);
+  });
 };
