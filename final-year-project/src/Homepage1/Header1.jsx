@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useContext, useState } from 'react';
 import { Context } from '../App';
 import a2 from "../site_icons/loggedin.png";
-import useMedia from 'use-media';
+import { useMediaQuery } from 'react-responsive';
 import ax from "../site_icons/menu.svg";
 
 export default function Header1(){
@@ -37,7 +37,10 @@ const [isOpen,setIsOpen]= useState(false)
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   const [isOpen2,setIsOpen2]= useState(false)
-  const isLargeScreen = useMedia({ minWidth: 1024 });
+
+  const isLargeScreen = useMediaQuery({ minWidth: 1024 });
+
+  
   const toggleDropdown2 = () => setIsOpen2(!isOpen2);
   const homepageClick = () => {
     navigate('/');

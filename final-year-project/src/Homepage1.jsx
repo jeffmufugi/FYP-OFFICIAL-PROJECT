@@ -32,7 +32,7 @@ export default Homepage1;
 
  
 const Footer = () => {
-  const isLargeScreen = useMedia({ minWidth: 670 });
+  const isLargeScreen = useMedia({ minWidth: 1024 });
 
 
   const iconsArray = Object.values(ICONS); // Get the array of image paths
@@ -62,7 +62,7 @@ const Footer = () => {
 
       {!isLargeScreen &&
     <>
-    <div className="jeff" style={{display:"flex",flex:0.5,minHeight:"0px",height:"auto"}}></div>
+
   <footer className="imgft">
   <img 
     src={xxx} 
@@ -71,7 +71,7 @@ const Footer = () => {
       height: "100%",
       width: "auto",
       position: "absolute",
-      right: "70vw", /* Even more overlap */
+      left: "-16%", /* Even more overlap */
       zIndex: 3,
       objectFit:"contain"
     }} 
@@ -83,7 +83,7 @@ const Footer = () => {
       height: "100%",
       width: "auto",
       position: "absolute",
-      right: "-11vw", /* Even more overlap */
+      right: "16%", /* Even more overlap */
       zIndex: 0
     }} 
   />
@@ -94,7 +94,7 @@ const Footer = () => {
       height: "100%",
       width: "auto",
       position: "absolute",
-      right: "17vw", /* Even more overlap */
+      right: "-16%", /* Even more overlap */
       zIndex: 2
     }} 
   />
@@ -105,7 +105,7 @@ const Footer = () => {
       height: "100%",
       width: "auto",
       position: "absolute",
-      right: "42vw", /* Even more overlap */
+      left: "16%", /* Even more overlap */
       zIndex: 1
     }} 
   />

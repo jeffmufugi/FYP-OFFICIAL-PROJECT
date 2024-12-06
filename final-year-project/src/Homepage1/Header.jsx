@@ -5,7 +5,7 @@ import ax from "../site_icons/menu.svg";
 import { motion, AnimatePresence } from 'framer-motion';
 import { useContext, useState } from 'react';
 import { Context } from '../App';
-import useMedia from 'use-media';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Header(){
 
@@ -56,12 +56,12 @@ const [isOpen,setIsOpen]= useState(false)
     navigate('/courses');
   }
 
-  const isLargeScreen = useMedia({ minWidth: 1024 });
+  const isLargeScreen = useMediaQuery({ minWidth: 1024 });
 
 
 return (
   <>
-      {isLargeScreen && <header className="header-list">
+      {isLargeScreen ? (<header className="header-list">
         
         
         <div className="left-hdr">
@@ -103,9 +103,7 @@ return (
 
           </div>
           
-      </header>}
-
-      {!isLargeScreen && <header className="header-list" style={{justifyContent:"space-between"}}>
+      </header>):(<header className="header-list" style={{justifyContent:"space-between"}}>
         
         
        
@@ -139,12 +137,17 @@ return (
 
        
           
-      </header>
-      }
+      </header>)}
+
+     
   </>
 
 )
-//________________________________LOGGED OUT HEADER______________________________
+
+
+  }
+
+  //________________________________LOGGED OUT HEADER______________________________
 // return (
 //   <>
 //       <header className="header-list">
@@ -169,5 +172,3 @@ return (
 //   </>
 
 // )
-
-  }

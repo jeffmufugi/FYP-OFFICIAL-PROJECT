@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import {motion, useInView} from "framer-motion";
 import { useContext, useState } from 'react';
 import { Context } from '../App';
-import useMedia from 'use-media';
+import { useMediaQuery } from 'react-responsive';
 
 
 export default function MainContent(){
@@ -22,7 +22,7 @@ export default function MainContent(){
 
 
 
-    const btnbreak = useMedia({ minWidth: 825 });
+    const btnbreak = useMediaQuery({ minWidth: 825 });
   
     return (
       <>

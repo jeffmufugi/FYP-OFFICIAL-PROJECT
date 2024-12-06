@@ -4,14 +4,14 @@ import { useContext, useState } from 'react';
 import { Context } from '../App';
 import a2 from "../site_icons/loggedin2.png";
 import ai from "../site_icons/atom4.svg";
-import useMedia from 'use-media';
+import { useMediaQuery } from 'react-responsive';
 import ax from "../site_icons/menu2.svg";
 
 export default function Header1(){
   const [signedIn,setSignedIn] = useContext(Context);
 
   const [isOpen2,setIsOpen2]= useState(false)
-  const isLargeScreen = useMedia({ minWidth: 1024 });
+  const isLargeScreen = useMediaQuery({ minWidth: 1024 });
   const toggleDropdown2 = () => setIsOpen2(!isOpen2);
   function setSignedInfunc(){
     setSignedIn(true);
