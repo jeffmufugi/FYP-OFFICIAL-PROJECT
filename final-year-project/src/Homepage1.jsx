@@ -9,7 +9,7 @@ import xx from "./site_icons/doco.png";
 import x1 from "./site_icons/maths.png";
 import x2 from "./site_icons/rock2.png";
 import { useState } from 'react';
-import useMedia from 'use-media';
+import { useMediaQuery } from 'react-responsive';
 
 
 const Homepage1 = () => {
@@ -32,7 +32,7 @@ export default Homepage1;
 
  
 const Footer = () => {
-  const isLargeScreen = useMedia({ minWidth: 1024 });
+  const isLargeScreen = useMediaQuery({ minWidth: 1024 });
 
 
   const iconsArray = Object.values(ICONS); // Get the array of image paths

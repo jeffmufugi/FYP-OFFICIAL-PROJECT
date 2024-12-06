@@ -50,10 +50,7 @@ const Footer3 = () => {
     </div>
 
   <div className="scroll-container">
-    <motion.div className="bottom-footer3" initial={{ skew:90, y: -10000}}
-        whileInView={{ skew:0}}
-        transition={{ duration: 1 }}
-        viewport={{ once: false }}>
+    <div className="bottom-footer3">
       <span className="itemfoot item1f">Chemical Engineering</span>
       <span className="itemfoot item2f">Mathematics</span>
       <span className="itemfoot item3f">Environmental Engineering</span>
@@ -72,7 +69,7 @@ const Footer3 = () => {
       <span className="itemfoot item7f">Biotechnology</span>
       <span className="itemfoot item8f">Computer Engineering</span>
       <span className="itemfoot item9f">Statistics</span>
-    </motion.div>
+    </div>
   </div>
 </div>
 

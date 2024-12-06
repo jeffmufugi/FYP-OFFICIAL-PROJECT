@@ -6,7 +6,7 @@ import i5 from "../site_icons/science.png";
 import i6 from "../site_icons/biot.png";
 import i7 from "../site_icons/doctor.png";
 import i8 from "../site_icons/ai.png";
-import i9 from "../site_icons/atom.png";
+import i9 from "../site_icons/jet.png";
 import i10 from "../site_icons/researcher.png";
 import i11 from "../site_icons/maths.png";
 import i12 from "../site_icons/calculator.png";

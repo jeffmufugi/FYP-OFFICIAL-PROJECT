@@ -4,7 +4,8 @@ import useMedia from 'use-media';
 
 
 export function Page1({coursename,coursedesc,inputRef,selectedCountry,toggleDropdown,isOpen,countries,handleSelect,salaryUS,salaryMY,jobsUS,jobsMY,emplUS,emplMY,img1,img2,img3,selectedCurrency,homepageInfo,animat,setanimate,dropdownRef}){
-    function HomepageNum(){
+    
+  function HomepageNum(){
       return(
         <>
             <div className="course-details-info a">
@@ -676,9 +677,24 @@ export const fadeInFromLeft = {
       viewport: { once: true }
     },
     a8: {
-      initial: { opacity:0 , scale: 0.7, x: -80},
-      whileInView: { opacity: 1, scale: 1 ,x:0},
-      transition: { duration: 0.5,delay:0.5},
-      viewport: { once: true }
+      initial: { 
+        opacity: 0, 
+        scale: 0.7, 
+        x: -80 
+      },
+      whileInView: { 
+        opacity: 1, 
+        scale: 1, 
+        x: 0 
+      },
+      transition: { 
+        stiffness:120,
+        delay: 0.5, 
+        type: "spring", 
+        damping: 29 
+      },
+      viewport: { 
+        once: true 
+      }
     }
   };
