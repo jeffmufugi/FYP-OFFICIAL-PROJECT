@@ -1,100 +1,68 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require('cors');
+const cors = require('cors'); // Add this line to import cors
+const path = require("path");
+
 
 const app = express();
 
-// Enhanced CORS configuration
+// Add CORS configuration
 app.use(cors({
-  origin: [
-    'https://fyp-official-project-i5zl.vercel.app',
-    'http://localhost:5173',
-    'https://careercampus.vercel.app'
-  ],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  origin: ['https://fyp-official-project-i5zl.vercel.app','http://localhost:5173','https://careercampus.vercel.app'], // Allow your frontend origin
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'] // Allowed headers
 }));
 
 app.use(express.json());
 app.set("view engine", "ejs");
 
-// Database connection function
-const connectDB = async () => {
-  try {
-    await mongoose.connect("mongodb+srv://mufugimichelo:V4Yatxobp1hMSB4y@fypcluster.ftdx1.mongodb.net/?retryWrites=true&w=majority&appName=fypcluster", {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      serverSelectionTimeoutMS: 10000
-    });
-    console.log('Connected to database');
-  } catch (error) {
-    console.error('MongoDB Connection Error:', error);
-    throw error;
-  }
-};
+const PORT = process.env.PORT||3000;
 
-// Error handling middleware
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).json({ 
-    error: 'Something went wrong!',
-    message: err.message 
-  });
+mongoose.connect("mongodb+srv://mufugimichelo:V4Yatxobp1hMSB4y@fypcluster.ftdx1.mongodb.net/?retryWrites=true&w=majority&appName=fypcluster",
+{ 
+  tls: true,
+  tlsInsecure: true, // Only use during development
+  serverSelectionTimeoutMS: 5000
 });
+const db = mongoose.connection
+db.on("error", (error)=>console.error(error));
+db.once("connected", ()=>console.log('connected to database'));
 
-// Import and use routers
+// this basically handles routing of the user API's
 const userRouter = require("./routes/users.js");
-const signupRouter = require("./routes/signup.js");
-const signinRouter = require("./routes/signin.js");
-const blsRoute = require("./routes/bls.js");
-const clsRoute = require("./routes/jsearch.js");
-const openAIRoute = require("./routes/openai.js");
+app.use("/api/users",userRouter);
 
-app.use("/api/users", userRouter);
-app.use("/api/signup", signupRouter);
+const signupRouter = require("./routes/signup.js");
+app.use("/api/signup",signupRouter);
+
+const signinRouter = require("./routes/signin.js");
 app.use("/api/signin", signinRouter);
+
+const blsRoute = require("./routes/bls.js");
 app.use("/api", blsRoute);
+
+const clsRoute = require("./routes/jsearch.js");
 app.use("/api", clsRoute);
+
+const openAIRoute = require("./routes/openai.js");
 app.use("/ask", openAIRoute);
 
-// Health check route
-app.get('/api/health', (req, res) => {
-  res.status(200).json({ status: 'OK' });
-});
-
-// 404 handler
-app.all("*", (req, res) => {
+app.all("*",(req,res)=>{
   res.status(404).send("<h1>Page not found</h1>");
-});
+})
 
-// Serverless function handler
-module.exports = async (req, res) => {
-  try {
-    // Ensure database connection
-    await connectDB();
-    
 
-    // Create a promise-based handler
-    return new Promise((resolve, reject) => {
-      const handler = (req, res) => {
-        try {
-          app(req, res);
+// app.listen(PORT, () => {
+//     console.log(`Server is running on port ${PORT}`);
+// });
 
-        } catch (error) {
-          console.error('Request Handler Error:', error);
-          res.status(500).json({ error: 'Internal Server Error' });
-        }
-      };
-      
-      handler(req, res);
+
+
+module.exports = (req, res) => {
+  return new Promise((resolve, reject) => {
+      app(req, res);
       res.on('finish', resolve);
       res.on('error', reject);
-    });
-  } catch (error) {
-    console.error('Serverless Function Initialization Error:', error);
-    res.status(500).json({ 
-      error: 'Failed to initialize server',
-      details: error.message 
-    });
-  }
+  });
 };
