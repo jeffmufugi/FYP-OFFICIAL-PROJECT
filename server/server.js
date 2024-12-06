@@ -17,7 +17,7 @@ app.use(cors({
 app.use(express.json());
 app.set("view engine", "ejs");
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT||3000;
 
 mongoose.connect("mongodb+srv://mufugimichelo:V4Yatxobp1hMSB4y@fypcluster.ftdx1.mongodb.net/?retryWrites=true&w=majority&appName=fypcluster",
 { 
@@ -53,9 +53,12 @@ app.all("*",(req,res)=>{
 })
 
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//     console.log(`Server is running on port ${PORT}`);
+// });
 
 
 
+module.exports = (req, res) => {
+  app(req, res);
+};
