@@ -42,7 +42,7 @@ app.use("/api/signin", signinRouter);
 const blsRoute = require("./routes/bls.js");
 app.use("/api", blsRoute);
 
-const clsRoute = require("./routes/jsearch.js");
+const clsRoute = require("./routes/jsearch.js"); 
 app.use("/api", clsRoute);
 
 const openAIRoute = require("./routes/openai.js");

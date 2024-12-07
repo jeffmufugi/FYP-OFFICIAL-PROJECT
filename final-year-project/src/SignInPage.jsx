@@ -47,7 +47,7 @@ export default function SignInPage(){
     };
 
 
-    const homepageClick = () => {
+    const homepageClick = () => { 
       navigate('/');
     }
     const signUpClick = () => {
