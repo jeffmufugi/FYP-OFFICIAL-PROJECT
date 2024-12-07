@@ -32,7 +32,7 @@ export default function SignInPage(){
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://fyp-official-project-serv.vercel.app/api/signin', {
+            const response = await axios.post('https://fyp-official-project-server.vercel.app/api/signin', {
                 email: formData.email,
                 password: formData.password
             });
