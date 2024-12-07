@@ -19,6 +19,8 @@ export default function Header1(){
 
 function setSignedOutfunc(){
   setSignedIn(false);
+ 
+  window.location.reload();
 }
 
 
@@ -123,7 +125,7 @@ return (
                       <li className='l1' onClick={AboutUsClick}>About Us</li>
                       {/* <li className='l1' onClick={contactUsClick}>Contact Us</li> */}
                       {signedIn === true &&  <li className='l1'>Forums</li>}
-                      {signedIn === true &&  <li >Sign Out</li>}
+                      {signedIn === true &&  <li onClick={setSignedOutfunc}>Sign Out</li>}
                       {signedIn === false &&  <li className='l1' onClick={signInClick}>Sign In</li>}
                       {signedIn === false &&  <li onClick={signUpClick}>Register</li>}
                 </motion.ul>

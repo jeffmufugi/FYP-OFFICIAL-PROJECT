@@ -8,7 +8,7 @@ import rocketL from "./site_icons/rok.png";
 import rec from "./site_icons/rec3.png";
 import Header from "./Homepage1/Header1.jsx";
 import axios from 'axios';
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { Context } from './App.jsx';
  
 export default function SignInPage(){
@@ -16,9 +16,16 @@ export default function SignInPage(){
 
     const [signedIn,setSignedIn] = useContext(Context);
 
-    function setSignedInfunc(){
+
+      const setSignedInfunc = () => {
         setSignedIn(true);
-    }
+        localStorage.setItem('signedIn', 'true');
+      }
+      
+      const setSignedOutfunc = () => {
+        setSignedIn(false);
+        
+      }
 
     const [formData, setFormData] = useState({
         email: '',
@@ -38,7 +45,8 @@ export default function SignInPage(){
             });
             console.log(response.data);
             alert('Sign in successful!');
-            setSignedInfunc();
+            setSignedIn(true);
+   
             navigate('/');
         } catch (error) {
             console.error('Sign in error:', error.response?.data?.message || error.message);

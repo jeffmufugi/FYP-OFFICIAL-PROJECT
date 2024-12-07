@@ -8,6 +8,7 @@ import xx from "./site_icons/closer.svg";
 import cc from "./site_icons/clearer.svg";
 import ac from "./site_icons/atam.svg";
 import { Context } from './App.jsx';
+import { useMediaQuery } from 'react-responsive';
 
 
 function Chat({ chatMessag }) {
@@ -64,7 +65,7 @@ function Body({ chatMessag, setchatMessag, setChatBot }) {
       setInputText("");
 
       // Send the user input to the backend API
-      const res = await axios.post('http://localhost:3000/ask/gpt', { message: inputText });
+      const res = await axios.post('https://fyp-official-project-server.vercel.app/ask/gpt', { message: inputText });
       const botResponse = res.data.message || "No response from server";
       
       // Update chat messages with the bot response
@@ -173,12 +174,27 @@ export function DraggableIcon({ setChatBot, initialPosition = { x: 20, y: 385 } 
         window.removeEventListener("mouseup", handleMouseUp);
       };
     }, [isDragging]);
-  
+    const isLargeScreen = useMediaQuery({ minWidth: 550 });
     return (
-      <img
-        src={ai}
-        onMouseDown={handleMouseDown}
-        style={{ position: "absolute", left: position.x, top: position.y, cursor: "pointer", zIndex: 10,width:"30px" }}
-      />
+
+      <>
+      
+      
+    {isLargeScreen && <img
+    src={ai}
+    onMouseDown={handleMouseDown}
+    className="iconsrc"
+    style={{ position: "absolute", left: position.x, top: position.y, cursor: "pointer", zIndex: 10,width:"30px" }}
+  />}
+      {!isLargeScreen && <img
+    src={ai}
+    onMouseDown={handleMouseDown}
+    className="iconsrc"
+    style={{ position: "absolute", left: "88%", top: "27%", zIndex: 10,width:"30px" }}
+  />}
+      
+      
+      </>
+     
     );
   }
