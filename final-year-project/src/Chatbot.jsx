@@ -1,5 +1,5 @@
 // Chatbott.jsx
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect, useContext, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import axios from 'axios';
 import ai from "./site_icons/ailogo.svg";
@@ -20,7 +20,7 @@ function Chat({ chatMessag }) {
       <>
         {sender === "robot" && (
           <div className="gpt" style={{ display: "flex", flexDirection: "row" }}>
-            <img src={ac} alt="Bot" style={{ paddingRight: "10px" }} />
+            <img src={ac} alt="Bot" style={{ paddingRight: "10px", width:"22px", height:"24px" }} />
             <div style={{ padding: "5px", maxWidth: "300px", wordWrap: "break-word", marginBottom: "3px" }}>
               {message}
             </div>

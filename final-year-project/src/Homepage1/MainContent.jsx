@@ -13,6 +13,9 @@ export default function MainContent(){
     const signUpClick = () => {
       navigate('/signup');
     }
+    const courseClick = () => {
+      navigate('/courses');
+    }
 
     const scrollToSection = (event) => {
       event.preventDefault();
@@ -55,8 +58,8 @@ export default function MainContent(){
 
                 <div className="btn-main">
         
-                  {signedIn === true && <button className="btn1">
-                    Community
+                  {signedIn === true && <button onClick={courseClick} className="btn1">
+                    Courses
                   </button>}
                   {signedIn === false && <button className="btn1" onClick={signUpClick}>
                     Join Today!

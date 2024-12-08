@@ -59,7 +59,7 @@ const isSmallScreen = useMedia({ minWidth: 825 });
                 password: formData.password
             });
             console.log(response.data);
-            alert('Registration successful!');
+            alert('Registration successful! **AI LOGO WILL APPEAR ON HOMESCREEN**');
             setSignedInfunc();
             navigate('/');
 
