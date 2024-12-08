@@ -122,7 +122,7 @@ return (
                                  exit={{ opacity: 0, y: -4 }}
                                  transition={{ duration: 0.3 }}
                                  >
-                      <li className='l1' onClick={homeClick}>Home</li>
+                    {/* <li className='l1' onClick={homeClick}>Home</li> */}
                       <li className='l1' onClick={coursePageClick}>Courses</li>
                       <li className='l1' onClick={AboutUsClick}>About Us</li>
                       {/* <li className='l1' onClick={contactUsClick}>Contact Us</li> */}
