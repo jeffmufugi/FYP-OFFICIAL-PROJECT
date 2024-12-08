@@ -48,6 +48,10 @@ const Homepage3 = () => {
   function setSignedInfunc(){
     setSignedIn(true);
 }
+function setSignedOutfunc(){
+  window.location.reload();
+  setSignedIn(false);
+}
 const isLargeScreen = useMedia({ minWidth: 1024 });
   const navigate = useNavigate();
     const signInClick = () => {
@@ -445,7 +449,7 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
               { isLargeScreen && <li onClick={contactUsClick} className="left-foot-1">Contact Us</li>}
               { signedIn === false && !isLargeScreen && <li onClick={signUpClick} className="left-foot-1">Sign Up</li>}
               {signedIn === false && <li onClick={signInClick} className="left-foot-1">Sign In</li>}
-              {signedIn === true && <li onClick={setSignedInfunc} className="left-foot-1">Sign Out</li>}
+              {signedIn === true && <li onClick={setSignedOutfunc} className="left-foot-1">Sign Out</li>}
               
               
         
