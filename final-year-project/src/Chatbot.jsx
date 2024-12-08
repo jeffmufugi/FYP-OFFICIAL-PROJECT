@@ -190,7 +190,7 @@ export function DraggableIcon({ setChatBot, initialPosition = { x: 20, y: 385 } 
     src={ai}
     onMouseDown={handleMouseDown}
     className="iconsrc"
-    style={{ position: "absolute", left: "88%", top: "27%", zIndex: 10,width:"30px" }}
+    style={{ position: "absolute", left: "92%", top: "39%", zIndex: 10,width:"30px" }}
   />}
       
       
