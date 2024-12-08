@@ -54,11 +54,20 @@ function App() {
       }, [chatbot]); // Re-run the effect when chatbot state changes
 
 
-
-        const [signedIn,setSignedIn] = useState(false);
-
-    
-
+      const [signedIn, setSignedIn] = useState(() => {
+        // Retrieve and parse initial state from localStorage or default to false
+        const savedStatus = window.localStorage.getItem('SIGNED_IN_STATUS');
+        return savedStatus ? JSON.parse(savedStatus) : false;
+      });
+      useEffect(() => {
+        const data = window.localStorage.getItem('SIGNED_IN_STATUS');
+       console.log("data ",data)
+        setSignedIn(JSON.parse(data));
+      }, []);
+      
+      useEffect(() => {
+         window.localStorage.setItem('SIGNED_IN_STATUS',signedIn);
+      }, [signedIn]);
 
   return (
     

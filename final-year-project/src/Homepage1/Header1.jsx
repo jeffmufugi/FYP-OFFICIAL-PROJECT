@@ -124,15 +124,15 @@ return (
                 {isOpen2  && 
                 (<>
                       
-                <motion.ul className="mediaheadersmall"  
+                <motion.ul className="mediaheadersmall1"  
+
                                  initial={{ opacity: 0, y:-4 }}
                                  animate={{ opacity: 1, y:0 }}
                                  exit={{ opacity: 0, y: -4 }}
                                  transition={{ duration: 0.3 }}>
                       <li className='l1' onClick={homeClick}>Home</li>
                       <li className='l1' onClick={AboutUsClick}>About Us</li>
-                      {/* <li className='l1' onClick={contactUsClick}>Contact Us</li> */}
-                      {signedIn === true &&  <li className='l1'>Forums</li>}
+                        <li className='l1' onClick={contactUsClick}>Contact Us</li>
                       {signedIn === true &&  <li onClick={setSignedOutfunc}>Sign Out</li>}
                       {signedIn === false &&  <li className='l1' onClick={signInClick}>Sign In</li>}
                       {signedIn === false &&  <li onClick={signUpClick}>Register</li>}

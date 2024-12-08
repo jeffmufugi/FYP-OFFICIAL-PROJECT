@@ -124,7 +124,7 @@ return (
                       <li className='l1' onClick={coursePageClick}>Courses</li>
                       <li className='l1' onClick={AboutUsClick}>About Us</li>
                       {/* <li className='l1' onClick={contactUsClick}>Contact Us</li> */}
-                      {signedIn === true &&  <li className='l1'>Forums</li>}
+                    
                       {signedIn === true &&  <li onClick={setSignedOutfunc}>Sign Out</li>}
                       {signedIn === false &&  <li className='l1' onClick={signInClick}>Sign In</li>}
                       {signedIn === false &&  <li onClick={signUpClick}>Register</li>}

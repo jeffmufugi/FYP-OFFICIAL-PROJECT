@@ -17,9 +17,11 @@ export default function SignInPage(){
     const [signedIn,setSignedIn] = useContext(Context);
 
 
+
+
       const setSignedInfunc = () => {
         setSignedIn(true);
-        localStorage.setItem('signedIn', 'true');
+     
       }
       
       const setSignedOutfunc = () => {

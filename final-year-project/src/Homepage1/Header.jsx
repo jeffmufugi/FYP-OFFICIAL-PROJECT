@@ -70,10 +70,10 @@ return (
         </div>
           <div className="middle-hdr">
             <ul className="mid-header">
+            {signedIn === true &&  <li onClick={homeClick}>Home</li>}
               <li onClick={coursePageClick}>Courses</li>
               <li onClick={AboutUsClick}>About Us</li>
               <li onClick={contactUsClick}>Contact Us</li>
-              {signedIn === true &&  <li>Forums</li>}
               {signedIn === false &&  <li onClick={signInClick}>Sign In</li>}
         
             </ul>
@@ -121,11 +121,11 @@ return (
                                  animate={{ opacity: 1, y:0 }}
                                  exit={{ opacity: 0, y: -4 }}
                                  transition={{ duration: 0.3 }}
-                                 style={{marginTop:"5px"}}>
+                                 >
                       <li className='l1' onClick={coursePageClick}>Courses</li>
                       <li className='l1' onClick={AboutUsClick}>About Us</li>
                       {/* <li className='l1' onClick={contactUsClick}>Contact Us</li> */}
-                      {signedIn === true &&  <li className='l1'>Forums</li>}
+                      {signedIn === true &&  <li onClick={homeClick}>Home</li>}
                       {signedIn === true &&  <li onClick={setSignedOutfunc}>Sign Out</li>}
                       {signedIn === false &&  <li className='l1' onClick={signInClick}>Sign In</li>}
                       {signedIn === false &&  <li onClick={signUpClick}>Register</li>}
