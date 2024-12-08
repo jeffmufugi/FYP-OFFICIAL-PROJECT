@@ -55,18 +55,31 @@ function App() {
 
 
       const [signedIn, setSignedIn] = useState(() => {
-        // Retrieve and parse initial state from localStorage or default to false
-        const savedStatus = window.localStorage.getItem('SIGNED_IN_STATUS');
-        return savedStatus ? JSON.parse(savedStatus) : false;
+        try {
+          const savedStatus = localStorage.getItem('SIGNED_IN_STATUS');
+          return savedStatus === 'true';
+        } catch (error) {
+          console.error('Error reading localStorage:', error);
+          return false;
+        }
       });
+      
       useEffect(() => {
-        const data = window.localStorage.getItem('SIGNED_IN_STATUS');
-       console.log("data ",data)
-        setSignedIn(JSON.parse(data));
+        try {
+          const savedStatus = localStorage.getItem('SIGNED_IN_STATUS');
+          setSignedIn(savedStatus === 'true');
+        } catch (error) {
+          console.error('Error reading localStorage:', error);
+          setSignedIn(false);
+        }
       }, []);
       
       useEffect(() => {
-         window.localStorage.setItem('SIGNED_IN_STATUS',signedIn);
+        try {
+          localStorage.setItem('SIGNED_IN_STATUS', String(signedIn));
+        } catch (error) {
+          console.error('Error writing to localStorage:', error);
+        }
       }, [signedIn]);
 
   return (
