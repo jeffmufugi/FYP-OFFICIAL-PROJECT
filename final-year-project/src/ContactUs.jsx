@@ -13,6 +13,7 @@ import tech from "./site_icons/Tech icon12.svg";
 import rocketMan from "./site_icons/RocketMan.svg";
 import Header from "./Homepage1/Header1.jsx";
 import rec from "./site_icons/rec1.png";
+import ss from "./site_icons/send.svg";
 
 export default function ContactUs(){
     const navigate = useNavigate();
@@ -20,6 +21,11 @@ export default function ContactUs(){
     const homepageClick = () => {
       navigate('/');
     }
+
+    const sent = () => {
+        alert("message sent")
+        window.location.reload();
+      }
 
 
     return(
@@ -70,6 +76,7 @@ export default function ContactUs(){
                         <div className="input-field-4cu">
                             <p className="TopPlaceHolder">Message*</p>
                             <textarea className="txt-box"></textarea>
+                            <img src={ss} className="sendai1" onClick={sent}/>
                         </div>
                     </div>
                     <div className='right-mid-contact-us'>

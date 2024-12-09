@@ -98,46 +98,45 @@ export const homepageInfo1 = [ {
 
         return [
           {
-            name: "FLIGHT DYNAMICS",
-            salaryRange: `${currency}85,000 - ${currency}120,000`,
-            description: `Study the behavior of aircraft in flight, focusing on stability, control, and performance analysis.`
+            name: "BIOMECHANICS",
+            salaryRange: `${currency}70,000 - ${currency}110,000`,
+            description: `Study the mechanical principles of biological systems, focusing on movement, structure, and function of living organisms.`
         },
         {
-            name: "PROPULSION",
-            salaryRange: `${currency}90,000 - ${currency}130,000`,
-            description: `Explore the principles and technologies behind engines and propulsion systems used in aerospace vehicles.`
+            name: "MEDICAL DEVICE DESIGN",
+            salaryRange: `${currency}75,000 - ${currency}115,000`,
+            description: `Design and develop medical devices and equipment, ensuring they meet clinical and regulatory standards.`
         },
         {
-            name: "AVIONICS",
-            salaryRange: `${currency}80,000 - ${currency}115,000`,
-            description: `Learn about the electronic systems used in aircraft, including navigation, communication, and control systems.`
+            name: "TISSUE ENGINEERING",
+            salaryRange: `${currency}80,000 - ${currency}125,000`,
+            description: `Focus on the development of biological substitutes to restore, maintain, or improve tissue function.`
         },
         {
-            name: "AERODYNAMICS",
-            salaryRange: `${currency}95,000 - ${currency}140,000`,
-            description: `Analyze the behavior of air as it interacts with solid objects, focusing on lift, drag, and airflow patterns.`
+            name: "BIOMATERIALS",
+            salaryRange: `${currency}70,000 - ${currency}105,000`,
+            description: `Study and create materials compatible with biological systems, used in medical implants, devices, and treatments.`
         },
         {
-            name: "STRUCTURAL ANALYSIS",
-            salaryRange: `${currency}85,000 - ${currency}125,000`,
-            description: `Evaluate the strength and stability of aerospace structures, ensuring safety and efficiency in design.`
+            name: "MEDICAL IMAGING",
+            salaryRange: `${currency}85,000 - ${currency}130,000`,
+            description: `Explore techniques and technologies for visualizing internal structures of the body for diagnostic and therapeutic purposes.`
         },
         {
-            name: "MATERIALS SCIENCE",
-            salaryRange: `${currency}80,000 - ${currency}120,000`,
-            description: `Study the properties and applications of materials used in aerospace, including composites and metals.`
+            name: "REHABILITATION ENGINEERING",
+            salaryRange: `${currency}65,000 - ${currency}100,000`,
+            description: `Develop technologies and devices to assist individuals with physical disabilities and improve quality of life.`
         },
         {
-            name: "SPACE SYSTEMS ENGINEERING",
-            salaryRange: `${currency}95,000 - ${currency}145,000`,
-            description: `Focus on the design and integration of spacecraft systems, including communication, power, and thermal control.`
+            name: "BIOINSTRUMENTATION",
+            salaryRange: `${currency}75,000 - ${currency}120,000`,
+            description: `Design and develop instruments and sensors to measure and analyze biological systems for medical applications.`
         },
         {
-            name: "ROBOTICS AND AUTONOMY",
-            salaryRange: `${currency}90,000 - ${currency}135,000`,
-            description: `Explore robotics technology and autonomous systems applied in aerospace applications and research.`
+            name: "SYSTEMS PHYSIOLOGY",
+            salaryRange: `${currency}70,000 - ${currency}110,000`,
+            description: `Analyze biological systems and their functions using engineering principles to better understand health and disease.`
         }
-
       ]
 };
 
