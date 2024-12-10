@@ -1958,6 +1958,11 @@ z-index: 1;
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent; 
 }
+.txtx2{
+  background: linear-gradient(to right,  rgb(255 213 0), #a4d9ff, #e6c5ff);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+}
 
 
 /* .txt-121{
