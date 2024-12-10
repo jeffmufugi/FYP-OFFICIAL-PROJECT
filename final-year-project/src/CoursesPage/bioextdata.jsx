@@ -19,7 +19,7 @@ export const homepageInfo = [
 ];
 
 export const homepageInfo1 = [ {
-  undergradsal: `90,000`,
+  undergradsal: `77,958`,
   jobavail : "16,700",
   emprate: "57%",
   },]

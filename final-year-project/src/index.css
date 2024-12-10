@@ -1918,6 +1918,17 @@ z-index: 1;
   justify-content: center; /* Centers content horizontally */
   background-color: #001326;
 }
+
+.txtx{
+  background: linear-gradient(to right, #7dc9ff, #d7a2ff, #67ffda);
+  -webkit-background-clip: text; /* Clips the background to the text */
+  -webkit-text-fill-color: transparent; /* Makes the text color transparent */
+}
+.txtx1{
+  background: linear-gradient(to right, #a4d9ff, #e6c5ff, rgb(255 213 0));
+  -webkit-background-clip: text; /* Clips the background to the text */
+  -webkit-text-fill-color: transparent; /* Makes the text color transparent */
+}
 /* .txt-121{
   font-family: roboto mono;
   font-weight: 700;

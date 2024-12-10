@@ -226,8 +226,8 @@ export default function CoursePage(){
                             viewport={{ once: true }}>
                             <div className="main-course-txt">courses.</div>
                          {/* <p className="hdr-course-txt2">explore opportunities</p> */}
-                            {courseView === false && <button className="btn-course-view" onClick={changeview}>click for list view of courses</button>}
-                            {courseView === true && <button className="btn-course-view" onClick={changeview}>click for card view of courses</button>}
+                            {courseView === false && <button className="btn-course-view" onClick={changeview}><p className='txtx1'>click for list view of courses</p></button>}
+                            {courseView === true && <button className="btn-course-view" onClick={changeview}><p className='txtx1'>click for card view of courses</p></button>}
                 </motion.div>
                 <div className="right-hd-cs"></div>
             </div>
