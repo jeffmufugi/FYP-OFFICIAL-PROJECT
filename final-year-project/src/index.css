@@ -1919,16 +1919,41 @@ z-index: 1;
   background-color: #001326;
 }
 
-.txtx{
-  background: linear-gradient(to right, #7dc9ff, #d7a2ff, #67ffda);
-  -webkit-background-clip: text; /* Clips the background to the text */
-  -webkit-text-fill-color: transparent; /* Makes the text color transparent */
+.txtx {
+  background: linear-gradient(
+    90deg,
+    #ffa54d,
+    #ff7a6f,
+    #f07bc5,
+    #a37bf0,
+    #43aeff,
+    #58e3ff
+  );
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  background-size: 400%; /* Increased background size for smoother movement */
+  background-position: 0% 50%;
+  animation: gradientMove 10s ease-in-out infinite alternate; /* Smoother animation */
+}
+
+/* Enhanced animation for moving gradient */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 .txtx1{
   background: linear-gradient(to right, #a4d9ff, #e6c5ff, rgb(255 213 0));
-  -webkit-background-clip: text; /* Clips the background to the text */
-  -webkit-text-fill-color: transparent; /* Makes the text color transparent */
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
 }
+
+
 /* .txt-121{
   font-family: roboto mono;
   font-weight: 700;
@@ -2149,6 +2174,7 @@ z-index: 1;
   color: white;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
+
 }
 
 .course-description{
@@ -2178,7 +2204,11 @@ z-index: 1;
   font-size: 2.5rem;
   font-weight: 100;
   text-align: center;
- 
+  background: linear-gradient(to right, #242f86, #166362, rgb(255 0 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
 
 }
 
@@ -2889,6 +2919,8 @@ text-align: center;
     font-size: 55px;
     text-align: center;
     line-height: 1;
+
+    
   }
   .main-txt{
     font-size: 55px;

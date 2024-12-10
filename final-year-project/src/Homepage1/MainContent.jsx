@@ -59,7 +59,7 @@ export default function MainContent(){
                 <div className="btn-main">
         
                   {signedIn === true && <button onClick={courseClick} className="btn1">
-                  <p className='txtx'>Courses</p>
+                  <p className='txtx'>Browse Courses</p>
                   </button>}
                   {signedIn === false && <button className="btn1" onClick={signUpClick}>
                     <p className='txtx'>Join Today!</p>
