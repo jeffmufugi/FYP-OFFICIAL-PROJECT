@@ -94,7 +94,7 @@ function Body({ chatMessag, setchatMessag, setChatBot }) {
       <section className="chatbody" style={{ overflowY: "auto"}}>
         <Chat chatMessag={chatMessag} />
       </section>
-      <input type="text" onChange={saveInput} value={inputText} placeholder="Ask AI" onKeyDown={handleKeyDown} style={{ marginTop:"3px",touchAction: "manipulation",fontSize: "16px" }}/>
+      <input type="text" onChange={saveInput} value={inputText} placeholder="Ask AI" onKeyDown={handleKeyDown} style={{ marginTop:"3px",touchAction: "manipulation",fontSize: "16px",paddingRight: "32px" }}/>
       <img src={ss} className="sendai" onClick={sendMessage} />
     </motion.div>
   );
