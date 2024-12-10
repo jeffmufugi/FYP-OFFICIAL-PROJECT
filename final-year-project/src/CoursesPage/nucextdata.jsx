@@ -2,7 +2,7 @@ export const homepageInfo = [
     {
         courseName: "nuclear engineering.",
         courseDefinition: "Nuclear Engineering focuses on the application of nuclear processes for energy production, medical purposes, and the development of nuclear technologies.",
-        undergradsal: "$75,000",
+        undergradsal: "$89,368",
         jobavail: "20,000",
         emprate: "93%",
     },
@@ -20,7 +20,7 @@ export const homepageInfo = [
 //ADD HOMEPAGE INFOS, 
 //USA 
 export const homepageInfo1 = [ {
-  undergradsal: `90,000`,
+  undergradsal: `89,368`,
   jobavail : "16,700",
   emprate: "57%",
   },]

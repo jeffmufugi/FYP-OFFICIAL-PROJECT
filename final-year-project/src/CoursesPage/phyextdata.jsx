@@ -2,7 +2,7 @@ export const homepageInfo = [
     {
         courseName: "physics.",
         courseDefinition: "Physics explores the fundamental principles governing matter, energy, space, and time at all scales.",
-        undergradsal: "$75,000",
+        undergradsal: "$75,753",
         jobavail: "182,700",
         emprate: "82%",
     },
@@ -18,7 +18,7 @@ export const homepageInfo = [
     }
 ];
 export const homepageInfo1 = [ {
-  undergradsal: `70,000`,
+  undergradsal: `75,753`,
   jobavail : "15,700",
   emprate: "47%",
   },]

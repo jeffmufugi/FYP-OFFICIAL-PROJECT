@@ -2,7 +2,7 @@ export const homepageInfo = [
     {
         courseName: "mechanical engineering.",
         courseDefinition: "Mechanical engineering involves the design, analysis, manufacturing, and maintenance of mechanical systems.",
-        undergradsal: "$97,000",
+        undergradsal: "$76,094",
         jobavail: "316,300",
         emprate: "85%",
     },

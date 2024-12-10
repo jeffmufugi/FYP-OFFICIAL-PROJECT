@@ -4,7 +4,7 @@ export const homepageInfo = [
     {
         courseName: "civil engineering.",
         courseDefinition: "Civil Engineering focuses on the design, construction, and maintenance of infrastructure such as roads, bridges, buildings, and water supply systems.",
-        undergradsal: "$70,000",
+        undergradsal: "$75,836",
         jobavail: "300,000",
         emprate: "95%",
     },
@@ -20,7 +20,7 @@ export const homepageInfo = [
     }
 ];
 export const homepageInfo1 = [ {
-  undergradsal: `90,000`,
+  undergradsal: `75,836`,
   jobavail : "16,700",
   emprate: "57%",
   },]

@@ -2,7 +2,7 @@ export const homepageInfo = [
     {
         courseName: "computer engineering.",
         courseDefinition: "Computer Engineering is a discipline that integrates electrical engineering and computer science to develop hardware and software solutions, with a focus on building and improving computing systems.",
-        undergradsal: "$80,000",
+        undergradsal: "$77,525",
         jobavail: "400,000",
         emprate: "95%",
     },
@@ -19,7 +19,7 @@ export const homepageInfo = [
 ];
 
 export const homepageInfo1 = [ {
-  undergradsal: `84,882`,
+  undergradsal: `77,525`,
   jobavail : "151,700",
   emprate: "97%",
   },]

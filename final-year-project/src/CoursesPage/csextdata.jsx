@@ -132,7 +132,7 @@ export const getTopCourses = (salaryData) => {
 
 //USA 
 export const homepageInfo1 = [ {
-undergradsal: `122,000`,
+undergradsal: `76,077`,
 jobavail : "356,700",
 emprate: "85%",
 },]

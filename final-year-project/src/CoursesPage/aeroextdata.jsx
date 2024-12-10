@@ -2,7 +2,7 @@ export const homepageInfo = [
     {
         courseName: "aerospace engineering.",
         courseDefinition: "Aerospace Engineering is a field focused on the design, development, and testing of aircraft and spacecraft, combining principles from both mechanical and electrical engineering.",
-        undergradsal: "$70,000",
+        undergradsal: "$77,539",
         jobavail: "300,000",
         emprate: "92%",
     },
@@ -19,7 +19,7 @@ export const homepageInfo = [
 ];
 
 export const homepageInfo1 = [ {
-  undergradsal: `70,000`,
+  undergradsal: `77,539`,
   jobavail : "15,700",
   emprate: "47%",
   },]

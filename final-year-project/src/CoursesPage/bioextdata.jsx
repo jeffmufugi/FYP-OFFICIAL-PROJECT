@@ -2,7 +2,7 @@ export const homepageInfo = [
     {
         courseName: "biomedical engineering.",
         courseDefinition: "Biomedical Engineering applies engineering principles to medicine and biology for healthcare purposes, such as developing medical devices, diagnostics, and therapies.",
-        undergradsal: "$68,000",
+        undergradsal: "$77,958",
         jobavail: "210,000",
         emprate: "92%",
     },

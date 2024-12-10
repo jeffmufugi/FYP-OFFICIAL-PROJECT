@@ -2,7 +2,7 @@ export const homepageInfo = [
     {
         courseName: "chemical engineering.",
         courseDefinition: "Chemical engineering focuses on the design, optimization, and operation of chemical processes.",
-        undergradsal: "$85,000",
+        undergradsal: "$78,396.",
         jobavail: "32,700",
         emprate: "76%",
 
@@ -20,7 +20,7 @@ export const homepageInfo = [
 ];
  
 export const homepageInfo1 = [ {
-  undergradsal: `85,000`,
+  undergradsal: `78,396`,
   jobavail : "16,700",
   emprate: "57%",
   },]

@@ -3,7 +3,7 @@ export const homepageInfo = [
     {
         courseName: "mathematics.",
         courseDefinition: "Mathematics is the abstract science of numbers, quantity, and space, applied in many fields like physics, engineering, economics, and more.",
-        undergradsal: "$65,000",
+        undergradsal: "$72,340",
         jobavail: "250,000",
         emprate: "90%",
     },
