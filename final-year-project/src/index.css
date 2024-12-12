@@ -1225,12 +1225,17 @@ z-index: 1;
   position: absolute;
   right: 0;
   
-  bottom: 1.4px;
+  bottom: 1.5px;
   padding-left: 4px;
   padding-bottom: 8px;
 
 }
 
+.input-field-6 img{
+  background-color: #aeadad;
+  background-image: url("site_icons/Noise Light 220.png");
+
+}
 .TopPlaceHolder{
   color: #7D7D81;
   font-family: 'Roboto Mono';
