@@ -53,16 +53,16 @@ app.all("*",(req,res)=>{
 })
 
 
-// app.listen(PORT, () => {
-//     console.log(`Server is running on port ${PORT}`);
-// });
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
 
 
 
-module.exports = (req, res) => {
-  return new Promise((resolve, reject) => {
-      app(req, res);
-      res.on('finish', resolve);
-      res.on('error', reject);
-  });
-};
+// module.exports = (req, res) => {
+//   return new Promise((resolve, reject) => {
+//       app(req, res);
+//       res.on('finish', resolve);
+//       res.on('error', reject);
+//   });
+// };

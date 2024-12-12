@@ -278,24 +278,30 @@ export function Page3({selectedCountry,countries,experienceSalary,experienceSala
                 className="main-text-coursex" 
                 {...fadeInFromLeft3.left2}
             >
-                    {courseData.map((course,index) => (
-                      <li className="course-name-desc"
-                      style={{ color: homepageInfo[1].fontColor }}
-                      onMouseEnter={() => handleMouseEnter(index)}
-                      onMouseLeave={handleMouseLeave}
-                      key={index}>
-                        {course.name}
-                        {hoveredCourse === index && (
-                        <motion.div className="course-desc-hov" style={{ 
-                            backgroundColor: homepageInfo[1].popupcolor1, 
-                            color: homepageInfo[1].popupcolor2, 
-                        }}
-                        {...fadeInFromLeft3.a8}>
-                          {course.description}
-                        </motion.div>
-            )}
-                        </li>
-                    ))}
+                  {courseData.map((course, index) => (
+  <li
+    className="course-name-desc"
+    style={{ color: homepageInfo[1].fontColor }}
+    onMouseEnter={() => handleMouseEnter(index)}
+    onMouseLeave={handleMouseLeave}
+    key={index}
+  >
+      {course.name}
+
+    {hoveredCourse === index && (
+      <motion.div
+        className="course-desc-hov"
+        style={{
+          backgroundColor: homepageInfo[1].popupcolor1,
+          color: homepageInfo[1].popupcolor2,
+        }}
+        {...fadeInFromLeft3.a8}
+      >
+        {course.description}
+      </motion.div>
+    )}
+  </li>
+))}
 
 
 
@@ -306,9 +312,18 @@ export function Page3({selectedCountry,countries,experienceSalary,experienceSala
                 className="main-text-coursey" 
                 {...fadeInFromLeft3.left6}
               >
-                {courseData.map((course)=>( 
-                    <li key={course.id}>{course.salaryRange}</li>
-                    ))}
+              {courseData.map((course) => (
+  <li key={course.id}>
+    <a 
+      href={course.link} 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      style={{ textDecoration: 'none', color: 'inherit' }}
+    >
+      {course.salaryRange}
+    </a>
+  </li>
+))}
               </motion.ul>
 
             </div>

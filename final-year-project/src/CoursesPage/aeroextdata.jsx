@@ -1,7 +1,7 @@
 export const homepageInfo = [
     {
         courseName: "aerospace engineering.",
-        courseDefinition: "Aerospace Engineering is a field focused on the design, development, and testing of aircraft and spacecraft, combining principles from both mechanical and electrical engineering.",
+        courseDefinition: "aerospace engineering, field of engineering concerned with the design, development, construction, testing, and operation of vehicles operating in the Earth’s atmosphere or in outer space.",
         undergradsal: "$77,539",
         jobavail: "300,000",
         emprate: "92%",
@@ -71,7 +71,7 @@ export const homepageInfo1 = [ {
           // Check if glassdoorData exists and has at least one entry
           if (glassdoorData && glassdoorData.length > 0) {
               // Get the min, max, and median salaries for Glassdoor entries
-              const { min_salary, max_salary, median_salary } = glassdoorData[0]; // Assuming you want the first entry
+              const { min_salary, max_salary, median_salary } = glassdoorData[0]; 
               
               // Format salaries with commas
               const formattedMinSalary = min_salary ? min_salary.toLocaleString() : 'Data not available';

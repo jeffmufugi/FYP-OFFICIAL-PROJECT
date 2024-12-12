@@ -1,7 +1,7 @@
 
 
-import salaryData from '/../server/data/salary-data.json';
-import salaryData2 from '/../server/data/salary-dataMY.json';
+import salaryData from '/../server/data/salary-dataCST.json';
+import salaryData2 from '/../server/data/salary-dataCSTmy.json';
 export const countries = 
 [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
 {"flag":"🇲🇾","file":salaryData2,"currency":"MYR",id:2}
@@ -14,7 +14,7 @@ export const getTopCourses = (salaryData) => {
           const currency = jobData ? jobData.currency : null;
           console.log(currency);
 
-          const aiJob = salaryData?.data?.find(job => job.title === 'AI');
+          const aiJob = salaryData?.data?.find(job => job.title === 'Ai Engineer');
           const cyJob = salaryData?.data?.find(job => job.title === 'Cyber Security');
           const clJob = salaryData?.data?.find(job => job.title === 'Cloud Architecture');
           const daJob = salaryData?.data?.find(job => job.title === 'Data Science');
@@ -22,7 +22,7 @@ export const getTopCourses = (salaryData) => {
           const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops Engineer');
           const moJob = salaryData?.data?.find(job => job.title === 'Mobile Development');
           const gaJob = salaryData?.data?.find(job => job.title === 'Game Development');
-          const fuJob = salaryData?.data?.find(job => job.title === 'Web Development');
+          const fuJob = salaryData?.data?.find(job => job.title === 'Full Stack Engineer');
           const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX');
 
           const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
@@ -37,32 +37,63 @@ export const getTopCourses = (salaryData) => {
               
               // Check if glassdoorData exists and has at least one entry
               if (glassdoorData && glassdoorData.length > 0) {
-                  // Get the min, max, and median salaries for Glassdoor entries
-                  const { min_salary, max_salary, median_salary } = glassdoorData[0]; // Assuming you want the first entry
-                  
-                  // Format salaries with commas
-                  const formattedMinSalary = min_salary ? min_salary.toLocaleString() : 'Data not available';
-                  const formattedMaxSalary = max_salary ? max_salary.toLocaleString() : 'Data not available';
-                  const formattedMedianSalary = median_salary ? median_salary.toLocaleString() : 'Data not available';
-
-                  // Store the job title and formatted salary data in the array
-                  salaryResults.push({
-                      jobTitle: validJobs[i].title,
-                      minSalary: formattedMinSalary,
-                      maxSalary: formattedMaxSalary,
-                      medianSalary: formattedMedianSalary
-                  });
-              } else {
-                  // Store job title with "No data" message if Glassdoor data is unavailable
-                  salaryResults.push({
-                      jobTitle: validJobs[i]?.title,
-                      minSalary: 'No data available',
-                      maxSalary: 'No data available',
-                      medianSalary: 'No data available'
-                  });
-              }
+                // Destructure the first Glassdoor entry
+                const { 
+                    min_salary, 
+                    max_salary, 
+                    median_salary, 
+                    publisher_link, 
+                    salary_period 
+                } = glassdoorData[0];
+            
+                // Function to convert salary based on period
+                const convertSalary = (salary, period) => {
+                    if (!salary) return null;
+            
+                    switch(period?.toLowerCase()) {
+                        case 'month':
+                            return salary * 12; // Convert monthly to yearly
+                        case 'hour':
+                            // Assuming standard 2080 work hours per year (40 hours/week * 52 weeks)
+                            return salary * 2080;
+                        case 'year':
+                        default:
+                            return salary; // Already in yearly format
+                    }
+                };
+            
+                // Convert min, max, and median salaries
+                const convertedMinSalary = convertSalary(min_salary, salary_period);
+                const convertedMaxSalary = convertSalary(max_salary, salary_period);
+                const convertedMedianSalary = convertSalary(median_salary, salary_period);
+            
+                // Format salaries with commas and handle conversion
+                const formattedMinSalary = convertedMinSalary ? convertedMinSalary.toLocaleString() : 'Data not available';
+                const formattedMaxSalary = convertedMaxSalary ? convertedMaxSalary.toLocaleString() : 'Data not available';
+                const formattedMedianSalary = convertedMedianSalary ? convertedMedianSalary.toLocaleString() : 'Data not available';
+            
+                const formattedLink = publisher_link ? publisher_link : 'Data not available';
+                const formattedPeriod = salary_period ? salary_period : 'Data not available';
+            
+                // Store the job title and formatted salary data in the array
+                salaryResults.push({
+                    jobTitle: validJobs[i].title,
+                    minSalary: formattedMinSalary,
+                    maxSalary: formattedMaxSalary,
+                    link: formattedLink,
+                    medianSalary: formattedMedianSalary,
+                    salaryPeriod: formattedPeriod
+                });
+            } else {
+                // Store job title with "No data" message if Glassdoor data is unavailable
+                salaryResults.push({
+                    jobTitle: validJobs[i]?.title,
+                    minSalary: 'xxx',
+                    maxSalary: 'xxx',
+                    medianSalary: 'No data available'
+                });
             }
-
+          }
 
             return [
               {
@@ -70,62 +101,72 @@ export const getTopCourses = (salaryData) => {
                 salaryRange: `${currency}${salaryResults[0].minSalary} - ${currency}${salaryResults[0].maxSalary}`,
                 description: `An artificial intelligence engineer designs, builds, and deploys AI models to automate tasks, enhance decision-making, and solve real-world problems, 
                 using machine learning, data processing, and programming skills.`,
+                link: `${salaryResults[0].link}`,
                 id: 1
               },
               {
                 name: "CYBERSECURITY",
                 salaryRange: `${currency}${salaryResults[1].minSalary} - ${currency}${salaryResults[1].maxSalary}`,
                 description: `Cybersecurity safeguards computers and networks from unauthorized access and cyber threats, 
-                protecting data privacy and preventing digital attacks on individuals and organizations.`
-                ,id: 2
+                protecting data privacy and preventing digital attacks on individuals and organizations.`,
+                link: `${salaryResults[1].link}`,
+                id: 2
               },
               {
                 name: "CLOUD ARCHITECTURE",
                 salaryRange: `${currency}${salaryResults[2].minSalary} - ${currency}${salaryResults[2].maxSalary}`,
-                description: `A cloud architect designs, implements, and manages cloud computing systems, ensuring scalability, security, and performance for organizations.`
-                ,id: 3
+                description: `A cloud architect designs, implements, and manages cloud computing systems, ensuring scalability, security, and performance for organizations.`,
+                link: `${salaryResults[2].link}`,
+                id: 3
               },
               {
                 name: "DATA SCIENCE",
                 salaryRange: `${currency}${salaryResults[3].minSalary} - ${currency}${salaryResults[3].maxSalary}`,
-                description: `A data scientist analyzes and interprets complex data, develops models, and provides insights to drive decision-making and business solutions.`
-                ,id: 4
+                description: `A data scientist analyzes and interprets complex data, develops models, and provides insights to drive decision-making and business solutions.`,
+                id: 4,
+                link: `${salaryResults[3].link}`,
               },
               {
                 name: "SOFTWARE DEVELOPMENT",
                 salaryRange: `${currency}${salaryResults[4].minSalary} - ${currency}${salaryResults[4].maxSalary}`,
-                description: `A software developer designs, codes, tests, and maintains software applications, ensuring functionality, performance, and user experience meet requirements.`
-                ,id: 5
+                description: `A software developer designs, codes, tests, and maintains software applications, ensuring functionality, performance, and user experience meet requirements.`,
+                link: `${salaryResults[4].link}`,
+                id: 5
               },
               {
                 name: "DEVOPS",
                 salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
                 description: `DevOps automates and integrates development and IT operations, improving collaboration, efficiency, and the deployment of software systems.`
                 ,id: 6
+                , link: `${salaryResults[5].link}`,
               },
               {
                 name: "MOBILE DEVELOPMENT",
                 salaryRange: `${currency}${salaryResults[6].minSalary} - ${currency}${salaryResults[6].maxSalary}`,
                 description: `A mobile developer designs, develops, and maintains applications for mobile devices, ensuring functionality, usability, and performance across platforms.`
                 ,id: 7
+                , link: `${salaryResults[6].link}`,
               },
               {
                 name: "GAME DEVELOPMENT",
                 salaryRange: `${currency}${salaryResults[7].minSalary} - ${currency}${salaryResults[7].maxSalary}`,
                 description: `A game developer designs, codes, tests, and refines video games, focusing on gameplay mechanics, graphics, and user experience.`
-                ,id: 8
+                ,id: 8,
+                link: `${salaryResults[7].link}`,
               },
               {
                 name: "FULL-STACK DEVELOPMENT",
-                salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
+                salaryRange: `${currency}${salaryResults[8].minSalary} - ${currency}${salaryResults[8].maxSalary}`,
                 description: `A full-stack developer builds both front-end and back-end components of web applications, managing databases, servers, and user interfaces.`
-                ,id: 9
+                ,id: 9,
+                link: `${salaryResults[8].link}`,
               },
               {
                 name: "UI/UX DESIGN",
                 salaryRange: `${currency}${salaryResults[9].minSalary} - ${currency}${salaryResults[9].maxSalary}`,
                 description: `A UI/UX developer designs and implements user interfaces and ensures a seamless, intuitive user experience across digital platforms.`
                 ,id: 10
+                , link: `${salaryResults[9].link}`,
               }
             ];
 };
@@ -139,7 +180,7 @@ emprate: "85%",
 
 //MALAYSIA
 export const homepageInfo2 = [ {
-  undergradsal: `60,000`,
+  undergradsal: `42,000`,
   jobavail : "16,700",
   emprate: "57%",
   },]
@@ -147,7 +188,7 @@ export const homepageInfo2 = [ {
 
 export const homepageInfo = [
     {courseName : "computer science.",
-    courseDefinition: "Computer science is the study of computers and algorithms, including their principles, hardware/software design, applications, and societal impact.",
+    courseDefinition: "computer science, the study of computers and computing, including their theoretical and algorithmic foundations, hardware and software, and their uses for processing information.",
     undergradsal: `122,000`,
     jobavail : "356,700",
     emprate: "67%",
@@ -195,9 +236,12 @@ export const homepageInfo = [
     { id: 3, experience: "4-6 YEARS EXPERIENCE", salaryRange: "$122,000 - $221,000" },
     { id: 4, experience: "7-9 YEARS EXPERIENCE", salaryRange: "$140,000 - $250,000" }
   ];
+
+
+
   export const prerequisites = [
     {
-      skill: "Strong foundation in mathematics (algebra, calculus, discrete mathematics)",
+      skill: "Strong foundation in mathematics",
       description: "Essential for understanding algorithms, computational theory, and problem-solving in computer science."
     },
     {
@@ -223,12 +267,16 @@ export const homepageInfo = [
       description: "Focuses on writing, testing, and maintaining code as well as applying engineering principles to software development."
     },
     {
-      area: "Data Structures and Algorithms",
-      description: "Covers the organization of data and methods for solving computational problems efficiently."
+      area: "Theory of Computation",
+      description: "Explores the mathematical foundations of computing and algorithmic processes."
     },
     {
-      area: "Computer Architecture and Organization",
-      description: "Examines the structure and functioning of computer hardware."
+      area: "Computer Graphics and Visualization",
+      description: "Studies methods for rendering images and visual representations of data."
+    },
+    {
+      area: "Cryptography",
+      description: "Focuses on securing communication and data through encryption techniques."
     },
     {
       area: "Operating Systems",
@@ -239,25 +287,19 @@ export const homepageInfo = [
       description: "Focuses on storing, managing, and retrieving structured data efficiently."
     },
     {
+      area: "Data Structures and Algorithms",
+      description: "Covers the organization of data and methods for solving computational problems efficiently."
+    },
+    {
+      area: "Computer Architecture and Organization",
+      description: "Examines the structure and functioning of computer hardware."
+    },
+    {
       area: "Computer Networks",
       description: "Studies the principles of data communication and network infrastructure."
     },
-    {
-      area: "Artificial Intelligence and Machine Learning",
-      description: "Covers the creation of systems capable of learning and making decisions autonomously."
-    },
-    {
-      area: "Cryptography",
-      description: "Focuses on securing communication and data through encryption techniques."
-    },
-    {
-      area: "Theory of Computation",
-      description: "Explores the mathematical foundations of computing and algorithmic processes."
-    },
-    {
-      area: "Computer Graphics and Visualization",
-      description: "Studies methods for rendering images and visual representations of data."
-    }
+    
+
   ];
   export const topspecializations = [
     {
@@ -265,16 +307,20 @@ export const homepageInfo = [
       description: "Developing systems that can learn and adapt through data-driven approaches."
     },
     {
+      specialization: "Robotics",
+      description: "focuses on building robots that can replicate human actions (from building cars to assisting in surgery)."
+    },
+    {
       specialization: "Data Science and Big Data Analytics",
       description: "Analyzing large datasets to uncover patterns and insights for decision-making."
     },
     {
-      specialization: "Cybersecurity and Information Assurance",
-      description: "Protecting systems and data from unauthorized access and cyber threats."
+      specialization: "Cybersecurity",
+      description: "Cybersecurity refers to the practice of protecting computer systems, networks, programs, and mobile devices from unauthorized access or digital attacks. "
     },
     {
       specialization: "Cloud Computing and Distributed Systems",
-      description: "Designing scalable systems for data storage and computation over the internet."
+      description: "Designing scalable systems for data storage and computation over the internet and with the emergence of cloud computing technology, companies no longer need their own servers to build products. "
     },
     {
       specialization: "Human-Computer Interaction",
@@ -286,45 +332,37 @@ export const homepageInfo = [
     },
     {
       specialization: "Bioinformatics",
-      description: "Applying computational methods to biological data for research and discovery."
-    },
-    {
-      specialization: "Quantum Computing",
-      description: "Leveraging quantum mechanics to create powerful computing systems."
-    },
-    {
-      specialization: "Robotics",
-      description: "Developing intelligent machines capable of performing complex tasks."
+      description: "Combines mathematics, biology, and computer science to better understand biological data."
     },
     {
       specialization: "Internet of Things (IoT)",
-      description: "Creating interconnected devices that communicate and operate collaboratively."
+      description: "Creating interconnected devices that communicate and operate collaboratively, physical objects around the globe—from thermostats and lightbulbs to toys and audio speakers—are now connected to the internet."
     }
   ];
   export const trend = [
     {
       trend: "Quantum Computing",
-      description: "Revolutionizing problem-solving with unparalleled computational power."
+      description: "Quantum computers leverage quantum mechanics to accelerate cryptography by breaking secure codes and transform drug discovery with precise molecular simulations in 2024."
     },
     {
       trend: "Edge Computing",
-      description: "Enhancing real-time processing by performing computations closer to data sources."
+      description: "Edge computing processes data near where it’s created, reducing delays by avoiding centralized servers. It’s vital for real-time tasks like self-driving cars, factory automation, and remote local data handling."
     },
     {
       trend: "Extended Reality (XR) - including AR and VR",
-      description: "Blending the physical and digital worlds for immersive experiences."
+      description: "Extended reality combines virtual reality, augmented reality, and mixed reality,  to offer immersive simulations for hands-on training in healthcare, aviation, and manufacturing."
     },
     {
       trend: "Blockchain and Cryptocurrency",
-      description: "Transforming secure transactions and decentralized systems."
+      description: "Blockchain technology, originally for Bitcoin, now enhances transparency, security, and fraud prevention. Applications include supply chain tracking, tamper-proof voting systems, and secure management of medical records."
     },
     {
       trend: "Green Computing and Sustainability",
-      description: "Focusing on environmentally friendly computing practices."
+      description: "Advances in green energy technologies improve the efficiency and affordability of renewables like solar, wind, and bioenergy, supporting sustainability and reducing carbon emissions globally."
     },
     {
       trend: "Neuromorphic Computing",
-      description: "Building computing systems modeled after the human brain's neural architecture."
+      description: "Designing chips inspired by brain neurons enables efficient processing of tasks like pattern recognition and sensory data analysis."
     }
   ];
   export const skills = [
@@ -333,36 +371,20 @@ export const homepageInfo = [
       description: "Essential for tackling complex challenges and designing innovative solutions."
     },
     {
-      skill: "Programming in multiple languages (e.g., Python, Java, C++, JavaScript)",
-      description: "Foundational for building, optimizing, and maintaining software systems."
+      skill: "Collaborative Decision Making",
+      description: "In the real world, project specifications often come from multiple stakeholders with differing goals, making clear communication and early decision documentation crucial for aligning everyone involved."
     },
     {
-      skill: "Data analysis and interpretation",
-      description: "Vital for deriving insights and making informed decisions from data."
+      skill: "Communicating With Team Members And End Users",
+      description: "Effective communication, both with users and within teams, is key to overcoming challenges in creating successful software programs."
     },
     {
       skill: "Algorithm design and optimization",
       description: "Key for creating efficient and scalable computational solutions."
     },
     {
-      skill: "Software development methodologies",
-      description: "Enables systematic planning, implementation, and testing of software."
-    },
-    {
-      skill: "System design and architecture",
-      description: "Crucial for developing robust and scalable computing systems."
-    },
-    {
-      skill: "Database management",
-      description: "Ensures effective organization and retrieval of data."
-    },
-    {
-      skill: "Network administration",
-      description: "Maintains the integrity and performance of communication networks."
-    },
-    {
-      skill: "Cybersecurity practices",
-      description: "Protects systems from vulnerabilities and ensures data confidentiality."
+      skill: "Speaking To Non-Tech Audiences",
+      description: "Communication skills, especially explaining technical solutions to non-technical audiences, are crucial for success in a professional environment "
     },
     {
       skill: "Project management",
@@ -373,7 +395,7 @@ export const homepageInfo = [
     "UNDERGRADUATE CHALLENGES",
     {
       id: 1,
-      heading: "Theory-heavy curriculum.",
+      heading: "Theoretical Focus Overlooks Practical Application.",
       description: `Excessive focus on abstract concepts without sufficient practical application can leave students underprepared for industry-specific problem-solving scenarios.`
     },
     {
@@ -393,13 +415,13 @@ export const homepageInfo = [
     },
     {
       id: 5,
-      heading: "Insufficient/Improper mentorship guides",
+      heading: "Insufficient mentorship guides",
       description: `Lack of guidance from experienced professionals can impede understanding of advanced concepts and industry best practices.`
     },
     {
       id: 6,
-      heading: "Increased competition for internships/networking opportunities",
-      description: `The growing popularity of computer science leads to fierce competition for valuable internships and networking events crucial for career development.`
+      heading: "Lack of Emphasis on Collaboration and Creative Problem Solving",
+      description: `Many CS programs do not prioritize teamwork or creative thinking, vital in the collaborative environments of the software development world.`
     },
     {
       id: 7,
@@ -413,7 +435,7 @@ export const homepageInfo = [
     },
     {
       id: 9,
-      heading: "Peer comparison in coding environments fosters inadequacy",
+      heading: "Importance of Team Projects",
       description: `Constant exposure to peers' work in collaborative coding environments can trigger imposter syndrome, affecting self-confidence and performance.`
     }
   ];

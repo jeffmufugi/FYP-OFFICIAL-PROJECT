@@ -5,27 +5,27 @@ const fs = require('fs').promises;
 const path = require('path');
 
 // API configuration
-const RAPIDAPI_KEY = '3e1298b4cbmsh83fb76c7a8fc8a4p1f201ejsnd7a4732af964';
+const RAPIDAPI_KEY = 'c661e58881msh6d54e90e065ed20p1f5acbjsn83b5606b6fb7';
 const RAPIDAPI_HOST = 'job-salary-data.p.rapidapi.com';
 
 // File path for storing salary data
-// const SALARY_DATA_FILE = path.join(__dirname, '../data/salary-dataMEC.json');
+const SALARY_DATA_FILE = path.join(__dirname, '../data/salary-dataCSTmy.json');
 
 // List of high-paying occupations
 {/*-----------------------cst--------------------------- */}
-// const occupations = [
-//     { title: 'Computer Science' },
-//     { title: 'AI' },
-//     { title: 'Cyber Security' },
-//     { title: 'Cloud Architecture' },
-//     { title: 'Data Science' },
-//     { title: 'Software Development' },
-//     { title: 'Mobile Development' },
-//     { title: 'Game Development' },
-//     { title: 'Dev Ops Engineer' },
-//     { title: 'Web Development' },
-//     { title: 'UI/UX' }
-// ];
+const occupations = [
+    { title: 'Computer Science' },
+    { title: 'Ai Engineer' },
+    { title: 'Cyber Security' },
+    { title: 'Cloud Architecture' },
+    { title: 'Data Science' },
+    { title: 'Software Development' },
+    { title: 'Mobile Development' },
+    { title: 'Game Development' },
+    { title: 'Dev Ops Engineer' },
+    { title: 'Full Stack Engineer' },
+    { title: 'UI/UX' }
+];
 {/*-----------------------chem--------------------------- */}
 // const occupations = [
 
@@ -69,18 +69,18 @@ const RAPIDAPI_HOST = 'job-salary-data.p.rapidapi.com';
 // ];
 
 {/*-----------------------MECHANICAL ENG--------------------------- */}
-const occupations = [
-    { title: 'Aerospace/Defense' },
-    { title: 'Oil & Gas/Energy' },
-    { title: 'Robotics & Automation' },
-    { title: 'Medical Devices' },
-    { title: 'Research & Development' },
-    { title: 'Automotive Advanced Systems' },
-    { title: 'Nuclear Engineering' },
-    { title: 'Patents & Intellectual Property' },
-    { title: 'Data Center Infrastructure' },
-    { title: 'Semiconductor Manufacturing' }
-];
+// const occupations = [
+//     { title: 'Aerospace/Defense' },
+//     { title: 'Oil & Gas/Energy' },
+//     { title: 'Robotics & Automation' },
+//     { title: 'Medical Devices' },
+//     { title: 'Research & Development' },
+//     { title: 'Automotive Advanced Systems' },
+//     { title: 'Nuclear Engineering' },
+//     { title: 'Patents & Intellectual Property' },
+//     { title: 'Data Center Infrastructure' },
+//     { title: 'Semiconductor Manufacturing' }
+// ];
 
 const fetchSalaryData = (jobTitle) => {
     return new Promise((resolve, reject) => {
@@ -165,8 +165,8 @@ const readSavedData = async () => {
 router.get('/salary-data1', async (req, res) => {
     try {
         // Check if we should use cached data
-        const useCache = req.query.cache !== 'false';
-        const savedData = await readSavedData();
+        // const useCache = req.query.cache !== 'false';
+        // const savedData = await readSavedData();
 
         // Fetch fresh data
         const salaryDataPromises = occupations.map(occ => 

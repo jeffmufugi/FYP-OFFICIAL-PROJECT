@@ -1,0 +1,215 @@
+{
+  "lastUpdated": "2024-12-12T15:54:40.739Z",
+  "data": [
+    {
+      "title": "Computer Science",
+      "status": "OK",
+      "request_id": "785158b2-c756-4841-84a5-541b24d1053f",
+      "currency":"MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Computer Science Tutor",
+          "min_salary": 9.6316,
+          "max_salary": 10.4324,
+          "median_salary": 10.032,
+          "salary_period": "HOUR",
+          "salary_currency": "MYR",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Computer%20Science%20Tutor&locT=N&locId=170",
+          "confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "title": "Ai Engineer",
+      "status": "OK",
+      "request_id": "4c803d71-05ae-4b23-a99f-48499a1b4ca1",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "AI Engineer",
+          "min_salary": 4187.5,
+          "max_salary": 6145.833333333333,
+          "median_salary": 4571.666666666667,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-ai-engineer-salary-SRCH_IL.0,8_IN170_KO9,20.htm",
+          "confidence": "VERY_HIGH"
+        }
+      ]
+    },
+    {
+      "title": "Cyber Security",
+      "status": "OK",
+      "request_id": "898860d5-9740-465d-bf3f-de7880690476",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Cyber Security Analyst",
+          "min_salary": 3383.3333333333335,
+          "max_salary": 7166.666666666667,
+          "median_salary": 4500,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Cyber%20Security%20Analyst&locT=N&locId=170",
+          "confidence": "VERY_HIGH"
+        }
+      ]
+    },
+    {
+      "title": "Cloud Architecture",
+      "status": "OK",
+      "request_id": "c58494d7-f8d5-41ea-9e9b-f29cf2453c2c",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Cloud Architecture",
+          "min_salary": 4383.3333333333335,
+          "max_salary": 8166.666666666667,
+          "median_salary": 4500,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-cloud-developer-salary-SRCH_IL.0,8_IN170_KO9,24.htm",
+          "confidence": "VERY_HIGH"
+        }
+      ]
+    },
+    {
+      "title": "Data Science",
+      "status": "OK",
+      "request_id": "c5b5cc68-6cbc-4d8c-85ec-267cebd76aff",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Data Science",
+          "min_salary": 3050,
+          "max_salary": 5000,
+          "median_salary": 1525,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-data-science-salary-SRCH_IL.0,8_IN170_KO9,21.htm",
+          "confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "title": "Software Development",
+      "status": "OK",
+      "request_id": "15eac2cc-a0cf-433f-a4ea-ce3ca1f02516",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Software Development Engineer",
+          "min_salary": 3716,
+          "max_salary": 6076,
+          "median_salary": 4492.083333333333,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Software%20Development%20Engineer&locT=N&locId=170",
+          "confidence": "VERY_HIGH"
+        }
+      ]
+    },
+    {
+      "title": "Mobile Development",
+      "status": "OK",
+      "request_id": "57ef74db-4ac2-4a2d-acb4-e7932050ea21",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Mobile Development",
+          "min_salary": 4517,
+          "max_salary": 7490,
+          "median_salary": 12003.78,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-mobile-developer-salary-SRCH_IL.0,8_IN170_KO9,25.htm",
+          "confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "title": "Game Development",
+      "status": "OK",
+      "request_id": "2209f808-4726-415d-8335-1a0c4129fec4",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Mobile Development",
+          "min_salary": 3217,
+          "max_salary": 4490,
+          "median_salary": 12003.78,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-game-developer-salary-SRCH_IL.0,8_IN170_KO9,23.htm",
+          "confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "title": "Dev Ops Engineer",
+      "status": "OK",
+      "request_id": "efac4669-a180-47ce-ba2a-9e9e79dc8321",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Dev Ops Engineer",
+          "min_salary": 4000,
+          "max_salary": 9000,
+          "median_salary": 6500,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Dev%20Ops%20Engineer&locT=N&locId=170",
+          "confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "title": "Full Stack Engineer",
+      "status": "OK",
+      "request_id": "697119b2-9b7e-486f-a6bd-79ea35084e0f",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Full Stack Engineer",
+          "min_salary": 3800,
+          "max_salary": 11500,
+          "median_salary": 4500,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Full%20Stack%20Engineer&locT=N&locId=170",
+          "confidence": "VERY_HIGH"
+        }
+      ]
+    },
+    {
+      "title": "UI/UX",
+      "status": "OK",
+      "request_id": "a757bf61-58d9-4a01-a15d-eda43bb720aa",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Ui\\Ux Designer",
+          "min_salary": 3450,
+          "max_salary": 6277.083333333333,
+          "median_salary": 4462.5,
+          "salary_period": "MONTH",
+          "salary_currency": "MYR",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Ui%5CUx%20Designer&locT=N&locId=170",
+          "confidence": "VERY_HIGH"
+        }
+      ]
+    }
+  ]
+}
