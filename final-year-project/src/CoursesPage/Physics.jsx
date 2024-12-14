@@ -19,7 +19,7 @@ import { useState,useRef, useEffect } from "react";
 import {countries,topspecializations,
   trend,skills,challengesArray,issuesArray,coreAreasOfStudy,jobGrowthFields,experienceSalary,experienceSalary1,
   homepageInfo,prerequisites,getTopCourses,homepageInfo2,homepageInfo1} from './phyextdata.jsx';
-import { Page1,Page2,Page3,Page4,Page5, fadeInFromLeft} from "./a0Skeleton.jsx";
+import { Page1,Page2,Page3,Page4,Page5, fadeInFromLeft} from "./a0Skeleton1.jsx";
 
 
 
@@ -164,6 +164,8 @@ const PhysicsEngineeringCourse = () => {
             jobsMY={homepageInfo2[0].jobavail}
             emplUS={homepageInfo1[0].emprate}
             emplMY={homepageInfo2[0].emprate}
+            homepageInfo1={homepageInfo1}
+            homepageInfo2={homepageInfo2}
             img1={img1}            
             img2={img2}
             img3={img3}

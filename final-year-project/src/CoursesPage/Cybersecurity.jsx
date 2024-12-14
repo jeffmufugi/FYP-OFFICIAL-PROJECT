@@ -153,6 +153,8 @@ const CybersecurityCourse = () => {
             coursename={homepageInfo[0].courseName}
             coursedesc={homepageInfo[0].courseDefinition}
             inputRef={inputRef}
+            homepageInfo1={homepageInfo1}
+            homepageInfo2={homepageInfo2}
             selectedCountry={selectedCountry}
             toggleDropdown={toggleDropdown}
             isOpen={isOpen}

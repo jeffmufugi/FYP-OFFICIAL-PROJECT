@@ -31,8 +31,8 @@ export const homepageInfo1 = [ {
     jobavail : "12,700",
     emprate: "77%",
     },]
-    import salaryData from '/../server/data/salary-data.json';
-    import salaryData2 from '/../server/data/salary-dataMY.json';
+    import salaryData from '/../server/data/salary-dataCIVusa.json';
+    import salaryData2 from '/../server/data/salary-dataCIVmy.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
@@ -41,95 +41,133 @@ export const homepageInfo1 = [ {
 
     export const getTopCourses = (salaryData) => {
     
-      const jobData = salaryData.data.find(job => job.title === 'Computer Science');
+      const jobData = salaryData.data.find(job => job.title === 'Structural Engineering');
 
       const currency = jobData ? jobData.currency : null;
       console.log(currency);
 
-      const aiJob = salaryData?.data?.find(job => job.title === 'Artificial Intelligence');
-      const cyJob = salaryData?.data?.find(job => job.title === 'Cybersecurity');
-      const clJob = salaryData?.data?.find(job => job.title === 'Cloud Architecture');
-      const daJob = salaryData?.data?.find(job => job.title === 'Data Science');
-      const swJob = salaryData?.data?.find(job => job.title === 'Software Development');
-      const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops');
-      const moJob = salaryData?.data?.find(job => job.title === 'Mobile Development');
-      const gaJob = salaryData?.data?.find(job => job.title === 'Game Development');
-      const fuJob = salaryData?.data?.find(job => job.title === 'Web Development');
-      const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX Design');
+      const seJob = salaryData?.data?.find(job => job.title === 'Structural Engineering');
+const teJob = salaryData?.data?.find(job => job.title === 'Transportation Engineering');
+const geJob = salaryData?.data?.find(job => job.title === 'Geotechnical Engineering');
+const wrJob = salaryData?.data?.find(job => job.title === 'Water Resources Engineering');
+const eeJob = salaryData?.data?.find(job => job.title === 'Environmental Engineering');
+const ceJob = salaryData?.data?.find(job => job.title === 'Construction Engineering');
 
-      const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
+const validJobs = [seJob, teJob, geJob, wrJob, eeJob, ceJob];
 
-      // Array to store the formatted salary data for each job
-      const salaryResults = [];
+const salaryResults = [];
 
-      // Loop through each valid job entry
-      for (let i = 0; i < validJobs.length; i++) {
-          // Get Glassdoor data for each job title
-          const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
-          
-          // Check if glassdoorData exists and has at least one entry
-          if (glassdoorData && glassdoorData.length > 0) {
-              // Get the min, max, and median salaries for Glassdoor entries
-              const { min_salary, max_salary, median_salary } = glassdoorData[0]; // Assuming you want the first entry
-              
-              // Format salaries with commas
-              const formattedMinSalary = min_salary ? min_salary.toLocaleString() : 'Data not available';
-              const formattedMaxSalary = max_salary ? max_salary.toLocaleString() : 'Data not available';
-              const formattedMedianSalary = median_salary ? median_salary.toLocaleString() : 'Data not available';
-
-              // Store the job title and formatted salary data in the array
-              salaryResults.push({
-                  jobTitle: validJobs[i].title,
-                  minSalary: formattedMinSalary,
-                  maxSalary: formattedMaxSalary,
-                  medianSalary: formattedMedianSalary
-              });
-          } else {
-              // Store job title with "No data" message if Glassdoor data is unavailable
-              salaryResults.push({
-                  jobTitle: validJobs[i]?.title,
-                  minSalary: 'No data available',
-                  maxSalary: 'No data available',
-                  medianSalary: 'No data available'
-              });
+// Loop through each valid job entry
+for (let i = 0; i < validJobs.length; i++) {
+    // Get Glassdoor data for each job title
+    const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
+    
+    // Check if glassdoorData exists and has at least one entry
+    if (glassdoorData && glassdoorData.length > 0) {
+      // Destructure the first Glassdoor entry
+      const { 
+          min_salary, 
+          max_salary, 
+          median_salary, 
+          publisher_link, 
+          salary_period 
+      } = glassdoorData[0];
+  
+      // Function to convert salary based on period
+      const convertSalary = (salary, period) => {
+          if (!salary) return null;
+  
+          switch(period?.toLowerCase()) {
+              case 'month':
+                  return salary * 12; // Convert monthly to yearly
+              case 'hour':
+                  // Assuming standard 2080 work hours per year (40 hours/week * 52 weeks)
+                  return salary * 2080;
+              case 'year':
+              default:
+                  return salary; // Already in yearly format
           }
-        }
+      };
+  
+      // Convert min, max, and median salaries
+      const convertedMinSalary = convertSalary(min_salary, salary_period);
+      const convertedMaxSalary = convertSalary(max_salary, salary_period);
+      const convertedMedianSalary = convertSalary(median_salary, salary_period);
+  
+      // Format salaries with commas and handle conversion
+      const formattedMinSalary = convertedMinSalary ? convertedMinSalary.toLocaleString() : 'Data not available';
+      const formattedMaxSalary = convertedMaxSalary ? convertedMaxSalary.toLocaleString() : 'Data not available';
+      const formattedMedianSalary = convertedMedianSalary ? convertedMedianSalary.toLocaleString() : 'Data not available';
+  
+      const formattedLink = publisher_link ? publisher_link : 'Data not available';
+      const formattedPeriod = salary_period ? salary_period : 'Data not available';
+  
+      // Store the job title and formatted salary data in the array
+      salaryResults.push({
+          jobTitle: validJobs[i].title,
+          minSalary: formattedMinSalary,
+          maxSalary: formattedMaxSalary,
+          link: formattedLink,
+          medianSalary: formattedMedianSalary,
+          salaryPeriod: formattedPeriod
+      });
+  } else {
+      // Store job title with "No data" message if Glassdoor data is unavailable
+      salaryResults.push({
+          jobTitle: validJobs[i]?.title,
+          minSalary: 'xxx',
+          maxSalary: 'xxx',
+          medianSalary: 'No data available'
+      });
+  }
+}
+
 
 
         return [
           {
-            name: "STRUCTURAL ENGINEERING",
-            salaryRange: `${currency}85,000 - ${currency}120,000`,
-            description: `Focuses on the design and analysis of buildings, bridges, and other structures to ensure they can withstand environmental stresses.`
-        },
-        {
-            name: "TRANSPORTATION ENGINEERING",
-            salaryRange: `${currency}80,000 - ${currency}115,000`,
-            description: `Specializes in planning, design, and maintenance of transportation systems including roads, highways, airports, and railways.`
-        },
-        {
-            name: "GEOTECHNICAL ENGINEERING",
-            salaryRange: `${currency}75,000 - ${currency}110,000`,
-            description: `Involves the study of soil and rock mechanics to design foundations, tunnels, and retaining structures.`
-        },
-        {
-            name: "WATER RESOURCES ENGINEERING",
-            salaryRange: `${currency}70,000 - ${currency}105,000`,
-            description: `Focuses on the management and distribution of water resources, including water treatment, flood control, and irrigation systems.`
-        },
-        {
-            name: "ENVIRONMENTAL ENGINEERING",
-            salaryRange: `${currency}75,000 - ${currency}115,000`,
-            description: `Designs systems to protect the environment, such as water treatment facilities, pollution control, and waste management solutions.`
-        },
-        {
-            name: "CONSTRUCTION ENGINEERING",
-            salaryRange: `${currency}80,000 - ${currency}125,000`,
-            description: `Specializes in the management and execution of construction projects, ensuring they are completed on time and within budget.`
-        }
-
-
-      ]
+            name: "Structural Engineering",
+            salaryRange: `${currency}${salaryResults[0].minSalary} - ${currency}${salaryResults[0].maxSalary}`,
+            description: `Focuses on the design and analysis of buildings, bridges, and other structures to ensure they can withstand environmental stresses.`,
+            link: `${salaryResults[0].link}`,
+            id: 1
+          },
+          {
+            name: "Transportation Engineering",
+            salaryRange: `${currency}${salaryResults[1].minSalary} - ${currency}${salaryResults[1].maxSalary}`,
+            description: `Specializes in planning, design, and maintenance of transportation systems including roads, highways, airports, and railways.`,
+            link: `${salaryResults[1].link}`,
+            id: 2
+          },
+          {
+            name: "Geotechnical Engineering",
+            salaryRange: `${currency}${salaryResults[2].minSalary} - ${currency}${salaryResults[2].maxSalary}`,
+            description: `Involves the study of soil and rock mechanics to design foundations, tunnels, and retaining structures.`,
+            link: `${salaryResults[2].link}`,
+            id: 3
+          },
+          {
+            name: "Water Resources Engineering",
+            salaryRange: `${currency}${salaryResults[3].minSalary} - ${currency}${salaryResults[3].maxSalary}`,
+            description: `Focuses on the management and distribution of water resources, including water treatment, flood control, and irrigation systems.`,
+            link: `${salaryResults[3].link}`,
+            id: 4
+          },
+          {
+            name: "Environmental Engineering",
+            salaryRange: `${currency}${salaryResults[4].minSalary} - ${currency}${salaryResults[4].maxSalary}`,
+            description: `Designs systems to protect the environment, such as water treatment facilities, pollution control, and waste management solutions.`,
+            link: `${salaryResults[4].link}`,
+            id: 5
+          },
+          {
+            name: "Construction Engineering",
+            salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
+            description: `Specializes in the management and execution of construction projects, ensuring they are completed on time and within budget.`,
+            link: `${salaryResults[5].link}`,
+            id: 6
+          }
+        ];
 };
 
     

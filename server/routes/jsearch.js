@@ -9,23 +9,36 @@ const RAPIDAPI_KEY = 'c661e58881msh6d54e90e065ed20p1f5acbjsn83b5606b6fb7';
 const RAPIDAPI_HOST = 'job-salary-data.p.rapidapi.com';
 
 // File path for storing salary data
-const SALARY_DATA_FILE = path.join(__dirname, '../data/salary-dataCSTmy.json');
+// const SALARY_DATA_FILE = path.join(__dirname, '../data/salary-dataCSTaeromy.json');
 
 // List of high-paying occupations
 {/*-----------------------cst--------------------------- */}
+// const occupations = [
+//     { title: 'Computer Science' },
+//     { title: 'Ai Engineer' },
+//     { title: 'Cyber Security' },
+//     { title: 'Cloud Architecture' },
+//     { title: 'Data Science' },
+//     { title: 'Software Development' },
+//     { title: 'Mobile Development' },
+//     { title: 'Game Development' },
+//     { title: 'Dev Ops Engineer' },
+//     { title: 'Full Stack Engineer' },
+//     { title: 'UI/UX' }
+// ];
+
+{/*-----------------------aero--------------------------- */}
 const occupations = [
-    { title: 'Computer Science' },
-    { title: 'Ai Engineer' },
-    { title: 'Cyber Security' },
-    { title: 'Cloud Architecture' },
-    { title: 'Data Science' },
-    { title: 'Software Development' },
-    { title: 'Mobile Development' },
-    { title: 'Game Development' },
-    { title: 'Dev Ops Engineer' },
-    { title: 'Full Stack Engineer' },
-    { title: 'UI/UX' }
+    { title: 'Flight Dynamics Engineer' },
+    { title: 'Propulsion Engineer' },
+    { title: 'Avionics Engineer' },
+    { title: 'Aerodynamics Engineer' },
+    { title: 'Structural Analysis Engineer' },
+    { title: 'Materials Science Engineer' },
+    { title: 'Space Systems Engineer' },
+    { title: 'Autonomy Engineer' }
 ];
+
 {/*-----------------------chem--------------------------- */}
 // const occupations = [
 

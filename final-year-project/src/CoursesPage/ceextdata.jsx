@@ -31,8 +31,8 @@ export const homepageInfo1 = [ {
     emprate: "79%",
     },]
 
-    import salaryData from '/../server/data/salary-dataCE.json';
-    import salaryData2 from '/../server/data/salary-dataCEMY.json';
+    import salaryData from '/../server/data/salary-dataCEusa.json';
+    import salaryData2 from '/../server/data/salary-dataCEmy.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
@@ -62,8 +62,6 @@ export const homepageInfo1 = [ {
 
       const validJobs = [phJob, reJob, psJob, peJob, wtJob, poJob, biJob, naJob, fpJob, gpJob];
 
-
-      // Array to store the formatted salary data for each job
       const salaryResults = [];
 
       // Loop through each valid job entry
@@ -73,75 +71,124 @@ export const homepageInfo1 = [ {
           
           // Check if glassdoorData exists and has at least one entry
           if (glassdoorData && glassdoorData.length > 0) {
-              // Get the min, max, and median salaries for Glassdoor entries
-              const { min_salary, max_salary, median_salary } = glassdoorData[0]; // Assuming you want the first entry
-              
-              // Format salaries with commas
-              const formattedMinSalary = min_salary ? min_salary.toLocaleString() : 'Data not available';
-              const formattedMaxSalary = max_salary ? max_salary.toLocaleString() : 'Data not available';
-              const formattedMedianSalary = median_salary ? median_salary.toLocaleString() : 'Data not available';
-
-              // Store the job title and formatted salary data in the array
-              salaryResults.push({
-                  jobTitle: validJobs[i].title,
-                  minSalary: formattedMinSalary,
-                  maxSalary: formattedMaxSalary,
-                  medianSalary: formattedMedianSalary
-              });
-          } else {
-              // Store job title with "No data" message if Glassdoor data is unavailable
-              salaryResults.push({
-                  jobTitle: validJobs[i]?.title,
-                  minSalary: 'No data available',
-                  maxSalary: 'No data available',
-                  medianSalary: 'No data available'
-              });
-          }
+            // Destructure the first Glassdoor entry
+            const { 
+                min_salary, 
+                max_salary, 
+                median_salary, 
+                publisher_link, 
+                salary_period 
+            } = glassdoorData[0];
+        
+            // Function to convert salary based on period
+            const convertSalary = (salary, period) => {
+                if (!salary) return null;
+        
+                switch(period?.toLowerCase()) {
+                    case 'month':
+                        return salary * 12; // Convert monthly to yearly
+                    case 'hour':
+                        // Assuming standard 2080 work hours per year (40 hours/week * 52 weeks)
+                        return salary * 2080;
+                    case 'year':
+                    default:
+                        return salary; // Already in yearly format
+                }
+            };
+        
+            // Convert min, max, and median salaries
+            const convertedMinSalary = convertSalary(min_salary, salary_period);
+            const convertedMaxSalary = convertSalary(max_salary, salary_period);
+            const convertedMedianSalary = convertSalary(median_salary, salary_period);
+        
+            // Format salaries with commas and handle conversion
+            const formattedMinSalary = convertedMinSalary ? convertedMinSalary.toLocaleString() : 'Data not available';
+            const formattedMaxSalary = convertedMaxSalary ? convertedMaxSalary.toLocaleString() : 'Data not available';
+            const formattedMedianSalary = convertedMedianSalary ? convertedMedianSalary.toLocaleString() : 'Data not available';
+        
+            const formattedLink = publisher_link ? publisher_link : 'Data not available';
+            const formattedPeriod = salary_period ? salary_period : 'Data not available';
+        
+            // Store the job title and formatted salary data in the array
+            salaryResults.push({
+                jobTitle: validJobs[i].title,
+                minSalary: formattedMinSalary,
+                maxSalary: formattedMaxSalary,
+                link: formattedLink,
+                medianSalary: formattedMedianSalary,
+                salaryPeriod: formattedPeriod
+            });
+        } else {
+            // Store job title with "No data" message if Glassdoor data is unavailable
+            salaryResults.push({
+                jobTitle: validJobs[i]?.title,
+                minSalary: 'xxx',
+                maxSalary: 'xxx',
+                medianSalary: 'No data available'
+            });
         }
+      }
+
 
 
         return [
           {
-            name: "EMBEDDED SYSTEMS",
-            salaryRange: `${currency}90,000 - ${currency}125,000`,
-            description: `Study the integration of software with hardware components in embedded systems used in industries like automotive, healthcare, and telecommunications.`
-        },
-        {
-            name: "COMPUTER ARCHITECTURE",
-            salaryRange: `${currency}85,000 - ${currency}120,000`,
-            description: `Explore the design and organization of computer hardware and how different parts work together to optimize performance.`
-        },
-        {
-            name: "NETWORKING",
-            salaryRange: `${currency}80,000 - ${currency}110,000`,
-            description: `Learn about the fundamentals of computer networks, data communication, and protocols that enable connectivity between devices.`
-        },
-        {
-            name: "VLSI DESIGN",
-            salaryRange: `${currency}100,000 - ${currency}140,000`,
-            description: `Analyze very large-scale integration (VLSI) systems for developing microchips and processors used in modern electronics.`
-        },
-        {
-            name: "CYBERSECURITY",
-            salaryRange: `${currency}95,000 - ${currency}130,000`,
-            description: `Examine the strategies and techniques used to protect computer systems and networks from cyber threats and attacks.`
-        },
-        {
-            name: "ARTIFICIAL INTELLIGENCE",
-            salaryRange: `${currency}100,000 - ${currency}150,000`,
-            description: `Delve into machine learning algorithms, neural networks, and AI systems that enable computers to perform tasks intelligently.`
-        },
-        {
-            name: "CONTROL SYSTEMS",
-            salaryRange: `${currency}85,000 - ${currency}120,000`,
-            description: `Focus on the design and implementation of control mechanisms in engineering systems to regulate and optimize their behavior.`
-        },
-        {
-            name: "ROBOTICS",
-            salaryRange: `${currency}90,000 - ${currency}135,000`,
-            description: `Study robotics systems that integrate mechanical design with sensors and software to create intelligent, automated machines.`
-        }
-      ]
+            name: "Embedded Systems",
+            salaryRange: `${currency}${salaryResults[0].minSalary} - ${currency}${salaryResults[0].maxSalary}`,
+            description: `Study the integration of software with hardware components in embedded systems used in industries like automotive, healthcare, and telecommunications.`,
+            link: `${salaryResults[0].link}`,
+            id: 1
+          },
+          {
+            name: "Computer Architecture",
+            salaryRange: `${currency}${salaryResults[1].minSalary} - ${currency}${salaryResults[1].maxSalary}`,
+            description: `Explore the design and organization of computer hardware and how different parts work together to optimize performance.`,
+            link: `${salaryResults[1].link}`,
+            id: 2
+          },
+          {
+            name: "Networking",
+            salaryRange: `${currency}${salaryResults[2].minSalary} - ${currency}${salaryResults[2].maxSalary}`,
+            description: `Learn about the fundamentals of computer networks, data communication, and protocols that enable connectivity between devices.`,
+            link: `${salaryResults[2].link}`,
+            id: 3
+          },
+          {
+            name: "VLSI Design",
+            salaryRange: `${currency}${salaryResults[3].minSalary} - ${currency}${salaryResults[3].maxSalary}`,
+            description: `Analyze very large-scale integration (VLSI) systems for developing microchips and processors used in modern electronics.`,
+            link: `${salaryResults[3].link}`,
+            id: 4
+          },
+          {
+            name: "Cybersecurity",
+            salaryRange: `${currency}${salaryResults[4].minSalary} - ${currency}${salaryResults[4].maxSalary}`,
+            description: `Examine the strategies and techniques used to protect computer systems and networks from cyber threats and attacks.`,
+            link: `${salaryResults[4].link}`,
+            id: 5
+          },
+          {
+            name: "Artificial Intelligence",
+            salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
+            description: `Delve into machine learning algorithms, neural networks, and AI systems that enable computers to perform tasks intelligently.`,
+            link: `${salaryResults[5].link}`,
+            id: 6
+          },
+          {
+            name: "Control Systems",
+            salaryRange: `${currency}${salaryResults[6].minSalary} - ${currency}${salaryResults[6].maxSalary}`,
+            description: `Focus on the design and implementation of control mechanisms in engineering systems to regulate and optimize their behavior.`,
+            link: `${salaryResults[6].link}`,
+            id: 7
+          },
+          {
+            name: "Robotics",
+            salaryRange: `${currency}${salaryResults[7].minSalary} - ${currency}${salaryResults[7].maxSalary}`,
+            description: `Study robotics systems that integrate mechanical design with sensors and software to create intelligent, automated machines.`,
+            link: `${salaryResults[7].link}`,
+            id: 8
+          }
+        ];
 };
 
 export const experienceSalary1 = [

@@ -33,8 +33,8 @@ export const homepageInfo1 = [ {
     },]
   
 
-    import salaryData from '/../server/data/salary-data.json';
-    import salaryData2 from '/../server/data/salary-dataMY.json';
+    import salaryData from '/../server/data/salary-dataNUCusa.json';
+    import salaryData2 from '/../server/data/salary-dataNUCmy.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
@@ -44,25 +44,21 @@ export const homepageInfo1 = [ {
  
     export const getTopCourses = (salaryData) => {
     
-      const jobData = salaryData.data.find(job => job.title === 'Computer Science');
+      const jobData = salaryData.data.find(job => job.title === 'Nuclear Reactor Design');
 
       const currency = jobData ? jobData.currency : null;
       console.log(currency);
 
-      const aiJob = salaryData?.data?.find(job => job.title === 'Artificial Intelligence');
-      const cyJob = salaryData?.data?.find(job => job.title === 'Cybersecurity');
-      const clJob = salaryData?.data?.find(job => job.title === 'Cloud Architecture');
-      const daJob = salaryData?.data?.find(job => job.title === 'Data Science');
-      const swJob = salaryData?.data?.find(job => job.title === 'Software Development');
-      const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops');
-      const moJob = salaryData?.data?.find(job => job.title === 'Mobile Development');
-      const gaJob = salaryData?.data?.find(job => job.title === 'Game Development');
-      const fuJob = salaryData?.data?.find(job => job.title === 'Web Development');
-      const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX Design');
+      const nrJob = salaryData?.data?.find(job => job.title === 'Nuclear Reactor Design');
+      const rsJob = salaryData?.data?.find(job => job.title === 'Radiation Safety');
+      const nmJob = salaryData?.data?.find(job => job.title === 'Nuclear Medicine');
+      const feJob = salaryData?.data?.find(job => job.title === 'Fusion Energy Research');
+      const nmeJob = salaryData?.data?.find(job => job.title === 'Nuclear Materials Engineering');
+      const nwtJob = salaryData?.data?.find(job => job.title === 'Nuclear Weapons Technology');
+      
+      const validJobs = [nrJob, rsJob, nmJob, feJob, nmeJob, nwtJob];
 
-      const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
-
-      // Array to store the formatted salary data for each job
+    
       const salaryResults = [];
 
       // Loop through each valid job entry
@@ -72,65 +68,110 @@ export const homepageInfo1 = [ {
           
           // Check if glassdoorData exists and has at least one entry
           if (glassdoorData && glassdoorData.length > 0) {
-              // Get the min, max, and median salaries for Glassdoor entries
-              const { min_salary, max_salary, median_salary } = glassdoorData[0]; // Assuming you want the first entry
-              
-              // Format salaries with commas
-              const formattedMinSalary = min_salary ? min_salary.toLocaleString() : 'Data not available';
-              const formattedMaxSalary = max_salary ? max_salary.toLocaleString() : 'Data not available';
-              const formattedMedianSalary = median_salary ? median_salary.toLocaleString() : 'Data not available';
-
-              // Store the job title and formatted salary data in the array
-              salaryResults.push({
-                  jobTitle: validJobs[i].title,
-                  minSalary: formattedMinSalary,
-                  maxSalary: formattedMaxSalary,
-                  medianSalary: formattedMedianSalary
-              });
-          } else {
-              // Store job title with "No data" message if Glassdoor data is unavailable
-              salaryResults.push({
-                  jobTitle: validJobs[i]?.title,
-                  minSalary: 'No data available',
-                  maxSalary: 'No data available',
-                  medianSalary: 'No data available'
-              });
-          }
+            // Destructure the first Glassdoor entry
+            const { 
+                min_salary, 
+                max_salary, 
+                median_salary, 
+                publisher_link, 
+                salary_period 
+            } = glassdoorData[0];
+        
+            // Function to convert salary based on period
+            const convertSalary = (salary, period) => {
+                if (!salary) return null;
+        
+                switch(period?.toLowerCase()) {
+                    case 'month':
+                        return salary * 12; // Convert monthly to yearly
+                    case 'hour':
+                        // Assuming standard 2080 work hours per year (40 hours/week * 52 weeks)
+                        return salary * 2080;
+                    case 'year':
+                    default:
+                        return salary; // Already in yearly format
+                }
+            };
+        
+            // Convert min, max, and median salaries
+            const convertedMinSalary = convertSalary(min_salary, salary_period);
+            const convertedMaxSalary = convertSalary(max_salary, salary_period);
+            const convertedMedianSalary = convertSalary(median_salary, salary_period);
+        
+            // Format salaries with commas and handle conversion
+            const formattedMinSalary = convertedMinSalary ? convertedMinSalary.toLocaleString() : 'Data not available';
+            const formattedMaxSalary = convertedMaxSalary ? convertedMaxSalary.toLocaleString() : 'Data not available';
+            const formattedMedianSalary = convertedMedianSalary ? convertedMedianSalary.toLocaleString() : 'Data not available';
+        
+            const formattedLink = publisher_link ? publisher_link : 'Data not available';
+            const formattedPeriod = salary_period ? salary_period : 'Data not available';
+        
+            // Store the job title and formatted salary data in the array
+            salaryResults.push({
+                jobTitle: validJobs[i].title,
+                minSalary: formattedMinSalary,
+                maxSalary: formattedMaxSalary,
+                link: formattedLink,
+                medianSalary: formattedMedianSalary,
+                salaryPeriod: formattedPeriod
+            });
+        } else {
+            // Store job title with "No data" message if Glassdoor data is unavailable
+            salaryResults.push({
+                jobTitle: validJobs[i]?.title,
+                minSalary: 'xxx',
+                maxSalary: 'xxx',
+                medianSalary: 'No data available'
+            });
         }
+      }
+
 
 
         return [
           {
-            name: "NUCLEAR REACTOR DESIGN",
-            salaryRange: `${currency}85,000 - ${currency}130,000`,
-            description: `Focuses on the design, construction, and operation of nuclear reactors for energy production, emphasizing safety and efficiency.`
-        },
-        {
-            name: "RADIATION SAFETY",
-            salaryRange: `${currency}80,000 - ${currency}120,000`,
-            description: `Specializes in protecting people and the environment from harmful effects of radiation through the development of safety protocols and equipment.`
-        },
-        {
-            name: "NUCLEAR MEDICINE",
-            salaryRange: `${currency}90,000 - ${currency}140,000`,
-            description: `Involves using radiation to diagnose and treat diseases, particularly cancer, through the use of radioactive materials.`
-        },
-        {
-            name: "FUSION ENERGY RESEARCH",
-            salaryRange: `${currency}95,000 - ${currency}150,000`,
-            description: `Focuses on developing nuclear fusion as a future energy source, involving advanced plasma physics and reactor design.`
-        },
-        {
-            name: "NUCLEAR MATERIALS ENGINEERING",
-            salaryRange: `${currency}80,000 - ${currency}120,000`,
-            description: `Studies the behavior and management of nuclear materials in reactors, focusing on durability, waste disposal, and reprocessing.`
-        },
-        {
-            name: "NUCLEAR WEAPONS TECHNOLOGY",
-            salaryRange: `${currency}100,000 - ${currency}160,000`,
-            description: `Deals with the design, production, and regulation of nuclear weapons and strategies for their safe management and reduction.`
-        }
-      ]
+            name: "Nuclear Reactor Design",
+            salaryRange: `${currency}${salaryResults[0].minSalary} - ${currency}${salaryResults[0].maxSalary}`,
+            description: `Focuses on the design, construction, and operation of nuclear reactors for energy production, emphasizing safety and efficiency.`,
+            link: `${salaryResults[0].link}`,
+            id: 1
+          },
+          {
+            name: "Radiation Safety",
+            salaryRange: `${currency}${salaryResults[1].minSalary} - ${currency}${salaryResults[1].maxSalary}`,
+            description: `Specializes in protecting people and the environment from harmful effects of radiation through the development of safety protocols and equipment.`,
+            link: `${salaryResults[1].link}`,
+            id: 2
+          },
+          {
+            name: "Nuclear Medicine",
+            salaryRange: `${currency}${salaryResults[2].minSalary} - ${currency}${salaryResults[2].maxSalary}`,
+            description: `Involves using radiation to diagnose and treat diseases, particularly cancer, through the use of radioactive materials.`,
+            link: `${salaryResults[2].link}`,
+            id: 3
+          },
+          {
+            name: "Fusion Energy Research",
+            salaryRange: `${currency}${salaryResults[3].minSalary} - ${currency}${salaryResults[3].maxSalary}`,
+            description: `Focuses on developing nuclear fusion as a future energy source, involving advanced plasma physics and reactor design.`,
+            link: `${salaryResults[3].link}`,
+            id: 4
+          },
+          {
+            name: "Nuclear Materials Engineering",
+            salaryRange: `${currency}${salaryResults[4].minSalary} - ${currency}${salaryResults[4].maxSalary}`,
+            description: `Studies the behavior and management of nuclear materials in reactors, focusing on durability, waste disposal, and reprocessing.`,
+            link: `${salaryResults[4].link}`,
+            id: 5
+          },
+          {
+            name: "Nuclear Weapons Technology",
+            salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
+            description: `Deals with the design, production, and regulation of nuclear weapons and strategies for their safe management and reduction.`,
+            link: `${salaryResults[5].link}`,
+            id: 6
+          }
+        ];
 };
 
 

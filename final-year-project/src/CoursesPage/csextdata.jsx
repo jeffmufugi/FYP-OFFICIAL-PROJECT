@@ -1,6 +1,6 @@
 
 
-import salaryData from '/../server/data/salary-dataCST.json';
+import salaryData from '/../server/data/salary-dataCSTusa.json';
 import salaryData2 from '/../server/data/salary-dataCSTmy.json';
 export const countries = 
 [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
@@ -162,7 +162,7 @@ export const getTopCourses = (salaryData) => {
                 link: `${salaryResults[8].link}`,
               },
               {
-                name: "UI/UX DESIGN",
+                name: "UI/UX DESIGNER",
                 salaryRange: `${currency}${salaryResults[9].minSalary} - ${currency}${salaryResults[9].maxSalary}`,
                 description: `A UI/UX developer designs and implements user interfaces and ensures a seamless, intuitive user experience across digital platforms.`
                 ,id: 10
@@ -174,24 +174,30 @@ export const getTopCourses = (salaryData) => {
 //USA 
 export const homepageInfo1 = [ {
 undergradsal: `76,077`,
+ulink: 'https://www.uwosh.edu/career/wp-content/uploads/sites/38/2024/01/Winter-2024-Salary-Survey-Report.pdf',
 jobavail : "356,700",
-emprate: "85%",
+jlink:'https://www.bls.gov/ooh/computer-and-information-technology/',
+emprate: "10.4%",
+elink:'https://www.bls.gov/emp/tables/stem-employment.htm#BLStable_2024_7_29_10_34'
 },]
 
 //MALAYSIA
 export const homepageInfo2 = [ {
-  undergradsal: `42,000`,
-  jobavail : "16,700",
-  emprate: "57%",
+    undergradsal: `48,000`,
+    ulink: 'https://www.glassdoor.com/Salaries/malaysia-software-engineer-salary-SRCH_IL.0,8_IN170_KO9,26.htm',
+    jobavail : "13,923",
+    jlink:'https://www.ilmia.gov.my/bda-myjobprofile/job/2512/software-developers',
+    emprate: "4.4%",
+    elink:'https://www.bls.gov/emp/tables/stem-employment.htm#BLStable_2024_7_29_10_34'
   },]
 
 
 export const homepageInfo = [
     {courseName : "computer science.",
-    courseDefinition: "computer science, the study of computers and computing, including their theoretical and algorithmic foundations, hardware and software, and their uses for processing information.",
-    undergradsal: `122,000`,
-    jobavail : "356,700",
-    emprate: "67%",
+    courseDefinition: "the study of computers and computing, including their theoretical and algorithmic foundations, hardware and software, and their uses for processing information.",
+    undergradsal: `XXX`,
+    jobavail : "XXX",
+    emprate: "XXX",
     livestatscolor : "#1B046C",},
     
     {description: `Computer Science is the study of 

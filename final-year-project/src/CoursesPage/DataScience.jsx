@@ -157,6 +157,8 @@ const DataScienceCourse = () => {
             selectedCountry={selectedCountry}
             toggleDropdown={toggleDropdown}
             isOpen={isOpen}
+            homepageInfo1={homepageInfo1}
+            homepageInfo2={homepageInfo2}
             countries={countries}
             handleSelect={handleSelect}
             salaryUS={homepageInfo1[0].undergradsal}                

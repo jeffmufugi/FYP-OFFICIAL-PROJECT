@@ -51,9 +51,9 @@
           "location": "Philadelphia, PA",
           "job_title": "Medical Physicist",
           "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salary/Fox-Chase-Cancer-Center-Medical-Physicist-Philadelphia-Salaries-EJI_IE29093.0,23_KO24,41_IL.42,54_IM676.htm",
-          "min_salary": 104588,
-          "max_salary": 184109,
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-medical-physicist-salary-SRCH_IL.0,2_IN1_KO3,20.htm",
+          "min_salary": 233488,
+          "max_salary": 419109,
           "median_salary": 138765,
           "salary_period": "YEAR",
           "salary_currency": "USD"
@@ -103,8 +103,8 @@
           "job_title": "Particle Physicist",
           "publisher_name": "Glassdoor",
           "publisher_link": "https://www.glassdoor.com/Salaries/particle-physicist-salary-SRCH_KO0,18.htm",
-          "min_salary": 138600,
-          "max_salary": 318250,
+          "min_salary": 168600,
+          "max_salary": 262250,
           "median_salary": 207339,
           "salary_period": "YEAR",
           "salary_currency": "USD"

@@ -31,8 +31,8 @@ export const homepageInfo1 = [ {
     emprate: "79%",
     },]
 
-    import salaryData from '/../server/data/salary-data.json';
-    import salaryData2 from '/../server/data/salary-dataMY.json';
+    import salaryData from '/../server/data/salary-dataROBusa.json';
+    import salaryData2 from '/../server/data/salary-dataROBmy.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
@@ -41,57 +41,84 @@ export const homepageInfo1 = [ {
 
     export const getTopCourses = (salaryData) => {
     
-      const jobData = salaryData.data.find(job => job.title === 'Computer Science');
+      const jobData = salaryData.data.find(job => job.title === 'Robotic System Design');
 
       const currency = jobData ? jobData.currency : null;
       console.log(currency );
       
 
 
-      const aiJob = salaryData?.data?.find(job => job.title === 'Artificial Intelligence');
-      const cyJob = salaryData?.data?.find(job => job.title === 'Cybersecurity');
-      const clJob = salaryData?.data?.find(job => job.title === 'Cloud Architecture');
-      const daJob = salaryData?.data?.find(job => job.title === 'Data Science');
-      const swJob = salaryData?.data?.find(job => job.title === 'Software Development');
-      const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops');
-      const moJob = salaryData?.data?.find(job => job.title === 'Mobile Development');
-      const gaJob = salaryData?.data?.find(job => job.title === 'Game Development');
-      const fuJob = salaryData?.data?.find(job => job.title === 'Web Development');
-      const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX Design');
+      const rsJob = salaryData?.data?.find(job => job.title === 'Robotic System Design');
+      const aiJob = salaryData?.data?.find(job => job.title === 'AI for Robotics');
+      const asJob = salaryData?.data?.find(job => job.title === 'Autonomous Systems');
+      const rsActJob = salaryData?.data?.find(job => job.title === 'Robotic Sensors and Actuators');
+      const cseJob = salaryData?.data?.find(job => job.title === 'Control Systems Engineering');
+      const hriJob = salaryData?.data?.find(job => job.title === 'Human-Robot Interaction');
+     
+      const validJobs = [aiJob, rsJob, asJob, rsActJob, cseJob, hriJob];
+        // Array to store the formatted salary data for each job
+        const salaryResults = [];
 
-      const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
-
-      // Array to store the formatted salary data for each job
-      const salaryResults = [];
-
-      // Loop through each valid job entry
-      for (let i = 0; i < validJobs.length; i++) {
-          // Get Glassdoor data for each job title
-          const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
+        // Loop through each valid job entry
+        for (let i = 0; i < validJobs.length; i++) {
+            // Get Glassdoor data for each job title
+            const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
+            
+            // Check if glassdoorData exists and has at least one entry
+            if (glassdoorData && glassdoorData.length > 0) {
+              // Destructure the first Glassdoor entry
+              const { 
+                  min_salary, 
+                  max_salary, 
+                  median_salary, 
+                  publisher_link, 
+                  salary_period 
+              } = glassdoorData[0];
           
-          // Check if glassdoorData exists and has at least one entry
-          if (glassdoorData && glassdoorData.length > 0) {
-              // Get the min, max, and median salaries for Glassdoor entries
-              const { min_salary, max_salary, median_salary } = glassdoorData[0]; // Assuming you want the first entry
-              
-              // Format salaries with commas
-              const formattedMinSalary = min_salary ? min_salary.toLocaleString() : 'Data not available';
-              const formattedMaxSalary = max_salary ? max_salary.toLocaleString() : 'Data not available';
-              const formattedMedianSalary = median_salary ? median_salary.toLocaleString() : 'Data not available';
-
+              // Function to convert salary based on period
+              const convertSalary = (salary, period) => {
+                  if (!salary) return null;
+          
+                  switch(period?.toLowerCase()) {
+                      case 'month':
+                          return salary * 12; // Convert monthly to yearly
+                      case 'hour':
+                          // Assuming standard 2080 work hours per year (40 hours/week * 52 weeks)
+                          return salary * 2080;
+                      case 'year':
+                      default:
+                          return salary; // Already in yearly format
+                  }
+              };
+          
+              // Convert min, max, and median salaries
+              const convertedMinSalary = convertSalary(min_salary, salary_period);
+              const convertedMaxSalary = convertSalary(max_salary, salary_period);
+              const convertedMedianSalary = convertSalary(median_salary, salary_period);
+          
+              // Format salaries with commas and handle conversion
+              const formattedMinSalary = convertedMinSalary ? convertedMinSalary.toLocaleString() : 'Data not available';
+              const formattedMaxSalary = convertedMaxSalary ? convertedMaxSalary.toLocaleString() : 'Data not available';
+              const formattedMedianSalary = convertedMedianSalary ? convertedMedianSalary.toLocaleString() : 'Data not available';
+          
+              const formattedLink = publisher_link ? publisher_link : 'Data not available';
+              const formattedPeriod = salary_period ? salary_period : 'Data not available';
+          
               // Store the job title and formatted salary data in the array
               salaryResults.push({
                   jobTitle: validJobs[i].title,
                   minSalary: formattedMinSalary,
                   maxSalary: formattedMaxSalary,
-                  medianSalary: formattedMedianSalary
+                  link: formattedLink,
+                  medianSalary: formattedMedianSalary,
+                  salaryPeriod: formattedPeriod
               });
           } else {
               // Store job title with "No data" message if Glassdoor data is unavailable
               salaryResults.push({
                   jobTitle: validJobs[i]?.title,
-                  minSalary: 'No data available',
-                  maxSalary: 'No data available',
+                  minSalary: 'xxx',
+                  maxSalary: 'xxx',
                   medianSalary: 'No data available'
               });
           }
@@ -100,37 +127,48 @@ export const homepageInfo1 = [ {
 
         return [
           {
-            name: "ROBOTIC SYSTEM DESIGN",
-            salaryRange: `${currency}90,000 - ${currency}120,000`,
-            description: `Focuses on the engineering principles behind creating functional robots, integrating mechanical components, electronics, and control systems.`
-        },
-        {
-            name: "AI FOR ROBOTICS",
-            salaryRange: `${currency}95,000 - ${currency}130,000`,
-            description: `Explores how artificial intelligence is applied to make robots autonomous, enabling decision-making and learning from their environment.`
-        },
-        {
-            name: "AUTONOMOUS SYSTEMS",
-            salaryRange: `${currency}100,000 - ${currency}140,000`,
-            description: `Focuses on developing robots and systems that can perform tasks without human intervention, using sensors, AI, and algorithms.`
-        },
-        {
-            name: "ROBOTIC SENSORS AND ACTUATORS",
-            salaryRange: `${currency}85,000 - ${currency}115,000`,
-            description: `Covers the technology behind sensors and actuators that give robots the ability to interact with and perceive their environment.`
-        },
-        {
-            name: "CONTROL SYSTEMS ENGINEERING",
-            salaryRange: `${currency}85,000 - ${currency}110,000`,
-            description: `Involves designing systems that control the behavior of dynamic robots, ensuring precise movements and accurate task execution.`
-        },
-        {
-            name: "HUMAN-ROBOT INTERACTION",
-            salaryRange: `${currency}90,000 - ${currency}125,000`,
-            description: `Explores how robots interact with humans in environments such as healthcare, manufacturing, and service industries.`
-        }
-
-      ]
+            name: "Robotic System Design",
+            salaryRange: `${currency}${salaryResults[0].minSalary} - ${currency}${salaryResults[0].maxSalary}`,
+            description: `Focuses on the engineering principles behind creating functional robots, integrating mechanical components, electronics, and control systems.`,
+            link: `${salaryResults[0].link}`,
+            id: 1
+          },
+          {
+            name: "AI for Robotics",
+            salaryRange: `${currency}${salaryResults[1].minSalary} - ${currency}${salaryResults[1].maxSalary}`,
+            description: `Explores how artificial intelligence is applied to make robots autonomous, enabling decision-making and learning from their environment.`,
+            link: `${salaryResults[1].link}`,
+            id: 2
+          },
+          {
+            name: "Autonomous Systems",
+            salaryRange: `${currency}${salaryResults[2].minSalary} - ${currency}${salaryResults[2].maxSalary}`,
+            description: `Focuses on developing robots and systems that can perform tasks without human intervention, using sensors, AI, and algorithms.`,
+            link: `${salaryResults[2].link}`,
+            id: 3
+          },
+          {
+            name: "Robotic Sensors and Actuators",
+            salaryRange: `${currency}${salaryResults[3].minSalary} - ${currency}${salaryResults[3].maxSalary}`,
+            description: `Covers the technology behind sensors and actuators that give robots the ability to interact with and perceive their environment.`,
+            link: `${salaryResults[3].link}`,
+            id: 4
+          },
+          {
+            name: "Control Systems Engineering",
+            salaryRange: `${currency}${salaryResults[4].minSalary} - ${currency}${salaryResults[4].maxSalary}`,
+            description: `Involves designing systems that control the behavior of dynamic robots, ensuring precise movements and accurate task execution.`,
+            link: `${salaryResults[4].link}`,
+            id: 5
+          },
+          {
+            name: "Human-Robot Interaction",
+            salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
+            description: `Explores how robots interact with humans in environments such as healthcare, manufacturing, and service industries.`,
+            link: `${salaryResults[5].link}`,
+            id: 6
+          }
+        ];
 };
 
 export const experienceSalary1 = [

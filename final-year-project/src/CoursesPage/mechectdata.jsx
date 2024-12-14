@@ -31,8 +31,8 @@ export const homepageInfo1 = [ {
     emprate: "79%",
     },]
 
-    import salaryData from '/../server/data/salary-dataMEC.json';
-    import salaryData2 from '/../server/data/salary-dataMECMY.json';
+    import salaryData from '/../server/data/salary-dataMECusa.json';
+    import salaryData2 from '/../server/data/salary-dataMECmy.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
@@ -59,41 +59,72 @@ export const homepageInfo1 = [ {
 
       const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
 
-      // Array to store the formatted salary data for each job
       const salaryResults = [];
 
-      // Loop through each valid job entry
-      for (let i = 0; i < validJobs.length; i++) {
-          // Get Glassdoor data for each job title
-          const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
-          
-          // Check if glassdoorData exists and has at least one entry
-          if (glassdoorData && glassdoorData.length > 0) {
-              // Get the min, max, and median salaries for Glassdoor entries
-              const { min_salary, max_salary, median_salary } = glassdoorData[0]; // Assuming you want the first entry
-              
-              // Format salaries with commas
-              const formattedMinSalary = min_salary ? min_salary.toLocaleString() : 'Data not available';
-              const formattedMaxSalary = max_salary ? max_salary.toLocaleString() : 'Data not available';
-              const formattedMedianSalary = median_salary ? median_salary.toLocaleString() : 'Data not available';
-
-              // Store the job title and formatted salary data in the array
-              salaryResults.push({
-                  jobTitle: validJobs[i].title,
-                  minSalary: formattedMinSalary,
-                  maxSalary: formattedMaxSalary,
-                  medianSalary: formattedMedianSalary
-              });
-          } else {
-              // Store job title with "No data" message if Glassdoor data is unavailable
-              salaryResults.push({
-                  jobTitle: validJobs[i]?.title,
-                  minSalary: '0',
-                  maxSalary: '0',
-                  medianSalary: 'No data available'
-              });
-          }
-        }
+       // Loop through each valid job entry
+       for (let i = 0; i < validJobs.length; i++) {
+           // Get Glassdoor data for each job title
+           const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
+           
+           // Check if glassdoorData exists and has at least one entry
+           if (glassdoorData && glassdoorData.length > 0) {
+             // Destructure the first Glassdoor entry
+             const { 
+                 min_salary, 
+                 max_salary, 
+                 median_salary, 
+                 publisher_link, 
+                 salary_period 
+             } = glassdoorData[0];
+         
+             // Function to convert salary based on period
+             const convertSalary = (salary, period) => {
+                 if (!salary) return null;
+         
+                 switch(period?.toLowerCase()) {
+                     case 'month':
+                         return salary * 12; // Convert monthly to yearly
+                     case 'hour':
+                         // Assuming standard 2080 work hours per year (40 hours/week * 52 weeks)
+                         return salary * 2080;
+                     case 'year':
+                     default:
+                         return salary; // Already in yearly format
+                 }
+             };
+         
+             // Convert min, max, and median salaries
+             const convertedMinSalary = convertSalary(min_salary, salary_period);
+             const convertedMaxSalary = convertSalary(max_salary, salary_period);
+             const convertedMedianSalary = convertSalary(median_salary, salary_period);
+         
+             // Format salaries with commas and handle conversion
+             const formattedMinSalary = convertedMinSalary ? convertedMinSalary.toLocaleString() : 'Data not available';
+             const formattedMaxSalary = convertedMaxSalary ? convertedMaxSalary.toLocaleString() : 'Data not available';
+             const formattedMedianSalary = convertedMedianSalary ? convertedMedianSalary.toLocaleString() : 'Data not available';
+         
+             const formattedLink = publisher_link ? publisher_link : 'Data not available';
+             const formattedPeriod = salary_period ? salary_period : 'Data not available';
+         
+             // Store the job title and formatted salary data in the array
+             salaryResults.push({
+                 jobTitle: validJobs[i].title,
+                 minSalary: formattedMinSalary,
+                 maxSalary: formattedMaxSalary,
+                 link: formattedLink,
+                 medianSalary: formattedMedianSalary,
+                 salaryPeriod: formattedPeriod
+             });
+         } else {
+             // Store job title with "No data" message if Glassdoor data is unavailable
+             salaryResults.push({
+                 jobTitle: validJobs[i]?.title,
+                 minSalary: 'xxx',
+                 maxSalary: 'xxx',
+                 medianSalary: 'No data available'
+             });
+         }
+       }
 
 
         return [

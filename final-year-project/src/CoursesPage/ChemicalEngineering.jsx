@@ -168,6 +168,8 @@ const ChemicalEngineeringCourse = () => {
             emplMY={homepageInfo2[0].emprate}
             img1={img1}            
             img2={img2}
+            homepageInfo1={homepageInfo1}
+            homepageInfo2={homepageInfo2}
             img3={img3}
             selectedCurrency={selectedCurrency} 
             homepageInfo={homepageInfo}

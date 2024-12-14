@@ -36,8 +36,8 @@ export const homepageInfo1 = [ {
     // import salaryData2 from '/../server/data/salary-dataMATMY.json';
 
 
-    import salaryData from '/../server/data/salary-data.json';
-    import salaryData2 from '/../server/data/salary-dataMY.json';
+    import salaryData from '/../server/data/salary-dataMATusa.json';
+    import salaryData2 from '/../server/data/salary-dataMATmy.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
@@ -46,106 +46,144 @@ export const homepageInfo1 = [ {
 
     export const getTopCourses = (salaryData) => {
     
-      const jobData = salaryData.data.find(job => job.title === 'Computer Science');
+      const jobData = salaryData.data.find(job => job.title === 'Applied Mathematics');
 
       const currency = jobData ? jobData.currency : null;
       console.log(currency );
       
 
 
-      const aiJob = salaryData?.data?.find(job => job.title === 'AI');
-      const cyJob = salaryData?.data?.find(job => job.title === 'Cyber Security');
-      const clJob = salaryData?.data?.find(job => job.title === 'Cloud Architecture');
-      const daJob = salaryData?.data?.find(job => job.title === 'Data Science');
-      const swJob = salaryData?.data?.find(job => job.title === 'Software Development');
-      const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops Engineer');
-      const moJob = salaryData?.data?.find(job => job.title === 'Mobile Development');
-      const gaJob = salaryData?.data?.find(job => job.title === 'Game Development');
-      const fuJob = salaryData?.data?.find(job => job.title === 'Web Development');
-      const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX');
+      const amJob = salaryData?.data?.find(job => job.title === 'Applied Mathematics');
+      const stJob = salaryData?.data?.find(job => job.title === 'Statistics');
+      const asJob = salaryData?.data?.find(job => job.title === 'Actuarial Science');
+      const cmJob = salaryData?.data?.find(job => job.title === 'Computational Mathematics');
+      const orJob = salaryData?.data?.find(job => job.title === 'Operations Research');
+      const fmJob = salaryData?.data?.find(job => job.title === 'Financial Mathematics');
+      const ntJob = salaryData?.data?.find(job => job.title === 'Number Theory');
+      const tpJob = salaryData?.data?.find(job => job.title === 'Topology');
+      
+      const validJobs = [amJob, stJob, asJob, cmJob, orJob, fmJob, ntJob, tpJob];
 
-      const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
-
-      // Array to store the formatted salary data for each job
       const salaryResults = [];
 
-      // Loop through each valid job entry
-      for (let i = 0; i < validJobs.length; i++) {
-          // Get Glassdoor data for each job title
-          const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
-          
-          // Check if glassdoorData exists and has at least one entry
-          if (glassdoorData && glassdoorData.length > 0) {
-              // Get the min, max, and median salaries for Glassdoor entries
-              const { min_salary, max_salary, median_salary } = glassdoorData[0]; // Assuming you want the first entry
-              
-              // Format salaries with commas
-              const formattedMinSalary = min_salary ? min_salary.toLocaleString() : 'Data not available';
-              const formattedMaxSalary = max_salary ? max_salary.toLocaleString() : 'Data not available';
-              const formattedMedianSalary = median_salary ? median_salary.toLocaleString() : 'Data not available';
+       // Loop through each valid job entry
+       for (let i = 0; i < validJobs.length; i++) {
+           // Get Glassdoor data for each job title
+           const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
+           
+           // Check if glassdoorData exists and has at least one entry
+           if (glassdoorData && glassdoorData.length > 0) {
+             // Destructure the first Glassdoor entry
+             const { 
+                 min_salary, 
+                 max_salary, 
+                 median_salary, 
+                 publisher_link, 
+                 salary_period 
+             } = glassdoorData[0];
+         
+             // Function to convert salary based on period
+             const convertSalary = (salary, period) => {
+                 if (!salary) return null;
+         
+                 switch(period?.toLowerCase()) {
+                     case 'month':
+                         return salary * 12; // Convert monthly to yearly
+                     case 'hour':
+                         // Assuming standard 2080 work hours per year (40 hours/week * 52 weeks)
+                         return salary * 2080;
+                     case 'year':
+                     default:
+                         return salary; // Already in yearly format
+                 }
+             };
+         
+             // Convert min, max, and median salaries
+             const convertedMinSalary = convertSalary(min_salary, salary_period);
+             const convertedMaxSalary = convertSalary(max_salary, salary_period);
+             const convertedMedianSalary = convertSalary(median_salary, salary_period);
+         
+             // Format salaries with commas and handle conversion
+             const formattedMinSalary = convertedMinSalary ? convertedMinSalary.toLocaleString() : 'Data not available';
+             const formattedMaxSalary = convertedMaxSalary ? convertedMaxSalary.toLocaleString() : 'Data not available';
+             const formattedMedianSalary = convertedMedianSalary ? convertedMedianSalary.toLocaleString() : 'Data not available';
+         
+             const formattedLink = publisher_link ? publisher_link : 'Data not available';
+             const formattedPeriod = salary_period ? salary_period : 'Data not available';
+         
+             // Store the job title and formatted salary data in the array
+             salaryResults.push({
+                 jobTitle: validJobs[i].title,
+                 minSalary: formattedMinSalary,
+                 maxSalary: formattedMaxSalary,
+                 link: formattedLink,
+                 medianSalary: formattedMedianSalary,
+                 salaryPeriod: formattedPeriod
+             });
+         } else {
+             // Store job title with "No data" message if Glassdoor data is unavailable
+             salaryResults.push({
+                 jobTitle: validJobs[i]?.title,
+                 minSalary: 'xxx',
+                 maxSalary: 'xxx',
+                 medianSalary: 'No data available'
+             });
+         }
+       }
 
-              // Store the job title and formatted salary data in the array
-              salaryResults.push({
-                  jobTitle: validJobs[i].title,
-                  minSalary: formattedMinSalary,
-                  maxSalary: formattedMaxSalary,
-                  medianSalary: formattedMedianSalary
-              });
-          } else {
-              // Store job title with "No data" message if Glassdoor data is unavailable
-              salaryResults.push({
-                  jobTitle: validJobs[i]?.title,
-                  minSalary: 'No data available',
-                  maxSalary: 'No data available',
-                  medianSalary: 'No data available'
-              });
-          }
-        }
 
 
         return [
-          {
-            name: "APPLIED MATHEMATICS",
-            salaryRange: `${currency}${salaryResults[0].minSalary} - ${currency}${salaryResults[0].maxSalary}`,
-            description: `Use mathematical methods in practical applications in science, engineering, and other fields, focusing on real-world problem-solving.`
-        },
-        {
-            name: "STATISTICS",
-            salaryRange: `${currency}${salaryResults[1].minSalary} - ${currency}${salaryResults[1].maxSalary}`,
-            description: `Analyze and interpret data using statistical models, supporting decision-making in business, healthcare, and social sciences.`
-        },
-        {
-            name: "ACTUARIAL SCIENCE",
-            salaryRange: `${currency}${salaryResults[2].minSalary} - ${currency}${salaryResults[2].maxSalary}`,
-            description: `Assess and manage risk in the insurance and finance industries using mathematical models and statistical techniques.`
-        },
-        {
-            name: "COMPUTATIONAL MATHEMATICS",
-            salaryRange: `${currency}${salaryResults[3].minSalary} - ${currency}${salaryResults[3].maxSalary}`,
-            description: `Develop algorithms and use computer simulations to solve complex problems in science, economics, and engineering.`
-        },
-        {
-            name: "OPERATIONS RESEARCH",
-            salaryRange: `${currency}${salaryResults[4].minSalary} - ${currency}${salaryResults[4].maxSalary}`,
-            description: `Optimize processes and decision-making through mathematical modeling and analytical methods, used in logistics, manufacturing, and management.`
-        },
-        {
-            name: "FINANCIAL MATHEMATICS",
-            salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
-            description: `Apply mathematics to model and solve problems in finance, focusing on pricing, risk management, and investment strategies.`
-        },
-        {
-            name: "NUMBER THEORY",
-            salaryRange: `${currency}${salaryResults[6].minSalary} - ${currency}${salaryResults[6].maxSalary}`,
-            description: `Investigate the properties of integers and their relationships, with applications in cryptography and algorithm design.`
-        },
-        {
-            name: "TOPOLOGY",
-            salaryRange: `${currency}${salaryResults[7].minSalary} - ${currency}${salaryResults[7].maxSalary}`,
-            description: `Study properties of space that are preserved under continuous deformations, with applications in robotics, physics, and data science.`
-        }
-
-      ]
+       
+            {
+                name: "APPLIED MATHEMATICS",
+                salaryRange: `${currency}${salaryResults[0].minSalary} - ${currency}${salaryResults[0].maxSalary}`,
+                description: `Use mathematical methods in practical applications in science, engineering, and other fields, focusing on real-world problem-solving.`,
+                link: `${salaryResults[0].link}`
+            },
+            {
+                name: "STATISTICS",
+                salaryRange: `${currency}${salaryResults[1].minSalary} - ${currency}${salaryResults[1].maxSalary}`,
+                description: `Analyze and interpret data using statistical models, supporting decision-making in business, healthcare, and social sciences.`,
+                link: `${salaryResults[1].link}`
+            },
+            {
+                name: "ACTUARIAL SCIENCE",
+                salaryRange: `${currency}${salaryResults[2].minSalary} - ${currency}${salaryResults[2].maxSalary}`,
+                description: `Assess and manage risk in the insurance and finance industries using mathematical models and statistical techniques.`,
+                link: `${salaryResults[2].link}`
+            },
+            {
+                name: "COMPUTATIONAL MATHEMATICS",
+                salaryRange: `${currency}${salaryResults[3].minSalary} - ${currency}${salaryResults[3].maxSalary}`,
+                description: `Develop algorithms and use computer simulations to solve complex problems in science, economics, and engineering.`,
+                link: `${salaryResults[3].link}`
+            },
+            {
+                name: "OPERATIONS RESEARCH",
+                salaryRange: `${currency}${salaryResults[4].minSalary} - ${currency}${salaryResults[4].maxSalary}`,
+                description: `Optimize processes and decision-making through mathematical modeling and analytical methods, used in logistics, manufacturing, and management.`,
+                link: `${salaryResults[4].link}`
+            },
+            {
+                name: "FINANCIAL MATHEMATICS",
+                salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
+                description: `Apply mathematics to model and solve problems in finance, focusing on pricing, risk management, and investment strategies.`,
+                link: `${salaryResults[5].link}`
+            },
+            {
+                name: "NUMBER THEORY",
+                salaryRange: `${currency}${salaryResults[6].minSalary} - ${currency}${salaryResults[6].maxSalary}`,
+                description: `Investigate the properties of integers and their relationships, with applications in cryptography and algorithm design.`,
+                link: `${salaryResults[6].link}`
+            },
+            {
+                name: "TOPOLOGY",
+                salaryRange: `${currency}${salaryResults[7].minSalary} - ${currency}${salaryResults[7].maxSalary}`,
+                description: `Study properties of space that are preserved under continuous deformations, with applications in robotics, physics, and data science.`,
+                link: `${salaryResults[7].link}`
+            }
+        ];
 };
 
 export const experienceSalary1 = [

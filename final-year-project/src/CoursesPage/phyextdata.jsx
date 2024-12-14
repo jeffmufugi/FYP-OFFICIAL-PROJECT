@@ -33,8 +33,8 @@ export const homepageInfo1 = [ {
     // import salaryData from '/../server/data/salary-data.json';
     // import salaryData2 from '/../server/data/salary-dataMY.json';
 
-    import salaryData from '/../server/data/salary-dataPH.json';
-    import salaryData2 from '/../server/data/salary-dataPHMY.json';
+    import salaryData from '/../server/data/salary-dataPHYusa.json';
+    import salaryData2 from '/../server/data/salary-dataPHYmy.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
@@ -63,98 +63,137 @@ export const homepageInfo1 = [ {
 
       const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
 
-      // Array to store the formatted salary data for each job
       const salaryResults = [];
 
-      // Loop through each valid job entry
-      for (let i = 0; i < validJobs.length; i++) {
-          // Get Glassdoor data for each job title
-          const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
-          
-          // Check if glassdoorData exists and has at least one entry
-          if (glassdoorData && glassdoorData.length > 0) {
-              // Get the min, max, and median salaries for Glassdoor entries
-              const { min_salary, max_salary, median_salary } = glassdoorData[0]; // Assuming you want the first entry
-              
-              // Format salaries with commas
-              const formattedMinSalary = min_salary ? min_salary.toLocaleString() : 'Data not available';
-              const formattedMaxSalary = max_salary ? max_salary.toLocaleString() : 'Data not available';
-              const formattedMedianSalary = median_salary ? median_salary.toLocaleString() : 'Data not available';
-
-              // Store the job title and formatted salary data in the array
-              salaryResults.push({
-                  jobTitle: validJobs[i].title,
-                  minSalary: formattedMinSalary,
-                  maxSalary: formattedMaxSalary,
-                  medianSalary: formattedMedianSalary
-              });
-          } else {
-              // Store job title with "No data" message if Glassdoor data is unavailable
-              salaryResults.push({
-                  jobTitle: validJobs[i]?.title,
-                  minSalary: 'No data available',
-                  maxSalary: 'No data available',
-                  medianSalary: 'No data available'
-              });
-          }
-        }
-
-
-        return [
+       // Loop through each valid job entry
+       for (let i = 0; i < validJobs.length; i++) {
+           // Get Glassdoor data for each job title
+           const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
+           
+           // Check if glassdoorData exists and has at least one entry
+           if (glassdoorData && glassdoorData.length > 0) {
+             // Destructure the first Glassdoor entry
+             const { 
+                 min_salary, 
+                 max_salary, 
+                 median_salary, 
+                 publisher_link, 
+                 salary_period 
+             } = glassdoorData[0];
          
-            {
-                name: "QUANTUM COMPUTING",
-                salaryRange: `${currency}${salaryResults[0].minSalary} - ${currency}${salaryResults[0].maxSalary}`,
-                description: `Research and develop quantum systems for computing applications, working with quantum bits, gates, and algorithms. Focus on advancing quantum technology for practical computing solutions.`
-            },
-            {
-                name: "MEDICAL PHYSICS",
-                salaryRange: `${currency}${salaryResults[1].minSalary} - ${currency}${salaryResults[1].maxSalary}`,
-                description: `Apply physics principles to medicine, particularly in radiation therapy, medical imaging, and diagnostic technologies. Ensure safe and effective use of radiation in medical treatments.`
-            },
-            {
-                name: "PARTICLE PHYSICS",
-                salaryRange: `${currency}${salaryResults[2].minSalary} - ${currency}${salaryResults[2].maxSalary}`,
-                description: `Study fundamental particles and their interactions, working at research facilities with particle accelerators and detectors to understand the basic building blocks of matter.`
-            },
-            {
-                name: "CONDENSED MATTER PHYSICS",
-                salaryRange: `${currency}${salaryResults[3].minSalary} - ${currency}${salaryResults[3].maxSalary}`,
-                description: `Research properties of matter in solid and liquid states, developing new materials for electronics, energy storage, and quantum technologies.`
-            },
-            {
-                name: "ASTROPHYSICS",
-                salaryRange: `${currency}${salaryResults[4].minSalary} - ${currency}${salaryResults[4].maxSalary}`,
-                description: `Study celestial objects, galaxies, and phenomena in the universe, using advanced telescopes and computational methods to understand cosmic evolution.`
-            },
-            {
-                name: "COMPUTATIONAL PHYSICS",
-                salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
-                description: `Develop and apply numerical methods and computer simulations to solve complex physical problems, from climate modeling to molecular dynamics.`
-            },
-            {
-                name: "PLASMA PHYSICS",
-                salaryRange: `${currency}${salaryResults[6].minSalary} - ${currency}${salaryResults[6].maxSalary}`,
-                description: `Study ionized gases and their applications in fusion energy, space propulsion, and materials processing, working on cutting-edge energy solutions.`
-            },
-            {
-                name: "OPTICS AND PHOTONICS",
-                salaryRange: `${currency}${salaryResults[7].minSalary} - ${currency}${salaryResults[7].maxSalary}`,
-                description: `Research light-matter interactions and develop applications in laser technology, fiber optics, and optical computing, crucial for communications and sensing.`
-            },
-            {
-                name: "BIOPHYSICS",
-                salaryRange: `${currency}${salaryResults[8].minSalary} - ${currency}${salaryResults[8].maxSalary}`,
-                description: `Apply physics principles to biological systems, studying molecular structures, cellular mechanics, and developing new techniques for medical diagnosis and treatment.`
-            },
-            {
-                name: "NUCLEAR PHYSICS",
-                salaryRange: `${currency}${salaryResults[9].minSalary} - ${currency}${salaryResults[9].maxSalary}`,
-                description: `Study atomic nuclei, nuclear reactions, and applications in energy production, medical treatments, and national security, working in labs or power facilities.`
-            }
-        
+             // Function to convert salary based on period
+             const convertSalary = (salary, period) => {
+                 if (!salary) return null;
+         
+                 switch(period?.toLowerCase()) {
+                     case 'month':
+                         return salary * 12; // Convert monthly to yearly
+                     case 'hour':
+                         // Assuming standard 2080 work hours per year (40 hours/week * 52 weeks)
+                         return salary * 2080;
+                     case 'year':
+                     default:
+                         return salary; // Already in yearly format
+                 }
+             };
+         
+             // Convert min, max, and median salaries
+             const convertedMinSalary = convertSalary(min_salary, salary_period);
+             const convertedMaxSalary = convertSalary(max_salary, salary_period);
+             const convertedMedianSalary = convertSalary(median_salary, salary_period);
+         
+             // Format salaries with commas and handle conversion
+             const formattedMinSalary = convertedMinSalary ? convertedMinSalary.toLocaleString() : 'Data not available';
+             const formattedMaxSalary = convertedMaxSalary ? convertedMaxSalary.toLocaleString() : 'Data not available';
+             const formattedMedianSalary = convertedMedianSalary ? convertedMedianSalary.toLocaleString() : 'Data not available';
+         
+             const formattedLink = publisher_link ? publisher_link : 'Data not available';
+             const formattedPeriod = salary_period ? salary_period : 'Data not available';
+         
+             // Store the job title and formatted salary data in the array
+             salaryResults.push({
+                 jobTitle: validJobs[i].title,
+                 minSalary: formattedMinSalary,
+                 maxSalary: formattedMaxSalary,
+                 link: formattedLink,
+                 medianSalary: formattedMedianSalary,
+                 salaryPeriod: formattedPeriod
+             });
+         } else {
+             // Store job title with "No data" message if Glassdoor data is unavailable
+             salaryResults.push({
+                 jobTitle: validJobs[i]?.title,
+                 minSalary: 'xxx',
+                 maxSalary: 'xxx',
+                 medianSalary: 'No data available'
+             });
+         }
+       }
 
-      ]
+
+
+       return [
+        {
+            name: "QUANTUM COMPUTING",
+            salaryRange: `${currency}${salaryResults[0].minSalary} - ${currency}${salaryResults[0].maxSalary}`,
+            description: `Research and develop quantum systems for computing applications, working with quantum bits, gates, and algorithms. Focus on advancing quantum technology for practical computing solutions.`,
+            link: `${salaryResults[0].link}`
+        },
+        {
+            name: "MEDICAL PHYSICS",
+            salaryRange: `${currency}${salaryResults[1].minSalary} - ${currency}${salaryResults[1].maxSalary}`,
+            description: `Apply physics principles to medicine, particularly in radiation therapy, medical imaging, and diagnostic technologies. Ensure safe and effective use of radiation in medical treatments.`,
+            link: `${salaryResults[1].link}`
+        },
+        {
+            name: "PARTICLE PHYSICS",
+            salaryRange: `${currency}${salaryResults[2].minSalary} - ${currency}${salaryResults[2].maxSalary}`,
+            description: `Study fundamental particles and their interactions, working at research facilities with particle accelerators and detectors to understand the basic building blocks of matter.`,
+            link: `${salaryResults[2].link}`
+        },
+        {
+            name: "CONDENSED MATTER PHYSICS",
+            salaryRange: `${currency}${salaryResults[3].minSalary} - ${currency}${salaryResults[3].maxSalary}`,
+            description: `Research properties of matter in solid and liquid states, developing new materials for electronics, energy storage, and quantum technologies.`,
+            link: `${salaryResults[3].link}`
+        },
+        {
+            name: "ASTROPHYSICS",
+            salaryRange: `${currency}${salaryResults[4].minSalary} - ${currency}${salaryResults[4].maxSalary}`,
+            description: `Study celestial objects, galaxies, and phenomena in the universe, using advanced telescopes and computational methods to understand cosmic evolution.`,
+            link: `${salaryResults[4].link}`
+        },
+        {
+            name: "COMPUTATIONAL PHYSICS",
+            salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
+            description: `Develop and apply numerical methods and computer simulations to solve complex physical problems, from climate modeling to molecular dynamics.`,
+            link: `${salaryResults[5].link}`
+        },
+        {
+            name: "PLASMA PHYSICS",
+            salaryRange: `${currency}${salaryResults[6].minSalary} - ${currency}${salaryResults[6].maxSalary}`,
+            description: `Study ionized gases and their applications in fusion energy, space propulsion, and materials processing, working on cutting-edge energy solutions.`,
+            link: `${salaryResults[6].link}`
+        },
+        {
+            name: "OPTICS AND PHOTONICS",
+            salaryRange: `${currency}${salaryResults[7].minSalary} - ${currency}${salaryResults[7].maxSalary}`,
+            description: `Research light-matter interactions and develop applications in laser technology, fiber optics, and optical computing, crucial for communications and sensing.`,
+            link: `${salaryResults[7].link}`
+        },
+        {
+            name: "BIOPHYSICS",
+            salaryRange: `${currency}${salaryResults[8].minSalary} - ${currency}${salaryResults[8].maxSalary}`,
+            description: `Apply physics principles to biological systems, studying molecular structures, cellular mechanics, and developing new techniques for medical diagnosis and treatment.`,
+            link: `${salaryResults[8].link}`
+        },
+        {
+            name: "NUCLEAR PHYSICS",
+            salaryRange: `${currency}${salaryResults[9].minSalary} - ${currency}${salaryResults[9].maxSalary}`,
+            description: `Study atomic nuclei, nuclear reactions, and applications in energy production, medical treatments, and national security, working in labs or power facilities.`,
+            link: `${salaryResults[9].link}`
+        }
+    ];
 };
 
 export const experienceSalary1 = [

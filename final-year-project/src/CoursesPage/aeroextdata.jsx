@@ -31,8 +31,8 @@ export const homepageInfo1 = [ {
     emprate: "79%",
     },]
 
-    import salaryData from '/../server/data/salary-data.json';
-    import salaryData2 from '/../server/data/salary-dataMY.json';
+    import salaryData from '/../server/data/salary-dataAEROusa.json';
+    import salaryData2 from '/../server/data/salary-dataAEROmy.json';
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
     {"flag":"🇲🇾","file":salaryData2,"currency":"MYR",id:2}];
@@ -40,106 +40,143 @@ export const homepageInfo1 = [ {
 
     export const getTopCourses = (salaryData) => {
     
-      const jobData = salaryData.data.find(job => job.title === 'Computer Science');
+      const jobData = salaryData.data.find(job => job.title === 'Flight Dynamics Engineer');
 
       const currency = jobData ? jobData.currency : null;
       console.log(currency );
       
 
+      const fdJob = salaryData?.data?.find(job => job.title === 'Flight Dynamics Engineer');
+      const prJob = salaryData?.data?.find(job => job.title === 'Propulsion Engineer');
+      const avJob = salaryData?.data?.find(job => job.title === 'Avionics Engineer');
+      const adJob = salaryData?.data?.find(job => job.title === 'Aerodynamics Engineer');
+      const saJob = salaryData?.data?.find(job => job.title === 'Structural Analysis Engineer');
+      const msJob = salaryData?.data?.find(job => job.title === 'Materials Science Engineer');
+      const sseJob = salaryData?.data?.find(job => job.title === 'Space Systems Engineer');
+      const raJob = salaryData?.data?.find(job => job.title === 'Autonomy Engineer');
 
-      const aiJob = salaryData?.data?.find(job => job.title === 'Artificial Intelligence');
-      const cyJob = salaryData?.data?.find(job => job.title === 'Cybersecurity');
-      const clJob = salaryData?.data?.find(job => job.title === 'Cloud Architecture');
-      const daJob = salaryData?.data?.find(job => job.title === 'Data Science');
-      const swJob = salaryData?.data?.find(job => job.title === 'Software Development');
-      const deJob = salaryData?.data?.find(job => job.title === 'Dev Ops');
-      const moJob = salaryData?.data?.find(job => job.title === 'Mobile Development');
-      const gaJob = salaryData?.data?.find(job => job.title === 'Game Development');
-      const fuJob = salaryData?.data?.find(job => job.title === 'Web Development');
-      const uiJob = salaryData?.data?.find(job => job.title === 'UI/UX Design');
-
-      const validJobs = [aiJob,cyJob,clJob,daJob,swJob,deJob,moJob,gaJob,fuJob,uiJob];
+      const validJobs = [fdJob, prJob, avJob, adJob, saJob, msJob, sseJob, raJob];
 
       // Array to store the formatted salary data for each job
-      const salaryResults = [];
+       // Array to store the formatted salary data for each job
+       const salaryResults = [];
 
-      // Loop through each valid job entry
-      for (let i = 0; i < validJobs.length; i++) {
-          // Get Glassdoor data for each job title
-          const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
-          
-          // Check if glassdoorData exists and has at least one entry
-          if (glassdoorData && glassdoorData.length > 0) {
-              // Get the min, max, and median salaries for Glassdoor entries
-              const { min_salary, max_salary, median_salary } = glassdoorData[0]; 
-              
-              // Format salaries with commas
-              const formattedMinSalary = min_salary ? min_salary.toLocaleString() : 'Data not available';
-              const formattedMaxSalary = max_salary ? max_salary.toLocaleString() : 'Data not available';
-              const formattedMedianSalary = median_salary ? median_salary.toLocaleString() : 'Data not available';
+       // Loop through each valid job entry
+       for (let i = 0; i < validJobs.length; i++) {
+           // Get Glassdoor data for each job title
+           const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
+           
+           // Check if glassdoorData exists and has at least one entry
+           if (glassdoorData && glassdoorData.length > 0) {
+             // Destructure the first Glassdoor entry
+             const { 
+                 min_salary, 
+                 max_salary, 
+                 median_salary, 
+                 publisher_link, 
+                 salary_period 
+             } = glassdoorData[0];
+         
+             // Function to convert salary based on period
+             const convertSalary = (salary, period) => {
+                 if (!salary) return null;
+         
+                 switch(period?.toLowerCase()) {
+                     case 'month':
+                         return salary * 12; // Convert monthly to yearly
+                     case 'hour':
+                         // Assuming standard 2080 work hours per year (40 hours/week * 52 weeks)
+                         return salary * 2080;
+                     case 'year':
+                     default:
+                         return salary; // Already in yearly format
+                 }
+             };
+         
+             // Convert min, max, and median salaries
+             const convertedMinSalary = convertSalary(min_salary, salary_period);
+             const convertedMaxSalary = convertSalary(max_salary, salary_period);
+             const convertedMedianSalary = convertSalary(median_salary, salary_period);
+         
+             // Format salaries with commas and handle conversion
+             const formattedMinSalary = convertedMinSalary ? convertedMinSalary.toLocaleString() : 'Data not available';
+             const formattedMaxSalary = convertedMaxSalary ? convertedMaxSalary.toLocaleString() : 'Data not available';
+             const formattedMedianSalary = convertedMedianSalary ? convertedMedianSalary.toLocaleString() : 'Data not available';
+         
+             const formattedLink = publisher_link ? publisher_link : 'Data not available';
+             const formattedPeriod = salary_period ? salary_period : 'Data not available';
+         
+             // Store the job title and formatted salary data in the array
+             salaryResults.push({
+                 jobTitle: validJobs[i].title,
+                 minSalary: formattedMinSalary,
+                 maxSalary: formattedMaxSalary,
+                 link: formattedLink,
+                 medianSalary: formattedMedianSalary,
+                 salaryPeriod: formattedPeriod
+             });
+         } else {
+             // Store job title with "No data" message if Glassdoor data is unavailable
+             salaryResults.push({
+                 jobTitle: validJobs[i]?.title,
+                 minSalary: 'xxx',
+                 maxSalary: 'xxx',
+                 medianSalary: 'No data available'
+             });
+         }
+       }
 
-              // Store the job title and formatted salary data in the array
-              salaryResults.push({
-                  jobTitle: validJobs[i].title,
-                  minSalary: formattedMinSalary,
-                  maxSalary: formattedMaxSalary,
-                  medianSalary: formattedMedianSalary
-              });
-          } else {
-              // Store job title with "No data" message if Glassdoor data is unavailable
-              salaryResults.push({
-                  jobTitle: validJobs[i]?.title,
-                  minSalary: 'No data available',
-                  maxSalary: 'No data available',
-                  medianSalary: 'No data available'
-              });
-          }
-        }
 
-
-        return [
-          {
+       return [
+        {
             name: "FLIGHT DYNAMICS",
-            salaryRange: `${currency}85,000 - ${currency}120,000`,
-            description: `Study the behavior of aircraft in flight, focusing on stability, control, and performance analysis.`
+            salaryRange: `${currency}${salaryResults[0].minSalary} - ${currency}${salaryResults[0].maxSalary}`,
+            description: `Study the behavior of aircraft in flight, focusing on stability, control, and performance analysis.`,
+            link: `${salaryResults[0].link}`,
         },
         {
             name: "PROPULSION",
-            salaryRange: `${currency}90,000 - ${currency}130,000`,
-            description: `Explore the principles and technologies behind engines and propulsion systems used in aerospace vehicles.`
+            salaryRange: `${currency}${salaryResults[1].minSalary} - ${currency}${salaryResults[1].maxSalary}`,
+            description: `Explore the principles and technologies behind engines and propulsion systems used in aerospace vehicles.`,
+            link: `${salaryResults[1].link}`,
         },
         {
             name: "AVIONICS",
-            salaryRange: `${currency}80,000 - ${currency}115,000`,
-            description: `Learn about the electronic systems used in aircraft, including navigation, communication, and control systems.`
+            salaryRange: `${currency}${salaryResults[2].minSalary} - ${currency}${salaryResults[2].maxSalary}`,
+            description: `Learn about the electronic systems used in aircraft, including navigation, communication, and control systems.`,
+            link: `${salaryResults[2].link}`,
         },
         {
             name: "AERODYNAMICS",
-            salaryRange: `${currency}95,000 - ${currency}140,000`,
-            description: `Analyze the behavior of air as it interacts with solid objects, focusing on lift, drag, and airflow patterns.`
+            salaryRange: `${currency}${salaryResults[3].minSalary} - ${currency}${salaryResults[3].maxSalary}`,
+            description: `Analyze the behavior of air as it interacts with solid objects, focusing on lift, drag, and airflow patterns.`,
+            link: `${salaryResults[3].link}`,
         },
         {
             name: "STRUCTURAL ANALYSIS",
-            salaryRange: `${currency}85,000 - ${currency}125,000`,
-            description: `Evaluate the strength and stability of aerospace structures, ensuring safety and efficiency in design.`
+            salaryRange: `${currency}${salaryResults[4].minSalary} - ${currency}${salaryResults[4].maxSalary}`,
+            description: `Evaluate the strength and stability of aerospace structures, ensuring safety and efficiency in design.`,
+            link: `${salaryResults[4].link}`,
         },
         {
             name: "MATERIALS SCIENCE",
-            salaryRange: `${currency}80,000 - ${currency}120,000`,
-            description: `Study the properties and applications of materials used in aerospace, including composites and metals.`
+            salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
+            description: `Study the properties and applications of materials used in aerospace, including composites and metals.`,
+            link: `${salaryResults[5].link}`,
         },
         {
             name: "SPACE SYSTEMS ENGINEERING",
-            salaryRange: `${currency}95,000 - ${currency}145,000`,
-            description: `Focus on the design and integration of spacecraft systems, including communication, power, and thermal control.`
+            salaryRange: `${currency}${salaryResults[6].minSalary} - ${currency}${salaryResults[6].maxSalary}`,
+            description: `Focus on the design and integration of spacecraft systems, including communication, power, and thermal control.`,
+            link: `${salaryResults[6].link}`,
         },
         {
             name: "ROBOTICS AND AUTONOMY",
-            salaryRange: `${currency}90,000 - ${currency}135,000`,
+            salaryRange: `${currency}${salaryResults[7].minSalary} - ${currency}${salaryResults[7].maxSalary}`,
             description: `Explore robotics technology and autonomous systems applied in aerospace applications and research.`
+            ,         link: `${salaryResults[7].link}`,
         }
-
-      ]
+    ];
 };
 
     

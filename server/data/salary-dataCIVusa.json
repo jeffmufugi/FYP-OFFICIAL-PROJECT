@@ -1,0 +1,119 @@
+{
+  "lastUpdated": "2024-12-14T09:33:50.776Z",
+  "data": [
+    {
+      "title": "Structural Engineering",
+      "status": "OK",
+      "request_id": "a2b4cfd9-3be6-44b4-89bf-8049d7ebd8bc",
+      "currency": "$",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Structural Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-structural-engineer-salary-SRCH_IL.0,2_IN1_KO3,22.htm",
+          "min_salary": 98000,
+          "max_salary": 145000,
+          "median_salary": 85000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Transportation Engineering",
+      "status": "OK",
+      "request_id": "b5d9e21c-0c88-4fbb-8137-b9c9a420254e",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Transportation Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-transportation-engineer-salary-SRCH_IL.0,2_IN1_KO3,26.htm",
+          "min_salary": 86000,
+          "max_salary": 144000,
+          "median_salary": 80000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Geotechnical Engineering",
+      "status": "OK",
+      "request_id": "a9c6d2f3-9f6e-4b59-9a8b-5b3d3c1b59f5",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Geotechnical Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/usa-geotechnical-engineer-salary-SRCH_IL.0,3_IN1_KO4,22.htm",
+          "min_salary": 55000,
+          "max_salary": 115000,
+          "median_salary": 80000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Water Resources Engineering",
+      "status": "OK",
+      "request_id": "d5e8f3ab-45f4-4f67-b3d4-bc29fa2dbb08",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Water Resources Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/usa-water-resources-engineer-salary-SRCH_IL.0,3_IN1_KO4,33.htm",
+          "min_salary": 86000,
+          "max_salary": 130000,
+          "median_salary": 80000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Environmental Engineering",
+      "status": "OK",
+      "request_id": "c9e0b4f8-9c1d-4507-b5f7-019cc9e7f8a7",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Environmental Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-environmental-engineer-salary-SRCH_IL.0,2_IN1_KO3,25.htm",
+          "min_salary": 81000,
+          "max_salary": 137000,
+          "median_salary": 75000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Construction Engineering",
+      "status": "OK",
+      "request_id": "e1d3b8c1-a1b3-4d78-9fa7-3947a6e5af70",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Construction Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-construction-engineer-salary-SRCH_IL.0,2_IN1_KO3,24.htm",
+          "min_salary": 98000,
+          "max_salary": 161000,
+          "median_salary": 85000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    }
+  ]
+}

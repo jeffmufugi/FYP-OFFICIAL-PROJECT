@@ -1,0 +1,119 @@
+{
+  "lastUpdated": "2024-11-10T09:33:50.776Z",
+  "data": [
+    {
+      "title": "Machine Learning",
+      "status": "OK",
+      "request_id": "f9171bcd-dc33-4cff-a6e2-9818d30fb3e5",
+      "currency": "$",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Machine Learning Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-machine-learning-engineer-salary-SRCH_IL.0,2_IN1_KO3,28.htm",
+          "min_salary": 133000,
+          "max_salary": 213000,
+          "median_salary": 120000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Big Data Analytics",
+      "status": "OK",
+      "request_id": "55ac97e0-370d-4f54-9dcc-daad391ef683",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Big Data Analyst",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-big-data-engineer-salary-SRCH_IL.0,2_IN1_KO3,20.htm",
+          "min_salary": 105000,
+          "max_salary": 156000,
+          "median_salary": 105000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Data Mining",
+      "status": "OK",
+      "request_id": "b1dcb3b9-8c99-4b9e-bdfd-43d7321d9e70",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Data Mining Specialist",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-data-mining-analyst-salary-SRCH_IL.0,2_IN1_KO3,22.htm",
+          "min_salary": 107000,
+          "max_salary": 176000,
+          "median_salary": 100000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Artificial Intelligence",
+      "status": "OK",
+      "request_id": "92db4c6a-0c53-4a22-b9d4-b93b8a9b8370",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "AI Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-ai-engineer-salary-SRCH_IL.0,2_IN1_KO3,14.htm",
+          "min_salary": 159115,
+          "max_salary": 265189,
+          "median_salary": 120000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Data Visualization",
+      "status": "OK",
+      "request_id": "ad8c7b24-158b-4d55-b0c3-6f5e515b8b9c",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Data Visualization Specialist",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-data-visualization-specialist-salary-SRCH_IL.0,2_IN1_KO3,32.htm",
+          "min_salary": 81000,
+          "max_salary": 140000,
+          "median_salary": 105000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Cloud Computing",
+      "status": "OK",
+      "request_id": "ae9c8b57-93b4-4ab6-8186-a8e16d8c7d61",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Cloud Solutions Architect",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-cloud-architect-salary-SRCH_IL.0,2_IN1_KO3,18.htm",
+          "min_salary": 153788,
+          "max_salary": 270948,
+          "median_salary": 120000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    }
+  ]
+}

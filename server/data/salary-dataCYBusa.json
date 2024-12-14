@@ -1,0 +1,119 @@
+{
+  "lastUpdated": "2024-11-10T09:33:50.776Z",
+  "data": [
+    {
+      "title": "Network Security",
+      "status": "OK",
+      "request_id": "b3f39e8b-9eae-4f3b-bd6f-9c1b65c1d7e3",
+      "currency": "$",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Network Security Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/my-network-security-engineer-salary-SRCH_IL.0,2_IN1_KO3,28.htm",
+          "min_salary": 118000,
+          "max_salary": 189000,
+          "median_salary": 95000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Ethical Hacking",
+      "status": "OK",
+      "request_id": "f2bdc5f8-b857-4b8d-bb42-3c1b1a3d3d25",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Ethical Hacker",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-ethical-hacker-salary-SRCH_IL.0,2_IN1_KO3,17.htm",
+          "min_salary": 160000,
+          "max_salary": 299000,
+          "median_salary": 110000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Cryptography",
+      "status": "OK",
+      "request_id": "cfa7f3d2-bf43-4784-bd0e-d1ff07c6b3ee",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Cryptography Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-cryptography-engineer-salary-SRCH_IL.0,2_IN1_KO3,24.htm",
+          "min_salary": 145000,
+          "max_salary": 230000,
+          "median_salary": 120000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Cybersecurity Law & Policy",
+      "status": "OK",
+      "request_id": "b8d8a0b8-35f3-42bb-bc1c-f10c6f92e760",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Cybersecurity Law Expert",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-cybersecurity-engineer-salary-SRCH_IL.0,2_IN1_KO3,25.htm",
+          "min_salary": 113000,
+          "max_salary": 183000,
+          "median_salary": 120000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Malware Analysis",
+      "status": "OK",
+      "request_id": "3b8a8de8-b2e2-4d64-8e2d-54d5f0e9d8c3",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Malware Analyst",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-malware-analyst-salary-SRCH_IL.0,2_IN1_KO3,18.htm",
+          "min_salary": 106000,
+          "max_salary": 169000,
+          "median_salary": 105000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Cloud Security",
+      "status": "OK",
+      "request_id": "5d0df6b7-ea0d-44d2-b8fd-fac9b5a9b4a7",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Cloud Security Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-cloud-security-engineer-salary-SRCH_IL.0,2_IN1_KO3,26.htm",
+          "min_salary": 161000,
+          "max_salary": 266000,
+          "median_salary": 110000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    }
+  ]
+}

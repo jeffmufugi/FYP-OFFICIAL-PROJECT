@@ -154,6 +154,8 @@ const ComputerEngineeringCourse = () => {
             inputRef={inputRef}
             selectedCountry={selectedCountry}
             toggleDropdown={toggleDropdown}
+            homepageInfo1={homepageInfo1}
+            homepageInfo2={homepageInfo2}
             isOpen={isOpen}
             countries={countries}
             handleSelect={handleSelect}

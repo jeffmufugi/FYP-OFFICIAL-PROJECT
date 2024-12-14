@@ -1,0 +1,195 @@
+{
+  "lastUpdated": "2024-12-14T09:33:50.776Z",
+  "data": [
+    {
+      "title": "Pharmaceutical Engineering",
+      "status": "OK",
+      "request_id": "f5d1dcb0-7732-4b83-b3c0-d9d0c8e3b1ac",
+      "currency": "$",
+      "data": [
+        {
+          "location": "USA",
+          "job_title": "Pharmaceutical Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-pharmaceutical-engineer-i-salary-SRCH_IL.0,2_IN1_KO3,28.htm",
+          "min_salary": 111000,
+          "max_salary": 206000,
+          "median_salary": 95000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Renewable Energy",
+      "status": "OK",
+      "request_id": "c9baf03b-c16f-4a5c-81fa-d22ab2d22055",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "USA",
+          "job_title": "Renewable Energy",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/usa-renewable-energy-engineer-salary-SRCH_IL.0,3_IN1_KO4,38.htm",
+          "min_salary": 75000,
+          "max_salary": 145000,
+          "median_salary": 110000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Process Safety Management",
+      "status": "OK",
+      "request_id": "d5c58a6b-5ef0-4c92-b8b4-4d597d30b9f1",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "USA",
+          "job_title": "Process Safety Management",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/usa-process-safety-manager-salary-SRCH_IL.0,3_IN1_KO4,47.htm",
+          "min_salary": 80000,
+          "max_salary": 150000,
+          "median_salary": 105000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Petroleum Engineering",
+      "status": "OK",
+      "request_id": "9f23a5cd-3f94-4d1b-9d7e-9b1b8e1076f9",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "USA",
+          "job_title": "Petroleum Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-petroleum-engineer-salary-SRCH_IL.0,2_IN1_KO3,21.htm",
+          "min_salary": 150000,
+          "max_salary": 253000,
+          "median_salary": 130000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Water Treatment Engineering",
+      "status": "OK",
+      "request_id": "a8f6d01e-15e7-42e5-8a9c-25642b0983b6",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "USA",
+          "job_title": "Water Treatment Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-water-treatment-specialist-salary-SRCH_IL.0,2_IN1_KO3,29.htm",
+          "min_salary": 98000,
+          "max_salary": 176000,
+          "median_salary": 90000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Polymer Engineering",
+      "status": "OK",
+      "request_id": "e4c456d7-cf7c-44c9-9da3-4054b5948f52",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "USA",
+          "job_title": "Polymer Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-polymer-engineer-salary-SRCH_IL.0,2_IN1_KO3,19.htm",
+          "min_salary": 95000,
+          "max_salary": 155000,
+          "median_salary": 95000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Biochemical Engineering",
+      "status": "OK",
+      "request_id": "b5c5d5ad-89db-42a6-bd8f-45c0e1a5c5d6",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "USA",
+          "job_title": "Biochemical Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-biochemical-engineer-salary-SRCH_IL.0,2_IN1_KO3,23.htm",
+          "min_salary": 103000,
+          "max_salary": 181000,
+          "median_salary": 105000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Nanotechnology",
+      "status": "OK",
+      "request_id": "c9b0d1b6-c2d7-4d33-8a32-9e8a4d9a7a52",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "USA",
+          "job_title": "Nanotechnology",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-nanotechnology-engineer-salary-SRCH_IL.0,2_IN1_KO3,26.htm",
+          "min_salary": 102000,
+          "max_salary": 176000,
+          "median_salary": 95000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Food Processing Engineering",
+      "status": "OK",
+      "request_id": "4b6b0a8b-cd3d-450f-bc94-1f6a94f8b0f1",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "USA",
+          "job_title": "Food Processing Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-food-processing-engineer-salary-SRCH_IL.0,2_IN1_KO3,27.htm",
+          "min_salary": 65000,
+          "max_salary": 117000,
+          "median_salary": 90000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Green Process Engineering",
+      "status": "OK",
+      "request_id": "b7f7e5c3-e5d1-4f75-bd1d-998599d59b27",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "USA",
+          "job_title": "Green Process Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/green-river-process-engineer-salary-SRCH_IL.0,11_IC1138371_KO12,28.htm",
+          "min_salary": 99000,
+          "max_salary": 159000,
+          "median_salary": 95000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    }
+  ]
+}

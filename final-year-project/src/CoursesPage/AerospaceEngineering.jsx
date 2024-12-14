@@ -18,7 +18,7 @@ import { useState,useRef, useEffect } from "react";
 import {countries,topspecializations,
   trend,skills,challengesArray,issuesArray,coreAreasOfStudy,experienceSalary,experienceSalary1,
   homepageInfo,prerequisites,getTopCourses,homepageInfo2,homepageInfo1} from './aeroextdata.jsx';
-import { Page1,Page2,Page3,Page4,Page5, fadeInFromLeft} from "./a0Skeleton.jsx";
+import { Page1,Page2,Page3,Page4,Page5, fadeInFromLeft} from "./a0Skeleton1.jsx";
 const AerospaceEngineeringCourse = () => {
  
   const [isOpen, setIsOpen] = useState(false);
@@ -165,6 +165,8 @@ const AerospaceEngineeringCourse = () => {
             img3={img3}
             selectedCurrency={selectedCurrency} 
             homepageInfo={homepageInfo}
+            homepageInfo1={homepageInfo1}
+            homepageInfo2={homepageInfo2}
             animat={animat}
             setanimate={setanimate}
             dropdownRef={dropdownRef}

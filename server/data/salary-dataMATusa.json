@@ -1,0 +1,157 @@
+{
+  "lastUpdated": "2024-11-10T09:33:50.776Z",
+  "data": [
+    {
+      "title": "Applied Mathematics",
+      "status": "OK",
+      "request_id": "f9171bcd-dc33-4cff-a6e2-9818d30fb3e5",
+      "currency": "$",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Applied Mathematics",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-applied-mathematics-salary-SRCH_IL.0,2_IN1_KO3,22.htm",
+          "min_salary": 78200,
+          "max_salary": 135210,
+          "median_salary": 100000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Statistics",
+      "status": "OK",
+      "request_id": "55ac97e0-370d-4f54-9dcc-daad391ef683",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Statistician",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-statistician-salary-SRCH_IL.0,2_IN1_KO3,15.htm",
+          "min_salary": 95200,
+          "max_salary": 162760,
+          "median_salary": 90000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Actuarial Science",
+      "status": "OK",
+      "request_id": "b1dcb3b9-8c99-4b9e-bdfd-43d7321d9e70",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Actuary",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/usa-actuary-salary-SRCH_IL.0,3_IN1_KO4,24.htm",
+          "min_salary": 167200,
+          "max_salary": 288560,
+          "median_salary": 110000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Computational Mathematics",
+      "status": "OK",
+      "request_id": "92db4c6a-0c53-4a22-b9d4-b93b8a9b8370",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Computational Mathematician",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-mathematician-salary-SRCH_IL.0,2_IN1_KO3,16.htm",
+          "min_salary": 97400,
+          "max_salary": 163300,
+          "median_salary": 110000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Operations Research",
+      "status": "OK",
+      "request_id": "ad8c7b24-158b-4d55-b0c3-6f5e515b8b9c",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Operations Research Analyst",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-operations-research-analyst-salary-SRCH_IL.0,2_IN1_KO3,30.htm",
+          "min_salary": 120100,
+          "max_salary": 209320,
+          "median_salary": 95000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Financial Mathematics",
+      "status": "OK",
+      "request_id": "ae9c8b57-93b4-4ab6-8186-a8e16d8c7d61",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Financial Mathematician",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-financial-analyst-salary-SRCH_IL.0,2_IN1_KO3,20.htm",
+          "min_salary": 86060,
+          "max_salary": 142400,
+          "median_salary": 110000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Number Theory",
+      "status": "OK",
+      "request_id": "7f9f6a7b-e4b4-460f-badd-6b8e2c8caab8",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Number Theorist",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.payscale.com/research/US/Job=Number_Theorist/Salary",
+          "min_salary": 75000,
+          "max_salary": 130000,
+          "median_salary": 100000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Topology",
+      "status": "OK",
+      "request_id": "7d3f4ae6-2f1d-4189-9cb6-d9f6b842a13f",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Topologist",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-mathematician-salary-SRCH_IL.0,2_IN1_KO3,16.htm",
+          "min_salary": 97400,
+          "max_salary": 163300,
+          "median_salary": 95000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "lastUpdated": "2024-11-10T09:33:50.776Z",
+  "data": [
+    {
+      "title": "Biomechanics",
+      "status": "OK",
+      "request_id": "f9171bcd-dc33-4cff-a6e2-9818d30fb3e5",
+      "currency": "$",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Biomechanics",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/biomechanics-salary-SRCH_KO0,12.htm",
+          "min_salary": 65000,
+          "max_salary": 110000,
+          "median_salary": 85000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Medical Device Design",
+      "status": "OK",
+      "request_id": "55ac97e0-370d-4f54-9dcc-daad391ef683",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Medical Device Design",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/medical-device-design-salary-SRCH_KO0,25.htm",
+          "min_salary": 70000,
+          "max_salary": 120000,
+          "median_salary": 90000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Tissue Engineering",
+      "status": "OK",
+      "request_id": "8f80ad9e-bf2b-4b84-a5b8-c9a2f0ee3ff0",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Tissue Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/tissue-engineering-salary-SRCH_KO0,18.htm",
+          "min_salary": 75000,
+          "max_salary": 130000,
+          "median_salary": 100000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Biomaterials",
+      "status": "OK",
+      "request_id": "f34c7cc7-64b1-4f73-a428-fb054a9f8d27",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Biomaterials",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/biomaterials-salary-SRCH_KO0,12.htm",
+          "min_salary": 70000,
+          "max_salary": 115000,
+          "median_salary": 90000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Medical Imaging",
+      "status": "OK",
+      "request_id": "d7c0d017-9f77-4579-8416-c9f4b7b0d5f3",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Medical Imaging",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/medical-imaging-salary-SRCH_KO0,15.htm",
+          "min_salary": 80000,
+          "max_salary": 120000,
+          "median_salary": 95000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Rehabilitation Engineering",
+      "status": "OK",
+      "request_id": "2f6b8a4f-27e3-4c1f-83f0-4b8098b93f7e",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Rehabilitation Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/rehabilitation-engineering-salary-SRCH_KO0,23.htm",
+          "min_salary": 68000,
+          "max_salary": 110000,
+          "median_salary": 85000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Bioinstrumentation",
+      "status": "OK",
+      "request_id": "77b3e32d-9f13-4a6f-a8f9-3e1d7b2bb5b0",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Bioinstrumentation",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/bioinstrumentation-salary-SRCH_KO0,16.htm",
+          "min_salary": 70000,
+          "max_salary": 115000,
+          "median_salary": 90000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Systems Physiology",
+      "status": "OK",
+      "request_id": "fc9b63e5-3f59-4cc0-8a4d-df7731f8d7a8",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Systems Physiology",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/systems-physiology-salary-SRCH_KO0,19.htm",
+          "min_salary": 72000,
+          "max_salary": 120000,
+          "median_salary": 90000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    }
+  ]
+}

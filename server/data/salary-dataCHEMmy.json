@@ -1,0 +1,195 @@
+{
+  "lastUpdated": "2024-12-14T09:33:50.776Z",
+  "data": [
+    {
+      "title": "Pharmaceutical Engineering",
+      "status": "OK",
+      "request_id": "f5d1dcb0-7732-4b83-b3c0-d9d0c8e3b1ac",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Pharmaceutical Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-pharmaceutical-engineer-salary-SRCH_IL.0,8_IN228_KO9,49.htm",
+          "min_salary": 45000,
+          "max_salary": 95000,
+          "median_salary": 65000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Renewable Energy",
+      "status": "OK",
+      "request_id": "c9baf03b-c16f-4a5c-81fa-d22ab2d22055",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Renewable Energy",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-renewable-energy-engineer-salary-SRCH_IL.0,8_IN228_KO9,38.htm",
+          "min_salary": 48000,
+          "max_salary": 105000,
+          "median_salary": 72000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Process Safety Management",
+      "status": "OK",
+      "request_id": "d5c58a6b-5ef0-4c92-b8b4-4d597d30b9f1",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Process Safety Management",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-process-safety-manager-salary-SRCH_IL.0,8_IN228_KO9,47.htm",
+          "min_salary": 50000,
+          "max_salary": 105000,
+          "median_salary": 75000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Petroleum Engineering",
+      "status": "OK",
+      "request_id": "9f23a5cd-3f94-4d1b-9d7e-9b1b8e1076f9",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Petroleum Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-petroleum-engineer-salary-SRCH_IL.0,8_IN228_KO9,41.htm",
+          "min_salary": 55000,
+          "max_salary": 120000,
+          "median_salary": 85000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Water Treatment Engineering",
+      "status": "OK",
+      "request_id": "a8f6d01e-15e7-42e5-8a9c-25642b0983b6",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Water Treatment Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-water-treatment-engineer-salary-SRCH_IL.0,8_IN228_KO9,37.htm",
+          "min_salary": 43000,
+          "max_salary": 95000,
+          "median_salary": 67000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Polymer Engineering",
+      "status": "OK",
+      "request_id": "e4c456d7-cf7c-44c9-9da3-4054b5948f52",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Polymer Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-polymer-engineer-salary-SRCH_IL.0,8_IN228_KO9,36.htm",
+          "min_salary": 47000,
+          "max_salary": 100000,
+          "median_salary": 71000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Biochemical Engineering",
+      "status": "OK",
+      "request_id": "b5c5d5ad-89db-42a6-bd8f-45c0e1a5c5d6",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Biochemical Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-biochemical-engineer-salary-SRCH_IL.0,8_IN228_KO9,33.htm",
+          "min_salary": 49000,
+          "max_salary": 105000,
+          "median_salary": 71000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Nanotechnology",
+      "status": "OK",
+      "request_id": "c9b0d1b6-c2d7-4d33-8a32-9e8a4d9a7a52",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Nanotechnology",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-nanotechnology-engineer-salary-SRCH_IL.0,8_IN228_KO9,34.htm",
+          "min_salary": 46000,
+          "max_salary": 98000,
+          "median_salary": 69000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Food Processing Engineering",
+      "status": "OK",
+      "request_id": "4b6b0a8b-cd3d-450f-bc94-1f6a94f8b0f1",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Food Processing Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-food-processing-engineer-salary-SRCH_IL.0,8_IN228_KO9,40.htm",
+          "min_salary": 48000,
+          "max_salary": 102000,
+          "median_salary": 70000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Green Process Engineering",
+      "status": "OK",
+      "request_id": "b7f7e5c3-e5d1-4f75-bd1d-998599d59b27",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Green Process Engineering",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-green-process-engineer-salary-SRCH_IL.0,8_IN228_KO9,39.htm",
+          "min_salary": 49000,
+          "max_salary": 100000,
+          "median_salary": 71000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    }
+  ]
+}

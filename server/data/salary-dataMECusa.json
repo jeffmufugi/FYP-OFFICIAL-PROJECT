@@ -1,0 +1,195 @@
+{
+  "lastUpdated": "2024-11-10T09:33:50.776Z",
+  "data": [
+    {
+      "title": "Aerospace/Defense",
+      "status": "OK",
+      "request_id": "a1b8e4dd-5f03-4ddc-99b5-2b1d34cd9b28",
+      "currency": "$",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Aerospace Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-aerospace-engineer-salary-SRCH_IL.0,2_IN1_KO3,24.htm",
+          "min_salary": 80000,
+          "max_salary": 140000,
+          "median_salary": 110000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Oil & Gas/Energy",
+      "status": "OK",
+      "request_id": "c2fd76ff-dc0d-420f-93f6-d1a4589b1b4a",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Oil & Gas Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-oil-gas-engineer-salary-SRCH_IL.0,2_IN1_KO3,24.htm",
+          "min_salary": 75000,
+          "max_salary": 120000,
+          "median_salary": 95000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Robotics & Automation",
+      "status": "OK",
+      "request_id": "d3d9a1f2-6db7-4fb9-bb0d-727f6b39282c",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Robotics Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-robotics-engineer-salary-SRCH_IL.0,2_IN1_KO3,28.htm",
+          "min_salary": 85000,
+          "max_salary": 140000,
+          "median_salary": 110000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Medical Devices",
+      "status": "OK",
+      "request_id": "e72a5a62-2b7b-4f42-a8ea-8c1d0d143fa9",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Medical Device Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-medical-device-engineer-salary-SRCH_IL.0,2_IN1_KO3,30.htm",
+          "min_salary": 70000,
+          "max_salary": 110000,
+          "median_salary": 85000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Research & Development",
+      "status": "OK",
+      "request_id": "f5d5d6cf-8c9d-4f2a-8b4e-55e1ccf0bfb7",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "R&D Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-r-d-engineer-salary-SRCH_IL.0,2_IN1_KO3,26.htm",
+          "min_salary": 70000,
+          "max_salary": 120000,
+          "median_salary": 95000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Nuclear Engineering",
+      "status": "OK",
+      "request_id": "f9b8a0f2-7d5a-47d2-9c4d-bb7a5bb8fd33",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Nuclear Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-nuclear-engineer-salary-SRCH_IL.0,2_IN1_KO3,29.htm",
+          "min_salary": 80000,
+          "max_salary": 130000,
+          "median_salary": 105000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Automotive Advanced Systems",
+      "status": "OK",
+      "request_id": "b4b5c6d7-25e3-4d5a-b5d6-3b7c7f2c4f8e",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Automotive Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-automotive-engineer-salary-SRCH_IL.0,2_IN1_KO3,27.htm",
+          "min_salary": 75000,
+          "max_salary": 130000,
+          "median_salary": 100000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Patents & Intellectual Property",
+      "status": "OK",
+      "request_id": "d8f8e7c6-d03f-4028-bcc3-9f4be5c5f3b0",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Patent Attorney",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-patent-attorney-salary-SRCH_IL.0,2_IN1_KO3,33.htm",
+          "min_salary": 120000,
+          "max_salary": 200000,
+          "median_salary": 150000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Data Center Infrastructure",
+      "status": "OK",
+      "request_id": "c3f2d4b7-8c8b-4842-bb7f-f8f48c2b9e42",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Data Center Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-data-center-engineer-salary-SRCH_IL.0,2_IN1_KO3,31.htm",
+          "min_salary": 90000,
+          "max_salary": 140000,
+          "median_salary": 110000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    },
+    {
+      "title": "Semiconductor Manufacturing",
+      "status": "OK",
+      "request_id": "b9b6a4d4-8a6e-4ae7-b9a7-f0c5d5c7f6e5",
+      "currency": "USD",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Semiconductor Engineer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-semiconductor-engineer-salary-SRCH_IL.0,2_IN1_KO3,31.htm",
+          "min_salary": 70000,
+          "max_salary": 130000,
+          "median_salary": 100000,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+      ]
+    }
+  ]
+}

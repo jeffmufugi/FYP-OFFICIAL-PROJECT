@@ -167,6 +167,8 @@ const ComputerScienceCourse = () => {
             img3={img3}
             selectedCurrency={selectedCurrency} 
             homepageInfo={homepageInfo}
+            homepageInfo1={homepageInfo1}
+            homepageInfo2={homepageInfo2}
             animat={animat}
             setanimate={setanimate}
             dropdownRef={dropdownRef}

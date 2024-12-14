@@ -162,6 +162,8 @@ const MechanicalEngineeringCourse = () => {
             salaryMY={homepageInfo2[0].undergradsal}                
             jobsUS={homepageInfo1[0].jobavail}
             jobsMY={homepageInfo2[0].jobavail}
+            homepageInfo1={homepageInfo1}
+            homepageInfo2={homepageInfo2}
             emplUS={homepageInfo1[0].emprate}
             emplMY={homepageInfo2[0].emprate}
             img1={img1}            

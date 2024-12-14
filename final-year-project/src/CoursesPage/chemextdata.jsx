@@ -32,8 +32,8 @@ export const homepageInfo1 = [ {
     emprate: "77%",
     },]
 
-    import salaryData from '/../server/data/salary-dataCE.json';
-    import salaryData2 from '/../server/data/salary-dataCEMY.json';
+    import salaryData from '/../server/data/salary-dataCHEMusa.json';
+    import salaryData2 from '/../server/data/salary-dataCHEMmy.json';
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
     {"flag":"🇲🇾","file":salaryData2,"currency":"MYR",id:2}];
@@ -63,92 +63,135 @@ export const homepageInfo1 = [ {
       // Array to store the formatted salary data for each job
       const salaryResults = [];
 
-      // Loop through each valid job entry
-      for (let i = 0; i < validJobs.length; i++) {
-          // Get Glassdoor data for each job title
-          const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
-          
-          // Check if glassdoorData exists and has at least one entry
-          if (glassdoorData && glassdoorData.length > 0) {
-              // Get the min, max, and median salaries for Glassdoor entries
-              const { min_salary, max_salary, median_salary } = glassdoorData[0]; // Assuming you want the first entry
-              
-              // Format salaries with commas
-              const formattedMinSalary = min_salary ? min_salary.toLocaleString() : 'Data not available';
-              const formattedMaxSalary = max_salary ? max_salary.toLocaleString() : 'Data not available';
-              const formattedMedianSalary = median_salary ? median_salary.toLocaleString() : 'Data not available';
+       // Loop through each valid job entry
+       for (let i = 0; i < validJobs.length; i++) {
+           // Get Glassdoor data for each job title
+           const glassdoorData = validJobs[i]?.data?.filter(job => job.publisher_name === 'Glassdoor');
+           
+           // Check if glassdoorData exists and has at least one entry
+           if (glassdoorData && glassdoorData.length > 0) {
+             // Destructure the first Glassdoor entry
+             const { 
+                 min_salary, 
+                 max_salary, 
+                 median_salary, 
+                 publisher_link, 
+                 salary_period 
+             } = glassdoorData[0];
+         
+             // Function to convert salary based on period
+             const convertSalary = (salary, period) => {
+                 if (!salary) return null;
+         
+                 switch(period?.toLowerCase()) {
+                     case 'month':
+                         return salary * 12; // Convert monthly to yearly
+                     case 'hour':
+                         // Assuming standard 2080 work hours per year (40 hours/week * 52 weeks)
+                         return salary * 2080;
+                     case 'year':
+                     default:
+                         return salary; // Already in yearly format
+                 }
+             };
+         
+             // Convert min, max, and median salaries
+             const convertedMinSalary = convertSalary(min_salary, salary_period);
+             const convertedMaxSalary = convertSalary(max_salary, salary_period);
+             const convertedMedianSalary = convertSalary(median_salary, salary_period);
+         
+             // Format salaries with commas and handle conversion
+             const formattedMinSalary = convertedMinSalary ? convertedMinSalary.toLocaleString() : 'Data not available';
+             const formattedMaxSalary = convertedMaxSalary ? convertedMaxSalary.toLocaleString() : 'Data not available';
+             const formattedMedianSalary = convertedMedianSalary ? convertedMedianSalary.toLocaleString() : 'Data not available';
+         
+             const formattedLink = publisher_link ? publisher_link : 'Data not available';
+             const formattedPeriod = salary_period ? salary_period : 'Data not available';
+         
+             // Store the job title and formatted salary data in the array
+             salaryResults.push({
+                 jobTitle: validJobs[i].title,
+                 minSalary: formattedMinSalary,
+                 maxSalary: formattedMaxSalary,
+                 link: formattedLink,
+                 medianSalary: formattedMedianSalary,
+                 salaryPeriod: formattedPeriod
+             });
+         } else {
+             // Store job title with "No data" message if Glassdoor data is unavailable
+             salaryResults.push({
+                 jobTitle: validJobs[i]?.title,
+                 minSalary: 'xxx',
+                 maxSalary: 'xxx',
+                 medianSalary: 'No data available'
+             });
+         }
+       }
 
-              // Store the job title and formatted salary data in the array
-              salaryResults.push({
-                  jobTitle: validJobs[i].title,
-                  minSalary: formattedMinSalary,
-                  maxSalary: formattedMaxSalary,
-                  medianSalary: formattedMedianSalary
-              });
-          } else {
-              // Store job title with "No data" message if Glassdoor data is unavailable
-              salaryResults.push({
-                  jobTitle: validJobs[i]?.title,
-                  minSalary: 'No data available',
-                  maxSalary: 'No data available',
-                  medianSalary: 'No data available'
-              });
-          }
-        }
 
 
-        return [
-          {
+       return [
+        {
             name: "PHARMACEUTICAL ENGINEERING",
             salaryRange: `${currency}${salaryResults[0].minSalary} - ${currency}${salaryResults[0].maxSalary}`,
-            description: `Engineers focus on designing and optimizing processes to manufacture drugs and treatments. This includes research, scale-up, and quality control in drug production.`
+            description: `Engineers focus on designing and optimizing processes to manufacture drugs and treatments. This includes research, scale-up, and quality control in drug production.`,
+            link: `${salaryResults[0].link}`
         },
         {
             name: "RENEWABLE ENERGY",
             salaryRange: `${currency}${salaryResults[1].minSalary} - ${currency}${salaryResults[1].maxSalary}`,
-            description: `Design and optimize processes to convert renewable resources into energy. This includes working with biofuels, hydrogen, and solar technologies to create sustainable energy solutions.`
+            description: `Design and optimize processes to convert renewable resources into energy. This includes working with biofuels, hydrogen, and solar technologies to create sustainable energy solutions.`,
+            link: `${salaryResults[1].link}`
         },
         {
             name: "PROCESS SAFETY MANAGEMENT",
             salaryRange: `${currency}${salaryResults[2].minSalary} - ${currency}${salaryResults[2].maxSalary}`,
-            description: `Focus on the identification, prevention, and control of potential hazards in industrial processes to ensure safe and efficient production.`
+            description: `Focus on the identification, prevention, and control of potential hazards in industrial processes to ensure safe and efficient production.`,
+            link: `${salaryResults[2].link}`
         },
         {
             name: "PETROLEUM ENGINEERING",
             salaryRange: `${currency}${salaryResults[3].minSalary} - ${currency}${salaryResults[3].maxSalary}`,
-            description: `Develop methods for extracting oil and gas from deposits below the Earth's surface, focusing on improving extraction techniques and resource management.`
+            description: `Develop methods for extracting oil and gas from deposits below the Earth's surface, focusing on improving extraction techniques and resource management.`,
+            link: `${salaryResults[3].link}`
         },
         {
             name: "WATER TREATMENT ENGINEERING",
             salaryRange: `${currency}${salaryResults[4].minSalary} - ${currency}${salaryResults[4].maxSalary}`,
-            description: `Design and manage systems that treat wastewater to ensure that it is safe for discharge or reuse, playing a crucial role in environmental protection.`
+            description: `Design and manage systems that treat wastewater to ensure that it is safe for discharge or reuse, playing a crucial role in environmental protection.`,
+            link: `${salaryResults[4].link}`
         },
         {
             name: "POLYMER ENGINEERING",
             salaryRange: `${currency}${salaryResults[5].minSalary} - ${currency}${salaryResults[5].maxSalary}`,
-            description: `Specialize in the development and production of polymers and plastics, including new materials design, processing techniques, and recycling technologies.`
+            description: `Specialize in the development and production of polymers and plastics, including new materials design, processing techniques, and recycling technologies.`,
+            link: `${salaryResults[5].link}`
         },
         {
             name: "BIOCHEMICAL ENGINEERING",
             salaryRange: `${currency}${salaryResults[6].minSalary} - ${currency}${salaryResults[6].maxSalary}`,
-            description: `Apply engineering principles to biological processes for producing valuable products, including fermentation, cell culture, and enzyme technology.`
+            description: `Apply engineering principles to biological processes for producing valuable products, including fermentation, cell culture, and enzyme technology.`,
+            link: `${salaryResults[6].link}`
         },
         {
             name: "NANOTECHNOLOGY",
             salaryRange: `${currency}${salaryResults[7].minSalary} - ${currency}${salaryResults[7].maxSalary}`,
-            description: `Focus on manipulating matter at the molecular scale to develop new materials and processes with applications in electronics, medicine, and energy.`
+            description: `Focus on manipulating matter at the molecular scale to develop new materials and processes with applications in electronics, medicine, and energy.`,
+            link: `${salaryResults[7].link}`
         },
         {
             name: "FOOD PROCESSING ENGINEERING",
             salaryRange: `${currency}${salaryResults[8].minSalary} - ${currency}${salaryResults[8].maxSalary}`,
-            description: `Design and optimize processes for food production, preservation, and packaging while ensuring safety and quality standards are met.`
+            description: `Design and optimize processes for food production, preservation, and packaging while ensuring safety and quality standards are met.`,
+            link: `${salaryResults[8].link}`
         },
         {
             name: "GREEN PROCESS ENGINEERING",
             salaryRange: `${currency}${salaryResults[9].minSalary} - ${currency}${salaryResults[9].maxSalary}`,
-            description: `Develop sustainable manufacturing processes that minimize environmental impact through waste reduction, energy efficiency, and clean technology implementation.`
+            description: `Develop sustainable manufacturing processes that minimize environmental impact through waste reduction, energy efficiency, and clean technology implementation.`,
+            link: `${salaryResults[9].link}`
         }
-      ]
+    ];
 };
 export const jobGrowthFields = [
     "BIO PHARMACEUTIC",

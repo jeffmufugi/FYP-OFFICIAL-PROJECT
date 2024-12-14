@@ -1,0 +1,119 @@
+{
+  "lastUpdated": "2024-12-14T09:35:50.776Z",
+  "data": [
+    {
+      "title": "Marine Ecology",
+      "status": "OK",
+      "request_id": "f817c3d1-8f83-4d3d-9c81-482bb77889a9",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Marine Ecologist",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/marine-ecologist-salary-SRCH_KO0,16.htm",
+          "min_salary": 45000.00,
+          "max_salary": 80000.00,
+          "median_salary": 62500.00,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Oceanography",
+      "status": "OK",
+      "request_id": "d3f15675-0f6a-4bda-8bb9-b3d8d56b3a53",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Oceanographer",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/oceanographer-salary-SRCH_KO0,13.htm",
+          "min_salary": 48000.00,
+          "max_salary": 85000.00,
+          "median_salary": 67000.00,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Marine Conservation",
+      "status": "OK",
+      "request_id": "c9f8b035-0514-4648-b1cf-b3d8d56f8595",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Marine Conservation Specialist",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/marine-conservationist-salary-SRCH_KO0,23.htm",
+          "min_salary": 37000.00,
+          "max_salary": 70000.00,
+          "median_salary": 53500.00,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Marine Animal Behavior",
+      "status": "OK",
+      "request_id": "e6f38d26-bf4f-4d55-94a0-dbc3f887596e",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Marine Animal Behavior Specialist",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/marine-animal-behavior-salary-SRCH_KO0,29.htm",
+          "min_salary": 42000.00,
+          "max_salary": 75000.00,
+          "median_salary": 58500.00,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Marine Microbiology",
+      "status": "OK",
+      "request_id": "a7d15b49-35e9-4eb6-bd62-86911fe736b7",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Marine Microbiologist",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/marine-microbiologist-salary-SRCH_KO0,21.htm",
+          "min_salary": 46000.00,
+          "max_salary": 80000.00,
+          "median_salary": 63000.00,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    },
+    {
+      "title": "Aquaculture",
+      "status": "OK",
+      "request_id": "f8edbcd3-389e-4a7f-b5b9-99d9b60b74e7",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Aquaculture Technician",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/aquaculture-technician-salary-SRCH_KO0,23.htm",
+          "min_salary": 30000.00,
+          "max_salary": 60000.00,
+          "median_salary": 45000.00,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
+    }
+  ]
+}

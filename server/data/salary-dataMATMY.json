@@ -1,37 +1,157 @@
 {
-  "lastUpdated": "2024-11-10T09:53:57.596Z",
+  "lastUpdated": "2024-11-10T09:33:50.776Z",
   "data": [
     {
       "title": "Applied Mathematics",
-      "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/job-salary-data"
+      "status": "OK",
+      "request_id": "f9171bcd-dc33-4cff-a6e2-9818d30fb3e5",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Applied Mathematician",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/my-applied-mathematics-salary-SRCH_IL.0,2_IN129_KO3,20.htm",
+          "min_salary": 50000,
+          "max_salary": 90000,
+          "median_salary": 65000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
     },
     {
       "title": "Statistics",
-      "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/job-salary-data"
+      "status": "OK",
+      "request_id": "55ac97e0-370d-4f54-9dcc-daad391ef683",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Statistician",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.payscale.com/research/MY/Job=Statistician/Salary",
+          "min_salary": 40000,
+          "max_salary": 75000,
+          "median_salary": 55000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
     },
     {
       "title": "Actuarial Science",
-      "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/job-salary-data"
+      "status": "OK",
+      "request_id": "b1dcb3b9-8c99-4b9e-bdfd-43d7321d9e70",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Actuary",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/my-actuary-salary-SRCH_IL.0,2_IN129_KO3,25.htm",
+          "min_salary": 55000,
+          "max_salary": 120000,
+          "median_salary": 80000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
     },
     {
       "title": "Computational Mathematics",
-      "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/job-salary-data"
+      "status": "OK",
+      "request_id": "92db4c6a-0c53-4a22-b9d4-b93b8a9b8370",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Computational Mathematician",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.payscale.com/research/MY/Job=Computational_Mathematician/Salary",
+          "min_salary": 60000,
+          "max_salary": 110000,
+          "median_salary": 85000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
     },
     {
       "title": "Operations Research",
-      "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/job-salary-data"
+      "status": "OK",
+      "request_id": "ad8c7b24-158b-4d55-b0c3-6f5e515b8b9c",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Operations Research Analyst",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.payscale.com/research/MY/Job=Operations_Research_Analyst/Salary",
+          "min_salary": 45000,
+          "max_salary": 95000,
+          "median_salary": 65000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
     },
     {
       "title": "Financial Mathematics",
-      "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/job-salary-data"
+      "status": "OK",
+      "request_id": "ae9c8b57-93b4-4ab6-8186-a8e16d8c7d61",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Financial Mathematician",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/my-financial-mathematician-salary-SRCH_IL.0,2_IN129_KO3,33.htm",
+          "min_salary": 65000,
+          "max_salary": 120000,
+          "median_salary": 85000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
     },
     {
       "title": "Number Theory",
-      "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/job-salary-data"
+      "status": "OK",
+      "request_id": "7f9f6a7b-e4b4-460f-badd-6b8e2c8caab8",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Number Theorist",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.payscale.com/research/MY/Job=Number_Theorist/Salary",
+          "min_salary": 50000,
+          "max_salary": 95000,
+          "median_salary": 70000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
     },
     {
       "title": "Topology",
-      "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/job-salary-data"
+      "status": "OK",
+      "request_id": "7d3f4ae6-2f1d-4189-9cb6-d9f6b842a13f",
+      "currency": "MYR",
+      "data": [
+        {
+          "location": "Malaysia",
+          "job_title": "Topologist",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/my-topologist-salary-SRCH_IL.0,2_IN129_KO3,22.htm",
+          "min_salary": 47000,
+          "max_salary": 98000,
+          "median_salary": 70000,
+          "salary_period": "YEAR",
+          "salary_currency": "MYR"
+        }
+      ]
     }
   ]
 }

@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 import useMedia from 'use-media';
 
 
-export function Page1({coursename,coursedesc,inputRef,selectedCountry,toggleDropdown,isOpen,countries,handleSelect,salaryUS,salaryMY,jobsUS,jobsMY,emplUS,emplMY,img1,img2,img3,selectedCurrency,homepageInfo,animat,setanimate,dropdownRef}){
+export function Page1({coursename,coursedesc,inputRef,selectedCountry,toggleDropdown,isOpen,countries,handleSelect,salaryUS,salaryMY,jobsUS,jobsMY,emplUS,emplMY,img1,img2,img3,selectedCurrency,homepageInfo,animat,setanimate,dropdownRef,homepageInfo1,homepageInfo2}){
     
   function HomepageNum(){
       return(
@@ -16,16 +16,25 @@ there must be a change
 
 
 */}
-                {selectedCountry === countries[0].flag && <motion.p className="numbers-course-info" {...animat}><span style={{color:"#C2FFC0"}}>{selectedCurrency}</span>{salaryUS}</motion.p>}
-                {selectedCountry === countries[1].flag && <motion.p className="numbers-course-info" {...animat}><span style={{color:"#C2FFC0"}}>{selectedCurrency}</span>{salaryMY}</motion.p>}
+                {selectedCountry === countries[0].flag &&   <a href="https://www.uwosh.edu/career/wp-content/uploads/sites/38/2024/01/Winter-2024-Salary-Survey-Report.pdf"  target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}><motion.p className="numbers-course-info" {...animat}><span style={{color:"#C2FFC0"}}>{selectedCurrency}</span>{salaryUS}</motion.p></a>}
+                {selectedCountry === countries[1].flag &&   <a href={homepageInfo2[0].ulink}  target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}><motion.p className="numbers-course-info" {...animat}><span style={{color:"#C2FFC0"}}>{selectedCurrency}</span>{salaryMY}</motion.p></a>}
                 {/* {selectedCountry === countries[0].flag && <p className="numbers-course-info">{selectedCurrency}{homepageInfo1[0].undergradsal}</p>}
                 {selectedCountry === countries[1].flag && <p className="numbers-course-info">{selectedCurrency}{homepageInfo2[0].undergradsal}</p>} */}
                 <p className="img-course-description">fresh undergraduate base salary</p>
             </div>
             <div className="course-details-info b">
                 <img src={img2} alt=""/>
-                {selectedCountry === countries[0].flag && <motion.p className="numbers-course-info"{...animat}>{jobsUS}</motion.p>}
-                {selectedCountry === countries[1].flag && <motion.p className="numbers-course-info"{...animat}>{jobsMY}</motion.p>}
+                {selectedCountry === countries[0].flag && (
+  <a href={homepageInfo1[0].jlink}  target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+    <motion.p className="numbers-course-info" {...animat}>{jobsUS}</motion.p>
+  </a>
+)}
+{selectedCountry === countries[1].flag && (
+  <a href={homepageInfo2[0].jlink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+    <motion.p className="numbers-course-info" {...animat}>{jobsMY}</motion.p>
+  </a>
+)}
+                
                 {/* {selectedCountry === countries[0].flag && <p className="numbers-course-info">{homepageInfo1[0].jobavail}</p>}
                 {selectedCountry === countries[1].flag && <p className="numbers-course-info">{homepageInfo2[0].jobavail}</p>} */}
                 <p className="img-course-description">job availability</p>
@@ -33,11 +42,11 @@ there must be a change
             </div>
             <div className="course-details-info c">
                 <img src={img3} alt=""/>
-                {selectedCountry === countries[0].flag &&  <motion.p className="numbers-course-info"{...animat}>{emplUS}</motion.p>}
-                {selectedCountry === countries[1].flag &&  <motion.p className="numbers-course-info"{...animat}>{emplMY}</motion.p>}
+                {selectedCountry === countries[0].flag &&  <a href="https://www.bls.gov/emp/tables/stem-employment.htm#BLStable_2024_7_29_10_34"  target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}><motion.p className="numbers-course-info"{...animat}>10.4%</motion.p></a>}
+                {selectedCountry === countries[1].flag &&  <a href={homepageInfo2[0].elink}  target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}><motion.p className="numbers-course-info"{...animat}>4.4%</motion.p></a>}
                 {/* {selectedCountry === countries[0].flag &&  <p className="numbers-course-info">{homepageInfo1[0].emprate}</p>}
                 {selectedCountry === countries[1].flag &&  <p className="numbers-course-info">{homepageInfo2[0].emprate}</p>} */}
-                <p className="img-course-description">employment rate</p>
+                <p className="img-course-description">job growth rate</p>
             </div>
         </>
       );
@@ -241,10 +250,7 @@ export function Page3({selectedCountry,countries,experienceSalary,experienceSala
   function ExperienceNum(){
     return(
       <>
-            <ul 
-                className="main-text-coursex" 
-                
-            >
+            <ul  className="main-text-coursex" >
                       {selectedCountry === countries[0].flag && experienceSalary.map((index,id)=>(<li key={id} style={{ color: homepageInfo[1].fontColor }}>{index.experience}</li>))}
                       {selectedCountry === countries[1].flag && experienceSalary1.map((index,id)=>(<li key={id} style={{ color: homepageInfo[1].fontColor }}>{index.experience}</li>))}
             </ul>
