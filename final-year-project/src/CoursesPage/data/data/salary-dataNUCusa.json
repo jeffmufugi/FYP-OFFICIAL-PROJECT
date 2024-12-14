@@ -11,9 +11,9 @@
           "location": "United States",
           "job_title": "Nuclear Reactor Design",
           "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/us-nuclear-reactor-design-salary-SRCH_IL.0,2_IN1_KO3,27.htm",
-          "min_salary": 95000.00,
-          "max_salary": 150000.00,
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-nuclear-design-engineer-salary-SRCH_IL.0,2_IN1_KO3,26.htm",
+          "min_salary": 180000.00,
+          "max_salary": 290000.00,
           "median_salary": 120000.00,
           "salary_period": "YEAR",
           "salary_currency": "USD"
@@ -29,9 +29,9 @@
           "location": "United States",
           "job_title": "Radiation Safety",
           "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/us-radiation-safety-salary-SRCH_IL.0,2_IN1_KO3,18.htm",
-          "min_salary": 70000.00,
-          "max_salary": 110000.00,
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-radiation-safety-officer-salary-SRCH_IL.0,2_IN1_KO3,27.htm",
+          "min_salary": 113000.00,
+          "max_salary": 187000.00,
           "median_salary": 90000.00,
           "salary_period": "YEAR",
           "salary_currency": "USD"
@@ -47,9 +47,9 @@
           "location": "United States",
           "job_title": "Nuclear Medicine",
           "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/us-nuclear-medicine-salary-SRCH_IL.0,2_IN1_KO3,21.htm",
-          "min_salary": 85000.00,
-          "max_salary": 130000.00,
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-nuclear-medicine-technologist-salary-SRCH_IL.0,2_IN1_KO3,32.htm",
+          "min_salary": 108000.00,
+          "max_salary": 197000.00,
           "median_salary": 105000.00,
           "salary_period": "YEAR",
           "salary_currency": "USD"
@@ -65,9 +65,9 @@
           "location": "United States",
           "job_title": "Fusion Energy Research",
           "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/us-fusion-energy-research-salary-SRCH_IL.0,2_IN1_KO3,32.htm",
-          "min_salary": 90000.00,
-          "max_salary": 140000.00,
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-energy-engineer-salary-SRCH_IL.0,2_IN1_KO3,18.htm",
+          "min_salary": 109000.00,
+          "max_salary": 175000.00,
           "median_salary": 115000.00,
           "salary_period": "YEAR",
           "salary_currency": "USD"
@@ -83,14 +83,35 @@
           "location": "United States",
           "job_title": "Nuclear Materials Engineering",
           "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/us-nuclear-materials-engineering-salary-SRCH_IL.0,2_IN1_KO3,34.htm",
-          "min_salary": 88000.00,
-          "max_salary": 130000.00,
+          "publisher_link": "https://www.glassdoor.com/Salaries/us-materials-engineer-salary-SRCH_IL.0,2_IN1_KO3,21.htm",
+          "min_salary": 113000.00,
+          "max_salary": 194000.00,
           "median_salary": 105000.00,
           "salary_period": "YEAR",
           "salary_currency": "USD"
         }
+        
+      ]
+    },
+    {
+      "title": "Nuclear Weapons Technology",
+      "status": "OK",
+      "request_id": "e8c7f3b6-2b5f-43b9-8e9d-dad13d7c90d5",
+      "data": [
+        {
+          "location": "United States",
+          "job_title": "Nuclear Weapons Technology",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "Nuclear Weapons Technology",
+          "min_salary": 86000.00,
+          "max_salary": 156000.00,
+          "median_salary": 105000.00,
+          "salary_period": "YEAR",
+          "salary_currency": "USD"
+        }
+        
       ]
     }
+    
   ]
 }

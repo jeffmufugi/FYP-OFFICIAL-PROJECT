@@ -28,14 +28,15 @@
       "data": [
         {
           "location": "United States",
-          "job_title": "AI Robotics Engineer",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.payscale.com/research/US/Job=AI_Robotics_Engineer/Salary",
-          "min_salary": 95000,
-          "max_salary": 160000,
-          "median_salary": 120000,
+          "job_title": "AI Engineer",
+          "min_salary": 159115,
+          "max_salary": 265189,
+          "median_salary": 203495.3,
           "salary_period": "YEAR",
-          "salary_currency": "USD"
+          "salary_currency": "USD",
+          "publisher_name": "Glassdoor",
+          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=AI%20Engineer&locT=N&locId=1",
+          "confidence": "CONFIDENT"
         }
       ]
     },

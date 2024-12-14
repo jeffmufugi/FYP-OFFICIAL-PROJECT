@@ -54,7 +54,7 @@ export const homepageInfo1 = [ {
       const cseJob = salaryData?.data?.find(job => job.title === 'Control Systems Engineering');
       const hriJob = salaryData?.data?.find(job => job.title === 'Human-Robot Interaction');
      
-      const validJobs = [aiJob, rsJob, asJob, rsActJob, cseJob, hriJob];
+      const validJobs = [rsJob,aiJob, asJob, rsActJob, cseJob, hriJob];
         // Array to store the formatted salary data for each job
         const salaryResults = [];
 
