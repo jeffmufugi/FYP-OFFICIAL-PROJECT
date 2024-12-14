@@ -32,8 +32,8 @@ export const homepageInfo1 = [ {
     emprate: "77%",
     },]
 
-    import salaryData from '/../server/data/salary-dataCHEMusa.json';
-    import salaryData2 from '/../server/data/salary-dataCHEMmy.json';
+    import salaryData from './data/data/salary-dataCHEMusa.json';
+    import salaryData2 from './data/data/salary-dataCHEMmy.json';
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
     {"flag":"🇲🇾","file":salaryData2,"currency":"MYR",id:2}];

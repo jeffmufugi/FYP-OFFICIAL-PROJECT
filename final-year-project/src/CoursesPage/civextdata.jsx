@@ -31,8 +31,8 @@ export const homepageInfo1 = [ {
     jobavail : "12,700",
     emprate: "77%",
     },]
-    import salaryData from '/../server/data/salary-dataCIVusa.json';
-    import salaryData2 from '/../server/data/salary-dataCIVmy.json';
+    import salaryData2 from './data/data/salary-dataCIVmy.json';
+    import salaryData from './data/data/salary-dataCIVusa.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},

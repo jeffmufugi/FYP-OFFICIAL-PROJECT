@@ -33,8 +33,8 @@ export const homepageInfo1 = [ {
     // import salaryData from '/../server/data/salary-data.json';
     // import salaryData2 from '/../server/data/salary-dataMY.json';
 
-    import salaryData from '/../server/data/salary-dataPHYusa.json';
-    import salaryData2 from '/../server/data/salary-dataPHYmy.json';
+    import salaryData2 from './data/data/salary-dataPHYmy.json';
+    import salaryData from './data/data/salary-dataPHYusa.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},

@@ -31,8 +31,8 @@ export const homepageInfo1 = [ {
     emprate: "79%",
     },]
 
-    import salaryData from '/../server/data/salary-dataMECusa.json';
-    import salaryData2 from '/../server/data/salary-dataMECmy.json';
+    import salaryData2 from './data/data/salary-dataMECmy.json';
+    import salaryData from './data/data/salary-dataMECusa.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},

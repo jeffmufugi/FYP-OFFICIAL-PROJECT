@@ -31,9 +31,8 @@ export const homepageInfo1 = [ {
     jobavail : "3,700",
     emprate: "79%",
     },]
-
-    import salaryData from '/../server/data/salary-dataDATusa.json';
-    import salaryData2 from '/../server/data/salary-dataDATmy.json';
+    import salaryData2 from './data/data/salary-dataDATmy.json';
+    import salaryData from './data/data/salary-dataDATusa.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},

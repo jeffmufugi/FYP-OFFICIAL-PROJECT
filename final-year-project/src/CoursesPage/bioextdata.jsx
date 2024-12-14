@@ -30,8 +30,8 @@ export const homepageInfo1 = [ {
     jobavail : "12,700",
     emprate: "77%",
     },]
-    import salaryData from '/../server/data/salary-dataBIOusa.json';
-    import salaryData2 from '/../server/data/salary-dataBIOmy.json';
+    import salaryData2 from './data/data/salary-dataBIOmy.json';
+    import salaryData from './data/data/salary-dataBIOusa.json';
 
     
     

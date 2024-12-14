@@ -31,8 +31,8 @@ export const homepageInfo1 = [ {
     emprate: "79%",
     },]
 
-    import salaryData from '/../server/data/salary-dataMARusa.json';
-    import salaryData2 from '/../server/data/salary-dataMARmy.json';
+    import salaryData2 from './data/data/salary-dataMARmy.json';
+    import salaryData from './data/data/salary-dataMARusa.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},

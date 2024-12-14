@@ -1,7 +1,7 @@
 
 
-import salaryData from '/../server/data/salary-dataCSTusa.json';
-import salaryData2 from '/../server/data/salary-dataCSTmy.json';
+import salaryData from './data/data/salary-dataCSTusa.json';
+import salaryData2 from './data/data/salary-dataCSTmy.json';
 export const countries = 
 [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
 {"flag":"🇲🇾","file":salaryData2,"currency":"MYR",id:2}

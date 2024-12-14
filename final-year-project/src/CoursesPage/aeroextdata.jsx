@@ -31,8 +31,8 @@ export const homepageInfo1 = [ {
     emprate: "79%",
     },]
 
-    import salaryData from '/../server/data/salary-dataAEROusa.json';
-    import salaryData2 from '/../server/data/salary-dataAEROmy.json';
+    import salaryData2 from './data/data/salary-dataAEROmy.json';
+    import salaryData from './data/data/salary-dataAEROusa.json';
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},
     {"flag":"🇲🇾","file":salaryData2,"currency":"MYR",id:2}];
