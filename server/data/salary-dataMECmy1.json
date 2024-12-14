@@ -1,0 +1,96 @@
+{
+    "lastUpdated": "2024-12-14T09:33:50.776Z",
+    "data": [
+      {
+        "title": "Nuclear Reactor Design",
+        "status": "OK",
+        "request_id": "f9171bcd-dc33-4cff-a6e2-9818d30fb3e5",
+        "currency": "MYR",
+        "data": [
+          {
+            "location": "Malaysia",
+            "job_title": "Nuclear Reactor Design",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/my-nuclear-reactor-design-salary-SRCH_IL.0,2_IN27_KO3,27.htm",
+            "min_salary": 80000.00,
+            "max_salary": 130000.00,
+            "median_salary": 104000.00,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR"
+          }
+        ]
+      },
+      {
+        "title": "Radiation Safety",
+        "status": "OK",
+        "request_id": "55ac97e0-370d-4f54-9dcc-daad391ef683",
+        "data": [
+          {
+            "location": "Malaysia",
+            "job_title": "Radiation Safety",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/my-radiation-safety-salary-SRCH_IL.0,2_IN27_KO3,18.htm",
+            "min_salary": 70000.00,
+            "max_salary": 110000.00,
+            "median_salary": 90000.00,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR"
+          }
+        ]
+      },
+      {
+        "title": "Nuclear Medicine",
+        "status": "OK",
+        "request_id": "b7e0f234-3a2c-4d09-9b85-314f3a6a9b5c",
+        "data": [
+          {
+            "location": "Malaysia",
+            "job_title": "Nuclear Medicine",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/my-nuclear-medicine-salary-SRCH_IL.0,2_IN27_KO3,21.htm",
+            "min_salary": 75000.00,
+            "max_salary": 120000.00,
+            "median_salary": 95000.00,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR"
+          }
+        ]
+      },
+      {
+        "title": "Fusion Energy Research",
+        "status": "OK",
+        "request_id": "a6c2d1ef-7f6f-42d5-8b51-76c800c7f20b",
+        "data": [
+          {
+            "location": "Malaysia",
+            "job_title": "Fusion Energy Research",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/my-fusion-energy-research-salary-SRCH_IL.0,2_IN27_KO3,32.htm",
+            "min_salary": 85000.00,
+            "max_salary": 140000.00,
+            "median_salary": 112500.00,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR"
+          }
+        ]
+      },
+      {
+        "title": "Nuclear Materials Engineering",
+        "status": "OK",
+        "request_id": "e8c7f3b6-2b5f-43b9-8e9d-dad13d7c90d5",
+        "data": [
+          {
+            "location": "Malaysia",
+            "job_title": "Nuclear Materials Engineering",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/my-nuclear-materials-engineering-salary-SRCH_IL.0,2_IN27_KO3,34.htm",
+            "min_salary": 78000.00,
+            "max_salary": 125000.00,
+            "median_salary": 101500.00,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR"
+          }
+        ]
+      }
+    ]
+  }
