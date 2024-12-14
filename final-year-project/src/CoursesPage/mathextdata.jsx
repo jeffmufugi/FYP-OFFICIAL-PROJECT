@@ -1,4 +1,4 @@
-
+//
 export const homepageInfo = [
     {
         courseName: "mathematics.",
