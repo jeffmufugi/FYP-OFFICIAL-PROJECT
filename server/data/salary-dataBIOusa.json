@@ -1,157 +1,158 @@
 {
-  "lastUpdated": "2024-11-10T09:33:50.776Z",
-  "data": [
-    {
-      "title": "Biomechanics",
-      "status": "OK",
-      "request_id": "f9171bcd-dc33-4cff-a6e2-9818d30fb3e5",
-      "currency": "$",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Biomechanics",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/biomechanics-salary-SRCH_KO0,12.htm",
-          "min_salary": 65000,
-          "max_salary": 110000,
-          "median_salary": 85000,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Medical Device Design",
-      "status": "OK",
-      "request_id": "55ac97e0-370d-4f54-9dcc-daad391ef683",
-      "currency": "USD",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Medical Device Design",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/medical-device-design-salary-SRCH_KO0,25.htm",
-          "min_salary": 70000,
-          "max_salary": 120000,
-          "median_salary": 90000,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Tissue Engineering",
-      "status": "OK",
-      "request_id": "8f80ad9e-bf2b-4b84-a5b8-c9a2f0ee3ff0",
-      "currency": "USD",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Tissue Engineering",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/tissue-engineering-salary-SRCH_KO0,18.htm",
-          "min_salary": 75000,
-          "max_salary": 130000,
-          "median_salary": 100000,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Biomaterials",
-      "status": "OK",
-      "request_id": "f34c7cc7-64b1-4f73-a428-fb054a9f8d27",
-      "currency": "USD",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Biomaterials",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/biomaterials-salary-SRCH_KO0,12.htm",
-          "min_salary": 70000,
-          "max_salary": 115000,
-          "median_salary": 90000,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Medical Imaging",
-      "status": "OK",
-      "request_id": "d7c0d017-9f77-4579-8416-c9f4b7b0d5f3",
-      "currency": "USD",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Medical Imaging",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/medical-imaging-salary-SRCH_KO0,15.htm",
-          "min_salary": 80000,
-          "max_salary": 120000,
-          "median_salary": 95000,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Rehabilitation Engineering",
-      "status": "OK",
-      "request_id": "2f6b8a4f-27e3-4c1f-83f0-4b8098b93f7e",
-      "currency": "USD",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Rehabilitation Engineering",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/rehabilitation-engineering-salary-SRCH_KO0,23.htm",
-          "min_salary": 68000,
-          "max_salary": 110000,
-          "median_salary": 85000,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Bioinstrumentation",
-      "status": "OK",
-      "request_id": "77b3e32d-9f13-4a6f-a8f9-3e1d7b2bb5b0",
-      "currency": "USD",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Bioinstrumentation",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/bioinstrumentation-salary-SRCH_KO0,16.htm",
-          "min_salary": 70000,
-          "max_salary": 115000,
-          "median_salary": 90000,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Systems Physiology",
-      "status": "OK",
-      "request_id": "fc9b63e5-3f59-4cc0-8a4d-df7731f8d7a8",
-      "currency": "USD",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Systems Physiology",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/systems-physiology-salary-SRCH_KO0,19.htm",
-          "min_salary": 72000,
-          "max_salary": 120000,
-          "median_salary": 90000,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    }
-  ]
-}
+    "lastUpdated": "2024-12-13T12:46:12.159Z",
+    "data": [
+      {
+        "title": "Flight Dynamics Engineer",
+        "status": "OK",
+        "request_id": "8a70dfe9-778d-4bdb-9d92-20da73430866",
+        "currency": "MYR",
+        "data": [
+          {
+            "location": "Malaysia",
+   
+            "min_salary": 4200,
+            "max_salary": 5100,
+            "median_salary": 15881.28,
+            "salary_period": "MONTH",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-aerospace-engineer-salary-SRCH_IL.0,8_IN170_KO9,27.htm",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Propulsion Engineer",
+        "status": "OK",
+        "request_id": "af371a8a-7641-4065-aae0-56ab4b292e85",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Avionics Engineer",
+        "status": "OK",
+        "request_id": "ba7068c0-7d7d-4e3b-acb2-7a4de66d4b46",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Aerodynamics Engineer",
+        "status": "OK",
+        "request_id": "2c84e77a-695b-4347-bfea-49a7b0c6d02f",
+        "data": [
+          {
+            "location": "Malaysia",
+    
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Structural Analysis Engineer",
+        "status": "OK",
+        "request_id": "34712ba8-15ab-46a4-bf19-bcec6a93c2d9",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Materials Science Engineer",
+        "status": "OK",
+        "request_id": "8ef49714-cc71-4dc5-b8f1-457e1547db81",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Space Systems Engineer",
+        "status": "OK",
+        "request_id": "9ef19e7e-fab1-4366-b895-e5206fa43660",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Autonomy Engineer",
+        "status": "OK",
+        "request_id": "33d62376-8d1b-416a-884e-ff089ca970ee",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      }
+    ]
+  }

@@ -1,406 +1,158 @@
 {
-  "lastUpdated": "2024-11-10T09:32:54.408Z",
-  "data": [
-    {
-      "title": "Quantum computing",
-      "status": "OK",
-      "request_id": "d32d8a28-6b46-440d-a201-3988c1ec8293",
-      "currency":"$",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Quantum Computing",
-          "publisher_name": "Ziprecruiter",
-          "publisher_link": "https://www.ziprecruiter.com/Salaries/Quantum-Computing-Salary",
-          "min_salary": 53500,
-          "max_salary": 209000,
-          "median_salary": 131242,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "San Francisco, CA",
-          "job_title": "Quantum Computing Engineer",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com.hk/Salary/Volkswagen-Group-of-America-Quantum-Computing-Engineer-759-Salaries-EJI_IE4308.0,27_KO28,54_IL.55,58_IM759.htm",
-          "min_salary": 129470,
-          "max_salary": 173280,
-          "median_salary": 149782,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "quantum computing",
-          "publisher_name": "Talent",
-          "publisher_link": "https://www.talent.com/salary?job=quantum+computing",
-          "min_salary": 74000,
-          "max_salary": 213125,
-          "median_salary": 150000,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Medical Physics",
-      "status": "OK",
-      "request_id": "0ba67d69-df91-4413-ad3b-426457242a81",
-      "data": [
-        {
-          "location": "Philadelphia, PA",
-          "job_title": "Medical Physicist",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/us-medical-physicist-salary-SRCH_IL.0,2_IN1_KO3,20.htm",
-          "min_salary": 233488,
-          "max_salary": 419109,
-          "median_salary": 138765,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "Medical Physics",
-          "publisher_name": "Ziprecruiter",
-          "publisher_link": "https://www.ziprecruiter.com/Salaries/Medical-Physics-Salary",
-          "min_salary": 20.913462,
-          "max_salary": 40.14423,
-          "median_salary": 30.076443,
-          "salary_period": "HOUR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "medical physicist",
-          "publisher_name": "Talent",
-          "publisher_link": "https://www.talent.com/salary?job=medical+physicist",
-          "min_salary": 65000,
-          "max_salary": 223132,
-          "median_salary": 187688.796875,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Particle physics",
-      "status": "OK",
-      "request_id": "a4d275be-573c-407a-9e44-eeaade4cf424",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Particle Physics",
-          "publisher_name": "Ziprecruiter",
-          "publisher_link": "https://www.ziprecruiter.com/Salaries/What-Is-the-Average-Particle-Physics-Salary-by-State",
-          "min_salary": 24000,
-          "max_salary": 80000,
-          "median_salary": 61160,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "Particle Physicist",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/particle-physicist-salary-SRCH_KO0,18.htm",
-          "min_salary": 168600,
-          "max_salary": 262250,
-          "median_salary": 207339,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "Particle Physicist",
-          "publisher_name": "Salary",
-          "publisher_link": "https://www.salary.com/research/salary/hiring/particle-physicist-salary",
-          "min_salary": 99496,
-          "max_salary": 131215,
-          "median_salary": 115748,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Condensed matter physics",
-      "status": "OK",
-      "request_id": "c4c0259c-c2ea-4d40-9e5d-ee0d4c498f76",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Condensed Matter Physics",
-          "publisher_name": "Ziprecruiter",
-          "publisher_link": "https://www.ziprecruiter.com/Salaries/Condensed-Matter-Physics-Salary",
-          "min_salary": 11.298077,
-          "max_salary": 65.625,
-          "median_salary": 35.549038,
-          "salary_period": "HOUR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "Condensed Matter/Materials Theory/Physicist",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/condensed-matter-materials-theory-physicist-salary-SRCH_KO0,43.htm",
-          "min_salary": 97391,
-          "max_salary": 296822,
-          "median_salary": 167915,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "Oakland, CA",
-          "job_title": "Phd Physics",
-          "publisher_name": "Salary",
-          "publisher_link": "https://www.salary.com/research/salary/hiring/phd-physics-salary/oakland-ca",
-          "min_salary": 59083,
-          "max_salary": 88103,
-          "median_salary": 70439,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Astrophysics",
-      "status": "OK",
-      "request_id": "b43a482e-61ba-4a62-8264-44752315871c",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Theoretical Astrophysics",
-          "publisher_name": "Ziprecruiter",
-          "publisher_link": "https://www.ziprecruiter.com/Salaries/Theoretical-Astrophysics-Salary",
-          "min_salary": 21.634615,
-          "max_salary": 110.09615,
-          "median_salary": 61.70769,
-          "salary_period": "HOUR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "Houston, TX",
-          "job_title": "Astrophysicist",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salary/NASA-Astrophysicist-Houston-Salaries-EJI_IE7304.0,4_KO5,19_IL.20,27_IM394.htm",
-          "min_salary": 87809,
-          "max_salary": 144053,
-          "median_salary": 112468,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "astrophysics",
-          "publisher_name": "Talent",
-          "publisher_link": "https://www.talent.com/salary?job=astrophysics",
-          "min_salary": 57500,
-          "max_salary": 152700,
-          "median_salary": 82180,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Computational physics",
-      "status": "OK",
-      "request_id": "34fdcf5d-4eb4-44f2-8373-ad1b2411048c",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Computational Physicist",
-          "publisher_name": "Ziprecruiter",
-          "publisher_link": "https://www.ziprecruiter.com/Salaries/Computational-Physicist-Salary",
-          "min_salary": 79000,
-          "max_salary": 208000,
-          "median_salary": 122102,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "Computational Physicist",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/computational-physicist-salary-SRCH_KO0,23.htm",
-          "min_salary": 116283,
-          "max_salary": 365992,
-          "median_salary": 200488,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "Computational Physicist",
-          "publisher_name": "Salary",
-          "publisher_link": "https://www.salary.com/research/salary/hiring/computational-physicist-salary",
-          "min_salary": 65743,
-          "max_salary": 89935,
-          "median_salary": 71969,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Plasma physics",
-      "status": "OK",
-      "request_id": "15f8253c-b6e4-4ef4-be9a-030a70f9fb7d",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Plasma Physicist",
-          "publisher_name": "Ziprecruiter",
-          "publisher_link": "https://www.ziprecruiter.com/Salaries/Plasma-Physicist-Salary",
-          "min_salary": 45000,
-          "max_salary": 176000,
-          "median_salary": 94805,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "Intern",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Intern-Salary/Princeton-Plasma-Physics-Laboratory-Internship-Salary-E307079.htm",
-          "min_salary": 47146,
-          "max_salary": 110205,
-          "median_salary": 72081,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "Plasma Physicist",
-          "publisher_name": "Salary",
-          "publisher_link": "https://www.salary.com/research/salary/hiring/plasma-physicist-salary",
-          "min_salary": 99496,
-          "max_salary": 131215,
-          "median_salary": 115748,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Optics and photonics",
-      "status": "OK",
-      "request_id": "519077d5-b185-41f0-a061-04ee165c1b77",
-      "data": [
-        {
-          "location": "Boston, MA",
-          "job_title": "Optical Engineer",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salary/NKT-Photonics-Optical-Engineer-Boston-Salaries-EJI_IE1520213.0,13_KO14,30_IL.31,37_IM109.htm",
-          "min_salary": 100614,
-          "max_salary": 149638,
-          "median_salary": 122701,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "Photonics Engineer",
-          "publisher_name": "Ziprecruiter",
-          "publisher_link": "https://www.ziprecruiter.com/Salaries/Photonics-Engineer-Salary",
-          "min_salary": 57000,
-          "max_salary": 156000,
-          "median_salary": 106386,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "New Jersey",
-          "job_title": "Optical Engineer",
-          "publisher_name": "Salary",
-          "publisher_link": "https://www.salary.com/research/company/nova-photonics-inc/optical-engineer-salary?cjid=12201282",
-          "min_salary": 44250.5726988,
-          "max_salary": 55596.4510569,
-          "median_salary": 47226.18485296,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Biophysics",
-      "status": "OK",
-      "request_id": "7365e13d-6ef7-433f-ae36-b19e8f5c057f",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Biophysics",
-          "publisher_name": "Ziprecruiter",
-          "publisher_link": "https://www.ziprecruiter.com/Salaries/Biophysics-Salary",
-          "min_salary": 83000,
-          "max_salary": 190000,
-          "median_salary": 134705,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "Biophysicist",
-          "publisher_name": "Salary",
-          "publisher_link": "https://www.salary.com/research/salary/benchmark/biophysicist-salary",
-          "min_salary": 61638,
-          "max_salary": 96826,
-          "median_salary": 74333,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "Research Scientist IV (Biophysics)",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/scientist-biophysics-salary-SRCH_KO0,20.htm",
-          "min_salary": 104367,
-          "max_salary": 323267,
-          "median_salary": 179943,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Nuclear physics",
-      "status": "OK",
-      "request_id": "9f094d32-0b5d-433f-bfe5-9dd7f9629771",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Nuclear Physicist",
-          "publisher_name": "Ziprecruiter",
-          "publisher_link": "https://www.ziprecruiter.com/Salaries/Nuclear-Physicist-Salary",
-          "min_salary": 45000,
-          "max_salary": 176000,
-          "median_salary": 94805,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "Nuclear Physicist",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/nuclear-physicist-salary-SRCH_KO0,17.htm",
-          "min_salary": 184669,
-          "max_salary": 439085,
-          "median_salary": 279349,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        },
-        {
-          "location": "United States",
-          "job_title": "Nuclear Physicist",
-          "publisher_name": "Payscale",
-          "publisher_link": "https://www.payscale.com/research/US/Job=Nuclear_Physicist/Salary",
-          "min_salary": 85250.6,
-          "max_salary": 226247.12,
-          "median_salary": 118979.67,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    }
-  ]
-}
+    "lastUpdated": "2024-12-13T12:46:12.159Z",
+    "data": [
+      {
+        "title": "Flight Dynamics Engineer",
+        "status": "OK",
+        "request_id": "8a70dfe9-778d-4bdb-9d92-20da73430866",
+        "currency": "MYR",
+        "data": [
+          {
+            "location": "Malaysia",
+   
+            "min_salary": 4200,
+            "max_salary": 5100,
+            "median_salary": 15881.28,
+            "salary_period": "MONTH",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-aerospace-engineer-salary-SRCH_IL.0,8_IN170_KO9,27.htm",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Propulsion Engineer",
+        "status": "OK",
+        "request_id": "af371a8a-7641-4065-aae0-56ab4b292e85",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Avionics Engineer",
+        "status": "OK",
+        "request_id": "ba7068c0-7d7d-4e3b-acb2-7a4de66d4b46",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Aerodynamics Engineer",
+        "status": "OK",
+        "request_id": "2c84e77a-695b-4347-bfea-49a7b0c6d02f",
+        "data": [
+          {
+            "location": "Malaysia",
+    
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Structural Analysis Engineer",
+        "status": "OK",
+        "request_id": "34712ba8-15ab-46a4-bf19-bcec6a93c2d9",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Materials Science Engineer",
+        "status": "OK",
+        "request_id": "8ef49714-cc71-4dc5-b8f1-457e1547db81",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Space Systems Engineer",
+        "status": "OK",
+        "request_id": "9ef19e7e-fab1-4366-b895-e5206fa43660",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Autonomy Engineer",
+        "status": "OK",
+        "request_id": "33d62376-8d1b-416a-884e-ff089ca970ee",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      }
+    ]
+  }

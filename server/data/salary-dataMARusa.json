@@ -1,119 +1,158 @@
 {
-  "lastUpdated": "2024-12-14T09:33:50.776Z",
-  "data": [
-    {
-      "title": "Marine Ecology",
-      "status": "OK",
-      "request_id": "f817c3d1-8f83-4d3d-9c81-482bb77889a9",
-      "currency": "$",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Marine Ecology",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/marine-ecologist-salary-SRCH_KO0,16.htm",
-          "min_salary": 55000.00,
-          "max_salary": 95000.00,
-          "median_salary": 75000.00,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Oceanography",
-      "status": "OK",
-      "request_id": "d3f15675-0f6a-4bda-8bb9-b3d8d56b3a53",
-      "currency": "USD",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Oceanographer",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/oceanographer-salary-SRCH_KO0,13.htm",
-          "min_salary": 62000.00,
-          "max_salary": 105000.00,
-          "median_salary": 83000.00,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Marine Conservation",
-      "status": "OK",
-      "request_id": "c9f8b035-0514-4648-b1cf-b3d8d56f8595",
-      "currency": "USD",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Marine Conservation Specialist",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/marine-conservationist-salary-SRCH_KO0,23.htm",
-          "min_salary": 47000.00,
-          "max_salary": 80000.00,
-          "median_salary": 63500.00,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Marine Animal Behavior",
-      "status": "OK",
-      "request_id": "e6f38d26-bf4f-4d55-94a0-dbc3f887596e",
-      "currency": "USD",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Marine Animal Behavior Specialist",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/marine-animal-behavior-salary-SRCH_KO0,29.htm",
-          "min_salary": 52000.00,
-          "max_salary": 90000.00,
-          "median_salary": 71000.00,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Marine Microbiology",
-      "status": "OK",
-      "request_id": "a7d15b49-35e9-4eb6-bd62-86911fe736b7",
-      "currency": "USD",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Marine Microbiologist",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/marine-microbiologist-salary-SRCH_KO0,21.htm",
-          "min_salary": 57000.00,
-          "max_salary": 100000.00,
-          "median_salary": 78500.00,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    },
-    {
-      "title": "Aquaculture",
-      "status": "OK",
-      "request_id": "f8edbcd3-389e-4a7f-b5b9-99d9b60b74e7",
-      "currency": "USD",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Aquaculture Technician",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/aquaculture-technician-salary-SRCH_KO0,23.htm",
-          "min_salary": 40000.00,
-          "max_salary": 70000.00,
-          "median_salary": 55000.00,
-          "salary_period": "YEAR",
-          "salary_currency": "USD"
-        }
-      ]
-    }
-  ]
-}
+    "lastUpdated": "2024-12-13T12:46:12.159Z",
+    "data": [
+      {
+        "title": "Flight Dynamics Engineer",
+        "status": "OK",
+        "request_id": "8a70dfe9-778d-4bdb-9d92-20da73430866",
+        "currency": "MYR",
+        "data": [
+          {
+            "location": "Malaysia",
+   
+            "min_salary": 4200,
+            "max_salary": 5100,
+            "median_salary": 15881.28,
+            "salary_period": "MONTH",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-aerospace-engineer-salary-SRCH_IL.0,8_IN170_KO9,27.htm",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Propulsion Engineer",
+        "status": "OK",
+        "request_id": "af371a8a-7641-4065-aae0-56ab4b292e85",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Avionics Engineer",
+        "status": "OK",
+        "request_id": "ba7068c0-7d7d-4e3b-acb2-7a4de66d4b46",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Aerodynamics Engineer",
+        "status": "OK",
+        "request_id": "2c84e77a-695b-4347-bfea-49a7b0c6d02f",
+        "data": [
+          {
+            "location": "Malaysia",
+    
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Structural Analysis Engineer",
+        "status": "OK",
+        "request_id": "34712ba8-15ab-46a4-bf19-bcec6a93c2d9",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Materials Science Engineer",
+        "status": "OK",
+        "request_id": "8ef49714-cc71-4dc5-b8f1-457e1547db81",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Space Systems Engineer",
+        "status": "OK",
+        "request_id": "9ef19e7e-fab1-4366-b895-e5206fa43660",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Autonomy Engineer",
+        "status": "OK",
+        "request_id": "33d62376-8d1b-416a-884e-ff089ca970ee",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      }
+    ]
+  }

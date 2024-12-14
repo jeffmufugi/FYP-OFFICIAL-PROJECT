@@ -1,158 +1,158 @@
 {
-  "lastUpdated": "2024-12-13T12:32:21.887Z",
-  "data": [
-    {
-      "title": "Flight Dynamics Engineer",
-      "status": "OK",
-      "request_id": "5f5c5017-68e5-44e2-9496-99b4b27bb859",
-      "currency":"$",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Flight Dynamics Engineer",
-          "min_salary": 175805,
-          "max_salary": 291272,
-          "median_salary": 224312.39,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Flight%20Dynamics%20Engineer&locT=N&locId=1",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Propulsion Engineer",
-      "status": "OK",
-      "request_id": "1e6a57f8-8eb5-47bf-969e-cd80b71a6808",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Flight Dynamics Engineer",
-          "min_salary": 144605,
-          "max_salary": 248272,
-          "median_salary": 224312.39,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/us-propulsion-engineer-salary-SRCH_IL.0,2_IN1_KO3,22.htm",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Avionics Engineer",
-      "status": "OK",
-      "request_id": "72496541-fb83-46c0-8591-591168d8b999",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Avionics Engineer",
-          "min_salary": 148617,
-          "max_salary": 251327,
-          "median_salary": 191748.76,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=1",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Aerodynamics Engineer",
-      "status": "OK",
-      "request_id": "9f7fc682-7da8-4c83-8826-78ea273d86da",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Aerodynamics Engineer",
-          "min_salary": 115646,
-          "max_salary": 191476,
-          "median_salary": 147707.37,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Aerodynamics%20Engineer&locT=N&locId=1",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Structural Analysis Engineer",
-      "status": "OK",
-      "request_id": "8f51e8ab-b356-4e5d-9d6a-70b52b074e0c",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Structural Analysis Engineer",
-          "min_salary": 112909,
-          "max_salary": 162983,
-          "median_salary": 134534.07,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Structural%20Analysis%20Engineer&locT=N&locId=1",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Materials Science Engineer",
-      "status": "OK",
-      "request_id": "bcf29ee0-1605-4453-a2b5-4a246827afcd",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Materials Science Engineer",
-          "min_salary": 118698,
-          "max_salary": 190582,
-          "median_salary": 149256.22,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Materials%20Science%20Engineer&locT=N&locId=1",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Space Systems Engineer",
-      "status": "OK",
-      "request_id": "26098c0b-cf94-47b1-9550-db9a91792e56",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Space Systems Engineer",
-          "min_salary": 115281,
-          "max_salary": 188389,
-          "median_salary": 146457.75,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Space%20Systems%20Engineer&locT=N&locId=1",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Autonomy Engineer",
-      "status": "OK",
-      "request_id": "eee74c2e-3d43-459e-82af-76a68af0ed9a",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Space Systems Engineer",
-          "min_salary": 98281,
-          "max_salary": 161389,
-          "median_salary": 146457.75,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/us-autonomy-engineer-salary-SRCH_IL.0,2_IN1_KO3,20.htm",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    }
-  ]
-}
+    "lastUpdated": "2024-12-13T12:46:12.159Z",
+    "data": [
+      {
+        "title": "Flight Dynamics Engineer",
+        "status": "OK",
+        "request_id": "8a70dfe9-778d-4bdb-9d92-20da73430866",
+        "currency": "MYR",
+        "data": [
+          {
+            "location": "Malaysia",
+   
+            "min_salary": 4200,
+            "max_salary": 5100,
+            "median_salary": 15881.28,
+            "salary_period": "MONTH",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-aerospace-engineer-salary-SRCH_IL.0,8_IN170_KO9,27.htm",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Propulsion Engineer",
+        "status": "OK",
+        "request_id": "af371a8a-7641-4065-aae0-56ab4b292e85",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Avionics Engineer",
+        "status": "OK",
+        "request_id": "ba7068c0-7d7d-4e3b-acb2-7a4de66d4b46",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Aerodynamics Engineer",
+        "status": "OK",
+        "request_id": "2c84e77a-695b-4347-bfea-49a7b0c6d02f",
+        "data": [
+          {
+            "location": "Malaysia",
+    
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Structural Analysis Engineer",
+        "status": "OK",
+        "request_id": "34712ba8-15ab-46a4-bf19-bcec6a93c2d9",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Materials Science Engineer",
+        "status": "OK",
+        "request_id": "8ef49714-cc71-4dc5-b8f1-457e1547db81",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Space Systems Engineer",
+        "status": "OK",
+        "request_id": "9ef19e7e-fab1-4366-b895-e5206fa43660",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Autonomy Engineer",
+        "status": "OK",
+        "request_id": "33d62376-8d1b-416a-884e-ff089ca970ee",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      }
+    ]
+  }

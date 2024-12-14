@@ -1,96 +1,158 @@
 {
-  "lastUpdated": "2024-12-14T09:33:50.776Z",
-  "data": [
-    {
-      "title": "Nuclear Reactor Design",
-      "status": "OK",
-      "request_id": "f9171bcd-dc33-4cff-a6e2-9818d30fb3e5",
-      "currency": "MYR",
-      "data": [
-        {
-          "location": "Malaysia",
-          "job_title": "Nuclear Reactor Design",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/my-nuclear-reactor-design-salary-SRCH_IL.0,2_IN27_KO3,27.htm",
-          "min_salary": 80000.00,
-          "max_salary": 130000.00,
-          "median_salary": 104000.00,
-          "salary_period": "YEAR",
-          "salary_currency": "MYR"
-        }
-      ]
-    },
-    {
-      "title": "Radiation Safety",
-      "status": "OK",
-      "request_id": "55ac97e0-370d-4f54-9dcc-daad391ef683",
-      "data": [
-        {
-          "location": "Malaysia",
-          "job_title": "Radiation Safety",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/my-radiation-safety-salary-SRCH_IL.0,2_IN27_KO3,18.htm",
-          "min_salary": 70000.00,
-          "max_salary": 110000.00,
-          "median_salary": 90000.00,
-          "salary_period": "YEAR",
-          "salary_currency": "MYR"
-        }
-      ]
-    },
-    {
-      "title": "Nuclear Medicine",
-      "status": "OK",
-      "request_id": "b7e0f234-3a2c-4d09-9b85-314f3a6a9b5c",
-      "data": [
-        {
-          "location": "Malaysia",
-          "job_title": "Nuclear Medicine",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/my-nuclear-medicine-salary-SRCH_IL.0,2_IN27_KO3,21.htm",
-          "min_salary": 75000.00,
-          "max_salary": 120000.00,
-          "median_salary": 95000.00,
-          "salary_period": "YEAR",
-          "salary_currency": "MYR"
-        }
-      ]
-    },
-    {
-      "title": "Fusion Energy Research",
-      "status": "OK",
-      "request_id": "a6c2d1ef-7f6f-42d5-8b51-76c800c7f20b",
-      "data": [
-        {
-          "location": "Malaysia",
-          "job_title": "Fusion Energy Research",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/my-fusion-energy-research-salary-SRCH_IL.0,2_IN27_KO3,32.htm",
-          "min_salary": 85000.00,
-          "max_salary": 140000.00,
-          "median_salary": 112500.00,
-          "salary_period": "YEAR",
-          "salary_currency": "MYR"
-        }
-      ]
-    },
-    {
-      "title": "Nuclear Materials Engineering",
-      "status": "OK",
-      "request_id": "e8c7f3b6-2b5f-43b9-8e9d-dad13d7c90d5",
-      "data": [
-        {
-          "location": "Malaysia",
-          "job_title": "Nuclear Materials Engineering",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/my-nuclear-materials-engineering-salary-SRCH_IL.0,2_IN27_KO3,34.htm",
-          "min_salary": 78000.00,
-          "max_salary": 125000.00,
-          "median_salary": 101500.00,
-          "salary_period": "YEAR",
-          "salary_currency": "MYR"
-        }
-      ]
-    }
-  ]
-}
+    "lastUpdated": "2024-12-13T12:46:12.159Z",
+    "data": [
+      {
+        "title": "Flight Dynamics Engineer",
+        "status": "OK",
+        "request_id": "8a70dfe9-778d-4bdb-9d92-20da73430866",
+        "currency": "MYR",
+        "data": [
+          {
+            "location": "Malaysia",
+   
+            "min_salary": 4200,
+            "max_salary": 5100,
+            "median_salary": 15881.28,
+            "salary_period": "MONTH",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-aerospace-engineer-salary-SRCH_IL.0,8_IN170_KO9,27.htm",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Propulsion Engineer",
+        "status": "OK",
+        "request_id": "af371a8a-7641-4065-aae0-56ab4b292e85",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Avionics Engineer",
+        "status": "OK",
+        "request_id": "ba7068c0-7d7d-4e3b-acb2-7a4de66d4b46",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Aerodynamics Engineer",
+        "status": "OK",
+        "request_id": "2c84e77a-695b-4347-bfea-49a7b0c6d02f",
+        "data": [
+          {
+            "location": "Malaysia",
+    
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Structural Analysis Engineer",
+        "status": "OK",
+        "request_id": "34712ba8-15ab-46a4-bf19-bcec6a93c2d9",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Materials Science Engineer",
+        "status": "OK",
+        "request_id": "8ef49714-cc71-4dc5-b8f1-457e1547db81",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Space Systems Engineer",
+        "status": "OK",
+        "request_id": "9ef19e7e-fab1-4366-b895-e5206fa43660",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Autonomy Engineer",
+        "status": "OK",
+        "request_id": "33d62376-8d1b-416a-884e-ff089ca970ee",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      }
+    ]
+  }

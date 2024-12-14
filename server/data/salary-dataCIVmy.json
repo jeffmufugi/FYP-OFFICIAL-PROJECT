@@ -1,119 +1,158 @@
 {
-  "lastUpdated": "2024-12-14T09:33:50.776Z",
-  "data": [
-    {
-      "title": "Structural Engineering",
-      "status": "OK",
-      "request_id": "a2b4cfd9-3be6-44b4-89bf-8049d7ebd8bc",
-      "currency": "MYR",
-      "data": [
-        {
-          "location": "Malaysia",
-          "job_title": "Structural Engineering",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-structural-engineer-salary-SRCH_IL.0,8_IN228_KO9,28.htm",
-          "min_salary": 40000,
-          "max_salary": 80000,
-          "median_salary": 60000,
-          "salary_period": "YEAR",
-          "salary_currency": "MYR"
-        }
-      ]
-    },
-    {
-      "title": "Transportation Engineering",
-      "status": "OK",
-      "request_id": "b5d9e21c-0c88-4fbb-8137-b9c9a420254e",
-      "currency": "MYR",
-      "data": [
-        {
-          "location": "Malaysia",
-          "job_title": "Transportation Engineering",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-transportation-engineer-salary-SRCH_IL.0,8_IN228_KO9,39.htm",
-          "min_salary": 45000,
-          "max_salary": 90000,
-          "median_salary": 65000,
-          "salary_period": "YEAR",
-          "salary_currency": "MYR"
-        }
-      ]
-    },
-    {
-      "title": "Geotechnical Engineering",
-      "status": "OK",
-      "request_id": "a9c6d2f3-9f6e-4b59-9a8b-5b3d3c1b59f5",
-      "currency": "MYR",
-      "data": [
-        {
-          "location": "Malaysia",
-          "job_title": "Geotechnical Engineering",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-geotechnical-engineer-salary-SRCH_IL.0,8_IN228_KO9,32.htm",
-          "min_salary": 42000,
-          "max_salary": 85000,
-          "median_salary": 60000,
-          "salary_period": "YEAR",
-          "salary_currency": "MYR"
-        }
-      ]
-    },
-    {
-      "title": "Water Resources Engineering",
-      "status": "OK",
-      "request_id": "d5e8f3ab-45f4-4f67-b3d4-bc29fa2dbb08",
-      "currency": "MYR",
-      "data": [
-        {
-          "location": "Malaysia",
-          "job_title": "Water Resources Engineering",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-water-resources-engineer-salary-SRCH_IL.0,8_IN228_KO9,35.htm",
-          "min_salary": 46000,
-          "max_salary": 90000,
-          "median_salary": 65000,
-          "salary_period": "YEAR",
-          "salary_currency": "MYR"
-        }
-      ]
-    },
-    {
-      "title": "Environmental Engineering",
-      "status": "OK",
-      "request_id": "c9e0b4f8-9c1d-4507-b5f7-019cc9e7f8a7",
-      "currency": "MYR",
-      "data": [
-        {
-          "location": "Malaysia",
-          "job_title": "Environmental Engineering",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-environmental-engineer-salary-SRCH_IL.0,8_IN228_KO9,38.htm",
-          "min_salary": 43000,
-          "max_salary": 85000,
-          "median_salary": 60000,
-          "salary_period": "YEAR",
-          "salary_currency": "MYR"
-        }
-      ]
-    },
-    {
-      "title": "Construction Engineering",
-      "status": "OK",
-      "request_id": "e1d3b8c1-a1b3-4d78-9fa7-3947a6e5af70",
-      "currency": "MYR",
-      "data": [
-        {
-          "location": "Malaysia",
-          "job_title": "Construction Engineering",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-construction-engineer-salary-SRCH_IL.0,8_IN228_KO9,31.htm",
-          "min_salary": 50000,
-          "max_salary": 95000,
-          "median_salary": 70000,
-          "salary_period": "YEAR",
-          "salary_currency": "MYR"
-        }
-      ]
-    }
-  ]
-}
+    "lastUpdated": "2024-12-13T12:46:12.159Z",
+    "data": [
+      {
+        "title": "Flight Dynamics Engineer",
+        "status": "OK",
+        "request_id": "8a70dfe9-778d-4bdb-9d92-20da73430866",
+        "currency": "MYR",
+        "data": [
+          {
+            "location": "Malaysia",
+   
+            "min_salary": 4200,
+            "max_salary": 5100,
+            "median_salary": 15881.28,
+            "salary_period": "MONTH",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-aerospace-engineer-salary-SRCH_IL.0,8_IN170_KO9,27.htm",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Propulsion Engineer",
+        "status": "OK",
+        "request_id": "af371a8a-7641-4065-aae0-56ab4b292e85",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Avionics Engineer",
+        "status": "OK",
+        "request_id": "ba7068c0-7d7d-4e3b-acb2-7a4de66d4b46",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Aerodynamics Engineer",
+        "status": "OK",
+        "request_id": "2c84e77a-695b-4347-bfea-49a7b0c6d02f",
+        "data": [
+          {
+            "location": "Malaysia",
+    
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Structural Analysis Engineer",
+        "status": "OK",
+        "request_id": "34712ba8-15ab-46a4-bf19-bcec6a93c2d9",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Materials Science Engineer",
+        "status": "OK",
+        "request_id": "8ef49714-cc71-4dc5-b8f1-457e1547db81",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Space Systems Engineer",
+        "status": "OK",
+        "request_id": "9ef19e7e-fab1-4366-b895-e5206fa43660",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Autonomy Engineer",
+        "status": "OK",
+        "request_id": "33d62376-8d1b-416a-884e-ff089ca970ee",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      }
+    ]
+  }

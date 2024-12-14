@@ -32,7 +32,7 @@ export const homepageInfo1 = [ {
     },]
 
     import salaryData from '/../server/data/salary-dataMECusa.json';
-    import salaryData2 from '/../server/data/salary-dataMECmy2.json';
+    import salaryData2 from '/../server/data/salary-dataMECmy.json';
     
     export const countries = 
     [{"flag":"🇺🇸","file":salaryData,"currency":"$",id:1},

@@ -1,215 +1,158 @@
 {
-  "lastUpdated": "2024-12-12T15:32:12.549Z",
-  "data": [
-    {
-      "title": "Computer Science",
-      "status": "OK",
-      "request_id": "785158b2-c756-4841-84a5-541b24d1053f",
-      "currency":"$",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Computer Science Tutor",
-          "min_salary": 45900.54,
-          "max_salary": 74996.86,
-          "median_salary": 58488.74,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Computer%20Science%20Tutor&locT=N&locId=1",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Ai Engineer",
-      "status": "OK",
-      "request_id": "6598293f-07bb-4910-8763-e367d1ca3957",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "AI Engineer",
-          "min_salary": 159115,
-          "max_salary": 265189,
-          "median_salary": 203495.3,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=AI%20Engineer&locT=N&locId=1",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Cyber Security",
-      "status": "OK",
-      "request_id": "8c573bc5-14fa-4003-88ba-b1cfcf042961",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Cyber Security Analyst",
-          "min_salary": 106468,
-          "max_salary": 173338,
-          "median_salary": 134961.47,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Cyber%20Security%20Analyst&locT=N&locId=1",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Cloud Architecture",
-      "status": "OK",
-      "request_id": "64189eab-1ef9-4629-9711-d78195174dec",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Director Cloud Architecture",
-          "min_salary": 153788,
-          "max_salary": 270948,
-          "median_salary": 260824.95,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/us-cloud-architect-salary-SRCH_IL.0,2_IN1_KO3,18.htm",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Data Science",
-      "status": "OK",
-      "request_id": "64fa8e08-c447-466b-825b-fd3e695e6ee6",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Data Science Intern",
-          "min_salary": 150410,
-          "max_salary": 247801,
-          "median_salary": 87507.52,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/us-data-science-salary-SRCH_IL.0,2_IN1_KO3,15.htm",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Software Development",
-      "status": "OK",
-      "request_id": "5e64df6b-0067-4e95-a99c-df5b11d74b21",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Software Development Engineer",
-          "min_salary": 162453,
-          "max_salary": 253223,
-          "median_salary": 200763.15,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Software%20Development%20Engineer&locT=N&locId=1",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Mobile Development",
-      "status": "OK",
-      "request_id": "1b1f9e52-24e4-477a-9a80-be9a60e9c872",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Mobile Development",
-          "min_salary": 99415,
-          "max_salary": 165340,
-          "median_salary": 268524.47,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/us-mobile-developer-salary-SRCH_IL.0,2_IN1_KO3,19.htm",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Game Development",
-      "status": "OK",
-      "request_id": "936f3525-d211-4cf2-80ad-437b3de1d56a",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Game Development",
-          "min_salary": 151486,
-          "max_salary": 267350,
-          "median_salary": 199647.56,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Game%20Development&locT=N&locId=1",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Full Stack Engineer",
-      "status": "OK",
-      "request_id": "d39966e9-ebd4-410c-9228-f666f393d811",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Full Stack Engineer",
-          "min_salary": 116892,
-          "max_salary": 193574,
-          "median_salary": 149405.02,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Full%20Stack%20Engineer&locT=N&locId=1",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "Dev Ops Engineer",
-      "status": "OK",
-      "request_id": "d5b20d5a-3388-4eb0-82cf-82be427e2517",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Dev Ops Engineer",
-          "min_salary": 111432,
-          "max_salary": 160453,
-          "median_salary": 132884.12,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/us-dev-ops-engineer-salary-SRCH_IL.0,2_IN1_KO3,19.htm",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    },
-    {
-      "title": "UI/UX",
-      "status": "OK",
-      "request_id": "92bfc679-6728-4d84-9336-e4b4b06930cc",
-      "data": [
-        {
-          "location": "United States",
-          "job_title": "Designer UX/UI",
-          "min_salary": 106420,
-          "max_salary": 159674,
-          "median_salary": 134646.72,
-          "salary_period": "YEAR",
-          "salary_currency": "USD",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/us-web-ui-developer-salary-SRCH_IL.0,2_IN1_KO3,19.htm",
-          "confidence": "CONFIDENT"
-        }
-      ]
-    }
-  ]
-}
+    "lastUpdated": "2024-12-13T12:46:12.159Z",
+    "data": [
+      {
+        "title": "Flight Dynamics Engineer",
+        "status": "OK",
+        "request_id": "8a70dfe9-778d-4bdb-9d92-20da73430866",
+        "currency": "MYR",
+        "data": [
+          {
+            "location": "Malaysia",
+   
+            "min_salary": 4200,
+            "max_salary": 5100,
+            "median_salary": 15881.28,
+            "salary_period": "MONTH",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-aerospace-engineer-salary-SRCH_IL.0,8_IN170_KO9,27.htm",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Propulsion Engineer",
+        "status": "OK",
+        "request_id": "af371a8a-7641-4065-aae0-56ab4b292e85",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Avionics Engineer",
+        "status": "OK",
+        "request_id": "ba7068c0-7d7d-4e3b-acb2-7a4de66d4b46",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Aerodynamics Engineer",
+        "status": "OK",
+        "request_id": "2c84e77a-695b-4347-bfea-49a7b0c6d02f",
+        "data": [
+          {
+            "location": "Malaysia",
+    
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Structural Analysis Engineer",
+        "status": "OK",
+        "request_id": "34712ba8-15ab-46a4-bf19-bcec6a93c2d9",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Materials Science Engineer",
+        "status": "OK",
+        "request_id": "8ef49714-cc71-4dc5-b8f1-457e1547db81",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Space Systems Engineer",
+        "status": "OK",
+        "request_id": "9ef19e7e-fab1-4366-b895-e5206fa43660",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Autonomy Engineer",
+        "status": "OK",
+        "request_id": "33d62376-8d1b-416a-884e-ff089ca970ee",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      }
+    ]
+  }

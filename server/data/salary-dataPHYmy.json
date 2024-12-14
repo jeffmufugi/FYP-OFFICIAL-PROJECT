@@ -1,174 +1,158 @@
 {
-  "lastUpdated": "2024-11-10T09:33:50.776Z",
-  "data": [
-    {
-      "title": "Quantum computing",
-      "status": "OK",
-      "request_id": "f9171bcd-dc33-4cff-a6e2-9818d30fb3e5",
-      "currency":"MYR",
-      "data": [
-        {
-          "location": "Malaysia",
-          "job_title": "Quantum computing",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.payscale.com/research/MY/Job=Medical_Physicist/Salary",
-          "min_salary": 3000,
-          "max_salary": 100100.92,
-          "median_salary": 48000,
-          "salary_period": "YEAR",
-          "salary_currency": "MYR"
-        }
-        
-      ]
-    },
-    {
-      "title": "Medical Physics",
-      "status": "OK",
-      "request_id": "55ac97e0-370d-4f54-9dcc-daad391ef683",
-      "data": [
-        {
-          "location": "Malaysia",
-          "job_title": "Medical Physicist",
-          "publisher_name": "Payscale",
-          "publisher_link": "https://www.payscale.com/research/MY/Job=Medical_Physicist/Salary",
-          "min_salary": 3000,
-          "max_salary": 100100.92,
-          "median_salary": 48000,
-          "salary_period": "YEAR",
-          "salary_currency": "MYR"
-        },
-        {
-          "location": "Malaysia",
-          "job_title": "Medical Physicist",
-          "publisher_name": "Glassdoor",
-          "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-medical-physicist-salary-SRCH_IL.0,8_IN170_KO9,26.htm",
-          "min_salary": 3278,
-          "max_salary": 4770,
-          "median_salary": 4099,
-          "salary_period": "MONTH",
-          "salary_currency": "MYR"
-        }
-      ]
-    },
-    {
-      "title": "Particle physics",
-      "status": "OK",
-      "request_id": "cb69c41c-cbf1-4072-ba01-e94ea91921f2",
-      "data": [
-        {"job_title": "Particle physics",
-        "publisher_name": "Glassdoor",
-        "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-medical-physicist-salary-SRCH_IL.0,8_IN170_KO9,26.htm",
-        "min_salary": 20278,
-        "max_salary": 4770,
-        "median_salary": 20099,
-        "salary_period": "MONTH",
-        "salary_currency": "MYR"}
-      ]
-    },
-    {
-      "title": "Condensed matter physics",
-      "status": "OK",
-      "request_id": "993b7e99-150d-4008-aa3d-ed2487f349d8",
-      "data": [
-        {"job_title": "Condensed matter physics",
-        "publisher_name": "Glassdoor",
-        "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-medical-physicist-salary-SRCH_IL.0,8_IN170_KO9,26.htm",
-        "min_salary": 20278,
-        "max_salary": 4770,
-        "median_salary": 20099,
-        "salary_period": "MONTH",
-        "salary_currency": "MYR"}
-      ]
-    },
-    {
-      "title": "Astrophysics",
-      "status": "OK",
-      "request_id": "195a07d5-f016-412c-aaa6-f05665199ce8",
-      "data": [        
-        {"job_title": "Astrophysics",
-      "publisher_name": "Glassdoor",
-      "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-medical-physicist-salary-SRCH_IL.0,8_IN170_KO9,26.htm",
-      "min_salary": 20278,
-      "max_salary": 4770,
-      "median_salary": 20099,
-      "salary_period": "MONTH",
-      "salary_currency": "MYR"}
+    "lastUpdated": "2024-12-13T12:46:12.159Z",
+    "data": [
+      {
+        "title": "Flight Dynamics Engineer",
+        "status": "OK",
+        "request_id": "8a70dfe9-778d-4bdb-9d92-20da73430866",
+        "currency": "MYR",
+        "data": [
+          {
+            "location": "Malaysia",
+   
+            "min_salary": 4200,
+            "max_salary": 5100,
+            "median_salary": 15881.28,
+            "salary_period": "MONTH",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-aerospace-engineer-salary-SRCH_IL.0,8_IN170_KO9,27.htm",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Propulsion Engineer",
+        "status": "OK",
+        "request_id": "af371a8a-7641-4065-aae0-56ab4b292e85",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Avionics Engineer",
+        "status": "OK",
+        "request_id": "ba7068c0-7d7d-4e3b-acb2-7a4de66d4b46",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Aerodynamics Engineer",
+        "status": "OK",
+        "request_id": "2c84e77a-695b-4347-bfea-49a7b0c6d02f",
+        "data": [
+          {
+            "location": "Malaysia",
+    
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Structural Analysis Engineer",
+        "status": "OK",
+        "request_id": "34712ba8-15ab-46a4-bf19-bcec6a93c2d9",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Materials Science Engineer",
+        "status": "OK",
+        "request_id": "8ef49714-cc71-4dc5-b8f1-457e1547db81",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Space Systems Engineer",
+        "status": "OK",
+        "request_id": "9ef19e7e-fab1-4366-b895-e5206fa43660",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      },
+      {
+        "title": "Autonomy Engineer",
+        "status": "OK",
+        "request_id": "33d62376-8d1b-416a-884e-ff089ca970ee",
+        "data": [
+          {
+            "location": "Malaysia",
+  
+            "min_salary": 15266.88,
+            "max_salary": 16495.68,
+            "median_salary": 15881.28,
+            "salary_period": "YEAR",
+            "salary_currency": "MYR",
+            "publisher_name": "Glassdoor",
+            "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Avionics%20Engineer&locT=N&locId=170",
+            "confidence": "LOW"
+          }
+        ]
+      }
     ]
-    },
-    {
-      "title": "Computational physics",
-      "status": "OK",
-      "request_id": "05f26a57-2c60-485b-90bb-7db0628bfaee",
-      "data": [
-        {"job_title": "Computational physics",
-        "publisher_name": "Glassdoor",
-        "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-medical-physicist-salary-SRCH_IL.0,8_IN170_KO9,26.htm",
-        "min_salary": 20278,
-        "max_salary": 4770,
-        "median_salary": 20099,
-        "salary_period": "MONTH",
-        "salary_currency": "MYR"}
-      ]
-    },
-    {
-      "title": "Plasma physics",
-      "status": "OK",
-      "request_id": "06077178-399b-41e4-9981-7ea7a767e583",
-      "data": [
-        {"job_title": "Plasma physics",
-        "publisher_name": "Glassdoor",
-        "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-medical-physicist-salary-SRCH_IL.0,8_IN170_KO9,26.htm",
-        "min_salary": 20278,
-        "max_salary": 4770,
-        "median_salary": 20099,
-        "salary_period": "MONTH",
-        "salary_currency": "MYR"}
-      ]
-    },
-    {
-      "title": "Optics and photonics",
-      "status": "OK",
-      "request_id": "ae0bb436-252c-49ac-8d7f-4befb2b2f0c2",
-      "data": [
-        {"job_title": "Optics and photonics",
-        "publisher_name": "Glassdoor",
-        "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-medical-physicist-salary-SRCH_IL.0,8_IN170_KO9,26.htm",
-        "min_salary": 20278,
-        "max_salary": 4770,
-        "median_salary": 20099,
-        "salary_period": "MONTH",
-        "salary_currency": "MYR"}
-      ]
-    },
-    {
-      "title": "Biophysics",
-      "status": "OK",
-      "request_id": "ac71ff41-5f97-4f0a-a1b9-c85342aaa0d5",
-      "data": [
-        {"job_title": "Biophysics",
-        "publisher_name": "Glassdoor",
-        "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-medical-physicist-salary-SRCH_IL.0,8_IN170_KO9,26.htm",
-        "min_salary": 20278,
-        "max_salary": 4770,
-        "median_salary": 20099,
-        "salary_period": "MONTH",
-        "salary_currency": "MYR"}
-      ]
-    },
-    {
-      "title": "Nuclear physics",
-      "status": "OK",
-      "request_id": "4faff316-966b-4f93-9540-71851a459b35",
-      "data": [
-        {"job_title": "Nuclear physics",
-        "publisher_name": "Glassdoor",
-        "publisher_link": "https://www.glassdoor.com/Salaries/malaysia-medical-physicist-salary-SRCH_IL.0,8_IN170_KO9,26.htm",
-        "min_salary": 20278,
-        "max_salary": 4770,
-        "median_salary": 20099,
-        "salary_period": "MONTH",
-        "salary_currency": "MYR"}
-      ]
-    }
-  ]
-}
+  }
