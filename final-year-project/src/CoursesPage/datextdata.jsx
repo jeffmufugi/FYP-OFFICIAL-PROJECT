@@ -46,6 +46,7 @@ export const homepageInfo1 = [ {
 
       const currency = jobData ? jobData.currency : null;
       console.log(currency );
+      //
       
 
 
