@@ -25,11 +25,10 @@ router.post('/gpt', async (req, res) => {
                 }
             ],
             model: 'gpt-4o',
-            max_tokens: 50,
+            max_tokens: 200,
             temperature: 0.9
         }
     };
-
     try {
         const response = await axios.request(options);
         const reply = response.data.choices[0].message.content; // Extract response content
@@ -39,6 +38,5 @@ router.post('/gpt', async (req, res) => {
         res.status(500).send({ error: 'Failed to fetch data' });
     }
 });
-
 
 module.exports = router;

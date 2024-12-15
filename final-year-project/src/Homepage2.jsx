@@ -7,96 +7,62 @@ import i4 from "./site_icons/PriceIcon.svg";
 import i1 from "./site_icons/bookIcon.svg";
 import i3 from "./site_icons/AssessmentIcon.svg";
 import i2 from "./site_icons/BalanceIcon.svg";
-
-
-
-
+import mp from "./site_icons/probody.svg";
+import vd from "./site_icons/usevideo.mov";
+import gn from "./site_icons/greem.png";
+import gx from "./site_icons/glow.png";
+import gl from "./site_icons/greenline.png";
 const Homepage2 = () => {
-  const sections = [
-    {
-      text: <motion.div initial={{ x: 100 ,opacity: 0 }}
-      whileInView={{ x: 0 ,opacity: 1 }}
-      transition={{ duration: 0.5,delay: 0 }}
-      viewport={{ once: true }} >
-        Explore diverse career opportunities across a wide range of STEM fields. 
-        Each course recommendation is grounded in the latest industry insights, 
-        giving you a clear vision of where your degree can lead. 
-        We’re here to equip you with knowledge to map out your future with confidence
-      </motion.div>,
-      className: "sect1",
-      icon: i1
-    },
-    {
-      text: <motion.div initial={{ x: -100,opacity: 0  }}
-      whileInView={{ x:0, opacity: 1}}
-      transition={{ duration: 0.5,delay: 0.3 }}
-      viewport={{ once: true }}>
-        Based on your academic interests and personal strengths, 
-        our platform connects you with programs tailored to your goals. 
-        Weighing the pros and cons of each option ensures you will 
-        make a balanced & informed choice that aligns with your aspirations.
-      </motion.div>,
-      className: "sect2",
-      icon: i2
-    },
-    {
-      text: <motion.div initial={{  x: 100,opacity: 0  }}
-      whileInView={{  x: 0,opacity: 1  }}
-      transition={{ duration: 0.5,delay: 0.6 }}
-      viewport={{ once: true }}>
-        Get access to real-life data on graduate employment rates, 
-        industry demand, and future job outlooks for different sectors. 
-        Make your course decisions confidently with our detailed, 
-        evidence-based insights.
-      </motion.div>,
-      className: "sect3",
-      icon: i3
-    },
-    {
-      text: <motion.div initial={{  x: -100,opacity: 0 }}
-      whileInView={{  x: 0,opacity: 1 }}
-      transition={{ duration: 0.5,delay: 0.8 }}
-      viewport={{ once: true }}>
-        Stay ahead with data on emerging trends in STEM fields. 
-        Learn about job growth, salary projections, and the specific skills
-        employers are looking for. Our insights help you make
-        informed decisions on the STEM courses that will lead you to success.
-      </motion.div>,
-      className: "sect4",
-      icon: i4
-    }
-  ];
-
 
   return (
     <div className="second-section" id="second-section">
       <img src={bg2} className="bg2line"/>
-      <div className="top-hlf">
-        <div className="left-hp2">
-              <motion.h1 className="main-txt2">
-                get detailed insights<br/> for your future<br/> career path.
-              </motion.h1>
-        </div>
-        <div className="right-hp2">
-           <StaticGears />
-        </div> 
+      
+      <div style={{display:"flex",zIndex:"9",flexDirection:"column",justifyContent:"center",width:"38vw"}}>
+        <motion.h1 initial={{ x: -100 ,opacity: 1 }}
+                        whileInView={{ x: 0 ,opacity: 1 }}
+                        transition={{ duration: 0.5,delay: 0 }}
+                        viewport={{ once: true }}className="txt-p3">Reliable</motion.h1>
+        <motion.h1 initial={{ x: -100 ,opacity: 1 }}
+                        whileInView={{ x: 0 ,opacity: 1 }}
+                        transition={{ duration: 0.5,delay: 0 }}
+                        viewport={{ once: true }} className="txt-p2">data you can<br/>TRUST from<br/>official sources.</motion.h1>
+        <motion.p initial={{ x: -100 ,opacity: 1 }}
+                        whileInView={{ x: 0 ,opacity: 1 }}
+                        transition={{ duration: 0.5,delay: 0 }}
+                        viewport={{ once: true }} className="wdwd-txt2">view verified data from official government<br/> resources and real salary information<br/> submitted by employees and employers</motion.p>
+        <img className="moneybagg"src={gn} alt="" style={{width:"50%",height:"auto",alignSelf:"center"}}/>
+        <img className="moneybagg2" src={gx} alt="" />
+        
       </div>
       
-      <div className="main-sect2">
-        <div className="left-main2"></div>
-        <div className="text-inf">
-          {sections.map((section, index) => (
-              <Section key={index} className={section.className} icon={section.icon}>
-                <SectionText>{section.text}</SectionText>
-              </Section>
-            ))}
-      </div>
-        <div className="right-main2"></div>
+      <div style={{display:"flex",flex:1,justifyContent:"center",alignItems:"center"}}>
+        <img src={mp} style={{position:"absolute",width:"70vw",height:"auto",zIndex:"8",right:"-3vw"}} alt="" />
+        
+         <div className="glow"style={{position:"absolute",width:"55.3vw",height:"auto",zIndex:"7",right:"4.4vw",backgroundColor:"black",overflow: "hidden",aspectRatio:"1.4/1" }}>
+         <video
+              style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  overflow: "hidden"
+              }}
+              autoPlay
+              loop
+              muted
+          >
+              <source src={vd}  />
+              Your browser does not support the video tag.
+          </video>
+          
+                  </div>
+                  {/* <img className="moneybagg3" src={gl} alt="" style={{zIndex:"4"}}/> */}
+                  <div className="moneybagg3"></div>
+                  
 
-
       </div>
-     
+    
     </div>
+    
   );
 };
 
@@ -105,31 +71,5 @@ export default Homepage2;
 
 
 
-
-
-
-const StaticGears = () => {
-  return (
-    <div className="gears-container">
-      <motion.img src={g1} className="gear1" alt="Gear 1" animate={{ rotate: [0, 360] }} transition={{ duration: 20, repeat: Infinity, ease: "linear" }}/>
-      <motion.img src={g2} className="gear2" alt="Gear 2" animate={{ rotate: [0, 360] }} transition={{ duration: 20, repeat: Infinity, ease: "linear" }}/>
-      <motion.img src={g3} className="gear3" alt="Gear 3" animate={{ rotate: [360, 0] }} transition={{ duration: 20, repeat: Infinity, ease: "linear" }}/>
-    </div>
-  );
-};
-
-const SectionText = ({ children }) => (
-  <p className="inf-text">{children}</p>
-);
-
-const Section = ({ children, className, icon }) => (
-  <div className={className}>
-    <div className="section-content">{children}</div>
-    <div className="iconmain2"><motion.img src={icon} alt="Section icon" className="section-icon"  initial={{ opacity: 0,skew:90  }}
-  whileInView={{ opacity: 1,skew:0}}
-  transition={{ duration: 1, delay: 2 }}
-  viewport={{ once: true }}/></div>
-</div>
-);
 
 

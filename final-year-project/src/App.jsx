@@ -26,11 +26,14 @@ import CybersecurityCourse from './CoursesPage/Cybersecurity.jsx';
 import ComputerEngineeringCourse from './CoursesPage/ComputerEngineering.jsx';
 import { useEffect,useState } from 'react';
 import { Chatbott } from "./Chatbot";
+import { useMediaQuery } from 'react-responsive';
+
+
 
 
 export const Context = React.createContext();
 function App() {
-
+  const isLargeScreen = useMediaQuery({ minWidth: 1024 });
         const [chatbot,setChatState] = useState(0);
 
     function setChatBot(){
@@ -99,7 +102,7 @@ function App() {
           <Route path="/" element={
             <>
               <Homepage1 />
-              {/* <Homepage2 /> */}
+            {isLargeScreen && <Homepage2 />}
               <Homepage3 />
             </>
           } />
