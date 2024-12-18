@@ -110,7 +110,7 @@ function App() {
       <Analytics />
               {loading ? (
                 <>
-                <div style={{backgroundColor:"#1F212D",height:"100vh",width:"100vw",display:"flex",justifyContent:"center",alignItems:"center"}}>
+                <div style={{backgroundColor:"#1F212D",height:"100vh",width:"100vw",display:"flex",justifyContent:"center",alignItems:"center",zIndex:"100",position:"absolute"}}>
                 <ClimbingBoxLoader
                   color="#ffffff"
                   loading
