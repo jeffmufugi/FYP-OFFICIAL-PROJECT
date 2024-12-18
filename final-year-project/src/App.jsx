@@ -27,6 +27,7 @@ import ComputerEngineeringCourse from './CoursesPage/ComputerEngineering.jsx';
 import { useEffect,useState } from 'react';
 import { Chatbott } from "./Chatbot";
 import { useMediaQuery } from 'react-responsive';
+import ClimbingBoxLoader from "react-spinners/HashLoader";
 
 
 
@@ -85,6 +86,16 @@ function App() {
         }
       }, [signedIn]);
 
+      const [loading, setLoading] = useState(false);
+      useEffect(()=>{
+          setLoading(true);
+          setTimeout(()=>{
+            setLoading(false)
+          },2000)
+      },[])
+
+      
+
   return (
     
     
@@ -97,38 +108,51 @@ function App() {
       <div className="app-container">
 
       <Analytics />
-
-        <Routes>
-          <Route path="/" element={
-            <>
-              <Homepage1 />
-            {isLargeScreen && <Homepage2 />}
-              <Homepage3 />
-            </>
-          } />
-          
-          <Route path="/signup" element={<SignUpPage/>} />
-          <Route path="/signin" element={<SignInPage />} />
-          <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/courses" element={<CoursePage />} />
-          <Route path="/cscoursepage" element={<ComputerScienceCourse />} />
-          <Route path="/mechcoursepage" element={<MechanicalEngineeringCourse />} />
-          <Route path="/biocoursepage" element={<BiomedicalEngineeringCourse />} />
-          <Route path="/civcoursepage" element={<CivilEngineeringCourse  />} />
-          <Route path="/aerocoursepage" element={<AerospaceEngineeringCourse />} />
-          <Route path="/phycoursepage" element={<PhysicsEngineeringCourse/>} />
-          <Route path="/nuccoursepage" element={<NuclearEngineeringCourse/>} />
-          <Route path="/marcoursepage" element={<MarineBiologyCourse/>} />
-          <Route path="/mathcoursepage" element={<MathematicsCourse/>} />
-          <Route path="/datcoursepage" element={<DataScienceCourse/>} />
-          <Route path="/cecoursepage" element={<ComputerEngineeringCourse/>} />
-          <Route path="/robcoursepage" element={<RoboticsCourse/>} />
-          <Route path="/cybcoursepage" element={<CybersecurityCourse/>} />
-          <Route path="/chemcoursepage" element={<ChemicalEngineeringCourse />}
-          
-          />
-        </Routes>
+              {loading ? (
+                <>
+                <div style={{backgroundColor:"#1F212D",height:"100vh",width:"100vw",display:"flex",justifyContent:"center",alignItems:"center"}}>
+                <ClimbingBoxLoader
+                  color="#ffffff"
+                  loading
+                  speedMultiplier={2}
+                />
+                </div>
+            
+              </>
+              ):(
+              <Routes>
+              <Route path="/" element={
+                <>
+                  <Homepage1 />
+                {isLargeScreen && <Homepage2 />}
+                  <Homepage3 />
+                </>
+              } />
+              
+              <Route path="/signup" element={<SignUpPage/>} />
+              <Route path="/signin" element={<SignInPage />} />
+              <Route path="/contactus" element={<ContactUs />} />
+              <Route path="/aboutus" element={<AboutUs />} />
+              <Route path="/courses" element={<CoursePage />} />
+              <Route path="/cscoursepage" element={<ComputerScienceCourse />} />
+              <Route path="/mechcoursepage" element={<MechanicalEngineeringCourse />} />
+              <Route path="/biocoursepage" element={<BiomedicalEngineeringCourse />} />
+              <Route path="/civcoursepage" element={<CivilEngineeringCourse  />} />
+              <Route path="/aerocoursepage" element={<AerospaceEngineeringCourse />} />
+              <Route path="/phycoursepage" element={<PhysicsEngineeringCourse/>} />
+              <Route path="/nuccoursepage" element={<NuclearEngineeringCourse/>} />
+              <Route path="/marcoursepage" element={<MarineBiologyCourse/>} />
+              <Route path="/mathcoursepage" element={<MathematicsCourse/>} />
+              <Route path="/datcoursepage" element={<DataScienceCourse/>} />
+              <Route path="/cecoursepage" element={<ComputerEngineeringCourse/>} />
+              <Route path="/robcoursepage" element={<RoboticsCourse/>} />
+              <Route path="/cybcoursepage" element={<CybersecurityCourse/>} />
+              <Route path="/chemcoursepage" element={<ChemicalEngineeringCourse />}
+              
+              />
+            </Routes>
+            )}
+      
 
       </div>
       </Context.Provider>
