@@ -27,7 +27,7 @@ import ComputerEngineeringCourse from './CoursesPage/ComputerEngineering.jsx';
 import { useEffect,useState } from 'react';
 import { Chatbott } from "./Chatbot";
 import { useMediaQuery } from 'react-responsive';
-import ClimbingBoxLoader from "react-spinners/HashLoader";
+import ClimbingBoxLoader from "react-spinners/CircleLoader";
 
 
 
@@ -110,11 +110,12 @@ function App() {
       <Analytics />
               {loading ? (
                 <>
-                <div style={{backgroundColor:"#1F212D",height:"100vh",width:"100vw",display:"flex",justifyContent:"center",alignItems:"center",zIndex:"100",position:"absolute"}}>
+                <div style={{backgroundColor:"#000813",height:"100vh",width:"100vw",display:"flex",justifyContent:"center",alignItems:"center",zIndex:"100",position:"absolute"}}>
                 <ClimbingBoxLoader
                   color="#ffffff"
+                  size={120}
                   loading
-                  speedMultiplier={2}
+                  speedMultiplier={1}
                 />
                 </div>
             
