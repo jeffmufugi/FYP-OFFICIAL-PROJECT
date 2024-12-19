@@ -20,6 +20,7 @@ export default function SignUpPage2() {
 const isSmallScreen = useMedia({ minWidth: 825 });
 
     function setSignedInfunc(){
+        
         setSignedIn(true);
     }
     

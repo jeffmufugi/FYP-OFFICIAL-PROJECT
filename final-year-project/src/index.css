@@ -3270,7 +3270,7 @@ margin-left: 5px;
   color: #143B3D;
   font-family: Inter, sans-serif;
  font-weight: 900;
-
+ text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
  margin-bottom: 20px;
  line-height: 1.1;
  text-align: left;
@@ -3282,8 +3282,9 @@ margin-left: 5px;
   color: #143B3D;
   font-family: Inter, sans-serif;
  font-weight: 900;
+ text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
- margin-bottom: 20px;
+ margin-bottom: 3px;
  line-height: 1.1;
  text-align: left;
  margin-left: 7.5%;
