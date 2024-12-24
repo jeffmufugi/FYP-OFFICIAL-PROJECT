@@ -13,7 +13,7 @@ router.post('/gpt', async (req, res) => {
         method: 'POST',
         url: 'https://cheapest-gpt-4-turbo-gpt-4-vision-chatgpt-openai-ai-api.p.rapidapi.com/v1/chat/completions',
         headers: {
-            'x-rapidapi-key': 'c661e58881msh6d54e90e065ed20p1f5acbjsn83b5606b6fb7',
+            'x-rapidapi-key': '90caff2630msh787b7d18a701072p17d25cjsndc4e6106b587',
             'x-rapidapi-host': 'cheapest-gpt-4-turbo-gpt-4-vision-chatgpt-openai-ai-api.p.rapidapi.com',
             'Content-Type': 'application/json'
         },

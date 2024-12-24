@@ -30,7 +30,7 @@ const Homepage2 = () => {
         <motion.p initial={{ x: -100 ,opacity: 1 }}
                         whileInView={{ x: 0 ,opacity: 1 }}
                         transition={{ duration: 0.5,delay: 0 }}
-                        viewport={{ once: true }} className="wdwd-txt2">View verified data from official government<br/> resources and real salary information<br/> submitted by employees and employers</motion.p>
+                        viewport={{ once: true }} className="wdwd-txt2">We provide you with verified data from official government<br/> resources and real salary information<br/> submitted by employees and employers</motion.p>
         <img className="moneybagg"src={gn} alt="" style={{width:"50%",height:"auto",alignSelf:"center"}}/>
         <img className="moneybagg2" src={gx} alt="" />
         
