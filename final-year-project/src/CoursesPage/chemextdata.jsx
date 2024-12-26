@@ -1,7 +1,7 @@
 export const homepageInfo = [
     {
         courseName: "chemical engineering.",
-        courseDefinition: "Chemical engineering focuses on the design, optimization, and operation of chemical processes.",
+        courseDefinition: " Is the branch of engineering focused on designing, optimising, and operating processes that transform raw materials into valuable products through chemical, physical and biological changes.",
         undergradsal: "$78,396.",
         jobavail: "32,700",
         emprate: "76%",
