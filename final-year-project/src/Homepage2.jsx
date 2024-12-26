@@ -22,7 +22,7 @@ const Homepage2 = () => {
         <motion.h1 initial={{ x: -100 ,opacity: 1 }}
                         whileInView={{ x: 0 ,opacity: 1 }}
                         transition={{ duration: 0.5,delay: 0 }}
-                        viewport={{ once: true }}className="txt-p3">Reliable</motion.h1>
+                        viewport={{ once: true }}className="txt-p3">reliable</motion.h1>
         <motion.h1 initial={{ x: -100 ,opacity: 1 }}
                         whileInView={{ x: 0 ,opacity: 1 }}
                         transition={{ duration: 0.5,delay: 0 }}
