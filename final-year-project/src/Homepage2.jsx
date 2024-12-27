@@ -37,9 +37,22 @@ const Homepage2 = () => {
       </div>
       
       <div style={{display:"flex",flex:1,justifyContent:"center",alignItems:"center"}}>
-        <img src={mp} style={{position:"absolute",width:"70vw",height:"auto",zIndex:"8",right:"-3vw"}} alt="" />
+      <motion.img
+            src={mp}
+            style={{
+              position: "absolute",
+              width: "70vw",
+              height: "auto",
+              zIndex: "8",
+              right: "-3vw"
+            }}
+            alt=""
+            {...FadeIn.left}
+          />
         
-         <div className="glow"style={{position:"absolute",width:"55.3vw",height:"auto",zIndex:"7",right:"4.4vw",backgroundColor:"black",overflow: "hidden",aspectRatio:"1.4/1" }}>
+         <motion.div 
+           {...FadeIn.left}
+         className="glow"style={{position:"absolute",width:"55.3vw",height:"auto",zIndex:"7",right:"4.4vw",backgroundColor:"black",overflow: "hidden",aspectRatio:"1.4/1" }}>
          <video
               style={{
                   maxWidth: "100%",
@@ -54,8 +67,8 @@ const Homepage2 = () => {
               Your browser does not support the video tag.
           </video>
           
-                  </div>
-                  {/* <img className="moneybagg3" src={gl} alt="" style={{zIndex:"4"}}/> */}
+                  </motion.div>
+                
                   <div className="moneybagg3"></div>
                   
 
@@ -73,3 +86,15 @@ export default Homepage2;
 
 
 
+export const FadeIn = {
+  left: {
+    initial: { x: 200 }, // Start state
+    whileInView: { x: 0},
+    transition: {
+      delay: 0,
+      type: "spring",
+      damping: 50,
+    },
+    viewport: { once: true },
+  },
+};

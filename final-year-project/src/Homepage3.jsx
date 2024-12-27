@@ -88,10 +88,16 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
     alignItems: "center"}} 
     >
 
-              <img src={bg4} alt="" style={{width:"43vw",height:"auto",alignSelf:"center",position:"absolute",objectFit:"contain",zIndex:"12"}} onClick={set}/>
-              <img src={sx} style={{position:"absolute",width:"19vw",height:"auto",zIndex:"20",right:"13vw"}} alt="" />
+              <motion.img 
+              {...FadeIn.left}
+              src={bg4} alt="" style={{width:"43vw",height:"auto",alignSelf:"center",position:"absolute",objectFit:"contain",zIndex:"12"}} onClick={set}/>
+              <motion.img 
+                {...FadeIn.left}  
+              src={sx} style={{position:"absolute",width:"19vw",height:"auto",zIndex:"20",right:"13vw"}} alt="" />
             
-              <div style={{position:"absolute",width:"15vw",height:"auto",right:"15vw",backgroundColor:"white",aspectRatio:"1.4/1",zIndex:"18",overflow: "hidden" }}>
+              <motion.div 
+                {...FadeIn.left}// Animation duration
+              style={{position:"absolute",width:"15vw",height:"auto",right:"15vw",backgroundColor:"white",aspectRatio:"1.4/1",zIndex:"18",overflow: "hidden" }}>
               
               <AnimatePresence>{currentText1 === 1 && 
             
@@ -161,15 +167,16 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
                   overflow: "hidden"
               }}/>}
               </AnimatePresence>
-              </div>
-              <div className="bgrad"
+              </motion.div>
+              <motion.div 
+             {...FadeIn.left}  // Animation duration
+              className="bgrad"
         src={s1}
         alt=""
         style={{
           width: "42vw",
           overflow:"hidden"
         }}
-   
       >
         
         
@@ -230,11 +237,17 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
        
            
       
-      </div>
+      </motion.div>
         
                 </div>
                 <div className="header3-top-right-section">
-                    <button className="btn-vc" onClick={coursePageClick}>View All Courses</button>
+                <motion.button 
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{   delay: 0,
+                      type: "spring",}}
+                    viewport={{ once: true }}
+                    className="btn-vc" onClick={coursePageClick}>View All Courses</motion.button>
 
                 </div>
             
@@ -386,7 +399,12 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
                 </div>
            
                 <div className="header3-top-right-section">
-                    <button className="btn-vc" onClick={coursePageClick}>View All Courses</button>
+                    <motion.button 
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{ duration: 0.5}}
+                    viewport={{ once: true }}
+                    className="btn-vc" onClick={coursePageClick}>View All Courses</motion.button>
 
                 </div>
               </div>}
@@ -476,3 +494,16 @@ const isLargeScreen = useMedia({ minWidth: 1024 });
     };
     
     export default Homepage3;
+
+    export const FadeIn = {
+      left: {
+        initial: { x: -300 }, // Start state
+        whileInView: { x: 0},
+        transition: {
+          delay: 0,
+          type: "spring",
+          damping: 50,
+        },
+        viewport: { once: true },
+      },
+    };
