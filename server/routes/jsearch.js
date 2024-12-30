@@ -9,7 +9,7 @@ const RAPIDAPI_KEY = 'c661e58881msh6d54e90e065ed20p1f5acbjsn83b5606b6fb7';
 const RAPIDAPI_HOST = 'job-salary-data.p.rapidapi.com';
 
 // File path for storing salary data
-// const SALARY_DATA_FILE = path.join(__dirname, '../data/salary-dataCSTaeromy.json');
+const SALARY_DATA_FILE = path.join(__dirname, '../data/salary-dataCSTaeromy.json');
 
 // List of high-paying occupations
 {/*-----------------------cst--------------------------- */}
