@@ -26,7 +26,7 @@ router.post('/gpt', async (req, res) => {
             ],
             model: 'gpt-4o',
             max_tokens: 200,
-            temperature: 0.9
+            temperature: 0.1
         }
     };
     try {
