@@ -61,7 +61,7 @@ html, body {
 .first-section {
   display: flex;
   flex-direction: column;
-  background-color: #c9c9c9;
+  background-color: #dcdcdc;
   background-image: url("site_icons/Noise Light 220.png");
   overflow-x: hidden; /* Ensure no horizontal scrolling */
   
@@ -182,7 +182,7 @@ html, body {
 
   font-family: Inter, sans-serif;
   font-weight: lighter;
-  background-color: #1a3469;
+  background-color: #172644;
   font-size: 14px;
   font-weight: bolder;
   color: white;
@@ -213,7 +213,7 @@ html, body {
 
 .main-txt{
   font-size: 70px;
-  color: #1a3469;
+  color: #172644;
   font-family: Inter, sans-serif;
  font-weight: 900;
  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -244,7 +244,7 @@ html, body {
 
 .btn1{
   font-family: Inter, sans-serif;
-   background-color: #15274b;;
+   background-color: #172644;;
    font-size: 14px;
    font-weight: bolder;
    color: white;
@@ -521,7 +521,7 @@ html, body {
 /* ----------------------------------------------SECOND HOME PAGE SECTION PAGE---------------------------------------------- */
 .second-section {
   /* Add styles for your second section */
-  background-color: #c9c9c9;
+  background-color: #dcdcdc;
   background-image: url("site_icons/Noise Light 220.png");
   padding: 20px;
   display: flex;
@@ -575,7 +575,7 @@ html, body {
 
 .inf-text{
   font-family: 'Roboto Mono';
-  color: #c9c9c9;
+  color: #dcdcdc;
   z-index: 1;
   font-weight: 500;
 
@@ -676,7 +676,7 @@ html, body {
 .third-section{
   display: flex;
   flex-direction: column;
-  background-color: #c9c9c9;
+  background-color: #dcdcdc;
   background-image: url("site_icons/Noise Light 220.png");
   overflow: hidden; 
   max-width: 100%;  
@@ -894,7 +894,7 @@ html, body {
 }
 .top-footer3 span{
     color: #ffffff;
-    background-color: #3f4559;
+    background-color: #141e31;
 }
 .bottom-footer3 span{
   color: #ffffff;
@@ -949,7 +949,7 @@ background-color: #4F7B7F;
   display: flex;
   flex: 0.1;
   z-index: 1;
-  background:linear-gradient(180deg, #cacaca 0%, #ffe3c0 100%)
+  background:linear-gradient(180deg, #dcdcdc 0%, #ffe3c0 100%)
 
   
   /* background-image: url("site_icons/Noise Light 220.png"); */
@@ -1253,7 +1253,7 @@ z-index: 1;
 .sign-in-page{
   display: flex;
   flex-direction: column;
-  background-color: #aeadad;
+  background-color: #dcdcdc;
   background-image: url("site_icons/Noise Light 220.png");
 }
 
@@ -1416,7 +1416,7 @@ z-index: 1;
 .ContactUsPage{
   display: flex;
   flex-direction: column;
-  background-color: #aeadad;
+  background-color: #dcdcdc;
   background-image: url("site_icons/Noise Light 220.png");
 }
 
@@ -1632,7 +1632,7 @@ z-index: 1;
 .AboutUsPage{
   display: flex;
   flex-direction: column;
-  background-color: #aeadad;
+  background-color: #dcdcdc;
   background-image: url("site_icons/Noise Light 220.png");
 }
 
@@ -1773,7 +1773,7 @@ z-index: 1;
 /* ----------------------------------------------COURSE PAGE SECTION PAGE---------------------------------------------- */
 
 .coursePage{
-  background-color: #c1baba;
+  background-color: #dcdcdc;
   background-image: url("site_icons/Noise Light 220.png");
   display: flex;
   flex-direction: column;
@@ -3162,7 +3162,7 @@ margin-left: 5px;
 
 }
 .btn1{
-  background-color: #15274b;
+  background-color: #172644;
 }
 .btn2{
   background-color: #45577c;
@@ -3267,7 +3267,7 @@ margin-left: 5px;
 }
 .txt-p2{
   font-size: 4vw;
-  color: #143B3D;
+  color: #0d2829;
   font-family: Inter, sans-serif;
  font-weight: 900;
  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
